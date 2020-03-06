@@ -114,7 +114,8 @@ function cleanTask(){
 function copyTask() {
     return src([
         srcFolder + '**/*.*',
-        '!' + srcFolder + "/scss/**/*.scss"
+        '!' + srcFolder + "/scss/**/*.scss",
+        '!' + srcFolder + "/documentation/**/*.*"
     ], { allowEmpty: true })
         .pipe(dest(distFolder));
 }
