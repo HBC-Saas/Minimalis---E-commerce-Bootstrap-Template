@@ -1,0 +1,18 @@
+/*=========================================
+    Theme Name  - Bootstrap 4
+
+    Copyright 2020 - designshake.co
+========================================= */
+
+// functions.scss - Bootstrap functions
+@import "../../node_modules/bootstrap/scss/functions";
+// your variables
+@import "user/user-variables";
+// custom variables
+@import "custom/variables";
+// bootstrap main
+@import "../../node_modules/bootstrap/scss/bootstrap";
+// theme components
+@import "custom/theme";
+// your components
+@import "user/user";
