@@ -8,7 +8,7 @@
   left: 0;
   z-index: 100; /* Behind the navbar */
   padding: 0;
-  margin-top: 56px;
+  margin-top: 4.6875rem;
   border-right: 2px solid $gray-200;
 }
 
@@ -16,12 +16,12 @@
 .sidebar-sticky {
   position: relative;
   top: 0;
-  height: calc(100vh - 65px);
+  height: calc(100vh - 4.6875rem);
   padding: 35px 30px;
   overflow-x: hidden;
   overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
 
-  // sidebar heading
+  // sidebar heading userd as menu title
   .sidebar-heading {
     margin-bottom: 1rem;
   }
@@ -37,6 +37,7 @@
     font-weight: 500;
     padding: 0.3rem 0;
     color: $gray-600;
+    @include simpleTransition();
     &:hover, &:active, &:focus {
       color: $primary;
     }
@@ -47,8 +48,13 @@
 }
 
 /*
-* Content
+* Content main area of documentation
 */
 #main {
-  padding: 91px 80px 35px 80px;
+  padding: 6.875rem 5rem 2.8125rem 5rem;
+}
+// code example style
+.bd-example {
+  padding: 1.5rem;
+  border-width: 2px!important;
 }

@@ -1,5 +1,10 @@
+// theme mixins
+@import "mixins";
+
 // theme components
 @import "navbar";
+@import "buttons";
+@import "typo";
 
 // theme documantation
 @import "docs";
