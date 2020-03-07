@@ -17,10 +17,14 @@
   position: relative;
   top: 0;
   height: calc(100vh - 4.6875rem);
-  padding: 35px 30px;
+  padding: 2.1875rem 1.875rem;
   overflow-x: hidden;
-  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  overflow-y: hidden; /* Scrollable contents if viewport is shorter than content. */
 
+  &:hover {
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  }
   // sidebar heading userd as menu title
   .sidebar-heading {
     margin-bottom: 1rem;
