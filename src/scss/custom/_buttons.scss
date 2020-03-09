@@ -1,0 +1,67 @@
+.btn {
+  letter-spacing: $btn-letter-spacing;
+  &:not(.dropdown-toggle) {
+    min-width: 10.625rem;
+  }
+}
+.hover-outline {
+  @include hover() {
+    background-color: transparent;
+  }
+}
+.btn-primary {
+  &.hover-outline {
+    @include hover() {
+      color: $primary
+    }
+  }
+}
+.btn-secondary {
+  &.hover-outline {
+    @include hover() {
+      color: $secondary
+    }
+  }
+}
+.btn-success {
+  &.hover-outline {
+    @include hover() {
+      color: $success
+    }
+  }
+}
+.btn-danger {
+  &.hover-outline {
+    @include hover() {
+      color: $danger
+    }
+  }
+}
+.btn-warning {
+  &.hover-outline {
+    @include hover() {
+      color: $warning
+    }
+  }
+}
+.btn-info {
+  &.hover-outline {
+    @include hover() {
+      color: $info
+    }
+  }
+}
+.btn-light {
+  &.hover-outline {
+    @include hover() {
+      color: $light
+    }
+  }
+}
+.btn-dark {
+  &.hover-outline {
+    @include hover() {
+      color: $dark
+    }
+  }
+}
