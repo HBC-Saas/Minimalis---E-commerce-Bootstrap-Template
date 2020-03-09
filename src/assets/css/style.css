@@ -421,8 +421,8 @@ h6, .h6 {
 }
 
 hr {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   border: 0;
   border-top: 1px solid rgba(30, 30, 30, 0.1);
 }
@@ -9662,8 +9662,11 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .btn {
-  min-width: 10.625rem;
   letter-spacing: 0.01563rem;
+}
+
+.btn:not(.dropdown-toggle) {
+  min-width: 10.625rem;
 }
 
 .hover-outline:hover {
@@ -9700,6 +9703,13 @@ a.text-dark:hover, a.text-dark:focus {
 
 .btn-dark.hover-outline:hover {
   color: #1e1e1e;
+}
+
+label {
+  color: #1e1e1e;
+  font-weight: 500;
+  font-size: 0.875rem;
+  letter-spacing: 0.01563rem;
 }
 
 h1, .h1,
