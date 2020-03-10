@@ -4,64 +4,226 @@
     min-width: 10.625rem;
   }
 }
-.hover-outline {
+
+//button links with colors
+@each $color, $value in $theme-colors {
+  .btn-link-#{$color} {
+    color: $value;
+
+    @include hover {
+      color: $value;
+      text-decoration: $link-hover-decoration;
+    }
+
+    &:focus,
+    &.focus {
+      color: $value;
+    }
+
+    &:disabled,
+    &.disabled {
+      pointer-events: none;
+    }
+  }
+}
+
+// hover outline buttons
+@each $color, $value in $theme-colors {
+  .btn-#{$color} {
+    &.hover-outline {
+      @include hover() {
+        background-color: transparent;
+        color: $value;
+      }
+
+      &:not(:disabled):not(.disabled):active,
+      &:not(:disabled):not(.disabled).active,
+      .show > &.dropdown-toggle {
+        color: $value;
+        background-color: transparent;
+      }
+
+      &:disabled,
+      &.disabled {
+        pointer-events: none;
+      }
+    }
+  }
+}
+
+// button arrow style
+.btn-arrow {
+  text-align: left;
+  div {
+    position: relative;
+    display: inline-block;
+    min-width: 0.625rem;
+    margin-right: 4.375rem;
+    @include transition(min-width .8s ease);
+  }
+  .arrow {
+    margin-left: 0.625rem;
+    width: .625rem;
+    height: 1px;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    &:before, &:after {
+      content: ' ';
+      width: 60%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: -1px;
+      transform: rotate(0deg);
+      opacity: 0;
+      visibility: hidden;
+      @include transition(.7s ease);
+    }
+  }
+
+  // button arrow hover effect
+  &:not(.disabled):not(:disabled) {
+    @include hover() {
+      div { min-width: calc(100% - 20px); }
+      .arrow {
+        left: 100%;
+        &:before, &:after {
+          opacity: 1;
+          visibility: visible;
+        }
+        &:before {
+          top: 2px;
+          transform: rotate(-45deg);
+        }
+        &:after {
+          top: -2px;
+          transform: rotate(45deg);
+        }
+      }
+    }
+  }
+}
+// arrow background colors
+@each $color, $value in $theme-colors {
+  .btn-#{$color} {
+    &.btn-arrow {
+      .arrow {
+        background-color: color-yiq($value);
+        &:before { background-color: color-yiq($value); }
+        &:after { background-color: color-yiq($value); }
+      }
+    }
+  }
+}
+
+// arrow link background colors
+@each $color, $value in $theme-colors {
+  .btn-link-#{$color} {
+    &.btn-arrow {
+      .arrow {
+        background-color: $value;
+        &:before { background-color: $value; }
+        &:after { background-color: $value; }
+      }
+    }
+  }
+}
+
+// arrow background colors hover-outline buttons
+@each $color, $value in $theme-colors {
+  .btn-#{$color} {
+    &.hover-outline {
+      &.btn-arrow {
+        @include hover() {
+          .arrow {
+            background-color: $value;
+            &:before { background-color: $value; }
+            &:after { background-color: $value; }
+          }
+        }
+      }
+    }
+  }
+}
+
+// arrow background colors for outline buttons
+@each $color, $value in $theme-colors {
+  .btn-outline-#{$color} {
+    &.btn-arrow {
+      .arrow {
+        background-color: $value;
+        &:before { background-color: $value; }
+        &:after { background-color: $value; }
+      }
+
+      @include hover() {
+        .arrow {
+          background-color: color-yiq($value);
+          &:before { background-color: color-yiq($value); }
+          &:after { background-color: color-yiq($value); }
+        }
+      }
+
+      &:disabled,
+      &.disabled {
+        pointer-events: none;
+      }
+    }
+  }
+}
+
+// Social Networks buttons
+.btn-facebook, .btn-google-plus {
+  border: 1px solid $black;
+  color: $black;
+  text-align: left;
+}
+.text-facebook { color: $facebook; }
+.text-google-plus { color: $google; }
+
+// hover
+.btn-facebook {
   @include hover() {
-    background-color: transparent;
+    background-color: $facebook;
+    border-color: $facebook;
+    color: $white;
+    .text-facebook { color: $white; }
+  }
+
+  &:focus,
+  &.focus {
+    background-color: $facebook;
+    border-color: $facebook;
+    color: $white;
+    .text-facebook { color: $white; }
+  }
+
+  &:disabled,
+  &.disabled {
+    pointer-events: none;
   }
 }
-.btn-primary {
-  &.hover-outline {
-    @include hover() {
-      color: $primary
-    }
+
+.btn-google-plus {
+  @include hover() {
+    background-color: $google;
+    border-color: $google;
+    color: $white;
+    .text-google-plus { color: $white; }
   }
-}
-.btn-secondary {
-  &.hover-outline {
-    @include hover() {
-      color: $secondary
-    }
+
+  &:focus,
+  &.focus {
+    background-color: $google;
+    border-color: $google;
+    color: $white;
+    .text-google-plus { color: $white; }
   }
-}
-.btn-success {
-  &.hover-outline {
-    @include hover() {
-      color: $success
-    }
-  }
-}
-.btn-danger {
-  &.hover-outline {
-    @include hover() {
-      color: $danger
-    }
-  }
-}
-.btn-warning {
-  &.hover-outline {
-    @include hover() {
-      color: $warning
-    }
-  }
-}
-.btn-info {
-  &.hover-outline {
-    @include hover() {
-      color: $info
-    }
-  }
-}
-.btn-light {
-  &.hover-outline {
-    @include hover() {
-      color: $light
-    }
-  }
-}
-.btn-dark {
-  &.hover-outline {
-    @include hover() {
-      color: $dark
-    }
+
+  &:disabled,
+  &.disabled {
+    pointer-events: none;
   }
 }
