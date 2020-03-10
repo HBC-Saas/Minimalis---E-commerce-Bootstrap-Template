@@ -9468,64 +9468,32 @@ button.bg-dark:focus {
   color: #ac9c7f !important;
 }
 
-a.text-primary:hover, a.text-primary:focus {
-  color: #877658 !important;
-}
-
 .text-secondary {
   color: #686868 !important;
-}
-
-a.text-secondary:hover, a.text-secondary:focus {
-  color: #424242 !important;
 }
 
 .text-success {
   color: #87de7d !important;
 }
 
-a.text-success:hover, a.text-success:focus {
-  color: #4fcf40 !important;
-}
-
 .text-info {
   color: #2bb4dd !important;
-}
-
-a.text-info:hover, a.text-info:focus {
-  color: #1a82a2 !important;
 }
 
 .text-warning {
   color: #ddb32b !important;
 }
 
-a.text-warning:hover, a.text-warning:focus {
-  color: #a2821a !important;
-}
-
 .text-danger {
   color: #f90000 !important;
-}
-
-a.text-danger:hover, a.text-danger:focus {
-  color: #ad0000 !important;
 }
 
 .text-light {
   color: #f7f5f6 !important;
 }
 
-a.text-light:hover, a.text-light:focus {
-  color: #d5cbd0 !important;
-}
-
 .text-dark {
   color: #1e1e1e !important;
-}
-
-a.text-dark:hover, a.text-dark:focus {
-  color: black !important;
 }
 
 .text-body {
