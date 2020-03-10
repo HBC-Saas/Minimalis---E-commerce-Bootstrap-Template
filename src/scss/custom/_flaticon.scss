@@ -1,16 +1,16 @@
 /*
-  Flaticon icon font: Flaticon
+  Flaticon icon fonts: Flaticon
   Creation date: 04/03/2020 12:26
 */
 
 @font-face {
   font-family: "Flaticon";
-  src: url("../font/Flaticon.eot");
-  src: url("../font/Flaticon.eot?#iefix") format("embedded-opentype"),
-       url("../font/Flaticon.woff2") format("woff2"),
-       url("../font/Flaticon.woff") format("woff"),
-       url("../font/Flaticon.ttf") format("truetype"),
-       url("../font/Flaticon.svg#Flaticon") format("svg");
+  src: url("../fonts/Flaticon.eot");
+  src: url("../fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/Flaticon.woff2") format("woff2"),
+       url("../fonts/Flaticon.woff") format("woff"),
+       url("../fonts/Flaticon.ttf") format("truetype"),
+       url("../fonts/Flaticon.svg#Flaticon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -18,7 +18,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: "Flaticon";
-    src: url("../font/Flaticon.svg#Flaticon") format("svg");
+    src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
   }
 }
 
@@ -29,7 +29,7 @@
   font-style: normal;
 }
 
-// font-size
+// fonts-size
 [class^="h1"]:before, [class*="h1"]:before,
 [class^="h1"]:after, [class*="h1"]:after {
   font-size: $h1-font-size;
