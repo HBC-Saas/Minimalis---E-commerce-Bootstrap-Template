@@ -182,7 +182,7 @@ $link-decoration:                         none !default;
 $link-hover-color:                        darken($link-color, 0%) !default;
 $link-hover-decoration:                   none !default;
 // Darken percentage for links with `.text-*` class (e.g. `.text-success`)
-$emphasized-link-hover-darken-percentage: 15% !default;
+$emphasized-link-hover-darken-percentage: 0% !default;
 
 // Paragraphs
 //
