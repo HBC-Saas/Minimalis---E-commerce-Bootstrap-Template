@@ -100,7 +100,6 @@ function watchTask() {
 exports.default = series(
     copyVendorTask,
     sassDevTask,
-    cacheBustTask,
     watchTask
 );
 
@@ -142,5 +141,6 @@ function minImgTask() {
 exports.dist = series(
     cleanTask,
     copyTask,
+    cacheBustTask,
     parallel(sassBuildTask, minImgTask)
 );
