@@ -29,6 +29,32 @@
   font-style: normal;
 }
 
+// font-size
+[class^="h1"]:before, [class*="h1"]:before,
+[class^="h1"]:after, [class*="h1"]:after {
+  font-size: $h1-font-size;
+}
+[class^="h2"]:before, [class*="h2"]:before,
+[class^="h2"]:after, [class*="h2"]:after {
+  font-size: $h2-font-size;
+}
+[class^="h3"]:before, [class*="h3"]:before,
+[class^="h3"]:after, [class*="h3"]:after {
+  font-size: $h3-font-size;
+}
+[class^="h4"]:before, [class*="h4"]:before,
+[class^="h4"]:after, [class*="h4"]:after {
+  font-size: $h4-font-size;
+}
+[class^="h5"]:before, [class*="h5"]:before,
+[class^="h5"]:after, [class*="h5"]:after {
+  font-size: $h5-font-size;
+}
+[class^="h6"]:before, [class*="h6"]:before,
+[class^="h6"]:after, [class*="h6"]:after {
+  font-size: $h6-font-size;
+}
+
 .flaticon-shopping-cart:before { content: "\f100"; }
 .flaticon-search:before { content: "\f101"; }
 .flaticon-box:before { content: "\f102"; }
