@@ -1,0 +1,28 @@
+/*
+    Avatars
+   ------------------------
+*/
+
+.avatar {
+  display: inline-block;
+  width: 3.125rem;
+  height: 3.125rem;
+  border: none;
+  border-radius: 50%;
+  background: $white;
+
+  &.avatar-sm {
+    width: 1.875rem;
+    height: 1.875rem;
+  }
+
+  &.avatar-lg {
+    width: 5.625rem;
+    height: 5.625rem;
+  }
+
+  &.avatar-xl {
+    width: 7.8125rem;
+    height: 7.8125rem;
+  }
+}

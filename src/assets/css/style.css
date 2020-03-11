@@ -10418,6 +10418,10 @@ button.bg-dark:focus {
   content: "\f121";
 }
 
+/*
+    Alerts
+   ------------------------
+*/
 .alert-dismissible {
   padding-right: 4.4375rem;
 }
@@ -10448,6 +10452,38 @@ button.bg-dark:focus {
   font-size: 1.625rem;
 }
 
+/*
+    Avatars
+   ------------------------
+*/
+.avatar {
+  display: inline-block;
+  width: 3.125rem;
+  height: 3.125rem;
+  border: none;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.avatar.avatar-sm {
+  width: 1.875rem;
+  height: 1.875rem;
+}
+
+.avatar.avatar-lg {
+  width: 5.625rem;
+  height: 5.625rem;
+}
+
+.avatar.avatar-xl {
+  width: 7.8125rem;
+  height: 7.8125rem;
+}
+
+/*
+    Close
+   ------------------------
+*/
 .close {
   opacity: 1;
 }
@@ -10457,7 +10493,8 @@ button.bg-dark:focus {
 }
 
 /*
-* Navbar
+    Navbar
+   ------------------------
 */
 .navbar-brand {
   font-size: 1.25rem;
@@ -10465,6 +10502,10 @@ button.bg-dark:focus {
   letter-spacing: 0.01875rem;
 }
 
+/*
+    Buttons
+   ------------------------
+*/
 .btn {
   letter-spacing: 0.01563rem;
 }
@@ -11373,6 +11414,10 @@ button.bg-dark:focus {
   pointer-events: none;
 }
 
+/*
+    Forms
+   ------------------------
+*/
 label {
   color: #1e1e1e;
   font-weight: 500;
@@ -11380,6 +11425,10 @@ label {
   letter-spacing: 0.01563rem;
 }
 
+/*
+    Typography
+   ------------------------
+*/
 h1, .h1,
 h2, .h2,
 h3, .h3,
@@ -11398,7 +11447,8 @@ p, a {
 }
 
 /*
-* Sidebar
+    Documentation
+   ------------------------
 */
 .sidebar {
   position: fixed;
