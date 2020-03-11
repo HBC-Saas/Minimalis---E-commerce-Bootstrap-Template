@@ -60,6 +60,11 @@
   font-size: $h6-font-size;
   margin-bottom: 0;
 }
+[class^="small"]:before, [class*="small"]:before,
+[class^="small"]:after, [class*="small"]:after {
+  font-size: $font-size-sm;
+  margin-bottom: 0;
+}
 
 .svg-icon {
   &.h1 {
@@ -90,6 +95,11 @@
   &.h6 {
     width: $h6-font-size;
     height: $h6-font-size;
+    margin-bottom: 0;
+  }
+  &.small {
+    width: $font-size-sm;
+    height: $font-size-sm;
     margin-bottom: 0;
   }
 }
