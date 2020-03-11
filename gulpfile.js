@@ -25,7 +25,7 @@ const files = {
     jsPath: srcFolder + 'assets/js/' + themeFileScriptName + '.js',
 }
 
-// This task Compiles sass into css - no sourcemaps, no autoprefixing, no minification
+// Compiles sass into css - no sourcemaps, no autoprefixing, no minification
 function sassDevTask(){
     return src(files.sassStylePath)
         .pipe(sass({ outputStyle: 'expanded'})).on('error', sass.logError)
@@ -33,7 +33,7 @@ function sassDevTask(){
         .pipe(browserSync.stream());
 }
 
-// This task Compiles sass into css - sourcemaps, autoprefixing, minification
+// Compiles sass into css - sourcemaps, autoprefixing, minification
 function sassBuildTask(){
     return src(files.sassStylePath)
         .pipe(sourcemaps.init())
@@ -68,16 +68,6 @@ function copyVendorTask() {
     })).pipe(dest(srcFolder + 'assets/vendors'));
 }
 
-// Generate a string and place it into html <link> and <script> tags
-// for cache purpose. example: 'style.min.css?cb=123'
-const cbString = new Date().getTime();
-
-function cacheBustTask() {
-    return src([srcFolder + '**/*.html'])
-        .pipe(replace(/cb=\d+/g, 'cb=' + cbString))
-        .pipe(dest(srcFolder + '.'));
-}
-
 // Watch task
 function watchTask() {
     browserSync.init({
@@ -109,12 +99,11 @@ function cleanTask(){
         .pipe(clean());
 }
 
-// Copy files from src folder into dist folder
+// Copies folders from src folder into dist folder
 function copyTask() {
     return src([
         srcFolder + '**/*.*',
         '!' + srcFolder + "/scss/**/*.scss",
-        '!' + srcFolder + "/documentation/**/*.*"
     ], { allowEmpty: true })
         .pipe(dest(distFolder));
 }
@@ -131,6 +120,16 @@ function minImgTask() {
         .pipe(dest(distFolder + 'assets/img'));
 }
 
+// Generate a string and place it into html <link> and <script> tags
+// for cache purpose. example: 'style.min.css?cb=123'
+const cbString = new Date().getTime();
+
+function cacheBustTask() {
+    return src([srcFolder + '**/*.html'])
+        .pipe(replace(/cb=\d+/g, 'cb=' + cbString))
+        .pipe(dest(srcFolder + '.'));
+}
+
 //--------------------------------------------------------------------------------------
 // GULP dist task - type 'gulp dist' in your terminal to execute all tasks listed below
 // 1. cleanTask - clean the 'dist' folder
@@ -141,6 +140,6 @@ function minImgTask() {
 exports.dist = series(
     cleanTask,
     copyTask,
-    cacheBustTask,
-    parallel(sassBuildTask, minImgTask)
+    parallel(sassBuildTask, minImgTask),
+    cacheBustTask
 );
