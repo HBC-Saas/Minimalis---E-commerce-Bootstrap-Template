@@ -62,3 +62,38 @@
   padding: 1.5rem;
   border-width: 2px!important;
 }
+
+.file-structure {
+  position: relative;
+  &:before {
+    content: ' ';
+    width: 1px;
+    height: calc(100% - 30px);
+    background-color: $gray-200;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    z-index: -1;
+    transform: translateY(-50%);
+  }
+  li {
+    margin-bottom: 15px;
+    ul {
+      position: relative;
+      list-style-type: none;
+      padding: 0 0 0 30px;
+      margin: 15px 0;
+      &:before {
+        content: ' ';
+        width: 1px;
+        height: calc(100% - 30px);
+        background-color: $gray-200;
+        position: absolute;
+        left: 40px;
+        top: 50%;
+        z-index: -1;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}

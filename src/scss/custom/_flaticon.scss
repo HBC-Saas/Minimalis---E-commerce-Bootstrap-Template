@@ -33,26 +33,65 @@
 [class^="h1"]:before, [class*="h1"]:before,
 [class^="h1"]:after, [class*="h1"]:after {
   font-size: $h1-font-size;
+  margin-bottom: 0;
 }
 [class^="h2"]:before, [class*="h2"]:before,
 [class^="h2"]:after, [class*="h2"]:after {
   font-size: $h2-font-size;
+  margin-bottom: 0;
 }
 [class^="h3"]:before, [class*="h3"]:before,
 [class^="h3"]:after, [class*="h3"]:after {
   font-size: $h3-font-size;
+  margin-bottom: 0;
 }
 [class^="h4"]:before, [class*="h4"]:before,
 [class^="h4"]:after, [class*="h4"]:after {
   font-size: $h4-font-size;
+  margin-bottom: 0;
 }
 [class^="h5"]:before, [class*="h5"]:before,
 [class^="h5"]:after, [class*="h5"]:after {
   font-size: $h5-font-size;
+  margin-bottom: 0;
 }
 [class^="h6"]:before, [class*="h6"]:before,
 [class^="h6"]:after, [class*="h6"]:after {
   font-size: $h6-font-size;
+  margin-bottom: 0;
+}
+
+.svg-icon {
+  &.h1 {
+    width: $h1-font-size;
+    height: $h1-font-size;
+    margin-bottom: 0;
+  }
+  &.h2 {
+    width: $h2-font-size;
+    height: $h2-font-size;
+    margin-bottom: 0;
+  }
+  &.h3 {
+    width: $h3-font-size;
+    height: $h3-font-size;
+    margin-bottom: 0;
+  }
+  &.h4 {
+    width: $h4-font-size;
+    height: $h4-font-size;
+    margin-bottom: 0;
+  }
+  &.h5 {
+    width: $h5-font-size;
+    height: $h5-font-size;
+    margin-bottom: 0;
+  }
+  &.h6 {
+    width: $h6-font-size;
+    height: $h6-font-size;
+    margin-bottom: 0;
+  }
 }
 
 .flaticon-shopping-cart:before { content: "\f100"; }
@@ -85,6 +124,10 @@
 .flaticon-camera:before { content: "\f11b"; }
 .flaticon-icon-263110:before { content: "\f11c"; }
 .flaticon-plastic-bag:before { content: "\f11d"; }
+.flaticon-null:before { content: "\f11e"; }
+.flaticon-close-1:before { content: "\f11f"; }
+.flaticon-help:before { content: "\f120"; }
+.flaticon-document:before { content: "\f121"; }
     
 $font-Flaticon-shopping-cart: "\f100";
 $font-Flaticon-search: "\f101";
@@ -116,3 +159,7 @@ $font-Flaticon-envelope-1: "\f11a";
 $font-Flaticon-camera: "\f11b";
 $font-Flaticon-icon-263110: "\f11c";
 $font-Flaticon-plastic-bag: "\f11d";
+$font-Flaticon-null: "\f11e";
+$font-Flaticon-close-1: "\f11f";
+$font-Flaticon-help: "\f120";
+$font-Flaticon-document: "\f121";
