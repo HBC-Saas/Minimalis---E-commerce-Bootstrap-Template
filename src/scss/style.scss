@@ -13,6 +13,8 @@
 @import "custom/variables";
 // bootstrap main
 @import "../../node_modules/bootstrap/scss/bootstrap";
+// third party variables
+@import "custom/variables_3rd_party";
 // theme components
 @import "custom/theme";
 // your components
