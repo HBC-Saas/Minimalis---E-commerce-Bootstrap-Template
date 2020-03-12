@@ -285,8 +285,8 @@ $font-family-base:            $font-family-sans-serif !default;
 // stylelint-enable value-keyword-case
 
 $font-size-base:              .875rem !default;
-$font-size-lg:                1rem !default;
-$font-size-sm:                0.75rem !default;
+$font-size-lg:                $font-size-base !default;
+$font-size-sm:                $font-size-base !default;
 
 $font-weight-lighter:         200 !default;
 $font-weight-light:           300 !default;
