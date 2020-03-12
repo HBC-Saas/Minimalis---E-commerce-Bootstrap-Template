@@ -73,17 +73,25 @@ select.selectpicker {
         color: $input-color-placeholder;
       }
 
-      &.btn-primary,
-      &.btn-secondary,
-      &.btn-success,
-      &.btn-danger,
-      &.btn-info,
-      &.btn-dark {
-        &,
-        &:hover,
-        &:focus,
-        &:active {
-          color: $input-alt-color-placeholder;
+      @each $color, $value in $theme-colors {
+        &.btn-#{$color} {
+          &,
+          &:hover,
+          &:focus,
+          &:active {
+            color: color-yiq($value);
+          }
+        }
+      }
+
+      @each $color, $value in $theme-colors {
+        &.btn-outline-#{$color} {
+          color: $value;
+          &:hover,
+          &:focus,
+          &:active {
+            color: color-yiq($value);
+          }
         }
       }
     }
@@ -92,6 +100,14 @@ select.selectpicker {
   &.show {
     .minimalis {
       border-color: $primary;
+    }
+    @each $color, $value in $theme-colors {
+      .btn-outline-#{$color} {
+        color: color-yiq($value);
+        &.bs-placeholder {
+          color: color-yiq($value);
+        }
+      }
     }
   }
 

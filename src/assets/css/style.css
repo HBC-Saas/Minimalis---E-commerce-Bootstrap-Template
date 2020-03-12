@@ -10517,12 +10517,168 @@ select.selectpicker {
   color: #9f9f9f;
 }
 
-.bootstrap-select > .dropdown-toggle.bs-placeholder.btn-primary, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-primary:hover, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-primary:focus, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-primary:active, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-secondary, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-secondary:hover, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-secondary:focus, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-secondary:active, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-success, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-success:hover, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-success:focus, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-success:active, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-danger, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-danger:hover, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-danger:focus, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-danger:active, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-info, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-info:hover, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-info:focus, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-info:active, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-dark, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-dark:hover, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-dark:focus, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-dark:active {
-  color: #9f9f9f;
+.bootstrap-select > .dropdown-toggle.bs-placeholder.btn-primary, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-primary:hover, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-primary:focus, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-primary:active {
+  color: #fff;
+}
+
+.bootstrap-select > .dropdown-toggle.bs-placeholder.btn-secondary, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-secondary:hover, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-secondary:focus, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-secondary:active {
+  color: #fff;
+}
+
+.bootstrap-select > .dropdown-toggle.bs-placeholder.btn-success, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-success:hover, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-success:focus, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-success:active {
+  color: #fff;
+}
+
+.bootstrap-select > .dropdown-toggle.bs-placeholder.btn-info, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-info:hover, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-info:focus, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-info:active {
+  color: #fff;
+}
+
+.bootstrap-select > .dropdown-toggle.bs-placeholder.btn-warning, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-warning:hover, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-warning:focus, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-warning:active {
+  color: #fff;
+}
+
+.bootstrap-select > .dropdown-toggle.bs-placeholder.btn-danger, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-danger:hover, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-danger:focus, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-danger:active {
+  color: #fff;
+}
+
+.bootstrap-select > .dropdown-toggle.bs-placeholder.btn-light, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-light:hover, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-light:focus, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-light:active {
+  color: #1e1e1e;
+}
+
+.bootstrap-select > .dropdown-toggle.bs-placeholder.btn-dark, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-dark:hover, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-dark:focus, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-dark:active {
+  color: #fff;
+}
+
+.bootstrap-select > .dropdown-toggle.bs-placeholder.btn-outline-primary {
+  color: #ac9c7f;
+}
+
+.bootstrap-select > .dropdown-toggle.bs-placeholder.btn-outline-primary:hover, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-outline-primary:focus, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-outline-primary:active {
+  color: #fff;
+}
+
+.bootstrap-select > .dropdown-toggle.bs-placeholder.btn-outline-secondary {
+  color: #686868;
+}
+
+.bootstrap-select > .dropdown-toggle.bs-placeholder.btn-outline-secondary:hover, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-outline-secondary:focus, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-outline-secondary:active {
+  color: #fff;
+}
+
+.bootstrap-select > .dropdown-toggle.bs-placeholder.btn-outline-success {
+  color: #87de7d;
+}
+
+.bootstrap-select > .dropdown-toggle.bs-placeholder.btn-outline-success:hover, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-outline-success:focus, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-outline-success:active {
+  color: #fff;
+}
+
+.bootstrap-select > .dropdown-toggle.bs-placeholder.btn-outline-info {
+  color: #2bb4dd;
+}
+
+.bootstrap-select > .dropdown-toggle.bs-placeholder.btn-outline-info:hover, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-outline-info:focus, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-outline-info:active {
+  color: #fff;
+}
+
+.bootstrap-select > .dropdown-toggle.bs-placeholder.btn-outline-warning {
+  color: #ddb32b;
+}
+
+.bootstrap-select > .dropdown-toggle.bs-placeholder.btn-outline-warning:hover, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-outline-warning:focus, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-outline-warning:active {
+  color: #fff;
+}
+
+.bootstrap-select > .dropdown-toggle.bs-placeholder.btn-outline-danger {
+  color: #f90000;
+}
+
+.bootstrap-select > .dropdown-toggle.bs-placeholder.btn-outline-danger:hover, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-outline-danger:focus, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-outline-danger:active {
+  color: #fff;
+}
+
+.bootstrap-select > .dropdown-toggle.bs-placeholder.btn-outline-light {
+  color: #f7f5f6;
+}
+
+.bootstrap-select > .dropdown-toggle.bs-placeholder.btn-outline-light:hover, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-outline-light:focus, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-outline-light:active {
+  color: #1e1e1e;
+}
+
+.bootstrap-select > .dropdown-toggle.bs-placeholder.btn-outline-dark {
+  color: #1e1e1e;
+}
+
+.bootstrap-select > .dropdown-toggle.bs-placeholder.btn-outline-dark:hover, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-outline-dark:focus, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-outline-dark:active {
+  color: #fff;
 }
 
 .bootstrap-select.show .minimalis {
   border-color: #ac9c7f;
+}
+
+.bootstrap-select.show .btn-outline-primary {
+  color: #fff;
+}
+
+.bootstrap-select.show .btn-outline-primary.bs-placeholder {
+  color: #fff;
+}
+
+.bootstrap-select.show .btn-outline-secondary {
+  color: #fff;
+}
+
+.bootstrap-select.show .btn-outline-secondary.bs-placeholder {
+  color: #fff;
+}
+
+.bootstrap-select.show .btn-outline-success {
+  color: #fff;
+}
+
+.bootstrap-select.show .btn-outline-success.bs-placeholder {
+  color: #fff;
+}
+
+.bootstrap-select.show .btn-outline-info {
+  color: #fff;
+}
+
+.bootstrap-select.show .btn-outline-info.bs-placeholder {
+  color: #fff;
+}
+
+.bootstrap-select.show .btn-outline-warning {
+  color: #fff;
+}
+
+.bootstrap-select.show .btn-outline-warning.bs-placeholder {
+  color: #fff;
+}
+
+.bootstrap-select.show .btn-outline-danger {
+  color: #fff;
+}
+
+.bootstrap-select.show .btn-outline-danger.bs-placeholder {
+  color: #fff;
+}
+
+.bootstrap-select.show .btn-outline-light {
+  color: #1e1e1e;
+}
+
+.bootstrap-select.show .btn-outline-light.bs-placeholder {
+  color: #1e1e1e;
+}
+
+.bootstrap-select.show .btn-outline-dark {
+  color: #fff;
+}
+
+.bootstrap-select.show .btn-outline-dark.bs-placeholder {
+  color: #fff;
 }
 
 .bootstrap-select > select {
