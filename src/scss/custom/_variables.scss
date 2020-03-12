@@ -769,32 +769,32 @@ $navbar-dark-brand-hover-color:           $navbar-dark-active-color !default;
 // Dropdown menu container and contents.
 
 $dropdown-min-width:                10rem !default;
-$dropdown-padding-y:                .5rem !default;
-$dropdown-spacer:                   .125rem !default;
+$dropdown-padding-y:                0 !default;
+$dropdown-spacer:                   .3125rem !default;
 $dropdown-font-size:                $font-size-base !default;
 $dropdown-color:                    $body-color !default;
 $dropdown-bg:                       $white !default;
-$dropdown-border-color:             rgba($black, .15) !default;
-$dropdown-border-radius:            $border-radius !default;
+$dropdown-border-color:             $gray-200 !default; //rgba($black, .15)
+$dropdown-border-radius:            0 !default; //$border-radius
 $dropdown-border-width:             $border-width !default;
 $dropdown-inner-border-radius:      subtract($dropdown-border-radius, $dropdown-border-width) !default;
 $dropdown-divider-bg:               $gray-200 !default;
-$dropdown-divider-margin-y:         $nav-divider-margin-y !default;
-$dropdown-box-shadow:               0 .5rem 1rem rgba($black, .175) !default;
+$dropdown-divider-margin-y:         0 !default; //$nav-divider-margin-y
+$dropdown-box-shadow:               none !default; //0 .5rem 1rem rgba($black, .175)
 
-$dropdown-link-color:               $gray-900 !default;
-$dropdown-link-hover-color:         darken($gray-900, 5%) !default;
+$dropdown-link-color:               $black !default;
+$dropdown-link-hover-color:         $black !default; //darken($gray-900, 5%)
 $dropdown-link-hover-bg:            $gray-100 !default;
 
-$dropdown-link-active-color:        $component-active-color !default;
-$dropdown-link-active-bg:           $component-active-bg !default;
+$dropdown-link-active-color:        $black !default; //$component-active-color
+$dropdown-link-active-bg:           $gray-100 !default; //$component-active-bg
 
 $dropdown-link-disabled-color:      $gray-600 !default;
 
-$dropdown-item-padding-y:           .25rem !default;
-$dropdown-item-padding-x:           1.5rem !default;
+$dropdown-item-padding-y:           .5rem !default;
+$dropdown-item-padding-x:           .9375rem !default;
 
-$dropdown-header-color:             $gray-600 !default;
+$dropdown-header-color:             $black !default;
 
 
 // Pagination
