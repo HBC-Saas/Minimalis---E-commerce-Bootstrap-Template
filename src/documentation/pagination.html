@@ -72,7 +72,7 @@
                                 <a class="nav-link" href="avatars.html">Avatars</a>
                             </li><!-- end nav-item -->
                             <li class="nav-item">
-                                <a class="nav-link active" href="badges.html">Badges</a>
+                                <a class="nav-link" href="badges.html">Badges</a>
                             </li><!-- end nav-item -->
                             <li class="nav-item">
                                 <a class="nav-link" href="breadcrumb.html">Breadcrumb</a>
@@ -90,7 +90,7 @@
                                 <a class="nav-link" href="forms.html">Forms</a>
                             </li><!-- end nav-item -->
                             <li class="nav-item">
-                                <a class="nav-link" href="pagination.html">Pagination</a>
+                                <a class="nav-link active" href="pagination.html">Pagination</a>
                             </li><!-- end nav-item -->
                         </ul><!-- end nav -->
                     </div><!-- end sidebar-sticky -->
@@ -99,16 +99,19 @@
                 <div id="main" class="col-md-9 ml-sm-auto col-lg-10">
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="mb-2 text-primary font-weight-bold">Badges.</h4>
+                            <h4 class="mb-2 text-primary font-weight-bold">Overview.</h4>
 
                             <div class="bd-example border">
-                                    <h1>Example heading <span class="badge badge-primary">New</span></h1>
-                                    <h2>Example heading <span class="badge badge-secondary">New</span></h2>
-                                    <h3>Example heading <span class="badge badge-success">New</span></h3>
-                                    <h4>Example heading <span class="badge badge-danger">New</span></h4>
-                                    <h5>Example heading <span class="badge badge-warning">New</span></h5>
-                                    <h6>Example heading <span class="badge badge-dark">New</span></h6>
-                            </div><!-- end bd-example -->
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination mb-0">
+                                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                    </ul>
+                                </nav>
+                            </div><!-- bd-example -->
                         </div><!-- end col -->
                     </div><!-- end row -->
 
@@ -116,18 +119,27 @@
 
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="mb-2 text-primary font-weight-bold">Contextual variations.</h4>
+                            <h4 class="mb-2 text-primary font-weight-bold">Working with icons.</h4>
 
                             <div class="bd-example border">
-                                <span class="badge badge-primary">Primary</span>
-                                <span class="badge badge-secondary">Secondary</span>
-                                <span class="badge badge-success">Success</span>
-                                <span class="badge badge-danger">Danger</span>
-                                <span class="badge badge-warning">Warning</span>
-                                <span class="badge badge-info">Info</span>
-                                <span class="badge badge-light">Light</span>
-                                <span class="badge badge-dark">Dark</span>
-                            </div><!-- end bd-example -->
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination mb-0">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div><!-- bd-example -->
                         </div><!-- end col -->
                     </div><!-- end row -->
 
@@ -135,18 +147,25 @@
 
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="mb-2 text-primary font-weight-bold">Pill badges.</h4>
+                            <h4 class="mb-2 text-primary font-weight-bold">Disabled and active states.</h4>
 
                             <div class="bd-example border">
-                                <span class="badge badge-pill badge-primary">Primary</span>
-                                <span class="badge badge-pill badge-secondary">Secondary</span>
-                                <span class="badge badge-pill badge-success">Success</span>
-                                <span class="badge badge-pill badge-danger">Danger</span>
-                                <span class="badge badge-pill badge-warning">Warning</span>
-                                <span class="badge badge-pill badge-info">Info</span>
-                                <span class="badge badge-pill badge-light">Light</span>
-                                <span class="badge badge-pill badge-dark">Dark</span>
-                            </div><!-- end bd-example -->
+                                <nav aria-label="...">
+                                    <ul class="pagination mb-0">
+                                        <li class="page-item disabled">
+                                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item active" aria-current="page">
+                                            <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">Next</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div><!-- bd-example -->
                         </div><!-- end col -->
                     </div><!-- end row -->
 
@@ -154,18 +173,48 @@
 
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="mb-2 text-primary font-weight-bold">Links.</h4>
+                            <h4 class="mb-2 text-primary font-weight-bold">Sizing.</h4>
 
                             <div class="bd-example border">
-                                <a href="#" class="badge badge-primary">Primary</a>
-                                <a href="#" class="badge badge-secondary">Secondary</a>
-                                <a href="#" class="badge badge-success">Success</a>
-                                <a href="#" class="badge badge-danger">Danger</a>
-                                <a href="#" class="badge badge-warning">Warning</a>
-                                <a href="#" class="badge badge-info">Info</a>
-                                <a href="#" class="badge badge-light">Light</a>
-                                <a href="#" class="badge badge-dark">Dark</a>
-                            </div><!-- end bd-example -->
+                                <nav aria-label="...">
+                                    <ul class="pagination pagination-lg">
+                                        <li class="page-item active" aria-current="page">
+                                          <span class="page-link">
+                                            1
+                                            <span class="sr-only">(current)</span>
+                                          </span>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    </ul>
+                                </nav>
+
+                                <nav aria-label="...">
+                                    <ul class="pagination">
+                                        <li class="page-item active" aria-current="page">
+                                          <span class="page-link">
+                                            1
+                                            <span class="sr-only">(current)</span>
+                                          </span>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    </ul>
+                                </nav>
+
+                                <nav aria-label="...">
+                                    <ul class="pagination pagination-sm mb-0">
+                                        <li class="page-item active" aria-current="page">
+                                          <span class="page-link">
+                                            1
+                                            <span class="sr-only">(current)</span>
+                                          </span>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    </ul>
+                                </nav>
+                            </div><!-- bd-example -->
                         </div><!-- end col -->
                     </div><!-- end row -->
                 </div><!-- end #main col -->
