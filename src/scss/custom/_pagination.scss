@@ -1,5 +1,14 @@
 .page-link {
   margin-left: 6px;
+  font-size: 12px;
+  [class^="flaticon-"], [class*=" flaticon-"],
+  [class^="flaticon-"], [class*=" flaticon-"] {
+    font-size: 12px;
+  }
+  [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+  [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+    font-size: 12px;
+  }
 }
 
 .page-item {
