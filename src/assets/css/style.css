@@ -10098,8 +10098,8 @@ select.selectpicker {
   color: #fff;
   background-color: #ac9c7f;
   border-color: #ac9c7f;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(30, 30, 30, 0.075);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(30, 30, 30, 0.075);
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 .btn-primary:hover {
@@ -10137,8 +10137,8 @@ select.selectpicker {
   color: #fff;
   background-color: #686868;
   border-color: #686868;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(30, 30, 30, 0.075);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(30, 30, 30, 0.075);
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 .btn-secondary:hover {
@@ -10176,8 +10176,8 @@ select.selectpicker {
   color: #fff;
   background-color: #87de7d;
   border-color: #87de7d;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(30, 30, 30, 0.075);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(30, 30, 30, 0.075);
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 .btn-success:hover {
@@ -10215,8 +10215,8 @@ select.selectpicker {
   color: #fff;
   background-color: #2bb4dd;
   border-color: #2bb4dd;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(30, 30, 30, 0.075);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(30, 30, 30, 0.075);
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 .btn-info:hover {
@@ -10254,8 +10254,8 @@ select.selectpicker {
   color: #fff;
   background-color: #ddb32b;
   border-color: #ddb32b;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(30, 30, 30, 0.075);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(30, 30, 30, 0.075);
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 .btn-warning:hover {
@@ -10293,8 +10293,8 @@ select.selectpicker {
   color: #fff;
   background-color: #f90000;
   border-color: #f90000;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(30, 30, 30, 0.075);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(30, 30, 30, 0.075);
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 .btn-danger:hover {
@@ -10332,8 +10332,8 @@ select.selectpicker {
   color: #1e1e1e;
   background-color: #f7f5f6;
   border-color: #f7f5f6;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(30, 30, 30, 0.075);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(30, 30, 30, 0.075);
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 .btn-light:hover {
@@ -10371,8 +10371,8 @@ select.selectpicker {
   color: #fff;
   background-color: #1e1e1e;
   border-color: #1e1e1e;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(30, 30, 30, 0.075);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(30, 30, 30, 0.075);
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 .btn-dark:hover {
@@ -10731,7 +10731,7 @@ select.selectpicker {
 
 [class^="small"]:before, [class*="small"]:before,
 [class^="small"]:after, [class*="small"]:after {
-  font-size: 0.875rem;
+  font-size: 12px;
   margin-bottom: 0;
 }
 
@@ -11197,6 +11197,7 @@ select.selectpicker {
 
 .close:not(:disabled):not(.disabled):hover, .close:not(:disabled):not(.disabled):focus {
   opacity: 1;
+  outline: none;
 }
 
 /*
@@ -12203,6 +12204,10 @@ h6, .h6 {
 
 p, a {
   letter-spacing: 0.01563rem;
+}
+
+.small {
+  font-size: 12px;
 }
 
 /*
