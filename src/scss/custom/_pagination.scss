@@ -1,0 +1,33 @@
+.page-link {
+  margin-left: 6px;
+}
+
+.page-item {
+  &:first-child {
+    .page-link {
+      @include border-left-radius(0);
+    }
+  }
+  &:last-child {
+    .page-link {
+      @include border-right-radius(0);
+    }
+  }
+  .prev, .next {
+    background-color: $black;
+    border-color: $black;
+    color: $white;
+  }
+}
+
+//
+// Sizing
+//
+
+.pagination-lg {
+  @include pagination-size($pagination-padding-y-lg, $pagination-padding-x-lg, $font-size-lg, $line-height-lg, 0);
+}
+
+.pagination-sm {
+  @include pagination-size($pagination-padding-y-sm, $pagination-padding-x-sm, $font-size-sm, $line-height-sm, 0);
+}
