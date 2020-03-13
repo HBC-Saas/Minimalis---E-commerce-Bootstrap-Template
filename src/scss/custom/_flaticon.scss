@@ -22,6 +22,12 @@
   }
 }
 
+// line height for flaticons
+[class^="flaticon-"], [class*=" flaticon-"],
+[class^="flaticon-"], [class*=" flaticon-"] {
+  line-height: normal;
+}
+
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
   font-family: Flaticon;
@@ -138,7 +144,10 @@
 .flaticon-close-1:before { content: "\f11f"; }
 .flaticon-help:before { content: "\f120"; }
 .flaticon-document:before { content: "\f121"; }
-    
+.flaticon-alert:before { content: "\f122"; }
+.flaticon-next:before { content: "\f123"; }
+.flaticon-left-arrow:before { content: "\f124"; }
+
 $font-Flaticon-shopping-cart: "\f100";
 $font-Flaticon-search: "\f101";
 $font-Flaticon-box: "\f102";
@@ -173,3 +182,6 @@ $font-Flaticon-null: "\f11e";
 $font-Flaticon-close-1: "\f11f";
 $font-Flaticon-help: "\f120";
 $font-Flaticon-document: "\f121";
+$font-Flaticon-alert: "\f122";
+$font-Flaticon-next: "\f123";
+$font-Flaticon-left-arrow: "\f124";
