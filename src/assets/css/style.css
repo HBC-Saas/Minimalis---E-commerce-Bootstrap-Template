@@ -4694,7 +4694,7 @@ input[type="button"].btn-block {
 .page-link {
   position: relative;
   display: block;
-  padding: 0.5625rem 0.9375rem;
+  padding: 0.5625rem 1rem;
   margin-left: -1px;
   line-height: 1.25;
   color: #9f9f9f;
@@ -4743,7 +4743,7 @@ input[type="button"].btn-block {
 }
 
 .pagination-lg .page-link {
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 1.1875rem;
   font-size: 0.875rem;
   line-height: 1.5;
 }
@@ -4759,7 +4759,7 @@ input[type="button"].btn-block {
 }
 
 .pagination-sm .page-link {
-  padding: 0.25rem 0.5rem;
+  padding: 0.25rem 0.6875rem;
   font-size: 0.875rem;
   line-height: 1.5;
 }
@@ -12135,6 +12135,17 @@ label {
 
 .page-link {
   margin-left: 6px;
+  font-size: 12px;
+}
+
+.page-link [class^="flaticon-"], .page-link [class*=" flaticon-"],
+.page-link [class^="flaticon-"], .page-link [class*=" flaticon-"] {
+  font-size: 12px;
+}
+
+.page-link [class^="flaticon-"]:before, .page-link [class*=" flaticon-"]:before,
+.page-link [class^="flaticon-"]:after, .page-link [class*=" flaticon-"]:after {
+  font-size: 12px;
 }
 
 .page-item:first-child .page-link {
@@ -12154,7 +12165,7 @@ label {
 }
 
 .pagination-lg .page-link {
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 1.1875rem;
   font-size: 0.875rem;
   line-height: 1.5;
 }
@@ -12170,7 +12181,7 @@ label {
 }
 
 .pagination-sm .page-link {
-  padding: 0.25rem 0.5rem;
+  padding: 0.25rem 0.6875rem;
   font-size: 0.875rem;
   line-height: 1.5;
 }
