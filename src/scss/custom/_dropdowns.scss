@@ -19,3 +19,9 @@
     @include caret(left);
   }
 }
+
+.show {
+  > .dropdown-toggle {
+    @include caret(up);
+  }
+}
