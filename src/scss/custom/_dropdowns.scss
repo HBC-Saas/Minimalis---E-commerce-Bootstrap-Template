@@ -1,0 +1,21 @@
+.dropdown-toggle {
+  @include caret();
+}
+
+.dropup {
+  .dropdown-toggle {
+    @include caret(up);
+  }
+}
+
+.dropright {
+  .dropdown-toggle {
+    @include caret(right);
+  }
+}
+
+.dropleft {
+  .dropdown-toggle {
+    @include caret(left);
+  }
+}
