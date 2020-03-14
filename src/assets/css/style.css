@@ -11270,6 +11270,25 @@ select.selectpicker {
   margin-left: 0;
 }
 
+.show > .dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 0.15937rem;
+  vertical-align: 0.15937rem;
+  content: "";
+  border-top: 1px solid;
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 1px solid;
+  padding: 0.1875rem;
+  transform: rotate(45deg);
+  vertical-align: 0;
+  margin-top: 5px !important;
+}
+
+.show > .dropdown-toggle:empty::after {
+  margin-left: 0;
+}
+
 /*
     Close
    ------------------------
