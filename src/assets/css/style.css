@@ -12162,18 +12162,10 @@ select.selectpicker {
   pointer-events: none;
 }
 
-.btn-facebook, .btn-google-plus {
+.btn-facebook {
   border: 1px solid #1e1e1e;
   color: #1e1e1e;
   text-align: left;
-}
-
-.text-facebook {
-  color: #4e73bd;
-}
-
-.text-google-plus {
-  color: #e84b36;
 }
 
 .btn-facebook:hover {
@@ -12200,6 +12192,20 @@ select.selectpicker {
   pointer-events: none;
 }
 
+.text-facebook {
+  color: #4e73bd;
+}
+
+.text-facebook {
+  color: #4e73bd;
+}
+
+.btn-google-plus {
+  border: 1px solid #1e1e1e;
+  color: #1e1e1e;
+  text-align: left;
+}
+
 .btn-google-plus:hover {
   background-color: #e84b36;
   border-color: #e84b36;
@@ -12222,6 +12228,14 @@ select.selectpicker {
 
 .btn-google-plus:disabled, .btn-google-plus.disabled {
   pointer-events: none;
+}
+
+.text-google-plus {
+  color: #e84b36;
+}
+
+.text-google-plus {
+  color: #e84b36;
 }
 
 /*
