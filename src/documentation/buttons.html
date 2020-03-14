@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="../assets/css/style.css?cb=1583937029097">
 </head>
     <body>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white border-bottom">
+        <nav class="navbar fixed-top navbar-expand-md navbar-light bg-white border-bottom">
             <a class="navbar-brand" href="#">Minimalis.</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -32,68 +32,112 @@
 
         <div class="container-fluid">
             <div class="row">
-                <nav class="col-md-2 d-none d-md-block bg-light sidebar">
-                    <div class="sidebar-sticky">
-                        <h5 class="sidebar-heading">Overview</h5>
-                        <ul class="nav flex-column">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">Introduction</a>
-                            </li><!-- end nav-item -->
-                            <li class="nav-item">
-                                <a class="nav-link" href="getting-started.html">Getting Started</a>
-                            </li><!-- end nav-item -->
-                            <li class="nav-item">
-                                <a class="nav-link" href="credits.html">Credits</a>
-                            </li><!-- end nav-item -->
-                            <li class="nav-item">
-                                <a class="nav-link" href="changelog.html">Changelog</a>
-                            </li><!-- end nav-item -->
-                            <li class="nav-item">
-                                <a class="nav-link" href="design.html">Design</a>
-                            </li><!-- end nav-item -->
-                        </ul><!-- end nav -->
+                <nav class="navbar navbar-expand-md ml-sm-auto navbar-light bg-light col-md-3 col-lg-3 col-xl-2 sidebar">
+                    <span class="navbar-brand d-md-none">Documentation</span>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#docsCollapse" aria-controls="docsCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                        <h5 class="sidebar-heading">Content</h5>
-                        <ul class="nav flex-column">
-                            <li class="nav-item">
-                                <a class="nav-link" href="typography.html">Typography</a>
-                            </li><!-- end nav-item -->
-                            <li class="nav-item">
-                                <a class="nav-link" href="icons.html">Icons</a>
-                            </li><!-- end nav-item -->
-                        </ul><!-- end nav -->
+                    <!-- Collapse -->
+                    <div class="collapse navbar-collapse" id="docsCollapse">
+                        <div class="sidebar-sticky">
+                            <h5 class="sidebar-heading">Overview</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Introduction</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="getting-started.html">Getting Started</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="changelog.html">Changelog <span class="badge badge-primary">v1.0.0</span></a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="credits.html">Credits</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="design.html">Design</a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
 
-                        <h5 class="sidebar-heading">Components</h5>
-                        <ul class="nav flex-column">
-                            <li class="nav-item">
-                                <a class="nav-link" href="alerts.html">Alerts</a>
-                            </li><!-- end nav-item -->
-                            <li class="nav-item">
-                                <a class="nav-link" href="avatars.html">Avatars</a>
-                            </li><!-- end nav-item -->
-                            <li class="nav-item">
-                                <a class="nav-link" href="badges.html">Badges</a>
-                            </li><!-- end nav-item -->
-                            <li class="nav-item">
-                                <a class="nav-link" href="breadcrumb.html">Breadcrumb</a>
-                            </li><!-- end nav-item -->
-                            <li class="nav-item">
-                                <a class="nav-link active" href="buttons.html">Buttons</a>
-                            </li><!-- end nav-item -->
-                            <li class="nav-item">
-                                <a class="nav-link" href="cards.html">Cards</a>
-                            </li><!-- end nav-item -->
-                            <li class="nav-item">
-                                <a class="nav-link" href="dropdowns.html">Dropdowns</a>
-                            </li><!-- end nav-item -->
-                            <li class="nav-item">
-                                <a class="nav-link" href="forms.html">Forms</a>
-                            </li><!-- end nav-item -->
-                            <li class="nav-item">
-                                <a class="nav-link" href="pagination.html">Pagination</a>
-                            </li><!-- end nav-item -->
-                        </ul><!-- end nav -->
-                    </div><!-- end sidebar-sticky -->
+                            <h5 class="sidebar-heading">Content</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="typography.html">Typography</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="icons.html">Icons</a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
+
+                            <h5 class="sidebar-heading">Components</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="alerts.html">Alerts</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="avatars.html">Avatars</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="badges.html">Badges</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="breadcrumb.html">Breadcrumb</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="buttons.html">Buttons</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="cards.html">Cards</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="carousel.html">Carousel</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="comparison.html">Comparison</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="dropdowns.html">Dropdowns</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="forms.html">Forms</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="modal.html">Modal</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="navbar.html">Navbar</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="navs.html">Navs</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pagination.html">Pagination</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="progress.html">Progress</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="rating.html">Rating</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="review.html">Review</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="spinners.html">Spinners</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="tables.html">Tables</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="toast.html">Toast</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="tooltips.html">Tooltips</a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
+                        </div><!-- end sidebar-sticky -->
+                    </div><!-- end collapse -->
                 </nav><!-- end sidebar -->
 
                 <div id="main" class="col-md-9 ml-sm-auto col-lg-10">

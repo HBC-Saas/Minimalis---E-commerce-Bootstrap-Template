@@ -12328,31 +12328,15 @@ p, a {
    ------------------------
 */
 .sidebar {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 100;
-  /* Behind the navbar */
-  padding: 0;
   margin-top: 4.6875rem;
-  border-right: 2px solid #e9e9e9;
 }
 
 .sidebar-sticky {
   position: relative;
   top: 0;
-  height: calc(100vh - 4.6875rem);
-  padding: 2.1875rem 1.875rem;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  /* Scrollable contents if viewport is shorter than content. */
-}
-
-.sidebar-sticky:hover {
-  overflow-x: hidden;
-  overflow-y: auto;
-  /* Scrollable contents if viewport is shorter than content. */
+  width: 100%;
+  padding-top: 2.1875rem;
+  padding-bottom: 2.1875rem;
 }
 
 .sidebar-sticky .sidebar-heading {
@@ -12388,11 +12372,42 @@ p, a {
   color: #ac9c7f;
 }
 
+@media (min-width: 768px) {
+  .sidebar {
+    padding: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    /* Behind the navbar */
+    border-right: 2px solid #e9e9e9;
+  }
+  .sidebar-sticky {
+    height: calc(100vh - 4.6875rem);
+    padding: 2.1875rem 1.875rem;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    /* Scrollable contents if viewport is shorter than content. */
+  }
+  .sidebar-sticky:hover {
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* Scrollable contents if viewport is shorter than content. */
+  }
+}
+
 /*
 * Content main area of documentation
 */
 #main {
-  padding: 6.875rem 5rem 2.8125rem 5rem;
+  padding: 3.125rem 1.8125rem;
+}
+
+@media (min-width: 768px) {
+  #main {
+    padding: 6.875rem 5rem 2.8125rem 5rem;
+  }
 }
 
 .bd-example {
