@@ -110,6 +110,7 @@
     }
   }
 }
+
 // arrow background colors
 @each $color, $value in $theme-colors {
   .btn-#{$color} {
@@ -179,56 +180,33 @@
   }
 }
 
-// Social Networks buttons
-.btn-facebook, .btn-google-plus {
-  border: 1px solid $black;
-  color: $black;
-  text-align: left;
-}
-.text-facebook { color: $facebook; }
-.text-google-plus { color: $google; }
+// Social buttons
+@each $color, $value in $social-colors {
+  .btn-#{$color} {
+    border: 1px solid $black;
+    color: $black;
+    text-align: left;
 
-// hover
-.btn-facebook {
-  @include hover() {
-    background-color: $facebook;
-    border-color: $facebook;
-    color: $white;
-    .text-facebook { color: $white; }
-  }
+    @include hover() {
+      background-color: $value;
+      border-color: $value;
+      color: $white;
+      .text-#{$color} { color: $white; }
+    }
 
-  &:focus,
-  &.focus {
-    background-color: $facebook;
-    border-color: $facebook;
-    color: $white;
-    .text-facebook { color: $white; }
-  }
+    &:focus,
+    &.focus {
+      background-color: $value;
+      border-color: $value;
+      color: $white;
+      .text-#{$color} { color: $white; }
+    }
 
-  &:disabled,
-  &.disabled {
-    pointer-events: none;
+    &:disabled,
+    &.disabled {
+      pointer-events: none;
+    }
   }
-}
-
-.btn-google-plus {
-  @include hover() {
-    background-color: $google;
-    border-color: $google;
-    color: $white;
-    .text-google-plus { color: $white; }
-  }
-
-  &:focus,
-  &.focus {
-    background-color: $google;
-    border-color: $google;
-    color: $white;
-    .text-google-plus { color: $white; }
-  }
-
-  &:disabled,
-  &.disabled {
-    pointer-events: none;
-  }
+  .text-#{$color} { color: $value; }
+  .text-#{$color} { color: $value; }
 }
