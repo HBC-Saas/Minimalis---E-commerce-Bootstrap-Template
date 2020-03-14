@@ -5,30 +5,18 @@
 
 //sidebar
 .sidebar {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 100; /* Behind the navbar */
-  padding: 0;
   margin-top: 4.6875rem;
-  border-right: 2px solid $gray-200;
 }
 
 //sidebar sticky
 .sidebar-sticky {
   position: relative;
   top: 0;
-  height: calc(100vh - 4.6875rem);
-  padding: 2.1875rem 1.875rem;
-  overflow-x: hidden;
-  overflow-y: hidden; /* Scrollable contents if viewport is shorter than content. */
+  width: 100%;
+  padding-top: 2.1875rem;
+  padding-bottom: 2.1875rem;
 
-  &:hover {
-    overflow-x: hidden;
-    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-  }
-  // sidebar heading userd as menu title
+  // sidebar heading used as menu title
   .sidebar-heading {
     margin-bottom: 1rem;
   }
@@ -54,11 +42,42 @@
   }
 }
 
+@include media-breakpoint-up(md) {
+  //sidebar
+  .sidebar {
+    padding: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100; /* Behind the navbar */
+    border-right: 2px solid $gray-200;
+  }
+
+  //sidebar sticky
+  .sidebar-sticky {
+    height: calc(100vh - 4.6875rem);
+    padding: 2.1875rem 1.875rem;
+    overflow-x: hidden;
+    overflow-y: hidden; /* Scrollable contents if viewport is shorter than content. */
+
+    &:hover {
+      overflow-x: hidden;
+      overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    }
+  }
+}
+
 /*
 * Content main area of documentation
 */
 #main {
-  padding: 6.875rem 5rem 2.8125rem 5rem;
+  padding: 3.125rem 1.8125rem;
+}
+@include media-breakpoint-up(md) {
+  #main {
+    padding: 6.875rem 5rem 2.8125rem 5rem;
+  }
 }
 // code example style
 .bd-example {
