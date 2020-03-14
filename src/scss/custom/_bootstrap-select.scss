@@ -6,12 +6,13 @@
   .minimalis.bs-placeholder {
     border: 1px solid $gray-500;
   }
-
   // The selectpicker button
   > .dropdown-toggle {
+
     &:focus {
       outline: none !important;
     }
+
     &.minimalis:not(.bs-placeholder) {
       border-color: $primary;
     }
@@ -45,6 +46,7 @@
     .minimalis {
       border-color: $primary;
     }
+
     @each $color, $value in $theme-colors {
       .btn-outline-#{$color} {
         color: color-yiq($value);

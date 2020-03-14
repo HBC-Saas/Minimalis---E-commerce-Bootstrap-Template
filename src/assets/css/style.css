@@ -2982,13 +2982,13 @@ input[type="button"].btn-block {
 
 .dropdown-toggle::after {
   display: inline-block;
-  margin-left: 0.255em;
-  vertical-align: 0.255em;
+  margin-left: 0.15937rem;
+  vertical-align: 0.15937rem;
   content: "";
-  border-top: 0.3em solid;
-  border-right: 0.3em solid transparent;
+  border-top: 0.1875rem solid;
+  border-right: 0.1875rem solid transparent;
   border-bottom: 0;
-  border-left: 0.3em solid transparent;
+  border-left: 0.1875rem solid transparent;
 }
 
 .dropdown-toggle:empty::after {
@@ -3078,13 +3078,13 @@ input[type="button"].btn-block {
 
 .dropup .dropdown-toggle::after {
   display: inline-block;
-  margin-left: 0.255em;
-  vertical-align: 0.255em;
+  margin-left: 0.15937rem;
+  vertical-align: 0.15937rem;
   content: "";
   border-top: 0;
-  border-right: 0.3em solid transparent;
-  border-bottom: 0.3em solid;
-  border-left: 0.3em solid transparent;
+  border-right: 0.1875rem solid transparent;
+  border-bottom: 0.1875rem solid;
+  border-left: 0.1875rem solid transparent;
 }
 
 .dropup .dropdown-toggle:empty::after {
@@ -3101,13 +3101,13 @@ input[type="button"].btn-block {
 
 .dropright .dropdown-toggle::after {
   display: inline-block;
-  margin-left: 0.255em;
-  vertical-align: 0.255em;
+  margin-left: 0.15937rem;
+  vertical-align: 0.15937rem;
   content: "";
-  border-top: 0.3em solid transparent;
+  border-top: 0.1875rem solid transparent;
   border-right: 0;
-  border-bottom: 0.3em solid transparent;
-  border-left: 0.3em solid;
+  border-bottom: 0.1875rem solid transparent;
+  border-left: 0.1875rem solid;
 }
 
 .dropright .dropdown-toggle:empty::after {
@@ -3128,8 +3128,8 @@ input[type="button"].btn-block {
 
 .dropleft .dropdown-toggle::after {
   display: inline-block;
-  margin-left: 0.255em;
-  vertical-align: 0.255em;
+  margin-left: 0.15937rem;
+  vertical-align: 0.15937rem;
   content: "";
 }
 
@@ -3139,12 +3139,12 @@ input[type="button"].btn-block {
 
 .dropleft .dropdown-toggle::before {
   display: inline-block;
-  margin-right: 0.255em;
-  vertical-align: 0.255em;
+  margin-right: 0.15937rem;
+  vertical-align: 0.15937rem;
   content: "";
-  border-top: 0.3em solid transparent;
-  border-right: 0.3em solid;
-  border-bottom: 0.3em solid transparent;
+  border-top: 0.1875rem solid transparent;
+  border-right: 0.1875rem solid;
+  border-bottom: 0.1875rem solid transparent;
 }
 
 .dropleft .dropdown-toggle:empty::after {
@@ -11185,6 +11185,89 @@ select.selectpicker {
 .avatar.avatar-xl {
   width: 7.8125rem;
   height: 7.8125rem;
+}
+
+.dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 0.15937rem;
+  vertical-align: 0.15937rem;
+  content: "";
+  border-top: 0;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  border-left: 0;
+  padding: 0.1875rem;
+  transform: rotate(45deg);
+}
+
+.dropdown-toggle:empty::after {
+  margin-left: 0;
+}
+
+.dropup .dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 0.15937rem;
+  vertical-align: 0.15937rem;
+  content: "";
+  border-top: 1px solid;
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 1px solid;
+  padding: 0.1875rem;
+  transform: rotate(45deg);
+  vertical-align: 0;
+  margin-top: 5px !important;
+}
+
+.dropup .dropdown-toggle:empty::after {
+  margin-left: 0;
+}
+
+.dropright .dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 0.15937rem;
+  vertical-align: 0.15937rem;
+  content: "";
+  border-top: 0;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  border-left: 0;
+  padding: 0.1875rem;
+  transform: rotate(-45deg);
+  vertical-align: 1px;
+}
+
+.dropright .dropdown-toggle:empty::after {
+  margin-left: 0;
+}
+
+.dropleft .dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 0.15937rem;
+  vertical-align: 0.15937rem;
+  content: "";
+}
+
+.dropleft .dropdown-toggle::after {
+  display: none;
+}
+
+.dropleft .dropdown-toggle::before {
+  display: inline-block;
+  margin-right: 0.15937rem;
+  vertical-align: 0.15937rem;
+  content: "";
+  border-top: 0;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  border-left: 0;
+  padding: 0.1875rem;
+  transform: rotate(135deg);
+  vertical-align: 1px;
+}
+
+.dropleft .dropdown-toggle:empty::after {
+  margin-left: 0;
 }
 
 /*
