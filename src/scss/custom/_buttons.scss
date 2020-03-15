@@ -59,52 +59,60 @@
 // button arrow style
 .btn-arrow {
   text-align: left;
-  div {
-    position: relative;
-    display: inline-block;
-    min-width: 0.625rem;
-    margin-right: 4.375rem;
-    @include transition(min-width .8s ease);
-  }
-  .arrow {
-    margin-left: 0.625rem;
-    width: .625rem;
-    height: 1px;
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-    left: 100%;
-    &:before, &:after {
-      content: ' ';
-      width: 60%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      right: -1px;
-      transform: rotate(0deg);
-      opacity: 0;
-      visibility: hidden;
-      @include transition(.7s ease);
+  .inner-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .arrow {
+      position: relative;
+      display: inline-block;
+      width: 3.75rem;
+      height: 1rem;
+      margin: 0 .625rem;
+      flex-grow: 1;
+      .arrow-icon {
+        position: absolute;
+        display: inline-block;
+        width: .625rem;
+        height: 1px;
+        top: 50%;
+        left: 0;
+        transition: all 0.2s ease-in-out;
+        &:before, &:after {
+          content: ' ';
+          width: 60%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          right: -1px;
+          transform: rotate(0deg);
+          opacity: 0;
+          visibility: hidden;
+          transition: all 0.2s ease-in-out;
+        }
+        &::before {
+          top: -2px;
+          right: -1px;
+          transform: rotate(45deg);
+        }
+        &::after {
+          top: 2px;
+          right: -1px;
+          transform: rotate(-45deg);
+        }
+      }
     }
   }
 
-  // button arrow hover effect
   &:not(.disabled):not(:disabled) {
     @include hover() {
-      div { min-width: calc(100% - 20px); }
       .arrow {
-        left: 100%;
-        &:before, &:after {
-          opacity: 1;
-          visibility: visible;
-        }
-        &:before {
-          top: 2px;
-          transform: rotate(-45deg);
-        }
-        &:after {
-          top: -2px;
-          transform: rotate(45deg);
+        .arrow-icon {
+          left: 100%;
+          &:before, &:after {
+            opacity: 1;
+            visibility: visible;
+          }
         }
       }
     }
@@ -115,10 +123,9 @@
 @each $color, $value in $theme-colors {
   .btn-#{$color} {
     &.btn-arrow {
-      .arrow {
+      .arrow-icon {
         background-color: color-yiq($value);
-        &:before { background-color: color-yiq($value); }
-        &:after { background-color: color-yiq($value); }
+        &:before, &:after { background-color: color-yiq($value); }
       }
     }
   }
@@ -128,10 +135,9 @@
 @each $color, $value in $theme-colors {
   .btn-link-#{$color} {
     &.btn-arrow {
-      .arrow {
+      .arrow-icon {
         background-color: $value;
-        &:before { background-color: $value; }
-        &:after { background-color: $value; }
+        &:before, &:after { background-color: $value; }
       }
     }
   }
@@ -143,10 +149,9 @@
     &.hover-outline {
       &.btn-arrow {
         @include hover() {
-          .arrow {
+          .arrow-icon {
             background-color: $value;
-            &:before { background-color: $value; }
-            &:after { background-color: $value; }
+            &:before, &:after { background-color: $value; }
           }
         }
       }
@@ -158,17 +163,15 @@
 @each $color, $value in $theme-colors {
   .btn-outline-#{$color} {
     &.btn-arrow {
-      .arrow {
+      .arrow-icon {
         background-color: $value;
-        &:before { background-color: $value; }
-        &:after { background-color: $value; }
+        &:before, &:after { background-color: $value; }
       }
 
       @include hover() {
-        .arrow {
+        .arrow-icon {
           background-color: color-yiq($value);
-          &:before { background-color: color-yiq($value); }
-          &:after { background-color: color-yiq($value); }
+          &:before, &:after { background-color: color-yiq($value); }
         }
       }
 
