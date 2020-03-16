@@ -110,78 +110,82 @@
   }
 }
 
-.flaticon-shopping-cart:before { content: "\f100"; }
-.flaticon-search:before { content: "\f101"; }
-.flaticon-box:before { content: "\f102"; }
-.flaticon-security:before { content: "\f103"; }
-.flaticon-cube:before { content: "\f104"; }
-.flaticon-instagram:before { content: "\f105"; }
-.flaticon-google-plus:before { content: "\f106"; }
-.flaticon-heart:before { content: "\f107"; }
-.flaticon-visibility:before { content: "\f108"; }
-.flaticon-twitter:before { content: "\f109"; }
-.flaticon-facebook:before { content: "\f10a"; }
-.flaticon-pinterest:before { content: "\f10b"; }
-.flaticon-close:before { content: "\f10c"; }
-.flaticon-chair:before { content: "\f10d"; }
-.flaticon-sofa-bed:before { content: "\f10e"; }
-.flaticon-stool:before { content: "\f10f"; }
-.flaticon-stool-1:before { content: "\f110"; }
-.flaticon-sofa:before { content: "\f111"; }
-.flaticon-sofa-1:before { content: "\f112"; }
-.flaticon-lamps:before { content: "\f113"; }
-.flaticon-all:before { content: "\f114"; }
-.flaticon-star:before { content: "\f115"; }
-.flaticon-settings:before { content: "\f116"; }
+.flaticon-envelope:before { content: "\f100"; }
+.flaticon-instagram:before { content: "\f101"; }
+.flaticon-settings:before { content: "\f102"; }
+.flaticon-chair:before { content: "\f103"; }
+.flaticon-security:before { content: "\f104"; }
+.flaticon-plastic-bag:before { content: "\f105"; }
+.flaticon-help:before { content: "\f106"; }
+.flaticon-all:before { content: "\f107"; }
+.flaticon-play-button:before { content: "\f108"; }
+.flaticon-camera:before { content: "\f109"; }
+.flaticon-close:before { content: "\f10a"; }
+.flaticon-null:before { content: "\f10b"; }
+.flaticon-close-1:before { content: "\f10c"; }
+.flaticon-google-plus:before { content: "\f10d"; }
+.flaticon-sofa:before { content: "\f10e"; }
+.flaticon-sofa-bed:before { content: "\f10f"; }
+.flaticon-sofa-1:before { content: "\f110"; }
+.flaticon-stool:before { content: "\f111"; }
+.flaticon-stool-1:before { content: "\f112"; }
+.flaticon-box:before { content: "\f113"; }
+.flaticon-icon-263110:before { content: "\f114"; }
+.flaticon-lamps:before { content: "\f115"; }
+.flaticon-alert:before { content: "\f116"; }
 .flaticon-maps-and-flags:before { content: "\f117"; }
-.flaticon-envelope:before { content: "\f118"; }
-.flaticon-pin:before { content: "\f119"; }
-.flaticon-envelope-1:before { content: "\f11a"; }
-.flaticon-camera:before { content: "\f11b"; }
-.flaticon-icon-263110:before { content: "\f11c"; }
-.flaticon-plastic-bag:before { content: "\f11d"; }
-.flaticon-null:before { content: "\f11e"; }
-.flaticon-close-1:before { content: "\f11f"; }
-.flaticon-help:before { content: "\f120"; }
-.flaticon-document:before { content: "\f121"; }
-.flaticon-alert:before { content: "\f122"; }
-.flaticon-next:before { content: "\f123"; }
-.flaticon-left-arrow:before { content: "\f124"; }
+.flaticon-envelope-1:before { content: "\f118"; }
+.flaticon-search:before { content: "\f119"; }
+.flaticon-pin:before { content: "\f11a"; }
+.flaticon-shopping-cart:before { content: "\f11b"; }
+.flaticon-visibility:before { content: "\f11c"; }
+.flaticon-star:before { content: "\f11d"; }
+.flaticon-document:before { content: "\f11e"; }
+.flaticon-next:before { content: "\f11f"; }
+.flaticon-facebook:before { content: "\f120"; }
+.flaticon-pinterest:before { content: "\f121"; }
+.flaticon-twitter:before { content: "\f122"; }
+.flaticon-cube:before { content: "\f123"; }
+.flaticon-heart:before { content: "\f124"; }
+.flaticon-left-arrow:before { content: "\f125"; }
+.flaticon-play-button-1:before { content: "\f126"; }
 
-$font-Flaticon-shopping-cart: "\f100";
-$font-Flaticon-search: "\f101";
-$font-Flaticon-box: "\f102";
-$font-Flaticon-security: "\f103";
-$font-Flaticon-cube: "\f104";
-$font-Flaticon-instagram: "\f105";
-$font-Flaticon-google-plus: "\f106";
-$font-Flaticon-heart: "\f107";
-$font-Flaticon-visibility: "\f108";
-$font-Flaticon-twitter: "\f109";
-$font-Flaticon-facebook: "\f10a";
-$font-Flaticon-pinterest: "\f10b";
-$font-Flaticon-close: "\f10c";
-$font-Flaticon-chair: "\f10d";
-$font-Flaticon-sofa-bed: "\f10e";
-$font-Flaticon-stool: "\f10f";
-$font-Flaticon-stool-1: "\f110";
-$font-Flaticon-sofa: "\f111";
-$font-Flaticon-sofa-1: "\f112";
-$font-Flaticon-lamps: "\f113";
-$font-Flaticon-all: "\f114";
-$font-Flaticon-star: "\f115";
-$font-Flaticon-settings: "\f116";
+$font-Flaticon-envelope: "\f100";
+$font-Flaticon-instagram: "\f101";
+$font-Flaticon-settings: "\f102";
+$font-Flaticon-chair: "\f103";
+$font-Flaticon-security: "\f104";
+$font-Flaticon-plastic-bag: "\f105";
+$font-Flaticon-help: "\f106";
+$font-Flaticon-all: "\f107";
+$font-Flaticon-play-button: "\f108";
+$font-Flaticon-camera: "\f109";
+$font-Flaticon-close: "\f10a";
+$font-Flaticon-null: "\f10b";
+$font-Flaticon-close-1: "\f10c";
+$font-Flaticon-google-plus: "\f10d";
+$font-Flaticon-sofa: "\f10e";
+$font-Flaticon-sofa-bed: "\f10f";
+$font-Flaticon-sofa-1: "\f110";
+$font-Flaticon-stool: "\f111";
+$font-Flaticon-stool-1: "\f112";
+$font-Flaticon-box: "\f113";
+$font-Flaticon-icon-263110: "\f114";
+$font-Flaticon-lamps: "\f115";
+$font-Flaticon-alert: "\f116";
 $font-Flaticon-maps-and-flags: "\f117";
-$font-Flaticon-envelope: "\f118";
-$font-Flaticon-pin: "\f119";
-$font-Flaticon-envelope-1: "\f11a";
-$font-Flaticon-camera: "\f11b";
-$font-Flaticon-icon-263110: "\f11c";
-$font-Flaticon-plastic-bag: "\f11d";
-$font-Flaticon-null: "\f11e";
-$font-Flaticon-close-1: "\f11f";
-$font-Flaticon-help: "\f120";
-$font-Flaticon-document: "\f121";
-$font-Flaticon-alert: "\f122";
-$font-Flaticon-next: "\f123";
-$font-Flaticon-left-arrow: "\f124";
+$font-Flaticon-envelope-1: "\f118";
+$font-Flaticon-search: "\f119";
+$font-Flaticon-pin: "\f11a";
+$font-Flaticon-shopping-cart: "\f11b";
+$font-Flaticon-visibility: "\f11c";
+$font-Flaticon-star: "\f11d";
+$font-Flaticon-document: "\f11e";
+$font-Flaticon-next: "\f11f";
+$font-Flaticon-facebook: "\f120";
+$font-Flaticon-pinterest: "\f121";
+$font-Flaticon-twitter: "\f122";
+$font-Flaticon-cube: "\f123";
+$font-Flaticon-heart: "\f124";
+$font-Flaticon-left-arrow: "\f125";
+$font-Flaticon-play-button-1: "\f126";
