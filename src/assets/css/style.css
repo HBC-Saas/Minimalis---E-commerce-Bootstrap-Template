@@ -12197,6 +12197,53 @@ label {
   letter-spacing: 0.01563rem;
 }
 
+.qty-container {
+  width: 5.375rem;
+  min-height: 40px;
+}
+
+.qty-container .input-group-append {
+  border: 1px solid #9f9f9f;
+  flex-direction: column;
+}
+
+.qty-container .input-group-append .qty {
+  height: 50%;
+  line-height: 8px;
+  padding-left: 9px;
+  padding-right: 9px;
+  background-color: transparent;
+  border: none;
+  color: #9f9f9f;
+}
+
+.qty-container .input-group-append .qty .flaticon-play-button,
+.qty-container .input-group-append .qty .flaticon-play-button-1 {
+  display: inline-block;
+  font-size: 8px;
+}
+
+.qty-container .input-group-append .qty .flaticon-play-button::before,
+.qty-container .input-group-append .qty .flaticon-play-button-1::before {
+  font-size: 8px;
+}
+
+.qty-container .input-group-append .qty .flaticon-play-button {
+  transform: rotate(-90deg);
+}
+
+.qty-container .input-group-append .qty .flaticon-play-button-1 {
+  transform: rotate(-90deg);
+}
+
+.qty-container .input-group-append .qty:hover {
+  outline: none;
+}
+
+.qty-container .input-group-append .qty:focus, .qty-container .input-group-append .qty:active {
+  outline: none;
+}
+
 .page-link {
   margin-left: 6px;
   font-size: 12px;
