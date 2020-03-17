@@ -40,10 +40,15 @@ label {
         transform: rotate(-90deg);
       }
 
-      @include hover() { outline: none; }
+      @include hover() {
+        outline: none;
+        color: $black;
+      }
 
       &:focus,
-      &:active { outline: none; }
+      &:active {
+        outline: none;
+      }
     }
   }
 }

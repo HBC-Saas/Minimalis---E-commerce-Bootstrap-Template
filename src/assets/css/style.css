@@ -12238,6 +12238,7 @@ label {
 
 .qty-container .input-group-append .qty:hover {
   outline: none;
+  color: #1e1e1e;
 }
 
 .qty-container .input-group-append .qty:focus, .qty-container .input-group-append .qty:active {
