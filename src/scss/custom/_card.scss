@@ -1,0 +1,63 @@
+.card {
+  .card-img {
+    position: relative;
+  }
+  // card actions
+  .card-action {
+    position: absolute;
+    top: 1.25rem;
+    background-color: transparent;
+    border: none;
+    [class^="flaticon-"], [class*=" flaticon-"],
+    [class^="flaticon-"], [class*=" flaticon-"] {
+      font-size: 1.5625rem;
+      line-height: 1.5625rem;
+      color: $black;
+      &::before {
+        font-size: 1.5625rem;
+        line-height: 1.5625rem;
+      }
+    }
+
+    &:focus,
+    &:active {
+      outline: none;
+    }
+
+    &.action-left {
+      left: 1.25rem;
+    }
+    &.action-right {
+      right: 1.25rem;
+    }
+
+    &.active {
+      [class^="flaticon-"], [class*=" flaticon-"],
+      [class^="flaticon-"], [class*=" flaticon-"] {
+        color: $primary;
+      }
+    }
+  }
+
+  // add-to-card
+  .add-to-card {
+    position: absolute;
+    bottom: -1.5625rem;
+    right: 1.875rem;
+    background-color: $white;
+    border: 3px solid $primary;
+    font-size: $font-size-base;
+    padding: .625rem .75rem;
+    height: 3.125rem;
+    min-width: 3.125rem;
+    border-radius: 1.5625rem;
+    .r-45 {
+      display: inline-block;
+      transform: rotate(45deg)
+    }
+    .add-to-card-hover {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+  }
+}
