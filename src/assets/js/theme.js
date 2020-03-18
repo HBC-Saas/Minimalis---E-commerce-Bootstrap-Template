@@ -29,6 +29,16 @@ $(document).ready(function(){
             if(value > valMin) $input.val(value - 1);
         }
     });
+
+    // actions active class
+    $('.card-action').on('click', function () {
+        $(this).toggleClass('active');
+    })
+
+    // button add to card
+    $('.card .add-to-card').on('click', function () {
+
+    })
 });
 
 // init Cocoen
