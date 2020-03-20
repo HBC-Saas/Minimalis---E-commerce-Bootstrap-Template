@@ -11334,16 +11334,16 @@ select.selectpicker {
   }
 }
 
-.card .card-img .zoom-in:hover img {
+.card .card-img:hover .zoom-in img {
   transform: scale(1.2);
+}
+
+.card .card-img:hover .zoom-out img {
+  transform: scale(1);
 }
 
 .card .card-img .zoom-out img {
   transform: scale(1.2);
-}
-
-.card .card-img .zoom-out:hover img {
-  transform: scale(1);
 }
 
 .card .card-img .btn-add-to-card {
@@ -11360,6 +11360,18 @@ select.selectpicker {
 .card .card-img:hover .hover-card-action {
   opacity: 1;
   visibility: visible;
+}
+
+.card.luxury-card .btn-add-to-card {
+  bottom: -1.125rem;
+}
+
+.card.luxury-card .btn-add-to-card.btn-lg, .card.luxury-card .btn-group-lg > .btn-add-to-card.btn {
+  bottom: -1.4375rem;
+}
+
+.card.luxury-card .btn-add-to-card.btn-sm, .card.luxury-card .btn-group-sm > .btn-add-to-card.btn {
+  bottom: -1rem;
 }
 
 .card .card-action {
