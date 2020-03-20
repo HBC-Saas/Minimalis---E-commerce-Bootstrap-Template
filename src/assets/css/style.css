@@ -10934,6 +10934,10 @@ select.selectpicker {
   content: "\f126";
 }
 
+.flaticon-plus:before {
+  content: "\f127";
+}
+
 /*
     Alerts
    ------------------------
@@ -11352,29 +11356,6 @@ select.selectpicker {
   color: #ac9c7f;
 }
 
-.card .add-to-card {
-  position: absolute;
-  bottom: -1.5625rem;
-  right: 1.875rem;
-  background-color: #fff;
-  border: 3px solid #ac9c7f;
-  font-size: 0.875rem;
-  padding: .625rem .75rem;
-  height: 3.125rem;
-  min-width: 3.125rem;
-  border-radius: 1.5625rem;
-}
-
-.card .add-to-card .r-45 {
-  display: inline-block;
-  transform: rotate(45deg);
-}
-
-.card .add-to-card .add-to-card-hover {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
 .list-group-flush .list-group-item {
   border-right-width: 0;
   border-left-width: 0;
@@ -11698,7 +11679,13 @@ select.selectpicker {
   height: 1px;
   top: 50%;
   left: 0;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-arrow .inner-btn .arrow .arrow-icon {
+    transition: none;
+  }
 }
 
 .btn-arrow .inner-btn .arrow .arrow-icon:before, .btn-arrow .inner-btn .arrow .arrow-icon:after {
@@ -11711,7 +11698,13 @@ select.selectpicker {
   transform: rotate(0deg);
   opacity: 0;
   visibility: hidden;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-arrow .inner-btn .arrow .arrow-icon:before, .btn-arrow .inner-btn .arrow .arrow-icon:after {
+    transition: none;
+  }
 }
 
 .btn-arrow .inner-btn .arrow .arrow-icon::before {
@@ -12161,6 +12154,137 @@ select.selectpicker {
 
 .text-google-plus {
   color: #e84b36;
+}
+
+.btn-add-to-card {
+  background-color: #fff;
+  border: 3px solid #ac9c7f;
+  height: 2.5rem;
+  min-width: 2.5rem;
+  border-radius: 1.5625rem;
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  /* hover */
+  /* loading */
+}
+
+.btn-add-to-card.btn-lg, .btn-group-lg > .btn-add-to-card.btn {
+  height: 3.125rem;
+  min-width: 3.125rem;
+}
+
+.btn-add-to-card.btn-lg .add-to-card-hover .add-to-card-text, .btn-group-lg > .btn-add-to-card.btn .add-to-card-hover .add-to-card-text {
+  padding: 0 1.125rem;
+}
+
+.btn-add-to-card.btn-sm, .btn-group-sm > .btn-add-to-card.btn {
+  height: 2.1875rem;
+  min-width: 2.1875rem;
+}
+
+.btn-add-to-card.btn-sm .add-to-card-hover .add-to-card-text, .btn-group-sm > .btn-add-to-card.btn .add-to-card-hover .add-to-card-text {
+  padding: 0 0.75rem;
+}
+
+.btn-add-to-card .add-to-card-active,
+.btn-add-to-card .add-to-card-success,
+.btn-add-to-card .add-to-card-hover {
+  display: inline-block;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.2s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-add-to-card .add-to-card-active,
+  .btn-add-to-card .add-to-card-success,
+  .btn-add-to-card .add-to-card-hover {
+    transition: none;
+  }
+}
+
+.btn-add-to-card .add-to-card-active,
+.btn-add-to-card .add-to-card-success {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-add-to-card .add-to-card-active {
+  left: 50%;
+}
+
+.btn-add-to-card .add-to-card-success {
+  opacity: 0;
+  visibility: hidden;
+  left: 100%;
+}
+
+.btn-add-to-card .add-to-card-hover {
+  width: 0;
+  margin-left: 25px;
+}
+
+.btn-add-to-card .add-to-card-hover .add-to-card-text {
+  white-space: nowrap;
+  padding: 0 0.9375rem;
+}
+
+.btn-add-to-card:active, .btn-add-to-card:focus {
+  outline: none;
+}
+
+.btn-add-to-card:hover .add-to-card-hover {
+  margin-left: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+.btn-add-to-card:hover .add-to-card-active,
+.btn-add-to-card:hover .add-to-card-success {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.btn-add-to-card:hover .add-to-card-active {
+  left: -100%;
+}
+
+.btn-add-to-card.loading .add-to-card-active,
+.btn-add-to-card.loading .add-to-card-hover, .btn-add-to-card.success .add-to-card-active,
+.btn-add-to-card.success .add-to-card-hover {
+  opacity: 0;
+  visibility: hidden;
+  left: -100%;
+  width: 0;
+}
+
+.btn-add-to-card.loading:hover .add-to-card-active,
+.btn-add-to-card.loading:hover .add-to-card-hover, .btn-add-to-card.success:hover .add-to-card-active,
+.btn-add-to-card.success:hover .add-to-card-hover {
+  opacity: 0;
+  visibility: hidden;
+  left: -100%;
+  width: 0 !important;
+}
+
+.btn-add-to-card.loading:not(.success), .btn-add-to-card.success:not(.success) {
+  border-left-color: #907e5e;
+  animation: loadingRotate .5s ease .1s infinite;
+}
+
+.btn-add-to-card.success .add-to-card-success {
+  opacity: 1;
+  visibility: visible;
+  left: 50%;
+}
+
+@keyframes loadingRotate {
+  0% {
+    transform: rotate(-360deg);
+  }
 }
 
 .cocoen {

@@ -77,7 +77,7 @@
         height: 1px;
         top: 50%;
         left: 0;
-        transition: all 0.2s ease-in-out;
+        @include transition(all 0.2s ease);
         &:before, &:after {
           content: ' ';
           width: 60%;
@@ -88,7 +88,7 @@
           transform: rotate(0deg);
           opacity: 0;
           visibility: hidden;
-          transition: all 0.2s ease-in-out;
+          @include transition(all 0.2s ease);
         }
         &::before {
           top: -2px;
@@ -212,4 +212,122 @@
   }
   .text-#{$color} { color: $value; }
   .text-#{$color} { color: $value; }
+}
+
+// Add to card BUTTON
+.btn-add-to-card {
+  background-color: $white;
+  border: 3px solid $primary;
+  height: 2.5rem;
+  min-width: 2.5rem;
+  border-radius: 1.5625rem;
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  // sizes
+  &.btn-lg {
+    height: 3.125rem;
+    min-width: 3.125rem;
+    .add-to-card-hover {
+      .add-to-card-text {
+        padding: 0 $btn-padding-x-lg;
+      }
+    }
+  }
+  &.btn-sm {
+    height: 2.1875rem;
+    min-width: 2.1875rem;
+    .add-to-card-hover {
+      .add-to-card-text {
+        padding: 0 $btn-padding-x-sm;
+      }
+    }
+  }
+  .add-to-card-active,
+  .add-to-card-success,
+  .add-to-card-hover {
+    display: inline-block;
+    opacity: 1;
+    visibility: visible;
+    @include transition(all 0.2s ease);
+  }
+  .add-to-card-active,
+  .add-to-card-success {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .add-to-card-active {
+    left: 50%;
+  }
+  .add-to-card-success {
+    opacity: 0;
+    visibility: hidden;
+    left: 100%;
+  }
+  .add-to-card-hover {
+    width: 0;
+    margin-left: 25px;
+    .add-to-card-text {
+      white-space: nowrap;
+      padding: 0 $btn-padding-x;
+    }
+  }
+
+  &:active,
+  &:focus { outline: none; }
+
+  /* hover */
+  @include hover() {
+    .add-to-card-hover {
+      margin-left: 0;
+      opacity: 1;
+      visibility: visible;
+    }
+    .add-to-card-active,
+    .add-to-card-success {
+      opacity: 0;
+      visibility: hidden;
+    }
+    .add-to-card-active { left: -100%; }
+  }
+
+  /* loading */
+  &.loading,
+  &.success {
+    .add-to-card-active,
+    .add-to-card-hover {
+      opacity: 0;
+      visibility: hidden;
+      left: -100%;
+      width: 0;
+    }
+    @include hover() {
+      .add-to-card-active,
+      .add-to-card-hover {
+        opacity: 0;
+        visibility: hidden;
+        left: -100%;
+        width: 0!important;
+      }
+    }
+    &:not(.success) {
+      border-left-color: darken($primary, 12%);
+      animation: loadingRotate .5s ease .1s infinite;
+    }
+  }
+  &.success {
+    .add-to-card-success {
+      opacity: 1;
+      visibility: visible;
+      left: 50%;
+    }
+  }
+}
+
+@keyframes loadingRotate {
+  0% {
+    transform: rotate(-360deg);
+  }
 }

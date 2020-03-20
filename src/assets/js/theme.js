@@ -33,12 +33,34 @@ $(document).ready(function(){
     // actions active class
     $('.card-action').on('click', function () {
         $(this).toggleClass('active');
-    })
+    });
 
     // button add to card
-    $('.card .add-to-card').on('click', function () {
+    $('.btn-add-to-card:not(.loading):not(.success)').hover(function(){
+        var textWidth = $(this).find(".add-to-card-text").innerWidth();
+        $(this).find('.add-to-card-hover').width(textWidth);
+    }, function() {
+        $('.add-to-card-hover').width(0);
+    });
 
-    })
+    $('.btn-add-to-card:not(.loading):not(.success)').on('click', function(){
+        if (!$(this).data('isClicked')) {
+            var _this = $(this);
+
+            $(this).addClass('loading');
+            _this.data('isClicked', true);
+
+            setTimeout(function () {
+                _this.addClass('success');
+                _this.removeClass('loading');
+            }, 3000);
+
+            setTimeout(function () {
+                _this.removeClass('success');
+                _this.removeData('isClicked')
+            }, 5500);
+        }
+    });
 });
 
 // init Cocoen
