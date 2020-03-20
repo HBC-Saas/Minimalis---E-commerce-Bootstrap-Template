@@ -11319,11 +11319,60 @@ select.selectpicker {
   position: relative;
 }
 
-.card .card-action {
+.card .card-img figure {
+  overflow: hidden;
+}
+
+.card .card-img figure img {
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card .card-img figure img {
+    transition: none;
+  }
+}
+
+.card .card-img .zoom-in:hover img {
+  transform: scale(1.2);
+}
+
+.card .card-img .zoom-out img {
+  transform: scale(1.2);
+}
+
+.card .card-img .zoom-out:hover img {
+  transform: scale(1);
+}
+
+.card .card-img .btn-add-to-card {
   position: absolute;
-  top: 1.25rem;
+  bottom: -15px;
+  right: 30px;
+}
+
+.card .card-img .hover-card-action {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.card .card-img:hover .hover-card-action {
+  opacity: 1;
+  visibility: visible;
+}
+
+.card .card-action {
+  transition: all 0.2s ease;
+  position: absolute;
   background-color: transparent;
   border: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card .card-action {
+    transition: none;
+  }
 }
 
 .card .card-action [class^="flaticon-"], .card .card-action [class*=" flaticon-"],
@@ -11341,6 +11390,14 @@ select.selectpicker {
 
 .card .card-action:focus, .card .card-action:active {
   outline: none;
+}
+
+.card .card-action.action-top {
+  top: 1.25rem;
+}
+
+.card .card-action.action-bottom {
+  bottom: 1.25rem;
 }
 
 .card .card-action.action-left {
@@ -12223,6 +12280,7 @@ select.selectpicker {
 }
 
 .btn-add-to-card .add-to-card-hover {
+  white-space: nowrap;
   width: 0;
   margin-left: 25px;
 }
@@ -12271,7 +12329,7 @@ select.selectpicker {
 }
 
 .btn-add-to-card.loading:not(.success), .btn-add-to-card.success:not(.success) {
-  border-left-color: #907e5e;
+  border-left-color: #877658;
   animation: loadingRotate .5s ease .1s infinite;
 }
 

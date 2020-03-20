@@ -267,6 +267,7 @@
     left: 100%;
   }
   .add-to-card-hover {
+    white-space: nowrap;
     width: 0;
     margin-left: 25px;
     .add-to-card-text {
@@ -313,7 +314,7 @@
       }
     }
     &:not(.success) {
-      border-left-color: darken($primary, 12%);
+      border-left-color: darken($primary, 15%);
       animation: loadingRotate .5s ease .1s infinite;
     }
   }
