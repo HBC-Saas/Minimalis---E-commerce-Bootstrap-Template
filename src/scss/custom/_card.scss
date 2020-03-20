@@ -26,8 +26,8 @@
     // add to card button
     .btn-add-to-card {
       position: absolute;
-      bottom: -15px;
-      right: 30px;
+      bottom: -0.9375rem;
+      right: 1.875rem;
     }
 
     // hover card action
@@ -100,16 +100,16 @@
       }
       .title-block {
         position: absolute;
-        bottom: 12px;
-        left: 25px;
-        right: 25px;
+        bottom: 0.75rem;
+        left: 1.5625rem;
+        right: 1.5625rem;
         z-index: 9;
         transform: translate3d(0, 100%, 0);
         @include transition(0.2s ease);
         .title {
           position: absolute;
           bottom: 100%;
-          margin-bottom: 7px;
+          margin-bottom: 0.4375rem;
         }
       }
       @include hover() {
