@@ -53,12 +53,12 @@ $(document).ready(function(){
             setTimeout(function () {
                 _this.addClass('success');
                 _this.removeClass('loading');
-            }, 3000);
+            }, 2000);
 
             setTimeout(function () {
                 _this.removeClass('success');
                 _this.removeData('isClicked')
-            }, 5500);
+            }, 4500);
         }
     });
 });

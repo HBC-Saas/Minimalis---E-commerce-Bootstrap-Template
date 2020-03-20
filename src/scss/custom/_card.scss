@@ -1,11 +1,53 @@
+// Product cards
 .card {
   .card-img {
     position: relative;
+
+    // figure zoom effects
+    figure {
+      overflow: hidden;
+      img {
+        @include transition(all 0.2s ease);
+        width: 100%;
+      }
+    }
+    .zoom-in {
+      @include hover() {
+       img { transform: scale(1.2); }
+      }
+    }
+    .zoom-out {
+      img {
+        transform: scale(1.2);
+      }
+      @include hover() {
+        img { transform: scale(1); }
+      }
+    }
+
+    // add to card button
+    .btn-add-to-card {
+      position: absolute;
+      bottom: -15px;
+      right: 30px;
+    }
+
+    // hover card action
+    .hover-card-action {
+      opacity: 0;
+      visibility: hidden;
+    }
+    @include hover() {
+      .hover-card-action {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
   }
   // card actions
   .card-action {
+    @include transition(all 0.2s ease);
     position: absolute;
-    top: 1.25rem;
     background-color: transparent;
     border: none;
     [class^="flaticon-"], [class*=" flaticon-"],
@@ -20,16 +62,12 @@
     }
 
     &:focus,
-    &:active {
-      outline: none;
-    }
+    &:active { outline: none; }
 
-    &.action-left {
-      left: 1.25rem;
-    }
-    &.action-right {
-      right: 1.25rem;
-    }
+    &.action-top { top: 1.25rem;}
+    &.action-bottom { bottom: 1.25rem; }
+    &.action-left { left: 1.25rem; }
+    &.action-right { right: 1.25rem; }
 
     &.active {
       [class^="flaticon-"], [class*=" flaticon-"],
