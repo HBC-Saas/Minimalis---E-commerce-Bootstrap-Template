@@ -430,7 +430,7 @@ hr {
 
 small,
 .small {
-  font-size: 100%;
+  font-size: 0.75rem;
   font-weight: 400;
 }
 
@@ -470,7 +470,7 @@ mark,
 
 .blockquote-footer {
   display: block;
-  font-size: 100%;
+  font-size: 0.75rem;
   color: #9f9f9f;
 }
 
@@ -2040,7 +2040,7 @@ textarea.form-control {
   display: none;
   width: 100%;
   margin-top: 0.625rem;
-  font-size: 100%;
+  font-size: 0.75rem;
   color: #87de7d;
 }
 
@@ -2140,7 +2140,7 @@ textarea.form-control {
   display: none;
   width: 100%;
   margin-top: 0.625rem;
-  font-size: 100%;
+  font-size: 0.75rem;
   color: #f90000;
 }
 
@@ -12676,24 +12676,35 @@ p, a {
 }
 
 .small {
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
-/*---------------
- Rate stars -----
----------------*/
-.rate-star {
-  float: left;
-}
-
-.rate-star label {
-  margin-right: 0.313rem;
+/*--------------------------
+ Rate and rating stars -----
+--------------------------*/
+.rate-star label,
+.rating label {
+  margin-right: 0.625rem;
   color: #e9e9e9;
   margin-bottom: 0;
 }
 
-.rate-star label i::before {
-  font-size: 24px;
+.rate-star label i::before,
+.rating label i::before {
+  font-size: 1.625rem;
+}
+
+.rating label {
+  color: #9f9f9f;
+}
+
+.rating label:last-child {
+  margin-right: 0;
+}
+
+.rate-star {
+  display: inline-flex;
+  flex-direction: row-reverse;
 }
 
 .rate-star:not(:checked) > input {
@@ -12702,7 +12713,6 @@ p, a {
 
 .rate-star:not(:checked) > label {
   cursor: pointer;
-  float: right;
   transition: 0.2s ease;
 }
 
