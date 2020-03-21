@@ -1,0 +1,40 @@
+/*---------------
+ Rate stars -----
+---------------*/
+.rate-star {
+  float: left;
+  label {
+    margin-right: 0.313rem;
+    color: $gray-200;
+    margin-bottom: 0;
+    i {
+      &::before { font-size: 24px; }
+    }
+  }
+}
+
+.rate-star:not(:checked) > input {
+  display: none;
+}
+
+.rate-star:not(:checked) > label {
+  cursor: pointer;
+  float: right;
+  @include transition(.2s ease);
+}
+.rate-star > input:checked ~ label {
+  color: $primary;
+}
+
+.rate-star:not(:checked) > label:hover,
+.rate-star:not(:checked) > label:hover ~ label {
+  color: $gray-500;
+}
+
+.rate-star > input:checked + label:hover,
+.rate-star > input:checked + label:hover ~ label,
+.rate-star > input:checked ~ label:hover,
+.rate-star > input:checked ~ label:hover ~ label,
+.rate-star > label:hover ~ input:checked ~ label {
+  color: $primary;
+}
