@@ -10663,6 +10663,10 @@ select.selectpicker {
   box-shadow: 0 0 0 0 rgba(30, 30, 30, 0.5);
 }
 
+.font-weight-medium {
+  font-weight: 500 !important;
+}
+
 /*
   Flaticon icon fonts: Flaticon
   Creation date: 04/03/2020 12:26
@@ -11348,8 +11352,8 @@ select.selectpicker {
 
 .card .card-img .btn-add-to-card {
   position: absolute;
-  bottom: -15px;
-  right: 30px;
+  bottom: -0.9375rem;
+  right: 1.875rem;
 }
 
 .card .card-img .hover-card-action {
@@ -11442,9 +11446,9 @@ select.selectpicker {
 
 .card.blog-card .card-img .title-block {
   position: absolute;
-  bottom: 12px;
-  left: 25px;
-  right: 25px;
+  bottom: 0.75rem;
+  left: 1.5625rem;
+  right: 1.5625rem;
   z-index: 9;
   transform: translate3d(0, 100%, 0);
   transition: 0.2s ease;
@@ -11459,11 +11463,54 @@ select.selectpicker {
 .card.blog-card .card-img .title-block .title {
   position: absolute;
   bottom: 100%;
-  margin-bottom: 7px;
+  margin-bottom: 0.4375rem;
 }
 
 .card.blog-card .card-img:hover .title-block {
   transform: translate3d(0, 0, 0);
+}
+
+.accordion .card {
+  overflow: hidden;
+  border-color: transparent;
+  margin-bottom: 1.25rem;
+}
+
+.accordion .card .card-header {
+  border-radius: 4px;
+  border-bottom-color: transparent;
+}
+
+.accordion .card .plus-after {
+  position: relative;
+  padding-right: 1.5rem;
+}
+
+.accordion .card .plus-after::before, .accordion .card .plus-after::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 0.75rem;
+  height: 0.125rem;
+  background-color: #1e1e1e;
+}
+
+.accordion .card .plus-after::before {
+  transform: translateY(-50%) rotate(90deg);
+  display: none;
+}
+
+.accordion .card .plus-after::after {
+  transform: translateY(-50%);
+}
+
+.accordion .card [aria-expanded=false] .plus-after::before {
+  display: block;
+}
+
+.accordion .card [aria-expanded=true] .card-header {
+  background-color: transparent;
 }
 
 .list-group-flush .list-group-item {
