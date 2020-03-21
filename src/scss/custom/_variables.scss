@@ -70,6 +70,7 @@ $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
+$gray:          $gray-500 !default;
 $light:         $gray-100 !default;
 $dark:          $black !default;
 
@@ -83,6 +84,7 @@ $theme-colors: map-merge(
     "info":       $info,
     "warning":    $warning,
     "danger":     $danger,
+    "gray":       $gray,
     "light":      $light,
     "dark":       $dark
   ),
@@ -154,8 +156,9 @@ $spacers: map-merge(
     1: ($spacer * .25),
     2: ($spacer * .5),
     3: $spacer,
-    4: ($spacer * 1.5),
-    5: ($spacer * 3)
+    4: ($spacer * 1.5625),
+    5: ($spacer * 3.125),
+    6: ($spacer * 4.375)
   ),
   $spacers
 );
@@ -352,6 +355,7 @@ $blockquote-small-font-size:  $small-font-size !default;
 $blockquote-font-size:        $font-size-base * 1.25 !default;
 
 $hr-border-color:             rgba($black, .1) !default;
+$hr-border-color-2:           rgba($white, .1) !default;
 $hr-border-width:             $border-width !default;
 
 $mark-padding:                .2em !default;

@@ -23,3 +23,13 @@ p, a {
 .small {
   font-size: $small-font-size;
 }
+
+// divider
+hr {
+  &.border-white {
+    border-top: $hr-border-width solid $hr-border-color-2!important;
+  }
+}
+
+// line heights
+.line-height-18 { line-height: 18px; }
