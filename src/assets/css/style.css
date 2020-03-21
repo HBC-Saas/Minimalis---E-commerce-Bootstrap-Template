@@ -12679,6 +12679,56 @@ p, a {
   font-size: 12px;
 }
 
+/*---------------
+ Rate stars -----
+---------------*/
+.rate-star {
+  float: left;
+}
+
+.rate-star label {
+  margin-right: 0.313rem;
+  color: #e9e9e9;
+  margin-bottom: 0;
+}
+
+.rate-star label i::before {
+  font-size: 24px;
+}
+
+.rate-star:not(:checked) > input {
+  display: none;
+}
+
+.rate-star:not(:checked) > label {
+  cursor: pointer;
+  float: right;
+  transition: 0.2s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rate-star:not(:checked) > label {
+    transition: none;
+  }
+}
+
+.rate-star > input:checked ~ label {
+  color: #ac9c7f;
+}
+
+.rate-star:not(:checked) > label:hover,
+.rate-star:not(:checked) > label:hover ~ label {
+  color: #9f9f9f;
+}
+
+.rate-star > input:checked + label:hover,
+.rate-star > input:checked + label:hover ~ label,
+.rate-star > input:checked ~ label:hover,
+.rate-star > input:checked ~ label:hover ~ label,
+.rate-star > label:hover ~ input:checked ~ label {
+  color: #ac9c7f;
+}
+
 /*
     Documentation
    ------------------------
