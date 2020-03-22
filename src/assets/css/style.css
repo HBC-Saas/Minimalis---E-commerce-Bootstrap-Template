@@ -365,7 +365,7 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
   font-weight: 500;
-  line-height: 2.3125rem;
+  line-height: 1.5;
   color: #1e1e1e;
 }
 
@@ -401,25 +401,25 @@ h6, .h6 {
 .display-1 {
   font-size: 4.375rem;
   font-weight: 400;
-  line-height: 2.3125rem;
+  line-height: 1.5;
 }
 
 .display-2 {
   font-size: 3.75rem;
   font-weight: 400;
-  line-height: 2.3125rem;
+  line-height: 1.5;
 }
 
 .display-3 {
   font-size: 3.125rem;
   font-weight: 400;
-  line-height: 2.3125rem;
+  line-height: 1.5;
 }
 
 .display-4 {
   font-size: 2.5rem;
   font-weight: 400;
-  line-height: 2.3125rem;
+  line-height: 1.5;
 }
 
 hr {
@@ -14833,6 +14833,30 @@ h4, .h4,
 h5, .h5,
 h6, .h6 {
   letter-spacing: 0.03125rem;
+}
+
+h1, .h1 {
+  line-height: 2.375rem;
+}
+
+h2, .h2 {
+  line-height: 2.125rem;
+}
+
+h3, .h3 {
+  line-height: 1.75rem;
+}
+
+h4, .h4 {
+  line-height: 1.625rem;
+}
+
+h5, .h5 {
+  line-height: 1.375rem;
+}
+
+h6, .h6 {
+  line-height: 1.125rem;
 }
 
 .lead {
