@@ -14855,9 +14855,47 @@ hr.border-white {
   line-height: 18px;
 }
 
-.list-inline .sep-line:after {
-  content: '|';
-  margin-left: .625rem;
+.sep-line:not(:last-child) {
+  line-height: .875rem;
+  padding-right: 1.5rem;
+  margin-right: 1.25rem;
+  border-right: 1px solid #ffffff;
+}
+
+.sep-line:not(:last-child).line-primary {
+  border-right: 1px solid #ac9c7f !important;
+}
+
+.sep-line:not(:last-child).line-secondary {
+  border-right: 1px solid #686868 !important;
+}
+
+.sep-line:not(:last-child).line-success {
+  border-right: 1px solid #87de7d !important;
+}
+
+.sep-line:not(:last-child).line-info {
+  border-right: 1px solid #2bb4dd !important;
+}
+
+.sep-line:not(:last-child).line-warning {
+  border-right: 1px solid #ddb32b !important;
+}
+
+.sep-line:not(:last-child).line-danger {
+  border-right: 1px solid #f90000 !important;
+}
+
+.sep-line:not(:last-child).line-light {
+  border-right: 1px solid #f7f5f6 !important;
+}
+
+.sep-line:not(:last-child).line-dark {
+  border-right: 1px solid #1e1e1e !important;
+}
+
+.sep-line:not(:last-child).line-gray {
+  border-right: 1px solid #9f9f9f !important;
 }
 
 /*--------------------------
