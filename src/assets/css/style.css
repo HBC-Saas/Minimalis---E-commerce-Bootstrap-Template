@@ -399,25 +399,25 @@ h6, .h6 {
 }
 
 .display-1 {
-  font-size: 6rem;
+  font-size: 4.375rem;
   font-weight: 400;
   line-height: 1.5;
 }
 
 .display-2 {
-  font-size: 5.5rem;
+  font-size: 3.75rem;
   font-weight: 400;
   line-height: 1.5;
 }
 
 .display-3 {
-  font-size: 4.5rem;
+  font-size: 3.125rem;
   font-weight: 400;
   line-height: 1.5;
 }
 
 .display-4 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 400;
   line-height: 1.5;
 }
@@ -11228,6 +11228,30 @@ select.selectpicker {
   font-style: normal;
 }
 
+[class^="display-1"]:before, [class*="display-1"]:before,
+[class^="display-1"]:after, [class*="display-1"]:after {
+  font-size: 4.375rem;
+  margin-bottom: 0;
+}
+
+[class^="display-2"]:before, [class*="display-2"]:before,
+[class^="display-2"]:after, [class*="display-2"]:after {
+  font-size: 3.75rem;
+  margin-bottom: 0;
+}
+
+[class^="display-3"]:before, [class*="display-3"]:before,
+[class^="display-3"]:after, [class*="display-3"]:after {
+  font-size: 3.125rem;
+  margin-bottom: 0;
+}
+
+[class^="display-4"]:before, [class*="display-4"]:before,
+[class^="display-4"]:after, [class*="display-4"]:after {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+}
+
 [class^="h1"]:before, [class*="h1"]:before,
 [class^="h1"]:after, [class*="h1"]:after {
   font-size: 1.875rem;
@@ -13299,6 +13323,10 @@ h6, .h6 {
 
 p, a {
   letter-spacing: 0.01563rem;
+}
+
+.font-size-16 {
+  font-size: 16px;
 }
 
 .small {
