@@ -36,6 +36,26 @@
 }
 
 // fonts-size
+[class^="display-1"]:before, [class*="display-1"]:before,
+[class^="display-1"]:after, [class*="display-1"]:after {
+  font-size: $display1-size;
+  margin-bottom: 0;
+}
+[class^="display-2"]:before, [class*="display-2"]:before,
+[class^="display-2"]:after, [class*="display-2"]:after {
+  font-size: $display2-size;
+  margin-bottom: 0;
+}
+[class^="display-3"]:before, [class*="display-3"]:before,
+[class^="display-3"]:after, [class*="display-3"]:after {
+  font-size: $display3-size;
+  margin-bottom: 0;
+}
+[class^="display-4"]:before, [class*="display-4"]:before,
+[class^="display-4"]:after, [class*="display-4"]:after {
+  font-size: $display4-size;
+  margin-bottom: 0;
+}
 [class^="h1"]:before, [class*="h1"]:before,
 [class^="h1"]:after, [class*="h1"]:after {
   font-size: $h1-font-size;
