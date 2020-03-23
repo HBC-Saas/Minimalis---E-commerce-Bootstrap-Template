@@ -17,6 +17,88 @@
     </head>
     <body>
 
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+        <a href="index.html" class="navbar-brand mr-0 order-1 order-lg-2">
+            Minimalis.
+        </a>
+        <button class="navbar-toggler order-2" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse order-3 order-lg-1" id="navbarMenu" style="flex-basis: 100%">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Shop
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown-1">
+                        <li><a class="dropdown-item" href="#">Home</a></li>
+                        <li><a class="dropdown-item" href="#">Home</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Blog
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown-2">
+                        <li><a class="dropdown-item" href="#">Home</a></li>
+                        <li><a class="dropdown-item" href="#">Home</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Pages
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown-3">
+                        <li><a class="dropdown-item" href="#">Home</a></li>
+                        <li><a class="dropdown-item" href="#">Home</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="documentation/index.html" target="_blank">
+                        Docs
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <ul class="navbar-nav justify-content-end ml-auto order-4 order-lg-3" style="flex-basis: 100%">
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="flaticon-search text-dark h4"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="flaticon-heart text-dark h4"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="flaticon-shopping-cart text-dark h4"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="flaticon-user text-dark h4"></i></a>
+            </li>
+        </ul>
+    </nav><!-- end header -->
+
+    <!-- start slider section -->
+    <section class="border-bottom">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6 bg-light py-6">
+                    Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+                </div><!-- end col -->
+                <div class="col-sm-6 py-6">
+                    Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container-fluid -->
+    </section>
+    <!-- end slider section -->
+
     <!-- start Luxury section -->
     <section class="pt-6 pb-7 bg-white border-bottom">
         <div class="container">
@@ -360,29 +442,33 @@
         <div class="position-relative bg-dark py-11">
             <div class="container">
                 <div class="row align-self-lg-center">
-                    <div class="col-lg-6">
-                        <h1 class="font-weight-bold text-white mb-3">Say hello to our consultant.</h1>
-                        <p class="text-light lead mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's</p>
+                    <div class="col-lg-8">
+                        <div class="row justify-content-around">
+                            <div class="col-sm-10">
+                                <h1 class="font-weight-bold text-white mb-3">Say hello to our consultant.</h1>
+                                <p class="text-light lead mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                    Lorem Ipsum has been the industry's</p>
 
-                        <ul class="list-inline mb-4">
-                            <li class="list-inline-item sep-line line-gray text-light">+42 123 456 789</li>
-                            <li class="list-inline-item sep-line line-gray text-light">+42 321 654 987</li>
-                        </ul>
+                                <ul class="list-inline mb-4">
+                                    <li class="list-inline-item sep-line line-gray text-light">+42 123 456 789</li>
+                                    <li class="list-inline-item sep-line line-gray text-light">+42 321 654 987</li>
+                                </ul>
 
-                        <button type="button" class="btn btn-outline-light btn-arrow">
-                            <div class="inner-btn">
-                                Contact
-                                <div class="arrow">
-                                    <span class="arrow-icon"></span>
-                                </div>
-                            </div>
-                        </button>
+                                <button type="button" class="btn btn-outline-light btn-arrow">
+                                    <div class="inner-btn">
+                                        Contact
+                                        <div class="arrow">
+                                            <span class="arrow-icon"></span>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div><!-- end col -->
+                        </div><!-- end row -->
                     </div><!-- end col -->
                 </div><!-- end row -->
             </div><!-- end container -->
 
-            <div class="d-none d-lg-inline-block col-lg-5 position-absolute-top-right bg-img-hero" style="min-height: 100%; background-image: url(./assets/img/contact/phone_img.png);"></div>
+            <div class="d-none d-lg-inline-block col-lg-4 position-absolute-top-right bg-img-hero" style="min-height: 100%; background-image: url(./assets/img/contact/phone_img.png);"></div>
         </div><!-- end position-relative -->
         <!-- end contact section -->
 

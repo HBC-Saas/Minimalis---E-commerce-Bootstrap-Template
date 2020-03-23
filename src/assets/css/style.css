@@ -4170,7 +4170,7 @@ input[type="button"].btn-block {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 0.8125rem 1.875rem;
+  padding: 0.8125rem 0.9375rem;
 }
 
 .navbar .container,
@@ -4185,7 +4185,7 @@ input[type="button"].btn-block {
   display: inline-block;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  margin-right: 1.875rem;
+  margin-right: 0.9375rem;
   font-size: 0.875rem;
   line-height: inherit;
   white-space: nowrap;
@@ -13012,6 +13012,10 @@ select.selectpicker {
 
 .flaticon-plus:before {
   content: "\f127";
+}
+
+.flaticon-user:before {
+  content: "\f128";
 }
 
 /*
