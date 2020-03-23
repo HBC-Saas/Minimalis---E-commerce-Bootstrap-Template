@@ -41,7 +41,7 @@ hr {
 // line heights
 .line-height-18 { line-height: 18px; }
 
-// list style
+// list style ( seperation line )
 
 .sep-line:not(:last-child) {
   line-height: .875rem;
@@ -51,6 +51,42 @@ hr {
   @each $color, $value in $theme-colors {
     &.line-#{$color} {
       border-right: 1px solid $value !important;
+    }
+  }
+}
+
+// list style ( link underline )
+
+@each $color, $value in $theme-colors {
+  &.link-underline-#{$color} {
+    li {
+      a {
+        position: relative;
+        &::after {
+          content: ' ';
+          position: absolute;
+          bottom: -3px;
+          left: 0;
+          width: 0;
+          height: 1px;
+          background-color: $value;
+          @include transition(all 0.2s ease);
+        }
+        @include hover() {
+          &::after {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// text hover
+@each $color, $value in $theme-colors {
+  .text-hover-#{$color} {
+    @include hover() {
+      color: $value!important;
     }
   }
 }
