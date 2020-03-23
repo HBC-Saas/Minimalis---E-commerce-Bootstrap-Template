@@ -14922,6 +14922,267 @@ hr.border-white {
   border-right: 1px solid #9f9f9f !important;
 }
 
+.link-underline-primary li a {
+  position: relative;
+}
+
+.link-underline-primary li a::after {
+  content: ' ';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #ac9c7f;
+  transition: all 0.2s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .link-underline-primary li a::after {
+    transition: none;
+  }
+}
+
+.link-underline-primary li a:hover::after {
+  width: 100%;
+}
+
+.link-underline-secondary li a {
+  position: relative;
+}
+
+.link-underline-secondary li a::after {
+  content: ' ';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #686868;
+  transition: all 0.2s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .link-underline-secondary li a::after {
+    transition: none;
+  }
+}
+
+.link-underline-secondary li a:hover::after {
+  width: 100%;
+}
+
+.link-underline-success li a {
+  position: relative;
+}
+
+.link-underline-success li a::after {
+  content: ' ';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #87de7d;
+  transition: all 0.2s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .link-underline-success li a::after {
+    transition: none;
+  }
+}
+
+.link-underline-success li a:hover::after {
+  width: 100%;
+}
+
+.link-underline-info li a {
+  position: relative;
+}
+
+.link-underline-info li a::after {
+  content: ' ';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #2bb4dd;
+  transition: all 0.2s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .link-underline-info li a::after {
+    transition: none;
+  }
+}
+
+.link-underline-info li a:hover::after {
+  width: 100%;
+}
+
+.link-underline-warning li a {
+  position: relative;
+}
+
+.link-underline-warning li a::after {
+  content: ' ';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #ddb32b;
+  transition: all 0.2s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .link-underline-warning li a::after {
+    transition: none;
+  }
+}
+
+.link-underline-warning li a:hover::after {
+  width: 100%;
+}
+
+.link-underline-danger li a {
+  position: relative;
+}
+
+.link-underline-danger li a::after {
+  content: ' ';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #f90000;
+  transition: all 0.2s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .link-underline-danger li a::after {
+    transition: none;
+  }
+}
+
+.link-underline-danger li a:hover::after {
+  width: 100%;
+}
+
+.link-underline-light li a {
+  position: relative;
+}
+
+.link-underline-light li a::after {
+  content: ' ';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #f7f5f6;
+  transition: all 0.2s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .link-underline-light li a::after {
+    transition: none;
+  }
+}
+
+.link-underline-light li a:hover::after {
+  width: 100%;
+}
+
+.link-underline-dark li a {
+  position: relative;
+}
+
+.link-underline-dark li a::after {
+  content: ' ';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #1e1e1e;
+  transition: all 0.2s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .link-underline-dark li a::after {
+    transition: none;
+  }
+}
+
+.link-underline-dark li a:hover::after {
+  width: 100%;
+}
+
+.link-underline-gray li a {
+  position: relative;
+}
+
+.link-underline-gray li a::after {
+  content: ' ';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #9f9f9f;
+  transition: all 0.2s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .link-underline-gray li a::after {
+    transition: none;
+  }
+}
+
+.link-underline-gray li a:hover::after {
+  width: 100%;
+}
+
+.text-hover-primary:hover {
+  color: #ac9c7f !important;
+}
+
+.text-hover-secondary:hover {
+  color: #686868 !important;
+}
+
+.text-hover-success:hover {
+  color: #87de7d !important;
+}
+
+.text-hover-info:hover {
+  color: #2bb4dd !important;
+}
+
+.text-hover-warning:hover {
+  color: #ddb32b !important;
+}
+
+.text-hover-danger:hover {
+  color: #f90000 !important;
+}
+
+.text-hover-light:hover {
+  color: #f7f5f6 !important;
+}
+
+.text-hover-dark:hover {
+  color: #1e1e1e !important;
+}
+
+.text-hover-gray:hover {
+  color: #9f9f9f !important;
+}
+
 /*--------------------------
  Rate and rating stars -----
 --------------------------*/
