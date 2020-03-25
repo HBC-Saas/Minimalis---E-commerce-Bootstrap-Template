@@ -33,7 +33,7 @@
 
     @include hover() {
       .nav-link {
-        i { color: $primary !important; }
+        color: $primary !important;
       }
     }
   }
@@ -218,6 +218,7 @@
 
       @include hover-focus() {
         color: $navbar-light-hover-color;
+        border-bottom-color: $black;
       }
 
       &.disabled {
