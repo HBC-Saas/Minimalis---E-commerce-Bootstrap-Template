@@ -20,39 +20,77 @@
 .navbar-icons {
   flex-direction: row;
 
-  .nav-link {
-    padding-top: $navbar-nav-link-padding-y;
-    padding-bottom: $navbar-nav-link-padding-y;
-  }
-
   .nav-item {
     margin-right: $navbar-nav-link-margin-x;
     margin-left: $navbar-nav-link-margin-x;
+
     &:first-child {
       margin-left: 0;
     }
     &:last-child {
       margin-right: 0;
     }
+
+    @include hover() {
+      .nav-link {
+        i { color: $primary !important; }
+      }
+    }
+  }
+
+  .nav-link {
+    padding-top: $navbar-nav-link-padding-y;
+    padding-bottom: $navbar-nav-link-padding-y;
+    i {
+      &::before { font-size: 18px; }
+    }
   }
 }
 
-// Button for toggling the navbar when in its collapsed state
-.navbar-toggler {
-  padding: $navbar-toggler-padding-y $navbar-toggler-padding-x;
-  @include font-size($navbar-toggler-font-size);
-  line-height: 1;
-  background-color: transparent; // remove default button style
-  border: $border-width solid transparent; // remove default button style
-  @include border-radius($navbar-toggler-border-radius);
+// custom toggler
+.custom-toggler {
+  position: relative;
+  padding-left: 0;
+  width: 27px;
+  height: 27px;
+  background-image: none;
 
   @include hover-focus() {
-    text-decoration: none;
+    outline: none;
+  }
+
+  .navbar-toggler-icon {
+    width: 14px;
+    height: 3px;
+    background-color: $black;
+    @include transition(all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.2s);
+    &::before, &::after {
+      @include transition(all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.2s);
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 24px;
+      height: 3px;
+      background-color: $black;
+    }
+    &::before { top: 3px; }
+    &::after { top: 21px; }
+  }
+  &[aria-expanded="true"] {
+    .navbar-toggler-icon {
+      width: 0;
+      &::before {
+        top: 11px;
+        transform: rotate(45deg);
+      }
+      &::after {
+        top: 11px;
+        transform: rotate(-45deg);
+      }
+    }
   }
 }
 
-// Keep as a separate element so folks can easily override it with another icon
-// or image file as needed.
 .navbar-toggler-icon {
   display: inline-block;
   width: 1.5em;
@@ -62,6 +100,10 @@
   background: no-repeat center center;
   background-size: 100% 100%;
 }
+
+// flex basic
+.flex-basic-30 { flex-basis: 30%; }
+.flex-basic-100 { flex-basis: 100%; }
 
 // Generate series of `.navbar-expand-*` responsive classes for configuring
 // where your navbar collapses.
@@ -86,6 +128,13 @@
           > .container#{breakpoint-infix($size, $container-max-widths)} {
             @extend %container-navbar-expand-#{$breakpoint};
           }
+        }
+        .navbar-collapse {
+          border-top: 1px solid $gray-200;
+          margin-left: -15px;
+          margin-right: -15px;
+          padding-left: 15px;
+          padding-right: 15px;
         }
       }
 

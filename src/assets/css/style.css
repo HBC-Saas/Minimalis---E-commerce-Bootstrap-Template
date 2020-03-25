@@ -13646,11 +13646,6 @@ select.selectpicker {
   flex-direction: row;
 }
 
-.navbar-icons .nav-link {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
 .navbar-icons .nav-item {
   margin-right: 0.9375rem;
   margin-left: 0.9375rem;
@@ -13664,17 +13659,80 @@ select.selectpicker {
   margin-right: 0;
 }
 
-.navbar-toggler {
-  padding: 0.25rem 0.75rem;
-  font-size: 0.875rem;
-  line-height: 1;
-  background-color: transparent;
-  border: 1px solid transparent;
-  border-radius: 0;
+.navbar-icons .nav-item:hover .nav-link i {
+  color: #ac9c7f !important;
 }
 
-.navbar-toggler:hover, .navbar-toggler:focus {
-  text-decoration: none;
+.navbar-icons .nav-link {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.navbar-icons .nav-link i::before {
+  font-size: 18px;
+}
+
+.custom-toggler {
+  position: relative;
+  padding-left: 0;
+  width: 27px;
+  height: 27px;
+  background-image: none;
+}
+
+.custom-toggler:hover, .custom-toggler:focus {
+  outline: none;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  width: 14px;
+  height: 3px;
+  background-color: #1e1e1e;
+  transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.2s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .custom-toggler .navbar-toggler-icon {
+    transition: none;
+  }
+}
+
+.custom-toggler .navbar-toggler-icon::before, .custom-toggler .navbar-toggler-icon::after {
+  transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.2s;
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 24px;
+  height: 3px;
+  background-color: #1e1e1e;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .custom-toggler .navbar-toggler-icon::before, .custom-toggler .navbar-toggler-icon::after {
+    transition: none;
+  }
+}
+
+.custom-toggler .navbar-toggler-icon::before {
+  top: 3px;
+}
+
+.custom-toggler .navbar-toggler-icon::after {
+  top: 21px;
+}
+
+.custom-toggler[aria-expanded="true"] .navbar-toggler-icon {
+  width: 0;
+}
+
+.custom-toggler[aria-expanded="true"] .navbar-toggler-icon::before {
+  top: 11px;
+  transform: rotate(45deg);
+}
+
+.custom-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+  top: 11px;
+  transform: rotate(-45deg);
 }
 
 .navbar-toggler-icon {
@@ -13687,11 +13745,26 @@ select.selectpicker {
   background-size: 100% 100%;
 }
 
+.flex-basic-30 {
+  flex-basis: 30%;
+}
+
+.flex-basic-100 {
+  flex-basis: 100%;
+}
+
 @media (max-width: 575.98px) {
   .navbar-expand-sm > .container,
   .navbar-expand-sm > .container-fluid, .navbar-expand-sm > .container-sm, .navbar-expand-sm > .container-md, .navbar-expand-sm > .container-lg, .navbar-expand-sm > .container-xl {
     padding-right: 0;
     padding-left: 0;
+  }
+  .navbar-expand-sm .navbar-collapse {
+    border-top: 1px solid #e9e9e9;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -13739,6 +13812,13 @@ select.selectpicker {
     padding-right: 0;
     padding-left: 0;
   }
+  .navbar-expand-md .navbar-collapse {
+    border-top: 1px solid #e9e9e9;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -13785,6 +13865,13 @@ select.selectpicker {
     padding-right: 0;
     padding-left: 0;
   }
+  .navbar-expand-lg .navbar-collapse {
+    border-top: 1px solid #e9e9e9;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -13830,6 +13917,13 @@ select.selectpicker {
   .navbar-expand-xl > .container-fluid, .navbar-expand-xl > .container-sm, .navbar-expand-xl > .container-md, .navbar-expand-xl > .container-lg, .navbar-expand-xl > .container-xl {
     padding-right: 0;
     padding-left: 0;
+  }
+  .navbar-expand-xl .navbar-collapse {
+    border-top: 1px solid #e9e9e9;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -13880,6 +13974,14 @@ select.selectpicker {
 .navbar-expand > .container-fluid, .navbar-expand > .container-sm, .navbar-expand > .container-md, .navbar-expand > .container-lg, .navbar-expand > .container-xl {
   padding-right: 0;
   padding-left: 0;
+}
+
+.navbar-expand .navbar-collapse {
+  border-top: 1px solid #e9e9e9;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .navbar-expand .navbar-nav {
