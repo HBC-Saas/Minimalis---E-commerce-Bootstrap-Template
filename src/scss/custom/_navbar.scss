@@ -161,7 +161,8 @@
 
       @include media-breakpoint-up($next) {
         .hovered-nav {
-          .dropdown {
+          .dropdown,
+          .dropdown-submenu {
             .dropdown-menu {
               display: block;
               visibility: hidden;
@@ -238,6 +239,27 @@
 
           .show > .dropdown-toggle {
             @include caret(down);
+          }
+
+          // dropdown submenu
+          .dropdown-submenu {
+            position: relative;
+            .dropdown-toggle {
+              @include caret(right);
+              &::after {
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                margin-top: -3px;
+              }
+            }
+
+            .dropdown-menu {
+              top: 0;
+              left: 100%;
+              margin-left: .1rem;
+              margin-right: .1rem;
+            }
           }
         }
 
