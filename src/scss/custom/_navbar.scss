@@ -49,6 +49,7 @@
 
 // custom toggler
 .custom-toggler {
+  cursor: pointer;
   position: relative;
   padding-left: 0;
   width: 27px;
@@ -60,6 +61,7 @@
   }
 
   .navbar-toggler-icon {
+    margin-top: 12px;
     width: 14px;
     height: 3px;
     background-color: $black;
@@ -114,21 +116,6 @@
 
     &#{$infix} {
       @include media-breakpoint-down($breakpoint) {
-        %container-navbar-expand-#{$breakpoint} {
-          padding-right: 0;
-          padding-left: 0;
-        }
-
-        > .container,
-        > .container-fluid {
-          @extend %container-navbar-expand-#{$breakpoint};
-        }
-
-        @each $size, $container-max-width in $container-max-widths {
-          > .container#{breakpoint-infix($size, $container-max-widths)} {
-            @extend %container-navbar-expand-#{$breakpoint};
-          }
-        }
         .navbar-collapse {
           border-top: 1px solid $gray-200;
           margin-left: -15px;
@@ -137,7 +124,6 @@
           padding-right: 15px;
         }
 
-        // dropdown design
         .dropdown-menu {
           margin-top: 0;
           border-color: $gray-100;
@@ -147,7 +133,7 @@
         .show >  {
           .dropdown-toggle {
             &::after {
-              margin-top: 0px!important;
+              margin-top: 0!important;
             }
           }
         }
@@ -174,16 +160,42 @@
       }
 
       @include media-breakpoint-up($next) {
-        flex-flow: row nowrap;
-        justify-content: flex-start;
+        .hovered-nav {
+          .dropdown {
+            .dropdown-menu {
+              display: block;
+              visibility: hidden;
+              opacity: 0;
+              transform: translateY(20px);
+              @include transition(all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.2s);
+              &::before {
+                content: '';
+                position: absolute;
+                top: -6px;
+                left: 0;
+                width: 100%;
+                height: 6px;
+                background-color: transparent;
+              }
+            }
+
+            &:hover {
+              >.dropdown-menu {
+                visibility: visible;
+                opacity: 1;
+                transform: translateY(0px);
+              }
+
+              > .nav-link {
+                border-bottom-color: $navbar-light-active-color;
+              }
+            }
+          }
+        }
 
         .navbar-nav {
           flex-basis: 100%;
           flex-direction: row;
-
-          .dropdown-menu {
-            position: absolute;
-          }
 
           .nav-link {
             padding-top: $navbar-nav-link-padding-y;
@@ -194,7 +206,7 @@
             .nav-link {
               border-bottom: 2px solid transparent;
 
-              @include hover-focus() {
+              @include hover() {
                 border-bottom-color: $navbar-light-active-color;
               }
             }
@@ -211,142 +223,27 @@
             }
           }
 
-          .show > .nav-link,
+
+          &:not(.hovered-nav) {
+            .show > .nav-link,
+            .nav-link.show {
+              border-bottom-color: $navbar-light-active-color;
+            }
+          }
+
           .active > .nav-link,
-          .nav-link.show,
           .nav-link.active {
             border-bottom-color: $navbar-light-active-color;
           }
-        }
 
-        // For nesting containers, have to redeclare for alignment purposes
-        %container-nesting-#{$breakpoint} {
-          flex-wrap: nowrap;
-        }
-
-        > .container,
-        > .container-fluid {
-          @extend %container-nesting-#{$breakpoint};
-        }
-
-        @each $size, $container-max-width in $container-max-widths {
-          > .container#{breakpoint-infix($size, $container-max-widths)} {
-            @extend %container-nesting-#{$breakpoint};
+          .show > .dropdown-toggle {
+            @include caret(down);
           }
         }
 
         .navbar-collapse {
           flex-basis: 100%;
         }
-      }
-    }
-  }
-}
-
-
-// Navbar themes
-//
-// Styles for switching between navbars with light or dark background.
-
-// Dark links against a light background
-.navbar-light {
-  .navbar-brand {
-    color: $navbar-light-brand-color;
-
-    @include hover-focus() {
-      color: $navbar-light-brand-hover-color;
-    }
-  }
-
-  .navbar-nav {
-    .nav-link {
-      color: $navbar-light-color;
-
-      @include hover-focus() {
-        color: $navbar-light-hover-color;
-      }
-
-      &.disabled {
-        color: $navbar-light-disabled-color;
-      }
-    }
-
-    .show > .nav-link,
-    .active > .nav-link,
-    .nav-link.show,
-    .nav-link.active {
-      color: $navbar-light-active-color;
-    }
-  }
-
-  .navbar-toggler {
-    color: $navbar-light-color;
-    border-color: $navbar-light-toggler-border-color;
-  }
-
-  .navbar-toggler-icon {
-    background-image: escape-svg($navbar-light-toggler-icon-bg);
-  }
-
-  .navbar-text {
-    color: $navbar-light-color;
-    a {
-      color: $navbar-light-active-color;
-
-      @include hover-focus() {
-        color: $navbar-light-active-color;
-      }
-    }
-  }
-}
-
-// White links against a dark background
-.navbar-dark {
-  .navbar-brand {
-    color: $navbar-dark-brand-color;
-
-    @include hover-focus() {
-      color: $navbar-dark-brand-hover-color;
-    }
-  }
-
-  .navbar-nav {
-    .nav-link {
-      color: $navbar-dark-color;
-
-      @include hover-focus() {
-        color: $navbar-dark-hover-color;
-      }
-
-      &.disabled {
-        color: $navbar-dark-disabled-color;
-      }
-    }
-
-    .show > .nav-link,
-    .active > .nav-link,
-    .nav-link.show,
-    .nav-link.active {
-      color: $navbar-dark-active-color;
-    }
-  }
-
-  .navbar-toggler {
-    color: $navbar-dark-color;
-    border-color: $navbar-dark-toggler-border-color;
-  }
-
-  .navbar-toggler-icon {
-    background-image: escape-svg($navbar-dark-toggler-icon-bg);
-  }
-
-  .navbar-text {
-    color: $navbar-dark-color;
-    a {
-      color: $navbar-dark-active-color;
-
-      @include hover-focus() {
-        color: $navbar-dark-active-color;
       }
     }
   }
