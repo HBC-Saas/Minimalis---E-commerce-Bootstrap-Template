@@ -18,15 +18,18 @@
     <body>
 
     <!-- header -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom hovered-nav">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
         <a href="index.html" class="navbar-brand mr-0 order-1 order-lg-2">
             Minimalis.
         </a>
-        <button class="navbar-toggler custom-toggler flex-basic-30 text-left order-0" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="navbar-toggler border-0 flex-basic-30 text-left order-0">
+            <div class="custom-toggler" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </div><!-- end collapse -->
+        </div><!-- navbar-toggler -->
 
-        <ul class="navbar-nav navbar-icons justify-content-end flex-basic-30 order-2 order-lg-3">
+
+        <ul class="navbar-nav navbar-icons hovered-nav justify-content-end flex-basic-30 order-2 order-lg-3">
             <li class="nav-item d-none d-lg-block">
                 <a class="nav-link" href="#"><i class="flaticon-search"></i></a>
             </li>
@@ -41,10 +44,10 @@
             </li>
         </ul>
 
-        <div class="collapse navbar-collapse order-3 order-lg-1 border-top" id="navbarMenu">
-            <ul class="navbar-nav">
+        <div class="collapse navbar-collapse order-3 order-lg-1" id="navbarMenu">
+            <ul class="navbar-nav hovered-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">
+                    <a class="nav-link active" href="index.html">
                         Home
                     </a>
                 </li>
