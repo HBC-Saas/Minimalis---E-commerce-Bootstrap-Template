@@ -1,5 +1,8 @@
-//Plus & Minus for Quantity product
 $(document).ready(function(){
+    $(".megamenu").on("click", function(e) {
+        e.stopPropagation();
+    });
+
     //incrise decrease input qty
     $('.qty').on('click', function() {
         var $this = $(this),
