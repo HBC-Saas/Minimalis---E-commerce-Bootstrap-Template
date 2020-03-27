@@ -13531,7 +13531,6 @@ select.selectpicker {
 
 .card.blog-card .card-img {
   position: relative;
-  overflow: hidden;
 }
 
 .card.blog-card .card-img .title-block {
@@ -13560,11 +13559,17 @@ select.selectpicker {
   transform: translate3d(0, 0, 0);
 }
 
-.card.blog-card .card-img .cat-title {
+.card.blog-card .card-img .cat-title-block {
   position: absolute;
-  bottom: 0;
-  left: 30px;
-  right: 30px;
+  bottom: -1.25rem;
+  left: 1.875rem;
+  right: 1.875rem;
+}
+
+.card.blog-card .card-img .cat-title-block .cat-title {
+  display: block;
+  padding: .875rem .3125rem;
+  font-weight: 500;
 }
 
 .overlay-dark::after {

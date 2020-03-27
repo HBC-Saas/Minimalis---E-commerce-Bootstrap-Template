@@ -88,7 +88,6 @@
   &.blog-card {
     .card-img {
       position: relative;
-      overflow: hidden;
       .title-block {
         position: absolute;
         bottom: 0.75rem;
@@ -109,11 +108,16 @@
         }
       }
 
-      .cat-title {
+      .cat-title-block {
         position: absolute;
-        bottom: 0;
-        left: 30px;
-        right: 30px;
+        bottom: -1.25rem;
+        left: 1.875rem;
+        right: 1.875rem;
+        .cat-title {
+          display: block;
+          padding: .875rem .3125rem;
+          font-weight: $font-weight-medium;
+        }
       }
     }
   }
