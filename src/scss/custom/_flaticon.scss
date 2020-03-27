@@ -88,7 +88,7 @@
 }
 [class^="small"]:before, [class*="small"]:before,
 [class^="small"]:after, [class*="small"]:after {
-  font-size: 12px;
+  @include font-size(12);
   margin-bottom: 0;
 }
 

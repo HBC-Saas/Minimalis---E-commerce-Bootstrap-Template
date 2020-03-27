@@ -68,8 +68,8 @@ $drag-circle-size: 25px;
       border-bottom-left-radius: $drag-circle-size * 2;
       border-top-left-radius: $drag-circle-size * 2;
       color: $white;
-      padding-left: 10px;
-      font-size: 8px;
+      padding-left: .625rem;
+      @include font-size(8);
     }
 
     &::after {
@@ -86,8 +86,8 @@ $drag-circle-size: 25px;
       border-bottom-right-radius: $drag-circle-size * 2;
       border-top-right-radius: $drag-circle-size * 2;
       color: $white;
-      padding-left: 5px;
-      font-size: 8px;
+      padding-left: .3125rem;
+      @include font-size(8);
     }
   }
 }

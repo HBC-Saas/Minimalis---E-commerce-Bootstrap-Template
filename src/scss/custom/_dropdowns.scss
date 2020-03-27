@@ -25,3 +25,8 @@
     @include caret(up);
   }
 }
+
+// Dropdown section headers
+.dropdown-header {
+  @include font-size(16);
+}

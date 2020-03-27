@@ -39,7 +39,7 @@ hr {
 }
 
 // line heights
-.line-height-18 { line-height: 18px; }
+.line-height-18 { line-height: 1.125rem; }
 
 // list style ( seperation line )
 
@@ -65,7 +65,7 @@ hr {
         &::after {
           content: ' ';
           position: absolute;
-          bottom: -3px;
+          bottom: -0.1875rem;
           left: 0;
           width: 0;
           height: 1px;

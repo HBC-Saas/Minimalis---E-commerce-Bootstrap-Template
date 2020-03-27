@@ -59,11 +59,11 @@
     border: none;
     [class^="flaticon-"], [class*=" flaticon-"],
     [class^="flaticon-"], [class*=" flaticon-"] {
-      font-size: 1.5625rem;
+      @include font-size(25);
       line-height: 1.5625rem;
       color: $black;
       &::before {
-        font-size: 1.5625rem;
+        @include font-size(25);
         line-height: 1.5625rem;
       }
     }

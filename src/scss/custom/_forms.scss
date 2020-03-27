@@ -13,24 +13,24 @@ label {
 // qty Form
 .qty-container {
   width: 5.375rem;
-  min-height: 40px;
+  min-height: 2.5rem;
   .input-group-append {
     border: 1px solid $input-border-color;
     flex-direction: column;
     .qty {
       height: 50%;
-      line-height: 8px;
-      padding-left: 9px;
-      padding-right: 9px;
+      line-height: 0.5rem;
+      padding-left: 0.5625rem;
+      padding-right: 0.5625rem;
       background-color: transparent;
       border: none;
       color: $gray-500;
       .flaticon-play-button,
       .flaticon-play-button-1 {
         display: inline-block;
-        font-size: 8px;
+        @include font-size(8);
         &::before {
-          font-size: 8px;
+          @include font-size(8);
         }
       }
       .flaticon-play-button {
