@@ -1,0 +1,9 @@
+// flex basic
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    .flex-basic#{$infix}-100  { flex-basis: 100% !important; }
+    .flex-basic#{$infix}-30  { flex-basis: 30% !important; }
+  }
+}
