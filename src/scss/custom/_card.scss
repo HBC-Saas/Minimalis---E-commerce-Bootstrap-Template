@@ -110,13 +110,14 @@
 
       .cat-title-block {
         position: absolute;
-        bottom: -1.25rem;
+        bottom: 0;
         left: 1.875rem;
         right: 1.875rem;
         .cat-title {
           display: block;
-          padding: .875rem .3125rem;
+          padding: .875rem .3125rem 0 .3125rem;
           font-weight: $font-weight-medium;
+          line-height: normal;
         }
       }
     }

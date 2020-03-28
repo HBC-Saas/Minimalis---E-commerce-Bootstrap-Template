@@ -132,6 +132,12 @@
           background-color: $gray-100;
         }
 
+        .mega-dropdown-menu {
+          .container {
+            max-width: 100%;
+          }
+        }
+
         .show >  {
           .dropdown-toggle {
             &::after {
@@ -270,6 +276,10 @@
       }
     }
   }
+}
+
+.dropdown-menu-lg {
+  padding: 1.25rem 0 .9375rem 0;
 }
 
 // Mega menu
