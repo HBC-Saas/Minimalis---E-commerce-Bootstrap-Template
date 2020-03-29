@@ -16,13 +16,22 @@
         <link rel="stylesheet" href="../assets/css/style.css?cb=1583937029097">
     </head>
     <body>
-        <nav class="navbar fixed-top navbar-expand-md navbar-light bg-white border-bottom px-4 py-3">
+        <nav class="navbar fixed-top navbar-expand-md navbar-light bg-white border-bottom">
             <a class="navbar-brand" href="#">Minimalis.</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="navbar-toggler border-0">
+                <div class="custom-toggler" data-toggle="collapse" data-target="#navbarBarDoc" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </div><!-- end collapse -->
+            </div><!-- navbar-toggler -->
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="navbarBarDoc">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">
+                            Live Preview
+                        </a><!-- end nav-link -->
+                    </li><!-- end nav-item -->
+                </ul><!-- end navbar-nav -->
                 <a href="#" class="btn btn-dark d-block hover-outline ml-auto">Buy Theme</a>
             </div>
         </nav>
@@ -31,9 +40,11 @@
             <div class="row">
                 <nav class="navbar navbar-expand-md ml-sm-auto navbar-light bg-light col-md-3 col-lg-3 col-xl-2 sidebar">
                     <span class="navbar-brand d-md-none">Documentation</span>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#docsCollapse" aria-controls="docsCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                    <div class="navbar-toggler border-0">
+                        <div class="custom-toggler" data-toggle="collapse" data-target="#docsCollapse" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </div><!-- end collapse -->
+                    </div><!-- navbar-toggler -->
 
                     <!-- Collapse -->
                     <div class="collapse navbar-collapse" id="docsCollapse">
