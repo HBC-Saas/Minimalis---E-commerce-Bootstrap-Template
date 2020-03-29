@@ -276,6 +276,12 @@
             @include caret(down);
           }
 
+          .dropdown-submenu {
+            .show > .dropdown-toggle {
+              @include caret(down);
+            }
+          }
+
           /*
           * ===================================================
           *     dropdown submenu
@@ -345,6 +351,14 @@
             margin-top: -0.3125rem;
             top: 50%;
             right: 0;
+          }
+        }
+
+        .dropdown-menu {
+          .dropdown-toggle {
+            &::after {
+              right: 1rem;
+            }
           }
         }
 
