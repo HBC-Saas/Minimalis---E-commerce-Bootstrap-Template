@@ -3,7 +3,9 @@ $(document).ready(function(){
         if (!$(this).next().hasClass('show')) {
             $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
         }
+        var $subLink = $(this).parent('.dropdown-submenu');
         var $subMenu = $(this).next(".dropdown-menu");
+        $subLink.toggleClass('show');
         $subMenu.toggleClass('show');
 
         $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
