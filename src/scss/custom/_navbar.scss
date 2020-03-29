@@ -9,6 +9,8 @@
   font-size: $h4-font-size;
   font-weight: $font-weight-bolder;
   letter-spacing: $lead-font-letter-spacing;
+  height: 72px;
+  line-height: 72px;
 }
 
 // navbar Nav
@@ -45,6 +47,41 @@
       &::before {
         @include font-size(18);
       }
+    }
+  }
+
+  // dropdown
+  .dropdown-menu {
+    position: absolute;
+    margin-top: 0;
+    min-width: 12.5rem;
+    &::after,
+    &::before {
+      content: ' ';
+      position: absolute;
+      top: 0;
+      left: .9375rem;
+      transform: translateY(-100%);
+      width: 0;
+      height: 0;
+    }
+    &::after {
+      border-left: .625rem solid transparent;
+      border-right: .625rem solid transparent;
+      border-bottom: .625rem solid $white;
+    }
+    &::before {
+      left: .875rem;
+      border-left: .6875rem solid transparent;
+      border-right: .6875rem solid transparent;
+      border-bottom: .6875rem solid $gray-200;
+    }
+    &.dropdown-menu-right {
+      right: -.9375rem;
+      &::after,
+      &::before { left: auto; }
+      &::after { right: .9375rem; }
+      &::before { right: .875rem; }
     }
   }
 }
@@ -248,6 +285,7 @@
             position: relative;
             .dropdown-toggle {
               @include caret(right);
+              margin-right: .9375rem;
               &::after {
                 position: absolute;
                 right: 0.625rem;
@@ -259,48 +297,6 @@
             .dropdown-menu {
               top: -0.375rem;
               left: 100%;
-              margin-left: .1rem;
-              margin-right: .1rem;
-            }
-          }
-        }
-
-        /*
-        * ===================================================
-        *     navbar icons
-        * ===================================================
-        */
-        .navbar-icons {
-          .dropdown-menu {
-            margin-top: 0;
-            min-width: 12.5rem;
-            &::after,
-            &::before {
-              content: ' ';
-              position: absolute;
-              top: 0;
-              left: .9375rem;
-              transform: translateY(-100%);
-              width: 0;
-              height: 0;
-            }
-            &::after {
-              border-left: .625rem solid transparent;
-              border-right: .625rem solid transparent;
-              border-bottom: .625rem solid $white;
-            }
-            &::before {
-              left: .875rem;
-              border-left: .6875rem solid transparent;
-              border-right: .6875rem solid transparent;
-              border-bottom: .6875rem solid $gray-200;
-            }
-            &.dropdown-menu-right {
-              right: -.9375rem;
-              &::after,
-              &::before { left: auto; }
-              &::after { right: .9375rem; }
-              &::before { right: .875rem; }
             }
           }
         }
@@ -318,10 +314,14 @@
         }
 
         // dropdown menu
-        .dropdown-menu {
-          margin-top: 0;
-          border-color: $gray-100;
-          background-color: $gray-100;
+        .navbar-nav {
+          &:not(.navbar-icons) {
+            .dropdown-menu {
+              margin-top: 0;
+              border-color: $gray-100;
+              background-color: $gray-100;
+            }
+          }
         }
 
         .mega-dropdown-menu {
