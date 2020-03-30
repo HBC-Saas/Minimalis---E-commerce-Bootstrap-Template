@@ -1,7 +1,13 @@
+/*
+* ===================================================
+*     Modal Dialog Vertical
+* ===================================================
+*/
 .modal-dialog-vertical {
   height: 100%;
   max-width: 470px;
   margin: 0;
+
   .modal-content {
     height: inherit;
     overflow-y: auto;
@@ -15,23 +21,29 @@
     }
   }
 
-  &.show .modal-dialog-vertical {
-    transform: translateX(0);
+  &.show {
+    .modal-dialog-vertical {
+      transform: translateX(0);
+    }
   }
 
   &.fixed-right {
     padding-right: 0!important;
+
     .modal-dialog-vertical {
       margin-left: auto;
     }
+
     &.fade {
       .modal-dialog-vertical {
         transform: translateX(100%);
       }
     }
-  }
-}
 
-.modal.fixed-right.show .modal-dialog-vertical{
-  transform: translateX(0);
+    &.show {
+      .modal-dialog-vertical{
+        transform: translateX(0);
+      }
+    }
+  }
 }

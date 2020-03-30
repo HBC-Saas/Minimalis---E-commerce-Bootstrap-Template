@@ -210,10 +210,10 @@
                 </form>
             </li><!-- end nav-item -->
             <li class="nav-item">
-                <a class="nav-link" href="#"><i class="flaticon-heart"></i></a>
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#myWishlistModal"><i class="flaticon-heart"></i></a>
             </li><!-- end nav-item -->
             <li class="nav-item">
-                <a class="nav-link" href="#" data-toggle="modal" data-target="#addToCardModal"><i class="flaticon-shopping-cart"></i></a>
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#addToCartModal"><i class="flaticon-shopping-cart"></i></a>
             </li><!-- end nav-item -->
             <li class="nav-item dropdown">
                 <a class="nav-link" href="#" id="navbarDropdown-user" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -776,8 +776,129 @@
         </footer>
         <!-- end footer -->
 
-        <!-- Add to card modal -->
-        <div class="modal fixed-right fade" id="addToCardModal" tabindex="-1" role="dialog" aria-labelledby="addToCardModalLabel" aria-hidden="true">
+        <!-- Wishlist modal -->
+        <div class="modal fixed-right fade" id="myWishlistModal" tabindex="-1" role="dialog" aria-labelledby="myWishlistModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-vertical" role="document">
+                <div class="modal-content border-top-0">
+                    <div class="modal-header align-items-center">
+                        <h4 class="modal-title font-weight-bold">My Wishlist</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span class="flaticon-close h5" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="modal-body py-0 overflow-auto">
+                        <ul class="list-group list-group-lg list-group-flush">
+                            <li class="list-group-item">
+                                <div class="row align-items-end">
+                                    <div class="col-auto">
+                                        <img width="99" class="img-fluid" src="./assets/img/products/product_small.png" alt="product">
+                                    </div><!-- end col -->
+                                    <div class="col pl-2">
+                                        <h5 class="mb-1 font-weight-bold">Minimal Lamp</h5>
+                                        <h6 class="mb-0 font-weight-normal">$20.00</h6>
+
+                                        <div class="d-flex align-items-end justify-content-between">
+                                            <div class="qty-container mt-3">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" name="field_2_1" value="1">
+                                                    <div class="input-group-append">
+                                                        <button class="qty" type="button" data-func="plus" data-field="field_2_1"><i class="flaticon-play-button"></i></button>
+                                                        <button class="qty" type="button" data-func="minus" data-field="field_2_1"><i class="flaticon-play-button-1"></i></button>
+                                                    </div><!-- end input-group-append -->
+                                                </div><!-- end input-group -->
+                                            </div><!-- end qty-container -->
+
+                                            <a href="javascript:void(0);"><i class="flaticon-close small mr-1"></i> Remove</a>
+                                        </div>
+                                    </div><!-- end col -->
+                                </div><!-- end row -->
+                            </li><!-- end list-group -->
+
+                            <li class="list-group-item">
+                                <div class="row align-items-end">
+                                    <div class="col-auto">
+                                        <img width="99" class="img-fluid" src="./assets/img/products/product_small_2.png" alt="product">
+                                    </div><!-- end col -->
+                                    <div class="col pl-2">
+                                        <h5 class="mb-1 font-weight-bold">Minimal couch for minimal home.</h5>
+                                        <h6 class="mb-0 font-weight-normal">$250.00</h6>
+
+                                        <div class="d-flex align-items-end justify-content-between">
+                                            <div class="qty-container mt-3">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" name="field_2_2" value="1">
+                                                    <div class="input-group-append">
+                                                        <button class="qty" type="button" data-func="plus" data-field="field_2_2"><i class="flaticon-play-button"></i></button>
+                                                        <button class="qty" type="button" data-func="minus" data-field="field_2_2"><i class="flaticon-play-button-1"></i></button>
+                                                    </div><!-- end input-group-append -->
+                                                </div><!-- end input-group -->
+                                            </div><!-- end qty-container -->
+
+                                            <a href="javascript:void(0);"><i class="flaticon-close small mr-1"></i> Remove</a>
+                                        </div>
+                                    </div><!-- end col -->
+                                </div><!-- end row -->
+                            </li><!-- end list-group -->
+
+                            <li class="list-group-item">
+                                <div class="row align-items-end">
+                                    <div class="col-auto">
+                                        <img width="99" class="img-fluid" src="./assets/img/products/product_small_3.png" alt="product">
+                                    </div><!-- end col -->
+                                    <div class="col pl-2">
+                                        <h5 class="mb-1 font-weight-bold">Minimal Chair</h5>
+                                        <h6 class="mb-0 font-weight-normal">$20.00</h6>
+
+                                    <div class="d-flex align-items-end justify-content-between">
+                                        <div class="qty-container mt-3">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" name="field_2_3" value="1">
+                                                <div class="input-group-append">
+                                                    <button class="qty" type="button" data-func="plus" data-field="field_2_3"><i class="flaticon-play-button"></i></button>
+                                                    <button class="qty" type="button" data-func="minus" data-field="field_2_3"><i class="flaticon-play-button-1"></i></button>
+                                                </div><!-- end input-group-append -->
+                                            </div><!-- end input-group -->
+                                        </div><!-- end qty-container -->
+
+                                        <a href="javascript:void(0);"><i class="flaticon-close small mr-1"></i> Remove</a>
+                                    </div>
+                                </div><!-- end col -->
+                            </div><!-- end row -->
+                        </li><!-- end list-group -->
+
+                        <li class="list-group-item">
+                            <div class="row align-items-end">
+                                <div class="col-auto">
+                                    <img width="99" class="img-fluid" src="./assets/img/products/product_small.png" alt="product">
+                                </div><!-- end col -->
+                                <div class="col pl-2">
+                                    <h5 class="mb-1 font-weight-bold">Minimal Lamp</h5>
+                                    <h6 class="mb-0 font-weight-normal">$20.00</h6>
+
+                                    <div class="d-flex align-items-end justify-content-between">
+                                        <div class="qty-container mt-3">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" name="field_2_4" value="1">
+                                                <div class="input-group-append">
+                                                    <button class="qty" type="button" data-func="plus" data-field="field_2_4"><i class="flaticon-play-button"></i></button>
+                                                    <button class="qty" type="button" data-func="minus" data-field="field_2_4"><i class="flaticon-play-button-1"></i></button>
+                                                </div><!-- end input-group-append -->
+                                            </div><!-- end input-group -->
+                                        </div><!-- end qty-container -->
+
+                                        <a href="javascript:void(0);"><i class="flaticon-close small mr-1"></i> Remove</a>
+                                    </div>
+                                </div><!-- end col -->
+                            </div><!-- end row -->
+                        </li><!-- end list-group -->
+                    </ul><!-- end list-group -->
+                </div><!-- end modal-body -->
+            </div><!-- end modal-content -->
+        </div><!-- end modal-dialog -->
+    </div><!-- end modal -->
+
+        <!-- Add to cart modal -->
+        <div class="modal fixed-right fade" id="addToCartModal" tabindex="-1" role="dialog" aria-labelledby="addToCartModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-vertical" role="document">
                 <div class="modal-content border-top-0">
                     <div class="modal-header align-items-center">
