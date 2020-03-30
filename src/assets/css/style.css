@@ -16501,6 +16501,11 @@ hr.border-white {
   color: #ac9c7f;
 }
 
+/*
+* ===================================================
+*     Modal Dialog Vertical
+* ===================================================
+*/
 .modal-dialog-vertical {
   height: 100%;
   max-width: 470px;
