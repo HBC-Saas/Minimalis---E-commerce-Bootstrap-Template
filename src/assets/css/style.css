@@ -5799,7 +5799,7 @@ a.close.disabled {
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid rgba(30, 30, 30, 0.2);
-  border-radius: 0.3rem;
+  border-radius: 0;
   outline: 0;
 }
 
@@ -5825,15 +5825,15 @@ a.close.disabled {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 1rem 1rem;
+  padding: 1rem 1.25rem;
   border-bottom: 1px solid #e9e9e9;
-  border-top-left-radius: calc(0.3rem - 1px);
-  border-top-right-radius: calc(0.3rem - 1px);
+  border-top-left-radius: -1px;
+  border-top-right-radius: -1px;
 }
 
 .modal-header .close {
-  padding: 1rem 1rem;
-  margin: -1rem -1rem -1rem auto;
+  padding: 1rem 1.25rem;
+  margin: -1rem -1.25rem -1rem auto;
 }
 
 .modal-title {
@@ -5844,7 +5844,7 @@ a.close.disabled {
 .modal-body {
   position: relative;
   flex: 1 1 auto;
-  padding: 1rem;
+  padding: 1.25rem;
 }
 
 .modal-footer {
@@ -5852,10 +5852,10 @@ a.close.disabled {
   flex-wrap: wrap;
   align-items: center;
   justify-content: flex-end;
-  padding: 0.75rem;
+  padding: 1rem;
   border-top: 1px solid #e9e9e9;
-  border-bottom-right-radius: calc(0.3rem - 1px);
-  border-bottom-left-radius: calc(0.3rem - 1px);
+  border-bottom-right-radius: -1px;
+  border-bottom-left-radius: -1px;
 }
 
 .modal-footer > * {
@@ -13677,14 +13677,6 @@ select.selectpicker {
   padding-right: 0 !important;
 }
 
-.list-group-flush .list-group-item:first-child {
-  border-top-width: 1px;
-}
-
-.list-group-flush:last-child .list-group-item:last-child {
-  border-bottom-width: 1px;
-}
-
 .list-group-lg .list-group-item {
   padding: 1.875rem 1.875rem;
 }
@@ -16507,6 +16499,41 @@ hr.border-white {
 .rate-star > input:checked ~ label:hover ~ label,
 .rate-star > label:hover ~ input:checked ~ label {
   color: #ac9c7f;
+}
+
+.modal-dialog-vertical {
+  height: 100%;
+  max-width: 470px;
+  margin: 0;
+}
+
+.modal-dialog-vertical .modal-content {
+  height: inherit;
+  overflow-y: auto;
+}
+
+.modal.fade .modal-dialog-vertical {
+  transform: translateX(-100%);
+}
+
+.modal.show .modal-dialog-vertical {
+  transform: translateX(0);
+}
+
+.modal.fixed-right {
+  padding-right: 0 !important;
+}
+
+.modal.fixed-right .modal-dialog-vertical {
+  margin-left: auto;
+}
+
+.modal.fixed-right.fade .modal-dialog-vertical {
+  transform: translateX(100%);
+}
+
+.modal.fixed-right.show .modal-dialog-vertical {
+  transform: translateX(0);
 }
 
 /*
