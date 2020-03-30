@@ -1,4 +1,9 @@
 $(document).ready(function(){
+    /*
+    * ===================================================
+    *     dropdown submenu
+    * ===================================================
+    */
     $('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
         if (!$(this).next().hasClass('show')) {
             $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
@@ -15,7 +20,30 @@ $(document).ready(function(){
         return false;
     });
 
-    //incrise decrease input qty
+    /*
+    * ===================================================
+    *     Navbar Search
+    * ===================================================
+    */
+    $('.nav-search-form .search-icon').on('click', function () {
+        $(this).addClass('d-none');
+        $('.nav-search-form .close-icon').removeClass('d-none');
+        $('.nav-search-form').css('width', '180px');
+        $('.nav-search-form .form-control').removeClass('d-none');
+    });
+
+    $('.nav-search-form .close-icon').on('click', function () {
+        $(this).addClass('d-none');
+        $('.nav-search-form .search-icon').removeClass('d-none');
+        $('.nav-search-form').css('width', 'auto');
+        $('.nav-search-form .form-control').addClass('d-none');
+    });
+
+    /*
+    * ===================================================
+    *     incrise decrease input qty
+    * ===================================================
+    */
     $('.qty').on('click', function() {
         var $this = $(this),
             $input = $('input[name="'+$this.data('field')+'"]'),
@@ -45,12 +73,20 @@ $(document).ready(function(){
         }
     });
 
-    // actions active class
+    /*
+    * ===================================================
+    *     actions active class
+    * ===================================================
+    */
     $('.card-action').on('click', function () {
         $(this).toggleClass('active');
     });
 
-    // button add to card
+    /*
+    * ===================================================
+    *     button add to card
+    * ===================================================
+    */
     $('.btn-add-to-card:not(.loading):not(.success)').hover(function(){
         var textWidth = $(this).find(".add-to-card-text").innerWidth();
         $(this).find('.add-to-card-hover').width(textWidth);

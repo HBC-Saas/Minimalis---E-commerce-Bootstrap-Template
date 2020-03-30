@@ -13786,6 +13786,27 @@ select.selectpicker {
   right: .875rem;
 }
 
+.nav-search {
+  position: relative;
+}
+
+.nav-search .nav-search-form {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  margin-top: -2px;
+}
+
+.nav-search .input-group-text i::before {
+  font-size: 1.125rem;
+}
+
+.nav-search .input-group-text .search-icon,
+.nav-search .input-group-text .close-icon {
+  cursor: pointer;
+}
+
 /*
 * ===================================================
 *     Mega menu
