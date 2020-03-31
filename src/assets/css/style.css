@@ -16528,18 +16528,13 @@ hr.border-white {
 * ===================================================
 */
 .modal-dialog-vertical {
-  height: 100%;
+  max-height: 100vh;
   max-width: 470px;
   margin: 0;
 }
 
 .modal-dialog-vertical .modal-content {
-  height: inherit;
-  overflow-y: auto;
-}
-
-.modal-dialog-vertical .modal-body {
-  height: 100px;
+  max-height: 100vh;
 }
 
 .modal.fade .modal-dialog-vertical {
