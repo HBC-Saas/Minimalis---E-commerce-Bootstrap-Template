@@ -5,7 +5,7 @@ $(document).ready(function(){
     * ===================================================
     */
     var navbarHeight = $('.navbar.fixed-top').innerHeight();
-    $('body').css('padding-top', navbarHeight);
+    $('.header-container').css('margin-bottom', navbarHeight);
 
     /*
     * ===================================================
