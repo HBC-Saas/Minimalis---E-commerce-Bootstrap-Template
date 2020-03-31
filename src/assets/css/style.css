@@ -16517,6 +16517,10 @@ hr.border-white {
   overflow-y: auto;
 }
 
+.modal-dialog-vertical .modal-body {
+  height: 100px;
+}
+
 .modal.fade .modal-dialog-vertical {
   transform: translateX(-100%);
 }
