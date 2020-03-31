@@ -120,6 +120,16 @@ $(document).ready(function(){
             }, 4500);
         }
     });
+
+    /*
+    * ===================================================
+    *     Subscribe modal timeout
+    * ===================================================
+    */
+
+    setTimeout(function () {
+        $('#subscribeModal').modal('show');
+    }, 5000);
 });
 
 // init Cocoen
