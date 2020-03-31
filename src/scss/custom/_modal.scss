@@ -5,11 +5,13 @@
 */
 .modal-dialog-vertical {
   max-height: 100vh;
-  max-width: 470px;
+  height: 100vh;
+  max-width: 29.375rem;
   margin: 0;
 
   .modal-content {
     max-height: 100vh;
+    height: 100vh;
   }
 }
 
