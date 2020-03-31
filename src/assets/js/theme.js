@@ -1,6 +1,14 @@
 $(document).ready(function(){
     /*
     * ===================================================
+    *     navbar container
+    * ===================================================
+    */
+    var navbarHeight = $('.navbar.fixed-top').innerHeight();
+    $('.header-container').css('margin-bottom', navbarHeight);
+
+    /*
+    * ===================================================
     *     dropdown submenu
     * ===================================================
     */

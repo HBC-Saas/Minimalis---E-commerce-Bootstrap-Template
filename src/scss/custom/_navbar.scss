@@ -237,7 +237,7 @@
               visibility: hidden;
               opacity: 0;
               transform: translateY(1.25rem);
-              @include transition(all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.2s);
+              @include transition(0.2s);
             }
 
             @include hover() {
@@ -338,6 +338,14 @@
           margin-right: -0.9375rem;
           padding-left: 0.9375rem;
           padding-right: 0.9375rem;
+        }
+
+        // fixed top
+        &.fixed-top {
+          .navbar-collapse {
+            overflow: auto;
+            max-height: 350px;
+          }
         }
 
         // dropdown menu
