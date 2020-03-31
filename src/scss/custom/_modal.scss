@@ -4,16 +4,13 @@
 * ===================================================
 */
 .modal-dialog-vertical {
-  height: 100%;
+  max-height: 100vh;
   max-width: 470px;
   margin: 0;
 
   .modal-content {
-    height: inherit;
-    overflow-y: auto;
+    max-height: 100vh;
   }
-
-  .modal-body { height: 100px; }
 }
 
 .modal {
