@@ -226,24 +226,37 @@
   position: relative;
   overflow: hidden;
   // sizes
-  &.btn-lg {
-    height: 3.125rem;
-    min-width: 3.125rem;
-    .add-to-card-hover {
-      .add-to-card-text {
-        padding: 0 $btn-padding-x-lg;
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+      $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+      &.btn#{$infix}-large {
+        height: 3.125rem;
+        min-width: 3.125rem;
+        .add-to-card-hover {
+          .add-to-card-text {
+            padding: 0 $btn-padding-x-lg;
+          }
+        }
+      }
+
+      &.btn#{$infix}-medium {
+        height: 2.5rem;
+        min-width: 2.5rem;
+      }
+
+      &.btn#{$infix}-small {
+        height: 2.1875rem;
+        min-width: 2.1875rem;
+        .add-to-card-hover {
+          .add-to-card-text {
+            padding: 0 $btn-padding-x-sm;
+          }
+        }
       }
     }
   }
-  &.btn-sm {
-    height: 2.1875rem;
-    min-width: 2.1875rem;
-    .add-to-card-hover {
-      .add-to-card-text {
-        padding: 0 $btn-padding-x-sm;
-      }
-    }
-  }
+
   .add-to-card-active,
   .add-to-card-success,
   .add-to-card-hover {

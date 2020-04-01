@@ -795,7 +795,7 @@ $navbar-dark-brand-hover-color:           $navbar-dark-active-color !default;
 
 $dropdown-min-width:                10rem !default;
 $dropdown-padding-y:                0 !default;
-$dropdown-spacer:                   .3125rem !default;
+$dropdown-spacer:                   0 !default; //.3125rem
 $dropdown-font-size:                $font-size-base !default;
 $dropdown-color:                    $body-color !default;
 $dropdown-bg:                       $white !default;

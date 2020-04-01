@@ -15,10 +15,6 @@
 
 // navbar Nav
 .navbar-nav {
-  .dropdown-menu {
-    margin-top: 0;
-  }
-
   .nav-link {
     font-weight: $font-weight-medium;
   }
@@ -77,7 +73,6 @@
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    margin-top: -2px;
   }
 
   .input-group-text {
@@ -349,7 +344,6 @@
         .navbar-nav {
           &:not(.navbar-icons) {
             .dropdown-menu {
-              margin-top: 0;
               border-color: $gray-100;
               background-color: $gray-100;
             }
