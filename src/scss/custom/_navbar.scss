@@ -9,8 +9,8 @@
   font-size: $h4-font-size;
   font-weight: $font-weight-bolder;
   letter-spacing: $lead-font-letter-spacing;
-  height: 73px;
-  line-height: 73px;
+  height: $navbar-brand-height;
+  line-height: $navbar-brand-height;
 }
 
 // navbar Nav
@@ -341,7 +341,7 @@
         &.fixed-top {
           .navbar-collapse {
             overflow: auto;
-            max-height: 100vh
+            max-height: calc(100vh - #{$navbar-brand-height});
           }
         }
 

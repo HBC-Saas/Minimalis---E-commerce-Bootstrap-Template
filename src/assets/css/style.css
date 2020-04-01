@@ -13690,8 +13690,8 @@ select.selectpicker {
   font-size: 1.25rem;
   font-weight: 700;
   letter-spacing: 0.01875rem;
-  height: 73px;
-  line-height: 73px;
+  height: 4.5625rem;
+  line-height: 4.5625rem;
 }
 
 .navbar-nav .dropdown-menu {
@@ -14064,7 +14064,7 @@ select.selectpicker {
   }
   .navbar-expand-sm.fixed-top .navbar-collapse {
     overflow: auto;
-    max-height: 100vh;
+    max-height: calc(100vh - 4.5625rem);
   }
   .navbar-expand-sm .navbar-nav:not(.navbar-icons) .dropdown-menu {
     margin-top: 0;
@@ -14279,7 +14279,7 @@ select.selectpicker {
   }
   .navbar-expand-md.fixed-top .navbar-collapse {
     overflow: auto;
-    max-height: 100vh;
+    max-height: calc(100vh - 4.5625rem);
   }
   .navbar-expand-md .navbar-nav:not(.navbar-icons) .dropdown-menu {
     margin-top: 0;
@@ -14494,7 +14494,7 @@ select.selectpicker {
   }
   .navbar-expand-lg.fixed-top .navbar-collapse {
     overflow: auto;
-    max-height: 100vh;
+    max-height: calc(100vh - 4.5625rem);
   }
   .navbar-expand-lg .navbar-nav:not(.navbar-icons) .dropdown-menu {
     margin-top: 0;
@@ -14709,7 +14709,7 @@ select.selectpicker {
   }
   .navbar-expand-xl.fixed-top .navbar-collapse {
     overflow: auto;
-    max-height: 100vh;
+    max-height: calc(100vh - 4.5625rem);
   }
   .navbar-expand-xl .navbar-nav:not(.navbar-icons) .dropdown-menu {
     margin-top: 0;
@@ -14939,7 +14939,7 @@ select.selectpicker {
 
 .navbar-expand.fixed-top .navbar-collapse {
   overflow: auto;
-  max-height: 100vh;
+  max-height: calc(100vh - 4.5625rem);
 }
 
 .navbar-expand .navbar-nav:not(.navbar-icons) .dropdown-menu {
