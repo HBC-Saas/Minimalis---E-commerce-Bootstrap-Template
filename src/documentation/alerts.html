@@ -10,7 +10,7 @@
     <meta name="robots" content="all,follow">
 
     <!-- vendor css File -->
-    <!--<link rel="stylesheet" href="../src/assets/vendors/bootstrap/css/bootstrap.css">-->
+    <link rel="stylesheet" href="../assets/vendors/@fortawesome/fontawesome-free/css/all.min.css">
     
     <!-- typography -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap" rel="stylesheet">
@@ -143,40 +143,59 @@
                 <div id="main" class="ml-sm-auto col-md-9 col-lg-9 col-xl-10">
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="mb-2 text-primary font-weight-bold">Colors.</h4>
+                            <h1 class="mb-3 font-weight-bold">Alerts</h1>
+                            <p class="lead">Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</p>
 
-                            <div class="bd-example border">
-                                <div class="alert alert-primary" role="alert">
-                                    A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-                                </div><!-- end alert -->
-                                <div class="alert alert-secondary" role="alert">
-                                    A simple secondary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-                                </div><!-- end alert -->
-                                <div class="alert alert-success" role="alert">
-                                    <h4 class="alert-heading">Well done!</h4>
-                                    <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
-                                    <hr>
-                                    <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
-                                </div><!-- end alert -->
-                                <div class="alert alert-danger" role="alert">
-                                    A simple danger alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-                                </div><!-- end alert -->
-                                <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                                    <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div><!-- end alert -->
-                                <div class="alert alert-info" role="alert">
-                                    A simple info alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-                                </div><!-- end alert -->
-                                <div class="alert alert-light" role="alert">
-                                    A simple light alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-                                </div><!-- end alert -->
-                                <div class="alert alert-dark" role="alert">
-                                    A simple dark alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-                                </div><!-- end alert -->
-                            </div><!-- end bd-example -->
+                            <p class="lead"><a href="https://getbootstrap.com/docs/4.4/components/alerts/" target="_blank"><i class="fas fa-external-link-alt mr-1"></i> Bootstrap documentation</a></p>
+
+                            <hr class="mt-4 mb-6" />
+
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Code</a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                    <div class="alert alert-primary" role="alert">
+                                        A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+                                    </div><!-- end alert -->
+                                    <div class="alert alert-secondary" role="alert">
+                                        A simple secondary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+                                    </div><!-- end alert -->
+                                    <div class="alert alert-success" role="alert">
+                                        <h4 class="alert-heading">Well done!</h4>
+                                        <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+                                        <hr>
+                                        <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+                                    </div><!-- end alert -->
+                                    <div class="alert alert-danger" role="alert">
+                                        A simple danger alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+                                    </div><!-- end alert -->
+                                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div><!-- end alert -->
+                                    <div class="alert alert-info" role="alert">
+                                        A simple info alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+                                    </div><!-- end alert -->
+                                    <div class="alert alert-light" role="alert">
+                                        A simple light alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+                                    </div><!-- end alert -->
+                                    <div class="alert alert-dark" role="alert">
+                                        A simple dark alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+                                    </div><!-- end alert -->
+                                </div><!-- end tab-pane -->
+                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">2</div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
+
+
                         </div><!-- end col -->
                     </div><!-- end row -->
 

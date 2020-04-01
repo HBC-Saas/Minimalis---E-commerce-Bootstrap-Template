@@ -31,6 +31,7 @@
     "gulp-sourcemaps": "^2.6.5"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
     "bootstrap": "^4.4.1",
     "bootstrap-select": "^1.13.12",
     "cocoen": "^2.0.5",

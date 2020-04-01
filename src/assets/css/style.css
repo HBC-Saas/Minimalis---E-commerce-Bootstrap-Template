@@ -15018,6 +15018,49 @@ select.selectpicker {
 }
 
 /*
+* ===================================================
+*     Nav Border
+* ===================================================
+*/
+.nav.nav-border .nav-item {
+  margin: 0 1rem;
+}
+
+.nav.nav-border .nav-link {
+  padding: 1.5rem 0;
+  position: relative;
+}
+
+.nav.nav-border .nav-link::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  transition: 0.2s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nav.nav-border .nav-link::before {
+    transition: none;
+  }
+}
+
+.nav.nav-border .nav-link.active::before {
+  width: 100%;
+  height: 2px;
+  background-color: #1e1e1e;
+}
+
+.nav.nav-border .nav-link:hover::before {
+  width: 100%;
+  height: 2px;
+  background-color: #1e1e1e;
+}
+
+/*
     Buttons
    ------------------------
 */
