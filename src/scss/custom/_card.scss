@@ -45,9 +45,17 @@
   &.luxury-card {
     // add to card button for luxury card
     .btn-add-to-card {
-      bottom: -1.125rem;
-      &.btn-lg { bottom: -1.4375rem; }
-      &.btn-sm { bottom: -1rem; }
+      @each $breakpoint in map-keys($grid-breakpoints) {
+        @include media-breakpoint-up($breakpoint) {
+          $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+          &.btn#{$infix}-large { bottom: -1.4375rem; }
+
+          &.btn#{$infix}-medium { bottom: -1.125rem; }
+
+          &.btn#{$infix}-small { bottom: -1rem; }
+        }
+      }
     }
   }
 
