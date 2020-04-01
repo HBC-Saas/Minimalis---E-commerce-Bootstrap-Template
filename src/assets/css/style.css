@@ -14064,7 +14064,7 @@ select.selectpicker {
   }
   .navbar-expand-sm.fixed-top .navbar-collapse {
     overflow: auto;
-    max-height: 350px;
+    max-height: 100vh;
   }
   .navbar-expand-sm .navbar-nav:not(.navbar-icons) .dropdown-menu {
     margin-top: 0;
@@ -14279,7 +14279,7 @@ select.selectpicker {
   }
   .navbar-expand-md.fixed-top .navbar-collapse {
     overflow: auto;
-    max-height: 350px;
+    max-height: 100vh;
   }
   .navbar-expand-md .navbar-nav:not(.navbar-icons) .dropdown-menu {
     margin-top: 0;
@@ -14494,7 +14494,7 @@ select.selectpicker {
   }
   .navbar-expand-lg.fixed-top .navbar-collapse {
     overflow: auto;
-    max-height: 350px;
+    max-height: 100vh;
   }
   .navbar-expand-lg .navbar-nav:not(.navbar-icons) .dropdown-menu {
     margin-top: 0;
@@ -14709,7 +14709,7 @@ select.selectpicker {
   }
   .navbar-expand-xl.fixed-top .navbar-collapse {
     overflow: auto;
-    max-height: 350px;
+    max-height: 100vh;
   }
   .navbar-expand-xl .navbar-nav:not(.navbar-icons) .dropdown-menu {
     margin-top: 0;
@@ -14939,7 +14939,7 @@ select.selectpicker {
 
 .navbar-expand.fixed-top .navbar-collapse {
   overflow: auto;
-  max-height: 350px;
+  max-height: 100vh;
 }
 
 .navbar-expand .navbar-nav:not(.navbar-icons) .dropdown-menu {
