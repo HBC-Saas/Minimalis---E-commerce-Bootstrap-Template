@@ -165,39 +165,67 @@
                 <div id="main" class="ml-sm-auto col-md-9 col-lg-9 col-xl-10">
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="mb-2 text-primary font-weight-bold">Avatars.</h4>
+                            <h1 class="mb-2 font-weight-bold">Avatars</h1>
 
-                            <div class="bd-example border">
-                                <div class="row  align-items-center">
-                                    <div class="col-auto">
-                                        <img src="../assets/img/avatar.png" alt="avatar" class="avatar avatar-xl">
-                                    </div><!-- end col -->
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result1" data-toggle="tab" role="tab" aria-controls="result1" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code1" data-toggle="tab" role="tab" aria-controls="code1" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
 
-                                    <div class="col-auto">
-                                        <img src="../assets/img/avatar.png" alt="avatar" class="avatar avatar-lg">
-                                    </div><!-- end col -->
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result1" role="tabpanel">
+                                    <div class="avatar avatar-xl">
+                                        <img src="../assets/img/avatar.png" alt="avatar" class="avatar-img rounded-circle">
+                                    </div><!-- end avatar -->
 
-                                    <div class="col-auto">
-                                        <img src="../assets/img/avatar.png" alt="avatar" class="avatar">
-                                    </div><!-- end col -->
+                                    <div class="avatar avatar-lg">
+                                        <img src="../assets/img/avatar.png" alt="avatar" class="avatar-img rounded-circle">
+                                    </div><!-- end avatar -->
 
-                                    <div class="col-auto">
-                                        <img src="../assets/img/avatar.png" alt="avatar" class="avatar avatar-sm">
-                                    </div><!-- end col -->
-                                </div><!-- end row -->
-                            </div><!-- end bd-example -->
+                                    <div class="avatar">
+                                        <img src="../assets/img/avatar.png" alt="avatar" class="avatar-img rounded-circle">
+                                    </div><!-- end avatar -->
+
+                                    <div class="avatar avatar-sm">
+                                        <img src="../assets/img/avatar.png" alt="avatar" class="avatar-img rounded-circle">
+                                    </div><!-- end avatar -->
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code1" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;div class=&quot;avatar avatar-xl&quot;&gt;
+    &lt;img src=&quot;../assets/img/avatar.png&quot; alt=&quot;avatar&quot; class=&quot;avatar-img rounded-circle&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;avatar avatar-lg&quot;&gt;
+    &lt;img src=&quot;../assets/img/avatar.png&quot; alt=&quot;avatar&quot; class=&quot;avatar-img rounded-circle&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;avatar&quot;&gt;
+    &lt;img src=&quot;../assets/img/avatar.png&quot; alt=&quot;avatar&quot; class=&quot;avatar-img rounded-circle&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;avatar avatar-sm&quot;&gt;
+    &lt;img src=&quot;../assets/img/avatar.png&quot; alt=&quot;avatar&quot; class=&quot;avatar-img rounded-circle&quot;&gt;
+&lt;/div&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
                         </div><!-- end col -->
                     </div><!-- end row -->
                 </div><!-- end #main col -->
             </div><!-- end row -->
         </div><!-- end container-fluid -->
 
-        <!-- jQuery -->
+        <!-- Javascript vendors -->
         <script src="../assets/vendors/jquery/jquery.min.js"></script>
-        <!-- Bootstrap bundle -->
         <script src="../assets/vendors/bootstrap/js/bootstrap.bundle.min.js?cb=1583937029097"></script>
-        <!-- Bootstrap Select -->
         <script src="../assets/vendors/bootstrap-select/js/bootstrap-select.min.js"></script>
+        <script src="../assets/vendors/prismjs/prism.js"></script>
 
         <!-- Javascript File -->
         <script src="../assets/js/theme.js?cb=1583937029097"></script>

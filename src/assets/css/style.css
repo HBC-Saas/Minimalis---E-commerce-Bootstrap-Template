@@ -13325,7 +13325,6 @@ select.selectpicker {
   width: 3.125rem;
   height: 3.125rem;
   border: none;
-  border-radius: 50%;
   background: #fff;
 }
 
@@ -13342,6 +13341,12 @@ select.selectpicker {
 .avatar.avatar-xl {
   width: 7.8125rem;
   height: 7.8125rem;
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .dropdown-toggle::after {
