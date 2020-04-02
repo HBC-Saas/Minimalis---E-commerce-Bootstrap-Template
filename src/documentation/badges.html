@@ -165,16 +165,45 @@
                 <div id="main" class="ml-sm-auto col-md-9 col-lg-9 col-xl-10">
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="mb-2 text-primary font-weight-bold">Badges.</h4>
+                            <h1 class="mb-3 font-weight-bold">Badges</h1>
+                            <p class="lead">Documentation and examples for badges, our small count and labeling component.</p>
 
-                            <div class="bd-example border">
+                            <p class="lead"><a href="https://getbootstrap.com/docs/4.4/components/badge/" target="_blank"><i class="fas fa-external-link-alt mr-1"></i> Bootstrap documentation</a></p>
+
+                            <hr class="mt-4 mb-6" />
+
+                            <h3 class="mb-2 font-weight-bold">Example</h3>
+
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result1" data-toggle="tab" role="tab" aria-controls="result1" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code1" data-toggle="tab" role="tab" aria-controls="code1" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result1" role="tabpanel">
                                     <h1>Example heading <span class="badge badge-primary">New</span></h1>
                                     <h2>Example heading <span class="badge badge-secondary">New</span></h2>
                                     <h3>Example heading <span class="badge badge-success">New</span></h3>
                                     <h4>Example heading <span class="badge badge-danger">New</span></h4>
                                     <h5>Example heading <span class="badge badge-warning">New</span></h5>
                                     <h6>Example heading <span class="badge badge-dark">New</span></h6>
-                            </div><!-- end bd-example -->
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code1" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;h1&gt;Example heading &lt;span class="badge badge-primary"&gt;New&lt;/span&gt;&lt;/h1&gt;
+&lt;h2&gt;Example heading &lt;span class="badge badge-secondary"&gt;New&lt;/span&gt;&lt;/h2&gt;
+&lt;h3&gt;Example heading &lt;span class="badge badge-success"&gt;New&lt;/span&gt;&lt;/h3&gt;
+&lt;h4&gt;Example heading &lt;span class="badge badge-danger"&gt;New&lt;/span&gt;&lt;/h4&gt;
+&lt;h5&gt;Example heading &lt;span class="badge badge-warning"&gt;New&lt;/span&gt;&lt;/h5&gt;
+&lt;h6&gt;Example heading &lt;span class="badge badge-dark"&gt;New&lt;/span&gt;&lt;/h6&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
                         </div><!-- end col -->
                     </div><!-- end row -->
 
@@ -182,18 +211,41 @@
 
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="mb-2 text-primary font-weight-bold">Contextual variations.</h4>
+                            <h3 class="mb-2 font-weight-bold">Contextual variations</h3>
 
-                            <div class="bd-example border">
-                                <span class="badge badge-primary">Primary</span>
-                                <span class="badge badge-secondary">Secondary</span>
-                                <span class="badge badge-success">Success</span>
-                                <span class="badge badge-danger">Danger</span>
-                                <span class="badge badge-warning">Warning</span>
-                                <span class="badge badge-info">Info</span>
-                                <span class="badge badge-light">Light</span>
-                                <span class="badge badge-dark">Dark</span>
-                            </div><!-- end bd-example -->
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result2" data-toggle="tab" role="tab" aria-controls="result1" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code2" data-toggle="tab" role="tab" aria-controls="code1" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result2" role="tabpanel">
+                                    <span class="badge badge-primary">Primary</span>
+                                    <span class="badge badge-secondary">Secondary</span>
+                                    <span class="badge badge-success">Success</span>
+                                    <span class="badge badge-danger">Danger</span>
+                                    <span class="badge badge-warning">Warning</span>
+                                    <span class="badge badge-info">Info</span>
+                                    <span class="badge badge-light">Light</span>
+                                    <span class="badge badge-dark">Dark</span>
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code2" role="tabpanel"><pre><code class="lang-html">&lt;span class="badge badge-primary"&gt;Primary&lt;/span&gt;
+&lt;span class="badge badge-secondary"&gt;Secondary&lt;/span&gt;
+&lt;span class="badge badge-success"&gt;Success&lt;/span&gt;
+&lt;span class="badge badge-danger"&gt;Danger&lt;/span&gt;
+&lt;span class="badge badge-warning"&gt;Warning&lt;/span&gt;
+&lt;span class="badge badge-info"&gt;Info&lt;/span&gt;
+&lt;span class="badge badge-light"&gt;Light&lt;/span&gt;
+&lt;span class="badge badge-dark"&gt;Dark&lt;/span&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
                         </div><!-- end col -->
                     </div><!-- end row -->
 
@@ -201,18 +253,42 @@
 
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="mb-2 text-primary font-weight-bold">Pill badges.</h4>
+                            <h3 class="mb-2 font-weight-bold">Pill badges</h3>
 
-                            <div class="bd-example border">
-                                <span class="badge badge-pill badge-primary">Primary</span>
-                                <span class="badge badge-pill badge-secondary">Secondary</span>
-                                <span class="badge badge-pill badge-success">Success</span>
-                                <span class="badge badge-pill badge-danger">Danger</span>
-                                <span class="badge badge-pill badge-warning">Warning</span>
-                                <span class="badge badge-pill badge-info">Info</span>
-                                <span class="badge badge-pill badge-light">Light</span>
-                                <span class="badge badge-pill badge-dark">Dark</span>
-                            </div><!-- end bd-example -->
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result3" data-toggle="tab" role="tab" aria-controls="result1" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code3" data-toggle="tab" role="tab" aria-controls="code1" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result3" role="tabpanel">
+                                    <span class="badge badge-pill badge-primary">Primary</span>
+                                    <span class="badge badge-pill badge-secondary">Secondary</span>
+                                    <span class="badge badge-pill badge-success">Success</span>
+                                    <span class="badge badge-pill badge-danger">Danger</span>
+                                    <span class="badge badge-pill badge-warning">Warning</span>
+                                    <span class="badge badge-pill badge-info">Info</span>
+                                    <span class="badge badge-pill badge-light">Light</span>
+                                    <span class="badge badge-pill badge-dark">Dark</span>
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code3" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;span class="badge badge-pill badge-primary"&gt;Primary&lt;/span&gt;
+&lt;span class="badge badge-pill badge-secondary"&gt;Secondary&lt;/span&gt;
+&lt;span class="badge badge-pill badge-success"&gt;Success&lt;/span&gt;
+&lt;span class="badge badge-pill badge-danger"&gt;Danger&lt;/span&gt;
+&lt;span class="badge badge-pill badge-warning"&gt;Warning&lt;/span&gt;
+&lt;span class="badge badge-pill badge-info"&gt;Info&lt;/span&gt;
+&lt;span class="badge badge-pill badge-light"&gt;Light&lt;/span&gt;
+&lt;span class="badge badge-pill badge-dark"&gt;Dark&lt;/span&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
                         </div><!-- end col -->
                     </div><!-- end row -->
 
@@ -220,30 +296,53 @@
 
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="mb-2 text-primary font-weight-bold">Links.</h4>
+                            <h3 class="mb-2 font-weight-bold">Links</h3>
 
-                            <div class="bd-example border">
-                                <a href="#" class="badge badge-primary">Primary</a>
-                                <a href="#" class="badge badge-secondary">Secondary</a>
-                                <a href="#" class="badge badge-success">Success</a>
-                                <a href="#" class="badge badge-danger">Danger</a>
-                                <a href="#" class="badge badge-warning">Warning</a>
-                                <a href="#" class="badge badge-info">Info</a>
-                                <a href="#" class="badge badge-light">Light</a>
-                                <a href="#" class="badge badge-dark">Dark</a>
-                            </div><!-- end bd-example -->
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result4" data-toggle="tab" role="tab" aria-controls="result1" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code4" data-toggle="tab" role="tab" aria-controls="code1" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result4" role="tabpanel">
+                                    <a href="#" class="badge badge-primary">Primary</a>
+                                    <a href="#" class="badge badge-secondary">Secondary</a>
+                                    <a href="#" class="badge badge-success">Success</a>
+                                    <a href="#" class="badge badge-danger">Danger</a>
+                                    <a href="#" class="badge badge-warning">Warning</a>
+                                    <a href="#" class="badge badge-info">Info</a>
+                                    <a href="#" class="badge badge-light">Light</a>
+                                    <a href="#" class="badge badge-dark">Dark</a>
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code4" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;a href="#" class="badge badge-primary"&gt;Primary&lt;/a&gt;
+&lt;a href="#" class="badge badge-secondary"&gt;Secondary&lt;/a&gt;
+&lt;a href="#" class="badge badge-success"&gt;Success&lt;/a&gt;
+&lt;a href="#" class="badge badge-danger"&gt;Danger&lt;/a&gt;
+&lt;a href="#" class="badge badge-warning"&gt;Warning&lt;/a&gt;
+&lt;a href="#" class="badge badge-info"&gt;Info&lt;/a&gt;
+&lt;a href="#" class="badge badge-light"&gt;Light&lt;/a&gt;
+&lt;a href="#" class="badge badge-dark"&gt;Dark&lt;/a&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
                         </div><!-- end col -->
                     </div><!-- end row -->
                 </div><!-- end #main col -->
             </div><!-- end row -->
         </div><!-- end container-fluid -->
 
-        <!-- jQuery -->
+        <!-- Javascript vendors -->
         <script src="../assets/vendors/jquery/jquery.min.js"></script>
-        <!-- Bootstrap bundle -->
         <script src="../assets/vendors/bootstrap/js/bootstrap.bundle.min.js?cb=1583937029097"></script>
-        <!-- Bootstrap Select -->
         <script src="../assets/vendors/bootstrap-select/js/bootstrap-select.min.js"></script>
+        <script src="../assets/vendors/prismjs/prism.js"></script>
 
         <!-- Javascript File -->
         <script src="../assets/js/theme.js?cb=1583937029097"></script>
