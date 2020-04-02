@@ -15026,6 +15026,14 @@ select.selectpicker {
   margin: 0 1rem;
 }
 
+.nav.nav-border .nav-item:first-child {
+  margin-left: 0;
+}
+
+.nav.nav-border .nav-item:last-child {
+  margin-right: 0;
+}
+
 .nav.nav-border .nav-link {
   padding: 1.5rem 0;
   position: relative;

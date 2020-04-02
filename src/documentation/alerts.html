@@ -11,6 +11,7 @@
 
     <!-- vendor css File -->
     <link rel="stylesheet" href="../assets/vendors/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="../assets/vendors/prismjs/themes/prism.css">
     
     <!-- typography -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap" rel="stylesheet">
@@ -150,29 +151,36 @@
 
                             <hr class="mt-4 mb-6" />
 
+                            <h3 class="mb-3 font-weight-bold">Contextual example</h3>
+
                             <ul class="nav nav-border border-bottom mb-4" role="tablist">
                                 <li class="nav-item">
-                                    <a class="nav-link text-dark active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Result</a>
+                                    <a class="nav-link text-dark active" href="#result1" data-toggle="tab" role="tab" aria-controls="result1" aria-selected="true">Result</a>
                                 </li><!-- end nav-item -->
                                 <li class="nav-item">
-                                    <a class="nav-link text-dark" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Code</a>
+                                    <a class="nav-link text-dark" href="#code1" data-toggle="tab" role="tab" aria-controls="code1" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
                                 </li><!-- end nav-item -->
                             </ul><!-- end nav -->
 
                             <div class="tab-content">
-                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="tab-pane fade show active" id="result1" role="tabpanel">
                                     <div class="alert alert-primary" role="alert">
                                         A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
                                     </div><!-- end alert -->
+
                                     <div class="alert alert-secondary" role="alert">
                                         A simple secondary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
                                     </div><!-- end alert -->
+
                                     <div class="alert alert-success" role="alert">
                                         <h4 class="alert-heading">Well done!</h4>
                                         <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
                                         <hr>
                                         <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
                                     </div><!-- end alert -->
+
                                     <div class="alert alert-danger" role="alert">
                                         A simple danger alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
                                     </div><!-- end alert -->
@@ -182,74 +190,159 @@
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                     </div><!-- end alert -->
+
                                     <div class="alert alert-info" role="alert">
                                         A simple info alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
                                     </div><!-- end alert -->
+
                                     <div class="alert alert-light" role="alert">
                                         A simple light alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
                                     </div><!-- end alert -->
+
                                     <div class="alert alert-dark" role="alert">
                                         A simple dark alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
                                     </div><!-- end alert -->
                                 </div><!-- end tab-pane -->
-                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">2</div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code1" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;div class=&quot;alert alert-primary&quot; role=&quot;alert&quot;&gt;
+    A simple primary alert with &lt;a href=&quot;#&quot; class=&quot;alert-link&quot;&gt;an example link&lt;/a&gt;. Give it a click if you like.
+&lt;/div&gt;
+
+&lt;div class=&quot;alert alert-secondary&quot; role=&quot;alert&quot;&gt;
+    A simple secondary alert with &lt;a href=&quot;#&quot; class=&quot;alert-link&quot;&gt;an example link&lt;/a&gt;. Give it a click if you like.
+&lt;/div&gt;
+
+&lt;div class=&quot;alert alert-success&quot; role=&quot;alert&quot;&gt;
+    &lt;h4 class=&quot;alert-heading&quot;&gt;Well done!&lt;/h4&gt;
+    &lt;p&gt;Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.&lt;/p&gt;
+    &lt;hr&gt;
+    &lt;p class=&quot;mb-0&quot;&gt;Whenever you need to, be sure to use margin utilities to keep things nice and tidy.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;alert alert-danger&quot; role=&quot;alert&quot;&gt;
+    A simple danger alert with &lt;a href=&quot;#&quot; class=&quot;alert-link&quot;&gt;an example link&lt;/a&gt;. Give it a click if you like.
+&lt;/div&gt;
+
+&lt;div class=&quot;alert alert-warning alert-dismissible fade show&quot; role=&quot;alert&quot;&gt;
+    &lt;strong&gt;Holy guacamole!&lt;/strong&gt; You should check in on some of those fields below.
+    &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;alert&quot; aria-label=&quot;Close&quot;&gt;
+        &lt;span aria-hidden=&quot;true&quot;&gt;&times;&lt;/span&gt;
+    &lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;alert alert-info&quot; role=&quot;alert&quot;&gt;
+    A simple info alert with &lt;a href=&quot;#&quot; class=&quot;alert-link&quot;&gt;an example link&lt;/a&gt;. Give it a click if you like.
+&lt;/div&gt;
+
+&lt;div class=&quot;alert alert-light&quot; role=&quot;alert&quot;&gt;
+    A simple light alert with &lt;a href=&quot;#&quot; class=&quot;alert-link&quot;&gt;an example link&lt;/a&gt;. Give it a click if you like.
+&lt;/div&gt;
+
+&lt;div class=&quot;alert alert-dark&quot; role=&quot;alert&quot;&gt;
+    A simple dark alert with &lt;a href=&quot;#&quot; class=&quot;alert-link&quot;&gt;an example link&lt;/a&gt;. Give it a click if you like.
+&lt;/div&gt;</code></pre>
+                                </div><!-- end tab-pane -->
                             </div><!-- end tab-content -->
-
-
                         </div><!-- end col -->
                     </div><!-- end row -->
 
-                    <hr class="mt-5 mb-5 border-top-0" />
+                    <hr class="mt-5 mb-5" />
 
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="mb-2 text-primary font-weight-bold">Minimalis.</h4>
+                            <h3 class="mb-3 font-weight-bold">Minimalis example</h3>
 
-                            <div class="bd-example border">
-                                <div class="alert notification alert-dismissible fade show" role="alert">
-                                    <i class="flaticon-null text-success alert-icon"></i>
-                                    Hi, Im successful notification
-                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                        <span aria-hidden="true"><i class="flaticon-close text-dark small"></i></span>
-                                    </button>
-                                </div><!-- end alert -->
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result2" data-toggle="tab" role="tab" aria-controls="result1" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code2" data-toggle="tab" role="tab" aria-controls="code1" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
 
-                                <div class="alert notification alert-dismissible fade show" role="alert">
-                                    <i class="flaticon-close-1 text-danger alert-icon"></i>
-                                    Hi, Im error notification
-                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                        <span aria-hidden="true"><i class="flaticon-close text-dark small"></i></span>
-                                    </button>
-                                </div><!-- end alert -->
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result2" role="tabpanel">
+                                    <div class="alert notification alert-dismissible fade show" role="alert">
+                                        <i class="flaticon-null text-success alert-icon"></i>
+                                        Hi, Im successful notification
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true"><i class="flaticon-close text-dark small"></i></span>
+                                        </button>
+                                    </div><!-- end alert -->
 
-                                <div class="alert notification alert-dismissible fade show" role="alert">
-                                    <i class="flaticon-alert text-warning alert-icon"></i>
-                                    Hi, Im warning notification
-                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                        <span aria-hidden="true"><i class="flaticon-close text-dark small"></i></span>
-                                    </button>
-                                </div><!-- end alert -->
+                                    <div class="alert notification alert-dismissible fade show" role="alert">
+                                        <i class="flaticon-close-1 text-danger alert-icon"></i>
+                                        Hi, Im error notification
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true"><i class="flaticon-close text-dark small"></i></span>
+                                        </button>
+                                    </div><!-- end alert -->
 
-                                <div class="alert notification alert-dismissible fade show mb-0" role="alert">
-                                    <i class="flaticon-help text-info alert-icon"></i>
-                                    Hi, Im info message notification
-                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                        <span aria-hidden="true"><i class="flaticon-close text-dark small"></i></span>
-                                    </button>
-                                </div><!-- end alert -->
-                            </div><!-- end bd-example -->
+                                    <div class="alert notification alert-dismissible fade show" role="alert">
+                                        <i class="flaticon-alert text-warning alert-icon"></i>
+                                        Hi, Im warning notification
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true"><i class="flaticon-close text-dark small"></i></span>
+                                        </button>
+                                    </div><!-- end alert -->
+
+                                    <div class="alert notification alert-dismissible fade show mb-0" role="alert">
+                                        <i class="flaticon-help text-info alert-icon"></i>
+                                        Hi, Im info message notification
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true"><i class="flaticon-close text-dark small"></i></span>
+                                        </button>
+                                    </div><!-- end alert -->
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code2" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;div class=&quot;alert notification alert-dismissible fade show&quot; role=&quot;alert&quot;&gt;
+    &lt;i class=&quot;flaticon-null text-success alert-icon&quot;&gt;&lt;/i&gt;
+    Hi, Im successful notification
+    &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;alert&quot; aria-label=&quot;Close&quot;&gt;
+        &lt;span aria-hidden=&quot;true&quot;&gt;&lt;i class=&quot;flaticon-close text-dark small&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+    &lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;alert notification alert-dismissible fade show&quot; role=&quot;alert&quot;&gt;
+    &lt;i class=&quot;flaticon-close-1 text-danger alert-icon&quot;&gt;&lt;/i&gt;
+    Hi, Im error notification
+    &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;alert&quot; aria-label=&quot;Close&quot;&gt;
+        &lt;span aria-hidden=&quot;true&quot;&gt;&lt;i class=&quot;flaticon-close text-dark small&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+    &lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;alert notification alert-dismissible fade show&quot; role=&quot;alert&quot;&gt;
+    &lt;i class=&quot;flaticon-alert text-warning alert-icon&quot;&gt;&lt;/i&gt;
+    Hi, Im warning notification
+    &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;alert&quot; aria-label=&quot;Close&quot;&gt;
+        &lt;span aria-hidden=&quot;true&quot;&gt;&lt;i class=&quot;flaticon-close text-dark small&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+    &lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;alert notification alert-dismissible fade show mb-0&quot; role=&quot;alert&quot;&gt;
+    &lt;i class=&quot;flaticon-help text-info alert-icon&quot;&gt;&lt;/i&gt;
+    Hi, Im info message notification
+    &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;alert&quot; aria-label=&quot;Close&quot;&gt;
+        &lt;span aria-hidden=&quot;true&quot;&gt;&lt;i class=&quot;flaticon-close text-dark small&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+    &lt;/button&gt;
+&lt;/div&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
                         </div><!-- end col -->
                     </div><!-- end row -->
                 </div><!-- end #main col -->
             </div><!-- end row -->
         </div><!-- end container-fluid -->
 
-        <!-- jQuery -->
         <script src="../assets/vendors/jquery/jquery.min.js"></script>
-        <!-- Bootstrap bundle -->
         <script src="../assets/vendors/bootstrap/js/bootstrap.bundle.min.js?cb=1583937029097"></script>
-        <!-- Bootstrap Select -->
         <script src="../assets/vendors/bootstrap-select/js/bootstrap-select.min.js"></script>
+        <script src="../assets/vendors/prismjs/prism.js"></script>
 
         <!-- Javascript File -->
         <script src="../assets/js/theme.js?cb=1583937029097"></script>
