@@ -57,7 +57,7 @@
                             <h5 class="sidebar-heading">Overview</h5>
                             <ul class="nav flex-column">
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="index.html">Introduction</a>
+                                    <a class="nav-link" href="index.html">Introduction</a>
                                 </li><!-- end nav-item -->
                                 <li class="nav-item">
                                     <a class="nav-link" href="getting-started.html">Getting Started</a>
@@ -165,21 +165,55 @@
                 <div id="main" class="ml-sm-auto col-md-9 col-lg-9 col-xl-10">
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="mb-2 text-primary font-weight-bold">Colors.</h4>
+                            <h1 class="mb-3 font-weight-bold">Buttons</h1>
+                            <p class="lead">Use Bootstrap’s custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.</p>
 
-                            <div class="bd-example border">
-                                <button type="button" class="btn btn-primary mb-2">Primary</button>
-                                <button type="button" class="btn btn-secondary mb-2">Secondary</button>
-                                <button type="button" class="btn btn-success mb-2">Success</button>
-                                <button type="button" class="btn btn-danger mb-2">Danger</button>
-                                <button type="button" class="btn btn-warning mb-2">Warning</button>
-                                <button type="button" class="btn btn-info mb-2">Info</button>
-                                <button type="button" class="btn btn-gray mb-2">Gray</button>
-                                <button type="button" class="btn btn-light mb-2">Light</button>
-                                <button type="button" class="btn btn-dark mb-2">Dark</button>
+                            <p class="lead"><a href="https://getbootstrap.com/docs/4.4/components/buttons/" target="_blank"><i class="fas fa-external-link-alt mr-1"></i> Bootstrap documentation</a></p>
 
-                                <button type="button" class="btn btn-link mb-2">Link</button>
-                            </div><!-- bd-example -->
+                            <hr class="mt-4 mb-6" />
+
+                            <h3 class="mb-2 font-weight-bold">Colors</h3>
+
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result1" data-toggle="tab" role="tab" aria-controls="result1" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code1" data-toggle="tab" role="tab" aria-controls="code1" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result1" role="tabpanel">
+                                    <button type="button" class="btn btn-primary mb-2">Primary</button>
+                                    <button type="button" class="btn btn-secondary mb-2">Secondary</button>
+                                    <button type="button" class="btn btn-success mb-2">Success</button>
+                                    <button type="button" class="btn btn-danger mb-2">Danger</button>
+                                    <button type="button" class="btn btn-warning mb-2">Warning</button>
+                                    <button type="button" class="btn btn-info mb-2">Info</button>
+                                    <button type="button" class="btn btn-gray mb-2">Gray</button>
+                                    <button type="button" class="btn btn-light mb-2">Light</button>
+                                    <button type="button" class="btn btn-dark mb-2">Dark</button>
+
+                                    <button type="button" class="btn btn-link mb-2">Link</button>
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code1" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;button type="button" class="btn btn-primary"&gt;Primary&lt;/button&gt;
+&lt;button type="button" class="btn btn-secondary"&gt;Secondary&lt;/button&gt;
+&lt;button type="button" class="btn btn-success"&gt;Success&lt;/button&gt;
+&lt;button type="button" class="btn btn-danger"&gt;Danger&lt;/button&gt;
+&lt;button type="button" class="btn btn-warning"&gt;Warning&lt;/button&gt;
+&lt;button type="button" class="btn btn-info"&gt;Info&lt;/button&gt;
+&lt;button type="button" class="btn btn-gray"&gt;Gray&lt;/button&gt;
+&lt;button type="button" class="btn btn-light"&gt;Light&lt;/button&gt;
+&lt;button type="button" class="btn btn-dark"&gt;Dark&lt;/button&gt;
+
+&lt;button type="button" class="btn btn-link"&gt;Link&lt;/button&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
                         </div><!-- end col -->
                     </div><!-- end row -->
 
@@ -187,19 +221,44 @@
 
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="mb-2 text-primary font-weight-bold">Outline.</h4>
+                            <h3 class="mb-2 font-weight-bold">Outline</h3>
 
-                            <div class="bd-example border">
-                                <button type="button" class="btn btn-outline-primary mb-2">Primary</button>
-                                <button type="button" class="btn btn-outline-secondary mb-2">Secondary</button>
-                                <button type="button" class="btn btn-outline-success mb-2">Success</button>
-                                <button type="button" class="btn btn-outline-danger mb-2">Danger</button>
-                                <button type="button" class="btn btn-outline-warning mb-2">Warning</button>
-                                <button type="button" class="btn btn-outline-info mb-2">Info</button>
-                                <button type="button" class="btn btn-outline-gray mb-2">Gray</button>
-                                <button type="button" class="btn btn-outline-light mb-2">Light</button>
-                                <button type="button" class="btn btn-outline-dark mb-2">Dark</button>
-                            </div><!-- bd-example -->
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result2" data-toggle="tab" role="tab" aria-controls="result1" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code2" data-toggle="tab" role="tab" aria-controls="code1" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result2" role="tabpanel">
+                                    <button type="button" class="btn btn-outline-primary mb-2">Primary</button>
+                                    <button type="button" class="btn btn-outline-secondary mb-2">Secondary</button>
+                                    <button type="button" class="btn btn-outline-success mb-2">Success</button>
+                                    <button type="button" class="btn btn-outline-danger mb-2">Danger</button>
+                                    <button type="button" class="btn btn-outline-warning mb-2">Warning</button>
+                                    <button type="button" class="btn btn-outline-info mb-2">Info</button>
+                                    <button type="button" class="btn btn-outline-gray mb-2">Gray</button>
+                                    <button type="button" class="btn btn-outline-light mb-2">Light</button>
+                                    <button type="button" class="btn btn-outline-dark mb-2">Dark</button>
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code2" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;button type="button" class="btn btn-outline-primary"&gt;Primary&lt;/button&gt;
+&lt;button type="button" class="btn btn-outline-secondary"&gt;Secondary&lt;/button&gt;
+&lt;button type="button" class="btn btn-outline-success"&gt;Success&lt;/button&gt;
+&lt;button type="button" class="btn btn-outline-danger"&gt;Danger&lt;/button&gt;
+&lt;button type="button" class="btn btn-outline-warning"&gt;Warning&lt;/button&gt;
+&lt;button type="button" class="btn btn-outline-info"&gt;Info&lt;/button&gt;
+&lt;button type="button" class="btn btn-outline-gray"&gt;Gray&lt;/button&gt;
+&lt;button type="button" class="btn btn-outline-light"&gt;Light&lt;/button&gt;
+&lt;button type="button" class="btn btn-outline-dark"&gt;Dark&lt;/button&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
                         </div><!-- end col -->
                     </div><!-- end row -->
 
@@ -207,19 +266,44 @@
 
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="mb-2 text-primary font-weight-bold">Hover outline.</h4>
+                            <h3 class="mb-2 font-weight-bold">Hover outline</h3>
 
-                            <div class="bd-example border">
-                                <button type="button" class="btn btn-primary hover-outline mb-2">Primary</button>
-                                <button type="button" class="btn btn-secondary hover-outline mb-2">Secondary</button>
-                                <button type="button" class="btn btn-success hover-outline mb-2">Success</button>
-                                <button type="button" class="btn btn-danger hover-outline mb-2">Danger</button>
-                                <button type="button" class="btn btn-warning hover-outline mb-2">Warning</button>
-                                <button type="button" class="btn btn-info hover-outline mb-2">Info</button>
-                                <button type="button" class="btn btn-gray hover-outline mb-2">Gray</button>
-                                <button type="button" class="btn btn-light hover-outline mb-2">Light</button>
-                                <button type="button" class="btn btn-dark hover-outline mb-2">Dark</button>
-                            </div><!-- bd-example -->
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result3" data-toggle="tab" role="tab" aria-controls="result1" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code3" data-toggle="tab" role="tab" aria-controls="code1" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result3" role="tabpanel">
+                                    <button type="button" class="btn btn-primary hover-outline mb-2">Primary</button>
+                                    <button type="button" class="btn btn-secondary hover-outline mb-2">Secondary</button>
+                                    <button type="button" class="btn btn-success hover-outline mb-2">Success</button>
+                                    <button type="button" class="btn btn-danger hover-outline mb-2">Danger</button>
+                                    <button type="button" class="btn btn-warning hover-outline mb-2">Warning</button>
+                                    <button type="button" class="btn btn-info hover-outline mb-2">Info</button>
+                                    <button type="button" class="btn btn-gray hover-outline mb-2">Gray</button>
+                                    <button type="button" class="btn btn-light hover-outline mb-2">Light</button>
+                                    <button type="button" class="btn btn-dark hover-outline mb-2">Dark</button>
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code3" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;button type="button" class="btn btn-primary hover-outline"&gt;Primary&lt;/button&gt;
+&lt;button type="button" class="btn btn-secondary hover-outline"&gt;Secondary&lt;/button&gt;
+&lt;button type="button" class="btn btn-success hover-outline"&gt;Success&lt;/button&gt;
+&lt;button type="button" class="btn btn-danger hover-outline"&gt;Danger&lt;/button&gt;
+&lt;button type="button" class="btn btn-warning hover-outline"&gt;Warning&lt;/button&gt;
+&lt;button type="button" class="btn btn-info hover-outline"&gt;Info&lt;/button&gt;
+&lt;button type="button" class="btn btn-gray hover-outline"&gt;Gray&lt;/button&gt;
+&lt;button type="button" class="btn btn-light hover-outline"&gt;Light&lt;/button&gt;
+&lt;button type="button" class="btn btn-dark hover-outline"&gt;Dark&lt;/button&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
                         </div><!-- end col -->
                     </div><!-- end row -->
 
@@ -227,23 +311,45 @@
 
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="mb-2 text-primary font-weight-bold">Links.</h4>
+                            <h3 class="mb-2 font-weight-bold">Links</h3>
+                            <p>You can use bootstrap utilitis like <code>.text-left</code> and <code>.py-</code> <code>.px-</code> if you need.</p>
 
-                            <div class="bd-example border">
-                                <button type="button" class="btn btn-link-primary mb-2">Primary</button>
-                                <button type="button" class="btn btn-link-secondary mb-2">Secondary</button>
-                                <button type="button" class="btn btn-link-success mb-2">Success</button>
-                                <button type="button" class="btn btn-link-danger mb-2">Danger</button>
-                                <button type="button" class="btn btn-link-warning mb-2">Warning</button>
-                                <button type="button" class="btn btn-link-info mb-2">Info</button>
-                                <button type="button" class="btn btn-link-gray mb-2">Gray</button>
-                                <button type="button" class="btn btn-link-light mb-2">Light</button>
-                                <button type="button" class="btn btn-link-dark mb-2">Dark</button>
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result4" data-toggle="tab" role="tab" aria-controls="result1" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code4" data-toggle="tab" role="tab" aria-controls="code1" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
 
-                                <hr />
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result4" role="tabpanel">
+                                    <button type="button" class="btn btn-link-primary mb-2"><i class="flaticon-shopping-cart mr-1"></i> Primary</button>
+                                    <button type="button" class="btn btn-link-secondary mb-2">Secondary</button>
+                                    <button type="button" class="btn btn-link-success mb-2">Success</button>
+                                    <button type="button" class="btn btn-link-danger mb-2">Danger</button>
+                                    <button type="button" class="btn btn-link-warning mb-2">Warning</button>
+                                    <button type="button" class="btn btn-link-info mb-2">Info</button>
+                                    <button type="button" class="btn btn-link-gray mb-2">Gray</button>
+                                    <button type="button" class="btn btn-link-light mb-2">Light</button>
+                                    <button type="button" class="btn btn-link-dark mb-2">Dark</button>
+                                </div><!-- end tab-pane -->
 
-                                <button type="button" class="btn btn-link-primary mb-2"><i class="flaticon-shopping-cart mr-1"></i> Add to cart</button>
-                            </div><!-- bd-example -->
+                                <div class="tab-pane fade" id="code4" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;button type="button" class="btn btn-link-primary"&gt;&lt;i class="flaticon-shopping-cart mr-1"&gt;&lt;/i&gt; Primary&lt;/button&gt;
+&lt;button type="button" class="btn btn-link-secondary"&gt;Secondary&lt;/button&gt;
+&lt;button type="button" class="btn btn-link-success"&gt;Success&lt;/button&gt;
+&lt;button type="button" class="btn btn-link-danger"&gt;Danger&lt;/button&gt;
+&lt;button type="button" class="btn btn-link-warning"&gt;Warning&lt;/button&gt;
+&lt;button type="button" class="btn btn-link-info"&gt;Info&lt;/button&gt;
+&lt;button type="button" class="btn btn-link-gray"&gt;Gray&lt;/button&gt;
+&lt;button type="button" class="btn btn-link-light"&gt;Light&lt;/button&gt;
+&lt;button type="button" class="btn btn-link-dark"&gt;Dark&lt;/button&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
                         </div><!-- end col -->
                     </div><!-- end row -->
 
@@ -251,342 +357,96 @@
 
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="mb-2 text-primary font-weight-bold">Animation.</h4>
+                            <h3 class="mb-2 font-weight-bold">Animation</h3>
 
-                            <div class="bd-example border">
-                                <button type="button" class="btn btn-primary btn-arrow mb-2">
-                                    <div class="inner-btn">
-                                        Normal
-                                        <div class="arrow">
-                                            <span class="arrow-icon"></span>
-                                        </div>
-                                    </div>
-                                </button>
-                                <button type="button" class="btn btn-secondary btn-arrow mb-2">
-                                    <div class="inner-btn">
-                                        Normal
-                                        <div class="arrow">
-                                            <span class="arrow-icon"></span>
-                                        </div>
-                                    </div>
-                                </button>
-                                <button type="button" class="btn btn-success btn-arrow mb-2">
-                                    <div class="inner-btn">
-                                        Normal
-                                        <div class="arrow">
-                                            <span class="arrow-icon"></span>
-                                        </div>
-                                    </div>
-                                </button>
-                                <button type="button" class="btn btn-danger btn-arrow mb-2">
-                                    <div class="inner-btn">
-                                        Normal
-                                        <div class="arrow">
-                                            <span class="arrow-icon"></span>
-                                        </div>
-                                    </div>
-                                </button>
-                                <button type="button" class="btn btn-warning btn-arrow mb-2">
-                                    <div class="inner-btn">
-                                        Normal
-                                        <div class="arrow">
-                                            <span class="arrow-icon"></span>
-                                        </div>
-                                    </div>
-                                </button>
-                                <button type="button" class="btn btn-info btn-arrow mb-2">
-                                    <div class="inner-btn">
-                                        Normal
-                                        <div class="arrow">
-                                            <span class="arrow-icon"></span>
-                                        </div>
-                                    </div>
-                                </button>
-                                <button type="button" class="btn btn-gray btn-arrow mb-2">
-                                    <div class="inner-btn">
-                                        Normal
-                                        <div class="arrow">
-                                            <span class="arrow-icon"></span>
-                                        </div>
-                                    </div>
-                                </button>
-                                <button type="button" class="btn btn-light btn-arrow mb-2">
-                                    <div class="inner-btn">
-                                        Normal
-                                        <div class="arrow">
-                                            <span class="arrow-icon"></span>
-                                        </div>
-                                    </div>
-                                </button>
-                                <button type="button" class="btn btn-dark btn-arrow mb-2">
-                                    <div class="inner-btn">
-                                        Normal
-                                        <div class="arrow">
-                                            <span class="arrow-icon"></span>
-                                        </div>
-                                    </div>
-                                </button>
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result5" data-toggle="tab" role="tab" aria-controls="result1" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code5" data-toggle="tab" role="tab" aria-controls="code1" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
 
-                                <hr />
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result5" role="tabpanel">
+                                    <button type="button" class="btn btn-primary btn-arrow mb-2">
+                                        <div class="inner-btn">
+                                            Normal
+                                            <div class="arrow">
+                                                <span class="arrow-icon"></span>
+                                            </div>
+                                        </div>
+                                    </button>
 
-                                <button type="button" class="btn btn-outline-primary btn-arrow mb-2">
-                                    <div class="inner-btn">
-                                        Normal
-                                        <div class="arrow">
-                                            <span class="arrow-icon"></span>
+                                    <button type="button" class="btn btn-outline-primary btn-arrow mb-2">
+                                        <div class="inner-btn">
+                                            Normal
+                                            <div class="arrow">
+                                                <span class="arrow-icon"></span>
+                                            </div>
                                         </div>
-                                    </div>
-                                </button>
-                                <button type="button" class="btn btn-outline-secondary btn-arrow mb-2">
-                                    <div class="inner-btn">
-                                        Normal
-                                        <div class="arrow">
-                                            <span class="arrow-icon"></span>
-                                        </div>
-                                    </div>
-                                </button>
-                                <button type="button" class="btn btn-outline-success btn-arrow mb-2">
-                                    <div class="inner-btn">
-                                        Normal
-                                        <div class="arrow">
-                                            <span class="arrow-icon"></span>
-                                        </div>
-                                    </div>
-                                </button>
-                                <button type="button" class="btn btn-outline-danger btn-arrow mb-2">
-                                    <div class="inner-btn">
-                                        Normal
-                                        <div class="arrow">
-                                            <span class="arrow-icon"></span>
-                                        </div>
-                                    </div>
-                                </button>
-                                <button type="button" class="btn btn-outline-warning btn-arrow mb-2">
-                                    <div class="inner-btn">
-                                        Normal
-                                        <div class="arrow">
-                                            <span class="arrow-icon"></span>
-                                        </div>
-                                    </div>
-                                </button>
-                                <button type="button" class="btn btn-outline-info btn-arrow mb-2">
-                                    <div class="inner-btn">
-                                        Normal
-                                        <div class="arrow">
-                                            <span class="arrow-icon"></span>
-                                        </div>
-                                    </div>
-                                </button>
-                                <button type="button" class="btn btn-outline-gray btn-arrow mb-2">
-                                    <div class="inner-btn">
-                                        Normal
-                                        <div class="arrow">
-                                            <span class="arrow-icon"></span>
-                                        </div>
-                                    </div>
-                                </button>
-                                <button type="button" class="btn btn-outline-light btn-arrow mb-2">
-                                    <div class="inner-btn">
-                                        Normal
-                                        <div class="arrow">
-                                            <span class="arrow-icon"></span>
-                                        </div>
-                                    </div>
-                                </button>
-                                <button type="button" class="btn btn-outline-dark btn-arrow mb-2">
-                                    <div class="inner-btn">
-                                        Normal
-                                        <div class="arrow">
-                                            <span class="arrow-icon"></span>
-                                        </div>
-                                    </div>
-                                </button>
+                                    </button>
 
-                                <hr />
+                                    <button type="button" class="btn btn-primary hover-outline btn-arrow mb-2">
+                                        <div class="inner-btn">
+                                            Normal
+                                            <div class="arrow">
+                                                <span class="arrow-icon"></span>
+                                            </div>
+                                        </div>
+                                    </button>
 
-                                <button type="button" class="btn btn-primary hover-outline btn-arrow mb-2">
-                                    <div class="inner-btn">
-                                        Normal
-                                        <div class="arrow">
-                                            <span class="arrow-icon"></span>
+                                    <button type="button" class="btn btn-link-primary btn-arrow mb-2">
+                                        <div class="inner-btn">
+                                            Normal
+                                            <div class="arrow">
+                                                <span class="arrow-icon"></span>
+                                            </div>
                                         </div>
-                                    </div>
-                                </button>
-                                <button type="button" class="btn btn-secondary hover-outline btn-arrow mb-2">
-                                    <div class="inner-btn">
-                                        Normal
-                                        <div class="arrow">
-                                            <span class="arrow-icon"></span>
-                                        </div>
-                                    </div>
-                                </button>
-                                <button type="button" class="btn btn-success hover-outline btn-arrow mb-2">
-                                    <div class="inner-btn">
-                                        Normal
-                                        <div class="arrow">
-                                            <span class="arrow-icon"></span>
-                                        </div>
-                                    </div>
-                                </button>
-                                <button type="button" class="btn btn-danger hover-outline btn-arrow mb-2">
-                                    <div class="inner-btn">
-                                        Normal
-                                        <div class="arrow">
-                                            <span class="arrow-icon"></span>
-                                        </div>
-                                    </div>
-                                </button>
-                                <button type="button" class="btn btn-warning hover-outline btn-arrow mb-2">
-                                    <div class="inner-btn">
-                                        Normal
-                                        <div class="arrow">
-                                            <span class="arrow-icon"></span>
-                                        </div>
-                                    </div>
-                                </button>
-                                <button type="button" class="btn btn-info hover-outline btn-arrow mb-2">
-                                    <div class="inner-btn">
-                                        Normal
-                                        <div class="arrow">
-                                            <span class="arrow-icon"></span>
-                                        </div>
-                                    </div>
-                                </button>
-                                <button type="button" class="btn btn-gray hover-outline btn-arrow mb-2">
-                                    <div class="inner-btn">
-                                        Normal
-                                        <div class="arrow">
-                                            <span class="arrow-icon"></span>
-                                        </div>
-                                    </div>
-                                </button>
-                                <button type="button" class="btn btn-light hover-outline btn-arrow mb-2">
-                                    <div class="inner-btn">
-                                        Normal
-                                        <div class="arrow">
-                                            <span class="arrow-icon"></span>
-                                        </div>
-                                    </div>
-                                </button>
-                                <button type="button" class="btn btn-dark hover-outline btn-arrow mb-2">
-                                    <div class="inner-btn">
-                                        Normal
-                                        <div class="arrow">
-                                            <span class="arrow-icon"></span>
-                                        </div>
-                                    </div>
-                                </button>
+                                    </button>
+                                </div><!-- end tab-pane -->
 
-                                <hr />
+                                <div class="tab-pane fade" id="code5" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;button type="button" class="btn btn-primary btn-arrow"&gt;
+    &lt;div class="inner-btn"&gt;
+        Normal
+        &lt;div class="arrow"&gt;
+            &lt;span class="arrow-icon"&gt;&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/button&gt;
 
-                                <button type="button" class="btn btn-link-primary btn-arrow mb-2">
-                                    <div class="inner-btn">
-                                        Normal
-                                        <div class="arrow">
-                                            <span class="arrow-icon"></span>
-                                        </div>
-                                    </div>
-                                </button>
-                                <button type="button" class="btn btn-link-secondary btn-arrow mb-2">
-                                    <div class="inner-btn">
-                                        Normal
-                                        <div class="arrow">
-                                            <span class="arrow-icon"></span>
-                                        </div>
-                                    </div>
-                                </button>
-                                <button type="button" class="btn btn-link-success btn-arrow mb-2">
-                                    <div class="inner-btn">
-                                        Normal
-                                        <div class="arrow">
-                                            <span class="arrow-icon"></span>
-                                        </div>
-                                    </div>
-                                </button>
-                                <button type="button" class="btn btn-link-danger btn-arrow mb-2">
-                                    <div class="inner-btn">
-                                        Normal
-                                        <div class="arrow">
-                                            <span class="arrow-icon"></span>
-                                        </div>
-                                    </div>
-                                </button>
-                                <button type="button" class="btn btn-link-warning btn-arrow mb-2">
-                                    <div class="inner-btn">
-                                        Normal
-                                        <div class="arrow">
-                                            <span class="arrow-icon"></span>
-                                        </div>
-                                    </div>
-                                </button>
-                                <button type="button" class="btn btn-link-info btn-arrow mb-2">
-                                    <div class="inner-btn">
-                                        Normal
-                                        <div class="arrow">
-                                            <span class="arrow-icon"></span>
-                                        </div>
-                                    </div>
-                                </button>
-                                <button type="button" class="btn btn-link-gray btn-arrow mb-2">
-                                    <div class="inner-btn">
-                                        Normal
-                                        <div class="arrow">
-                                            <span class="arrow-icon"></span>
-                                        </div>
-                                    </div>
-                                </button>
-                                <button type="button" class="btn btn-link-light btn-arrow mb-2">
-                                    <div class="inner-btn">
-                                        Normal
-                                        <div class="arrow">
-                                            <span class="arrow-icon"></span>
-                                        </div>
-                                    </div>
-                                </button>
-                                <button type="button" class="btn btn-link-dark btn-arrow mb-2">
-                                    <div class="inner-btn">
-                                        Normal
-                                        <div class="arrow">
-                                            <span class="arrow-icon"></span>
-                                        </div>
-                                    </div>
-                                </button>
+&lt;button type="button" class="btn btn-outline-primary btn-arrow"&gt;
+    &lt;div class="inner-btn"&gt;
+        Normal
+        &lt;div class="arrow"&gt;
+            &lt;span class="arrow-icon"&gt;&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/button&gt;
 
-                                <hr />
+&lt;button type="button" class="btn btn-primary hover-outline btn-arrow"&gt;
+    &lt;div class="inner-btn"&gt;
+        Normal
+        &lt;div class="arrow"&gt;
+            &lt;span class="arrow-icon"&gt;&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/button&gt;
 
-                                <button type="button" class="btn btn-primary btn-arrow disabled mb-2">
-                                    <div class="inner-btn">
-                                        Normal
-                                        <div class="arrow">
-                                            <span class="arrow-icon"></span>
-                                        </div>
-                                    </div>
-                                </button>
-                                <button type="button" class="btn btn-outline-primary btn-arrow disabled mb-2">
-                                    <div class="inner-btn">
-                                        Normal
-                                        <div class="arrow">
-                                            <span class="arrow-icon"></span>
-                                        </div>
-                                    </div>
-                                </button>
-                                <button type="button" class="btn btn-primary hover-outline btn-arrow disabled mb-2">
-                                    <div class="inner-btn">
-                                        Normal
-                                        <div class="arrow">
-                                            <span class="arrow-icon"></span>
-                                        </div>
-                                    </div>
-                                </button>
-                                <button type="button" class="btn btn-link-primary btn-arrow disabled mb-2">
-                                    <div class="inner-btn">
-                                        Normal
-                                        <div class="arrow">
-                                            <span class="arrow-icon"></span>
-                                        </div>
-                                    </div>
-                                </button>
-                            </div><!-- bd-example -->
+&lt;button type="button" class="btn btn-link-primary btn-arrow"&gt;
+    &lt;div class="inner-btn"&gt;
+        Normal
+        &lt;div class="arrow"&gt;
+            &lt;span class="arrow-icon"&gt;&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/button&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
                         </div><!-- end col -->
                     </div><!-- end row -->
 
@@ -594,13 +454,42 @@
 
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="mb-2 text-primary font-weight-bold">Size.</h4>
+                            <h3 class="mb-2 font-weight-bold">Disable</h3>
 
-                            <div class="bd-example border">
-                                <button type="button" class="btn btn-dark btn-lg mb-2">Large</button>
-                                <button type="button" class="btn btn-dark mb-2">Normal</button>
-                                <button type="button" class="btn btn-dark btn-sm mb-2">Small</button>
-                            </div><!-- bd-example -->
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result6" data-toggle="tab" role="tab" aria-controls="result1" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code6" data-toggle="tab" role="tab" aria-controls="code1" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result6" role="tabpanel">
+                                    <button type="button" class="btn btn-primary btn-arrow disabled mb-2">
+                                        <div class="inner-btn">
+                                            Normal
+                                            <div class="arrow">
+                                                <span class="arrow-icon"></span>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code6" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;button type="button" class="btn btn-primary btn-arrow disabled"&gt;
+    &lt;div class="inner-btn"&gt;
+        Normal
+        &lt;div class="arrow"&gt;
+            &lt;span class="arrow-icon"&gt;&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/button&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
                         </div><!-- end col -->
                     </div><!-- end row -->
 
@@ -608,55 +497,32 @@
 
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="mb-2 text-primary font-weight-bold">Disable.</h4>
+                            <h3 class="mb-2 font-weight-bold">Size</h3>
 
-                            <div class="bd-example border">
-                                <button type="button" class="btn btn-primary disabled mb-2">Disable</button>
-                                <button type="button" class="btn btn-secondary disabled mb-2">Disable</button>
-                                <button type="button" class="btn btn-success disabled mb-2">Disable</button>
-                                <button type="button" class="btn btn-danger disabled mb-2">Disable</button>
-                                <button type="button" class="btn btn-warning disabled mb-2">Disable</button>
-                                <button type="button" class="btn btn-info disabled mb-2">Disable</button>
-                                <button type="button" class="btn btn-gray disabled mb-2">Disable</button>
-                                <button type="button" class="btn btn-light disabled mb-2">Disable</button>
-                                <button type="button" class="btn btn-dark disabled mb-2">Disable</button>
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result7" data-toggle="tab" role="tab" aria-controls="result7" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code7" data-toggle="tab" role="tab" aria-controls="code7" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
 
-                                <hr />
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result7" role="tabpanel">
+                                    <button type="button" class="btn btn-primary btn-lg mb-2">Large</button>
+                                    <button type="button" class="btn btn-primary mb-2">Normal</button>
+                                    <button type="button" class="btn btn-primary btn-sm mb-2">Small</button>
+                                </div><!-- end tab-pane -->
 
-                                <button type="button" class="btn btn-outline-primary disabled mb-2">Disable</button>
-                                <button type="button" class="btn btn-outline-secondary disabled mb-2">Disable</button>
-                                <button type="button" class="btn btn-outline-success disabled mb-2">Disable</button>
-                                <button type="button" class="btn btn-outline-danger disabled mb-2">Disable</button>
-                                <button type="button" class="btn btn-outline-warning disabled mb-2">Disable</button>
-                                <button type="button" class="btn btn-outline-info disabled mb-2">Disable</button>
-                                <button type="button" class="btn btn-outline-gray disabled mb-2">Disable</button>
-                                <button type="button" class="btn btn-outline-light disabled mb-2">Disable</button>
-                                <button type="button" class="btn btn-outline-dark disabled mb-2">Disable</button>
-
-                                <hr />
-
-                                <button type="button" class="btn btn-primary hover-outline disabled mb-2">Disable</button>
-                                <button type="button" class="btn btn-secondary hover-outline disabled mb-2">Disable</button>
-                                <button type="button" class="btn btn-success hover-outline disabled mb-2">Disable</button>
-                                <button type="button" class="btn btn-danger hover-outline disabled mb-2">Disable</button>
-                                <button type="button" class="btn btn-warning hover-outline disabled mb-2">Disable</button>
-                                <button type="button" class="btn btn-info hover-outline disabled mb-2">Disable</button>
-                                <button type="button" class="btn btn-gray hover-outline disabled mb-2">Disable</button>
-                                <button type="button" class="btn btn-light hover-outline disabled mb-2">Disable</button>
-                                <button type="button" class="btn btn-dark hover-outline disabled mb-2">Disable</button>
-
-                                <hr />
-
-                                <button type="button" class="btn btn-link-primary disabled mb-2">Disable</button>
-                                <button type="button" class="btn btn-link-secondary disabled mb-2">Disable</button>
-                                <button type="button" class="btn btn-link-success disabled mb-2">Disable</button>
-                                <button type="button" class="btn btn-link-danger disabled mb-2">Disable</button>
-                                <button type="button" class="btn btn-link-warning disabled mb-2">Disable</button>
-                                <button type="button" class="btn btn-link-info disabled mb-2">Disable</button>
-                                <button type="button" class="btn btn-link-gray disabled mb-2">Disable</button>
-                                <button type="button" class="btn btn-link-light disabled mb-2">Disable</button>
-                                <button type="button" class="btn btn-link-dark disabled mb-2">Disable</button>
-                            </div><!-- bd-example -->
+                                <div class="tab-pane fade" id="code7" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;button type="button" class="btn btn-primary btn-lg"&gt;Large&lt;/button&gt;
+&lt;button type="button" class="btn btn-primary"&gt;Normal&lt;/button&gt;
+&lt;button type="button" class="btn btn-primary btn-sm"&gt;Small&lt;/button&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
                         </div><!-- end col -->
                     </div><!-- end row -->
 
@@ -664,19 +530,38 @@
 
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="mb-2 text-primary font-weight-bold">Block.</h4>
+                            <h3 class="mb-2 font-weight-bold">Social Networks</h3>
 
-                            <div class="bd-example border">
-                                <button type="button" class="btn btn-primary btn-block mb-2">Block</button>
-                                <button type="button" class="btn btn-secondary btn-block mb-2">Block</button>
-                                <button type="button" class="btn btn-success btn-block mb-2">Block</button>
-                                <button type="button" class="btn btn-danger btn-block mb-2">Block</button>
-                                <button type="button" class="btn btn-warning btn-block mb-2">Block</button>
-                                <button type="button" class="btn btn-info btn-block mb-2">Block</button>
-                                <button type="button" class="btn btn-gray btn-block mb-2">Block</button>
-                                <button type="button" class="btn btn-light btn-block mb-2">Block</button>
-                                <button type="button" class="btn btn-dark btn-block mb-2">Block</button>
-                            </div><!-- bd-example -->
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result8" data-toggle="tab" role="tab" aria-controls="result8" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code8" data-toggle="tab" role="tab" aria-controls="code8" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result8" role="tabpanel">
+                                    <button type="button" class="btn btn-facebook btn-block mb-2">
+                                        Login with <span class="text-facebook">Facebook</span>
+                                    </button>
+                                    <button type="button" class="btn btn-google-plus btn-block mb-2">
+                                        Login with <span class="text-google-plus">Google</span>
+                                    </button>
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code8" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;button type="button" class="btn btn-facebook btn-block"&gt;
+    Login with &lt;span class="text-facebook"&gt;Facebook&lt;/span&gt;
+&lt;/button&gt;
+&lt;button type="button" class="btn btn-google-plus btn-block"&gt;
+    Login with &lt;span class="text-google-plus"&gt;Google&lt;/span&gt;
+&lt;/button&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
                         </div><!-- end col -->
                     </div><!-- end row -->
 
@@ -684,109 +569,83 @@
 
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="mb-2 text-primary font-weight-bold">Checkbox.</h4>
+                            <h3 class="mb-2 font-weight-bold">Add to card button</h3>
 
-                            <div class="bd-example border">
-                                <div class="btn-group-toggle" data-toggle="buttons">
-                                    <label class="btn btn-primary active">
-                                        <input type="checkbox" checked> Checked
-                                    </label>
-                                </div>
-                            </div><!-- bd-example -->
-                        </div><!-- end col -->
-                    </div><!-- end row -->
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result9" data-toggle="tab" role="tab" aria-controls="result9" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code9" data-toggle="tab" role="tab" aria-controls="code9" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
 
-                    <hr class="mt-5 mb-5 border-top-0" />
-
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <h4 class="mb-2 text-primary font-weight-bold">Radio.</h4>
-
-                            <div class="bd-example border">
-                                <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                    <label class="btn btn-primary active">
-                                        <input type="radio" name="options" id="option1" checked> Active
-                                    </label>
-                                    <label class="btn btn-primary">
-                                        <input type="radio" name="options" id="option2"> Radio
-                                    </label>
-                                    <label class="btn btn-primary">
-                                        <input type="radio" name="options" id="option3"> Radio
-                                    </label>
-                                </div>
-                            </div><!-- bd-example -->
-                        </div><!-- end col -->
-                    </div><!-- end row -->
-
-                    <hr class="mt-5 mb-5 border-top-0" />
-
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <h4 class="mb-2 text-primary font-weight-bold">Social Networks.</h4>
-
-                            <div class="bd-example border">
-                                <button type="button" class="btn btn-facebook btn-block mb-2">
-                                    Login with <span class="text-facebook">Facebook</span>
-                                </button>
-                                <button type="button" class="btn btn-google-plus btn-block mb-2">
-                                    Login with <span class="text-google-plus">Google</span>
-                                </button>
-
-                                <hr />
-
-                                <button type="button" class="btn btn-facebook btn-block disabled mb-2">
-                                    Login with <span class="text-facebook">Facebook</span>
-                                </button>
-                                <button type="button" class="btn btn-google-plus btn-block disabled mb-2">
-                                    Login with <span class="text-google-plus">Google</span>
-                                </button>
-                            </div><!-- bd-example -->
-                        </div><!-- end col -->
-                    </div><!-- end row -->
-
-                    <hr class="mt-5 mb-5 border-top-0" />
-
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <h4 class="mb-2 text-primary font-weight-bold">Add to card button.</h4>
-
-                            <div class="bd-example border">
-                                <button class="btn-add-to-card btn-large" type="button">
-                                    <i class="add-to-card-active flaticon-plus h5"></i>
-                                    <span class="add-to-card-hover">
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result9" role="tabpanel">
+                                    <button class="btn-add-to-card btn-large" type="button">
+                                        <i class="add-to-card-active flaticon-plus h5"></i>
+                                        <span class="add-to-card-hover">
                                         <span class="add-to-card-text">Add to cart</span>
                                     </span>
-                                    <i class="add-to-card-success flaticon-null text-success h5"></i>
-                                </button>
+                                        <i class="add-to-card-success flaticon-null text-success h5"></i>
+                                    </button>
 
-                                <button class="btn-add-to-card btn-medium" type="button">
-                                    <i class="add-to-card-active flaticon-plus h6"></i>
-                                    <span class="add-to-card-hover">
+                                    <button class="btn-add-to-card btn-medium" type="button">
+                                        <i class="add-to-card-active flaticon-plus h6"></i>
+                                        <span class="add-to-card-hover">
                                         <span class="add-to-card-text">Add to cart</span>
                                     </span>
-                                    <i class="add-to-card-success flaticon-null text-success h6"></i>
-                                </button>
+                                        <i class="add-to-card-success flaticon-null text-success h6"></i>
+                                    </button>
 
-                                <button class="btn-add-to-card btn-small" type="button">
-                                    <i class="add-to-card-active flaticon-plus h6"></i>
-                                    <span class="add-to-card-hover">
+                                    <button class="btn-add-to-card btn-small" type="button">
+                                        <i class="add-to-card-active flaticon-plus h6"></i>
+                                        <span class="add-to-card-hover">
                                         <span class="add-to-card-text">Add to cart</span>
                                     </span>
-                                    <i class="add-to-card-success flaticon-null text-success h6"></i>
-                                </button>
-                            </div><!-- bd-example -->
+                                        <i class="add-to-card-success flaticon-null text-success h6"></i>
+                                    </button>
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code9" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;button class="btn-add-to-card btn-large" type="button"&gt;
+    &lt;i class="add-to-card-active flaticon-plus h5"&gt;&lt;/i&gt;
+    &lt;span class="add-to-card-hover"&gt;
+        &lt;span class="add-to-card-text"&gt;Add to cart&lt;/span&gt;
+    &lt;/span&gt;
+    &lt;i class="add-to-card-success flaticon-null text-success h5"&gt;&lt;/i&gt;
+&lt;/button&gt;
+
+&lt;button class="btn-add-to-card btn-medium" type="button"&gt;
+    &lt;i class="add-to-card-active flaticon-plus h6"&gt;&lt;/i&gt;
+    &lt;span class="add-to-card-hover"&gt;
+        &lt;span class="add-to-card-text"&gt;Add to cart&lt;/span&gt;
+    &lt;/span&gt;
+    &lt;i class="add-to-card-success flaticon-null text-success h6"&gt;&lt;/i&gt;
+&lt;/button&gt;
+
+&lt;button class="btn-add-to-card btn-small" type="button"&gt;
+    &lt;i class="add-to-card-active flaticon-plus h6"&gt;&lt;/i&gt;
+    &lt;span class="add-to-card-hover"&gt;
+        &lt;span class="add-to-card-text"&gt;Add to cart&lt;/span&gt;
+    &lt;/span&gt;
+    &lt;i class="add-to-card-success flaticon-null text-success h6"&gt;&lt;/i&gt;
+&lt;/button&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
                         </div><!-- end col -->
                     </div><!-- end row -->
                 </div><!-- end #main col -->
             </div><!-- end row -->
         </div><!-- end container-fluid -->
 
-        <!-- jQuery -->
+        <!-- Javascript vendors -->
         <script src="../assets/vendors/jquery/jquery.min.js"></script>
-        <!-- Bootstrap bundle -->
         <script src="../assets/vendors/bootstrap/js/bootstrap.bundle.min.js?cb=1583937029097"></script>
-        <!-- Bootstrap Select -->
         <script src="../assets/vendors/bootstrap-select/js/bootstrap-select.min.js"></script>
+        <script src="../assets/vendors/prismjs/prism.js"></script>
 
         <!-- Javascript File -->
         <script src="../assets/js/theme.js?cb=1583937029097"></script>
