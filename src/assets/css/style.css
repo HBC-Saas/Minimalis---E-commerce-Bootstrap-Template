@@ -14097,7 +14097,7 @@ select.selectpicker {
     margin-top: -0.1875rem;
   }
   .navbar-expand-sm .navbar-nav .dropdown-submenu .dropdown-menu {
-    top: -0.375rem;
+    top: 0;
     left: 100%;
   }
 }
@@ -14311,7 +14311,7 @@ select.selectpicker {
     margin-top: -0.1875rem;
   }
   .navbar-expand-md .navbar-nav .dropdown-submenu .dropdown-menu {
-    top: -0.375rem;
+    top: 0;
     left: 100%;
   }
 }
@@ -14525,7 +14525,7 @@ select.selectpicker {
     margin-top: -0.1875rem;
   }
   .navbar-expand-lg .navbar-nav .dropdown-submenu .dropdown-menu {
-    top: -0.375rem;
+    top: 0;
     left: 100%;
   }
 }
@@ -14739,7 +14739,7 @@ select.selectpicker {
     margin-top: -0.1875rem;
   }
   .navbar-expand-xl .navbar-nav .dropdown-submenu .dropdown-menu {
-    top: -0.375rem;
+    top: 0;
     left: 100%;
   }
 }
@@ -14969,7 +14969,7 @@ select.selectpicker {
 }
 
 .navbar-expand .navbar-nav .dropdown-submenu .dropdown-menu {
-  top: -0.375rem;
+  top: 0;
   left: 100%;
 }
 

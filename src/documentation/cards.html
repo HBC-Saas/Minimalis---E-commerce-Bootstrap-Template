@@ -20,7 +20,7 @@
         <link rel="stylesheet" href="../assets/css/style.css?cb=1583937029097">
     </head>
     <body>
-        <nav class="navbar fixed-top navbar-expand-md navbar-light bg-white border-bottom">
+        <nav class="navbar fixed-top navbar-expand-md navbar-light bg-white border-bottom px-4">
             <a class="navbar-brand" href="#">Minimalis.</a>
             <div class="navbar-toggler border-0 p-0">
                 <div class="custom-toggler" data-toggle="collapse" data-target="#navbarBarDoc" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
@@ -165,25 +165,69 @@
                 <div id="main" class="ml-sm-auto col-md-9 col-lg-9 col-xl-10">
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="mb-2 text-primary font-weight-bold">Cards.</h4>
+                            <h1 class="mb-3 font-weight-bold">Cards</h1>
+                            <p class="lead">Bootstrap’s cards provide a flexible and extensible content container with multiple variants and options.</p>
+
+                            <p class="lead"><a href="https://getbootstrap.com/docs/4.4/components/card/" target="_blank"><i class="fas fa-external-link-alt mr-1"></i> Bootstrap documentation</a></p>
+
+                            <hr class="mt-4 mb-6" />
 
                             <div class="row">
-                                <div class="col-sm-4">
-                                    <div class="card">
-                                        <img src="../assets/img/products/product_card_normal.png" class="card-img-top" alt="card">
-                                        <div class="card-body">
-                                            <h4 class="card-title">Card title</h4>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                            <button type="button" class="btn btn-dark btn-arrow mb-2">
-                                                <div class="inner-btn">
-                                                    Go somewhere
-                                                    <div class="arrow">
-                                                        <span class="arrow-icon"></span>
-                                                    </div>
-                                                </div>
-                                            </button>
-                                        </div><!-- end card-body -->
-                                    </div><!-- end card -->
+                                <div class="col-sm-12">
+                                    <h3 class="mb-2 font-weight-bold">Example</h3>
+
+                                    <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link text-dark active" href="#result1" data-toggle="tab" role="tab" aria-controls="result1" aria-selected="true">Result</a>
+                                        </li><!-- end nav-item -->
+                                        <li class="nav-item">
+                                            <a class="nav-link text-dark" href="#code1" data-toggle="tab" role="tab" aria-controls="code1" aria-selected="false">
+                                                Code <i class="fas fa-code ml-1"></i>
+                                            </a>
+                                        </li><!-- end nav-item -->
+                                    </ul><!-- end nav -->
+
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade show active" id="result1" role="tabpanel">
+                                            <div class="row">
+                                                <div class="col-sm-4">
+                                                    <div class="card">
+                                                        <img src="../assets/img/products/product_card_normal.png" class="card-img-top" alt="card">
+                                                        <div class="card-body">
+                                                            <h4 class="card-title">Card title</h4>
+                                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                            <button type="button" class="btn btn-dark btn-arrow mb-2">
+                                                                <div class="inner-btn">
+                                                                    Go somewhere
+                                                                    <div class="arrow">
+                                                                        <span class="arrow-icon"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                        </div><!-- end card-body -->
+                                                    </div><!-- end card -->
+                                                </div><!-- end col -->
+                                            </div><!-- end row -->
+                                        </div><!-- end tab-pane -->
+
+                                        <div class="tab-pane fade" id="code1" role="tabpanel">
+                                            <pre><code class="lang-html">&lt;div class="card"&gt;
+    &lt;img src="../assets/img/products/product_card_normal.png" class="card-img-top" alt="card"&gt;
+    &lt;div class="card-body"&gt;
+        &lt;h4 class="card-title"&gt;Card title&lt;/h4&gt;
+        &lt;p class="card-text"&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+        &lt;button type="button" class="btn btn-dark btn-arrow mb-2"&gt;
+           &lt;div class="inner-btn"&gt;
+                Go somewhere
+                &lt;div class="arrow"&gt;
+                    &lt;span class="arrow-icon"&gt;&lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                                        </div><!-- end tab-pane -->
+                                    </div><!-- end tab-content -->
                                 </div><!-- end col -->
                             </div><!-- end row -->
                         </div><!-- end col -->
@@ -193,71 +237,153 @@
 
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="mb-2 text-primary font-weight-bold">Luxury product card.</h4>
+                            <h3 class="mb-2 font-weight-bold">Luxury product card</h3>
+                            <p>Cards provides two effects <code>.zoom-in</code> and <code>.zoom-out</code> and different actions positions <code>.action-top</code> <code>.action-right</code> <code>.action-left</code>. You can use <code>.hover-card-action</code> to display actions on hover.</p>
 
-                            <div class="row">
-                                <div class="col-sm-5">
-                                    <div class="card luxury-card border-0">
-                                        <div class="card-img">
-                                            <!-- Image -->
-                                            <figure class="zoom-in mb-0">
-                                                <img src="../assets/img/products/product_card_normal.png" alt="product">
-                                            </figure>
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result2" data-toggle="tab" role="tab" aria-controls="result2" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code2" data-toggle="tab" role="tab" aria-controls="code2" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
 
-                                            <!-- Action -->
-                                            <button class="card-action hover-card-action action-top action-right" type="button">
-                                                <i class="flaticon-heart"></i>
-                                            </button>
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result2" role="tabpanel">
+                                    <div class="row">
+                                        <div class="col-sm-5">
+                                            <div class="card luxury-card border-0">
+                                                <div class="card-img">
+                                                    <!-- Image -->
+                                                    <figure class="zoom-in mb-0">
+                                                        <img src="../assets/img/products/product_card_normal.png" alt="product">
+                                                    </figure>
 
-                                            <button class="btn-add-to-card btn-lg" type="button">
-                                                <i class="add-to-card-active flaticon-plus h6"></i>
-                                                <span class="add-to-card-hover">
-                                                    <span class="add-to-card-text">Add to cart</span>
-                                                </span>
-                                                <i class="add-to-card-success flaticon-null h6"></i>
-                                            </button>
+                                                    <!-- Action -->
+                                                    <button class="card-action action-top action-right" type="button">
+                                                        <i class="flaticon-heart"></i>
+                                                    </button>
 
-                                            <div class="card-action action-bottom action-left">
-                                                <h4 class="font-weight-bold text-uppercase mb-1">
-                                                    <a class="text-dark" href="#">Minimal grey lamp</a>
-                                                </h4>
-                                                <p class="h5 font-weight-normal mb-0">$49.00</p>
-                                            </div><!-- end luxury-title -->
-                                        </div><!-- end card-img -->
-                                    </div><!-- end card -->
-                                </div><!-- end col -->
+                                                    <button class="btn-add-to-card btn-large btn-md-medium btn-lg-large" type="button">
+                                                        <i class="add-to-card-active flaticon-plus h6"></i>
+                                                        <span class="add-to-card-hover">
+                                                            <span class="add-to-card-text">Add to cart</span>
+                                                        </span>
+                                                        <i class="add-to-card-success flaticon-null h6"></i>
+                                                    </button>
 
-                                <div class="col-sm-5">
-                                    <div class="card luxury-card border-0">
-                                        <div class="card-img">
-                                            <!-- Image -->
-                                            <figure class="zoom-out mb-0">
-                                                <img src="../assets/img/products/product_card_normal.png" alt="product">
-                                            </figure>
+                                                    <div class="card-action action-bottom action-left">
+                                                        <h4 class="font-weight-bold text-uppercase mb-1">
+                                                            <a class="text-dark" href="#">Minimal grey lamp</a>
+                                                        </h4>
+                                                        <p class="h5 font-weight-normal mb-0">$49.00</p>
+                                                    </div><!-- end luxury-title -->
+                                                </div><!-- end card-img -->
+                                            </div><!-- end card -->
+                                        </div><!-- end col -->
 
-                                            <!-- Action -->
-                                            <button class="card-action hover-card-action action-top action-right" type="button">
-                                                <i class="flaticon-heart"></i>
-                                            </button>
+                                        <div class="col-sm-5">
+                                            <div class="card luxury-card border-0">
+                                                <div class="card-img">
+                                                    <!-- Image -->
+                                                    <figure class="zoom-out mb-0">
+                                                        <img src="../assets/img/products/product_card_normal.png" alt="product">
+                                                    </figure>
 
-                                            <button class="btn-add-to-card btn-lg" type="button">
-                                                <i class="add-to-card-active flaticon-plus h6"></i>
-                                                <span class="add-to-card-hover">
-                                                    <span class="add-to-card-text">Add to cart</span>
-                                                </span>
-                                                <i class="add-to-card-success flaticon-null h6"></i>
-                                            </button>
+                                                    <!-- Action -->
+                                                    <button class="card-action hover-card-action action-top action-left" type="button">
+                                                        <i class="flaticon-heart"></i>
+                                                    </button>
 
-                                            <div class="card-action action-bottom action-left">
-                                                <h4 class="font-weight-bold text-uppercase mb-1">
-                                                    <a class="text-dark" href="#">Minimal grey lamp</a>
-                                                </h4>
-                                                <p class="h5 font-weight-normal mb-0">$49.00</p>
-                                            </div><!-- end luxury-title -->
-                                        </div><!-- end card-img -->
-                                    </div><!-- end card -->
-                                </div><!-- end col -->
-                            </div><!-- end row -->
+                                                    <button class="btn-add-to-card btn-large btn-md-medium btn-lg-large" type="button">
+                                                        <i class="add-to-card-active flaticon-plus h6"></i>
+                                                        <span class="add-to-card-hover">
+                                                            <span class="add-to-card-text">Add to cart</span>
+                                                        </span>
+                                                        <i class="add-to-card-success flaticon-null h6"></i>
+                                                    </button>
+
+                                                    <div class="card-action action-bottom action-left">
+                                                        <h4 class="font-weight-bold text-uppercase mb-1">
+                                                            <a class="text-dark" href="#">Minimal grey lamp</a>
+                                                        </h4>
+                                                        <p class="h5 font-weight-normal mb-0">$49.00</p>
+                                                    </div><!-- end luxury-title -->
+                                                </div><!-- end card-img -->
+                                            </div><!-- end card -->
+                                        </div><!-- end col -->
+                                    </div><!-- end row -->
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code2" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;div class="row"&gt;
+    &lt;div class="col-sm-5"&gt;
+        &lt;div class="card luxury-card border-0"&gt;
+            &lt;div class="card-img"&gt;
+                &lt;!-- Image --&gt;
+                &lt;figure class="zoom-in mb-0"&gt;
+                    &lt;img src="../assets/img/products/product_card_normal.png" alt="product"&gt;
+                &lt;/figure&gt;
+
+                &lt;!-- Action --&gt;
+                &lt;button class="card-action action-top action-right" type="button"&gt;
+                    &lt;i class="flaticon-heart"&gt;&lt;/i&gt;
+                &lt;/button&gt;
+
+                &lt;button class="btn-add-to-card btn-large btn-md-medium btn-lg-large" type="button"&gt;
+                    &lt;i class="add-to-card-active flaticon-plus h6"&gt;&lt;/i&gt;
+                    &lt;span class="add-to-card-hover"&gt;
+                        &lt;span class="add-to-card-text"&gt;Add to cart&lt;/span&gt;
+                    &lt;/span&gt;
+                    &lt;i class="add-to-card-success flaticon-null h6"&gt;&lt;/i&gt;
+                &lt;/button&gt;
+
+                &lt;div class="card-action action-bottom action-left"&gt;
+                    &lt;h4 class="font-weight-bold text-uppercase mb-1"&gt;
+                        &lt;a class="text-dark" href="#"&gt;Minimal grey lamp&lt;/a&gt;
+                    &lt;/h4&gt;
+                    &lt;p class="h5 font-weight-normal mb-0"&gt;$49.00&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="col-sm-5"&gt;
+        &lt;div class="card luxury-card border-0"&gt;
+            &lt;div class="card-img"&gt;
+                &lt;!-- Image --&gt;
+                &lt;figure class="zoom-out mb-0"&gt;
+                    &lt;img src="../assets/img/products/product_card_normal.png" alt="product"&gt;
+                &lt;/figure&gt;
+
+                &lt;!-- Action --&gt;
+                &lt;button class="card-action hover-card-action action-top action-left" type="button"&gt;
+                    &lt;i class="flaticon-heart"&gt;&lt;/i&gt;
+                &lt;/button&gt;
+
+                &lt;button class="btn-add-to-card btn-large btn-md-medium btn-lg-large" type="button"&gt;
+                    &lt;i class="add-to-card-active flaticon-plus h6"&gt;&lt;/i&gt;
+                    &lt;span class="add-to-card-hover"&gt;
+                        &lt;span class="add-to-card-text"&gt;Add to cart&lt;/span&gt;
+                    &lt;/span&gt;
+                    &lt;i class="add-to-card-success flaticon-null h6"&gt;&lt;/i&gt;
+                &lt;/button&gt;
+
+                &lt;div class="card-action action-bottom action-left"&gt;
+                    &lt;h4 class="font-weight-bold text-uppercase mb-1"&gt;
+                        &lt;a class="text-dark" href="#"&gt;Minimal grey lamp&lt;/a&gt;
+                    &lt;/h4&gt;
+                    &lt;p class="h5 font-weight-normal mb-0"&gt;$49.00&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
                         </div><!-- end col -->
                     </div><!-- end row -->
 
@@ -265,69 +391,148 @@
 
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="mb-2 text-primary font-weight-bold">Product Card.</h4>
+                            <h3 class="mb-2 font-weight-bold">Product Card</h3>
 
-                            <div class="row">
-                                <div class="col-sm-4">
-                                    <div class="card border-0">
-                                        <div class="card-img">
-                                            <!-- Image -->
-                                            <figure class="zoom-in mb-0">
-                                                <img src="../assets/img/products/product_card_normal.png" alt="product">
-                                            </figure>
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result3" data-toggle="tab" role="tab" aria-controls="result3" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code3" data-toggle="tab" role="tab" aria-controls="code3" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
 
-                                            <!-- Action -->
-                                            <button class="card-action hover-card-action action-top action-right" type="button">
-                                                <i class="flaticon-heart"></i>
-                                            </button>
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result3" role="tabpanel">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <div class="card border-0">
+                                                <div class="card-img">
+                                                    <!-- Image -->
+                                                    <figure class="zoom-in mb-0">
+                                                        <img src="../assets/img/products/product_card_normal.png" alt="product">
+                                                    </figure>
 
-                                            <button class="btn-add-to-card btn-lg" type="button">
-                                                <i class="add-to-card-active flaticon-plus h6"></i>
-                                                <span class="add-to-card-hover">
+                                                    <!-- Action -->
+                                                    <button class="card-action hover-card-action action-top action-right" type="button">
+                                                        <i class="flaticon-heart"></i>
+                                                    </button>
+
+                                                    <button class="btn-add-to-card btn-large btn-md-medium btn-lg-large" type="button">
+                                                        <i class="add-to-card-active flaticon-plus h6"></i>
+                                                        <span class="add-to-card-hover">
                                                     <span class="add-to-card-text">Add to cart</span>
                                                 </span>
-                                                <i class="add-to-card-success flaticon-null h6"></i>
-                                            </button>
-                                        </div><!-- end card-img -->
-                                        <div class="card-body px-0">
-                                            <h4 class="font-weight-bold text-uppercase mb-1">
-                                                <a class="text-dark" href="#">Home Lamp</a>
-                                            </h4>
-                                            <p class="h5 font-weight-normal">$12.00</p>
-                                        </div><!-- end card-body -->
-                                    </div><!-- end card -->
-                                </div><!-- end col -->
+                                                        <i class="add-to-card-success flaticon-null h6"></i>
+                                                    </button>
+                                                </div><!-- end card-img -->
+                                                <div class="card-body px-0">
+                                                    <h4 class="font-weight-bold text-uppercase mb-1">
+                                                        <a class="text-dark" href="#">Home Lamp</a>
+                                                    </h4>
+                                                    <p class="h5 font-weight-normal">$12.00</p>
+                                                </div><!-- end card-body -->
+                                            </div><!-- end card -->
+                                        </div><!-- end col -->
 
-                                <div class="col-sm-4">
-                                    <div class="card border-0">
-                                        <div class="card-img">
-                                            <!-- Image -->
-                                            <figure class="zoom-out mb-0">
-                                                <img src="../assets/img/products/product_card_normal.png" alt="product">
-                                            </figure>
+                                        <div class="col-sm-4">
+                                            <div class="card border-0">
+                                                <div class="card-img">
+                                                    <!-- Image -->
+                                                    <figure class="zoom-out mb-0">
+                                                        <img src="../assets/img/products/product_card_normal.png" alt="product">
+                                                    </figure>
 
-                                            <!-- Action -->
-                                            <button class="card-action hover-card-action action-top action-right" type="button">
-                                                <i class="flaticon-heart"></i>
-                                            </button>
+                                                    <!-- Action -->
+                                                    <button class="card-action hover-card-action action-top action-right" type="button">
+                                                        <i class="flaticon-heart"></i>
+                                                    </button>
 
-                                            <button class="btn-add-to-card btn-lg" type="button">
-                                                <i class="add-to-card-active flaticon-plus h6"></i>
-                                                <span class="add-to-card-hover">
+                                                    <button class="btn-add-to-card btn-large btn-md-medium btn-lg-large" type="button">
+                                                        <i class="add-to-card-active flaticon-plus h6"></i>
+                                                        <span class="add-to-card-hover">
                                                     <span class="add-to-card-text">Add to cart</span>
                                                 </span>
-                                                <i class="add-to-card-success flaticon-null h6"></i>
-                                            </button>
-                                        </div><!-- end card-img -->
-                                        <div class="card-body px-0">
-                                            <h4 class="font-weight-bold text-uppercase mb-1">
-                                                <a class="text-dark" href="#">Home Lamp</a>
-                                            </h4>
-                                            <p class="h5 font-weight-normal">$12.00</p>
-                                        </div><!-- end card-body -->
-                                    </div><!-- end card -->
-                                </div><!-- end col -->
-                            </div><!-- end row -->
+                                                        <i class="add-to-card-success flaticon-null h6"></i>
+                                                    </button>
+                                                </div><!-- end card-img -->
+                                                <div class="card-body px-0">
+                                                    <h4 class="font-weight-bold text-uppercase mb-1">
+                                                        <a class="text-dark" href="#">Home Lamp</a>
+                                                    </h4>
+                                                    <p class="h5 font-weight-normal">$12.00</p>
+                                                </div><!-- end card-body -->
+                                            </div><!-- end card -->
+                                        </div><!-- end col -->
+                                    </div><!-- end row -->
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code3" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;div class="row"&gt;
+    &lt;div class="col-sm-4"&gt;
+        &lt;div class="card border-0"&gt;
+            &lt;div class="card-img"&gt;
+                &lt;!-- Image --&gt;
+                &lt;figure class="zoom-in mb-0"&gt;
+                    &lt;img src="../assets/img/products/product_card_normal.png" alt="product"&gt;
+                &lt;/figure&gt;
+
+                &lt;!-- Action --&gt;
+                &lt;button class="card-action hover-card-action action-top action-right" type="button"&gt;
+                    &lt;i class="flaticon-heart"&gt;&lt;/i&gt;
+                &lt;/button&gt;
+
+                &lt;button class="btn-add-to-card btn-large btn-md-medium btn-lg-large" type="button"&gt;
+                    &lt;i class="add-to-card-active flaticon-plus h6"&gt;&lt;/i&gt;
+                    &lt;span class="add-to-card-hover"&gt;
+                        &lt;span class="add-to-card-text"&gt;Add to cart&lt;/span&gt;
+                    &lt;/span&gt;
+                    &lt;i class="add-to-card-success flaticon-null h6"&gt;&lt;/i&gt;
+                &lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class="card-body px-0"&gt;
+                &lt;h4 class="font-weight-bold text-uppercase mb-1"&gt;
+                    &lt;a class="text-dark" href="#"&gt;Home Lamp&lt;/a&gt;
+                &lt;/h4&gt;
+                &lt;p class="h5 font-weight-normal"&gt;$12.00&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="col-sm-4"&gt;
+        &lt;div class="card border-0"&gt;
+            &lt;div class="card-img"&gt;
+                &lt;!-- Image --&gt;
+                &lt;figure class="zoom-out mb-0"&gt;
+                    &lt;img src="../assets/img/products/product_card_normal.png" alt="product"&gt;
+                &lt;/figure&gt;
+
+                &lt;!-- Action --&gt;
+                &lt;button class="card-action hover-card-action action-top action-right" type="button"&gt;
+                    &lt;i class="flaticon-heart"&gt;&lt;/i&gt;
+                &lt;/button&gt;
+
+                &lt;button class="btn-add-to-card btn-large btn-md-medium btn-lg-large" type="button"&gt;
+                    &lt;i class="add-to-card-active flaticon-plus h6"&gt;&lt;/i&gt;
+                    &lt;span class="add-to-card-hover"&gt;
+                        &lt;span class="add-to-card-text"&gt;Add to cart&lt;/span&gt;
+                    &lt;/span&gt;
+                    &lt;i class="add-to-card-success flaticon-null h6"&gt;&lt;/i&gt;
+                &lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class="card-body px-0"&gt;
+                &lt;h4 class="font-weight-bold text-uppercase mb-1"&gt;
+                    &lt;a class="text-dark" href="#"&gt;Home Lamp&lt;/a&gt;
+                &lt;/h4&gt;
+                &lt;p class="h5 font-weight-normal"&gt;$12.00&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
                         </div><!-- end col -->
                     </div><!-- end row -->
 
@@ -335,136 +540,184 @@
 
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="mb-2 text-primary font-weight-bold">Image Card.</h4>
+                            <h3 class="mb-2 font-weight-bold">Image Card</h3>
 
-                            <div class="row">
-                                <div class="col-sm-4">
-                                    <div class="card blog-card border-0">
-                                        <div class="card-img overflow-hidden overlay-dark">
-                                            <!-- Image -->
-                                            <figure class="mb-0">
-                                                <img src="../assets/img/blog/blog_6.png" alt="product">
-                                            </figure>
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result4" data-toggle="tab" role="tab" aria-controls="result4" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code4" data-toggle="tab" role="tab" aria-controls="code4" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
 
-                                            <div class="title-block">
-                                                <h4 class="font-weight-normal title">
-                                                    <a class="text-white" href="#">Best wood material for every minimalis home.</a>
-                                                </h4>
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result4" role="tabpanel">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <div class="card blog-card border-0">
+                                                <div class="card-img overflow-hidden overlay-dark">
+                                                    <!-- Image -->
+                                                    <figure class="mb-0">
+                                                        <img src="../assets/img/blog/blog_6.png" alt="product">
+                                                    </figure>
 
-                                                <button type="button" class="btn btn-link-light btn-arrow font-weight-normal px-0">
-                                                    <div class="inner-btn">
-                                                        Read More
-                                                        <div class="arrow">
-                                                            <span class="arrow-icon"></span>
-                                                        </div>
-                                                    </div>
-                                                </button>
-                                            </div><!-- end luxury-title -->
-                                        </div><!-- end card-img -->
-                                    </div><!-- end card -->
-                                </div><!-- end col -->
+                                                    <div class="title-block">
+                                                        <h4 class="font-weight-normal title">
+                                                            <a class="text-white" href="#">Best wood material for every minimalis home.</a>
+                                                        </h4>
 
-                                <div class="col-sm-4">
-                                    <div class="card blog-card border-0">
-                                        <div class="card-img overflow-hidden overlay-dark">
-                                            <!-- Image -->
-                                            <figure class="zoom-in mb-0">
-                                                <img src="../assets/img/blog/blog_5.png" alt="product">
-                                            </figure>
+                                                        <button type="button" class="btn btn-link-light btn-arrow font-weight-normal px-0">
+                                                            <div class="inner-btn">
+                                                                Read More
+                                                                <div class="arrow">
+                                                                    <span class="arrow-icon"></span>
+                                                                </div>
+                                                            </div>
+                                                        </button>
+                                                    </div><!-- end luxury-title -->
+                                                </div><!-- end card-img -->
+                                            </div><!-- end card -->
+                                        </div><!-- end col -->
 
-                                            <div class="title-block">
-                                                <h4 class="font-weight-normal title">
-                                                    <a class="text-white" href="#">Best wood material for every minimalis home.</a>
-                                                </h4>
+                                        <div class="col-sm-4">
+                                            <div class="card blog-card border-0">
+                                                <div class="card-img overflow-hidden overlay-dark">
+                                                    <!-- Image -->
+                                                    <figure class="zoom-in mb-0">
+                                                        <img src="../assets/img/blog/blog_5.png" alt="product">
+                                                    </figure>
 
-                                                <button type="button" class="btn btn-link-light btn-arrow font-weight-normal px-0">
-                                                    <div class="inner-btn">
-                                                        Read More
-                                                        <div class="arrow">
-                                                            <span class="arrow-icon"></span>
-                                                        </div>
-                                                    </div>
-                                                </button>
-                                            </div><!-- end luxury-title -->
-                                        </div><!-- end card-img -->
-                                    </div><!-- end card -->
-                                </div><!-- end col -->
+                                                    <div class="title-block">
+                                                        <h4 class="font-weight-normal title">
+                                                            <a class="text-white" href="#">Best wood material for every minimalis home.</a>
+                                                        </h4>
 
-                                <div class="col-sm-4">
-                                    <div class="card blog-card border-0">
-                                        <div class="card-img overflow-hidden overlay-dark">
-                                            <!-- Image -->
-                                            <figure class="zoom-out mb-0">
-                                                <img src="../assets/img/blog/blog_4.png" alt="product">
-                                            </figure>
+                                                        <button type="button" class="btn btn-link-light btn-arrow font-weight-normal px-0">
+                                                            <div class="inner-btn">
+                                                                Read More
+                                                                <div class="arrow">
+                                                                    <span class="arrow-icon"></span>
+                                                                </div>
+                                                            </div>
+                                                        </button>
+                                                    </div><!-- end luxury-title -->
+                                                </div><!-- end card-img -->
+                                            </div><!-- end card -->
+                                        </div><!-- end col -->
 
-                                            <div class="title-block">
-                                                <h4 class="font-weight-normal title">
-                                                    <a class="text-white" href="#">Best wood material for every minimalis home.</a>
-                                                </h4>
+                                        <div class="col-sm-4">
+                                            <div class="card blog-card border-0">
+                                                <div class="card-img overflow-hidden overlay-dark">
+                                                    <!-- Image -->
+                                                    <figure class="zoom-out mb-0">
+                                                        <img src="../assets/img/blog/blog_4.png" alt="product">
+                                                    </figure>
 
-                                                <button type="button" class="btn btn-link-light btn-arrow font-weight-normal px-0">
-                                                    <div class="inner-btn">
-                                                        Read More
-                                                        <div class="arrow">
-                                                            <span class="arrow-icon"></span>
-                                                        </div>
-                                                    </div>
-                                                </button>
-                                            </div><!-- end luxury-title -->
-                                        </div><!-- end card-img -->
-                                    </div><!-- end card -->
-                                </div><!-- end col -->
-                            </div><!-- end row -->
-                        </div><!-- end col -->
-                    </div><!-- end row -->
+                                                    <div class="title-block">
+                                                        <h4 class="font-weight-normal title">
+                                                            <a class="text-white" href="#">Best wood material for every minimalis home.</a>
+                                                        </h4>
 
-                    <hr class="mt-5 mb-5 border-top-0" />
+                                                        <button type="button" class="btn btn-link-light btn-arrow font-weight-normal px-0">
+                                                            <div class="inner-btn">
+                                                                Read More
+                                                                <div class="arrow">
+                                                                    <span class="arrow-icon"></span>
+                                                                </div>
+                                                            </div>
+                                                        </button>
+                                                    </div><!-- end luxury-title -->
+                                                </div><!-- end card-img -->
+                                            </div><!-- end card -->
+                                        </div><!-- end col -->
+                                    </div><!-- end row -->
+                                </div><!-- end tab-pane -->
 
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div class="card blog-card border-0">
-                                <div class="card-img">
-                                    <!-- Image -->
-                                    <figure class="mb-0">
-                                        <img src="../assets/img/categories/cat_4.png" alt="product">
-                                    </figure>
+                                <div class="tab-pane fade" id="code4" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;div class="row"&gt;
+    &lt;div class="col-sm-4"&gt;
+        &lt;div class="card blog-card border-0"&gt;
+            &lt;div class="card-img overflow-hidden overlay-dark"&gt;
+                &lt;!-- Image --&gt;
+                &lt;figure class="mb-0"&gt;
+                    &lt;img src="../assets/img/blog/blog_6.png" alt="product"&gt;
+                &lt;/figure&gt;
 
-                                    <div class="cat-title-block text-center bg-white">
-                                        <a class="cat-title text-uppercase text-dark" href="#">Modern Sofa</a>
-                                    </div><!-- end luxury-title -->
-                                </div><!-- end card-img -->
-                            </div><!-- end card -->
-                        </div><!-- end col -->
+                &lt;div class="title-block"&gt;
+                    &lt;h4 class="font-weight-normal title"&gt;
+                        &lt;a class="text-white" href="#"&gt;Best wood material for every minimalis home.&lt;/a&gt;
+                    &lt;/h4&gt;
 
-                        <div class="col-sm-4">
-                            <div class="card blog-card border-0">
-                                <div class="card-img">
-                                    <!-- Image -->
-                                    <figure class="zoom-in mb-0">
-                                        <img src="../assets/img/categories/cat_2.png" alt="product">
-                                    </figure>
+                    &lt;button type="button" class="btn btn-link-light btn-arrow font-weight-normal px-0"&gt;
+                        &lt;div class="inner-btn"&gt;
+                            Read More
+                            &lt;div class="arrow"&gt;
+                                &lt;span class="arrow-icon"&gt;&lt;/span&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
 
-                                    <div class="cat-title-block text-center bg-white">
-                                        <a class="cat-title text-uppercase text-dark" href="#">New Arrivals</a>
-                                    </div><!-- end luxury-title -->
-                                </div><!-- end card-img -->
-                            </div><!-- end card -->
-                        </div><!-- end col -->
+    &lt;div class="col-sm-4"&gt;
+        &lt;div class="card blog-card border-0"&gt;
+            &lt;div class="card-img overflow-hidden overlay-dark"&gt;
+                &lt;!-- Image --&gt;
+                &lt;figure class="zoom-in mb-0"&gt;
+                    &lt;img src="../assets/img/blog/blog_5.png" alt="product"&gt;
+                &lt;/figure&gt;
 
-                        <div class="col-sm-4">
-                            <div class="card blog-card border-0">
-                                <div class="card-img">
-                                    <!-- Image -->
-                                    <figure class="zoom-out mb-0">
-                                        <img src="../assets/img/categories/cat_3.png" alt="product">
-                                    </figure>
+                &lt;div class="title-block"&gt;
+                    &lt;h4 class="font-weight-normal title"&gt;
+                        &lt;a class="text-white" href="#"&gt;Best wood material for every minimalis home.&lt;/a&gt;
+                    &lt;/h4&gt;
 
-                                    <div class="cat-title-block text-center bg-white">
-                                        <a class="cat-title text-uppercase text-dark" href="#">Minimal Light</a>
-                                    </div><!-- end luxury-title -->
-                                </div><!-- end card-img -->
-                            </div><!-- end card -->
+                    &lt;button type="button" class="btn btn-link-light btn-arrow font-weight-normal px-0"&gt;
+                        &lt;div class="inner-btn"&gt;
+                            Read More
+                            &lt;div class="arrow"&gt;
+                                &lt;span class="arrow-icon"&gt;&lt;/span&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="col-sm-4"&gt;
+        &lt;div class="card blog-card border-0"&gt;
+            &lt;div class="card-img overflow-hidden overlay-dark"&gt;
+                &lt;!-- Image --&gt;
+                &lt;figure class="zoom-out mb-0"&gt;
+                    &lt;img src="../assets/img/blog/blog_4.png" alt="product"&gt;
+                &lt;/figure&gt;
+
+                &lt;div class="title-block"&gt;
+                    &lt;h4 class="font-weight-normal title"&gt;
+                        &lt;a class="text-white" href="#"&gt;Best wood material for every minimalis home.&lt;/a&gt;
+                    &lt;/h4&gt;
+
+                    &lt;button type="button" class="btn btn-link-light btn-arrow font-weight-normal px-0"&gt;
+                        &lt;div class="inner-btn"&gt;
+                            Read More
+                            &lt;div class="arrow"&gt;
+                                &lt;span class="arrow-icon"&gt;&lt;/span&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
                         </div><!-- end col -->
                     </div><!-- end row -->
 
@@ -472,33 +725,182 @@
 
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="mb-2 text-primary font-weight-bold">Service Card.</h4>
+                            <h3 class="mb-2 font-weight-bold">Category Card</h3>
 
-                            <div class="row">
-                                <div class="col-sm-5">
-                                    <div class="card text-center bg-light border-0">
-                                        <div class="card-body py-6 px-4">
-                                            <div class="mb-3">
-                                                <i class="flaticon-box text-primary display-3"></i>
-                                            </div>
-                                            <h4 class="font-weight-bold mb-3">Free Shipping</h4>
-                                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
-                                        </div><!-- end card-body -->
-                                    </div><!-- end card -->
-                                </div><!-- end col -->
-                            </div><!-- end row -->
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result5" data-toggle="tab" role="tab" aria-controls="result5" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code5" data-toggle="tab" role="tab" aria-controls="code5" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result5" role="tabpanel">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <div class="card blog-card border-0">
+                                                <div class="card-img">
+                                                    <!-- Image -->
+                                                    <figure class="mb-0">
+                                                        <img src="../assets/img/categories/cat_4.png" alt="product">
+                                                    </figure>
+
+                                                    <div class="cat-title-block text-center bg-white">
+                                                        <a class="cat-title text-uppercase text-dark" href="#">Modern Sofa</a>
+                                                    </div><!-- end luxury-title -->
+                                                </div><!-- end card-img -->
+                                            </div><!-- end card -->
+                                        </div><!-- end col -->
+
+                                        <div class="col-sm-4">
+                                            <div class="card blog-card border-0">
+                                                <div class="card-img">
+                                                    <!-- Image -->
+                                                    <figure class="zoom-in mb-0">
+                                                        <img src="../assets/img/categories/cat_2.png" alt="product">
+                                                    </figure>
+
+                                                    <div class="cat-title-block text-center bg-white">
+                                                        <a class="cat-title text-uppercase text-dark" href="#">New Arrivals</a>
+                                                    </div><!-- end luxury-title -->
+                                                </div><!-- end card-img -->
+                                            </div><!-- end card -->
+                                        </div><!-- end col -->
+
+                                        <div class="col-sm-4">
+                                            <div class="card blog-card border-0">
+                                                <div class="card-img">
+                                                    <!-- Image -->
+                                                    <figure class="zoom-out mb-0">
+                                                        <img src="../assets/img/categories/cat_3.png" alt="product">
+                                                    </figure>
+
+                                                    <div class="cat-title-block text-center bg-white">
+                                                        <a class="cat-title text-uppercase text-dark" href="#">Minimal Light</a>
+                                                    </div><!-- end luxury-title -->
+                                                </div><!-- end card-img -->
+                                            </div><!-- end card -->
+                                        </div><!-- end col -->
+                                    </div><!-- end row -->
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code5" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;div class="row"&gt;
+    &lt;div class="col-sm-4"&gt;
+        &lt;div class="card blog-card border-0"&gt;
+            &lt;div class="card-img"&gt;
+                &lt;!-- Image --&gt;
+                &lt;figure class="mb-0"&gt;
+                    &lt;img src="../assets/img/categories/cat_4.png" alt="product"&gt;
+                &lt;/figure&gt;
+
+                &lt;div class="cat-title-block text-center bg-white"&gt;
+                    &lt;a class="cat-title text-uppercase text-dark" href="#"&gt;Modern Sofa&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="col-sm-4"&gt;
+        &lt;div class="card blog-card border-0"&gt;
+            &lt;div class="card-img"&gt;
+                &lt;!-- Image --&gt;
+                &lt;figure class="zoom-in mb-0"&gt;
+                    &lt;img src="../assets/img/categories/cat_2.png" alt="product"&gt;
+                &lt;/figure&gt;
+
+                &lt;div class="cat-title-block text-center bg-white"&gt;
+                    &lt;a class="cat-title text-uppercase text-dark" href="#"&gt;New Arrivals&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="col-sm-4"&gt;
+        &lt;div class="card blog-card border-0"&gt;
+            &lt;div class="card-img"&gt;
+                &lt;!-- Image --&gt;
+                &lt;figure class="zoom-out mb-0"&gt;
+                    &lt;img src="../assets/img/categories/cat_3.png" alt="product"&gt;
+                &lt;/figure&gt;
+
+                &lt;div class="cat-title-block text-center bg-white"&gt;
+                    &lt;a class="cat-title text-uppercase text-dark" href="#"&gt;Minimal Light&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
+                        </div><!-- end col -->
+                    </div><!-- end row -->
+
+                    <hr class="mt-5 mb-5 border-top-0" />
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h3 class="mb-2 font-weight-bold">Service Card</h3>
+
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result6" data-toggle="tab" role="tab" aria-controls="result6" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code6" data-toggle="tab" role="tab" aria-controls="code6" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result6" role="tabpanel">
+                                    <div class="row">
+                                        <div class="col-sm-5">
+                                            <div class="card text-center bg-light border-0">
+                                                <div class="card-body py-6 px-4">
+                                                    <div class="mb-3">
+                                                        <i class="flaticon-box text-primary display-3"></i>
+                                                    </div>
+                                                    <h4 class="font-weight-bold mb-3">Free Shipping</h4>
+                                                    <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                                                </div><!-- end card-body -->
+                                            </div><!-- end card -->
+                                        </div><!-- end col -->
+                                    </div><!-- end row -->
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code6" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;div class="row"&gt;
+    &lt;div class="col-sm-5"&gt;
+        &lt;div class="card text-center bg-light border-0"&gt;
+            &lt;div class="card-body py-6 px-4"&gt;
+                &lt;div class="mb-3"&gt;
+                    &lt;i class="flaticon-box text-primary display-3"&gt;&lt;/i&gt;
+                &lt;/div&gt;
+                &lt;h4 class="font-weight-bold mb-3"&gt;Free Shipping&lt;/h4&gt;
+                &lt;p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
                         </div><!-- end col -->
                     </div><!-- end row -->
                 </div><!-- end #main col -->
             </div><!-- end row -->
         </div><!-- end container-fluid -->
 
-        <!-- jQuery -->
+        <!-- Javascript vendors -->
         <script src="../assets/vendors/jquery/jquery.min.js"></script>
-        <!-- Bootstrap bundle -->
         <script src="../assets/vendors/bootstrap/js/bootstrap.bundle.min.js?cb=1583937029097"></script>
-        <!-- Bootstrap Select -->
         <script src="../assets/vendors/bootstrap-select/js/bootstrap-select.min.js"></script>
+        <script src="../assets/vendors/prismjs/prism.js"></script>
 
         <!-- Javascript File -->
         <script src="../assets/js/theme.js?cb=1583937029097"></script>
