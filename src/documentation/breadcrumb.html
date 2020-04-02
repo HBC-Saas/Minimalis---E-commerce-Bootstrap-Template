@@ -165,42 +165,83 @@
                 <div id="main" class="ml-sm-auto col-md-9 col-lg-9 col-xl-10">
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="mb-2 text-primary font-weight-bold">Breadcrumb.</h4>
+                            <h1 class="mb-3 font-weight-bold">Breadcrumb</h1>
+                            <p class="lead">Indicate the current page’s location within a navigational hierarchy that automatically adds separators via CSS.</p>
 
-                            <div class="bd-example border">
-                                <nav aria-label="breadcrumb">
-                                    <ol class="breadcrumb">
-                                        <li class="breadcrumb-item active" aria-current="page">Home</li>
-                                    </ol>
-                                </nav>
+                            <p class="lead"><a href="https://getbootstrap.com/docs/4.4/components/breadcrumb/" target="_blank"><i class="fas fa-external-link-alt mr-1"></i> Bootstrap documentation</a></p>
 
-                                <nav aria-label="breadcrumb">
-                                    <ol class="breadcrumb">
-                                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">Library</li>
-                                    </ol>
-                                </nav>
+                            <hr class="mt-4 mb-6" />
 
-                                <nav aria-label="breadcrumb">
-                                    <ol class="breadcrumb mb-0">
-                                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                        <li class="breadcrumb-item"><a href="#">Library</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">Data</li>
-                                    </ol>
-                                </nav>
-                            </div><!-- end bd-example -->
+                            <h3 class="mb-2 font-weight-bold">Example</h3>
+
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result1" data-toggle="tab" role="tab" aria-controls="result1" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code1" data-toggle="tab" role="tab" aria-controls="code1" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result1" role="tabpanel">
+                                    <nav aria-label="breadcrumb">
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item active" aria-current="page">Home</li>
+                                        </ol>
+                                    </nav>
+
+                                    <nav aria-label="breadcrumb">
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                            <li class="breadcrumb-item active" aria-current="page">Library</li>
+                                        </ol>
+                                    </nav>
+
+                                    <nav aria-label="breadcrumb">
+                                        <ol class="breadcrumb mb-0">
+                                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                            <li class="breadcrumb-item"><a href="#">Library</a></li>
+                                            <li class="breadcrumb-item active" aria-current="page">Data</li>
+                                        </ol>
+                                    </nav>
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code1" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;nav aria-label="breadcrumb"&gt;
+    &lt;ol class="breadcrumb"&gt;
+        &lt;li class="breadcrumb-item active" aria-current="page"&gt;Home&lt;/li&gt;
+    &lt;/ol&gt;
+&lt;/nav&gt;
+&lt;nav aria-label="breadcrumb"&gt;
+    &lt;ol class="breadcrumb"&gt;
+        &lt;li class="breadcrumb-item"&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="breadcrumb-item active" aria-current="page"&gt;Library&lt;/li&gt;
+    &lt;/ol&gt;
+&lt;/nav&gt;
+
+&lt;nav aria-label="breadcrumb"&gt;
+    &lt;ol class="breadcrumb mb-0"&gt;
+        &lt;li class="breadcrumb-item"&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="breadcrumb-item"&gt;&lt;a href="#"&gt;Library&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="breadcrumb-item active" aria-current="page"&gt;Data&lt;/li&gt;
+    &lt;/ol&gt;
+&lt;/nav&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
                         </div><!-- end col -->
                     </div><!-- end row -->
                 </div><!-- end #main col -->
             </div><!-- end row -->
         </div><!-- end container-fluid -->
 
-        <!-- jQuery -->
+        <!-- Javascript vendors -->
         <script src="../assets/vendors/jquery/jquery.min.js"></script>
-        <!-- Bootstrap bundle -->
         <script src="../assets/vendors/bootstrap/js/bootstrap.bundle.min.js?cb=1583937029097"></script>
-        <!-- Bootstrap Select -->
         <script src="../assets/vendors/bootstrap-select/js/bootstrap-select.min.js"></script>
+        <script src="../assets/vendors/prismjs/prism.js"></script>
 
         <!-- Javascript File -->
         <script src="../assets/js/theme.js?cb=1583937029097"></script>
