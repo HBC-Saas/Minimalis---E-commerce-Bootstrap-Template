@@ -165,254 +165,474 @@
                 <div id="main" class="ml-sm-auto col-md-9 col-lg-9 col-xl-10">
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="mb-2 text-primary font-weight-bold">Form controls.</h4>
+                            <h1 class="mb-3 font-weight-bold">Forms</h1>
+                            <p class="lead">Examples and usage guidelines for form control styles, layout options, and custom components for creating a wide variety of forms.</p>
 
-                            <div class="bd-example border">
-                                <form>
-                                    <div class="form-group">
-                                        <label for="exampleFormControlInput1">Email address</label>
-                                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                                    </div><!-- end form-group -->
+                            <p class="lead"><a href="https://getbootstrap.com/docs/4.4/components/forms/" target="_blank"><i class="fas fa-external-link-alt mr-1"></i> Bootstrap documentation</a></p>
 
-                                    <div class="form-group">
-                                        <label for="exampleFormControlSelect1">Example select</label>
-                                        <select class="form-control" id="exampleFormControlSelect1">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
-                                        </select>
-                                    </div><!-- end form-group -->
+                            <hr class="mt-4 mb-6" />
 
-                                    <div class="form-group">
-                                        <label for="exampleFormControlSelect2">Example multiple select</label>
-                                        <select multiple class="form-control" id="exampleFormControlSelect2">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
-                                        </select>
-                                    </div><!-- end form-group -->
+                            <h3 class="mb-2 font-weight-bold">Form controls</h3>
 
-                                    <div class="form-group">
-                                        <label for="exampleFormControlTextarea1">Example textarea</label>
-                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                    </div><!-- end form-group -->
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result1" data-toggle="tab" role="tab" aria-controls="result1" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code1" data-toggle="tab" role="tab" aria-controls="code1" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
 
-                                    <fieldset disabled>
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result1" role="tabpanel">
+                                    <form>
                                         <div class="form-group">
-                                            <label for="disabledTextInput">Disabled input</label>
-                                            <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+                                            <label for="exampleFormControlInput1">Email address</label>
+                                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                                         </div><!-- end form-group -->
-                                    </fieldset>
+
+                                        <div class="form-group">
+                                            <label for="exampleFormControlSelect1">Example select</label>
+                                            <select class="form-control" id="exampleFormControlSelect1">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+                                        </div><!-- end form-group -->
+
+                                        <div class="form-group">
+                                            <label for="exampleFormControlSelect2">Example multiple select</label>
+                                            <select multiple class="form-control" id="exampleFormControlSelect2">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+                                        </div><!-- end form-group -->
+
+                                        <div class="form-group">
+                                            <label for="exampleFormControlTextarea1">Example textarea</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                        </div><!-- end form-group -->
+
+                                        <fieldset disabled>
+                                            <div class="form-group">
+                                                <label for="disabledTextInput">Disabled input</label>
+                                                <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+                                            </div><!-- end form-group -->
+                                        </fieldset>
+
+                                        <div class="form-group">
+                                            <label for="validationServer01">Label / Input Error</label>
+                                            <input type="text" class="form-control is-invalid" id="validationServer01" required placeholder="Input text">
+                                            <div class="invalid-feedback">
+                                                Please provide a valid label
+                                            </div>
+                                        </div><!-- end form-group -->
+                                    </form>
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code1" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;form&gt;
+    &lt;div class="form-group"&gt;
+        &lt;label for="exampleFormControlInput1"&gt;Email address&lt;/label&gt;
+        &lt;input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"&gt;
+    &lt;/div&gt;
+
+    &lt;div class="form-group"&gt;
+        &lt;label for="exampleFormControlSelect1"&gt;Example select&lt;/label&gt;
+        &lt;select class="form-control" id="exampleFormControlSelect1"&gt;
+            &lt;option&gt;1&lt;/option&gt;
+            &lt;option&gt;2&lt;/option&gt;
+            &lt;option&gt;3&lt;/option&gt;
+            &lt;option&gt;4&lt;/option&gt;
+            &lt;option&gt;5&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/div&gt;
+
+    &lt;div class="form-group"&gt;
+        &lt;label for="exampleFormControlSelect2"&gt;Example multiple select&lt;/label&gt;
+        &lt;select multiple class="form-control" id="exampleFormControlSelect2"&gt;
+            &lt;option&gt;1&lt;/option&gt;
+            &lt;option&gt;2&lt;/option&gt;
+            &lt;option&gt;3&lt;/option&gt;
+            &lt;option&gt;4&lt;/option&gt;
+            &lt;option&gt;5&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/div&gt;
+
+    &lt;div class="form-group"&gt;
+        &lt;label for="exampleFormControlTextarea1"&gt;Example textarea&lt;/label&gt;
+        &lt;textarea class="form-control" id="exampleFormControlTextarea1" rows="3"&gt;&lt;/textarea&gt;
+    &lt;/div&gt;
+
+    &lt;fieldset disabled&gt;
+        &lt;div class="form-group"&gt;
+            &lt;label for="disabledTextInput"&gt;Disabled input&lt;/label&gt;
+            &lt;input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input"&gt;
+        &lt;/div&gt;
+    &lt;/fieldset&gt;
+
+    &lt;div class="form-group"&gt;
+        &lt;label for="validationServer01"&gt;Label / Input Error&lt;/label&gt;
+        &lt;input type="text" class="form-control is-invalid" id="validationServer01" required placeholder="Input text"&gt;
+        &lt;div class="invalid-feedback"&gt;
+            Please provide a valid label
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
+                        </div><!-- end col -->
+                    </div><!-- end row -->
+
+                    <hr class="mt-5 mb-5" />
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h3 class="mb-2 font-weight-bold">Sizing</h3>
+
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result2" data-toggle="tab" role="tab" aria-controls="result2" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code2" data-toggle="tab" role="tab" aria-controls="code2" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result2" role="tabpanel">
+                                    <div class="form-group">
+                                        <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg">
+                                    </div><!-- end form-group -->
 
                                     <div class="form-group">
-                                        <label for="validationServer01">Label / Input Error</label>
-                                        <input type="text" class="form-control is-invalid" id="validationServer01" required placeholder="Input text">
-                                        <div class="invalid-feedback">
-                                            Please provide a valid label
+                                        <input class="form-control" type="text" placeholder="Default input">
+                                    </div><!-- end form-group -->
+
+                                    <div class="form-group">
+                                        <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm">
+                                    </div><!-- end form-group -->
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code2" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;div class="form-group"&gt;
+    &lt;input class="form-control form-control-lg" type="text" placeholder=".form-control-lg"&gt;
+&lt;/div&gt;
+
+&lt;div class="form-group"&gt;
+    &lt;input class="form-control" type="text" placeholder="Default input"&gt;
+&lt;/div&gt;
+
+&lt;div class="form-group"&gt;
+    &lt;input class="form-control form-control-sm" type="text" placeholder=".form-control-sm"&gt;
+&lt;/div&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
+                        </div><!-- end col -->
+                    </div><!-- end row -->
+
+                    <hr class="mt-5 mb-5" />
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h3 class="mb-2 font-weight-bold">QTY</h3>
+
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result3" data-toggle="tab" role="tab" aria-controls="result3" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code3" data-toggle="tab" role="tab" aria-controls="code3" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result3" role="tabpanel">
+                                    <div class="qty-container mt-3">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control form-control-lg" name="field1" value="1">
+                                            <div class="input-group-append">
+                                                <button class="qty" type="button" data-func="plus" data-field="field1"><i class="flaticon-play-button"></i></button>
+                                                <button class="qty" type="button" data-func="minus" data-field="field1"><i class="flaticon-play-button-1"></i></button>
+                                            </div><!-- end input-group-append -->
+                                        </div><!-- end input-group -->
+                                    </div><!-- end qty-container -->
+
+                                    <div class="qty-container mt-3">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" name="field2" value="1">
+                                            <div class="input-group-append">
+                                                <button class="qty" type="button" data-func="plus" data-field="field2"><i class="flaticon-play-button"></i></button>
+                                                <button class="qty" type="button" data-func="minus" data-field="field2"><i class="flaticon-play-button-1"></i></button>
+                                            </div><!-- end input-group-append -->
+                                        </div><!-- end input-group -->
+                                    </div><!-- end qty-container -->
+
+                                    <div class="qty-container mt-3">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control form-control-sm" name="field3" value="1">
+                                            <div class="input-group-append">
+                                                <button class="qty" type="button" data-func="plus" data-field="field3"><i class="flaticon-play-button"></i></button>
+                                                <button class="qty" type="button" data-func="minus" data-field="field3"><i class="flaticon-play-button-1"></i></button>
+                                            </div><!-- end input-group-append -->
+                                        </div><!-- end input-group -->
+                                    </div><!-- end qty-container -->
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code3" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;div class="qty-container"&gt;
+    &lt;div class="input-group"&gt;
+        &lt;input type="text" class="form-control form-control-lg" name="field1" value="1"&gt;
+        &lt;div class="input-group-append"&gt;
+            &lt;button class="qty" type="button" data-func="plus" data-field="field1"&gt;&lt;i class="flaticon-play-button"&gt;&lt;/i&gt;&lt;/button&gt;
+            &lt;button class="qty" type="button" data-func="minus" data-field="field1"&gt;&lt;i class="flaticon-play-button-1"&gt;&lt;/i&gt;&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="qty-container"&gt;
+    &lt;div class="input-group"&gt;
+        &lt;input type="text" class="form-control" name="field2" value="1"&gt;
+        &lt;div class="input-group-append"&gt;
+            &lt;button class="qty" type="button" data-func="plus" data-field="field2"&gt;&lt;i class="flaticon-play-button"&gt;&lt;/i&gt;&lt;/button&gt;
+            &lt;button class="qty" type="button" data-func="minus" data-field="field2"&gt;&lt;i class="flaticon-play-button-1"&gt;&lt;/i&gt;&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="qty-container"&gt;
+    &lt;div class="input-group"&gt;
+        &lt;input type="text" class="form-control form-control-sm" name="field3" value="1"&gt;
+        &lt;div class="input-group-append"&gt;
+            &lt;button class="qty" type="button" data-func="plus" data-field="field3"&gt;&lt;i class="flaticon-play-button"&gt;&lt;/i&gt;&lt;/button&gt;
+            &lt;button class="qty" type="button" data-func="minus" data-field="field3"&gt;&lt;i class="flaticon-play-button-1"&gt;&lt;/i&gt;&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
+                        </div><!-- end col -->
+                    </div><!-- end row -->
+
+                    <hr class="mt-5 mb-5" />
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h3 class="mb-2 font-weight-bold">Help text</h3>
+
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result4" data-toggle="tab" role="tab" aria-controls="result4" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code4" data-toggle="tab" role="tab" aria-controls="code4" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result4" role="tabpanel">
+                                    <form>
+                                        <label for="inputPassword5">Password</label>
+                                        <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+                                        <small id="passwordHelpBlock" class="form-text text-muted">
+                                            Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+                                        </small>
+                                    </form>
+
+                                    <hr />
+
+                                    <form class="form-inline">
+                                        <div class="form-group">
+                                            <label for="inputPassword6">Password</label>
+                                            <input type="password" id="inputPassword6" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
+                                            <small id="passwordHelpInline" class="text-muted">
+                                                Must be 8-20 characters long.
+                                            </small>
+                                        </div>
+                                    </form>
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code4" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;form&gt;
+    &lt;label for="inputPassword5"&gt;Password&lt;/label&gt;
+    &lt;input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock"&gt;
+    &lt;small id="passwordHelpBlock" class="form-text text-muted"&gt;
+        Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+    &lt;/small&gt;
+&lt;/form&gt;
+
+&lt;form class="form-inline"&gt;
+    &lt;div class="form-group"&gt;
+        &lt;label for="inputPassword6"&gt;Password&lt;/label&gt;
+        &lt;input type="password" id="inputPassword6" class="form-control mx-sm-3" aria-describedby="passwordHelpInline"&gt;
+        &lt;small id="passwordHelpInline" class="text-muted"&gt;
+            Must be 8-20 characters long.
+        &lt;/small&gt;
+    &lt;/div&gt;
+&lt;/form&gt; </code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
+                        </div><!-- end col -->
+                    </div><!-- end row -->
+
+                    <hr class="mt-5 mb-5" />
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h3 class="mb-2 font-weight-bold">Custom forms</h3>
+
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result5" data-toggle="tab" role="tab" aria-controls="result5" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code5" data-toggle="tab" role="tab" aria-controls="code5" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result5" role="tabpanel">
+                                    <div class="form-group">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                            <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
                                         </div>
                                     </div><!-- end form-group -->
-                                </form>
-                            </div><!-- bd-example -->
-                        </div><!-- end col -->
-                    </div><!-- end row -->
 
-                    <hr class="mt-5 mb-5 border-top-0" />
-
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <h4 class="mb-2 text-primary font-weight-bold">Sizing.</h4>
-
-                            <div class="bd-example border">
-                                <div class="form-group">
-                                    <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg">
-                                </div><!-- end form-group -->
-
-                                <div class="form-group">
-                                    <input class="form-control" type="text" placeholder="Default input">
-                                </div><!-- end form-group -->
-
-                                <div class="form-group">
-                                    <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm">
-                                </div><!-- end form-group -->
-
-                                <hr />
-
-                                <div class="form-group">
-                                    <select class="form-control form-control-lg">
-                                        <option>Large select</option>
-                                    </select>
-                                </div><!-- end form-group -->
-
-                                <div class="form-group">
-                                    <select class="form-control">
-                                        <option>Default select</option>
-                                    </select>
-                                </div><!-- end form-group -->
-
-                                <div class="form-group">
-                                    <select class="form-control form-control-sm">
-                                        <option>Small select</option>
-                                    </select>
-                                </div><!-- end form-group -->
-                            </div><!-- bd-example -->
-                        </div><!-- end col -->
-                    </div><!-- end row -->
-
-                    <hr class="mt-5 mb-5 border-top-0" />
-
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <h4 class="mb-2 text-primary font-weight-bold">Range and QTY.</h4>
-
-                            <div class="bd-example border">
-                                <form>
                                     <div class="form-group">
-                                        <label for="formControlRange">Example Range input</label>
-                                        <input type="range" class="form-control-range" id="formControlRange">
-                                    </div>
-                                </form>
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
+                                        </div>
+                                    </div><!-- end form-group -->
 
-                                <hr />
+                                    <div class="form-group">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadio2">Or toggle this other custom radio</label>
+                                        </div>
+                                    </div><!-- end form-group -->
 
-                                <div class="qty-container mt-3">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" name="field1" value="1">
+                                    <div class="form-group">
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                            <label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
+                                        </div>
+                                    </div><!-- end form-group -->
+
+                                    <div class="form-group">
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" disabled id="customSwitch2">
+                                            <label class="custom-control-label" for="customSwitch2">Disabled switch element</label>
+                                        </div>
+                                    </div><!-- end form-group -->
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code5" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;div class="form-group"&gt;
+    &lt;div class="custom-control custom-checkbox"&gt;
+        &lt;input type="checkbox" class="custom-control-input" id="customCheck1"&gt;
+        &lt;label class="custom-control-label" for="customCheck1"&gt;Check this custom checkbox&lt;/label&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="form-group"&gt;
+    &lt;div class="custom-control custom-radio"&gt;
+        &lt;input type="radio" id="customRadio1" name="customRadio" class="custom-control-input"&gt;
+        &lt;label class="custom-control-label" for="customRadio1"&gt;Toggle this custom radio&lt;/label&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="form-group"&gt;
+    &lt;div class="custom-control custom-radio"&gt;
+        &lt;input type="radio" id="customRadio2" name="customRadio" class="custom-control-input"&gt;
+        &lt;label class="custom-control-label" for="customRadio2"&gt;Or toggle this other custom radio&lt;/label&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="form-group"&gt;
+    &lt;div class="custom-control custom-switch"&gt;
+        &lt;input type="checkbox" class="custom-control-input" id="customSwitch1"&gt;
+        &lt;label class="custom-control-label" for="customSwitch1"&gt;Toggle this switch element&lt;/label&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="form-group"&gt;
+    &lt;div class="custom-control custom-switch"&gt;
+        &lt;input type="checkbox" class="custom-control-input" disabled id="customSwitch2"&gt;
+        &lt;label class="custom-control-label" for="customSwitch2"&gt;Disabled switch element&lt;/label&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
+                        </div><!-- end col -->
+                    </div><!-- end row -->
+
+                    <hr class="mt-5 mb-5" />
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h3 class="mb-2 font-weight-bold">Input group</h3>
+
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result6" data-toggle="tab" role="tab" aria-controls="result6" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code6" data-toggle="tab" role="tab" aria-controls="code6" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result6" role="tabpanel">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon1">@</span>
+                                        </div><!-- end input-group-prepend -->
+                                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                    </div><!-- end input-group -->
+
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
                                         <div class="input-group-append">
-                                            <button class="qty" type="button" data-func="plus" data-field="field1"><i class="flaticon-play-button"></i></button>
-                                            <button class="qty" type="button" data-func="minus" data-field="field1"><i class="flaticon-play-button-1"></i></button>
+                                            <span class="input-group-text" id="basic-addon2">@example.com</span>
                                         </div><!-- end input-group-append -->
                                     </div><!-- end input-group -->
-                                </div><!-- end qty-container -->
-                            </div><!-- bd-example -->
-                        </div><!-- end col -->
-                    </div><!-- end row -->
+                                </div><!-- end tab-pane -->
 
-                    <hr class="mt-5 mb-5 border-top-0" />
+                                <div class="tab-pane fade" id="code6" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;div class="input-group mb-3"&gt;
+    &lt;div class="input-group-prepend"&gt;
+        &lt;span class="input-group-text" id="basic-addon1"&gt;@&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"&gt;
+&lt;/div&gt;
 
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <h4 class="mb-2 text-primary font-weight-bold">Help text.</h4>
-
-                            <div class="bd-example border">
-                                <form>
-                                    <label for="inputPassword5">Password</label>
-                                    <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
-                                    <small id="passwordHelpBlock" class="form-text text-muted">
-                                        Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
-                                    </small>
-                                </form>
-
-                                <hr />
-
-                                <form class="form-inline">
-                                    <div class="form-group">
-                                        <label for="inputPassword6">Password</label>
-                                        <input type="password" id="inputPassword6" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
-                                        <small id="passwordHelpInline" class="text-muted">
-                                            Must be 8-20 characters long.
-                                        </small>
-                                    </div>
-                                </form>
-                            </div><!-- bd-example -->
-                        </div><!-- end col -->
-                    </div><!-- end row -->
-
-                    <hr class="mt-5 mb-5 border-top-0" />
-
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <h4 class="mb-2 text-primary font-weight-bold">Custom forms.</h4>
-
-                            <div class="bd-example border">
-
-                                <div class="form-group">
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                        <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
-                                    </div>
-                                </div><!-- end form-group -->
-
-                                <div class="form-group">
-                                    <div class="custom-control custom-radio">
-                                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                                        <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
-                                    </div>
-                                </div><!-- end form-group -->
-
-                                <div class="form-group">
-                                    <div class="custom-control custom-radio">
-                                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                        <label class="custom-control-label" for="customRadio2">Or toggle this other custom radio</label>
-                                    </div>
-                                </div><!-- end form-group -->
-
-                                <div class="form-group">
-                                    <div class="custom-control custom-switch">
-                                        <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                                        <label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
-                                    </div>
-                                </div><!-- end form-group -->
-
-                                <div class="form-group">
-                                    <div class="custom-control custom-switch">
-                                        <input type="checkbox" class="custom-control-input" disabled id="customSwitch2">
-                                        <label class="custom-control-label" for="customSwitch2">Disabled switch element</label>
-                                    </div>
-                                </div><!-- end form-group -->
-                            </div><!-- bd-example -->
-                        </div><!-- end col -->
-                    </div><!-- end row -->
-
-                    <hr class="mt-5 mb-5 border-top-0" />
-
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <h4 class="mb-2 text-primary font-weight-bold">Input group.</h4>
-
-                            <div class="bd-example border">
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text" id="basic-addon1">@</span>
-                                    </div>
-                                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-                                </div>
-
-                                <div class="input-group mb-3">
-                                    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                                    <div class="input-group-append">
-                                        <span class="input-group-text" id="basic-addon2">@example.com</span>
-                                    </div>
-                                </div>
-
-                                <label for="basic-url">Your vanity URL</label>
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
-                                    </div>
-                                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-                                </div>
-
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">$</span>
-                                    </div>
-                                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                                    <div class="input-group-append">
-                                        <span class="input-group-text">.00</span>
-                                    </div>
-                                </div>
-
-                                <div class="input-group">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">With textarea</span>
-                                    </div>
-                                    <textarea class="form-control" aria-label="With textarea"></textarea>
-                                </div>
-                            </div><!-- bd-example -->
+&lt;div class="input-group mb-3"&gt;
+    &lt;input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2"&gt;
+    &lt;div class="input-group-append"&gt;
+        &lt;span class="input-group-text" id="basic-addon2"&gt;@example.com&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
                         </div><!-- end col -->
                     </div><!-- end row -->
 
