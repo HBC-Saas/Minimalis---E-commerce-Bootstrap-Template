@@ -165,73 +165,47 @@
                 <div id="main" class="ml-sm-auto col-md-9 col-lg-9 col-xl-10">
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="mb-2 font-weight-bold text-primary">Basic example.</h4>
+                            <h1 class="mb-3 font-weight-bold">List group</h1>
+                            <p class="lead">List groups are a flexible and powerful component for displaying a series of content. Modify and extend them to support just about any content within.</p>
 
-                            <div class="bd-example border">
-                                <ul class="list-group">
-                                    <li class="list-group-item">Cras justo odio</li>
-                                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                                    <li class="list-group-item">Morbi leo risus</li>
-                                    <li class="list-group-item">Porta ac consectetur ac</li>
-                                    <li class="list-group-item">Vestibulum at eros</li>
-                                </ul>
-                            </div><!-- end bd-example -->
-                        </div><!-- end col -->
-                    </div><!-- end row -->
+                            <p class="lead"><a href="https://getbootstrap.com/docs/4.4/components/list-group/" target="_blank"><i class="fas fa-external-link-alt mr-1"></i> Bootstrap documentation</a></p>
 
-                    <hr class="mt-5 mb-5 border-top-0" />
+                            <hr class="mt-4 mb-6" />
 
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <h4 class="mb-2 font-weight-bold text-primary">Active items.</h4>
+                            <h3 class="mb-2 font-weight-bold">Basic example</h3>
 
-                            <div class="bd-example border">
-                                <ul class="list-group">
-                                    <li class="list-group-item active">Cras justo odio</li>
-                                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                                    <li class="list-group-item">Morbi leo risus</li>
-                                    <li class="list-group-item">Porta ac consectetur ac</li>
-                                    <li class="list-group-item">Vestibulum at eros</li>
-                                </ul>
-                            </div><!-- end bd-example -->
-                        </div><!-- end col -->
-                    </div><!-- end row -->
-
-                    <hr class="mt-5 mb-5 border-top-0" />
-
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <h4 class="mb-2 font-weight-bold text-primary">Disabled items.</h4>
-
-                            <div class="bd-example border">
-                                <ul class="list-group">
-                                    <li class="list-group-item disabled" aria-disabled="true">Cras justo odio</li>
-                                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                                    <li class="list-group-item">Morbi leo risus</li>
-                                    <li class="list-group-item">Porta ac consectetur ac</li>
-                                    <li class="list-group-item">Vestibulum at eros</li>
-                                </ul>
-                            </div><!-- end bd-example -->
-                        </div><!-- end col -->
-                    </div><!-- end row -->
-
-                    <hr class="mt-5 mb-5 border-top-0" />
-
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <h4 class="mb-2 font-weight-bold text-primary">Links.</h4>
-
-                            <div class="bd-example border">
-                                <div class="list-group">
-                                    <a href="#" class="list-group-item list-group-item-action active">
-                                        Cras justo odio
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result1" data-toggle="tab" role="tab" aria-controls="result1" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code1" data-toggle="tab" role="tab" aria-controls="code1" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
                                     </a>
-                                    <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-                                    <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
-                                    <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
-                                    <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">Vestibulum at eros</a>
-                                </div>
-                            </div><!-- end bd-example -->
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result1" role="tabpanel">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Cras justo odio</li>
+                                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                                        <li class="list-group-item">Morbi leo risus</li>
+                                        <li class="list-group-item">Porta ac consectetur ac</li>
+                                        <li class="list-group-item">Vestibulum at eros</li>
+                                    </ul>
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code1" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;ul class="list-group"&gt;
+    &lt;li class="list-group-item"&gt;Cras justo odio&lt;/li&gt;
+    &lt;li class="list-group-item"&gt;Dapibus ac facilisis in&lt;/li&gt;
+    &lt;li class="list-group-item"&gt;Morbi leo risus&lt;/li&gt;
+    &lt;li class="list-group-item"&gt;Porta ac consectetur ac&lt;/li&gt;
+    &lt;li class="list-group-item"&gt;Vestibulum at eros&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
                         </div><!-- end col -->
                     </div><!-- end row -->
 
@@ -239,95 +213,338 @@
 
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="mb-2 font-weight-bold text-primary">Flush.</h4>
+                            <h3 class="mb-2 font-weight-bold">Active items</h3>
 
-                            <div class="bd-example border">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Cras justo odio</li>
-                                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                                    <li class="list-group-item">Morbi leo risus</li>
-                                    <li class="list-group-item">Porta ac consectetur ac</li>
-                                    <li class="list-group-item">Vestibulum at eros</li>
-                                </ul>
-                            </div><!-- end bd-example -->
-                        </div><!-- end col -->
-                    </div><!-- end row -->
-
-                    <hr class="mt-5 mb-5 border-top-0" />
-
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <h4 class="mb-2 font-weight-bold text-primary">Horizontal.</h4>
-
-                            <div class="bd-example border">
-                                <ul class="list-group list-group-horizontal">
-                                    <li class="list-group-item">Cras justo odio</li>
-                                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                                    <li class="list-group-item">Morbi leo risus</li>
-                                </ul>
-                            </div><!-- end bd-example -->
-                        </div><!-- end col -->
-                    </div><!-- end row -->
-
-                    <hr class="mt-5 mb-5 border-top-0" />
-
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <h4 class="mb-2 font-weight-bold text-primary">With badges.</h4>
-
-                            <div class="bd-example border">
-                                <ul class="list-group">
-                                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                                        Cras justo odio
-                                        <span class="badge badge-primary badge-pill">14</span>
-                                    </li>
-                                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                                        Dapibus ac facilisis in
-                                        <span class="badge badge-primary badge-pill">2</span>
-                                    </li>
-                                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                                        Morbi leo risus
-                                        <span class="badge badge-primary badge-pill">1</span>
-                                    </li>
-                                </ul>
-                            </div><!-- end bd-example -->
-                        </div><!-- end col -->
-                    </div><!-- end row -->
-
-                    <hr class="mt-5 mb-5 border-top-0" />
-
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <h4 class="mb-2 font-weight-bold text-primary">Custom content.</h4>
-
-                            <div class="bd-example border">
-                                <div class="list-group">
-                                    <a href="#" class="list-group-item list-group-item-action active">
-                                        <div class="d-flex w-100 justify-content-between">
-                                            <h5 class="mb-1">List group item heading</h5>
-                                            <small>3 days ago</small>
-                                        </div>
-                                        <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                                        <small>Donec id elit non mi porta.</small>
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result2" data-toggle="tab" role="tab" aria-controls="result2" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code2" data-toggle="tab" role="tab" aria-controls="code2" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
                                     </a>
-                                    <a href="#" class="list-group-item list-group-item-action">
-                                        <div class="d-flex w-100 justify-content-between">
-                                            <h5 class="mb-1">List group item heading</h5>
-                                            <small class="text-muted">3 days ago</small>
-                                        </div>
-                                        <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                                        <small class="text-muted">Donec id elit non mi porta.</small>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result2" role="tabpanel">
+                                    <ul class="list-group">
+                                        <li class="list-group-item active">Cras justo odio</li>
+                                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                                        <li class="list-group-item">Morbi leo risus</li>
+                                        <li class="list-group-item">Porta ac consectetur ac</li>
+                                        <li class="list-group-item">Vestibulum at eros</li>
+                                    </ul>
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code2" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;ul class="list-group"&gt;
+    &lt;li class="list-group-item active"&gt;Cras justo odio&lt;/li&gt;
+    &lt;li class="list-group-item"&gt;Dapibus ac facilisis in&lt;/li&gt;
+    &lt;li class="list-group-item"&gt;Morbi leo risus&lt;/li&gt;
+    &lt;li class="list-group-item"&gt;Porta ac consectetur ac&lt;/li&gt;
+    &lt;li class="list-group-item"&gt;Vestibulum at eros&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
+                        </div><!-- end col -->
+                    </div><!-- end row -->
+
+                    <hr class="mt-5 mb-5 border-top-0" />
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h3 class="mb-2 font-weight-bold">Disabled items</h3>
+
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result3" data-toggle="tab" role="tab" aria-controls="result3" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code3" data-toggle="tab" role="tab" aria-controls="code3" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
                                     </a>
-                                    <a href="#" class="list-group-item list-group-item-action">
-                                        <div class="d-flex w-100 justify-content-between">
-                                            <h5 class="mb-1">List group item heading</h5>
-                                            <small class="text-muted">3 days ago</small>
-                                        </div>
-                                        <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                                        <small class="text-muted">Donec id elit non mi porta.</small>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result3" role="tabpanel">
+                                    <ul class="list-group">
+                                        <li class="list-group-item disabled" aria-disabled="true">Cras justo odio</li>
+                                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                                        <li class="list-group-item">Morbi leo risus</li>
+                                        <li class="list-group-item">Porta ac consectetur ac</li>
+                                        <li class="list-group-item">Vestibulum at eros</li>
+                                    </ul>
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code3" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;ul class="list-group"&gt;
+    &lt;li class="list-group-item disabled" aria-disabled="true"&gt;Cras justo odio&lt;/li&gt;
+    &lt;li class="list-group-item"&gt;Dapibus ac facilisis in&lt;/li&gt;
+    &lt;li class="list-group-item"&gt;Morbi leo risus&lt;/li&gt;
+    &lt;li class="list-group-item"&gt;Porta ac consectetur ac&lt;/li&gt;
+    &lt;li class="list-group-item"&gt;Vestibulum at eros&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
+                        </div><!-- end col -->
+                    </div><!-- end row -->
+
+                    <hr class="mt-5 mb-5 border-top-0" />
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h3 class="mb-2 font-weight-bold">Links</h3>
+
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result4" data-toggle="tab" role="tab" aria-controls="result4" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code4" data-toggle="tab" role="tab" aria-controls="code4" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
                                     </a>
-                                </div>
-                            </div><!-- end bd-example -->
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result4" role="tabpanel">
+                                    <div class="list-group">
+                                        <a href="#" class="list-group-item list-group-item-action active">
+                                            Cras justo odio
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+                                        <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">Vestibulum at eros</a>
+                                    </div>
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code4" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;div class="list-group"&gt;
+    &lt;a href="#" class="list-group-item list-group-item-action active"&gt;
+        Cras justo odio
+    &lt;/a&gt;
+    &lt;a href="#" class="list-group-item list-group-item-action"&gt;Dapibus ac facilisis in&lt;/a&gt;
+    &lt;a href="#" class="list-group-item list-group-item-action"&gt;Morbi leo risus&lt;/a&gt;
+    &lt;a href="#" class="list-group-item list-group-item-action"&gt;Porta ac consectetur ac&lt;/a&gt;
+    &lt;a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true"&gt;Vestibulum at eros&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
+                        </div><!-- end col -->
+                    </div><!-- end row -->
+
+                    <hr class="mt-5 mb-5 border-top-0" />
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h3 class="mb-2 font-weight-bold">Flush</h3>
+
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result5" data-toggle="tab" role="tab" aria-controls="result5" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code5" data-toggle="tab" role="tab" aria-controls="code5" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result5" role="tabpanel">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Cras justo odio</li>
+                                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                                        <li class="list-group-item">Morbi leo risus</li>
+                                        <li class="list-group-item">Porta ac consectetur ac</li>
+                                        <li class="list-group-item">Vestibulum at eros</li>
+                                    </ul>
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code5" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;ul class="list-group list-group-flush"&gt;
+    &lt;li class="list-group-item"&gt;Cras justo odio&lt;/li&gt;
+    &lt;li class="list-group-item"&gt;Dapibus ac facilisis in&lt;/li&gt;
+    &lt;li class="list-group-item"&gt;Morbi leo risus&lt;/li&gt;
+    &lt;li class="list-group-item"&gt;Porta ac consectetur ac&lt;/li&gt;
+    &lt;li class="list-group-item"&gt;Vestibulum at eros&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
+                        </div><!-- end col -->
+                    </div><!-- end row -->
+
+                    <hr class="mt-5 mb-5 border-top-0" />
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h3 class="mb-2 font-weight-bold">Horizontal</h3>
+
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result6" data-toggle="tab" role="tab" aria-controls="result6" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code6" data-toggle="tab" role="tab" aria-controls="code6" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result6" role="tabpanel">
+                                    <ul class="list-group list-group-horizontal">
+                                        <li class="list-group-item">Cras justo odio</li>
+                                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                                        <li class="list-group-item">Morbi leo risus</li>
+                                    </ul>
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code6" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;ul class="list-group list-group-horizontal"&gt;
+    &lt;li class="list-group-item"&gt;Cras justo odio&lt;/li&gt;
+    &lt;li class="list-group-item"&gt;Dapibus ac facilisis in&lt;/li&gt;
+    &lt;li class="list-group-item"&gt;Morbi leo risus&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
+                        </div><!-- end col -->
+                    </div><!-- end row -->
+
+                    <hr class="mt-5 mb-5 border-top-0" />
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h3 class="mb-2 font-weight-bold">With badges</h3>
+
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result7" data-toggle="tab" role="tab" aria-controls="result7" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code7" data-toggle="tab" role="tab" aria-controls="code7" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result7" role="tabpanel">
+                                    <ul class="list-group">
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Cras justo odio
+                                            <span class="badge badge-primary badge-pill">14</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Dapibus ac facilisis in
+                                            <span class="badge badge-primary badge-pill">2</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Morbi leo risus
+                                            <span class="badge badge-primary badge-pill">1</span>
+                                        </li>
+                                    </ul>
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code7" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;ul class="list-group"&gt;
+    &lt;li class="list-group-item d-flex justify-content-between align-items-center"&gt;
+        Cras justo odio
+        &lt;span class="badge badge-primary badge-pill"&gt;14&lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li class="list-group-item d-flex justify-content-between align-items-center"&gt;
+        Dapibus ac facilisis in
+        &lt;span class="badge badge-primary badge-pill"&gt;2&lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li class="list-group-item d-flex justify-content-between align-items-center"&gt;
+        Morbi leo risus
+        &lt;span class="badge badge-primary badge-pill"&gt;1&lt;/span&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
+                        </div><!-- end col -->
+                    </div><!-- end row -->
+
+                    <hr class="mt-5 mb-5 border-top-0" />
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h3 class="mb-2 font-weight-bold">Custom content</h3>
+
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result8" data-toggle="tab" role="tab" aria-controls="result8" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code8" data-toggle="tab" role="tab" aria-controls="code8" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result8" role="tabpanel">
+                                    <div class="list-group">
+                                        <a href="#" class="list-group-item list-group-item-action active">
+                                            <div class="d-flex w-100 justify-content-between">
+                                                <h5 class="mb-1">List group item heading</h5>
+                                                <small>3 days ago</small>
+                                            </div>
+                                            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                                            <small>Donec id elit non mi porta.</small>
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-action">
+                                            <div class="d-flex w-100 justify-content-between">
+                                                <h5 class="mb-1">List group item heading</h5>
+                                                <small class="text-muted">3 days ago</small>
+                                            </div>
+                                            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                                            <small class="text-muted">Donec id elit non mi porta.</small>
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-action">
+                                            <div class="d-flex w-100 justify-content-between">
+                                                <h5 class="mb-1">List group item heading</h5>
+                                                <small class="text-muted">3 days ago</small>
+                                            </div>
+                                            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                                            <small class="text-muted">Donec id elit non mi porta.</small>
+                                        </a>
+                                    </div>
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code8" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;div class="list-group"&gt;
+    &lt;a href="#" class="list-group-item list-group-item-action active"&gt;
+        &lt;div class="d-flex w-100 justify-content-between"&gt;
+            &lt;h5 class="mb-1">List group item heading&lt;/h5&gt;
+            &lt;small&gt;3 days ago&lt;/small&gt;
+        &lt;/div&gt;
+        &lt;p class="mb-1"&gt;Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.&lt;/p&gt;
+        &lt;small&gt;Donec id elit non mi porta.&lt;/small&gt;
+    &lt;/a&gt;
+    &lt;a href="#" class="list-group-item list-group-item-action"&gt;
+        &lt;div class="d-flex w-100 justify-content-between"&gt;
+            &lt;h5 class="mb-1"&gt;List group item heading&lt;/h5&gt;
+            &lt;small class="text-muted"&gt;3 days ago&lt;/small&gt;
+        &lt;/div&gt;
+        &lt;p class="mb-1"&gt;Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.&lt;/p&gt;
+        &lt;small class="text-muted">Donec id elit non mi porta.&lt;/small&gt;
+    &lt;/a&gt;
+    &lt;a href="#" class="list-group-item list-group-item-action"&gt;
+        &lt;div class="d-flex w-100 justify-content-between"&gt;
+            &lt;h5 class="mb-1"&gt;List group item heading&lt;/h5&gt;
+            &lt;small class="text-muted"&gt;3 days ago&lt;/small&gt;
+        &lt;/div&gt;
+        &lt;p class="mb-1"&gt;Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.&lt;/p&gt;
+        &lt;small class="text-muted"&gt;Donec id elit non mi porta.&lt;/small&gt;
+    &lt;/a&gt;
+&lt;/div&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
                         </div><!-- end col -->
                     </div><!-- end row -->
                 </div><!-- end #main col -->
