@@ -165,308 +165,518 @@
                 <div id="main" class="ml-sm-auto col-md-9 col-lg-9 col-xl-10">
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="mb-2 text-primary font-weight-bold">Dropdowns.</h4>
+                            <h3 class="mb-2 font-weight-bold">Dropdowns</h3>
 
-                            <div class="bd-example border">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Action
-                                    </button>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">Most Recent</a>
-                                        <a class="dropdown-item" href="#">Popularity</a>
-                                        <a class="dropdown-item" href="#">Price: High to Low</a>
-                                        <a class="dropdown-item" href="#">Price: Low to High</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Separated link</a>
-                                    </div><!-- end dropdown-menu -->
-                                </div><!-- end btn-group -->
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result1" data-toggle="tab" role="tab" aria-controls="result1" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code1" data-toggle="tab" role="tab" aria-controls="code1" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
 
-                                <!-- Example split danger button -->
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-dark">Action</button>
-                                    <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <span class="sr-only">Toggle Dropdown</span>
-                                    </button>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">Most Recent</a>
-                                        <a class="dropdown-item" href="#">Popularity</a>
-                                        <a class="dropdown-item" href="#">Price: High to Low</a>
-                                        <a class="dropdown-item" href="#">Price: Low to High</a>
-                                    </div><!-- end dropdown-menu -->
-                                </div><!-- end btn-group -->
-                            </div><!-- bd-example -->
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result1" role="tabpanel">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Action
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Most Recent</a>
+                                            <a class="dropdown-item" href="#">Popularity</a>
+                                            <a class="dropdown-item" href="#">Price: High to Low</a>
+                                            <a class="dropdown-item" href="#">Price: Low to High</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Separated link</a>
+                                        </div><!-- end dropdown-menu -->
+                                    </div><!-- end btn-group -->
+
+                                    <!-- Example split danger button -->
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-dark">Action</button>
+                                        <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="sr-only">Toggle Dropdown</span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Most Recent</a>
+                                            <a class="dropdown-item" href="#">Popularity</a>
+                                            <a class="dropdown-item" href="#">Price: High to Low</a>
+                                            <a class="dropdown-item" href="#">Price: Low to High</a>
+                                        </div><!-- end dropdown-menu -->
+                                    </div><!-- end btn-group -->
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code1" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;div class="btn-group"&gt;
+    &lt;button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt;
+        Action
+    &lt;/button&gt;
+    &lt;div class="dropdown-menu"&gt;
+        &lt;a class="dropdown-item" href="#"&gt;Most Recent&lt;/a&gt;
+        &lt;a class="dropdown-item" href="#"&gt;Popularity&lt;/a&gt;
+        &lt;a class="dropdown-item" href="#"&gt;Price: High to Low&lt;/a&gt;
+        &lt;a class="dropdown-item" href="#"&gt;Price: Low to High&lt;/a&gt;
+        &lt;div class="dropdown-divider"&gt;&lt;/div&gt;
+        &lt;a class="dropdown-item" href="#"&gt;Separated link&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Example split danger button --&gt;
+&lt;div class="btn-group"&gt;
+    &lt;button type="button" class="btn btn-dark"&gt;Action&lt;/button&gt;
+    &lt;button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt;
+        &lt;span class="sr-only"&gt;Toggle Dropdown&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;div class="dropdown-menu"&gt;
+        &lt;a class="dropdown-item" href="#"&gt;Most Recent&lt;/a&gt;
+        &lt;a class="dropdown-item" href="#"&gt;Popularity&lt;/a&gt;
+        &lt;a class="dropdown-item" href="#"&gt;Price: High to Low&lt;/a&gt;
+        &lt;a class="dropdown-item" href="#"&gt;Price: Low to High&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
                         </div><!-- end col -->
                     </div><!-- end row -->
 
-                    <hr class="mt-5 mb-5 border-top-0" />
+                    <hr class="mt-5 mb-5" />
 
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="mb-2 text-primary font-weight-bold">Sizes.</h4>
+                            <h3 class="mb-2 font-weight-bold">Bootstrap Select</h3>
 
-                            <div class="bd-example border">
-                                <!-- Large button groups (default and split) -->
-                                <div class="btn-group">
-                                    <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Large button
-                                    </button>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">Most Recent</a>
-                                        <a class="dropdown-item" href="#">Popularity</a>
-                                        <a class="dropdown-item" href="#">Price: High to Low</a>
-                                        <a class="dropdown-item" href="#">Price: Low to High</a>
-                                    </div>
-                                </div><!-- end btn-group -->
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result2" data-toggle="tab" role="tab" aria-controls="result2" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code2" data-toggle="tab" role="tab" aria-controls="code2" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
 
-                                <div class="btn-group">
-                                    <button class="btn btn-secondary btn-lg" type="button">
-                                        Large split button
-                                    </button>
-                                    <button type="button" class="btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <span class="sr-only">Toggle Dropdown</span>
-                                    </button>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">Most Recent</a>
-                                        <a class="dropdown-item" href="#">Popularity</a>
-                                        <a class="dropdown-item" href="#">Price: High to Low</a>
-                                        <a class="dropdown-item" href="#">Price: Low to High</a>
-                                    </div>
-                                </div><!-- end btn-group -->
-
-                                <hr class="border-top-0" />
-
-                                <!-- Small button groups (default and split) -->
-                                <div class="btn-group">
-                                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Small button
-                                    </button>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">Most Recent</a>
-                                        <a class="dropdown-item" href="#">Popularity</a>
-                                        <a class="dropdown-item" href="#">Price: High to Low</a>
-                                        <a class="dropdown-item" href="#">Price: Low to High</a>
-                                    </div>
-                                </div><!-- end btn-group -->
-
-                                <div class="btn-group">
-                                    <button class="btn btn-secondary btn-sm" type="button">
-                                        Small split button
-                                    </button>
-                                    <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <span class="sr-only">Toggle Dropdown</span>
-                                    </button>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">Most Recent</a>
-                                        <a class="dropdown-item" href="#">Popularity</a>
-                                        <a class="dropdown-item" href="#">Price: High to Low</a>
-                                        <a class="dropdown-item" href="#">Price: Low to High</a>
-                                    </div>
-                                </div><!-- end btn-group -->
-                            </div><!-- bd-example -->
-                        </div><!-- end col -->
-                    </div><!-- end row -->
-
-                    <hr class="mt-5 mb-5 border-top-0" />
-
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <h4 class="mb-2 text-primary font-weight-bold">Bootstrap Select.</h4>
-
-                            <div class="bd-example border">
-                                <select class="selectpicker mb-2" data-style="minimalis" title="Select category">
-                                    <option>Most Recent</option>
-                                    <option>Popularity</option>
-                                    <option>Price: High to Low</option>
-                                    <option>Price: Low to High</option>
-                                </select>
-
-                                <select class="selectpicker mb-2" data-style="minimalis" title="Select category">
-                                    <option>Most Recent</option>
-                                    <option>Popularity</option>
-                                    <option>Price: High to Low</option>
-                                    <option>Price: Low to High</option>
-                                </select>
-
-                                <select class="selectpicker mb-2" data-style="minimalis" title="Select category">
-                                    <optgroup label="Picnic">
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result2" role="tabpanel">
+                                    <select class="selectpicker mb-2" data-style="minimalis" title="Select category">
                                         <option>Most Recent</option>
                                         <option>Popularity</option>
-                                    </optgroup>
-                                    <optgroup label="Camping">
                                         <option>Price: High to Low</option>
                                         <option>Price: Low to High</option>
-                                    </optgroup>
-                                </select>
+                                    </select>
 
-                                <select class="selectpicker mb-2" multiple data-style="minimalis" title="Select category">
-                                    <option>Most Recent</option>
-                                    <option>Popularity</option>
-                                    <option>Price: High to Low</option>
-                                    <option>Price: Low to High</option>
-                                </select>
+                                    <select class="selectpicker mb-2" data-style="minimalis" title="Select category">
+                                        <option>Most Recent</option>
+                                        <option>Popularity</option>
+                                        <option>Price: High to Low</option>
+                                        <option>Price: Low to High</option>
+                                    </select>
 
-                                <select class="selectpicker mb-2" data-live-search="true" data-style="minimalis" title="Select category">
-                                    <option data-tokens="ketchup mustard">Hot Dog, Fries and a Soda</option>
-                                    <option data-tokens="mustard">Burger, Shake and a Smile</option>
-                                    <option data-tokens="frosting">Sugar, Spice and all things nice</option>
-                                </select>
+                                    <select class="selectpicker mb-2" data-style="minimalis" title="Select category">
+                                        <optgroup label="Picnic">
+                                            <option>Most Recent</option>
+                                            <option>Popularity</option>
+                                        </optgroup>
+                                        <optgroup label="Camping">
+                                            <option>Price: High to Low</option>
+                                            <option>Price: Low to High</option>
+                                        </optgroup>
+                                    </select>
 
-                                <select class="selectpicker mb-2" multiple data-style="minimalis" title="Select category">
-                                    <option>Most Recent</option>
-                                    <option>Popularity</option>
-                                    <option>Price: High to Low</option>
-                                    <option>Price: Low to High</option>
-                                </select>
-                            </div><!-- bd-example -->
+                                    <select class="selectpicker mb-2" multiple data-style="minimalis" title="Select category">
+                                        <option>Most Recent</option>
+                                        <option>Popularity</option>
+                                        <option>Price: High to Low</option>
+                                        <option>Price: Low to High</option>
+                                    </select>
+
+                                    <select class="selectpicker mb-2" data-live-search="true" data-style="minimalis" title="Select category">
+                                        <option data-tokens="ketchup mustard">Hot Dog, Fries and a Soda</option>
+                                        <option data-tokens="mustard">Burger, Shake and a Smile</option>
+                                        <option data-tokens="frosting">Sugar, Spice and all things nice</option>
+                                    </select>
+
+                                    <select class="selectpicker mb-2" multiple data-style="minimalis" title="Select category">
+                                        <option>Most Recent</option>
+                                        <option>Popularity</option>
+                                        <option>Price: High to Low</option>
+                                        <option>Price: Low to High</option>
+                                    </select>
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code2" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;select class="selectpicker" data-style="minimalis" title="Select category"&gt;
+    &lt;option&gt;Most Recent&lt;/option&gt;
+    &lt;option&gt;Popularity&lt;/option&gt;
+    &lt;option&gt;Price: High to Low&lt;/option&gt;
+    &lt;option&gt;Price: Low to High&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;select class="selectpicker" data-style="minimalis" title="Select category"&gt;
+    &lt;option&gt;Most Recent&lt;/option&gt;
+    &lt;option&gt;Popularity&lt;/option&gt;
+    &lt;option&gt;Price: High to Low&lt;/option&gt;
+    &lt;option&gt;Price: Low to High&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;select class="selectpicker" data-style="minimalis" title="Select category"&gt;
+    &lt;optgroup label="Picnic"&gt;
+        &lt;option&gt;Most Recent&lt;/option&gt;
+        &lt;option&gt;Popularity&lt;/option&gt;
+    &lt;/optgroup&gt;
+    &lt;optgroup label="Camping"&gt;
+        &lt;option&gt;Price: High to Low&lt;/option&gt;
+        &lt;option&gt;Price: Low to High&lt;/option&gt;
+    &lt;/optgroup&gt;
+&lt;/select&gt;
+
+&lt;select class="selectpicker" multiple data-style="minimalis" title="Select category"&gt;
+    &lt;option&gt;Most Recent&lt;/option&gt;
+    &lt;option&gt;Popularity&lt;/option&gt;
+    &lt;option&gt;Price: High to Low&lt;/option&gt;
+    &lt;option&gt;Price: Low to High&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;select class="selectpicker" data-live-search="true" data-style="minimalis" title="Select category"&gt;
+    &lt;option data-tokens="ketchup mustard"&gt;Hot Dog, Fries and a Soda&lt;/option&gt;
+    &lt;option data-tokens="mustard"&gt;Burger, Shake and a Smile&lt;/option&gt;
+    &lt;option data-tokens="frosting"&gt;Sugar, Spice and all things nice&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;select class="selectpicker" multiple data-style="minimalis" title="Select category"&gt;
+    &lt;option&gt;Most Recent&lt;/option&gt;
+    &lt;option&gt;Popularity&lt;/option&gt;
+    &lt;option&gt;Price: High to Low&lt;/option&gt;
+    &lt;option&gt;Price: Low to High&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
                         </div><!-- end col -->
                     </div><!-- end row -->
 
-                    <hr class="mt-5 mb-5 border-top-0" />
+                    <hr class="mt-5 mb-5" />
 
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="mb-2 text-primary font-weight-bold">Bootstrap Select Color.</h4>
+                            <h3 class="mb-2 font-weight-bold">Bootstrap Select Color</h3>
 
-                            <div class="bd-example border">
-                                <select class="selectpicker mb-2" data-style="btn-primary" title="Select category">
-                                    <option>Most Recent</option>
-                                    <option>Popularity</option>
-                                    <option>Price: High to Low</option>
-                                    <option>Price: Low to High</option>
-                                </select>
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result3" data-toggle="tab" role="tab" aria-controls="result3" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code3" data-toggle="tab" role="tab" aria-controls="code3" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
 
-                                <select class="selectpicker mb-2" data-style="btn-secondary" title="Select category">
-                                    <option>Most Recent</option>
-                                    <option>Popularity</option>
-                                    <option>Price: High to Low</option>
-                                    <option>Price: Low to High</option>
-                                </select>
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result3" role="tabpanel">
+                                    <select class="selectpicker mb-2" data-style="btn-primary" title="Select category">
+                                        <option>Most Recent</option>
+                                        <option>Popularity</option>
+                                        <option>Price: High to Low</option>
+                                        <option>Price: Low to High</option>
+                                    </select>
 
-                                <select class="selectpicker mb-2" data-style="btn-success" title="Select category">
-                                    <option>Most Recent</option>
-                                    <option>Popularity</option>
-                                    <option>Price: High to Low</option>
-                                    <option>Price: Low to High</option>
-                                </select>
+                                    <select class="selectpicker mb-2" data-style="btn-secondary" title="Select category">
+                                        <option>Most Recent</option>
+                                        <option>Popularity</option>
+                                        <option>Price: High to Low</option>
+                                        <option>Price: Low to High</option>
+                                    </select>
 
-                                <select class="selectpicker mb-2" data-style="btn-danger" title="Select category">
-                                    <option>Most Recent</option>
-                                    <option>Popularity</option>
-                                    <option>Price: High to Low</option>
-                                    <option>Price: Low to High</option>
-                                </select>
+                                    <select class="selectpicker mb-2" data-style="btn-success" title="Select category">
+                                        <option>Most Recent</option>
+                                        <option>Popularity</option>
+                                        <option>Price: High to Low</option>
+                                        <option>Price: Low to High</option>
+                                    </select>
 
-                                <select class="selectpicker mb-2" data-style="btn-warning" title="Select category">
-                                    <option>Most Recent</option>
-                                    <option>Popularity</option>
-                                    <option>Price: High to Low</option>
-                                    <option>Price: Low to High</option>
-                                </select>
+                                    <select class="selectpicker mb-2" data-style="btn-danger" title="Select category">
+                                        <option>Most Recent</option>
+                                        <option>Popularity</option>
+                                        <option>Price: High to Low</option>
+                                        <option>Price: Low to High</option>
+                                    </select>
 
-                                <select class="selectpicker mb-2" data-style="btn-info" title="Select category">
-                                    <option>Most Recent</option>
-                                    <option>Popularity</option>
-                                    <option>Price: High to Low</option>
-                                    <option>Price: Low to High</option>
-                                </select>
+                                    <select class="selectpicker mb-2" data-style="btn-warning" title="Select category">
+                                        <option>Most Recent</option>
+                                        <option>Popularity</option>
+                                        <option>Price: High to Low</option>
+                                        <option>Price: Low to High</option>
+                                    </select>
 
-                                <select class="selectpicker mb-2" data-style="btn-light" title="Select category">
-                                    <option>Most Recent</option>
-                                    <option>Popularity</option>
-                                    <option>Price: High to Low</option>
-                                    <option>Price: Low to High</option>
-                                </select>
+                                    <select class="selectpicker mb-2" data-style="btn-info" title="Select category">
+                                        <option>Most Recent</option>
+                                        <option>Popularity</option>
+                                        <option>Price: High to Low</option>
+                                        <option>Price: Low to High</option>
+                                    </select>
 
-                                <select class="selectpicker mb-2" data-style="btn-dark" title="Select category">
-                                    <option>Most Recent</option>
-                                    <option>Popularity</option>
-                                    <option>Price: High to Low</option>
-                                    <option>Price: Low to High</option>
-                                </select>
+                                    <select class="selectpicker mb-2" data-style="btn-light" title="Select category">
+                                        <option>Most Recent</option>
+                                        <option>Popularity</option>
+                                        <option>Price: High to Low</option>
+                                        <option>Price: Low to High</option>
+                                    </select>
 
-                                <hr />
+                                    <select class="selectpicker mb-2" data-style="btn-dark" title="Select category">
+                                        <option>Most Recent</option>
+                                        <option>Popularity</option>
+                                        <option>Price: High to Low</option>
+                                        <option>Price: Low to High</option>
+                                    </select>
+                                </div><!-- end tab-pane -->
 
-                                <select class="selectpicker mb-2" data-style="btn-outline-primary" title="Select category">
-                                    <option>Most Recent</option>
-                                    <option>Popularity</option>
-                                    <option>Price: High to Low</option>
-                                    <option>Price: Low to High</option>
-                                </select>
+                                <div class="tab-pane fade" id="code3" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;select class="selectpicker" data-style="btn-primary" title="Select category"&gt;
+    &lt;option&gt;Most Recent&lt;/option&gt;
+    &lt;option&gt;Popularity&lt;/option&gt;
+    &lt;option&gt;Price: High to Low&lt;/option&gt;
+    &lt;option&gt;Price: Low to High&lt;/option&gt;
+&lt;/select&gt;
 
-                                <select class="selectpicker mb-2" data-style="btn-outline-secondary" title="Select category">
-                                    <option>Most Recent</option>
-                                    <option>Popularity</option>
-                                    <option>Price: High to Low</option>
-                                    <option>Price: Low to High</option>
-                                </select>
+&lt;select class="selectpicker" data-style="btn-secondary" title="Select category"&gt;
+    &lt;option&gt;Most Recent&lt;/option&gt;
+    &lt;option&gt;Popularity&lt;/option&gt;
+    &lt;option&gt;Price: High to Low&lt;/option&gt;
+    &lt;option&gt;Price: Low to High&lt;/option&gt;
+&lt;/select&gt;
 
-                                <select class="selectpicker mb-2" data-style="btn-outline-success" title="Select category">
-                                    <option>Most Recent</option>
-                                    <option>Popularity</option>
-                                    <option>Price: High to Low</option>
-                                    <option>Price: Low to High</option>
-                                </select>
+&lt;select class="selectpicker" data-style="btn-success" title="Select category"&gt;
+    &lt;option&gt;Most Recent&lt;/option&gt;
+    &lt;option&gt;Popularity&lt;/option&gt;
+    &lt;option&gt;Price: High to Low&lt;/option&gt;
+    &lt;option&gt;Price: Low to High&lt;/option&gt;
+&lt;/select&gt;
 
-                                <select class="selectpicker mb-2" data-style="btn-outline-danger" title="Select category">
-                                    <option>Most Recent</option>
-                                    <option>Popularity</option>
-                                    <option>Price: High to Low</option>
-                                    <option>Price: Low to High</option>
-                                </select>
+&lt;select class="selectpicker" data-style="btn-danger" title="Select category"&gt;
+    &lt;option&gt;Most Recent&lt;/option&gt;
+    &lt;option&gt;Popularity&lt;/option&gt;
+    &lt;option&gt;Price: High to Low&lt;/option&gt;
+    &lt;option&gt;Price: Low to High&lt;/option&gt;
+&lt;/select&gt;
 
-                                <select class="selectpicker mb-2" data-style="btn-outline-warning" title="Select category">
-                                    <option>Most Recent</option>
-                                    <option>Popularity</option>
-                                    <option>Price: High to Low</option>
-                                    <option>Price: Low to High</option>
-                                </select>
+&lt;select class="selectpicker" data-style="btn-warning" title="Select category"&gt;
+    &lt;option&gt;Most Recent&lt;/option&gt;
+    &lt;option&gt;Popularity&lt;/option&gt;
+    &lt;option&gt;Price: High to Low&lt;/option&gt;
+    &lt;option&gt;Price: Low to High&lt;/option&gt;
+&lt;/select&gt;
 
-                                <select class="selectpicker mb-2" data-style="btn-outline-info" title="Select category">
-                                    <option>Most Recent</option>
-                                    <option>Popularity</option>
-                                    <option>Price: High to Low</option>
-                                    <option>Price: Low to High</option>
-                                </select>
+&lt;select class="selectpicker" data-style="btn-info" title="Select category"&gt;
+    &lt;option&gt;Most Recent&lt;/option&gt;
+    &lt;option&gt;Popularity&lt;/option&gt;
+    &lt;option&gt;Price: High to Low&lt;/option&gt;
+    &lt;option&gt;Price: Low to High&lt;/option&gt;
+&lt;/select&gt;
 
-                                <select class="selectpicker mb-2" data-style="btn-outline-light" title="Select category">
-                                    <option>Most Recent</option>
-                                    <option>Popularity</option>
-                                    <option>Price: High to Low</option>
-                                    <option>Price: Low to High</option>
-                                </select>
+&lt;select class="selectpicker" data-style="btn-light" title="Select category"&gt;
+    &lt;option&gt;Most Recent&lt;/option&gt;
+    &lt;option&gt;Popularity&lt;/option&gt;
+    &lt;option&gt;Price: High to Low&lt;/option&gt;
+    &lt;option&gt;Price: Low to High&lt;/option&gt;
+&lt;/select&gt;
 
-                                <select class="selectpicker mb-2" data-style="btn-outline-dark" title="Select category">
-                                    <option>Most Recent</option>
-                                    <option>Popularity</option>
-                                    <option>Price: High to Low</option>
-                                    <option>Price: Low to High</option>
-                                </select>
-                            </div><!-- bd-example -->
+&lt;select class="selectpicker" data-style="btn-dark" title="Select category"&gt;
+    &lt;option&gt;Most Recent&lt;/option&gt;
+    &lt;option&gt;Popularity&lt;/option&gt;
+    &lt;option&gt;Price: High to Low&lt;/option&gt;
+    &lt;option&gt;Price: Low to High&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
+
+                            <hr class="mt-5 mb-5" />
+
+                            <h3 class="mb-2 font-weight-bold">Bootstrap Select Outline</h3>
+
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result4" data-toggle="tab" role="tab" aria-controls="result4" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code4" data-toggle="tab" role="tab" aria-controls="code4" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result4" role="tabpanel">
+                                    <select class="selectpicker mb-2" data-style="btn-outline-primary" title="Select category">
+                                        <option>Most Recent</option>
+                                        <option>Popularity</option>
+                                        <option>Price: High to Low</option>
+                                        <option>Price: Low to High</option>
+                                    </select>
+
+                                    <select class="selectpicker mb-2" data-style="btn-outline-secondary" title="Select category">
+                                        <option>Most Recent</option>
+                                        <option>Popularity</option>
+                                        <option>Price: High to Low</option>
+                                        <option>Price: Low to High</option>
+                                    </select>
+
+                                    <select class="selectpicker mb-2" data-style="btn-outline-success" title="Select category">
+                                        <option>Most Recent</option>
+                                        <option>Popularity</option>
+                                        <option>Price: High to Low</option>
+                                        <option>Price: Low to High</option>
+                                    </select>
+
+                                    <select class="selectpicker mb-2" data-style="btn-outline-danger" title="Select category">
+                                        <option>Most Recent</option>
+                                        <option>Popularity</option>
+                                        <option>Price: High to Low</option>
+                                        <option>Price: Low to High</option>
+                                    </select>
+
+                                    <select class="selectpicker mb-2" data-style="btn-outline-warning" title="Select category">
+                                        <option>Most Recent</option>
+                                        <option>Popularity</option>
+                                        <option>Price: High to Low</option>
+                                        <option>Price: Low to High</option>
+                                    </select>
+
+                                    <select class="selectpicker mb-2" data-style="btn-outline-info" title="Select category">
+                                        <option>Most Recent</option>
+                                        <option>Popularity</option>
+                                        <option>Price: High to Low</option>
+                                        <option>Price: Low to High</option>
+                                    </select>
+
+                                    <select class="selectpicker mb-2" data-style="btn-outline-light" title="Select category">
+                                        <option>Most Recent</option>
+                                        <option>Popularity</option>
+                                        <option>Price: High to Low</option>
+                                        <option>Price: Low to High</option>
+                                    </select>
+
+                                    <select class="selectpicker mb-2" data-style="btn-outline-dark" title="Select category">
+                                        <option>Most Recent</option>
+                                        <option>Popularity</option>
+                                        <option>Price: High to Low</option>
+                                        <option>Price: Low to High</option>
+                                    </select>
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code4" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;select class="selectpicker" data-style="btn-outline-primary" title="Select category"&gt;
+    &lt;option&gt;Most Recent&lt;/option&gt;
+    &lt;option&gt;Popularity&lt;/option&gt;
+    &lt;option&gt;Price: High to Low&lt;/option&gt;
+    &lt;option&gt;Price: Low to High&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;select class="selectpicker" data-style="btn-outline-secondary" title="Select category"&gt;
+    &lt;option&gt;Most Recent&lt;/option&gt;
+    &lt;option&gt;Popularity&lt;/option&gt;
+    &lt;option&gt;Price: High to Low&lt;/option&gt;
+    &lt;option&gt;Price: Low to High&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;select class="selectpicker" data-style="btn-outline-success" title="Select category"&gt;
+    &lt;option&gt;Most Recent&lt;/option&gt;
+    &lt;option&gt;Popularity&lt;/option&gt;
+    &lt;option&gt;Price: High to Low&lt;/option&gt;
+    &lt;option&gt;Price: Low to High&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;select class="selectpicker" data-style="btn-outline-danger" title="Select category"&gt;
+    &lt;option&gt;Most Recent&lt;/option&gt;
+    &lt;option&gt;Popularity&lt;/option&gt;
+    &lt;option&gt;Price: High to Low&lt;/option&gt;
+    &lt;option&gt;Price: Low to High&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;select class="selectpicker" data-style="btn-outline-warning" title="Select category"&gt;
+    &lt;option&gt;Most Recent&lt;/option&gt;
+    &lt;option&gt;Popularity&lt;/option&gt;
+    &lt;option&gt;Price: High to Low&lt;/option&gt;
+    &lt;option&gt;Price: Low to High&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;select class="selectpicker" data-style="btn-outline-info" title="Select category"&gt;
+    &lt;option&gt;Most Recent&lt;/option&gt;
+    &lt;option&gt;Popularity&lt;/option&gt;
+    &lt;option&gt;Price: High to Low&lt;/option&gt;
+    &lt;option&gt;Price: Low to High&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;select class="selectpicker" data-style="btn-outline-light" title="Select category"&gt;
+    &lt;option&gt;Most Recent&lt;/option&gt;
+    &lt;option&gt;Popularity&lt;/option&gt;
+    &lt;option&gt;Price: High to Low&lt;/option&gt;
+    &lt;option&gt;Price: Low to High&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;select class="selectpicker" data-style="btn-outline-dark" title="Select category"&gt;
+    &lt;option&gt;Most Recent&lt;/option&gt;
+    &lt;option&gt;Popularity&lt;/option&gt;
+    &lt;option&gt;Price: High to Low&lt;/option&gt;
+    &lt;option&gt;Price: Low to High&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
                         </div><!-- end col -->
                     </div><!-- end row -->
 
-                    <hr class="mt-5 mb-5 border-top-0" />
+                    <hr class="mt-5 mb-5" />
 
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="mb-2 text-primary font-weight-bold">Bootstrap Select disable.</h4>
+                            <h3 class="mb-2 font-weight-bold">Bootstrap Select disable</h3>
 
-                            <div class="bd-example border">
-                                <select class="selectpicker mb-2" data-style="minimalis disabled" title="Select category">
-                                    <option>Most Recent</option>
-                                    <option>Popularity</option>
-                                    <option>Price: High to Low</option>
-                                    <option>Price: Low to High</option>
-                                </select>
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result5" data-toggle="tab" role="tab" aria-controls="result5" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code5" data-toggle="tab" role="tab" aria-controls="code5" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
 
-                                <select class="selectpicker mb-2" data-style="btn-primary disabled" title="Select category">
-                                    <option>Most Recent</option>
-                                    <option>Popularity</option>
-                                    <option>Price: High to Low</option>
-                                    <option>Price: Low to High</option>
-                                </select>
-                            </div><!-- bd-example -->
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result5" role="tabpanel">
+                                    <select class="selectpicker mb-2" data-style="minimalis disabled" title="Select category">
+                                        <option>Most Recent</option>
+                                        <option>Popularity</option>
+                                        <option>Price: High to Low</option>
+                                        <option>Price: Low to High</option>
+                                    </select>
+
+                                    <select class="selectpicker mb-2" data-style="btn-primary disabled" title="Select category">
+                                        <option>Most Recent</option>
+                                        <option>Popularity</option>
+                                        <option>Price: High to Low</option>
+                                        <option>Price: Low to High</option>
+                                    </select>
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code5" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;select class="selectpicker" data-style="minimalis disabled" title="Select category"&gt;
+    &lt;option&gt;Most Recent&lt;/option&gt;
+    &lt;option&gt;Popularity&lt;/option&gt;
+    &lt;option&gt;Price: High to Low&lt;/option&gt;
+    &lt;option&gt;Price: Low to High&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;select class="selectpicker" data-style="btn-primary disabled" title="Select category"&gt;
+    &lt;option&gt;Most Recent&lt;/option&gt;
+    &lt;option&gt;Popularity&lt;/option&gt;
+    &lt;option&gt;Price: High to Low&lt;/option&gt;
+    &lt;option&gt;Price: Low to High&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
                         </div><!-- end col -->
                     </div><!-- end row -->
                 </div><!-- end #main col -->
