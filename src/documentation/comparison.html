@@ -165,13 +165,34 @@
                 <div id="main" class="ml-sm-auto col-md-9 col-lg-9 col-xl-10">
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="mb-2 text-primary font-weight-bold">Image comparsion.</h4>
+                            <h3 class="mb-2 font-weight-bold">Image comparsion</h3>
 
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result1" data-toggle="tab" role="tab" aria-controls="result1" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code1" data-toggle="tab" role="tab" aria-controls="code1" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
 
-                            <div class="cocoen">
-                                <img src="../assets/img/comparison-draw.png" />
-                                <img src="../assets/img/comparison-color.png" />
-                            </div>
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result1" role="tabpanel">
+                                    <div class="cocoen">
+                                        <img src="../assets/img/comparison-draw.png" />
+                                        <img src="../assets/img/comparison-color.png" />
+                                    </div><!-- end cocoen -->
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code1" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;div class="cocoen"&gt;
+    &lt;img src="../assets/img/comparison-draw.png" /&gt;
+    &lt;img src="../assets/img/comparison-color.png" /&gt;
+&lt;/div&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
                         </div><!-- end col -->
                     </div><!-- end row -->
                 </div><!-- end #main col -->
