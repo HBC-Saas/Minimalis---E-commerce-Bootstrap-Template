@@ -165,91 +165,213 @@
                 <div id="main" class="ml-sm-auto col-md-9 col-lg-9 col-xl-10">
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="mb-4 text-primary font-weight-bold">Rating.</h4>
+                            <h3 class="mb-2 font-weight-bold">Rating</h3>
 
-                            <div class="rate-star">
-                                <input type="radio" id="star1" name="rate" value="1" />
-                                <label for="star1">
-                                    <i class="flaticon-star"></i>
-                                </label>
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result1" data-toggle="tab" role="tab" aria-controls="result1" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code1" data-toggle="tab" role="tab" aria-controls="code1" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
 
-                                <input type="radio" id="star2" name="rate" value="2" checked/>
-                                <label for="star2">
-                                    <i class="flaticon-star"></i>
-                                </label>
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result1" role="tabpanel">
+                                    <div class="rate-star">
+                                        <input type="radio" id="star1" name="rate" value="1" />
+                                        <label for="star1">
+                                            <i class="flaticon-star"></i>
+                                        </label>
 
-                                <input type="radio" id="star3" name="rate" value="3" />
-                                <label for="star3">
-                                    <i class="flaticon-star"></i>
-                                </label>
+                                        <input type="radio" id="star2" name="rate" value="2" checked/>
+                                        <label for="star2">
+                                            <i class="flaticon-star"></i>
+                                        </label>
 
-                                <input type="radio" id="star4" name="rate" value="4" />
-                                <label for="star4">
-                                    <i class="flaticon-star"></i>
-                                </label>
+                                        <input type="radio" id="star3" name="rate" value="3" />
+                                        <label for="star3">
+                                            <i class="flaticon-star"></i>
+                                        </label>
 
-                                <input type="radio" id="star5" name="rate" value="5" />
-                                <label for="star5">
-                                    <i class="flaticon-star"></i>
-                                </label>
-                            </div><!-- end rate-star -->
+                                        <input type="radio" id="star4" name="rate" value="4" />
+                                        <label for="star4">
+                                            <i class="flaticon-star"></i>
+                                        </label>
+
+                                        <input type="radio" id="star5" name="rate" value="5" />
+                                        <label for="star5">
+                                            <i class="flaticon-star"></i>
+                                        </label>
+                                    </div><!-- end rate-star -->
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code1" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;div class="rate-star"&gt;
+    &lt;input type="radio" id="star1" name="rate" value="1" /&gt;
+    &lt;label for="star1"&gt;
+        &lt;i class="flaticon-star"&gt;&lt;/i&gt;
+    &lt;/label&gt;
+
+    &lt;input type="radio" id="star2" name="rate" value="2" checked/&gt;
+    &lt;label for="star2"&gt;
+        &lt;i class="flaticon-star"&gt;&lt;/i&gt;
+    &lt;/label&gt;
+
+    &lt;input type="radio" id="star3" name="rate" value="3" /&gt;
+    &lt;label for="star3"&gt;
+        &lt;i class="flaticon-star"&gt;&lt;/i&gt;
+    &lt;/label&gt;
+
+    &lt;input type="radio" id="star4" name="rate" value="4" /&gt;
+    &lt;label for="star4"&gt;
+        &lt;i class="flaticon-star"&gt;&lt;/i&gt;
+    &lt;/label&gt;
+
+    &lt;input type="radio" id="star5" name="rate" value="5" /&gt;
+    &lt;label for="star5"&gt;
+        &lt;i class="flaticon-star"&gt;&lt;/i&gt;
+    &lt;/label&gt;
+&lt;/div&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
                         </div><!-- end col -->
                     </div><!-- end row -->
 
-                    <hr class="mt-5 mb-5 border-top-0" />
+                    <hr class="mt-5 mb-5" />
 
-                    <div class="row justify-content-center">
-                        <div class="col-sm-8 text-center">
-                            <h2 class="mb-3">Customer Review</h2>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h3 class="mb-2 font-weight-bold">Rating form</h3>
 
-                            <p class="mb-3">Be the first to review “Regular Fit V-Neck Sweater”</p>
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result2" data-toggle="tab" role="tab" aria-controls="result2" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code2" data-toggle="tab" role="tab" aria-controls="code2" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
 
-                            <div class="rate-star mb-4">
-                                <input type="radio" id="rat_star1" name="rat_rate" value="1" />
-                                <label for="rat_star1">
-                                    <i class="flaticon-star"></i>
-                                </label>
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result2" role="tabpanel">
+                                    <div class="row">
+                                        <div class="col-sm-8 text-center">
+                                            <h2 class="mb-3">Customer Review</h2>
 
-                                <input type="radio" id="rat_star2" name="rat_rate" value="2" />
-                                <label for="rat_star2">
-                                    <i class="flaticon-star"></i>
-                                </label>
+                                            <p class="mb-3">Be the first to review “Regular Fit V-Neck Sweater”</p>
 
-                                <input type="radio" id="rat_star3" name="rat_rate" value="3" />
-                                <label for="rat_star3">
-                                    <i class="flaticon-star"></i>
-                                </label>
+                                            <div class="rate-star mb-4">
+                                                <input type="radio" id="rat_star1" name="rat_rate" value="1" />
+                                                <label for="rat_star1">
+                                                    <i class="flaticon-star"></i>
+                                                </label>
 
-                                <input type="radio" id="rat_star4" name="rat_rate" value="4" />
-                                <label for="rat_star4">
-                                    <i class="flaticon-star"></i>
-                                </label>
+                                                <input type="radio" id="rat_star2" name="rat_rate" value="2" />
+                                                <label for="rat_star2">
+                                                    <i class="flaticon-star"></i>
+                                                </label>
 
-                                <input type="radio" id="rat_star5" name="rat_rate" value="5" />
-                                <label for="rat_star5">
-                                    <i class="flaticon-star"></i>
-                                </label>
-                            </div><!-- end rate-star -->
+                                                <input type="radio" id="rat_star3" name="rat_rate" value="3" />
+                                                <label for="rat_star3">
+                                                    <i class="flaticon-star"></i>
+                                                </label>
 
-                            <div class="row mb-3">
-                                <div class="form-group col-md-6">
-                                    <input type="text" class="form-control" placeholder="Name">
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <input type="email" class="form-control" placeholder="Email">
-                                </div>
-                            </div>
-                            <div class="form-group mb-5">
-                                <textarea class="form-control" rows="5" placeholder="Write a review"></textarea>
-                            </div>
-                            <button type="button" class="btn btn-dark btn-arrow mb-2">
-                                <div class="inner-btn">
-                                    Submit
-                                    <div class="arrow">
-                                        <span class="arrow-icon"></span>
-                                    </div>
-                                </div>
-                            </button>
+                                                <input type="radio" id="rat_star4" name="rat_rate" value="4" />
+                                                <label for="rat_star4">
+                                                    <i class="flaticon-star"></i>
+                                                </label>
+
+                                                <input type="radio" id="rat_star5" name="rat_rate" value="5" />
+                                                <label for="rat_star5">
+                                                    <i class="flaticon-star"></i>
+                                                </label>
+                                            </div><!-- end rate-star -->
+
+                                            <div class="row mb-3">
+                                                <div class="form-group col-md-6">
+                                                    <input type="text" class="form-control" placeholder="Name">
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <input type="email" class="form-control" placeholder="Email">
+                                                </div>
+                                            </div>
+                                            <div class="form-group mb-5">
+                                                <textarea class="form-control" rows="5" placeholder="Write a review"></textarea>
+                                            </div>
+                                            <button type="button" class="btn btn-dark btn-arrow mb-2">
+                                                <div class="inner-btn">
+                                                    Submit
+                                                    <div class="arrow">
+                                                        <span class="arrow-icon"></span>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </div><!-- end col -->
+                                    </div><!-- end row -->
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code2" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;div class="row"&gt;
+    &lt;div class="col-sm-8 text-center"&gt;
+        &lt;h2 class="mb-3"&gt;Customer Review&lt;/h2&gt;
+
+        &lt;p class="mb-3"&gt;Be the first to review “Regular Fit V-Neck Sweater”&lt;/p&gt;
+
+        &lt;div class="rate-star mb-4"&gt;
+            &lt;input type="radio" id="rat_star1" name="rat_rate" value="1" /&gt;
+            &lt;label for="rat_star1"&gt;
+                &lt;i class="flaticon-star"&gt;&lt;/i&gt;
+            &lt;/label&gt;
+
+            &lt;input type="radio" id="rat_star2" name="rat_rate" value="2" /&gt;
+            &lt;label for="rat_star2"&gt;
+                &lt;i class="flaticon-star"&gt;&lt;/i&gt;
+            &lt;/label&gt;
+
+            &lt;input type="radio" id="rat_star3" name="rat_rate" value="3" /&gt;
+            &lt;label for="rat_star3"&gt;
+                &lt;i class="flaticon-star"&gt;&lt;/i&gt;
+            &lt;/label&gt;
+
+            &lt;input type="radio" id="rat_star4" name="rat_rate" value="4" /&gt;
+            &lt;label for="rat_star4"&gt;
+                &lt;i class="flaticon-star"&gt;&lt;/i&gt;
+            &lt;/label&gt;
+
+            &lt;input type="radio" id="rat_star5" name="rat_rate" value="5" /&gt;
+            &lt;label for="rat_star5"&gt;
+                &lt;i class="flaticon-star"&gt;&lt;/i&gt;
+            &lt;/label&gt;
+        &lt;/div&gt;
+
+        &lt;div class="row mb-3"&gt;
+            &lt;div class="form-group col-md-6"&gt;
+                &lt;input type="text" class="form-control" placeholder="Name"&gt;
+            &lt;/div&gt;
+            &lt;div class="form-group col-md-6"&gt;
+                &lt;input type="email" class="form-control" placeholder="Email"&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="form-group mb-5"&gt;
+            &lt;textarea class="form-control" rows="5" placeholder="Write a review"&gt;&lt;/textarea&gt;
+        &lt;/div&gt;
+        &lt;button type="button" class="btn btn-dark btn-arrow mb-2"&gt;
+            &lt;div class="inner-btn"&gt;
+                Submit
+                &lt;div class="arrow"&gt;
+                    &lt;span class="arrow-icon"&gt;&lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
                         </div><!-- end col -->
                     </div><!-- end row -->
                 </div><!-- end #main col -->
