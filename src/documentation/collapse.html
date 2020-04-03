@@ -163,62 +163,137 @@
                 </nav><!-- end sidebar -->
 
                 <div id="main" class="ml-sm-auto col-md-9 col-lg-9 col-xl-10">
-                    <h4 class="mb-2 text-primary font-weight-bold">Accordion example.</h4>
+                    <h1 class="mb-3 font-weight-bold">Collapse</h1>
+                    <p class="lead">Toggle the visibility of content across your project with a few classes and our JavaScript plugins.</p>
 
-                    <div class="row">
-                        <div class="col-sm-8">
-                            <div class="accordion" id="accordionExample">
-                                <div class="card">
-                                    <a class="mb-0 font-weight-medium text-dark" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        <div class="card-header" id="headingOne">
+                    <p class="lead"><a href="https://getbootstrap.com/docs/4.4/components/collapse/" target="_blank"><i class="fas fa-external-link-alt mr-1"></i> Bootstrap documentation</a></p>
+
+                    <hr class="mt-4 mb-6" />
+
+                    <h3 class="mb-2 font-weight-bold">Accordion example</h3>
+
+                    <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark active" href="#result1" data-toggle="tab" role="tab" aria-controls="result1" aria-selected="true">Result</a>
+                        </li><!-- end nav-item -->
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#code1" data-toggle="tab" role="tab" aria-controls="code1" aria-selected="false">
+                                Code <i class="fas fa-code ml-1"></i>
+                            </a>
+                        </li><!-- end nav-item -->
+                    </ul><!-- end nav -->
+
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="result1" role="tabpanel">
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="card">
+                                            <a class="mb-0 font-weight-medium text-dark" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                <div class="card-header" id="headingOne">
                                             <span class="plus-after d-block">
                                                 How Minimals Work
                                             </span>
-                                        </div><!-- end card-header -->
-                                    </a>
+                                                </div><!-- end card-header -->
+                                            </a>
 
-                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                                        <div class="card-body py-1">
-                                            <p>As a business owner or manager, the decision to opt for offshore software development can be difficult. As anyone who has experience knows, there are advantages and disadvantages to outsourcing software</p>
-                                            <p>Complex project management experience. When selecting an offshore software development company, ensure that they have extensive experience in complex project management. The company’s internal.</p>
-                                        </div><!-- end card-body -->
-                                    </div><!-- end collapse -->
-                                </div><!-- end card -->
-                                <div class="card">
-                                    <a class="mb-0 font-weight-medium text-dark" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        <div class="card-header" id="headingTwo">
+                                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                                <div class="card-body py-1">
+                                                    <p>As a business owner or manager, the decision to opt for offshore software development can be difficult. As anyone who has experience knows, there are advantages and disadvantages to outsourcing software</p>
+                                                    <p>Complex project management experience. When selecting an offshore software development company, ensure that they have extensive experience in complex project management. The company’s internal.</p>
+                                                </div><!-- end card-body -->
+                                            </div><!-- end collapse -->
+                                        </div><!-- end card -->
+                                        <div class="card">
+                                            <a class="mb-0 font-weight-medium text-dark" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                <div class="card-header" id="headingTwo">
                                             <span class="plus-after d-block">
                                                 Payment methods accepted
                                             </span>
-                                        </div><!-- end card-header -->
-                                    </a>
+                                                </div><!-- end card-header -->
+                                            </a>
 
-                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                                        <div class="card-body py-1">
-                                            <p>As a business owner or manager, the decision to opt for offshore software development can be difficult. As anyone who has experience knows, there are advantages and disadvantages to outsourcing software</p>
-                                            <p>Complex project management experience. When selecting an offshore software development company, ensure that they have extensive experience in complex project management. The company’s internal.</p>
-                                        </div><!-- end card-body -->
-                                    </div><!-- end collapse -->
-                                </div><!-- end card -->
-                                <div class="card">
-                                    <a class="mb-0 font-weight-medium text-dark" href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        <div class="card-header" id="headingThree">
+                                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                                <div class="card-body py-1">
+                                                    <p>As a business owner or manager, the decision to opt for offshore software development can be difficult. As anyone who has experience knows, there are advantages and disadvantages to outsourcing software</p>
+                                                    <p>Complex project management experience. When selecting an offshore software development company, ensure that they have extensive experience in complex project management. The company’s internal.</p>
+                                                </div><!-- end card-body -->
+                                            </div><!-- end collapse -->
+                                        </div><!-- end card -->
+                                        <div class="card">
+                                            <a class="mb-0 font-weight-medium text-dark" href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                <div class="card-header" id="headingThree">
                                             <span class="plus-after d-block">
                                                 What if the product is broken?
                                             </span>
-                                        </div><!-- end card-header -->
-                                    </a>
+                                                </div><!-- end card-header -->
+                                            </a>
 
-                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                                        <div class="card-body py-1">
-                                            <p>As a business owner or manager, the decision to opt for offshore software development can be difficult. As anyone who has experience knows, there are advantages and disadvantages to outsourcing software</p>
-                                            <p>Complex project management experience. When selecting an offshore software development company, ensure that they have extensive experience in complex project management. The company’s internal.</p>
-                                        </div><!-- end card-body -->
-                                    </div><!-- end collapse -->
-                                </div><!-- end card -->
-                            </div><!-- accordion -->
-                        </div><!-- end col -->
-                    </div><!-- end row -->
+                                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                                <div class="card-body py-1">
+                                                    <p>As a business owner or manager, the decision to opt for offshore software development can be difficult. As anyone who has experience knows, there are advantages and disadvantages to outsourcing software</p>
+                                                    <p>Complex project management experience. When selecting an offshore software development company, ensure that they have extensive experience in complex project management. The company’s internal.</p>
+                                                </div><!-- end card-body -->
+                                            </div><!-- end collapse -->
+                                        </div><!-- end card -->
+                                    </div><!-- accordion -->
+                                </div><!-- end col -->
+                            </div><!-- end row -->
+                        </div><!-- end tab-pane -->
+
+                        <div class="tab-pane fade" id="code1" role="tabpanel">
+                            <pre><code class="lang-html">&lt;div class="accordion" id="accordionExample&gt;
+    &lt;div class="card"&gt;
+        &lt;a class="mb-0 font-weight-medium text-dark" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"&gt;
+            &lt;div class="card-header" id="headingOne"&gt;
+                &lt;span class="plus-after d-block"&gt;
+                    How Minimals Work
+                &lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/a&gt;
+
+        &lt;div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample"&gt;
+            &lt;div class="card-body py-1"&gt;
+                &lt;p&gt;As a business owner or manager, the decision to opt for offshore software development can be difficult. As anyone who has experience knows, there are advantages and disadvantages to outsourcing software&lt;/p&gt;
+                &lt;p&gt;Complex project management experience. When selecting an offshore software development company, ensure that they have extensive experience in complex project management. The company’s internal.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="card"&gt;
+        &lt;a class="mb-0 font-weight-medium text-dark" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"&gt;
+            &lt;div class="card-header" id="headingTwo"&gt;
+                &lt;span class="plus-after d-block"&gt;
+                    Payment methods accepted
+                &lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/a&gt;
+
+        &lt;div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample"&gt;
+            &lt;div class="card-body py-1"&gt;
+                &lt;p&gt;As a business owner or manager, the decision to opt for offshore software development can be difficult. As anyone who has experience knows, there are advantages and disadvantages to outsourcing software&lt;/p&gt;
+                &lt;p&gt;Complex project management experience. When selecting an offshore software development company, ensure that they have extensive experience in complex project management. The company’s internal.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="card"&gt;
+        &lt;a class="mb-0 font-weight-medium text-dark" href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"&gt;
+            &lt;div class="card-header" id="headingThree"&gt;
+                &lt;span class="plus-after d-block"&gt;
+                    What if the product is broken?
+                &lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/a&gt;
+
+        &lt;div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample"&gt;
+            &lt;div class="card-body py-1"&gt;
+                &lt;p&gt;As a business owner or manager, the decision to opt for offshore software development can be difficult. As anyone who has experience knows, there are advantages and disadvantages to outsourcing software&lt;/p&gt;
+                &lt;p&gt;Complex project management experience. When selecting an offshore software development company, ensure that they have extensive experience in complex project management. The company’s internal.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                        </div><!-- end tab-pane -->
+                    </div><!-- end tab-content -->
                 </div><!-- end #main col -->
             </div><!-- end row -->
         </div><!-- end container-fluid -->
