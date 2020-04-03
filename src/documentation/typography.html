@@ -165,44 +165,87 @@
                 <div id="main" class="ml-sm-auto col-md-9 col-lg-9 col-xl-10">
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="mb-2 text-primary font-weight-bold">Headings.</h4>
+                            <h1 class="mb-3 font-weight-bold">Typography</h1>
+                            <p class="lead">Documentation and examples for Bootstrap typography, including global settings, headings, body text, lists, and more.</p>
 
-                            <div class="bd-example border">
-                                <div class="row">
-                                    <div class="col-sm-4">
-                                        <h4 class="mb-2 text-primary font-weight-bold">Regular.</h4>
+                            <p class="lead"><a href="https://getbootstrap.com/docs/4.4/content/typography/" target="_blank"><i class="fas fa-external-link-alt mr-1"></i> Bootstrap documentation</a></p>
 
-                                        <h1 class="font-weight-normal">Montserrat (30px)</h1>
-                                        <h2 class="font-weight-normal">Montserrat (26px)</h2>
-                                        <h3 class="font-weight-normal">Montserrat (22px)</h3>
-                                        <h4 class="font-weight-normal">Montserrat (20px)</h4>
-                                        <h5 class="font-weight-normal">Montserrat (16px)</h5>
-                                        <h6 class="font-weight-normal">Montserrat (14px)</h6>
-                                    </div><!-- end col -->
+                            <hr class="mt-4 mb-6" />
 
-                                    <div class="col-sm-4">
-                                        <h4 class="mb-2 text-primary font-weight-bold">Medium.</h4>
+                            <h3 class="mb-2 font-weight-bold">Headings</h3>
 
-                                        <h1>Montserrat (30px)</h1>
-                                        <h2>Montserrat (26px)</h2>
-                                        <h3>Montserrat (22px)</h3>
-                                        <h4>Montserrat (20px)</h4>
-                                        <h5>Montserrat (16px)</h5>
-                                        <h6>Montserrat (14px)</h6>
-                                    </div><!-- end col -->
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result1" data-toggle="tab" role="tab" aria-controls="result1" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code1" data-toggle="tab" role="tab" aria-controls="code1" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
 
-                                    <div class="col-sm-4">
-                                        <h4 class="mb-2 text-primary font-weight-bold">Bold.</h4>
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result1" role="tabpanel">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <h4 class="mb-2 text-primary font-weight-bold">Regular.</h4>
 
-                                        <h1 class="font-weight-bold">Montserrat (30px)</h1>
-                                        <h2 class="font-weight-bold">Montserrat (26px)</h2>
-                                        <h3 class="font-weight-bold">Montserrat (22px)</h3>
-                                        <h4 class="font-weight-bold">Montserrat (20px)</h4>
-                                        <h5 class="font-weight-bold">Montserrat (16px)</h5>
-                                        <h6 class="font-weight-bold">Montserrat (14px)</h6>
-                                    </div><!-- end col -->
-                                </div><!-- end row -->
-                            </div><!-- bd-example -->
+                                            <h1 class="font-weight-normal">Montserrat (30px)</h1>
+                                            <h2 class="font-weight-normal">Montserrat (26px)</h2>
+                                            <h3 class="font-weight-normal">Montserrat (22px)</h3>
+                                            <h4 class="font-weight-normal">Montserrat (20px)</h4>
+                                            <h5 class="font-weight-normal">Montserrat (16px)</h5>
+                                            <h6 class="font-weight-normal">Montserrat (14px)</h6>
+                                        </div><!-- end col -->
+
+                                        <div class="col-sm-4">
+                                            <h4 class="mb-2 text-primary font-weight-bold">Medium.</h4>
+
+                                            <h1>Montserrat (30px)</h1>
+                                            <h2>Montserrat (26px)</h2>
+                                            <h3>Montserrat (22px)</h3>
+                                            <h4>Montserrat (20px)</h4>
+                                            <h5>Montserrat (16px)</h5>
+                                            <h6>Montserrat (14px)</h6>
+                                        </div><!-- end col -->
+
+                                        <div class="col-sm-4">
+                                            <h4 class="mb-2 text-primary font-weight-bold">Bold.</h4>
+
+                                            <h1 class="font-weight-bold">Montserrat (30px)</h1>
+                                            <h2 class="font-weight-bold">Montserrat (26px)</h2>
+                                            <h3 class="font-weight-bold">Montserrat (22px)</h3>
+                                            <h4 class="font-weight-bold">Montserrat (20px)</h4>
+                                            <h5 class="font-weight-bold">Montserrat (16px)</h5>
+                                            <h6 class="font-weight-bold">Montserrat (14px)</h6>
+                                        </div><!-- end col -->
+                                    </div><!-- end row -->
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code1" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;h1 class="font-weight-normal"&gt;Montserrat (30px)&lt;/h1&gt;
+&lt;h2 class="font-weight-normal"&gt;Montserrat (26px)&lt;/h2&gt;
+&lt;h3 class="font-weight-normal"&gt;Montserrat (22px)&lt;/h3&gt;
+&lt;h4 class="font-weight-normal"&gt;Montserrat (20px)&lt;/h4&gt;
+&lt;h5 class="font-weight-normal"&gt;Montserrat (16px)&lt;/h5&gt;
+&lt;h6 class="font-weight-normal"&gt;Montserrat (14px)&lt;/h6&gt;
+
+&lt;h1&gt;Montserrat (30px)&lt;/h1&gt;
+&lt;h2&gt;Montserrat (26px)&lt;/h2&gt;
+&lt;h3&gt;Montserrat (22px)&lt;/h3&gt;
+&lt;h4&gt;Montserrat (20px)&lt;/h4&gt;
+&lt;h5&gt;Montserrat (16px)&lt;/h5&gt;
+&lt;h6&gt;Montserrat (14px)&lt;/h6&gt;
+
+&lt;h1 class="font-weight-bold"&gt;Montserrat (30px)&lt;/h1&gt;
+&lt;h2 class="font-weight-bold"&gt;Montserrat (26px)&lt;/h2&gt;
+&lt;h3 class="font-weight-bold"&gt;Montserrat (22px)&lt;/h3&gt;
+&lt;h4 class="font-weight-bold"&gt;Montserrat (20px)&lt;/h4&gt;
+&lt;h5 class="font-weight-bold"&gt;Montserrat (16px)&lt;/h5&gt;
+&lt;h6 class="font-weight-bold"&gt;Montserrat (14px)&lt;/h6&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
                         </div><!-- end col -->
                     </div><!-- end row -->
 
@@ -210,17 +253,34 @@
 
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="mb-2 text-primary font-weight-bold">Paragraph.</h4>
+                            <h3 class="mb-2 font-weight-bold">Paragraph</h3>
 
-                            <div class="bd-example border">
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <p class="mb-0">
-                                            Gorgeous collection to choose from. We picked every item with care you must try atleast once in your lifetime.
-                                        </p>
-                                    </div><!-- end col -->
-                                </div><!-- end row -->
-                            </div><!-- end bd-example -->
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result2" data-toggle="tab" role="tab" aria-controls="result2" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code2" data-toggle="tab" role="tab" aria-controls="code2" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result2" role="tabpanel">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <p class="mb-0">
+                                                Gorgeous collection to choose from. We picked every item with care you must try atleast once in your lifetime.
+                                            </p>
+                                        </div><!-- end col -->
+                                    </div><!-- end row -->
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code2" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;p&gt;Gorgeous collection to choose from. We picked every item with care you must try atleast once in your lifetime.&lt;/p&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
                         </div><!-- end col -->
                     </div><!-- end row -->
 
@@ -228,17 +288,34 @@
 
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="mb-2 text-primary font-weight-bold">Paragraph Lead.</h4>
+                            <h3 class="mb-2 font-weight-bold">Paragraph Lead</h3>
 
-                            <div class="bd-example border">
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <p class="lead mb-0">
-                                            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
-                                        </p>
-                                    </div><!-- end col -->
-                                </div><!-- end row -->
-                            </div><!-- end bd-example -->
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result3" data-toggle="tab" role="tab" aria-controls="result3" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code3" data-toggle="tab" role="tab" aria-controls="code3" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result3" role="tabpanel">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <p class="lead mb-0">
+                                                Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+                                            </p>
+                                        </div><!-- end col -->
+                                    </div><!-- end row -->
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code3" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;p class="lead mb-0"&gt;Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.&lt;/p&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
                         </div><!-- end col -->
                     </div><!-- end row -->
 
@@ -246,19 +323,44 @@
 
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="mb-2 text-primary font-weight-bold">Links.</h4>
+                            <h3 class="mb-2 font-weight-bold">Links</h3>
 
-                            <div class="bd-example border">
-                                <a class="text-primary mr-1" href="#"><u>This is a link</u></a>
-                                <a class="text-secondary mr-1" href="#"><u>This is a link</u></a>
-                                <a class="text-success mr-1" href="#"><u>This is a link</u></a>
-                                <a class="text-warning mr-1" href="#"><u>This is a link</u></a>
-                                <a class="text-danger mr-1" href="#"><u>This is a link</u></a>
-                                <a class="text-info mr-1" href="#"><u>This is a link</u></a>
-                                <a class="text-gray mr-1" href="#"><u>This is a link</u></a>
-                                <a class="text-light mr-1" href="#"><u>This is a link</u></a>
-                                <a class="text-dark mr-1" href="#"><u>This is a link</u></a>
-                            </div><!-- end bd-example -->
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result4" data-toggle="tab" role="tab" aria-controls="result4" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code4" data-toggle="tab" role="tab" aria-controls="code4" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result4" role="tabpanel">
+                                    <a class="text-primary mr-1" href="#"><u>This is a link</u></a>
+                                    <a class="text-secondary mr-1" href="#"><u>This is a link</u></a>
+                                    <a class="text-success mr-1" href="#"><u>This is a link</u></a>
+                                    <a class="text-warning mr-1" href="#"><u>This is a link</u></a>
+                                    <a class="text-danger mr-1" href="#"><u>This is a link</u></a>
+                                    <a class="text-info mr-1" href="#"><u>This is a link</u></a>
+                                    <a class="text-gray mr-1" href="#"><u>This is a link</u></a>
+                                    <a class="text-light mr-1" href="#"><u>This is a link</u></a>
+                                    <a class="text-dark mr-1" href="#"><u>This is a link</u></a>
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code4" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;a class="text-primary mr-1" href="#"&gt;&lt;u&gt;This is a link&lt;/u&gt;&lt;/a&gt;
+&lt;a class="text-secondary mr-1" href="#"&gt;&lt;u&gt;This is a link&lt;/u&gt;&lt;/a&gt;
+&lt;a class="text-success mr-1" href="#"&gt;&lt;u&gt;This is a link&lt;/u&gt;&lt;/a&gt;
+&lt;a class="text-warning mr-1" href="#"&gt;&lt;u&gt;This is a link&lt;/u&gt;&lt;/a&gt;
+&lt;a class="text-danger mr-1" href="#"&gt;&lt;u&gt;This is a link&lt;/u&gt;&lt;/a&gt;
+&lt;a class="text-info mr-1" href="#"&gt;&lt;u&gt;This is a link&lt;/u&gt;&lt;/a&gt;
+&lt;a class="text-gray mr-1" href="#"&gt;&lt;u&gt;This is a link&lt;/u&gt;&lt;/a&gt;
+&lt;a class="text-light mr-1" href="#"&gt;&lt;u&gt;This is a link&lt;/u&gt;&lt;/a&gt;
+&lt;a class="text-dark mr-1" href="#"&gt;&lt;u&gt;This is a link&lt;/u&gt;&lt;/a&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
                         </div><!-- end col -->
                     </div><!-- end row -->
 
@@ -266,14 +368,34 @@
 
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="mb-2 text-primary font-weight-bold">Customizing headings.</h4>
+                            <h3 class="mb-2 font-weight-bold">Customizing headings</h3>
 
-                            <div class="bd-example border">
-                                <h3>
-                                    Fancy display heading
-                                    <small class="text-muted">With faded secondary text</small>
-                                </h3>
-                            </div><!-- end bd-example -->
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result5" data-toggle="tab" role="tab" aria-controls="result5" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code5" data-toggle="tab" role="tab" aria-controls="code5" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result5" role="tabpanel">
+                                    <h3>
+                                        Fancy display heading
+                                        <small class="text-muted">With faded secondary text</small>
+                                    </h3>
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code5" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;h3&gt;
+    Fancy display heading
+    &lt;small class="text-muted"&gt;With faded secondary text&lt;/small&gt;
+&lt;/h3&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
                         </div><!-- end col -->
                     </div><!-- end row -->
 
@@ -281,14 +403,34 @@
 
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="mb-2 text-primary font-weight-bold">Display headings.</h4>
+                            <h3 class="mb-2 font-weight-bold">Display headings</h3>
 
-                            <div class="bd-example border">
-                                <h1 class="display-1">Display 1</h1>
-                                <h1 class="display-2">Display 2</h1>
-                                <h1 class="display-3">Display 3</h1>
-                                <h1 class="display-4">Display 4</h1>
-                            </div><!-- end bd-example -->
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result6" data-toggle="tab" role="tab" aria-controls="result6" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code6" data-toggle="tab" role="tab" aria-controls="code6" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result6" role="tabpanel">
+                                    <h1 class="display-1">Display 1</h1>
+                                    <h1 class="display-2">Display 2</h1>
+                                    <h1 class="display-3">Display 3</h1>
+                                    <h1 class="display-4">Display 4</h1>
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code6" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;h1 class="display-1"&gt;Display 1&lt;/h1&gt;
+&lt;h1 class="display-2"&gt;Display 2&lt;/h1&gt;
+&lt;h1 class="display-3"&gt;Display 3&lt;/h1&gt;
+&lt;h1 class="display-4"&gt;Display 4&lt;/h1&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
                         </div><!-- end col -->
                     </div><!-- end row -->
 
@@ -296,18 +438,42 @@
 
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="mb-2 text-primary font-weight-bold">Inline text elements.</h4>
+                            <h3 class="mb-2 font-weight-bold">Inline text elements</h3>
 
-                            <div class="bd-example border">
-                                <p>You can use the mark tag to <mark>highlight</mark> text.</p>
-                                <p><del>This line of text is meant to be treated as deleted text.</del></p>
-                                <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
-                                <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
-                                <p><u>This line of text will render as underlined</u></p>
-                                <p><small>This line of text is meant to be treated as fine print.</small></p>
-                                <p><strong>This line rendered as bold text.</strong></p>
-                                <p><em>This line rendered as italicized text.</em></p>
-                            </div><!-- end bd-example -->
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result7" data-toggle="tab" role="tab" aria-controls="result7" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code7" data-toggle="tab" role="tab" aria-controls="code7" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result7" role="tabpanel">
+                                    <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+                                    <p><del>This line of text is meant to be treated as deleted text.</del></p>
+                                    <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+                                    <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+                                    <p><u>This line of text will render as underlined</u></p>
+                                    <p><small>This line of text is meant to be treated as fine print.</small></p>
+                                    <p><strong>This line rendered as bold text.</strong></p>
+                                    <p><em>This line rendered as italicized text.</em></p>
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code7" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;p&gt;You can use the mark tag to &lt;mark&gt;highlight&lt;/mark&gt; text.&lt;/&gt;>
+&lt;p&gt;&lt;del&gt;This line of text is meant to be treated as deleted text.&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;&lt;s&gt;This line of text is meant to be treated as no longer accurate.&lt;/s&gt;&lt;/p&gt;
+&lt;p&gt;&lt;ins&gt;This line of text is meant to be treated as an addition to the document.&lt;/ins&gt;&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;This line of text will render as underlined&lt;/u&gt;&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;This line of text is meant to be treated as fine print.&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;This line rendered as bold text.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This line rendered as italicized text.&lt;/em&gt;&lt;/p&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
                         </div><!-- end col -->
                     </div><!-- end row -->
 
@@ -315,12 +481,30 @@
 
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="mb-2 text-primary font-weight-bold">Abbreviations.</h4>
+                            <h3 class="mb-2 font-weight-bold">Abbreviations</h3>
 
-                            <div class="bd-example border">
-                                <p><abbr title="attribute">attr</abbr></p>
-                                <p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr></p>
-                            </div><!-- end bd-example -->
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result8" data-toggle="tab" role="tab" aria-controls="result8" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code8" data-toggle="tab" role="tab" aria-controls="code8" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result8" role="tabpanel">
+                                    <p><abbr title="attribute">attr</abbr></p>
+                                    <p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr></p>
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code8" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;p&gt;&lt;abbr title="attribute"&gt;attr&lt;/abbr&gt;&lt;/p&gt;
+&lt;p&gt;&lt;abbr title="HyperText Markup Language" class="initialism"&gt;HTML&lt;/abbr&gt;&lt;/p&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
                         </div><!-- end col -->
                     </div><!-- end row -->
 
@@ -328,14 +512,34 @@
 
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="mb-2 text-primary font-weight-bold">Blockquotes.</h4>
+                            <h3 class="mb-2 font-weight-bold">Blockquotes</h3>
 
-                            <div class="bd-example border">
-                                <blockquote class="blockquote">
-                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                                    <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                                </blockquote>
-                            </div><!-- end bd-example -->
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result9" data-toggle="tab" role="tab" aria-controls="result9" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code9" data-toggle="tab" role="tab" aria-controls="code9" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result9" role="tabpanel">
+                                    <blockquote class="blockquote">
+                                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                    </blockquote>
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code9" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;blockquote class="blockquote"&gt;
+    &lt;p class="mb-0"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
+    &lt;footer class="blockquote-footer"&gt;Someone famous in &lt;cite title="Source Title"&gt;Source Title&lt;/cite&gt;&lt;/footer&gt;
+&lt;/blockquote&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
                         </div><!-- end col -->
                     </div><!-- end row -->
 
@@ -343,27 +547,60 @@
 
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="mb-2 text-primary font-weight-bold">Lists.</h4>
+                            <h3 class="mb-2 font-weight-bold">Lists</h3>
 
-                            <div class="bd-example border">
-                                <ul class="list-unstyled mb-0">
-                                    <li>Lorem ipsum dolor sit amet</li>
-                                    <li>Consectetur adipiscing elit</li>
-                                    <li>Integer molestie lorem at massa</li>
-                                    <li>Facilisis in pretium nisl aliquet</li>
-                                    <li>Nulla volutpat aliquam velit
-                                        <ul>
-                                            <li>Phasellus iaculis neque</li>
-                                            <li>Purus sodales ultricies</li>
-                                            <li>Vestibulum laoreet porttitor sem</li>
-                                            <li>Ac tristique libero volutpat at</li>
-                                        </ul>
-                                    </li>
-                                    <li>Faucibus porta lacus fringilla vel</li>
-                                    <li>Aenean sit amet erat nunc</li>
-                                    <li>Eget porttitor lorem</li>
-                                </ul>
-                            </div><!-- end bd-example -->
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result10" data-toggle="tab" role="tab" aria-controls="result10" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code10" data-toggle="tab" role="tab" aria-controls="code10" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result10" role="tabpanel">
+                                    <ul class="list-unstyled mb-0">
+                                        <li>Lorem ipsum dolor sit amet</li>
+                                        <li>Consectetur adipiscing elit</li>
+                                        <li>Integer molestie lorem at massa</li>
+                                        <li>Facilisis in pretium nisl aliquet</li>
+                                        <li>Nulla volutpat aliquam velit
+                                            <ul>
+                                                <li>Phasellus iaculis neque</li>
+                                                <li>Purus sodales ultricies</li>
+                                                <li>Vestibulum laoreet porttitor sem</li>
+                                                <li>Ac tristique libero volutpat at</li>
+                                            </ul>
+                                        </li>
+                                        <li>Faucibus porta lacus fringilla vel</li>
+                                        <li>Aenean sit amet erat nunc</li>
+                                        <li>Eget porttitor lorem</li>
+                                    </ul>
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code10" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;ul class="list-unstyled"&gt;
+    &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
+    &lt;li&gt;Consectetur adipiscing elit&lt;/li&gt;
+    &lt;li&gt;Integer molestie lorem at massa&lt;/li&gt;
+    &lt;li&gt;Facilisis in pretium nisl aliquet&lt;/li&gt;
+    &lt;li&gt;Nulla volutpat aliquam velit
+        &lt;ul&gt;
+            &lt;li&gt;Phasellus iaculis neque&lt;/li&gt;
+            &lt;li&gt;Purus sodales ultricies&lt;/li&gt;
+            &lt;li&gt;Vestibulum laoreet porttitor sem&lt;/li&gt;
+            &lt;li&gt;Ac tristique libero volutpat at&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;Faucibus porta lacus fringilla vel&lt;/li&gt;
+    &lt;li&gt;Aenean sit amet erat nunc&lt;/li&gt;
+    &lt;li&gt;Eget porttitor lorem&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
                         </div><!-- end col -->
                     </div><!-- end row -->
 
@@ -371,15 +608,36 @@
 
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="mb-2 text-primary font-weight-bold">Inline.</h4>
+                            <h3 class="mb-2 font-weight-bold">Inline</h3>
 
-                            <div class="bd-example border">
-                                <ul class="list-inline mb-0">
-                                    <li class="list-inline-item">Lorem ipsum</li>
-                                    <li class="list-inline-item">Phasellus iaculis</li>
-                                    <li class="list-inline-item">Nulla volutpat</li>
-                                </ul>
-                            </div><!-- end bd-example -->
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result11" data-toggle="tab" role="tab" aria-controls="result11" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code11" data-toggle="tab" role="tab" aria-controls="code11" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result11" role="tabpanel">
+                                    <ul class="list-inline mb-0">
+                                        <li class="list-inline-item">Lorem ipsum</li>
+                                        <li class="list-inline-item">Phasellus iaculis</li>
+                                        <li class="list-inline-item">Nulla volutpat</li>
+                                    </ul>
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code11" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;ul class="list-inline"&gt;
+    &lt;li class="list-inline-item"&gt;Lorem ipsum&lt;/li&gt;
+    &lt;li class="list-inline-item"&gt;Phasellus iaculis&lt;/li&gt;
+    &lt;li class="list-inline-item"&gt;Nulla volutpat&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
                         </div><!-- end col -->
                     </div><!-- end row -->
 
@@ -387,34 +645,74 @@
 
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="mb-2 text-primary font-weight-bold">Description list alignment.</h4>
+                            <h3 class="mb-2 font-weight-bold">Description list alignment</h3>
 
-                            <div class="bd-example border">
-                                <dl class="row mb-0">
-                                    <dt class="col-sm-3">Description lists</dt>
-                                    <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result12" data-toggle="tab" role="tab" aria-controls="result12" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code12" data-toggle="tab" role="tab" aria-controls="code12" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
 
-                                    <dt class="col-sm-3">Euismod</dt>
-                                    <dd class="col-sm-9">
-                                        <p>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</p>
-                                        <p>Donec id elit non mi porta gravida at eget metus.</p>
-                                    </dd>
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result12" role="tabpanel">
+                                    <dl class="row mb-0">
+                                        <dt class="col-sm-3">Description lists</dt>
+                                        <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
 
-                                    <dt class="col-sm-3">Malesuada porta</dt>
-                                    <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
+                                        <dt class="col-sm-3">Euismod</dt>
+                                        <dd class="col-sm-9">
+                                            <p>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</p>
+                                            <p>Donec id elit non mi porta gravida at eget metus.</p>
+                                        </dd>
 
-                                    <dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
-                                    <dd class="col-sm-9">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+                                        <dt class="col-sm-3">Malesuada porta</dt>
+                                        <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
 
-                                    <dt class="col-sm-3">Nesting</dt>
-                                    <dd class="col-sm-9">
-                                        <dl class="row">
-                                            <dt class="col-sm-4">Nested definition list</dt>
-                                            <dd class="col-sm-8">Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.</dd>
-                                        </dl>
-                                    </dd>
-                                </dl>
-                            </div><!-- end bd-example -->
+                                        <dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
+                                        <dd class="col-sm-9">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+
+                                        <dt class="col-sm-3">Nesting</dt>
+                                        <dd class="col-sm-9">
+                                            <dl class="row">
+                                                <dt class="col-sm-4">Nested definition list</dt>
+                                                <dd class="col-sm-8">Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.</dd>
+                                            </dl>
+                                        </dd>
+                                    </dl>
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code12" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;dl class="row"&gt;
+    &lt;dt class="col-sm-3"&gt;Description lists&lt;/dt&gt;
+    &lt;dd class="col-sm-9"&gt;A description list is perfect for defining terms.&lt;/dd&gt;
+
+    &lt;dt class="col-sm-3"&gt;Euismod&lt;/dt&gt;
+    &lt;dd class="col-sm-9"&gt;
+        &lt;p&gt;Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.&lt;/p&gt;
+        &lt;p&gt;Donec id elit non mi porta gravida at eget metus.&lt;/p&gt;
+    &lt;/dd&gt;
+
+    &lt;dt class="col-sm-3"&gt;Malesuada porta&lt;/dt&gt;
+    &lt;dd class="col-sm-9"&gt;Etiam porta sem malesuada magna mollis euismod.&lt;/dd&gt;
+
+    &lt;dt class="col-sm-3 text-truncate"&gt;Truncated term is truncated&lt;/dt&gt;
+    &lt;dd class="col-sm-9"&gt;Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.&lt;/dd&gt;
+
+    &lt;dt class="col-sm-3"&gt;Nesting&lt;/dt&gt;
+    &lt;dd class="col-sm-9"&gt;
+        &lt;dl class="row"&gt;
+            &lt;dt class="col-sm-4"&gt;Nested definition list&lt;/dt&gt;
+            &lt;dd class="col-sm-8"&gt;Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.&lt;/dd&gt;
+        &lt;/dl&gt;
+    &lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
                         </div><!-- end col -->
                     </div><!-- end row -->
 
