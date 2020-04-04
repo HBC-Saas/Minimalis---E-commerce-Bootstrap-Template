@@ -12856,6 +12856,30 @@ select.selectpicker {
   margin-bottom: 0;
 }
 
+.svg-icon.display-1 {
+  width: 4.375rem;
+  height: 4.375rem;
+  margin-bottom: 0;
+}
+
+.svg-icon.display-2 {
+  width: 3.75rem;
+  height: 3.75rem;
+  margin-bottom: 0;
+}
+
+.svg-icon.display-3 {
+  width: 3.125rem;
+  height: 3.125rem;
+  margin-bottom: 0;
+}
+
+.svg-icon.display-4 {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-bottom: 0;
+}
+
 .svg-icon.h1 {
   width: 1.875rem;
   height: 1.875rem;

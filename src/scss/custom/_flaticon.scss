@@ -93,6 +93,26 @@
 }
 
 .svg-icon {
+  &.display-1 {
+    width: $display1-size;
+    height: $display1-size;
+    margin-bottom: 0;
+  }
+  &.display-2 {
+    width: $display2-size;
+    height: $display2-size;
+    margin-bottom: 0;
+  }
+  &.display-3 {
+    width: $display3-size;
+    height: $display3-size;
+    margin-bottom: 0;
+  }
+  &.display-4 {
+    width: $display4-size;
+    height: $display4-size;
+    margin-bottom: 0;
+  }
   &.h1 {
     width: $h1-font-size;
     height: $h1-font-size;
