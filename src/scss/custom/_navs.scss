@@ -7,14 +7,18 @@
 .nav {
   &.nav-border {
     .nav-item {
-      margin: 0 1rem;
-
-      &:first-child { margin-left: 0; }
-      &:last-child { margin-right: 0; }
+      &:first-child {
+        .nav-link { margin-left: 0; }
+      }
+      &:last-child {
+        .nav-link { margin-right: 0; }
+      }
     }
     .nav-link {
       padding: 1.5rem 0;
+      margin: 0 1rem;
       position: relative;
+
       &::before {
         content: '';
         position: absolute;
