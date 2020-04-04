@@ -15051,20 +15051,17 @@ select.selectpicker {
 *     Nav Border
 * ===================================================
 */
-.nav.nav-border .nav-item {
-  margin: 0 1rem;
-}
-
-.nav.nav-border .nav-item:first-child {
+.nav.nav-border .nav-item:first-child .nav-link {
   margin-left: 0;
 }
 
-.nav.nav-border .nav-item:last-child {
+.nav.nav-border .nav-item:last-child .nav-link {
   margin-right: 0;
 }
 
 .nav.nav-border .nav-link {
   padding: 1.5rem 0;
+  margin: 0 1rem;
   position: relative;
 }
 
