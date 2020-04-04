@@ -130,6 +130,14 @@ $(document).ready(function(){
     setTimeout(function () {
         $('#subscribeModal').modal('show');
     }, 5000);
+
+    /*
+    * ===================================================
+    *     tooltips
+    * ===================================================
+    */
+
+    $('[data-toggle="tooltip"]').tooltip();
 });
 
 // init Cocoen
