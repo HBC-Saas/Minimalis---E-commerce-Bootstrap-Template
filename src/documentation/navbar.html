@@ -187,7 +187,7 @@
 
                             <div class="tab-content">
                                 <div class="tab-pane fade show active" id="result1" role="tabpanel">
-                                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                                    <nav class="navbar navbar-expand-xl navbar-light bg-light">
                                         <a class="navbar-brand" href="#">Navbar</a>
                                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                             <span class="navbar-toggler-icon"></span>
@@ -286,7 +286,7 @@
 
                             <div class="tab-content">
                                 <div class="tab-pane fade show active" id="result2" role="tabpanel">
-                                    <nav class="navbar navbar-expand-lg navbar-light bg-light menu-border border-bottom">
+                                    <nav class="navbar navbar-expand-xl navbar-light bg-light menu-border border-bottom">
                                         <a class="navbar-brand" href="#">Navbar</a>
                                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
                                             <span class="navbar-toggler-icon"></span>
@@ -385,7 +385,7 @@
 
                             <div class="tab-content">
                                 <div class="tab-pane fade show active" id="result3" role="tabpanel">
-                                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                                    <nav class="navbar navbar-expand-xl navbar-light bg-light">
                                         <a class="navbar-brand" href="#">Navbar</a>
                                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent3" aria-controls="navbarSupportedContent3" aria-expanded="false" aria-label="Toggle navigation">
                                             <span class="navbar-toggler-icon"></span>
@@ -407,7 +407,24 @@
                                                         <a class="dropdown-item" href="#">Action</a>
                                                         <a class="dropdown-item" href="#">Another action</a>
                                                         <div class="dropdown-divider"></div>
-                                                        <a class="dropdown-item" href="#">Something else here</a>
+                                                        <div class="dropdown dropdown-submenu">
+                                                            <a class="dropdown-item dropdown-toggle" href="#">
+                                                                Submenu
+                                                            </a>
+                                                            <div class="dropdown-menu">
+                                                                <a class="dropdown-item" href="#">Action</a>
+                                                                <a class="dropdown-item" href="#">Another action</a>
+                                                                <div class="dropdown dropdown-submenu">
+                                                                    <a class="dropdown-item dropdown-toggle" href="#">
+                                                                        Second submenu
+                                                                    </a>
+                                                                    <div class="dropdown-menu">
+                                                                        <a class="dropdown-item" href="#">Action</a>
+                                                                        <a class="dropdown-item" href="#">Another action</a>
+                                                                    </div><!-- end dropdown-menu -->
+                                                                </div><!-- end dropdown-submenu -->
+                                                            </div><!-- end dropdown-menu -->
+                                                        </div><!-- end dropdown-submenu -->
                                                     </div>
                                                 </li>
                                                 <li class="nav-item">
@@ -467,7 +484,7 @@
 
                     <div class="row">
                         <div class="col-sm-12">
-                            <h3 class="mb-2 font-weight-bold">Navbar Custom Toggler</h3>
+                            <h3 class="mb-2 font-weight-bold">Navbar Mega Menu</h3>
 
                             <ul class="nav nav-border border-bottom mb-4" role="tablist">
                                 <li class="nav-item">
@@ -482,6 +499,173 @@
 
                             <div class="tab-content">
                                 <div class="tab-pane fade show active" id="result4" role="tabpanel">
+                                    <nav class="navbar navbar-expand-xl navbar-light bg-light">
+                                        <a href="index.html" class="navbar-brand">
+                                            Navbar
+                                        </a>
+                                        <div class="navbar-toggler p-0 border-0">
+                                            <div class="custom-toggler" data-toggle="collapse" data-target="#navbarMenuMega" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                                                <span class="navbar-toggler-icon"></span>
+                                            </div><!-- end collapse -->
+                                        </div><!-- navbar-toggler -->
+
+                                        <div class="collapse navbar-collapse order-3 order-lg-1 flex-basic-100" id="navbarMenuMega">
+                                            <ul class="navbar-nav hovered-nav flex-basic-30 flex-basic-lg-100">
+                                                <li class="nav-item dropdown">
+                                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLarge" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Menu Large
+                                                    </a>
+                                                    <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="navbarDropdownLarge" style="min-width: 334px">
+                                                        <div class="row no-gutters">
+                                                            <div class="col">
+                                                                <div class="dropdown-header font-weight-bold mb-2">Header</div>
+                                                                <a class="dropdown-item" href="#">Link action</a>
+                                                                <a class="dropdown-item" href="#">Link action</a>
+                                                                <a class="dropdown-item" href="#">Link action</a>
+                                                            </div><!-- end col -->
+                                                            <div class="col">
+                                                                <div class="dropdown-header font-weight-bold mb-2">Header</div>
+                                                                <a class="dropdown-item" href="#">Link action</a>
+                                                                <a class="dropdown-item" href="#">Link action</a>
+                                                            </div><!-- end col -->
+                                                        </div><!-- end row -->
+                                                    </div><!-- end dropdown-menu -->
+                                                </li><!-- end nav-item -->
+
+                                                <li class="nav-item dropdown mega-dropdown">
+                                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMega" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Mega Menu
+                                                    </a>
+                                                    <div class="dropdown-menu mega-dropdown-menu" aria-labelledby="menu-4">
+                                                        <div class="container-lg">
+                                                            <div class="row w-100 ml-0">
+                                                                <div class="col-6 col-lg-3">
+                                                                    <div class="dropdown-header font-weight-bold mb-2">Header</div>
+                                                                    <a class="dropdown-item" href="#">Link action</a>
+                                                                    <a class="dropdown-item" href="#">Link action</a>
+                                                                    <a class="dropdown-item" href="#">Link action</a>
+                                                                </div><!-- end col -->
+                                                                <div class="col-6 col-lg-3">
+                                                                    <div class="dropdown-header font-weight-bold mb-2">Header</div>
+                                                                    <a class="dropdown-item" href="#">Link action</a>
+                                                                    <a class="dropdown-item" href="#">Link action</a>
+                                                                    <a class="dropdown-item" href="#">Link action</a>
+                                                                </div><!-- end col -->
+                                                                <div class="col-6 col-lg-3">
+                                                                    <div class="dropdown-header font-weight-bold mb-2">Header</div>
+                                                                    <a class="dropdown-item" href="#">Link action</a>
+                                                                    <a class="dropdown-item" href="#">Link action</a>
+                                                                    <a class="dropdown-item" href="#">Link action</a>
+                                                                </div><!-- end col -->
+                                                                <div class="col-6 col-lg-3">
+                                                                    <div class="dropdown-header font-weight-bold mb-2">Header</div>
+                                                                    <a class="dropdown-item" href="#">Link action</a>
+                                                                    <a class="dropdown-item" href="#">Link action</a>
+                                                                </div><!-- end col -->
+                                                            </div><!-- end row -->
+                                                        </div><!-- end container -->
+                                                    </div><!-- end dropdown-menu -->
+                                                </li><!-- dropdown -->
+                                            </ul><!-- end navbar-nav -->
+                                        </div><!-- end collapse -->
+                                    </nav><!-- end header -->
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code4" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;nav class="navbar navbar-expand-xl navbar-light bg-light"&gt;
+    &lt;a href="index.html" class="navbar-brand"&gt;
+        Navbar
+    &lt;/a&gt;
+    &lt;div class="navbar-toggler p-0 border-0"&gt;
+        &lt;div class="custom-toggler" data-toggle="collapse" data-target="#navbarMenuMega" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation"&gt;
+            &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="collapse navbar-collapse order-3 order-lg-1 flex-basic-100" id="navbarMenuMega"&gt;
+        &lt;ul class="navbar-nav hovered-nav flex-basic-30 flex-basic-lg-100"&gt;
+            &lt;li class="nav-item dropdown"&gt;
+                &lt;a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLarge" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt;
+                    Menu Large
+                &lt;/a&gt;
+                &lt;div class="dropdown-menu dropdown-menu-lg" aria-labelledby="navbarDropdownLarge" style="min-width: 334px"&gt;
+                    &lt;div class="row no-gutters"&gt;
+                        &lt;div class="col"&gt;
+                            &lt;div class="dropdown-header font-weight-bold mb-2"&gt;Header&lt;/div&gt;
+                            &lt;a class="dropdown-item" href="#"&gt;Link action&lt;/a&gt;
+                            &lt;a class="dropdown-item" href="#"&gt;Link action&lt;/a&gt;
+                            &lt;a class="dropdown-item" href="#"&gt;Link action&lt;/a&gt;
+                        &lt;/div&gt;
+                        &lt;div class="col"&gt;
+                            &lt;div class="dropdown-header font-weight-bold mb-2"&gt;Header&lt;/div&gt;
+                            &lt;a class="dropdown-item" href="#"&gt;Link action&lt;/a&gt;
+                            &lt;a class="dropdown-item" href="#"&gt;Link action&lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+
+            &lt;li class="nav-item dropdown mega-dropdown"&gt;
+                &lt;a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMega" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt;
+                    Mega Menu
+                &lt;/a&gt;
+                &lt;div class="dropdown-menu mega-dropdown-menu" aria-labelledby="menu-4"&gt;
+                    &lt;div class="container-lg"&gt;
+                        &lt;div class="row w-100 ml-0"&gt;
+                            &lt;div class="col-6 col-lg-3"&gt;
+                                &lt;div class="dropdown-header font-weight-bold mb-2"&gt;Header&lt;/div&gt;
+                                &lt;a class="dropdown-item" href="#"&gt;Link action&lt;/a&gt;
+                                &lt;a class="dropdown-item" href="#"&gt;Link action&lt;/a&gt;
+                                &lt;a class="dropdown-item" href="#"&gt;Link action&lt;/a&gt;
+                            &lt;/div&gt;
+                            &lt;div class="col-6 col-lg-3"&gt;
+                                &lt;div class="dropdown-header font-weight-bold mb-2"&gt;Header&lt;/div&gt;
+                                &lt;a class="dropdown-item" href="#"&gt;Link action&lt;/a&gt;
+                                &lt;a class="dropdown-item" href="#"&gt;Link action&lt;/a&gt;
+                                &lt;a class="dropdown-item" href="#"&gt;Link action&lt;/a&gt;
+                            &lt;/div&gt;
+                            &lt;div class="col-6 col-lg-3"&gt;
+                                &lt;div class="dropdown-header font-weight-bold mb-2"&gt;Header&lt;/div&gt;
+                                &lt;a class="dropdown-item" href="#"&gt;Link action&lt;/a&gt;
+                                &lt;a class="dropdown-item" href="#"&gt;Link action&lt;/a&gt;
+                                &lt;a class="dropdown-item" href="#"&gt;Link action&lt;/a&gt;
+                            &lt;/div&gt;
+                            &lt;div class="col-6 col-lg-3"&gt;
+                                &lt;div class="dropdown-header font-weight-bold mb-2"&gt;Header&lt;/div&gt;
+                                &lt;a class="dropdown-item" href="#"&gt;Link action&lt;/a&gt;
+                                &lt;a class="dropdown-item" href="#"&gt;Link action&lt;/a&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
+                        </div><!-- end col -->
+                    </div><!-- end row -->
+
+                    <hr class="mt-5 mb-5">
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h3 class="mb-2 font-weight-bold">Navbar Custom Toggler</h3>
+
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result5" data-toggle="tab" role="tab" aria-controls="result5" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code5" data-toggle="tab" role="tab" aria-controls="code5" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result5" role="tabpanel">
                                     <nav class="navbar navbar-light bg-light">
                                         <a class="navbar-brand" href="#">Navbar</a>
                                         <div class="navbar-toggler border-0 p-0">
@@ -503,7 +687,7 @@
                                     </nav>
                                 </div><!-- end tab-pane -->
 
-                                <div class="tab-pane fade" id="code4" role="tabpanel">
+                                <div class="tab-pane fade" id="code5" role="tabpanel">
                                     <pre><code class="lang-html">&lt;nav class="navbar navbar-light bg-light"&gt;
     &lt;a class="navbar-brand" href="#"&gt;Navbar&lt;/a&gt;
     &lt;div class="navbar-toggler border-0 p-0"&gt;
@@ -536,17 +720,17 @@
 
                             <ul class="nav nav-border border-bottom mb-4" role="tablist">
                                 <li class="nav-item">
-                                    <a class="nav-link text-dark active" href="#result5" data-toggle="tab" role="tab" aria-controls="result5" aria-selected="true">Result</a>
+                                    <a class="nav-link text-dark active" href="#result6" data-toggle="tab" role="tab" aria-controls="result6" aria-selected="true">Result</a>
                                 </li><!-- end nav-item -->
                                 <li class="nav-item">
-                                    <a class="nav-link text-dark" href="#code5" data-toggle="tab" role="tab" aria-controls="code5" aria-selected="false">
+                                    <a class="nav-link text-dark" href="#code6" data-toggle="tab" role="tab" aria-controls="code6" aria-selected="false">
                                         Code <i class="fas fa-code ml-1"></i>
                                     </a>
                                 </li><!-- end nav-item -->
                             </ul><!-- end nav -->
 
                             <div class="tab-content">
-                                <div class="tab-pane fade show active" id="result5" role="tabpanel">
+                                <div class="tab-pane fade show active" id="result6" role="tabpanel">
                                     <nav class="navbar navbar-expand-lg navbar-light bg-light">
                                         <a href="index.html" class="navbar-brand mr-0 order-1 order-lg-2">
                                             Navbar
@@ -581,7 +765,7 @@
                                     </nav>
                                 </div><!-- end tab-pane -->
 
-                                <div class="tab-pane fade" id="code5" role="tabpanel">
+                                <div class="tab-pane fade" id="code6" role="tabpanel">
                                     <pre><code class="lang-html">&lt;nav class="navbar navbar-expand-lg navbar-light bg-light"&gt;
     &lt;a href="index.html" class="navbar-brand mr-0 order-1 order-lg-2"&gt;
         Navbar
@@ -618,6 +802,10 @@
                             </div><!-- end tab-content -->
                         </div><!-- end col -->
                     </div><!-- end row -->
+
+                    <hr class="mt-5 mb-5">
+
+
                 </div><!-- end #main col -->
             </div><!-- end row -->
         </div><!-- end container-fluid -->
