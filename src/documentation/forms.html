@@ -429,6 +429,107 @@
 
                     <div class="row">
                         <div class="col-sm-12">
+                            <h3 class="mb-2 font-weight-bold">Checkbox filter</h3>
+
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result_filter" data-toggle="tab" role="tab" aria-controls="result_filter" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code_filter" data-toggle="tab" role="tab" aria-controls="code_filter" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result_filter" role="tabpanel">
+                                    <div class="row text-center">
+                                        <div class="col-auto">
+                                            <div class="custom-checkbox filter-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="categoryBarstools">
+                                                <label for="categoryBarstools">
+                                                    <div class="custom-control-label d-inline-block">
+                                                        <i class="flaticon-stool text-secondary h2 d-inline-block mb-2"></i>
+                                                    </div>
+                                                    <h6 class="font-weight-normal text-secondary">Barstools</h6>
+                                                </label>
+                                            </div>
+                                        </div><!-- end col -->
+
+                                        <div class="col-auto">
+                                            <div class="custom-checkbox filter-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="materialConcrete">
+                                                <label for="materialConcrete">
+                                                    <div class="custom-control-label d-inline-block">
+                                                        <img class="mb-2" width="35" src="../assets/img/materials/Concrete.png" alt="concrete" />
+                                                    </div>
+                                                    <h6 class="font-weight-normal text-secondary">Concrete</h6>
+                                                </label>
+                                            </div>
+                                        </div><!-- end col -->
+
+                                        <div class="col-auto">
+                                            <div class="custom-checkbox filter-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="colorSilver">
+                                                <label for="colorSilver">
+                                                    <div class="custom-control-label d-inline-block">
+                                                        <span class="color-filter rounded-circle" style="background-color:#c3c3c3;"></span>
+                                                    </div>
+                                                    <h6 class="font-weight-normal text-secondary">Silver</h6>
+                                                </label>
+                                            </div>
+                                        </div><!-- end col -->
+                                    </div><!-- end row -->
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code_filter" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;div class="row text-center"&gt;
+    &lt;div class="col-auto"&gt;
+        &lt;div class="custom-checkbox filter-checkbox"&gt;
+            &lt;input type="checkbox" class="custom-control-input" id="categoryBarstools"&gt;
+            &lt;label for="categoryBarstools"&gt;
+                &lt;div class="custom-control-label d-inline-block"&gt;
+                    &lt;i class="flaticon-stool text-secondary h2 d-inline-block mb-2"&gt;&lt;/i&gt;
+                &lt;/div&gt;
+                &lt;h6 class="font-weight-normal text-secondary"&gt;Barstools&lt;/h6&gt;
+            &lt;/label&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="col-auto"&gt;
+        &lt;div class="custom-checkbox filter-checkbox"&gt;
+            &lt;input type="checkbox" class="custom-control-input" id="materialConcrete"&gt;
+            &lt;label for="materialConcrete"&gt;
+                &lt;div class="custom-control-label d-inline-block"&gt;
+                    &lt;img class="mb-2" width="35" src="../assets/img/materials/Concrete.png" alt="concrete" /&gt;
+                &lt;/div&gt;
+                &lt;h6 class="font-weight-normal text-secondary"&gt;Concrete&lt;/h6&gt;
+            &lt;/label&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="col-auto"&gt;
+        &lt;div class="custom-checkbox filter-checkbox"&gt;
+            &lt;input type="checkbox" class="custom-control-input" id="colorSilver"&gt;
+            &lt;label for="colorSilver"&gt;
+                &lt;div class="custom-control-label d-inline-block"&gt;
+                    &lt;span class="color-filter rounded-circle" style="background-color:#c3c3c3;"&gt;&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;h6 class="font-weight-normal text-secondary"&gt;Silver&lt;/h6&gt;
+            &lt;/label&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
+                        </div><!-- end col -->
+                    </div><!-- end row -->
+
+                    <hr class="mt-5 mb-5" />
+
+                    <div class="row">
+                        <div class="col-sm-12">
                             <h3 class="mb-2 font-weight-bold">Help text</h3>
 
                             <ul class="nav nav-border border-bottom mb-4" role="tablist">
