@@ -162,6 +162,11 @@
   background-size: 100% 100%;
 }
 
+/*
+* ===================================================
+*     navbar-expand
+* ===================================================
+*/
 .navbar-expand {
   @each $breakpoint in map-keys($grid-breakpoints) {
     $next: breakpoint-next($breakpoint, $grid-breakpoints);
@@ -395,5 +400,17 @@
         }
       }
     }
+  }
+}
+
+/*
+* ===================================================
+*     navbar secondary
+* ===================================================
+*/
+.navbar-secondary {
+  .nav-link {
+    padding-top: 13px!important;
+    padding-bottom: 13px!important;
   }
 }
