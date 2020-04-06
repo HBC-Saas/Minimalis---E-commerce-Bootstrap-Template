@@ -28,6 +28,11 @@ $(document).ready(function(){
         return false;
     });
 
+    // dropdown stop propagation
+    $('.navbar .mega-dropdown-menu').on('click', function (e) {
+        e.stopPropagation();
+    });
+
     /*
     * ===================================================
     *     Navbar Search

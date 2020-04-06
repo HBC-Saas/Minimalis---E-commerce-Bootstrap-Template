@@ -13954,6 +13954,11 @@ select.selectpicker {
   background-size: 100% 100%;
 }
 
+/*
+* ===================================================
+*     navbar-expand
+* ===================================================
+*/
 @media (min-width: 576px) {
   .navbar-expand-sm {
     /*
@@ -15044,6 +15049,16 @@ select.selectpicker {
 
 .navbar-expand.menu-border .navbar-nav:not(.navbar-icons) .nav-link {
   border-bottom: 1px solid #f7f5f6;
+}
+
+/*
+* ===================================================
+*     navbar secondary
+* ===================================================
+*/
+.navbar-secondary .nav-link {
+  padding-top: 13px !important;
+  padding-bottom: 13px !important;
 }
 
 /*
