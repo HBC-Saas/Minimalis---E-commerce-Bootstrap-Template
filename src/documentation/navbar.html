@@ -962,77 +962,136 @@
 
                     <div class="row">
                         <div class="col-sm-12">
-                            <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-secondary menu-border border-bottom">
-                                <div class="navbar-toggler p-0">
-                                    <div class="custom-toggler" data-toggle="collapse" data-target="#navbarMenuFilter" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
-                                        <span class="navbar-toggler-icon"></span>
-                                    </div>
-                                </div>
+                            <h3 class="mb-2 font-weight-bold">Navbar filters</h3>
 
-                                <div class="collapse navbar-collapse" id="navbarMenuFilter">
-                                    <ul class="navbar-nav mr-auto ml-auto">
-                                        <li class="nav-item dropdown mega-dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                All Products
-                                            </a>
-                                            <div class="dropdown-menu mega-dropdown-menu" aria-labelledby="menu-4">
-                                                <div class="container-lg">
-                                                    <div class="row justify-content-center w-100 ml-0 text-center">
-                                                        <div class="col-auto">
-                                                            <a href="#" class="filter">
-                                                                <i class="flaticon-all text-secondary h2 d-inline-block mb-2"></i>
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result8" data-toggle="tab" role="tab" aria-controls="result8" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code8" data-toggle="tab" role="tab" aria-controls="code8" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result8" role="tabpanel">
+
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code8" role="tabpanel">
+                                    <pre><code class="lang-html">
+
+                                    </code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
+
+                            <nav class="navbar navbar-expand navbar-light bg-light navbar-filter menu-border border-bottom">
+                                <ul class="navbar-nav mr-auto ml-auto">
+                                    <li class="nav-item dropdown mega-dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            All Products
+                                        </a>
+                                        <div class="dropdown-menu mega-dropdown-menu" aria-labelledby="menu-4">
+                                            <div class="container-lg">
+                                                <div class="row justify-content-center w-100 ml-0 text-center">
+                                                    <div class="col-auto">
+                                                        <div class="custom-checkbox filter-checkbox mb-4">
+                                                            <input type="checkbox" class="custom-control-input" id="categoryAll">
+                                                            <label for="categoryAll">
+                                                                <div class="custom-control-label d-inline-block mb-2">
+                                                                    <i class="flaticon-all text-secondary h2"></i>
+                                                                </div>
                                                                 <h6 class="font-weight-normal text-secondary">All</h6>
-                                                            </a>
-                                                        </div><!-- end col -->
-                                                        <div class="col-auto">
-                                                            <a href="#" class="filter">
-                                                                <i class="flaticon-chair text-secondary h2 d-inline-block mb-2"></i>
+                                                            </label>
+                                                        </div><!-- end custom-checkbox -->
+                                                    </div><!-- end col -->
+                                                    <div class="col-auto">
+                                                        <div class="custom-checkbox filter-checkbox mb-4">
+                                                            <input type="checkbox" class="custom-control-input" id="categoryChairs">
+                                                            <label for="categoryChairs">
+                                                                <div class="custom-control-label d-inline-block mb-2">
+                                                                    <i class="flaticon-chair text-secondary h2 pl-2"></i>
+                                                                </div>
                                                                 <h6 class="font-weight-normal text-secondary">Chairs</h6>
-                                                            </a>
-                                                        </div><!-- end col -->
-                                                        <div class="col-auto">
-                                                            <a href="#" class="filter">
-                                                                <i class="flaticon-stool text-secondary h2 d-inline-block mb-2"></i>
+                                                            </label>
+                                                        </div><!-- end custom-checkbox -->
+                                                    </div><!-- end col -->
+                                                    <div class="col-auto">
+                                                        <div class="custom-checkbox filter-checkbox mb-4">
+                                                            <input type="checkbox" class="custom-control-input" id="categoryBarstools">
+                                                            <label for="categoryBarstools">
+                                                                <div class="custom-control-label d-inline-block mb-2">
+                                                                    <i class="flaticon-stool text-secondary h2"></i>
+                                                                </div>
                                                                 <h6 class="font-weight-normal text-secondary">Barstools</h6>
-                                                            </a>
-                                                        </div><!-- end col -->
-                                                        <div class="col-auto">
-                                                            <a href="#" class="filter">
-                                                                <i class="flaticon-sofa-bed text-secondary h2 d-inline-block mb-2"></i>
+                                                            </label>
+                                                        </div><!-- end custom-checkbox -->
+                                                    </div><!-- end col -->
+                                                    <div class="col-auto">
+                                                        <div class="custom-checkbox filter-checkbox mb-4">
+                                                            <input type="checkbox" class="custom-control-input" id="categoryBeds">
+                                                            <label for="categoryBeds">
+                                                                <div class="custom-control-label d-inline-block mb-2">
+                                                                    <i class="flaticon-sofa-bed text-secondary h2"></i>
+                                                                </div>
                                                                 <h6 class="font-weight-normal text-secondary">Beds</h6>
-                                                            </a>
-                                                        </div><!-- end col -->
-                                                        <div class="col-auto">
-                                                            <a href="#" class="filter">
-                                                                <i class="flaticon-sofa text-secondary h2 d-inline-block mb-2"></i>
+                                                            </label>
+                                                        </div><!-- end custom-checkbox -->
+                                                    </div><!-- end col -->
+                                                    <div class="col-auto">
+                                                        <div class="custom-checkbox filter-checkbox mb-4">
+                                                            <input type="checkbox" class="custom-control-input" id="categorySofas">
+                                                            <label for="categorySofas">
+                                                                <div class="custom-control-label d-inline-block mb-2">
+                                                                    <i class="flaticon-sofa text-secondary h2"></i>
+                                                                </div>
                                                                 <h6 class="font-weight-normal text-secondary">Sofas</h6>
-                                                            </a>
-                                                        </div><!-- end col -->
-                                                        <div class="col-auto">
-                                                            <a href="#" class="filter">
-                                                                <i class="flaticon-lamps text-secondary h2 d-inline-block mb-2"></i>
+                                                            </label>
+                                                        </div><!-- end custom-checkbox -->
+                                                    </div><!-- end col -->
+                                                    <div class="col-auto">
+                                                        <div class="custom-checkbox filter-checkbox mb-4">
+                                                            <input type="checkbox" class="custom-control-input" id="categoryLamps">
+                                                            <label for="categoryLamps">
+                                                                <div class="custom-control-label d-inline-block mb-2">
+                                                                    <i class="flaticon-lamps text-secondary h2"></i>
+                                                                </div>
                                                                 <h6 class="font-weight-normal text-secondary">Lamps</h6>
-                                                            </a>
-                                                        </div><!-- end col -->
-                                                        <div class="col-auto">
-                                                            <a href="#" class="filter">
-                                                                <i class="flaticon-sofa-1 text-secondary h2 d-inline-block mb-2"></i>
+                                                            </label>
+                                                        </div><!-- end custom-checkbox -->
+                                                    </div><!-- end col -->
+                                                    <div class="col-auto">
+                                                        <div class="custom-checkbox filter-checkbox mb-4">
+                                                            <input type="checkbox" class="custom-control-input" id="categoryClubChairs">
+                                                            <label for="categoryClubChairs">
+                                                                <div class="custom-control-label d-inline-block mb-2">
+                                                                    <i class="flaticon-sofa-1 text-secondary h2"></i>
+                                                                </div>
                                                                 <h6 class="font-weight-normal text-secondary">Club Chairs</h6>
-                                                            </a>
-                                                        </div><!-- end col -->
-                                                        <div class="col-auto">
-                                                            <a href="#" class="filter">
-                                                                <i class="flaticon-lamps text-secondary h2 d-inline-block mb-2"></i>
-                                                                <h6 class="font-weight-normal text-secondary">Dining tables</h6>
-                                                            </a>
-                                                        </div><!-- end col -->
-                                                    </div><!-- end row -->
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </nav>
+                                                            </label>
+                                                        </div><!-- end custom-checkbox -->
+                                                    </div><!-- end col -->
+                                                </div><!-- end row -->
+
+                                                <div class="row justify-content-center w-100 ml-0 mt-2">
+                                                    <div class="col text-center">
+                                                        <ul class="list-inline">
+                                                            <li class="list-inline-item sep-line line-primary">
+                                                                <a href="#" class="font-weight-medium text-dark">Close menu <i class="flaticon-close ml-1 small"></i></a>
+                                                            </li>
+                                                            <li class="list-inline-item sep-line line-secondary">
+                                                                <a href="#" class="font-weight-medium text-dark">Reset all</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div><!-- end col -->
+                                                </div><!-- end row -->
+                                            </div><!-- end container-lg -->
+                                        </div><!-- end dropdown-menu -->
+                                    </li><!-- end nav-item -->
+                                </ul><!-- end navbar-nav -->
+                            </nav><!-- end navbar -->
                         </div><!-- end col -->
                     </div><!-- end row -->
                 </div><!-- end #main col -->
