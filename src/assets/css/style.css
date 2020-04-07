@@ -15088,6 +15088,11 @@ select.selectpicker {
   background-color: #1e1e1e;
 }
 
+.navbar-filter .mega-dropdown-menu {
+  border-left: 0;
+  border-right: 0;
+}
+
 /*
 * ===================================================
 *     Nav Border
