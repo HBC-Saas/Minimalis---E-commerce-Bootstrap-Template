@@ -43,14 +43,18 @@ hr {
 
 // list style ( seperation line )
 
-.sep-line:not(:last-child) {
-  line-height: .875rem;
-  padding-right: 1.5rem;
-  margin-right: 1.25rem;
-  border-right: 1px solid #ffffff;
-  @each $color, $value in $theme-colors {
-    &.line-#{$color} {
-      border-right: 1px solid $value !important;
+// :nth-last-child(1 of :not(.d-none))
+.sep-line {
+  margin-right: 0!important;
+  &:not(:first-child) {
+    line-height: .875rem;
+    padding-left: 1.5rem;
+    margin-left: 1.25rem;
+    border-left: 1px solid #ffffff;
+    @each $color, $value in $theme-colors {
+      &.line-#{$color} {
+        border-left: 1px solid $value !important;
+      }
     }
   }
 }
