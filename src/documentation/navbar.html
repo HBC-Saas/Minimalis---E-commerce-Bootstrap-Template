@@ -977,121 +977,503 @@
 
                             <div class="tab-content">
                                 <div class="tab-pane fade show active" id="result8" role="tabpanel">
+                                    <nav class="navbar navbar-expand navbar-light bg-light navbar-filter menu-border border-bottom">
+                                        <ul class="navbar-nav mr-auto ml-auto">
+                                            <li class="nav-item dropdown mega-dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    All Products
+                                                </a>
+                                                <div class="dropdown-menu mega-dropdown-menu" aria-labelledby="menu">
+                                                    <div class="container-lg">
+                                                        <div class="row justify-content-center w-100 ml-0 text-center">
+                                                            <div class="col-auto">
+                                                                <div class="custom-checkbox filter-checkbox mb-4">
+                                                                    <input type="checkbox" class="custom-control-input" name="productCategory" id="categoryAll">
+                                                                    <label for="categoryAll">
+                                                                        <div class="custom-control-label d-inline-block mb-2">
+                                                                            <i class="flaticon-all text-secondary h2"></i>
+                                                                        </div>
+                                                                        <h6 class="font-weight-normal text-secondary">All</h6>
+                                                                    </label>
+                                                                </div><!-- end custom-checkbox -->
+                                                            </div><!-- end col -->
+                                                            <div class="col-auto">
+                                                                <div class="custom-checkbox filter-checkbox mb-4">
+                                                                    <input type="checkbox" class="custom-control-input" name="productCategory" id="categoryChairs">
+                                                                    <label for="categoryChairs">
+                                                                        <div class="custom-control-label d-inline-block mb-2">
+                                                                            <i class="flaticon-chair text-secondary h2 pl-2"></i>
+                                                                        </div>
+                                                                        <h6 class="font-weight-normal text-secondary">Chairs</h6>
+                                                                    </label>
+                                                                </div><!-- end custom-checkbox -->
+                                                            </div><!-- end col -->
+                                                            <div class="col-auto">
+                                                                <div class="custom-checkbox filter-checkbox mb-4">
+                                                                    <input type="checkbox" class="custom-control-input" name="productCategory" id="categoryBarstools">
+                                                                    <label for="categoryBarstools">
+                                                                        <div class="custom-control-label d-inline-block mb-2">
+                                                                            <i class="flaticon-stool text-secondary h2"></i>
+                                                                        </div>
+                                                                        <h6 class="font-weight-normal text-secondary">Barstools</h6>
+                                                                    </label>
+                                                                </div><!-- end custom-checkbox -->
+                                                            </div><!-- end col -->
+                                                            <div class="col-auto">
+                                                                <div class="custom-checkbox filter-checkbox mb-4">
+                                                                    <input type="checkbox" class="custom-control-input" name="productCategory" id="categoryBeds">
+                                                                    <label for="categoryBeds">
+                                                                        <div class="custom-control-label d-inline-block mb-2">
+                                                                            <i class="flaticon-sofa-bed text-secondary h2"></i>
+                                                                        </div>
+                                                                        <h6 class="font-weight-normal text-secondary">Beds</h6>
+                                                                    </label>
+                                                                </div><!-- end custom-checkbox -->
+                                                            </div><!-- end col -->
+                                                            <div class="col-auto">
+                                                                <div class="custom-checkbox filter-checkbox mb-4">
+                                                                    <input type="checkbox" class="custom-control-input" name="productCategory" id="categorySofas">
+                                                                    <label for="categorySofas">
+                                                                        <div class="custom-control-label d-inline-block mb-2">
+                                                                            <i class="flaticon-sofa text-secondary h2"></i>
+                                                                        </div>
+                                                                        <h6 class="font-weight-normal text-secondary">Sofas</h6>
+                                                                    </label>
+                                                                </div><!-- end custom-checkbox -->
+                                                            </div><!-- end col -->
+                                                            <div class="col-auto">
+                                                                <div class="custom-checkbox filter-checkbox mb-4">
+                                                                    <input type="checkbox" class="custom-control-input" name="productCategory" id="categoryLamps">
+                                                                    <label for="categoryLamps">
+                                                                        <div class="custom-control-label d-inline-block mb-2">
+                                                                            <i class="flaticon-lamps text-secondary h2"></i>
+                                                                        </div>
+                                                                        <h6 class="font-weight-normal text-secondary">Lamps</h6>
+                                                                    </label>
+                                                                </div><!-- end custom-checkbox -->
+                                                            </div><!-- end col -->
+                                                            <div class="col-auto">
+                                                                <div class="custom-checkbox filter-checkbox mb-4">
+                                                                    <input type="checkbox" class="custom-control-input" name="productCategory" id="categoryClubChairs">
+                                                                    <label for="categoryClubChairs">
+                                                                        <div class="custom-control-label d-inline-block mb-2">
+                                                                            <i class="flaticon-sofa-1 text-secondary h2"></i>
+                                                                        </div>
+                                                                        <h6 class="font-weight-normal text-secondary">Club Chairs</h6>
+                                                                    </label>
+                                                                </div><!-- end custom-checkbox -->
+                                                            </div><!-- end col -->
+                                                        </div><!-- end row -->
 
+                                                        <div class="row justify-content-center w-100 ml-0 mt-2">
+                                                            <div class="col text-center">
+                                                                <ul class="list-inline">
+                                                                    <li class="list-inline-item sep-line line-gray close-dropdown">
+                                                                        <a href="javasript:void(0)" class="font-weight-medium text-dark">Close menu <i class="flaticon-close ml-1 small"></i></a>
+                                                                    </li>
+                                                                    <li class="list-inline-item sep-line line-gray reset-category d-none">
+                                                                        <a href="javasript:void(0)" class="font-weight-medium text-dark" onclick="UnSelectAllCategories()">Reset all</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div><!-- end col -->
+                                                        </div><!-- end row -->
+                                                    </div><!-- end container-lg -->
+                                                </div><!-- end dropdown-menu -->
+                                            </li><!-- end nav-item -->
+
+                                            <li class="nav-item dropdown mega-dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Material
+                                                </a>
+                                                <div class="dropdown-menu mega-dropdown-menu" aria-labelledby="menu">
+                                                    <div class="container-lg">
+                                                        <div class="row justify-content-center w-100 ml-0 text-center">
+                                                            <div class="col-auto">
+                                                                <div class="custom-checkbox filter-checkbox mb-4">
+                                                                    <input type="checkbox" class="custom-control-input" name="productMaterial" id="materialConcrete">
+                                                                    <label for="materialConcrete">
+                                                                        <div class="custom-control-label d-inline-block mb-2">
+                                                                            <img width="35" src="../assets/img/materials/Concrete.png" alt="concrete" />
+                                                                        </div>
+                                                                        <h6 class="font-weight-normal text-secondary">Concrete</h6>
+                                                                    </label>
+                                                                </div><!-- end custom-checkbox -->
+                                                            </div><!-- end col -->
+
+                                                            <div class="col-auto">
+                                                                <div class="custom-checkbox filter-checkbox mb-4">
+                                                                    <input type="checkbox" class="custom-control-input" name="productMaterial" id="materialGlass">
+                                                                    <label for="materialGlass">
+                                                                        <div class="custom-control-label d-inline-block mb-2">
+                                                                            <img width="35" src="../assets/img/materials/Glass.png" alt="Glass" />
+                                                                        </div>
+                                                                        <h6 class="font-weight-normal text-secondary">Glass</h6>
+                                                                    </label>
+                                                                </div><!-- end custom-checkbox -->
+                                                            </div><!-- end col -->
+
+                                                            <div class="col-auto">
+                                                                <div class="custom-checkbox filter-checkbox mb-4">
+                                                                    <input type="checkbox" class="custom-control-input" name="productMaterial" id="materialLeather">
+                                                                    <label for="materialLeather">
+                                                                        <div class="custom-control-label d-inline-block mb-2">
+                                                                            <img width="35" src="../assets/img/materials/Leather.png" alt="Leather" />
+                                                                        </div>
+                                                                        <h6 class="font-weight-normal text-secondary">Leather</h6>
+                                                                    </label>
+                                                                </div><!-- end custom-checkbox -->
+                                                            </div><!-- end col -->
+
+                                                            <div class="col-auto">
+                                                                <div class="custom-checkbox filter-checkbox mb-4">
+                                                                    <input type="checkbox" class="custom-control-input" name="productMaterial" id="materialMetal">
+                                                                    <label for="materialMetal">
+                                                                        <div class="custom-control-label d-inline-block mb-2">
+                                                                            <img width="35" src="../assets/img/materials/Metal.png" alt="Metal" />
+                                                                        </div>
+                                                                        <h6 class="font-weight-normal text-secondary">Metal</h6>
+                                                                    </label>
+                                                                </div><!-- end custom-checkbox -->
+                                                            </div><!-- end col -->
+
+                                                            <div class="col-auto">
+                                                                <div class="custom-checkbox filter-checkbox mb-4">
+                                                                    <input type="checkbox" class="custom-control-input" name="productMaterial" id="materialPlastic">
+                                                                    <label for="materialPlastic">
+                                                                        <div class="custom-control-label d-inline-block mb-2">
+                                                                            <img width="35" src="../assets/img/materials/Plastic.png" alt="Plastic" />
+                                                                        </div>
+                                                                        <h6 class="font-weight-normal text-secondary">Plastic</h6>
+                                                                    </label>
+                                                                </div><!-- end custom-checkbox -->
+                                                            </div><!-- end col -->
+
+                                                            <div class="col-auto">
+                                                                <div class="custom-checkbox filter-checkbox mb-4">
+                                                                    <input type="checkbox" class="custom-control-input" name="productMaterial" id="materialStone">
+                                                                    <label for="materialStone">
+                                                                        <div class="custom-control-label d-inline-block mb-2">
+                                                                            <img width="35" src="../assets/img/materials/Stone.png" alt="Stone" />
+                                                                        </div>
+                                                                        <h6 class="font-weight-normal text-secondary">Stone</h6>
+                                                                    </label>
+                                                                </div><!-- end custom-checkbox -->
+                                                            </div><!-- end col -->
+
+                                                            <div class="col-auto">
+                                                                <div class="custom-checkbox filter-checkbox mb-4">
+                                                                    <input type="checkbox" class="custom-control-input" name="productMaterial" id="materialWood">
+                                                                    <label for="materialWood">
+                                                                        <div class="custom-control-label d-inline-block mb-2">
+                                                                            <img width="35" src="../assets/img/materials/Wood.png" alt="Wood" />
+                                                                        </div>
+                                                                        <h6 class="font-weight-normal text-secondary">Wood</h6>
+                                                                    </label>
+                                                                </div><!-- end custom-checkbox -->
+                                                            </div><!-- end col -->
+
+                                                            <div class="col-auto">
+                                                                <div class="custom-checkbox filter-checkbox mb-4">
+                                                                    <input type="checkbox" class="custom-control-input" name="productMaterial" id="materialBamboo">
+                                                                    <label for="materialBamboo">
+                                                                        <div class="custom-control-label d-inline-block mb-2">
+                                                                            <img width="35" src="../assets/img/materials/Bamboo.png" alt="Stone" />
+                                                                        </div>
+                                                                        <h6 class="font-weight-normal text-secondary">Bamboo</h6>
+                                                                    </label>
+                                                                </div><!-- end custom-checkbox -->
+                                                            </div><!-- end col -->
+                                                        </div><!-- end row -->
+
+                                                        <div class="row justify-content-center w-100 ml-0 mt-2">
+                                                            <div class="col text-center">
+                                                                <ul class="list-inline">
+                                                                    <li class="list-inline-item sep-line line-gray close-dropdown">
+                                                                        <a href="javasript:void(0)" class="font-weight-medium text-dark">Close menu <i class="flaticon-close ml-1 small"></i></a>
+                                                                    </li>
+                                                                    <li class="list-inline-item sep-line line-gray reset-material d-none">
+                                                                        <a href="javasript:void(0)" class="font-weight-medium text-dark" onclick="UnSelectAllMaterials()">Reset all</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div><!-- end col -->
+                                                        </div><!-- end row -->
+                                                    </div><!-- end container-lg -->
+                                                </div><!-- end dropdown-menu -->
+                                            </li><!-- end nav-item -->
+
+                                            <li class="nav-item dropdown mega-dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Color
+                                                </a>
+                                                <div class="dropdown-menu mega-dropdown-menu" aria-labelledby="menu">
+                                                    <div class="container-lg">
+                                                        <div class="row justify-content-center w-100 ml-0 text-center">
+                                                            <div class="col-auto">
+                                                                <div class="custom-checkbox filter-checkbox mb-4">
+                                                                    <input type="checkbox" class="custom-control-input" name="productColor" id="colorBlack">
+                                                                    <label for="colorBlack">
+                                                                        <div class="custom-control-label d-inline-block">
+                                                                            <span class="color-filter rounded-circle" style="background-color:#1e1e1e;"></span>
+                                                                        </div>
+                                                                        <h6 class="font-weight-normal text-secondary">Black</h6>
+                                                                    </label>
+                                                                </div><!-- end custom-checkbox -->
+                                                            </div><!-- end col -->
+
+                                                            <div class="col-auto">
+                                                                <div class="custom-checkbox filter-checkbox mb-4">
+                                                                    <input type="checkbox" class="custom-control-input" name="productColor" id="colorBrass">
+                                                                    <label for="colorBrass">
+                                                                        <div class="custom-control-label d-inline-block">
+                                                                            <span class="color-filter rounded-circle" style="background-color:#edaf4f;"></span>
+                                                                        </div>
+                                                                        <h6 class="font-weight-normal text-secondary">Brass</h6>
+                                                                    </label>
+                                                                </div><!-- end custom-checkbox -->
+                                                            </div><!-- end col -->
+
+                                                            <div class="col-auto">
+                                                                <div class="custom-checkbox filter-checkbox mb-4">
+                                                                    <input type="checkbox" class="custom-control-input" name="productColor" id="colorGold">
+                                                                    <label for="colorGold">
+                                                                        <div class="custom-control-label d-inline-block">
+                                                                            <span class="color-filter rounded-circle" style="background-color:#d6af26;"></span>
+                                                                        </div>
+                                                                        <h6 class="font-weight-normal text-secondary">Gold</h6>
+                                                                    </label>
+                                                                </div><!-- end custom-checkbox -->
+                                                            </div><!-- end col -->
+
+                                                            <div class="col-auto">
+                                                                <div class="custom-checkbox filter-checkbox mb-4">
+                                                                    <input type="checkbox" class="custom-control-input" name="productColor" id="colorOak">
+                                                                    <label for="colorOak">
+                                                                        <div class="custom-control-label d-inline-block">
+                                                                            <span class="color-filter rounded-circle" style="background-color:#af5535;"></span>
+                                                                        </div>
+                                                                        <h6 class="font-weight-normal text-secondary">Oak</h6>
+                                                                    </label>
+                                                                </div><!-- end custom-checkbox -->
+                                                            </div><!-- end col -->
+
+                                                            <div class="col-auto">
+                                                                <div class="custom-checkbox filter-checkbox mb-4">
+                                                                    <input type="checkbox" class="custom-control-input" name="productColor" id="colorBronze">
+                                                                    <label for="colorBronze">
+                                                                        <div class="custom-control-label d-inline-block">
+                                                                            <span class="color-filter rounded-circle" style="background-color:#957144;"></span>
+                                                                        </div>
+                                                                        <h6 class="font-weight-normal text-secondary">Bronze</h6>
+                                                                    </label>
+                                                                </div><!-- end custom-checkbox -->
+                                                            </div><!-- end col -->
+
+                                                            <div class="col-auto">
+                                                                <div class="custom-checkbox filter-checkbox mb-4">
+                                                                    <input type="checkbox" class="custom-control-input" name="productColor" id="colorSilver">
+                                                                    <label for="colorSilver">
+                                                                        <div class="custom-control-label d-inline-block">
+                                                                            <span class="color-filter rounded-circle" style="background-color:#c3c3c3;"></span>
+                                                                        </div>
+                                                                        <h6 class="font-weight-normal text-secondary">Silver</h6>
+                                                                    </label>
+                                                                </div><!-- end custom-checkbox -->
+                                                            </div><!-- end col -->
+
+                                                            <div class="col-auto">
+                                                                <div class="custom-checkbox filter-checkbox mb-4">
+                                                                    <input type="checkbox" class="custom-control-input" name="productColor" id="colorWhite">
+                                                                    <label for="colorWhite">
+                                                                        <div class="custom-control-label d-inline-block">
+                                                                            <span class="color-filter rounded-circle" style="border:1px solid #979797; background-color:#ffffff;"></span>
+                                                                        </div>
+                                                                        <h6 class="font-weight-normal text-secondary">White</h6>
+                                                                    </label>
+                                                                </div><!-- end custom-checkbox -->
+                                                            </div><!-- end col -->
+
+                                                            <div class="col-auto">
+                                                                <div class="custom-checkbox filter-checkbox mb-4">
+                                                                    <input type="checkbox" class="custom-control-input" name="productColor" id="colorWenge">
+                                                                    <label for="colorWenge">
+                                                                        <div class="custom-control-label d-inline-block">
+                                                                            <span class="color-filter rounded-circle" style="background-color:#36231b;"></span>
+                                                                        </div>
+                                                                        <h6 class="font-weight-normal text-secondary">Wenge</h6>
+                                                                    </label>
+                                                                </div><!-- end custom-checkbox -->
+                                                            </div><!-- end col -->
+                                                        </div><!-- end row -->
+
+                                                        <div class="row justify-content-center w-100 ml-0 mt-2">
+                                                            <div class="col text-center">
+                                                                <ul class="list-inline">
+                                                                    <li class="list-inline-item sep-line line-gray close-dropdown">
+                                                                        <a href="javasript:void(0)" class="font-weight-medium text-dark">Close menu <i class="flaticon-close ml-1 small"></i></a>
+                                                                    </li>
+                                                                    <li class="list-inline-item sep-line line-gray reset-color d-none">
+                                                                        <a href="javasript:void(0)" class="font-weight-medium text-dark" onclick="UnSelectAllColors()">Reset all</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div><!-- end col -->
+                                                        </div><!-- end row -->
+                                                    </div><!-- end container-lg -->
+                                                </div><!-- end dropdown-menu -->
+                                            </li><!-- end nav-item -->
+                                        </ul><!-- end navbar-nav -->
+                                    </nav><!-- end navbar -->
                                 </div><!-- end tab-pane -->
 
                                 <div class="tab-pane fade" id="code8" role="tabpanel">
-                                    <pre><code class="lang-html">
+                                    <pre><code class="lang-html">&lt;nav class="navbar navbar-expand navbar-light bg-light navbar-filter menu-border border-bottom"&gt;
+    &lt;ul class="navbar-nav mr-auto ml-auto"&gt;
+        &lt;li class="nav-item dropdown mega-dropdown"&gt;
+            &lt;a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt;
+                All Products
+            &lt;/a&gt;
+            &lt;div class="dropdown-menu mega-dropdown-menu" aria-labelledby="menu"&gt;
+                &lt;div class="container-lg"&gt;
+                    &lt;div class="row justify-content-center w-100 ml-0 text-center"&gt;
+                        &lt;div class="col-auto"&gt;
+                            &lt;div class="custom-checkbox filter-checkbox mb-4"&gt;
+                                &lt;input type="checkbox" class="custom-control-input" name="productCategory" id="categoryAll"&gt;
+                                &lt;label for="categoryAll"&gt;
+                                    &lt;div class="custom-control-label d-inline-block mb-2"&gt;
+                                        &lt;i class="flaticon-all text-secondary h2"&gt;&lt;/i&gt;
+                                    &lt;/div&gt;
+                                    &lt;h6 class="font-weight-normal text-secondary"&gt;All&lt;/h6&gt;
+                                &lt;/label&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
 
-                                    </code></pre>
+                        &lt;div class="col-auto"&gt;
+                            &lt;div class="custom-checkbox filter-checkbox mb-4"&gt;
+                                &lt;input type="checkbox" class="custom-control-input" name="productCategory" id="categoryChairs"&gt;
+                                &lt;label for="categoryChairs"&gt;
+                                    &lt;div class="custom-control-label d-inline-block mb-2"&gt;
+                                        &lt;i class="flaticon-chair text-secondary h2 pl-2"&gt;&lt;/i&gt;
+                                    &lt;/div&gt;
+                                    &lt;h6 class="font-weight-normal text-secondary"&gt;Chairs&lt;/h6&gt;
+                                &lt;/label&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="row justify-content-center w-100 ml-0 mt-2"&gt;
+                        &lt;div class="col text-center"&gt;
+                            &lt;ul class="list-inline"&gt;
+                                &lt;li class="list-inline-item sep-line line-gray close-dropdown"&gt;
+                                    &lt;a href="javasript:void(0)" class="font-weight-medium text-dark"&gt;Close menu &lt;i class="flaticon-close ml-1 small"&gt;&lt;/i&gt;&lt;/a&gt;
+                                &lt;/li&gt;
+                                &lt;li class="list-inline-item sep-line line-gray reset-category d-none"&gt;
+                                    &lt;a href="javasript:void(0)" class="font-weight-medium text-dark" onclick="UnSelectAllCategories()"&gt;Reset all&lt;/a&gt;
+                                &lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+
+        &lt;li class="nav-item dropdown mega-dropdown"&gt;
+            &lt;a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt;
+                Material
+            &lt;/a&gt;
+            &lt;div class="dropdown-menu mega-dropdown-menu" aria-labelledby="menu"&gt;
+                &lt;div class="container-lg"&gt;
+                    &lt;div class="row justify-content-center w-100 ml-0 text-center"&gt;
+                        &lt;div class="col-auto"&gt;
+                            &lt;div class="custom-checkbox filter-checkbox mb-4"&gt;
+                                &lt;input type="checkbox" class="custom-control-input" name="productMaterial" id="materialConcrete"&gt;
+                                &lt;label for="materialConcrete"&gt;
+                                    &lt;div class="custom-control-label d-inline-block mb-2"&gt;
+                                        &lt;img width="35" src="../assets/img/materials/Concrete.png" alt="concrete" /&gt;
+                                    &lt;/div&gt;
+                                    &lt;h6 class="font-weight-normal text-secondary"&gt;Concrete&lt;/h6&gt;
+                                &lt;/label&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class="col-auto"&gt;
+                            &lt;div class="custom-checkbox filter-checkbox mb-4"&gt;
+                                &lt;input type="checkbox" class="custom-control-input" name="productMaterial" id="materialGlass"&gt;
+                                &lt;label for="materialGlass"&gt;
+                                    &lt;div class="custom-control-label d-inline-block mb-2"&gt;
+                                        &lt;img width="35" src="../assets/img/materials/Glass.png" alt="Glass" /&gt;
+                                    &lt;/div&gt;
+                                    &lt;h6 class="font-weight-normal text-secondary"&gt;Glass&lt;/h6&gt;
+                                &lt;/label&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="row justify-content-center w-100 ml-0 mt-2"&gt;
+                        &lt;div class="col text-center"&gt;
+                            &lt;ul class="list-inline"&gt;
+                                &lt;li class="list-inline-item sep-line line-gray close-dropdown"&gt;
+                                    &lt;a href="javasript:void(0)" class="font-weight-medium text-dark"&gt;Close menu &lt;i class="flaticon-close ml-1 small"&gt;&lt;/i&gt;&lt;/a&gt;
+                                &lt;/li&gt;
+                                &lt;li class="list-inline-item sep-line line-gray reset-material d-none"&gt;
+                                    &lt;a href="javasript:void(0)" class="font-weight-medium text-dark" onclick="UnSelectAllMaterials()"&gt;Reset all&lt;/a&gt;
+                                &lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+
+        &lt;li class="nav-item dropdown mega-dropdown"&gt;
+            &lt;a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt;
+                Color
+            &lt;/a&gt;
+            &lt;div class="dropdown-menu mega-dropdown-menu" aria-labelledby="menu"&gt;
+                &lt;div class="container-lg"&gt;
+                    &lt;div class="row justify-content-center w-100 ml-0 text-center"&gt;
+                        &lt;div class="col-auto"&gt;
+                            &lt;div class="custom-checkbox filter-checkbox mb-4"&gt;
+                                &lt;input type="checkbox" class="custom-control-input" name="productColor" id="colorBlack"&gt;
+                                &lt;label for="colorBlack"&gt;
+                                    &lt;div class="custom-control-label d-inline-block"&gt;
+                                        &lt;span class="color-filter rounded-circle" style="background-color:#1e1e1e;"&gt;&lt;/span&gt;
+                                    &lt;/div&gt;
+                                    &lt;h6 class="font-weight-normal text-secondary"&gt;Black&lt;/h6&gt;
+                                &lt;/label&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class="col-auto"&gt;
+                            &lt;div class="custom-checkbox filter-checkbox mb-4"&gt;
+                                &lt;input type="checkbox" class="custom-control-input" name="productColor" id="colorWhite"&gt;
+                                &lt;label for="colorWhite"&gt;
+                                    &lt;div class="custom-control-label d-inline-block"&gt;
+                                        &lt;span class="color-filter rounded-circle" style="border:1px solid #979797; background-color:#ffffff;"&gt;&lt;/span&gt;
+                                    &lt;/div&gt;
+                                    &lt;h6 class="font-weight-normal text-secondary"&gt;White&lt;/h6&gt;
+                                &lt;/label&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="row justify-content-center w-100 ml-0 mt-2"&gt;
+                        &lt;div class="col text-center"&gt;
+                            &lt;ul class="list-inline"&gt;
+                                &lt;li class="list-inline-item sep-line line-gray close-dropdown"&gt;
+                                    &lt;a href="javasript:void(0)" class="font-weight-medium text-dark"&gt;Close menu &lt;i class="flaticon-close ml-1 small"&gt;&lt;/i&gt;&lt;/a&gt;
+                                &lt;/li&gt;
+                                &lt;li class="list-inline-item sep-line line-gray reset-color d-none"&gt;
+                                    &lt;a href="javasript:void(0)" class="font-weight-medium text-dark" onclick="UnSelectAllColors()"&gt;Reset all&lt;/a&gt;
+                                &lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
                                 </div><!-- end tab-pane -->
                             </div><!-- end tab-content -->
-
-                            <nav class="navbar navbar-expand navbar-light bg-light navbar-filter menu-border border-bottom">
-                                <ul class="navbar-nav mr-auto ml-auto">
-                                    <li class="nav-item dropdown mega-dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            All Products
-                                        </a>
-                                        <div class="dropdown-menu mega-dropdown-menu" aria-labelledby="menu-4">
-                                            <div class="container-lg">
-                                                <div class="row justify-content-center w-100 ml-0 text-center">
-                                                    <div class="col-auto">
-                                                        <div class="custom-checkbox filter-checkbox mb-4">
-                                                            <input type="checkbox" class="custom-control-input" id="categoryAll">
-                                                            <label for="categoryAll">
-                                                                <div class="custom-control-label d-inline-block mb-2">
-                                                                    <i class="flaticon-all text-secondary h2"></i>
-                                                                </div>
-                                                                <h6 class="font-weight-normal text-secondary">All</h6>
-                                                            </label>
-                                                        </div><!-- end custom-checkbox -->
-                                                    </div><!-- end col -->
-                                                    <div class="col-auto">
-                                                        <div class="custom-checkbox filter-checkbox mb-4">
-                                                            <input type="checkbox" class="custom-control-input" id="categoryChairs">
-                                                            <label for="categoryChairs">
-                                                                <div class="custom-control-label d-inline-block mb-2">
-                                                                    <i class="flaticon-chair text-secondary h2 pl-2"></i>
-                                                                </div>
-                                                                <h6 class="font-weight-normal text-secondary">Chairs</h6>
-                                                            </label>
-                                                        </div><!-- end custom-checkbox -->
-                                                    </div><!-- end col -->
-                                                    <div class="col-auto">
-                                                        <div class="custom-checkbox filter-checkbox mb-4">
-                                                            <input type="checkbox" class="custom-control-input" id="categoryBarstools">
-                                                            <label for="categoryBarstools">
-                                                                <div class="custom-control-label d-inline-block mb-2">
-                                                                    <i class="flaticon-stool text-secondary h2"></i>
-                                                                </div>
-                                                                <h6 class="font-weight-normal text-secondary">Barstools</h6>
-                                                            </label>
-                                                        </div><!-- end custom-checkbox -->
-                                                    </div><!-- end col -->
-                                                    <div class="col-auto">
-                                                        <div class="custom-checkbox filter-checkbox mb-4">
-                                                            <input type="checkbox" class="custom-control-input" id="categoryBeds">
-                                                            <label for="categoryBeds">
-                                                                <div class="custom-control-label d-inline-block mb-2">
-                                                                    <i class="flaticon-sofa-bed text-secondary h2"></i>
-                                                                </div>
-                                                                <h6 class="font-weight-normal text-secondary">Beds</h6>
-                                                            </label>
-                                                        </div><!-- end custom-checkbox -->
-                                                    </div><!-- end col -->
-                                                    <div class="col-auto">
-                                                        <div class="custom-checkbox filter-checkbox mb-4">
-                                                            <input type="checkbox" class="custom-control-input" id="categorySofas">
-                                                            <label for="categorySofas">
-                                                                <div class="custom-control-label d-inline-block mb-2">
-                                                                    <i class="flaticon-sofa text-secondary h2"></i>
-                                                                </div>
-                                                                <h6 class="font-weight-normal text-secondary">Sofas</h6>
-                                                            </label>
-                                                        </div><!-- end custom-checkbox -->
-                                                    </div><!-- end col -->
-                                                    <div class="col-auto">
-                                                        <div class="custom-checkbox filter-checkbox mb-4">
-                                                            <input type="checkbox" class="custom-control-input" id="categoryLamps">
-                                                            <label for="categoryLamps">
-                                                                <div class="custom-control-label d-inline-block mb-2">
-                                                                    <i class="flaticon-lamps text-secondary h2"></i>
-                                                                </div>
-                                                                <h6 class="font-weight-normal text-secondary">Lamps</h6>
-                                                            </label>
-                                                        </div><!-- end custom-checkbox -->
-                                                    </div><!-- end col -->
-                                                    <div class="col-auto">
-                                                        <div class="custom-checkbox filter-checkbox mb-4">
-                                                            <input type="checkbox" class="custom-control-input" id="categoryClubChairs">
-                                                            <label for="categoryClubChairs">
-                                                                <div class="custom-control-label d-inline-block mb-2">
-                                                                    <i class="flaticon-sofa-1 text-secondary h2"></i>
-                                                                </div>
-                                                                <h6 class="font-weight-normal text-secondary">Club Chairs</h6>
-                                                            </label>
-                                                        </div><!-- end custom-checkbox -->
-                                                    </div><!-- end col -->
-                                                </div><!-- end row -->
-
-                                                <div class="row justify-content-center w-100 ml-0 mt-2">
-                                                    <div class="col text-center">
-                                                        <ul class="list-inline">
-                                                            <li class="list-inline-item sep-line line-primary">
-                                                                <a href="#" class="font-weight-medium text-dark">Close menu <i class="flaticon-close ml-1 small"></i></a>
-                                                            </li>
-                                                            <li class="list-inline-item sep-line line-secondary">
-                                                                <a href="#" class="font-weight-medium text-dark">Reset all</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div><!-- end col -->
-                                                </div><!-- end row -->
-                                            </div><!-- end container-lg -->
-                                        </div><!-- end dropdown-menu -->
-                                    </li><!-- end nav-item -->
-                                </ul><!-- end navbar-nav -->
-                            </nav><!-- end navbar -->
                         </div><!-- end col -->
                     </div><!-- end row -->
                 </div><!-- end #main col -->
