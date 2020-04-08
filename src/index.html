@@ -9,6 +9,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="robots" content="all,follow">
 
+        <!-- vendor css File -->
+        <link rel="stylesheet" href="./assets/vendors/@fortawesome/fontawesome-free/css/all.min.css">
+        <link rel="stylesheet" href="./assets/vendors/swiper/css/swiper.min.css">
+
         <!-- typography -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap" rel="stylesheet">
 
@@ -241,99 +245,106 @@
                 </div><!-- end col -->
             </div><!-- end row -->
 
+            <!-- Swiper -->
             <div class="row">
-                <div class="col-sm-5">
-                    <div class="card luxury-card border-0">
-                        <div class="card-img">
-                            <!-- Image -->
-                            <figure class="zoom-in mb-0">
-                                <img src="./assets/img/products/luxury_01.png" alt="product">
-                            </figure>
+                <div class="swiper-container swiper-init luxury-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide px-3">
+                            <div class="card luxury-card border-0 mb-4">
+                                <div class="card-img">
+                                    <!-- Image -->
+                                    <figure class="zoom-in mb-0">
+                                        <img src="../assets/img/products/luxury_01.png" alt="product">
+                                    </figure>
 
-                            <!-- Action -->
-                            <button class="card-action hover-card-action action-top action-right" type="button">
-                                <i class="flaticon-heart"></i>
-                            </button>
+                                    <!-- Action -->
+                                    <button class="card-action hover-card-action action-top action-right" type="button">
+                                        <i class="flaticon-heart"></i>
+                                    </button>
 
-                            <button class="btn-add-to-card btn-large" type="button">
-                                <i class="add-to-card-active flaticon-plus h6"></i>
-                                <span class="add-to-card-hover">
-                                    <span class="add-to-card-text">Add to cart</span>
-                                </span>
-                                <i class="add-to-card-success flaticon-null h6"></i>
-                            </button>
+                                    <button class="btn-add-to-card btn-large" type="button">
+                                        <i class="add-to-card-active flaticon-plus h6"></i>
+                                        <span class="add-to-card-hover">
+                                                            <span class="add-to-card-text">Add to cart</span>
+                                                        </span>
+                                        <i class="add-to-card-success flaticon-null h6"></i>
+                                    </button>
 
-                            <div class="card-action action-bottom action-left">
-                                <h4 class="font-weight-bold text-uppercase mb-1">
-                                    <a class="text-dark" href="#">Minimal grey lamp</a>
-                                </h4>
-                                <p class="h5 font-weight-normal mb-0">$49.00</p>
-                            </div><!-- end luxury-title -->
-                        </div><!-- end card-img -->
-                    </div><!-- end card -->
-                </div><!-- end col -->
+                                    <div class="card-action action-bottom action-left">
+                                        <h4 class="font-weight-bold text-uppercase mb-1">
+                                            <a class="text-dark" href="#">Minimal grey lamp</a>
+                                        </h4>
+                                        <p class="h5 font-weight-normal mb-0">$49.00</p>
+                                    </div><!-- end luxury-title -->
+                                </div><!-- end card-img -->
+                            </div><!-- end card -->
+                        </div><!-- end swiper-slide -->
 
-                <div class="col-sm-4">
-                    <div class="card luxury-card border-0">
-                        <div class="card-img">
-                            <!-- Image -->
-                            <figure class="zoom-in mb-0">
-                                <img src="./assets/img/products/luxury_02.png" alt="product">
-                            </figure>
+                        <div class="swiper-slide px-3">
+                            <div class="card luxury-card border-0 mb-4">
+                                <div class="card-img">
+                                    <!-- Image -->
+                                    <figure class="zoom-in mb-0">
+                                        <img class="d-none d-lg-block" src="../assets/img/products/luxury_02.png" alt="product">
+                                        <img class="d-block d-lg-none" src="../assets/img/products/luxury_02_big.png" alt="product">
+                                    </figure>
 
-                            <!-- Action -->
-                            <button class="card-action hover-card-action action-top action-right" type="button">
-                                <i class="flaticon-heart"></i>
-                            </button>
+                                    <!-- Action -->
+                                    <button class="card-action hover-card-action action-top action-right" type="button">
+                                        <i class="flaticon-heart"></i>
+                                    </button>
 
-                            <button class="btn-add-to-card btn-large" type="button">
-                                <i class="add-to-card-active flaticon-plus h6"></i>
-                                <span class="add-to-card-hover">
-                                    <span class="add-to-card-text">Add to cart</span>
-                                </span>
-                                <i class="add-to-card-success flaticon-null h6"></i>
-                            </button>
+                                    <button class="btn-add-to-card btn-large" type="button">
+                                        <i class="add-to-card-active flaticon-plus h6"></i>
+                                        <span class="add-to-card-hover">
+                                                            <span class="add-to-card-text">Add to cart</span>
+                                                        </span>
+                                        <i class="add-to-card-success flaticon-null h6"></i>
+                                    </button>
 
-                            <div class="card-action action-bottom action-left">
-                                <h4 class="font-weight-bold text-uppercase mb-1">
-                                    <a class="text-dark" href="#">Minimal Chair</a>
-                                </h4>
-                                <p class="h5 font-weight-normal mb-0">$49.00</p>
-                            </div><!-- end luxury-title -->
-                        </div><!-- end card-img -->
-                    </div><!-- end card -->
-                </div><!-- end col -->
+                                    <div class="card-action action-bottom action-left">
+                                        <h4 class="font-weight-bold text-uppercase mb-1">
+                                            <a class="text-dark" href="#">Minimal Chair</a>
+                                        </h4>
+                                        <p class="h5 font-weight-normal mb-0">$49.00</p>
+                                    </div><!-- end luxury-title -->
+                                </div><!-- end card-img -->
+                            </div><!-- end card -->
+                        </div><!-- end swiper-slide -->
 
-                <div class="col-sm-3">
-                    <div class="card luxury-card border-0">
-                        <div class="card-img">
-                            <!-- Image -->
-                            <figure class="zoom-in mb-0">
-                                <img src="./assets/img/products/luxury_03.png" alt="product">
-                            </figure>
+                        <div class="swiper-slide px-3">
+                            <div class="card luxury-card border-0 mb-4">
+                                <div class="card-img">
+                                    <!-- Image -->
+                                    <figure class="zoom-in mb-0">
+                                        <img class="d-none d-lg-block" src="../assets/img/products/luxury_03.png" alt="product">
+                                        <img class="d-block d-lg-none" src="../assets/img/products/luxury_03_big.png" alt="product">
+                                    </figure>
 
-                            <!-- Action -->
-                            <button class="card-action hover-card-action action-top action-right" type="button">
-                                <i class="flaticon-heart"></i>
-                            </button>
+                                    <!-- Action -->
+                                    <button class="card-action hover-card-action action-top action-right" type="button">
+                                        <i class="flaticon-heart"></i>
+                                    </button>
 
-                            <button class="btn-add-to-card btn-large" type="button">
-                                <i class="add-to-card-active flaticon-plus h6"></i>
-                                <span class="add-to-card-hover">
-                                    <span class="add-to-card-text">Add to cart</span>
-                                </span>
-                                <i class="add-to-card-success flaticon-null h6"></i>
-                            </button>
+                                    <button class="btn-add-to-card btn-large" type="button">
+                                        <i class="add-to-card-active flaticon-plus h6"></i>
+                                        <span class="add-to-card-hover">
+                                                            <span class="add-to-card-text">Add to cart</span>
+                                                        </span>
+                                        <i class="add-to-card-success flaticon-null h6"></i>
+                                    </button>
 
-                            <div class="card-action action-bottom action-left">
-                                <h4 class="font-weight-bold text-uppercase mb-1">
-                                    <a class="text-dark" href="#">Gold lamp</a>
-                                </h4>
-                                <p class="h5 font-weight-normal mb-0">$49.00</p>
-                            </div><!-- end luxury-title -->
-                        </div><!-- end card-img -->
-                    </div><!-- end card -->
-                </div><!-- end col -->
+                                    <div class="card-action action-bottom action-left">
+                                        <h4 class="font-weight-bold text-uppercase mb-1">
+                                            <a class="text-dark" href="#">Gold lamp</a>
+                                        </h4>
+                                        <p class="h5 font-weight-normal mb-0">$49.00</p>
+                                    </div><!-- end luxury-title -->
+                                </div><!-- end card-img -->
+                            </div><!-- end card -->
+                        </div><!-- end swiper-slide -->
+                    </div><!-- end swiper-wrapper -->
+                </div><!-- end swiper-container -->
             </div><!-- end row -->
         </div><!-- end container -->
     </section>
@@ -1029,6 +1040,7 @@
         <script src="./assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="./assets/vendors/bootstrap-select/js/bootstrap-select.min.js"></script>
         <script src="./assets/vendors/cocoen/js/cocoen.min.js"></script>
+        <script src="./assets/vendors/swiper/js/swiper.min.js"></script>
 
         <!-- Javascript File -->
         <script src="./assets/js/theme.js?cb=1583937029097"></script>

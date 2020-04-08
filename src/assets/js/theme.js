@@ -200,6 +200,22 @@ $(document).ready(function(){
             $('.sad-line').removeClass('happy-line');
         }
     );
+
+    // =====================================================
+    //      Init swipers
+    // =====================================================
+    $('.swiper-init').each(function () {
+        var slider = $(this);
+
+        new Swiper(slider, {
+            slidesPerView: 'auto',
+            spaceBetween: 0,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    });
 });
 
 // unSelect categories checkbox function

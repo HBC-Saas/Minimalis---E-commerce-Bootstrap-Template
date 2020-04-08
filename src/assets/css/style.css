@@ -16996,6 +16996,33 @@ hr.border-white {
 /*--------------------------
  Style ---------------------
 --------------------------*/
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 992px) {
+  .luxury-swiper .swiper-slide:nth-child(1n) {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+  }
+  .luxury-swiper .swiper-slide:nth-child(3n+2) {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+  .luxury-swiper .swiper-slide:nth-child(3n) {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .luxury-swiper .swiper-slide {
+    flex: 0 0 70%;
+    max-width: 70%;
+  }
+}
+
 .cart-icon {
   position: relative;
   display: inline-block;
