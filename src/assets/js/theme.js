@@ -188,6 +188,18 @@ $(document).ready(function(){
             $('.reset-color').addClass('d-none');
         }
     });
+
+    /*===================================================
+    *     make cart and wishlist happy
+    * ===================================================*/
+    $('.start-shopping').hover(
+        function(){
+            $('.sad-line').addClass('happy-line');
+        },
+        function(){
+            $('.sad-line').removeClass('happy-line');
+        }
+    );
 });
 
 // unSelect categories checkbox function
@@ -222,7 +234,6 @@ function UnSelectAllColors(){
         }
     }
 }
-
 
 // init Cocoen
 new Cocoen(document.querySelector('.cocoen'));
