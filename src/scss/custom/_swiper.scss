@@ -69,7 +69,6 @@
 .swiper-container {
   width: 100%;
   height: 100%;
-  margin: 0 15px;
 }
 
 // luxury swiper
@@ -77,28 +76,40 @@
   .luxury-swiper {
     .swiper-slide {
       &:nth-child(1n) {
-        flex: 0 0 calc(41.66667% - 30px);
-        max-width: calc(41.66667% - 30px);
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
       }
 
       &:nth-child(3n+2) {
-        flex: 0 0 calc(33.33333% - 30px);
-        max-width: calc(33.33333% - 30px);
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
       }
 
       &:nth-child(3n) {
-        flex: 0 0 calc(25% - 30px);
-        max-width: calc(25% - 30px);
+        flex: 0 0 25%;
+        max-width: 25%;
       }
     }
   }
 }
 
 @include media-breakpoint-between(sm, md) {
+  .swiper-row {
+    .luxury-swiper {
+      .swiper-slide {
+        &:first-child {
+          margin-left: -15px;
+        }
+        &:last-child {
+          margin-right: -15px;
+        }
+      }
+    }
+  }
   .luxury-swiper {
     .swiper-slide {
-      flex: 0 0 calc(70% - 30px);
-      max-width: calc(70% - 30px);
+      flex: 0 0 70%;
+      max-width: 70%;
     }
   }
 }
@@ -107,17 +118,21 @@
 @include media-breakpoint-between(lg, xl) {
   .service-swiper {
     .swiper-slide {
-      flex: 0 0 calc(33.3333% - 30px);
-      max-width: calc(33.3333% - 30px);
+      flex: 0 0 33.3333%;
+      max-width: 33.3333%;
     }
   }
 }
 @include media-breakpoint-between(sm, md) {
+  .swiper-row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .service-swiper {
-    margin: 0 15px;
     .swiper-slide {
-      flex: 0 0 calc(50% - 30px);
-      max-width: calc(50% - 30px);
+      flex: 0 0 50%;
+      max-width: 50%;
     }
   }
 }
