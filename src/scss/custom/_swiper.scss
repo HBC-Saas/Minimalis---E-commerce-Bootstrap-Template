@@ -95,9 +95,29 @@
 
 @include media-breakpoint-between(sm, md) {
   .luxury-swiper {
+    margin: 0 15px;
     .swiper-slide {
       flex: 0 0 70%;
       max-width: 70%;
+    }
+  }
+}
+
+// service swiper
+@include media-breakpoint-between(lg, xl) {
+  .service-swiper {
+    .swiper-slide {
+      flex: 0 0 33.3333%;
+      max-width: 33.3333%;
+    }
+  }
+}
+@include media-breakpoint-between(sm, md) {
+  .service-swiper {
+    margin: 0 15px;
+    .swiper-slide {
+      flex: 0 0 50%;
+      max-width: 50%;
     }
   }
 }

@@ -207,14 +207,34 @@ $(document).ready(function(){
     $('.swiper-init').each(function () {
         var slider = $(this);
 
-        new Swiper(slider, {
-            slidesPerView: 'auto',
-            spaceBetween: 0,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
+        new Swiper(slider);
+    });
+
+    // luxury swiper
+    var luxurySwiper = new Swiper('.luxury-swiper', {
+        slidesPerView: 'auto',
+        spaceBetween: 0,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+
+    // service swiper
+    var serviceSwiper = new Swiper('.service-swiper', {
+        loop: true,
+        spaceBetween: 0,
+        slidesPerView: 'auto',
+        centeredSlides: true,
+
+        breakpoints: {
+            992: {
+                loop: false,
+                spaceBetween: 0,
+                slidesPerView: 'auto',
+                centeredSlides: false,
             },
-        });
+        }
     });
 });
 
