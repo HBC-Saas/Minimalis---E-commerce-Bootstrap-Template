@@ -31,6 +31,42 @@ p, a {
   font-size: $small-font-size;
 }
 
+// font sizes
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    .font#{$infix}-display1  {
+      font-size: $display1-size;
+      line-height: $display-line-height;
+    }
+    .font#{$infix}-h1  {
+      font-size: $h1-font-size;
+      line-height: 2.375rem;
+    }
+    .font#{$infix}-h2  {
+      font-size: $h2-font-size;
+      line-height: 2.125rem;
+    }
+    .font#{$infix}-h3  {
+      font-size: $h3-font-size;
+      line-height: 1.75rem;
+    }
+    .font#{$infix}-h4  {
+      font-size: $h4-font-size;
+      line-height: 1.625rem;
+    }
+    .font#{$infix}-h5  {
+      font-size: $h5-font-size;
+      line-height: 1.375rem;
+    }
+    .font#{$infix}-h6  {
+      font-size: $h6-font-size;
+      line-height: 1.125rem;
+    }
+  }
+}
+
 // divider
 hr {
   &.border-white {
