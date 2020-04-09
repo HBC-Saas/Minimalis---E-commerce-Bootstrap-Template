@@ -1,0 +1,38 @@
+// Shopping cart and wishlist Empty icons design
+.cart-icon {
+  position: relative;
+  display: inline-block;
+
+  img {
+    position: absolute;
+    width: 20px;
+  }
+
+  &.shopping-cart {
+    img {
+      right: 24px;
+      bottom: -5px;
+    }
+  }
+
+  &.wishlist-cart {
+    img {
+      left: 50%;
+      top: 50%;
+      margin-left: -10px;
+    }
+  }
+
+  [class^="flaticon-"]:before,
+  [class*="flaticon-"]:before {
+    font-size: 5rem;
+  }
+
+  .sad-line {
+    @include transition(.2s);
+  }
+
+  .happy-line {
+    transform: rotate(180deg);
+  }
+}

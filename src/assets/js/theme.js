@@ -188,6 +188,55 @@ $(document).ready(function(){
             $('.reset-color').addClass('d-none');
         }
     });
+
+    /*===================================================
+    *     make cart and wishlist happy
+    * ===================================================*/
+    $('.start-shopping').hover(
+        function(){
+            $('.sad-line').addClass('happy-line');
+        },
+        function(){
+            $('.sad-line').removeClass('happy-line');
+        }
+    );
+
+    // =====================================================
+    //      Init swipers
+    // =====================================================
+    $('.swiper-init').each(function () {
+        var slider = $(this);
+
+        new Swiper(slider);
+    });
+
+    // luxury swiper
+    var luxurySwiper = new Swiper('.luxury-swiper', {
+        slidesPerView: 'auto',
+        spaceBetween: 0,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+
+    // service swiper
+    var serviceSwiper = new Swiper('.service-swiper', {
+        loop: false,
+        spaceBetween: 0,
+        slidesPerView: 'auto',
+        centeredSlides: false,
+
+        breakpoints: {
+            575: {
+                initialSlide: 1,
+                centeredSlides: true,
+            },
+            992: {
+                centeredSlides: false,
+            },
+        }
+    });
 });
 
 // unSelect categories checkbox function
@@ -222,7 +271,6 @@ function UnSelectAllColors(){
         }
     }
 }
-
 
 // init Cocoen
 new Cocoen(document.querySelector('.cocoen'));

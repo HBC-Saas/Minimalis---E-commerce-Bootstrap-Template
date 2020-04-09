@@ -338,6 +338,357 @@
 &lt;/div&gt;</code></pre>
                         </div><!-- end tab-pane -->
                     </div><!-- end tab-content -->
+
+                    <hr class="mt-5 mb-5" />
+
+                    <h3 class="mb-2 font-weight-bold">Modal Cart</h3>
+
+                    <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark active" href="#result4" data-toggle="tab" role="tab" aria-controls="result4" aria-selected="true">Result</a>
+                        </li><!-- end nav-item -->
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#code4" data-toggle="tab" role="tab" aria-controls="code4" aria-selected="false">
+                                Code <i class="fas fa-code ml-1"></i>
+                            </a>
+                        </li><!-- end nav-item -->
+                    </ul><!-- end nav -->
+
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="result4" role="tabpanel">
+                            <button class="btn btn-dark mr-3 mb-3" data-toggle="modal" data-target="#modalCart">Modal Cart</button>
+                        </div><!-- end tab-pane -->
+
+                        <div class="tab-pane fade" id="code4" role="tabpanel">
+                            <pre><code class="lang-html">&lt;button class="btn btn-dark mr-3 mb-3" data-toggle="modal" data-target="#modalCart"&gt;Modal Cart&lt;/button&gt;
+
+&lt;!-- Modal Cart --&gt;
+&lt;div class="modal fixed-right fade" id="modalCart" tabindex="-1" role="dialog" aria-labelledby="modalCartLabel" aria-hidden="true"&gt;
+    &lt;div class="modal-dialog modal-dialog-vertical  modal-dialog-scrollable" role="document"&gt;
+        &lt;div class="modal-content border-top-0"&gt;
+            &lt;div class="modal-header align-items-center"&gt;
+                &lt;h4 class="modal-title font-weight-bold"&gt;My Cart&lt;/h4&gt;
+                &lt;button type="button" class="close" data-dismiss="modal" aria-label="Close"&gt;
+                    &lt;span class="flaticon-close h5" aria-hidden="true"&gt;&lt;/span&gt;
+                &lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class="modal-body py-0"&gt;
+                &lt;ul class="list-group list-group-lg list-group-flush"&gt;
+                    &lt;li class="list-group-item"&gt;
+                        &lt;div class="row align-items-end"&gt;
+                            &lt;div class="col-auto"&gt;
+                                &lt;img width="99" class="img-fluid" src="../assets/img/products/product_small.png" alt="product"&gt;
+                            &lt;/div&gt;
+                            &lt;div class="col pl-2"&gt;
+                                &lt;h5 class="mb-2 font-weight-bold"&gt;Minimal Lamp&lt;/h5&gt;
+                                &lt;h5 class="mb-0 font-weight-normal"&gt;$20.00&lt;/h5&gt;
+
+                                &lt;div class="d-flex align-items-end justify-content-between"&gt;
+                                    &lt;div class="qty-container mt-3"&gt;
+                                        &lt;div class="input-group"&gt;
+                                            &lt;input type="text" class="form-control" name="field1" value="1"&gt;
+                                            &lt;div class="input-group-append"&gt;
+                                                &lt;button class="qty" type="button" data-func="plus" data-field="field1"&gt;&lt;i class="flaticon-play-button"&gt;&lt;/i&gt;&lt;/button&gt;
+                                                &lt;button class="qty" type="button" data-func="minus" data-field="field1"&gt;&lt;i class="flaticon-play-button-1"&gt;&lt;/i&gt;&lt;/button&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+
+                                    &lt;a href="javascript:void(0);"&gt;&lt;i class="flaticon-close small mr-1"&gt;&lt;/i&gt; Remove&lt;/a&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/li&gt;
+
+                    &lt;li class="list-group-item"&gt;
+                        &lt;div class="row align-items-end"&gt;
+                            &lt;div class="col-auto"&gt;
+                                &lt;img width="99" class="img-fluid" src="../assets/img/products/product_small_2.png" alt="product"&gt;
+                            &lt;/div&gt;
+                            &lt;div class="col pl-2"&gt;
+                                &lt;h5 class="mb-2 font-weight-bold"&gt;Minimal couch for minimal home.&lt;/h5&gt;
+                                &lt;h5 class="mb-0 font-weight-normal"&gt;$250.00&lt;/h5&gt;
+
+                                &lt;div class="d-flex align-items-end justify-content-between"&gt;
+                                    &lt;div class="qty-container mt-3"&gt;
+                                        &lt;div class="input-group"&gt;
+                                            &lt;input type="text" class="form-control" name="field2" value="1"&gt;
+                                            &lt;div class="input-group-append"&gt;
+                                                &lt;button class="qty" type="button" data-func="plus" data-field="field2"&gt;&lt;i class="flaticon-play-button"&gt;&lt;/i&gt;&lt;/button&gt;
+                                                &lt;button class="qty" type="button" data-func="minus" data-field="field2"&gt;&lt;i class="flaticon-play-button-1"&gt;&lt;/i&gt;&lt;/button&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+
+                                    &lt;a href="javascript:void(0);"&gt;&lt;i class="flaticon-close small mr-1"&gt;&lt;/i&gt; Remove&lt;/a&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/li&gt;
+
+                    &lt;li class="list-group-item"&gt;
+                        &lt;div class="row align-items-end"&gt;
+                            &lt;div class="col-auto"&gt;
+                                &lt;img width="99" class="img-fluid" src="../assets/img/products/product_small_3.png" alt="product"&gt;
+                            &lt;/div&gt;
+                            &lt;div class="col pl-2"&gt;
+                                &lt;h5 class="mb-2 font-weight-bold"&gt;Minimal Chair&lt;/h5&gt;
+                                &lt;h5 class="mb-0 font-weight-normal"&gt;$20.00&lt;/h5&gt;
+
+                                &lt;div class="d-flex align-items-end justify-content-between"&gt;
+                                    &lt;div class="qty-container mt-3"&gt;
+                                        &lt;div class="input-group"&gt;
+                                            &lt;input type="text" class="form-control" name="field3" value="1"&gt;
+                                            &lt;div class="input-group-append"&gt;
+                                                &lt;button class="qty" type="button" data-func="plus" data-field="field3"&gt;&lt;i class="flaticon-play-button"&gt;&lt;/i&gt;&lt;/button&gt;
+                                                &lt;button class="qty" type="button" data-func="minus" data-field="field3"&gt;&lt;i class="flaticon-play-button-1"&gt;&lt;/i&gt;&lt;/button&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+
+                                    &lt;a href="javascript:void(0);"&gt;&lt;i class="flaticon-close small mr-1"&gt;&lt;/i&gt; Remove&lt;/a&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/li&gt;
+
+                    &lt;li class="list-group-item"&gt;
+                        &lt;div class="row align-items-end"&gt;
+                            &lt;div class="col-auto"&gt;
+                                &lt;img width="99" class="img-fluid" src="../assets/img/products/product_small.png" alt="product"&gt;
+                            &lt;/div&gt;
+                            &lt;div class="col pl-2"&gt;
+                                &lt;h5 class="mb-2 font-weight-bold"&gt;Minimal Lamp&lt;/h5&gt;
+                                &lt;h5 class="mb-0 font-weight-normal"&gt;$20.00&lt;/h5&gt;
+
+                                &lt;div class="d-flex align-items-end justify-content-between"&gt;
+                                    &lt;div class="qty-container mt-3"&gt;
+                                        &lt;div class="input-group"&gt;
+                                            &lt;input type="text" class="form-control" name="field4" value="1"&gt;
+                                            &lt;div class="input-group-append"&gt;
+                                                &lt;button class="qty" type="button" data-func="plus" data-field="field4"&gt;&lt;i class="flaticon-play-button"&gt;&lt;/i&gt;&lt;/button&gt;
+                                                &lt;button class="qty" type="button" data-func="minus" data-field="field4"&gt;&lt;i class="flaticon-play-button-1"&gt;&lt;/i&gt;&lt;/button&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+
+                                    &lt;a href="javascript:void(0);"&gt;&lt;i class="flaticon-close small mr-1"&gt;&lt;/i&gt; Remove&lt;/a&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;div class="modal-footer border-top-0"&gt;
+                &lt;div class="col-12  px-2"&gt;
+                    &lt;div class="card border-0 mb-3"&gt;
+                        &lt;div class="card-body bg-light"&gt;
+                            &lt;h5 class="font-weight-normal float-left mb-0"&gt;Subtotal:&lt;/h5&gt;
+                            &lt;h5 class="font-weight-normal float-right mb-0"&gt;$72.00&lt;/h5&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class="col-12 px-2"&gt;
+                    &lt;div class="row"&gt;
+                        &lt;div class="col-6"&gt;
+                            &lt;button type="button" class="btn btn-outline-dark btn-block" data-dismiss="modal"&gt;View Cart&lt;/button&gt;
+                        &lt;/div&gt;
+                        &lt;div class="col-6"&gt;
+                            &lt;button type="button" class="btn btn-dark btn-block"&gt;Checkout&lt;/button&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                        </div><!-- end tab-pane -->
+                    </div><!-- end tab-content -->
+
+                    <hr class="mt-5 mb-5" />
+
+                    <h3 class="mb-2 font-weight-bold">Modal Cart Empty</h3>
+
+                    <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark active" href="#result5" data-toggle="tab" role="tab" aria-controls="result5" aria-selected="true">Result</a>
+                        </li><!-- end nav-item -->
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#code5" data-toggle="tab" role="tab" aria-controls="code5" aria-selected="false">
+                                Code <i class="fas fa-code ml-1"></i>
+                            </a>
+                        </li><!-- end nav-item -->
+                    </ul><!-- end nav -->
+
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="result5" role="tabpanel">
+                            <button class="btn btn-dark mr-3 mb-3" data-toggle="modal" data-target="#modalCartEmpty">Modal Cart Empty</button>
+                        </div><!-- end tab-pane -->
+
+                        <div class="tab-pane fade" id="code5" role="tabpanel">
+                            <pre><code class="lang-html">&lt;button class="btn btn-dark mr-3 mb-3" data-toggle="modal" data-target="#modalCartEmpty"&gt;Modal Cart Empty&lt;/button&gt;
+
+&lt;!-- Modal Cart Empty --&gt;
+&lt;div class="modal fixed-right fade" id="modalCartEmpty" tabindex="-1" role="dialog" aria-labelledby="modalCartLabel" aria-hidden="true"&gt;
+    &lt;div class="modal-dialog modal-dialog-vertical  modal-dialog-scrollable" role="document"&gt;
+        &lt;div class="modal-content border-top-0"&gt;
+            &lt;div class="modal-header align-items-center"&gt;
+                &lt;h4 class="modal-title font-weight-bold"&gt;My Cart&lt;/h4&gt;
+                &lt;button type="button" class="close" data-dismiss="modal" aria-label="Close"&gt;
+                    &lt;span class="flaticon-close h5" aria-hidden="true"&gt;&lt;/span&gt;
+                &lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class="modal-body py-0"&gt;
+                &lt;div class="row justify-content-center text-center mt-7"&gt;
+                    &lt;div class="col-7"&gt;
+                        &lt;div class="cart-icon shopping-cart mb-4"&gt;
+                            &lt;i class="flaticon-shopping-cart text-dark"&gt;&lt;/i&gt;
+                            &lt;img class="sad-line" src="../assets/img/sad-line.png" alt="" /&gt;
+                        &lt;/div&gt;
+                        &lt;h5 class="font-weight-normal text-secondary mb-4"&gt;Your cart is sad.&lt;/h5&gt;
+                        &lt;a href="#" class="btn btn-outline-dark btn-block start-shopping"&gt;Start shopping&lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                        </div><!-- end tab-pane -->
+                    </div><!-- end tab-content -->
+
+                    <hr class="mt-5 mb-5" />
+
+                    <h3 class="mb-2 font-weight-bold">Modal Wishlist</h3>
+
+                    <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark active" href="#result6" data-toggle="tab" role="tab" aria-controls="result6" aria-selected="true">Result</a>
+                        </li><!-- end nav-item -->
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#code6" data-toggle="tab" role="tab" aria-controls="code6" aria-selected="false">
+                                Code <i class="fas fa-code ml-1"></i>
+                            </a>
+                        </li><!-- end nav-item -->
+                    </ul><!-- end nav -->
+
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="result6" role="tabpanel">
+                            <button class="btn btn-dark mr-3 mb-3" data-toggle="modal" data-target="#modalWishlist">Modal Wishlist</button>
+                        </div><!-- end tab-pane -->
+
+                        <div class="tab-pane fade" id="code6" role="tabpanel">
+                            <pre><code class="lang-html">&lt;button class="btn btn-dark mr-3 mb-3" data-toggle="modal" data-target="#modalWishlist"&gt;Modal Wishlist&lt;/button&gt;
+
+&lt;!-- Wishlist modal --&gt;
+&lt;div class="modal fixed-right fade" id="modalWishlist" tabindex="-1" role="dialog" aria-labelledby="modalWishlistLabel" aria-hidden="true"&gt;
+    &lt;div class="modal-dialog modal-dialog-vertical modal-dialog-scrollable" role="document"&gt;
+        &lt;div class="modal-content border-top-0 overflow-hidden"&gt;
+            &lt;div class="modal-header align-items-center"&gt;
+                &lt;h4 class="modal-title font-weight-bold"&gt;My Wishlist&lt;/h4&gt;
+                &lt;button type="button" class="close" data-dismiss="modal" aria-label="Close"&gt;
+                    &lt;span class="flaticon-close h5" aria-hidden="true"&gt;&lt;/span&gt;
+                &lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class="modal-body py-0"&gt;
+                &lt;ul class="list-group list-group-lg list-group-flush"&gt;
+                    &lt;li class="list-group-item"&gt;
+                        &lt;div class="row align-items-end"&gt;
+                            &lt;div class="col-auto"&gt;
+                                &lt;img width="99" class="img-fluid" src="../assets/img/products/product_small.png" alt="product"&gt;
+                            &lt;/div&gt;
+                            &lt;div class="col pl-2"&gt;
+                                &lt;h5 class="mb-2 font-weight-bold"&gt;Minimal Lamp&lt;/h5&gt;
+                                &lt;h5 class="mb-0 font-weight-normal"&gt;$20.00&lt;/h5&gt;
+
+                                &lt;a class="d-inline-block mt-3" href="javascript:void(0);"&gt;
+                                    &lt;i class="flaticon-close small mr-1"&gt;&lt;/i&gt; Remove
+                                &lt;/a&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/li&gt;
+
+                    &lt;li class="list-group-item"&gt;
+                        &lt;div class="row align-items-end"&gt;
+                            &lt;div class="col-auto"&gt;
+                                &lt;img width="99" class="img-fluid" src="../assets/img/products/product_small_2.png" alt="product"&gt;
+                            &lt;/div&gt;
+                            &lt;div class="col pl-2"&gt;
+                                &lt;h5 class="mb-2 font-weight-bold"&gt;Minimal Lamp&lt;/h5&gt;
+                                &lt;h5 class="mb-0 font-weight-normal"&gt;$20.00&lt;/h5&gt;
+
+                                &lt;a class="d-inline-block mt-3" href="javascript:void(0);"&gt;
+                                    &lt;i class="flaticon-close small mr-1"&gt;&lt;/i&gt; Remove
+                                &lt;/a&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/li&gt;
+
+                    &lt;li class="list-group-item"&gt;
+                        &lt;div class="row align-items-end"&gt;
+                            &lt;div class="col-auto"&gt;
+                                &lt;img width="99" class="img-fluid" src="../assets/img/products/product_small_3.png" alt="product"&gt;
+                            &lt;/div&gt;
+                            &lt;div class="col pl-2"&gt;
+                                &lt;h5 class="mb-2 font-weight-bold"&gt;Minimal Lamp&lt;/h5&gt;
+                                &lt;h5 class="mb-0 font-weight-normal"&gt;$20.00&lt;/h5&gt;
+
+                                &lt;a class="d-inline-block mt-3" href="javascript:void(0);"&gt;
+                                    &lt;i class="flaticon-close small mr-1"&gt;&lt;/i&gt; Remove
+                                &lt;/a&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/li&gt;
+
+                    &lt;li class="list-group-item"&gt;
+                        &lt;div class="row align-items-end"&gt;
+                            &lt;div class="col-auto"&gt;
+                                &lt;img width="99" class="img-fluid" src="../assets/img/products/product_small.png" alt="product"&gt;
+                            &lt;/div&gt;
+                            &lt;div class="col pl-2"&gt;
+                                &lt;h5 class="mb-2 font-weight-bold"&gt;Minimal Lamp&lt;/h5&gt;
+                                &lt;h5 class="mb-0 font-weight-normal"&gt;$20.00&lt;/h5&gt;
+
+                                &lt;a class="d-inline-block mt-3" href="javascript:void(0);"&gt;
+                                    &lt;i class="flaticon-close small mr-1"&gt;&lt;/i&gt; Remove
+                                &lt;/a&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                        </div><!-- end tab-pane -->
+                    </div><!-- end tab-content -->
+
+                    <hr class="mt-5 mb-5" />
+
+                    <h3 class="mb-2 font-weight-bold">Modal Wishlist Empty</h3>
+
+                    <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark active" href="#result7" data-toggle="tab" role="tab" aria-controls="result7" aria-selected="true">Result</a>
+                        </li><!-- end nav-item -->
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#code7" data-toggle="tab" role="tab" aria-controls="code7" aria-selected="false">
+                                Code <i class="fas fa-code ml-1"></i>
+                            </a>
+                        </li><!-- end nav-item -->
+                    </ul><!-- end nav -->
+
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="result7" role="tabpanel">
+                            <button class="btn btn-dark mr-3 mb-3" data-toggle="modal" data-target="#modalWishlistEmpty">Modal Wishlist Empty</button>
+                        </div><!-- end tab-pane -->
+
+                        <div class="tab-pane fade" id="code7" role="tabpanel">
+                            <pre><code class="lang-html">
+
+                            </code></pre>
+                        </div><!-- end tab-pane -->
+                    </div><!-- end tab-content -->
                 </div><!-- end #main col -->
             </div><!-- end row -->
         </div><!-- end container-fluid -->
@@ -449,6 +800,281 @@
             </div><!-- end modal-dialog -->
         </div><!-- end modal -->
         <!-- end Modal Subscribe Form -->
+
+        <!-- Modal Cart -->
+        <div class="modal fixed-right fade" id="modalCart" tabindex="-1" role="dialog" aria-labelledby="modalCartLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-vertical  modal-dialog-scrollable" role="document">
+                <div class="modal-content border-top-0">
+                    <div class="modal-header align-items-center">
+                        <h4 class="modal-title font-weight-bold">My Cart</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span class="flaticon-close h5" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="modal-body py-0">
+                        <ul class="list-group list-group-lg list-group-flush">
+                            <li class="list-group-item">
+                                <div class="row align-items-end">
+                                    <div class="col-auto">
+                                        <img width="99" class="img-fluid" src="../assets/img/products/product_small.png" alt="product">
+                                    </div><!-- end col -->
+                                    <div class="col pl-2">
+                                        <h5 class="mb-2 font-weight-bold">Minimal Lamp</h5>
+                                        <h5 class="mb-0 font-weight-normal">$20.00</h5>
+
+                                        <div class="d-flex align-items-end justify-content-between">
+                                            <div class="qty-container mt-3">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" name="field1" value="1">
+                                                    <div class="input-group-append">
+                                                        <button class="qty" type="button" data-func="plus" data-field="field1"><i class="flaticon-play-button"></i></button>
+                                                        <button class="qty" type="button" data-func="minus" data-field="field1"><i class="flaticon-play-button-1"></i></button>
+                                                    </div><!-- end input-group-append -->
+                                                </div><!-- end input-group -->
+                                            </div><!-- end qty-container -->
+
+                                            <a href="javascript:void(0);"><i class="flaticon-close small mr-1"></i> Remove</a>
+                                        </div>
+                                    </div><!-- end col -->
+                                </div><!-- end row -->
+                            </li><!-- end list-group -->
+
+                            <li class="list-group-item">
+                                <div class="row align-items-end">
+                                    <div class="col-auto">
+                                        <img width="99" class="img-fluid" src="../assets/img/products/product_small_2.png" alt="product">
+                                    </div><!-- end col -->
+                                    <div class="col pl-2">
+                                        <h5 class="mb-2 font-weight-bold">Minimal couch for minimal home.</h5>
+                                        <h5 class="mb-0 font-weight-normal">$250.00</h5>
+
+                                        <div class="d-flex align-items-end justify-content-between">
+                                            <div class="qty-container mt-3">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" name="field2" value="1">
+                                                    <div class="input-group-append">
+                                                        <button class="qty" type="button" data-func="plus" data-field="field2"><i class="flaticon-play-button"></i></button>
+                                                        <button class="qty" type="button" data-func="minus" data-field="field2"><i class="flaticon-play-button-1"></i></button>
+                                                    </div><!-- end input-group-append -->
+                                                </div><!-- end input-group -->
+                                            </div><!-- end qty-container -->
+
+                                            <a href="javascript:void(0);"><i class="flaticon-close small mr-1"></i> Remove</a>
+                                        </div>
+                                    </div><!-- end col -->
+                                </div><!-- end row -->
+                            </li><!-- end list-group -->
+
+                            <li class="list-group-item">
+                                <div class="row align-items-end">
+                                    <div class="col-auto">
+                                        <img width="99" class="img-fluid" src="../assets/img/products/product_small_3.png" alt="product">
+                                    </div><!-- end col -->
+                                    <div class="col pl-2">
+                                        <h5 class="mb-2 font-weight-bold">Minimal Chair</h5>
+                                        <h5 class="mb-0 font-weight-normal">$20.00</h5>
+
+                                        <div class="d-flex align-items-end justify-content-between">
+                                            <div class="qty-container mt-3">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" name="field3" value="1">
+                                                    <div class="input-group-append">
+                                                        <button class="qty" type="button" data-func="plus" data-field="field3"><i class="flaticon-play-button"></i></button>
+                                                        <button class="qty" type="button" data-func="minus" data-field="field3"><i class="flaticon-play-button-1"></i></button>
+                                                    </div><!-- end input-group-append -->
+                                                </div><!-- end input-group -->
+                                            </div><!-- end qty-container -->
+
+                                            <a href="javascript:void(0);"><i class="flaticon-close small mr-1"></i> Remove</a>
+                                        </div>
+                                    </div><!-- end col -->
+                                </div><!-- end row -->
+                            </li><!-- end list-group -->
+
+                            <li class="list-group-item">
+                                <div class="row align-items-end">
+                                    <div class="col-auto">
+                                        <img width="99" class="img-fluid" src="../assets/img/products/product_small.png" alt="product">
+                                    </div><!-- end col -->
+                                    <div class="col pl-2">
+                                        <h5 class="mb-2 font-weight-bold">Minimal Lamp</h5>
+                                        <h5 class="mb-0 font-weight-normal">$20.00</h5>
+
+                                        <div class="d-flex align-items-end justify-content-between">
+                                            <div class="qty-container mt-3">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" name="field4" value="1">
+                                                    <div class="input-group-append">
+                                                        <button class="qty" type="button" data-func="plus" data-field="field4"><i class="flaticon-play-button"></i></button>
+                                                        <button class="qty" type="button" data-func="minus" data-field="field4"><i class="flaticon-play-button-1"></i></button>
+                                                    </div><!-- end input-group-append -->
+                                                </div><!-- end input-group -->
+                                            </div><!-- end qty-container -->
+
+                                            <a href="javascript:void(0);"><i class="flaticon-close small mr-1"></i> Remove</a>
+                                        </div>
+                                    </div><!-- end col -->
+                                </div><!-- end row -->
+                            </li><!-- end list-group -->
+                        </ul><!-- end list-group -->
+                    </div><!-- end modal-body -->
+                    <div class="modal-footer border-top-0">
+                        <div class="col-12  px-2">
+                            <div class="card border-0 mb-3">
+                                <div class="card-body bg-light">
+                                    <h5 class="font-weight-normal float-left mb-0">Subtotal:</h5>
+                                    <h5 class="font-weight-normal float-right mb-0">$72.00</h5>
+                                </div><!-- end card-body -->
+                            </div><!-- end card -->
+                        </div><!-- end col -->
+
+                        <div class="col-12 px-2">
+                            <div class="row">
+                                <div class="col-6">
+                                    <button type="button" class="btn btn-outline-dark btn-block" data-dismiss="modal">View Cart</button>
+                                </div><!-- end col -->
+                                <div class="col-6">
+                                    <button type="button" class="btn btn-dark btn-block">Checkout</button>
+                                </div><!-- end col -->
+                            </div><!-- end row -->
+                        </div><!-- end col -->
+                    </div><!-- end modal-footer -->
+                </div><!-- end modal-content -->
+            </div><!-- end modal-dialog -->
+        </div><!-- end modal -->
+
+        <!-- Modal Cart Empty -->
+        <div class="modal fixed-right fade" id="modalCartEmpty" tabindex="-1" role="dialog" aria-labelledby="modalCartLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-vertical  modal-dialog-scrollable" role="document">
+                <div class="modal-content border-top-0">
+                    <div class="modal-header align-items-center">
+                        <h4 class="modal-title font-weight-bold">My Cart</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span class="flaticon-close h5" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="modal-body py-0">
+                        <div class="row justify-content-center text-center mt-7">
+                            <div class="col-7">
+                                <div class="cart-icon shopping-cart mb-4">
+                                    <i class="flaticon-shopping-cart text-dark"></i>
+                                    <img class="sad-line" src="../assets/img/sad-line.png" alt="" />
+                                </div>
+                                <h5 class="font-weight-normal text-secondary mb-4">Your cart is sad.</h5>
+                                <a href="#" class="btn btn-outline-dark btn-block start-shopping">Start shopping</a>
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+                    </div><!-- end modal-body -->
+                </div><!-- end modal-content -->
+            </div><!-- end modal-dialog -->
+        </div><!-- end modal -->
+
+        <!-- Wishlist modal -->
+        <div class="modal fixed-right fade" id="modalWishlist" tabindex="-1" role="dialog" aria-labelledby="modalWishlistLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-vertical modal-dialog-scrollable" role="document">
+                <div class="modal-content border-top-0 overflow-hidden">
+                    <div class="modal-header align-items-center">
+                        <h4 class="modal-title font-weight-bold">My Wishlist</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span class="flaticon-close h5" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="modal-body py-0">
+                        <ul class="list-group list-group-lg list-group-flush">
+                            <li class="list-group-item">
+                                <div class="row align-items-end">
+                                    <div class="col-auto">
+                                        <img width="99" class="img-fluid" src="../assets/img/products/product_small.png" alt="product">
+                                    </div><!-- end col -->
+                                    <div class="col pl-2">
+                                        <h5 class="mb-2 font-weight-bold">Minimal Lamp</h5>
+                                        <h5 class="mb-0 font-weight-normal">$20.00</h5>
+
+                                        <a class="d-inline-block mt-3" href="javascript:void(0);">
+                                            <i class="flaticon-close small mr-1"></i> Remove
+                                        </a>
+                                    </div><!-- end col -->
+                                </div><!-- end row -->
+                            </li><!-- end list-group -->
+
+                            <li class="list-group-item">
+                                <div class="row align-items-end">
+                                    <div class="col-auto">
+                                        <img width="99" class="img-fluid" src="../assets/img/products/product_small_2.png" alt="product">
+                                    </div><!-- end col -->
+                                    <div class="col pl-2">
+                                        <h5 class="mb-2 font-weight-bold">Minimal Lamp</h5>
+                                        <h5 class="mb-0 font-weight-normal">$20.00</h5>
+
+                                        <a class="d-inline-block mt-3" href="javascript:void(0);">
+                                            <i class="flaticon-close small mr-1"></i> Remove
+                                        </a>
+                                    </div><!-- end col -->
+                                </div><!-- end row -->
+                            </li><!-- end list-group -->
+
+                            <li class="list-group-item">
+                                <div class="row align-items-end">
+                                    <div class="col-auto">
+                                        <img width="99" class="img-fluid" src="../assets/img/products/product_small_3.png" alt="product">
+                                    </div><!-- end col -->
+                                    <div class="col pl-2">
+                                        <h5 class="mb-2 font-weight-bold">Minimal Lamp</h5>
+                                        <h5 class="mb-0 font-weight-normal">$20.00</h5>
+
+                                        <a class="d-inline-block mt-3" href="javascript:void(0);">
+                                            <i class="flaticon-close small mr-1"></i> Remove
+                                        </a>
+                                    </div><!-- end col -->
+                                </div><!-- end row -->
+                            </li><!-- end list-group -->
+
+                            <li class="list-group-item">
+                                <div class="row align-items-end">
+                                    <div class="col-auto">
+                                        <img width="99" class="img-fluid" src="../assets/img/products/product_small.png" alt="product">
+                                    </div><!-- end col -->
+                                    <div class="col pl-2">
+                                        <h5 class="mb-2 font-weight-bold">Minimal Lamp</h5>
+                                        <h5 class="mb-0 font-weight-normal">$20.00</h5>
+
+                                        <a class="d-inline-block mt-3" href="javascript:void(0);">
+                                            <i class="flaticon-close small mr-1"></i> Remove
+                                        </a>
+                                    </div><!-- end col -->
+                                </div><!-- end row -->
+                            </li><!-- end list-group -->
+                        </ul><!-- end list-group -->
+                    </div><!-- end modal-body -->
+                </div><!-- end modal-content -->
+            </div><!-- end modal-dialog -->
+        </div><!-- end modal -->
+
+        <!-- Modal Wishlist Empty -->
+        <div class="modal fixed-right fade" id="modalWishlistEmpty" tabindex="-1" role="dialog" aria-labelledby="modalWishlistLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-vertical  modal-dialog-scrollable" role="document">
+                <div class="modal-content border-top-0">
+                    <div class="modal-header align-items-center">
+                        <h4 class="modal-title font-weight-bold">My Cart</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span class="flaticon-close h5" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="modal-body py-0">
+                        <div class="row justify-content-center text-center mt-7">
+                            <div class="col-7">
+                                <div class="cart-icon wishlist-cart mb-4">
+                                    <i class="flaticon-heart text-dark"></i>
+                                    <img class="sad-line" src="../assets/img/sad-line.png" alt="" />
+                                </div>
+                                <h5 class="font-weight-normal text-secondary mb-4">Your wishlist is sad.</h5>
+                                <a href="#" class="btn btn-outline-dark btn-block start-shopping">Start shopping</a>
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+                    </div><!-- end modal-body -->
+                </div><!-- end modal-content -->
+            </div><!-- end modal-dialog -->
+        </div><!-- end modal -->
 
         <!-- Javascript vendors -->
         <script src="../assets/vendors/jquery/jquery.min.js"></script>
