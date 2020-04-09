@@ -213,7 +213,7 @@ $(document).ready(function(){
     // luxury swiper
     var luxurySwiper = new Swiper('.luxury-swiper', {
         slidesPerView: 'auto',
-        spaceBetween: 0,
+        spaceBetween: 30,
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
@@ -222,15 +222,19 @@ $(document).ready(function(){
 
     // service swiper
     var serviceSwiper = new Swiper('.service-swiper', {
-        loop: true,
-        spaceBetween: 0,
+        loop: false,
+        spaceBetween: 30,
         slidesPerView: 'auto',
-        centeredSlides: true,
+        centeredSlides: false,
 
         breakpoints: {
+            630: {
+                loop: true,
+                slidesPerView: 'auto',
+                centeredSlides: true,
+            },
             992: {
                 loop: false,
-                spaceBetween: 0,
                 slidesPerView: 'auto',
                 centeredSlides: false,
             },
