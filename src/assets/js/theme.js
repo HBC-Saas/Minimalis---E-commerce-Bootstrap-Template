@@ -210,14 +210,22 @@ $(document).ready(function(){
         new Swiper(slider);
     });
 
+    // SLIDER
+    var sliderSwiper = new Swiper('.swiper-container.home-slider', {
+        effect: 'fade',
+        pagination: {
+            el: '.swiper-pagination.pagination-dots, .swiper-pagination.pagination-numbers',
+            clickable: true,
+            renderBullet: function (index, className) {
+                return '<span class="' + className + '">' + index + '</span>';
+            },
+        },
+    });
+
     // luxury swiper
     var luxurySwiper = new Swiper('.luxury-swiper', {
         slidesPerView: 'auto',
         spaceBetween: 0,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
     });
 
     // service swiper

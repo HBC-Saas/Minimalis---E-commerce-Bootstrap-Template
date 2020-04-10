@@ -16575,22 +16575,22 @@ p, a {
 
 .font-size-display1 {
   font-size: 4.375rem;
-  line-height: 1.5;
+  line-height: 85px;
 }
 
 .font-size-display2 {
   font-size: 3.75rem;
-  line-height: 1.5;
+  line-height: 75px;
 }
 
 .font-size-display3 {
   font-size: 3.125rem;
-  line-height: 1.5;
+  line-height: 65px;
 }
 
 .font-size-display4 {
   font-size: 2.5rem;
-  line-height: 1.5;
+  line-height: 55px;
 }
 
 .font-size-h1 {
@@ -16626,19 +16626,19 @@ p, a {
 @media (min-width: 576px) {
   .font-size-sm-display1 {
     font-size: 4.375rem;
-    line-height: 1.5;
+    line-height: 85px;
   }
   .font-size-sm-display2 {
     font-size: 3.75rem;
-    line-height: 1.5;
+    line-height: 75px;
   }
   .font-size-sm-display3 {
     font-size: 3.125rem;
-    line-height: 1.5;
+    line-height: 65px;
   }
   .font-size-sm-display4 {
     font-size: 2.5rem;
-    line-height: 1.5;
+    line-height: 55px;
   }
   .font-size-sm-h1 {
     font-size: 1.875rem;
@@ -16669,19 +16669,19 @@ p, a {
 @media (min-width: 768px) {
   .font-size-md-display1 {
     font-size: 4.375rem;
-    line-height: 1.5;
+    line-height: 85px;
   }
   .font-size-md-display2 {
     font-size: 3.75rem;
-    line-height: 1.5;
+    line-height: 75px;
   }
   .font-size-md-display3 {
     font-size: 3.125rem;
-    line-height: 1.5;
+    line-height: 65px;
   }
   .font-size-md-display4 {
     font-size: 2.5rem;
-    line-height: 1.5;
+    line-height: 55px;
   }
   .font-size-md-h1 {
     font-size: 1.875rem;
@@ -16712,19 +16712,19 @@ p, a {
 @media (min-width: 992px) {
   .font-size-lg-display1 {
     font-size: 4.375rem;
-    line-height: 1.5;
+    line-height: 85px;
   }
   .font-size-lg-display2 {
     font-size: 3.75rem;
-    line-height: 1.5;
+    line-height: 75px;
   }
   .font-size-lg-display3 {
     font-size: 3.125rem;
-    line-height: 1.5;
+    line-height: 65px;
   }
   .font-size-lg-display4 {
     font-size: 2.5rem;
-    line-height: 1.5;
+    line-height: 55px;
   }
   .font-size-lg-h1 {
     font-size: 1.875rem;
@@ -16755,19 +16755,19 @@ p, a {
 @media (min-width: 1200px) {
   .font-size-xl-display1 {
     font-size: 4.375rem;
-    line-height: 1.5;
+    line-height: 85px;
   }
   .font-size-xl-display2 {
     font-size: 3.75rem;
-    line-height: 1.5;
+    line-height: 75px;
   }
   .font-size-xl-display3 {
     font-size: 3.125rem;
-    line-height: 1.5;
+    line-height: 65px;
   }
   .font-size-xl-display4 {
     font-size: 2.5rem;
-    line-height: 1.5;
+    line-height: 55px;
   }
   .font-size-xl-h1 {
     font-size: 1.875rem;
@@ -17215,14 +17215,68 @@ hr.border-white {
 /*--------------------------
  Functions -----------------
 --------------------------*/
-/*--------------------------
- Style ---------------------
---------------------------*/
+/*----------------------------------
+ General style ---------------------
+----------------------------------*/
 .swiper-container {
   width: 100%;
   height: 100%;
 }
 
+/*----------------------------------
+ home swiper ---------------------
+----------------------------------*/
+.hero-slider {
+  position: relative;
+}
+
+.home-slider .home-slider-inner {
+  min-height: 700px;
+}
+
+.home-slider .bg-cover {
+  min-height: 700px;
+}
+
+.pagination-container {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  z-index: 9999;
+  background-color: indigo;
+}
+
+.swiper-pagination {
+  width: auto !important;
+}
+
+.pagination-dots {
+  font-size: 0;
+}
+
+.pagination-numbers {
+  right: 30px;
+}
+
+.pagination-numbers .swiper-pagination-bullet {
+  width: auto;
+  border-radius: 0;
+  height: auto;
+  background-color: #fff;
+  padding: 5px;
+  color: #000;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.pagination-numbers .swiper-pagination-bullet-active {
+  color: #fff;
+  background: #007aff;
+}
+
+/*----------------------------------
+ luxury swiper ---------------------
+----------------------------------*/
 @media (min-width: 992px) {
   .luxury-swiper .swiper-slide:nth-child(1n) {
     flex: 0 0 41.66667%;
@@ -17251,6 +17305,9 @@ hr.border-white {
   }
 }
 
+/*----------------------------------
+ service swiper --------------------
+----------------------------------*/
 @media (min-width: 992px) {
   .service-swiper .swiper-slide {
     flex: 0 0 33.3333%;
@@ -17267,6 +17324,11 @@ hr.border-white {
     flex: 0 0 50%;
     max-width: 50%;
   }
+}
+
+.bg-cover {
+  object-fit: cover;
+  object-position: center;
 }
 
 .cart-icon {

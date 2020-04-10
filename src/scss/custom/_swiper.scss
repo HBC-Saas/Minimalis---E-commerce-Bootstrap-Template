@@ -63,15 +63,73 @@
   @return $string;
 }
 
-/*--------------------------
- Style ---------------------
---------------------------*/
+/*----------------------------------
+ General style ---------------------
+----------------------------------*/
 .swiper-container {
   width: 100%;
   height: 100%;
 }
 
-// luxury swiper
+/*----------------------------------
+ home swiper ---------------------
+----------------------------------*/
+.hero-slider {
+  position: relative;
+}
+
+.home-slider {
+  .home-slider-inner {
+    min-height: 700px;
+  }
+
+  .bg-cover {
+    min-height: 700px;
+  }
+}
+
+.pagination-container {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  z-index: 9999;
+  background-color: indigo;
+}
+
+.swiper-pagination {
+  width: auto!important;
+}
+
+.pagination-dots {
+  font-size:0;
+}
+
+.pagination-numbers {
+  right: 30px;
+}
+
+.pagination-numbers {
+  .swiper-pagination-bullet {
+    width: auto;
+    border-radius: 0;
+    height: auto;
+    background-color: #fff;
+    padding: 5px;
+    color: #000;
+    opacity: 1;
+    background: rgba(0,0,0,0.2);
+  }
+
+  .swiper-pagination-bullet-active {
+    color:#fff;
+    background: #007aff;
+  }
+}
+
+
+/*----------------------------------
+ luxury swiper ---------------------
+----------------------------------*/
 @include media-breakpoint-between(lg, xl) {
   .luxury-swiper {
     .swiper-slide {
@@ -114,7 +172,9 @@
   }
 }
 
-// service swiper
+/*----------------------------------
+ service swiper --------------------
+----------------------------------*/
 @include media-breakpoint-between(lg, xl) {
   .service-swiper {
     .swiper-slide {
