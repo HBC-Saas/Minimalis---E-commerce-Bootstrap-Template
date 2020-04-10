@@ -17226,39 +17226,53 @@ hr.border-white {
 /*----------------------------------
  home swiper ---------------------
 ----------------------------------*/
-.hero-slider {
-  position: relative;
-}
-
 .home-slider .home-slider-inner {
-  min-height: 700px;
+  min-height: 746px;
 }
 
 .home-slider .bg-cover {
-  min-height: 700px;
+  min-height: 746px;
 }
 
-.pagination-container {
+.home-slider .pagination-container {
   position: absolute;
-  bottom: 30px;
+  bottom: 40px;
   width: 100%;
   z-index: 9999;
   background-color: indigo;
 }
 
-.swiper-pagination {
+.home-slider .swiper-pagination {
   width: auto !important;
 }
 
-.pagination-dots {
+.home-slider .pagination-dots {
   font-size: 0;
+  background: gold;
+  display: flex;
+  align-items: flex-end;
 }
 
-.pagination-numbers {
+.home-slider .pagination-dots .swiper-pagination-bullet {
+  width: 11px;
+  height: 22px;
+  border-radius: 0;
+  margin-right: 8px;
+  opacity: 1;
+  background: #e9e9e9;
+  outline: none;
+}
+
+.home-slider .pagination-dots .swiper-pagination-bullet-active {
+  background: #1e1e1e;
+  height: 34px;
+}
+
+.home-slider .pagination-numbers {
   right: 30px;
 }
 
-.pagination-numbers .swiper-pagination-bullet {
+.home-slider .pagination-numbers .swiper-pagination-bullet {
   width: auto;
   border-radius: 0;
   height: auto;
@@ -17269,7 +17283,7 @@ hr.border-white {
   background: rgba(0, 0, 0, 0.2);
 }
 
-.pagination-numbers .swiper-pagination-bullet-active {
+.home-slider .pagination-numbers .swiper-pagination-bullet-active {
   color: #fff;
   background: #007aff;
 }
@@ -17329,6 +17343,12 @@ hr.border-white {
 .bg-cover {
   object-fit: cover;
   object-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
 }
 
 .cart-icon {
