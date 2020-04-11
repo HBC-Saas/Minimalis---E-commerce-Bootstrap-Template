@@ -86,52 +86,62 @@
   // Paginations
   .pagination-container {
     position: absolute;
-    bottom: 40px;
+    bottom: 10px;
     width: 100%;
-    z-index: 9999;
-    background-color: indigo;
   }
 
   .swiper-pagination {
     width: auto!important;
+    bottom: 0;
   }
 
   .pagination-dots {
     font-size:0;
-    background: gold;
     display: flex;
     align-items: flex-end;
+    height: 34px;
     .swiper-pagination-bullet {
       width: 11px;
       height: 22px;
       border-radius: 0;
       margin-right: 8px;
-      opacity: 1;
-      background: $gray-200;
+      opacity: .15;
+      background: $dark;
       outline: none;
+      @include transition(.2s);
     }
     .swiper-pagination-bullet-active {
       background: $dark;
       height: 34px;
+      opacity: 1;
     }
   }
 
   .pagination-numbers {
+    height: 50px;
+    overflow: hidden;
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: $font-weight-light;
     right: 30px;
-    .swiper-pagination-bullet {
+    width: 50px!important;
+  .swiper-pagination-bullet {
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate3d(0, -150%, 0);
       width: auto;
       border-radius: 0;
       height: auto;
-      background-color: #fff;
-      padding: 5px;
-      color: #000;
-      opacity: 1;
-      background: rgba(0,0,0,0.2);
+      color: $dark;
+      opacity: 0;
+      background-color: transparent;
+      @include transition(.3s);
     }
 
     .swiper-pagination-bullet-active {
-      color:#fff;
-      background: #007aff;
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
     }
   }
 }
