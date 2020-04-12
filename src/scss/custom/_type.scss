@@ -38,19 +38,19 @@ p, a {
 
     .font-size#{$infix}-display1  {
       font-size: $display1-size;
-      line-height: $display-line-height;
+      line-height: 85px;
     }
     .font-size#{$infix}-display2  {
       font-size: $display2-size;
-      line-height: $display-line-height;
+      line-height: 75px;
     }
     .font-size#{$infix}-display3  {
       font-size: $display3-size;
-      line-height: $display-line-height;
+      line-height: 65px;
     }
     .font-size#{$infix}-display4  {
       font-size: $display4-size;
-      line-height: $display-line-height;
+      line-height: 55px;
     }
     .font-size#{$infix}-h1  {
       font-size: $h1-font-size;
@@ -130,15 +130,6 @@ hr {
           }
         }
       }
-    }
-  }
-}
-
-// text hover
-@each $color, $value in $theme-colors {
-  .text-hover-#{$color} {
-    @include hover() {
-      color: $value!important;
     }
   }
 }

@@ -10,47 +10,79 @@
   }
 }
 
+
+// Alternate buttons
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    @each $color, $value in $theme-colors {
+      .btn#{$infix}-#{$color} {
+        @include button-variant($value, $value);
+      }
+    }
+
+    @each $color, $value in $theme-colors {
+      .btn-outline#{$infix}-#{$color} {
+        @include button-outline-variant($value);
+      }
+    }
+  }
+}
+
 //button links with colors
-@each $color, $value in $theme-colors {
-  .btn-link-#{$color} {
-    color: $value;
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
-    @include hover {
-      color: $value;
-      text-decoration: $link-hover-decoration;
-    }
+    @each $color, $value in $theme-colors {
+      .btn-link#{$infix}-#{$color} {
+        color: $value;
 
-    &:focus,
-    &.focus {
-      color: $value;
-    }
+        @include hover {
+          color: $value;
+          text-decoration: $link-hover-decoration;
+        }
 
-    &:disabled,
-    &.disabled {
-      pointer-events: none;
+        &:focus,
+        &.focus {
+          color: $value;
+        }
+
+        &:disabled,
+        &.disabled {
+          pointer-events: none;
+        }
+      }
     }
   }
 }
 
 // hover outline buttons
-@each $color, $value in $theme-colors {
-  .btn-#{$color} {
-    &.hover-outline {
-      @include hover() {
-        background-color: transparent;
-        color: $value;
-      }
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
-      &:not(:disabled):not(.disabled):active,
-      &:not(:disabled):not(.disabled).active,
-      .show > &.dropdown-toggle {
-        color: $value;
-        background-color: transparent;
-      }
+    @each $color, $value in $theme-colors {
+      .btn#{$infix}-#{$color} {
+        &.hover-outline {
+          @include hover() {
+            background-color: transparent;
+            color: $value;
+          }
 
-      &:disabled,
-      &.disabled {
-        pointer-events: none;
+          &:not(:disabled):not(.disabled):active,
+          &:not(:disabled):not(.disabled).active,
+          .show > &.dropdown-toggle {
+            color: $value;
+            background-color: transparent;
+          }
+
+          &:disabled,
+          &.disabled {
+            pointer-events: none;
+          }
+        }
       }
     }
   }
@@ -120,38 +152,56 @@
 }
 
 // arrow background colors
-@each $color, $value in $theme-colors {
-  .btn-#{$color} {
-    &.btn-arrow {
-      .arrow-icon {
-        background-color: color-yiq($value);
-        &:before, &:after { background-color: color-yiq($value); }
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    @each $color, $value in $theme-colors {
+      .btn#{$infix}-#{$color} {
+        &.btn-arrow {
+          .arrow-icon {
+            background-color: color-yiq($value);
+            &:before, &:after { background-color: color-yiq($value); }
+          }
+        }
       }
     }
   }
 }
 
 // arrow link background colors
-@each $color, $value in $theme-colors {
-  .btn-link-#{$color} {
-    &.btn-arrow {
-      .arrow-icon {
-        background-color: $value;
-        &:before, &:after { background-color: $value; }
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    @each $color, $value in $theme-colors {
+      .btn-link#{$infix}-#{$color} {
+        &.btn-arrow {
+          .arrow-icon {
+            background-color: $value;
+            &:before, &:after { background-color: $value; }
+          }
+        }
       }
     }
   }
 }
 
 // arrow background colors hover-outline buttons
-@each $color, $value in $theme-colors {
-  .btn-#{$color} {
-    &.hover-outline {
-      &.btn-arrow {
-        @include hover() {
-          .arrow-icon {
-            background-color: $value;
-            &:before, &:after { background-color: $value; }
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    @each $color, $value in $theme-colors {
+      .btn#{$infix}-#{$color} {
+        &.hover-outline {
+          &.btn-arrow {
+            @include hover() {
+              .arrow-icon {
+                background-color: $value;
+                &:before, &:after { background-color: $value; }
+              }
+            }
           }
         }
       }
