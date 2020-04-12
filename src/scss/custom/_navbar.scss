@@ -80,6 +80,11 @@
   }
 }
 
+// icon label
+.icon-label {
+  .label-value { display: none; }
+}
+
 /*===================================================
 *     Mega menu
 * ===================================================*/
@@ -325,8 +330,10 @@
           // fixed top
           &.fixed-top {
             .navbar-collapse {
-              overflow: auto;
-              max-height: calc(100vh - #{$navbar-brand-height});
+                overflow: auto;
+                .navbar-nav {
+                  max-height: calc(100vh - #{$navbar-brand-height});
+                }
             }
           }
 
@@ -384,6 +391,16 @@
             }
           }
         }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  &.fixed-top {
+    .navbar-collapse {
+      .navbar-nav {
+        height: calc(100vh - #{$navbar-brand-height});
       }
     }
   }

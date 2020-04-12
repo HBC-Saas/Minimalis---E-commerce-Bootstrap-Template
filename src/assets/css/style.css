@@ -12707,6 +12707,17 @@ select.selectpicker {
   left: 0;
 }
 
+.bg-cover {
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
 .font-weight-medium {
   font-weight: 500 !important;
 }
@@ -14038,6 +14049,10 @@ select.selectpicker {
   cursor: pointer;
 }
 
+.icon-label .label-value {
+  display: none;
+}
+
 /*===================================================
 *     Mega menu
 * ===================================================*/
@@ -14314,6 +14329,8 @@ select.selectpicker {
   }
   .navbar-expand-sm:not(.navbar-filter).fixed-top .navbar-collapse {
     overflow: auto;
+  }
+  .navbar-expand-sm:not(.navbar-filter).fixed-top .navbar-collapse .navbar-nav {
     max-height: calc(100vh - 4.5625rem);
   }
   .navbar-expand-sm:not(.navbar-filter) .navbar-nav:not(.navbar-icons) .dropdown-menu {
@@ -14520,6 +14537,8 @@ select.selectpicker {
   }
   .navbar-expand-md:not(.navbar-filter).fixed-top .navbar-collapse {
     overflow: auto;
+  }
+  .navbar-expand-md:not(.navbar-filter).fixed-top .navbar-collapse .navbar-nav {
     max-height: calc(100vh - 4.5625rem);
   }
   .navbar-expand-md:not(.navbar-filter) .navbar-nav:not(.navbar-icons) .dropdown-menu {
@@ -14726,6 +14745,8 @@ select.selectpicker {
   }
   .navbar-expand-lg:not(.navbar-filter).fixed-top .navbar-collapse {
     overflow: auto;
+  }
+  .navbar-expand-lg:not(.navbar-filter).fixed-top .navbar-collapse .navbar-nav {
     max-height: calc(100vh - 4.5625rem);
   }
   .navbar-expand-lg:not(.navbar-filter) .navbar-nav:not(.navbar-icons) .dropdown-menu {
@@ -14932,6 +14953,8 @@ select.selectpicker {
   }
   .navbar-expand-xl:not(.navbar-filter).fixed-top .navbar-collapse {
     overflow: auto;
+  }
+  .navbar-expand-xl:not(.navbar-filter).fixed-top .navbar-collapse .navbar-nav {
     max-height: calc(100vh - 4.5625rem);
   }
   .navbar-expand-xl:not(.navbar-filter) .navbar-nav:not(.navbar-icons) .dropdown-menu {
@@ -15153,6 +15176,9 @@ select.selectpicker {
 
 .navbar-expand:not(.navbar-filter).fixed-top .navbar-collapse {
   overflow: auto;
+}
+
+.navbar-expand:not(.navbar-filter).fixed-top .navbar-collapse .navbar-nav {
   max-height: calc(100vh - 4.5625rem);
 }
 
@@ -15190,6 +15216,12 @@ select.selectpicker {
 
 .navbar-expand:not(.navbar-filter).menu-border .navbar-nav:not(.navbar-icons) .nav-link {
   border-bottom: 1px solid #f7f5f6;
+}
+
+@media (max-width: 575.98px) {
+  .fixed-top .navbar-collapse .navbar-nav {
+    height: calc(100vh - 4.5625rem);
+  }
 }
 
 /* ===================================================
@@ -21941,17 +21973,9 @@ hr.border-white {
   }
 }
 
-.bg-cover {
-  object-fit: cover;
-  object-position: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-}
-
+/*----------------------------------
+ Progress swiper -------------------
+----------------------------------*/
 .cart-icon {
   position: relative;
   display: inline-block;
