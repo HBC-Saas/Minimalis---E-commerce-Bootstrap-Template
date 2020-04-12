@@ -76,31 +76,11 @@
 ----------------------------------*/
 .home-slider {
   .home-slider-inner {
-    min-height: 746px;
+    min-height: calc(100vh - #{$navbar-brand-height});
   }
 
   .bg-cover {
-    min-height: 746px;
-  }
-
-  @include media-breakpoint-down(md) {
-    .home-slider-inner {
-      min-height: 700px;
-    }
-
-    .bg-cover {
-      min-height: 700px;
-    }
-  }
-
-  @include media-breakpoint-down(sm) {
-    .home-slider-inner {
-      min-height: 600px;
-    }
-
-    .bg-cover {
-      min-height: 600px;
-    }
+    min-height: calc(100vh - #{$navbar-brand-height});
   }
 
   @include media-breakpoint-up(lg) {

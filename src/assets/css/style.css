@@ -21766,29 +21766,11 @@ hr.border-white {
  home swiper ---------------------
 ----------------------------------*/
 .home-slider .home-slider-inner {
-  min-height: 746px;
+  min-height: calc(100vh - 4.5625rem);
 }
 
 .home-slider .bg-cover {
-  min-height: 746px;
-}
-
-@media (max-width: 991.98px) {
-  .home-slider .home-slider-inner {
-    min-height: 700px;
-  }
-  .home-slider .bg-cover {
-    min-height: 700px;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .home-slider .home-slider-inner {
-    min-height: 600px;
-  }
-  .home-slider .bg-cover {
-    min-height: 600px;
-  }
+  min-height: calc(100vh - 4.5625rem);
 }
 
 @media (min-width: 992px) {
