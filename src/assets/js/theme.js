@@ -220,16 +220,27 @@ $(document).ready(function(){
                 return '<span class="' + className + '">' + (index + 1) + '</span>';
             },
         },
+
+        on: {
+            slideChangeTransitionStart: function () {
+                $('[data-aos]').css('visibility', 'hidden');
+                $('[data-aos]').removeClass('aos-init').removeClass('aos-animate');
+            },
+            slideChangeTransitionEnd: function () {
+                $('[data-aos]').css('visibility', 'visible');
+                AOS.init();
+            },
+        }
     });
 
     // luxury swiper
-    var luxurySwiper = new Swiper('.luxury-swiper', {
+    var luxurySwiper = new Swiper('.swiper-container.luxury-swiper', {
         slidesPerView: 'auto',
         spaceBetween: 0,
     });
 
     // service swiper
-    var serviceSwiper = new Swiper('.service-swiper', {
+    var serviceSwiper = new Swiper('.swiper-container.service-swiper', {
         loop: false,
         spaceBetween: 0,
         slidesPerView: 'auto',
@@ -282,3 +293,6 @@ function UnSelectAllColors(){
 
 // init Cocoen
 new Cocoen(document.querySelector('.cocoen'));
+
+//AOS animation init
+AOS.init();

@@ -133,12 +133,3 @@ hr {
     }
   }
 }
-
-// text hover
-@each $color, $value in $theme-colors {
-  .text-hover-#{$color} {
-    @include hover() {
-      color: $value!important;
-    }
-  }
-}

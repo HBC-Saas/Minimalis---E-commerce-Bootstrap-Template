@@ -1,3 +1,24 @@
 // Weight
-
 .font-weight-medium  { font-weight: $font-weight-medium !important; }
+
+// text color with breakpoints
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    @each $color, $value in $theme-colors {
+      .text#{$infix}-#{$color} {
+        color: $value!important;
+      }
+    }
+  }
+}
+
+// text hover
+@each $color, $value in $theme-colors {
+  .text-hover-#{$color} {
+    @include hover() {
+      color: $value!important;
+    }
+  }
+}
