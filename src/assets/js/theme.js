@@ -210,8 +210,8 @@ $(document).ready(function(){
         new Swiper(slider);
     });
 
-    // SLIDER
-    var sliderSwiper = new Swiper('.swiper-container.home-slider', {
+    // Hero slider (homepage slider)
+    var heroSliderSwiper = new Swiper('.swiper-container.home-slider', {
         effect: 'fade',
         pagination: {
             el: '.swiper-pagination.pagination-dots, .swiper-pagination.pagination-numbers',
@@ -256,6 +256,33 @@ $(document).ready(function(){
             },
         }
     });
+
+    // progress swiper
+    var paginationSwiper = new Swiper('.swiper-container.progress-swiper', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'progressbar',
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+
+    var fraction = $('.progress-swiper .swiper-pagination.fraction');
+    var slideLength = paginationSwiper.slides.length;
+    var totalSlides = $('<span class="total">' + '/' + slideLength + '<span/>');
+    var currentCount = $('<span class="count">3<span/>');
+    fraction.append(currentCount);
+    fraction.append(totalSlides);
+
+    paginationSwiper.on('transitionStart', function () {
+        var index = this.activeIndex + 3,
+            $current = $(".photo-slide").eq(index);
+        currentCount.html($('<span class="count next">' + index + '<span/>'));
+    });
 });
 
 // unSelect categories checkbox function
@@ -292,7 +319,9 @@ function UnSelectAllColors(){
 }
 
 // init Cocoen
-new Cocoen(document.querySelector('.cocoen'));
+document.querySelectorAll('.cocoen').forEach(function(element){
+    new Cocoen(element);
+});
 
 //AOS animation init
 AOS.init();

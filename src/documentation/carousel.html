@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="../assets/vendors/@fortawesome/fontawesome-free/css/all.min.css">
         <link rel="stylesheet" href="../assets/vendors/prismjs/themes/prism.css">
         <link rel="stylesheet" href="../assets/vendors/swiper/css/swiper.min.css">
+        <link rel="stylesheet" href="../assets/vendors/aos/aos.css">
 
         <!-- typography -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap" rel="stylesheet">
@@ -173,7 +174,9 @@
 
                             <hr class="mt-4 mb-6" />
 
-                            <h3 class="mb-2 font-weight-bold">Luxury Carousel</h3>
+                            <h3 class="mb-2 font-weight-bold">Hero slider</h3>
+
+                            <p>The full API documentation is in <a href="https://swiperjs.com/api/" target="_blank">swiper API</a> documentation page. If you need different types of animation you can look at <a href="https://michalsnik.github.io/aos/" target="_blank">AOS</a> Library.</p>
 
                             <ul class="nav nav-border border-bottom mb-4" role="tablist">
                                 <li class="nav-item">
@@ -188,6 +191,207 @@
 
                             <div class="tab-content">
                                 <div class="tab-pane fade show active" id="result1" role="tabpanel">
+                                    <!-- start hero slider -->
+                                    <section class="hero-slider">
+                                        <div class="container-fluid">
+                                            <div class="position-relative">
+                                                <div class="swiper-container home-slider">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide no-gutters bg-light">
+
+                                                            <!-- image to be displayed as background in medium and smaller screens -->
+                                                            <img class="bg-cover d-inline-block d-lg-none" src="../assets/img/slider/home-slider-1.png" alt="" />
+
+                                                            <div class="container-lg">
+                                                                <div class="row justify-content-center justify-content-lg-start">
+                                                                    <div class="col-12 col-sm-10 col-lg-6 slide-border">
+                                                                        <div class="row home-slider-inner align-items-center">
+                                                                            <div class="col-11 col-sm-9 col-md-7 col-lg-10 pt-5 pt-lg-6 pb-7 pb-lg-9">
+                                                                                <h1 class="font-weight-bolder text-light text-lg-dark font-size-display4 text-uppercase mb-3" data-aos="fade-right" data-aos-once="true">We care for home details.</h1>
+                                                                                <p class="lead text-light text-lg-dark mb-4" data-aos="fade-in" data-aos-once="true">Gorgeous collection to choose from. We picked every item with care you must try atleast once in your lifetime.</p>
+
+                                                                                <button type="button" class="btn btn-light btn-lg-dark hover-outline btn-arrow" data-aos="fade-up" data-aos-once="true">
+                                                                                    <div class="inner-btn">
+                                                                                        Explore
+                                                                                        <div class="arrow">
+                                                                                            <span class="arrow-icon"></span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </button>
+                                                                            </div><!-- end col -->
+                                                                        </div><!-- end row -->
+                                                                    </div><!-- end col -->
+                                                                </div><!-- end row -->
+                                                            </div><!-- end container -->
+
+                                                            <div class="col-lg-6 d-none d-lg-inline-block position-absolute-top-right bg-img-hero">
+                                                                <img class="bg-cover" data-aos="flip-up" data-aos-once="true" src="../assets/img/slider/home-slider-1.png" alt="" />
+                                                            </div><!-- end col -->
+                                                        </div><!-- end swiper-slide -->
+
+                                                        <div class="swiper-slide no-gutters bg-light">
+
+                                                            <!-- image to be displayed as background in medium and smaller screens -->
+                                                            <img class="bg-cover d-inline-block d-lg-none" src="../assets/img/contact/phone_img.png" alt="" />
+
+                                                            <div class="container-lg">
+                                                                <div class="row justify-content-center justify-content-lg-start">
+                                                                    <div class="col-12 col-sm-10 col-lg-6 slide-border">
+                                                                        <div class="row home-slider-inner align-items-center">
+                                                                            <div class="col-11 col-sm-9 col-md-7 col-lg-10 pt-5 pt-lg-6 pb-7 pb-lg-9">
+                                                                                <h1 class="font-weight-bolder text-dark text-lg-dark font-size-display4 text-uppercase mb-3" data-aos="fade-right" data-aos-once="true">We care for home details.</h1>
+                                                                                <p class="lead text-dark text-lg-dark mb-4" data-aos="fade-in" data-aos-once="true">Gorgeous collection to choose from. We picked every item with care you must try atleast once in your lifetime.</p>
+
+                                                                                <button type="button" class="btn btn-dark btn-lg-dark hover-outline btn-arrow" data-aos="fade-up" data-aos-once="true">
+                                                                                    <div class="inner-btn">
+                                                                                        Explore
+                                                                                        <div class="arrow">
+                                                                                            <span class="arrow-icon"></span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </button>
+                                                                            </div><!-- end col -->
+                                                                        </div><!-- end row -->
+                                                                    </div><!-- end col -->
+                                                                </div><!-- end row -->
+                                                            </div><!-- end container -->
+
+                                                            <div class="col-lg-6 d-none d-lg-inline-block position-absolute-top-right bg-img-hero">
+                                                                <img class="bg-cover" data-aos="flip-down" data-aos-once="true" src="../assets/img/contact/phone_img.png" alt="" />
+                                                            </div><!-- end col -->
+                                                        </div><!-- end swiper-slide -->
+                                                    </div><!-- end swiper-wrapper -->
+
+                                                    <div class="pagination-container">
+                                                        <div class="container-lg bg-info">
+                                                            <!-- Paginations -->
+                                                            <div class="row justify-content-center justify-content-lg-start">
+                                                                <div class="col-12 col-sm-10 col-lg-6">
+                                                                    <div class="swiper-pagination pagination-dots"></div>
+                                                                    <div class="swiper-pagination pagination-numbers d-none d-lg-inline"></div>
+                                                                </div><!-- end col -->
+                                                            </div><!-- end row -->
+                                                        </div><!-- end container -->
+                                                    </div><!-- end pagination-container -->
+                                                </div><!-- end swiper-container -->
+
+                                            </div><!-- end position-relative -->
+                                        </div><!-- end position-relative -->
+                                    </section>
+                                    <!-- end hero slider -->
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code1" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;!-- start hero slider --&gt;
+&lt;section class="hero-slider"&gt;
+    &lt;div class="container-fluid"&gt;
+        &lt;div class="position-relative"&gt;
+            &lt;div class="swiper-container home-slider"&gt;
+                &lt;div class="swiper-wrapper"&gt;
+                    &lt;div class="swiper-slide no-gutters bg-light"&gt;
+
+                        &lt;!-- image to be displayed as background in medium and smaller screens --&gt;
+                        &lt;img class="bg-cover d-inline-block d-lg-none" src="../assets/img/slider/home-slider-1.png" alt="" /&gt;
+
+                        &lt;div class="container-lg"&gt;
+                            &lt;div class="row justify-content-center justify-content-lg-start"&gt;
+                                &lt;div class="col-12 col-sm-10 col-lg-6 slide-border"&gt;
+                                    &lt;div class="row home-slider-inner align-items-center"&gt;
+                                        &lt;div class="col-11 col-sm-9 col-md-7 col-lg-10 pt-5 pt-lg-6 pb-7 pb-lg-9"&gt;
+                                            &lt;h1 class="font-weight-bolder text-light text-lg-dark font-size-display4 text-uppercase mb-3" data-aos="fade-right" data-aos-once="true"&gt;We care for home details.&lt;/h1&gt;
+                                            &lt;p class="lead text-light text-lg-dark mb-4" data-aos="fade-in" data-aos-once="true"&gt;Gorgeous collection to choose from. We picked every item with care you must try atleast once in your lifetime.&lt;/p&gt;
+
+                                            &lt;button type="button" class="btn btn-light btn-lg-dark hover-outline btn-arrow" data-aos="fade-up" data-aos-once="true"&gt;
+                                                &lt;div class="inner-btn"&gt;
+                                                    Explore
+                                                    &lt;div class="arrow"&gt;
+                                                        &lt;span class="arrow-icon"&gt;&lt;/span&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                            &lt;/button&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class="col-lg-6 d-none d-lg-inline-block position-absolute-top-right bg-img-hero"&gt;
+                            &lt;img class="bg-cover" data-aos="flip-up" data-aos-once="true" src="../assets/img/slider/home-slider-1.png" alt="" /&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="swiper-slide no-gutters bg-light"&gt;
+
+                        &lt;!-- image to be displayed as background in medium and smaller screens --&gt;
+                        &lt;img class="bg-cover d-inline-block d-lg-none" src="../assets/img/contact/phone_img.png" alt="" /&gt;
+
+                        &lt;div class="container-lg"&gt;
+                            &lt;div class="row justify-content-center justify-content-lg-start"&gt;
+                                &lt;div class="col-12 col-sm-10 col-lg-6 slide-border"&gt;
+                                    &lt;div class="row home-slider-inner align-items-center"&gt;
+                                        &lt;div class="col-11 col-sm-9 col-md-7 col-lg-10 pt-5 pt-lg-6 pb-7 pb-lg-9"&gt;
+                                            &lt;h1 class="font-weight-bolder text-dark font-size-display4 text-uppercase mb-3" data-aos="fade-right" data-aos-once="true"&gt;We care for home details.&lt;/h1&gt;
+                                            &lt;p class="lead text-dark mb-4" data-aos="fade-in" data-aos-once="true"&gt;Gorgeous collection to choose from. We picked every item with care you must try atleast once in your lifetime.&lt;/p&gt;
+
+                                            &lt;button type="button" class="btn btn-light hover-outline btn-arrow" data-aos="fade-up" data-aos-once="true"&gt;
+                                                &lt;div class="inner-btn"&gt;
+                                                    Explore
+                                                    &lt;div class="arrow"&gt;
+                                                        &lt;span class="arrow-icon"&gt;&lt;/span&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                            &lt;/button&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class="col-lg-6 d-none d-lg-inline-block position-absolute-top-right bg-img-hero"&gt;
+                            &lt;img class="bg-cover" data-aos="flip-up" data-aos-once="true" src="../assets/img/contact/phone_img.png" alt="" /&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+
+                &lt;/div&gt;
+
+                &lt;div class="pagination-container"&gt;
+                    &lt;div class="container-lg bg-info"&gt;
+                        &lt;!-- Paginations --&gt;
+                        &lt;div class="row justify-content-center justify-content-lg-start"&gt;
+                            &lt;div class="col-12 col-sm-10 col-lg-6"&gt;
+                                &lt;div class="swiper-pagination pagination-dots"&gt;&lt;/div&gt;
+                                &lt;div class="swiper-pagination pagination-numbers d-none d-lg-inline"&gt;&lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+&lt;!-- end hero slider --&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
+
+                            <hr class="mt-5 mb-5" />
+
+                            <h3 class="mb-2 font-weight-bold">Luxury Carousel</h3>
+
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result2" data-toggle="tab" role="tab" aria-controls="result2" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code2" data-toggle="tab" role="tab" aria-controls="code2" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result2" role="tabpanel">
                                     <!-- Swiper -->
                                     <div class="row swiper-row">
                                         <div class="swiper-container luxury-swiper">
@@ -291,7 +495,7 @@
                                     </div><!-- end row -->
                                 </div><!-- end tab-pane -->
 
-                                <div class="tab-pane fade" id="code1" role="tabpanel">
+                                <div class="tab-pane fade" id="code2" role="tabpanel">
                                     <pre><code class="lang-html">&lt;!-- Swiper --&gt;
 &lt;div class="row swiper-row"&gt;
     &lt;div class="swiper-container luxury-swiper"&gt;
@@ -406,17 +610,17 @@
 
                             <ul class="nav nav-border border-bottom mb-4" role="tablist">
                                 <li class="nav-item">
-                                    <a class="nav-link text-dark active" href="#result2" data-toggle="tab" role="tab" aria-controls="result2" aria-selected="true">Result</a>
+                                    <a class="nav-link text-dark active" href="#result3" data-toggle="tab" role="tab" aria-controls="result3" aria-selected="true">Result</a>
                                 </li><!-- end nav-item -->
                                 <li class="nav-item">
-                                    <a class="nav-link text-dark" href="#code2" data-toggle="tab" role="tab" aria-controls="code2" aria-selected="false">
+                                    <a class="nav-link text-dark" href="#code3" data-toggle="tab" role="tab" aria-controls="code3" aria-selected="false">
                                         Code <i class="fas fa-code ml-1"></i>
                                     </a>
                                 </li><!-- end nav-item -->
                             </ul><!-- end nav -->
 
                             <div class="tab-content">
-                                <div class="tab-pane fade show active" id="result2" role="tabpanel">
+                                <div class="tab-pane fade show active" id="result3" role="tabpanel">
                                     <!-- Swiper -->
                                     <div class="row swiper-row">
                                         <div class="swiper-container service-swiper">
@@ -461,7 +665,7 @@
                                     </div><!-- end row -->
                                 </div><!-- end tab-pane -->
 
-                                <div class="tab-pane fade" id="code2" role="tabpanel">
+                                <div class="tab-pane fade" id="code3" role="tabpanel">
                                     <pre><code class="lang-html">&lt;!-- Swiper --&gt;
 &lt;div class="row swiper-row"&gt;
     &lt;div class="swiper-container service-swiper"&gt;
@@ -508,6 +712,200 @@
                             </div><!-- end tab-content -->
                         </div><!-- end col -->
                     </div><!-- end row -->
+
+                    <hr class="mt-5 mb-5" />
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h3 class="mb-2 font-weight-bold">Progress Pagination</h3>
+
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result4" data-toggle="tab" role="tab" aria-controls="result4" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code4" data-toggle="tab" role="tab" aria-controls="code4" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result4" role="tabpanel">
+                                    <!-- Swiper -->
+                                    <div class="swiper-container progress-swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="card blog-card border-0">
+                                                    <div class="card-img overflow-hidden overlay-dark">
+                                                        <!-- Image -->
+                                                        <figure class="zoom-in mb-0">
+                                                            <img src="../assets/img/blog/blog_6.png" alt="product">
+                                                        </figure>
+
+                                                        <div class="title-block">
+                                                            <h4 class="font-weight-normal title">
+                                                                <a class="text-white" href="#">Best wood material for every minimalis home.</a>
+                                                            </h4>
+
+                                                            <button type="button" class="btn btn-link-light btn-arrow font-weight-normal px-0">
+                                                                <div class="inner-btn">
+                                                                    Read More
+                                                                    <div class="arrow">
+                                                                        <span class="arrow-icon"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                        </div><!-- end title-block -->
+                                                    </div><!-- end card-img -->
+                                                </div><!-- end card -->
+                                            </div><!-- end swiper-slide -->
+
+                                            <div class="swiper-slide">
+                                                <div class="card blog-card border-0">
+                                                    <div class="card-img overflow-hidden overlay-dark">
+                                                        <!-- Image -->
+                                                        <figure class="zoom-in mb-0">
+                                                            <img src="../assets/img/blog/blog_5.png" alt="product">
+                                                        </figure>
+
+                                                        <div class="title-block">
+                                                            <h4 class="font-weight-normal title">
+                                                                <a class="text-white" href="#">Best wood material for every minimalis home.</a>
+                                                            </h4>
+
+                                                            <button type="button" class="btn btn-link-light btn-arrow font-weight-normal px-0">
+                                                                <div class="inner-btn">
+                                                                    Read More
+                                                                    <div class="arrow">
+                                                                        <span class="arrow-icon"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                        </div><!-- end title-block -->
+                                                    </div><!-- end card-img -->
+                                                </div><!-- end card -->
+                                            </div><!-- end swiper-slide -->
+
+                                            <div class="swiper-slide">
+                                                <div class="card blog-card border-0">
+                                                    <div class="card-img overflow-hidden overlay-dark">
+                                                        <!-- Image -->
+                                                        <figure class="zoom-in mb-0">
+                                                            <img src="../assets/img/blog/blog_4.png" alt="product">
+                                                        </figure>
+
+                                                        <div class="title-block">
+                                                            <h4 class="font-weight-normal title">
+                                                                <a class="text-white" href="#">Best wood material for every minimalis home.</a>
+                                                            </h4>
+
+                                                            <button type="button" class="btn btn-link-light btn-arrow font-weight-normal px-0">
+                                                                <div class="inner-btn">
+                                                                    Read More
+                                                                    <div class="arrow">
+                                                                        <span class="arrow-icon"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                        </div><!-- end title-block -->
+                                                    </div><!-- end card-img -->
+                                                </div><!-- end card -->
+                                            </div><!-- end swiper-slide -->
+                                            <div class="swiper-slide">
+                                                <div class="card blog-card border-0">
+                                                    <div class="card-img overflow-hidden overlay-dark">
+                                                        <!-- Image -->
+                                                        <figure class="zoom-in mb-0">
+                                                            <img src="../assets/img/blog/blog_3.png" alt="product">
+                                                        </figure>
+
+                                                        <div class="title-block">
+                                                            <h4 class="font-weight-normal title">
+                                                                <a class="text-white" href="#">Best wood material for every minimalis home.</a>
+                                                            </h4>
+
+                                                            <button type="button" class="btn btn-link-light btn-arrow font-weight-normal px-0">
+                                                                <div class="inner-btn">
+                                                                    Read More
+                                                                    <div class="arrow">
+                                                                        <span class="arrow-icon"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                        </div><!-- end title-block -->
+                                                    </div><!-- end card-img -->
+                                                </div><!-- end card -->
+                                            </div><!-- end swiper-slide -->
+                                            <div class="swiper-slide">
+                                                <div class="card blog-card border-0">
+                                                    <div class="card-img overflow-hidden overlay-dark">
+                                                        <!-- Image -->
+                                                        <figure class="zoom-in mb-0">
+                                                            <img src="../assets/img/blog/blog_2.png" alt="product">
+                                                        </figure>
+
+                                                        <div class="title-block">
+                                                            <h4 class="font-weight-normal title">
+                                                                <a class="text-white" href="#">Best wood material for every minimalis home.</a>
+                                                            </h4>
+
+                                                            <button type="button" class="btn btn-link-light btn-arrow font-weight-normal px-0">
+                                                                <div class="inner-btn">
+                                                                    Read More
+                                                                    <div class="arrow">
+                                                                        <span class="arrow-icon"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                        </div><!-- end title-block -->
+                                                    </div><!-- end card-img -->
+                                                </div><!-- end card -->
+                                            </div><!-- end swiper-slide -->
+                                            <div class="swiper-slide">
+                                                <div class="card blog-card border-0">
+                                                    <div class="card-img overflow-hidden overlay-dark">
+                                                        <!-- Image -->
+                                                        <figure class="zoom-in mb-0">
+                                                            <img src="../assets/img/blog/blog_1.png" alt="product">
+                                                        </figure>
+
+                                                        <div class="title-block">
+                                                            <h4 class="font-weight-normal title">
+                                                                <a class="text-white" href="#">Best wood material for every minimalis home.</a>
+                                                            </h4>
+
+                                                            <button type="button" class="btn btn-link-light btn-arrow font-weight-normal px-0">
+                                                                <div class="inner-btn">
+                                                                    Read More
+                                                                    <div class="arrow">
+                                                                        <span class="arrow-icon"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                        </div><!-- end title-block -->
+                                                    </div><!-- end card-img -->
+                                                </div><!-- end card -->
+                                            </div><!-- end swiper-slide -->
+                                        </div>
+
+                                        <!-- Paginations -->
+                                        <div class="swiper-pagination"></div>
+                                        <div class="swiper-pagination fraction"></div>
+                                        <!-- Add Arrows -->
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
+                                    </div><!-- end swiper-container -->
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code4" role="tabpanel">
+                                    <pre><code class="lang-html">
+
+                                    </code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
+                        </div><!-- end col -->
+                    </div><!-- end row -->
                 </div><!-- end #main col -->
             </div><!-- end row -->
         </div><!-- end container-fluid -->
@@ -519,6 +917,8 @@
         <script src="../assets/vendors/prismjs/prism.js"></script>
         <script src="../assets/vendors/cocoen/js/cocoen.min.js"></script>
         <script src="../assets/vendors/swiper/js/swiper.min.js"></script>
+        <script src="../assets/vendors/object-fit-images/ofi.min.js"></script>
+        <script src="../assets/vendors/aos/aos.js"></script>
 
         <!-- Javascript File -->
         <script src="../assets/js/theme.js?cb=1583937029097"></script>
