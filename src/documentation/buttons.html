@@ -43,7 +43,7 @@
 
         <div class="container-fluid">
             <div class="row">
-                <nav class="navbar navbar-expand-md ml-sm-auto navbar-light bg-light col-md-3 col-lg-3 col-xl-2 sidebar">
+                <nav class="navbar navbar-expand-md ml-sm-auto navbar-light bg-light col-md-3 col-lg-3 col-xl-2 sidebar px-4 px-md-0">
                     <span class="navbar-brand d-md-none">Documentation</span>
                     <div class="navbar-toggler border-0 p-0">
                         <div class="custom-toggler" data-toggle="collapse" data-target="#docsCollapse" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
@@ -635,7 +635,7 @@
 
                     <div class="row">
                         <div class="col-sm-12">
-                            <h3 class="mb-2 font-weight-bold">Add to card button</h3>
+                            <h3 class="mb-2 font-weight-bold">Add to card buttons</h3>
 
                             <ul class="nav nav-border border-bottom mb-4" role="tablist">
                                 <li class="nav-item">
@@ -650,33 +650,200 @@
 
                             <div class="tab-content">
                                 <div class="tab-pane fade show active" id="result9" role="tabpanel">
-                                    <button class="btn-add-to-card btn-large" type="button">
-                                        <i class="add-to-card-active flaticon-plus h5"></i>
+                                    <button class="btn-add-to-card btn-primary btn-large" type="button">
+                                        <i class="add-to-card-active flaticon-plus text-primary h6"></i>
                                         <span class="add-to-card-hover">
-                                        <span class="add-to-card-text">Add to cart</span>
-                                    </span>
+                                            <span class="add-to-card-text text-primary">Add to cart</span>
+                                        </span>
+                                        <i class="add-to-card-success flaticon-null text-primary h5"></i>
+                                    </button>
+
+                                    <button class="btn-add-to-card btn-secondary btn-large" type="button">
+                                        <i class="add-to-card-active flaticon-plus text-secondary h6"></i>
+                                        <span class="add-to-card-hover">
+                                            <span class="add-to-card-text text-secondary">Add to cart</span>
+                                        </span>
+                                        <i class="add-to-card-success flaticon-null text-secondary h5"></i>
+                                    </button>
+
+                                    <button class="btn-add-to-card btn-success btn-large" type="button">
+                                        <i class="add-to-card-active flaticon-plus text-success h6"></i>
+                                        <span class="add-to-card-hover">
+                                            <span class="add-to-card-text text-success">Add to cart</span>
+                                        </span>
                                         <i class="add-to-card-success flaticon-null text-success h5"></i>
                                     </button>
 
-                                    <button class="btn-add-to-card btn-medium" type="button">
-                                        <i class="add-to-card-active flaticon-plus h6"></i>
+                                    <button class="btn-add-to-card btn-danger btn-large" type="button">
+                                        <i class="add-to-card-active flaticon-plus text-danger h6"></i>
                                         <span class="add-to-card-hover">
-                                        <span class="add-to-card-text">Add to cart</span>
-                                    </span>
-                                        <i class="add-to-card-success flaticon-null text-success h6"></i>
+                                            <span class="add-to-card-text text-danger">Add to cart</span>
+                                        </span>
+                                        <i class="add-to-card-success flaticon-null text-danger h5"></i>
                                     </button>
 
-                                    <button class="btn-add-to-card btn-small" type="button">
-                                        <i class="add-to-card-active flaticon-plus h6"></i>
+                                    <button class="btn-add-to-card btn-warning btn-large" type="button">
+                                        <i class="add-to-card-active flaticon-plus text-warning h6"></i>
                                         <span class="add-to-card-hover">
-                                        <span class="add-to-card-text">Add to cart</span>
-                                    </span>
-                                        <i class="add-to-card-success flaticon-null text-success h6"></i>
+                                            <span class="add-to-card-text text-warning">Add to cart</span>
+                                        </span>
+                                        <i class="add-to-card-success flaticon-null text-warning h5"></i>
+                                    </button>
+
+                                    <button class="btn-add-to-card btn-info btn-large" type="button">
+                                        <i class="add-to-card-active flaticon-plus text-info h6"></i>
+                                        <span class="add-to-card-hover">
+                                            <span class="add-to-card-text text-info">Add to cart</span>
+                                        </span>
+                                        <i class="add-to-card-success flaticon-null text-info h5"></i>
+                                    </button>
+
+                                    <button class="btn-add-to-card btn-gray btn-large" type="button">
+                                        <i class="add-to-card-active flaticon-plus text-gray h6"></i>
+                                        <span class="add-to-card-hover">
+                                            <span class="add-to-card-text text-gray">Add to cart</span>
+                                        </span>
+                                        <i class="add-to-card-success flaticon-null text-gray h5"></i>
+                                    </button>
+
+                                    <button class="btn-add-to-card btn-light btn-large" type="button">
+                                        <i class="add-to-card-active flaticon-plus text-light h6"></i>
+                                        <span class="add-to-card-hover">
+                                            <span class="add-to-card-text text-light">Add to cart</span>
+                                        </span>
+                                        <i class="add-to-card-success flaticon-null text-light h5"></i>
+                                    </button>
+
+                                    <button class="btn-add-to-card btn-dark btn-large" type="button">
+                                        <i class="add-to-card-active flaticon-plus text-dark h6"></i>
+                                        <span class="add-to-card-hover">
+                                            <span class="add-to-card-text text-dark">Add to cart</span>
+                                        </span>
+                                        <i class="add-to-card-success flaticon-null text-dark h5"></i>
                                     </button>
                                 </div><!-- end tab-pane -->
 
                                 <div class="tab-pane fade" id="code9" role="tabpanel">
-                                    <pre><code class="lang-html">&lt;button class="btn-add-to-card btn-large" type="button"&gt;
+                                    <pre><code class="lang-html">&lt;button class="btn-add-to-card btn-primary btn-large" type="button"&gt;
+    &lt;i class="add-to-card-active flaticon-plus text-primary h6"&gt;&lt;/i&gt;
+    &lt;span class="add-to-card-hover"&gt;
+        &lt;span class="add-to-card-text text-primary"&gt;Add to cart&lt;/span&gt;
+    &lt;/span&gt;
+    &lt;i class="add-to-card-success flaticon-null text-primary h5"&gt;&lt;/i&gt;
+&lt;/button&gt;
+
+&lt;button class="btn-add-to-card btn-secondary btn-large" type="button"&gt;
+    &lt;i class="add-to-card-active flaticon-plus text-secondary h6"&gt;&lt;/i&gt;
+    &lt;span class="add-to-card-hover"&gt;
+        &lt;span class="add-to-card-text text-secondary"&gt;Add to cart&lt;/span&gt;
+    &lt;/span&gt;
+    &lt;i class="add-to-card-success flaticon-null text-secondary h5"&gt;&lt;/i&gt;
+&lt;/button&gt;
+
+&lt;button class="btn-add-to-card btn-success btn-large" type="button"&gt;
+    &lt;i class="add-to-card-active flaticon-plus text-success h6"&gt;&lt;/i&gt;
+    &lt;span class="add-to-card-hover"&gt;
+        &lt;span class="add-to-card-text text-success"&gt;Add to cart&lt;/span&gt;
+    &lt;/span&gt;
+    &lt;i class="add-to-card-success flaticon-null text-success h5"&gt;&lt;/i&gt;
+&lt;/button&gt;
+
+&lt;button class="btn-add-to-card btn-danger btn-large" type="button"&gt;
+    &lt;i class="add-to-card-active flaticon-plus text-danger h6">&lt;/i&gt;
+    &lt;span class="add-to-card-hover"&gt;
+        &lt;span class="add-to-card-text text-danger"&gt;Add to cart&lt;/span&gt;
+    &lt;/span&gt;
+    &lt;i class="add-to-card-success flaticon-null text-danger h5"&gt;&lt;/i&gt;
+&lt;/button&gt;
+
+&lt;button class="btn-add-to-card btn-warning btn-large" type="button"&gt;
+    &lt;i class="add-to-card-active flaticon-plus text-warning h6"&gt;&lt;/i&gt;
+    &lt;span class="add-to-card-hover"&gt;
+        &lt;span class="add-to-card-text text-warning"&gt;Add to cart&lt;/span&gt;
+    &lt;/span&gt;
+    &lt;i class="add-to-card-success flaticon-null text-warning h5"&gt;&lt;/i&gt;
+&lt;/button&gt;
+
+&lt;button class="btn-add-to-card btn-info btn-large" type="button"&gt;
+    &lt;i class="add-to-card-active flaticon-plus text-info h6"&gt;&lt;/i&gt;
+    &lt;span class="add-to-card-hover"&gt;
+        &lt;span class="add-to-card-text text-info"&gt;Add to cart&lt;/span&gt;
+    &lt;/span&gt;
+    &lt;i class="add-to-card-success flaticon-null text-info h5"&gt;&lt;/i&gt;
+&lt;/button&gt;
+
+&lt;button class="btn-add-to-card btn-gray btn-large" type="button"&gt;
+    &lt;i class="add-to-card-active flaticon-plus text-gray h6"&gt;&lt;/i&gt;
+    &lt;span class="add-to-card-hover"&gt;
+        &lt;span class="add-to-card-text text-gray"&gt;Add to cart&lt;/span&gt;
+    &lt;/span&gt;
+    &lt;i class="add-to-card-success flaticon-null text-gray h5"&gt;&lt;/i&gt;
+&lt;/button&gt;
+
+&lt;button class="btn-add-to-card btn-light btn-large" type="button"&gt;
+    &lt;i class="add-to-card-active flaticon-plus text-light h6"&gt;&lt;/i&gt;
+    &lt;span class="add-to-card-hover"&gt;
+        &lt;span class="add-to-card-text text-light"&gt;Add to cart&lt;/span&gt;
+    &lt;/span&gt;
+    &lt;i class="add-to-card-success flaticon-null text-light h5"&gt;&lt;/i&gt;
+&lt;/button&gt;
+
+&lt;button class="btn-add-to-card btn-dark btn-large" type="button"&gt;
+    &lt;i class="add-to-card-active flaticon-plus text-dark h6"&gt;&lt;/i&gt;
+    &lt;span class="add-to-card-hover"&gt;
+        &lt;span class="add-to-card-text text-dark"&gt;Add to cart&lt;/span&gt;
+    &lt;/span&gt;
+    &lt;i class="add-to-card-success flaticon-null text-dark h5"&gt;&lt;/i&gt;
+&lt;/button&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
+                        </div><!-- end col -->
+                    </div><!-- end row -->
+
+                    <hr class="mt-5 mb-5" />
+
+                    <h3 class="mb-2 font-weight-bold">Sizes</h3>
+
+                    <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark active" href="#result10" data-toggle="tab" role="tab" aria-controls="result10" aria-selected="true">Result</a>
+                        </li><!-- end nav-item -->
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#code10" data-toggle="tab" role="tab" aria-controls="code10" aria-selected="false">
+                                Code <i class="fas fa-code ml-1"></i>
+                            </a>
+                        </li><!-- end nav-item -->
+                    </ul><!-- end nav -->
+
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="result10" role="tabpanel">
+                            <button class="btn-add-to-card btn-primary btn-large" type="button">
+                                <i class="add-to-card-active flaticon-plus h6"></i>
+                                <span class="add-to-card-hover">
+                                    <span class="add-to-card-text">Add to cart</span>
+                                </span>
+                                <i class="add-to-card-success flaticon-null text-success h5"></i>
+                            </button>
+
+                            <button class="btn-add-to-card btn-primary btn-medium" type="button">
+                                <i class="add-to-card-active flaticon-plus h6"></i>
+                                <span class="add-to-card-hover">
+                                    <span class="add-to-card-text">Add to cart</span>
+                                </span>
+                                <i class="add-to-card-success flaticon-null text-success h6"></i>
+                            </button>
+
+                            <button class="btn-add-to-card btn-primary btn-small" type="button">
+                                <i class="add-to-card-active flaticon-plus h6"></i>
+                                <span class="add-to-card-hover">
+                                    <span class="add-to-card-text">Add to cart</span>
+                                </span>
+                                <i class="add-to-card-success flaticon-null text-success h6"></i>
+                            </button>
+                        </div><!-- end tab-pane -->
+
+                        <div class="tab-pane fade" id="code10" role="tabpanel">
+                            <pre><code class="lang-html">&lt;button class="btn-add-to-card btn-primary btn-large" type="button"&gt;
     &lt;i class="add-to-card-active flaticon-plus h5"&gt;&lt;/i&gt;
     &lt;span class="add-to-card-hover"&gt;
         &lt;span class="add-to-card-text"&gt;Add to cart&lt;/span&gt;
@@ -684,7 +851,7 @@
     &lt;i class="add-to-card-success flaticon-null text-success h5"&gt;&lt;/i&gt;
 &lt;/button&gt;
 
-&lt;button class="btn-add-to-card btn-medium" type="button"&gt;
+&lt;button class="btn-add-to-card btn-primary btn-medium" type="button"&gt;
     &lt;i class="add-to-card-active flaticon-plus h6"&gt;&lt;/i&gt;
     &lt;span class="add-to-card-hover"&gt;
         &lt;span class="add-to-card-text"&gt;Add to cart&lt;/span&gt;
@@ -692,17 +859,15 @@
     &lt;i class="add-to-card-success flaticon-null text-success h6"&gt;&lt;/i&gt;
 &lt;/button&gt;
 
-&lt;button class="btn-add-to-card btn-small" type="button"&gt;
+&lt;button class="btn-add-to-card btn-primary btn-small" type="button"&gt;
     &lt;i class="add-to-card-active flaticon-plus h6"&gt;&lt;/i&gt;
     &lt;span class="add-to-card-hover"&gt;
         &lt;span class="add-to-card-text"&gt;Add to cart&lt;/span&gt;
     &lt;/span&gt;
     &lt;i class="add-to-card-success flaticon-null text-success h6"&gt;&lt;/i&gt;
 &lt;/button&gt;</code></pre>
-                                </div><!-- end tab-pane -->
-                            </div><!-- end tab-content -->
-                        </div><!-- end col -->
-                    </div><!-- end row -->
+                        </div><!-- end tab-pane -->
+                    </div><!-- end tab-content -->
                 </div><!-- end #main col -->
             </div><!-- end row -->
         </div><!-- end container-fluid -->
