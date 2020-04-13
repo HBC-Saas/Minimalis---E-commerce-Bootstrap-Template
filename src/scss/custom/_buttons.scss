@@ -275,6 +275,7 @@
   cursor: pointer;
   position: relative;
   overflow: hidden;
+
   // sizes
   @each $breakpoint in map-keys($grid-breakpoints) {
     @include media-breakpoint-up($breakpoint) {
@@ -310,6 +311,7 @@
   .add-to-card-active,
   .add-to-card-success,
   .add-to-card-hover {
+    margin-bottom: 0;
     display: inline-block;
     opacity: 1;
     visibility: visible;
@@ -332,7 +334,7 @@
   .add-to-card-hover {
     white-space: nowrap;
     width: 0;
-    margin-left: 25px;
+    margin-left: 24px;
     .add-to-card-text {
       white-space: nowrap;
       padding: 0 $btn-padding-x;
@@ -386,6 +388,36 @@
       opacity: 1;
       visibility: visible;
       left: 50%;
+    }
+  }
+
+  // button variant colors
+  @each $color, $value in $theme-colors {
+    &.btn-#{$color} {
+      background-color: $white;
+      border: 3px solid $value;
+      color: $dark;
+
+      &:active,
+      &:focus {
+        background-color: $white!important;
+        color: $dark!important;
+      }
+
+      &.loading,
+      &.success {
+        &:not(.success) {
+          border-left-color: darken($value, 12%);
+        }
+      }
+    }
+  }
+  &.btn-dark {
+    &.loading,
+    &.success {
+      &:not(.success) {
+        border-left-color: lighten($dark, 25%);
+      }
     }
   }
 }

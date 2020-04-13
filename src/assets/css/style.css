@@ -20730,6 +20730,7 @@ select.selectpicker {
 .btn-add-to-card .add-to-card-active,
 .btn-add-to-card .add-to-card-success,
 .btn-add-to-card .add-to-card-hover {
+  margin-bottom: 0;
   display: inline-block;
   opacity: 1;
   visibility: visible;
@@ -20764,7 +20765,7 @@ select.selectpicker {
 .btn-add-to-card .add-to-card-hover {
   white-space: nowrap;
   width: 0;
-  margin-left: 25px;
+  margin-left: 24px;
 }
 
 .btn-add-to-card .add-to-card-hover .add-to-card-text {
@@ -20819,6 +20820,145 @@ select.selectpicker {
   opacity: 1;
   visibility: visible;
   left: 50%;
+}
+
+.btn-add-to-card.btn-primary {
+  background-color: #fff;
+  border: 3px solid #ac9c7f;
+  color: #1e1e1e;
+}
+
+.btn-add-to-card.btn-primary:active, .btn-add-to-card.btn-primary:focus {
+  background-color: #fff !important;
+  color: #1e1e1e !important;
+}
+
+.btn-add-to-card.btn-primary.loading:not(.success), .btn-add-to-card.btn-primary.success:not(.success) {
+  border-left-color: #907e5e;
+}
+
+.btn-add-to-card.btn-secondary {
+  background-color: #fff;
+  border: 3px solid #686868;
+  color: #1e1e1e;
+}
+
+.btn-add-to-card.btn-secondary:active, .btn-add-to-card.btn-secondary:focus {
+  background-color: #fff !important;
+  color: #1e1e1e !important;
+}
+
+.btn-add-to-card.btn-secondary.loading:not(.success), .btn-add-to-card.btn-secondary.success:not(.success) {
+  border-left-color: #494949;
+}
+
+.btn-add-to-card.btn-success {
+  background-color: #fff;
+  border: 3px solid #87de7d;
+  color: #1e1e1e;
+}
+
+.btn-add-to-card.btn-success:active, .btn-add-to-card.btn-success:focus {
+  background-color: #fff !important;
+  color: #1e1e1e !important;
+}
+
+.btn-add-to-card.btn-success.loading:not(.success), .btn-add-to-card.btn-success.success:not(.success) {
+  border-left-color: #5ad24c;
+}
+
+.btn-add-to-card.btn-info {
+  background-color: #fff;
+  border: 3px solid #2bb4dd;
+  color: #1e1e1e;
+}
+
+.btn-add-to-card.btn-info:active, .btn-add-to-card.btn-info:focus {
+  background-color: #fff !important;
+  color: #1e1e1e !important;
+}
+
+.btn-add-to-card.btn-info.loading:not(.success), .btn-add-to-card.btn-info.success:not(.success) {
+  border-left-color: #1c8daf;
+}
+
+.btn-add-to-card.btn-warning {
+  background-color: #fff;
+  border: 3px solid #ddb32b;
+  color: #1e1e1e;
+}
+
+.btn-add-to-card.btn-warning:active, .btn-add-to-card.btn-warning:focus {
+  background-color: #fff !important;
+  color: #1e1e1e !important;
+}
+
+.btn-add-to-card.btn-warning.loading:not(.success), .btn-add-to-card.btn-warning.success:not(.success) {
+  border-left-color: #af8c1c;
+}
+
+.btn-add-to-card.btn-danger {
+  background-color: #fff;
+  border: 3px solid #f90000;
+  color: #1e1e1e;
+}
+
+.btn-add-to-card.btn-danger:active, .btn-add-to-card.btn-danger:focus {
+  background-color: #fff !important;
+  color: #1e1e1e !important;
+}
+
+.btn-add-to-card.btn-danger.loading:not(.success), .btn-add-to-card.btn-danger.success:not(.success) {
+  border-left-color: #bc0000;
+}
+
+.btn-add-to-card.btn-light {
+  background-color: #fff;
+  border: 3px solid #f7f5f6;
+  color: #1e1e1e;
+}
+
+.btn-add-to-card.btn-light:active, .btn-add-to-card.btn-light:focus {
+  background-color: #fff !important;
+  color: #1e1e1e !important;
+}
+
+.btn-add-to-card.btn-light.loading:not(.success), .btn-add-to-card.btn-light.success:not(.success) {
+  border-left-color: #dcd3d7;
+}
+
+.btn-add-to-card.btn-dark {
+  background-color: #fff;
+  border: 3px solid #1e1e1e;
+  color: #1e1e1e;
+}
+
+.btn-add-to-card.btn-dark:active, .btn-add-to-card.btn-dark:focus {
+  background-color: #fff !important;
+  color: #1e1e1e !important;
+}
+
+.btn-add-to-card.btn-dark.loading:not(.success), .btn-add-to-card.btn-dark.success:not(.success) {
+  border-left-color: black;
+}
+
+.btn-add-to-card.btn-gray {
+  background-color: #fff;
+  border: 3px solid #9f9f9f;
+  color: #1e1e1e;
+}
+
+.btn-add-to-card.btn-gray:active, .btn-add-to-card.btn-gray:focus {
+  background-color: #fff !important;
+  color: #1e1e1e !important;
+}
+
+.btn-add-to-card.btn-gray.loading:not(.success), .btn-add-to-card.btn-gray.success:not(.success) {
+  border-left-color: gray;
+}
+
+.btn-add-to-card.btn-dark.loading:not(.success), .btn-add-to-card.btn-dark.success:not(.success) {
+  border-left-color: #5e5e5e;
 }
 
 @keyframes loadingRotate {
