@@ -257,8 +257,8 @@ $(document).ready(function(){
         }
     });
 
-    // progress swiper
-    var paginationSwiper = new Swiper('.swiper-container.progress-swiper', {
+    // progress and fraction swiper
+    var progressSwiper = new Swiper('.progress-swiper', {
         slidesPerView: 3,
         spaceBetween: 30,
         pagination: {
@@ -269,20 +269,32 @@ $(document).ready(function(){
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
+
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+            },
+            576: {
+                slidesPerView: 2,
+            },
+            992: {
+                slidesPerView: 3,
+            },
+        },
     });
 
-    var fraction = $('.progress-swiper .swiper-pagination.fraction');
-    var slideLength = paginationSwiper.slides.length;
-    var totalSlides = $('<span class="total">' + '/' + slideLength + '<span/>');
-    var currentCount = $('<span class="count">3<span/>');
-    fraction.append(currentCount);
-    fraction.append(totalSlides);
+    // addition fraction to progressSwiper
+    var fraction = $('.custom-fraction');
+    var current = $('<span class="current">' + progressSwiper.params.slidesPerView + '<span/>');
+    var total = $('<span class="total">' + '/' + progressSwiper.slides.length + '<span/>');
+    fraction.append(current);
+    fraction.append(total);
 
-    paginationSwiper.on('transitionStart', function () {
-        var index = this.activeIndex + 3,
-            $current = $(".photo-slide").eq(index);
-        currentCount.html($('<span class="count next">' + index + '<span/>'));
+    progressSwiper.on('transitionStart', function () {
+        var index = this.activeIndex + progressSwiper.params.slidesPerView, $current = $(".photo-slide").eq(index);
+        current.html($('<span class="current">' + index + '<span/>'));
     });
+
 });
 
 // unSelect categories checkbox function

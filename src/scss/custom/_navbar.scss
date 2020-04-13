@@ -400,7 +400,9 @@
   &.fixed-top {
     .navbar-collapse {
       .navbar-nav {
-        height: calc(100vh - #{$navbar-brand-height});
+        &.navbar-sm-full {
+          height: calc(100vh - #{$navbar-brand-height});
+        }
       }
     }
   }

@@ -263,5 +263,46 @@
  Progress swiper -------------------
 ----------------------------------*/
 .progress-swiper {
+  .swiper-pagination-progressbar {
+    position: relative;
+    height: 2px;
+    background: rgba(0,0,0,.1);
+  }
+  .swiper-pagination-progressbar-fill {
+    background: $primary;
+  }
 
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: $gray-500;
+    width: auto;
+
+    @include hover(){
+      color: $primary;
+    }
+
+    &::after {
+      font-family: Flaticon;
+      font-size: $font-size-base;
+      font-variant: initial;
+    }
+  }
+  .swiper-button-next {
+    right: 0;
+    left: auto;
+    &::after {
+      content: "\f12a";
+    }
+  }
+  .swiper-button-prev {
+    left: auto;
+    right: calc(#{$font-size-base} + 10px);
+    &::after {
+      content: "\f12b";
+    }
+  }
+  .swiper-button-disabled {
+    color: $gray-200;
+    opacity: 1;
+  }
 }
