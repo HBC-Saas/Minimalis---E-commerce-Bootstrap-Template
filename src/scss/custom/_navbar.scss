@@ -28,6 +28,11 @@
     margin-right: $navbar-nav-link-margin-x;
     margin-left: $navbar-nav-link-margin-x;
 
+    @include media-breakpoint-down(xs) {
+      margin-right: $navbar-nav-link-margin-x / 2;
+      margin-left: $navbar-nav-link-margin-x / 2;
+    }
+
     &:first-child { margin-left: 0; }
     &:last-child { margin-right: 0; }
 
