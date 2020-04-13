@@ -13999,6 +13999,13 @@ select.selectpicker {
   margin-left: 0.9375rem;
 }
 
+@media (max-width: 575.98px) {
+  .navbar-icons .nav-item {
+    margin-right: 0.46875rem;
+    margin-left: 0.46875rem;
+  }
+}
+
 .navbar-icons .nav-item:first-child {
   margin-left: 0;
 }
