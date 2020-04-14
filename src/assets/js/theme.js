@@ -270,6 +270,18 @@ $(document).ready(function(){
             prevEl: '.swiper-button-prev',
         },
 
+        on: {
+            init: function() {
+                var fraction = document.querySelector('.custom-fraction');
+                fraction.innerHTML = (this.activeIndex +  this.params.slidesPerView) + '/' + this.slides.length;
+            },
+
+            slideChangeTransitionStart: function() {
+                var fraction = document.querySelector('.custom-fraction');
+                fraction.innerHTML = (this.activeIndex +  this.params.slidesPerView) + '/' + this.slides.length;
+            },
+        },
+
         breakpoints: {
             0: {
                 slidesPerView: 1,
@@ -281,18 +293,6 @@ $(document).ready(function(){
                 slidesPerView: 3,
             },
         },
-    });
-
-    // addition fraction to progressSwiper
-    var fraction = $('.custom-fraction');
-    var current = $('<span class="current">' + progressSwiper.params.slidesPerView + '<span/>');
-    var total = $('<span class="total">' + '/' + progressSwiper.slides.length + '<span/>');
-    fraction.append(current);
-    fraction.append(total);
-
-    progressSwiper.on('transitionStart', function () {
-        var index = this.activeIndex + progressSwiper.params.slidesPerView, $current = $(".photo-slide").eq(index);
-        current.html($('<span class="current">' + index + '<span/>'));
     });
 
 });
@@ -329,11 +329,6 @@ function UnSelectAllColors(){
         }
     }
 }
-
-// init Cocoen
-document.querySelectorAll('.cocoen').forEach(function(element){
-    new Cocoen(element);
-});
 
 //AOS animation init
 AOS.init();
