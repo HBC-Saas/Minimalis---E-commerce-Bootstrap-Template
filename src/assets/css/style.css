@@ -13373,6 +13373,11 @@ select.selectpicker {
     Bootstrap Select
    -----------------------------
 */
+.bootstrap-select {
+  min-width: 10.625rem !important;
+  width: auto !important;
+}
+
 .bootstrap-select .minimalis.bs-placeholder {
   border: 1px solid #9f9f9f;
 }
@@ -13574,6 +13579,7 @@ select.selectpicker {
 }
 
 .bootstrap-select .dropdown-toggle .filter-option-inner-inner {
+  margin-right: 0.625rem;
   font-weight: 400;
 }
 
