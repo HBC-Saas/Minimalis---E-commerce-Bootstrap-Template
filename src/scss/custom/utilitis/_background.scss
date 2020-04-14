@@ -27,3 +27,12 @@
   height: 100%;
   z-index: 0;
 }
+
+.fullscreen {
+  min-height: calc(100vh - #{$navbar-brand-height})!important;
+  height: auto!important;
+  .vh-100 {
+    min-height: calc(100vh - #{$navbar-brand-height})!important;
+    height: auto!important;
+  }
+}
