@@ -1,9 +1,22 @@
 $(document).ready(function(){
     /*===================================================
-    *     navbar container
+    *     navbar sticky
     * ===================================================*/
-    var navbarHeight = $('.navbar.fixed-top').innerHeight();
-    $('.header-container').css('margin-bottom', navbarHeight);
+    var navbarHeight = $('.navbar.sticky-navbar').outerHeight();
+
+    new $.Zebra_Pin($('.sticky-navbar'), {
+        z_index: 1002
+    });
+
+    new $.Zebra_Pin($('.sticky-filter'), {
+        top_spacing: navbarHeight,
+        z_index: 1001
+    });
+
+    new $.Zebra_Pin($('.sticky-sidebar'), {
+        top_spacing: navbarHeight,
+        z_index: 1000
+    });
 
     /*===================================================
     *     dropdown submenu

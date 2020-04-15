@@ -40,6 +40,7 @@
     "jquery-validation": "^1.19.1",
     "object-fit-images": "^3.2.4",
     "prismjs": "^1.19.0",
-    "swiper": "^5.3.6"
+    "swiper": "^5.3.6",
+    "zebra_pin": "^2.0.0"
   }
 }

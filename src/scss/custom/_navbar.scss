@@ -11,6 +11,8 @@
   line-height: $navbar-brand-height;
 }
 
+.sticky-navbar { width: 100%; }
+
 // navbar Nav
 .navbar-nav {
   .nav-link {
@@ -330,17 +332,12 @@
             margin-right: -0.9375rem;
             padding-left: 0.9375rem;
             padding-right: 0.9375rem;
-          }
-
-          // fixed top
-          &.fixed-top {
-            .navbar-collapse {
-                overflow: auto;
-                .navbar-nav {
-                  max-height: calc(100vh - #{$navbar-brand-height});
-                }
+            overflow: auto;
+            .navbar-nav {
+              max-height: calc(100vh - #{$navbar-brand-height});
             }
           }
+
 
           // dropdown menu
           .navbar-nav {
