@@ -910,7 +910,92 @@
 
                                 <div class="tab-pane fade" id="code4" role="tabpanel">
                                     <pre><code class="lang-html">
+&lt;!-- Swiper --&gt;
+&lt;div class="swiper-container progress-swiper"&gt;
+    &lt;div class="swiper-wrapper"&gt;
+        &lt;div class="swiper-slide"&gt;
+            &lt;div class="card blog-card border-0"&gt;
+                &lt;div class="card-img overflow-hidden overlay-dark"&gt;
+                    &lt;!-- Image --&gt;
+                    &lt;figure class="zoom-in mb-0"&gt;
+                        &lt;img src="../assets/img/blog/blog_6.png" alt="product"&gt;
+                    &lt;/figure&gt;
 
+                    &lt;div class="title-block"&gt;
+                        &lt;h4 class="font-weight-normal title"&gt;
+                            &lt;a class="text-white" href="#"&gt;Best wood material for every minimalis home.&lt;/a&gt;
+                        &lt;/h4&gt;
+
+                        &lt;button type="button" class="btn btn-link-light btn-arrow font-weight-normal px-0"&gt;
+                            &lt;div class="inner-btn"&gt;
+                                Read More
+                                &lt;div class="arrow"&gt;
+                                    &lt;span class="arrow-icon"&gt;&lt;/span&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/button&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="row align-items-center mt-4 mb-4"&gt;
+        &lt;div class="col-2"&gt;
+            &lt;div class="custom-fraction text-dark font-weight-bold"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class="col-8"&gt;
+            &lt;div class="swiper-pagination"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class="col-2"&gt;
+            &lt;div class="position-relative"&gt;
+                &lt;div class="swiper-button-next"&gt;&lt;/div&gt;
+                &lt;div class="swiper-button-prev"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+    var progressSwiper = new Swiper('.progress-swiper', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'progressbar',
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        on: {
+            init: function() {
+                var fraction = document.querySelector('.custom-fraction');
+                fraction.innerHTML = (this.activeIndex +  this.params.slidesPerView) + '/' + this.slides.length;
+            },
+
+            slideChangeTransitionStart: function() {
+                var fraction = document.querySelector('.custom-fraction');
+                fraction.innerHTML = (this.activeIndex +  this.params.slidesPerView) + '/' + this.slides.length;
+            },
+        },
+
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+            },
+            576: {
+                slidesPerView: 2,
+            },
+            992: {
+                slidesPerView: 3,
+            },
+        },
+    });
+&lt;/script&gt;
                                     </code></pre>
                                 </div><!-- end tab-pane -->
                             </div><!-- end tab-content -->

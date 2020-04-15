@@ -1,6 +1,6 @@
 $(document).ready(function(){
     /*===================================================
-    *     navbar sticky
+    *     sticky
     * ===================================================*/
     var navbarHeight = $('.navbar.sticky-navbar').outerHeight();
 
