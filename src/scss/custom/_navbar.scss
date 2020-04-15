@@ -11,8 +11,6 @@
   line-height: $navbar-brand-height;
 }
 
-.sticky-navbar { width: 100%; }
-
 // navbar Nav
 .navbar-nav {
   .nav-link {
@@ -399,7 +397,8 @@
 }
 
 @include media-breakpoint-down(xs) {
-  &.fixed-top {
+  &.fixed-top,
+  &.sticky-navbar {
     .navbar-collapse {
       .navbar-nav {
         &.navbar-sm-full {
