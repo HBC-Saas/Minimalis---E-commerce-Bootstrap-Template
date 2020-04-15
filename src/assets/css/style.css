@@ -14024,10 +14024,6 @@ select.selectpicker {
   line-height: 4.5625rem;
 }
 
-.sticky-navbar {
-  width: 100%;
-}
-
 .navbar-nav .nav-link {
   font-weight: 500;
 }
@@ -15272,7 +15268,8 @@ select.selectpicker {
 }
 
 @media (max-width: 575.98px) {
-  .fixed-top .navbar-collapse .navbar-nav.navbar-sm-full {
+  .fixed-top .navbar-collapse .navbar-nav.navbar-sm-full,
+  .sticky-navbar .navbar-collapse .navbar-nav.navbar-sm-full {
     height: calc(100vh - 4.5625rem);
   }
 }
