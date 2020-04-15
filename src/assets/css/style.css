@@ -12719,12 +12719,12 @@ select.selectpicker {
 }
 
 .fullscreen {
-  min-height: calc(100vh - 4.5625rem) !important;
+  min-height: calc(100vh - (4.5625rem + 1px)) !important;
   height: auto !important;
 }
 
 .fullscreen .vh-100 {
-  min-height: calc(100vh - 4.5625rem) !important;
+  min-height: calc(100vh - (4.5625rem + 1px)) !important;
   height: auto !important;
 }
 
@@ -14024,6 +14024,10 @@ select.selectpicker {
   line-height: 4.5625rem;
 }
 
+.sticky-navbar {
+  width: 100%;
+}
+
 .navbar-nav .nav-link {
   font-weight: 500;
 }
@@ -14386,11 +14390,9 @@ select.selectpicker {
     margin-right: -0.9375rem;
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
-  }
-  .navbar-expand-sm:not(.navbar-filter).fixed-top .navbar-collapse {
     overflow: auto;
   }
-  .navbar-expand-sm:not(.navbar-filter).fixed-top .navbar-collapse .navbar-nav {
+  .navbar-expand-sm:not(.navbar-filter) .navbar-collapse .navbar-nav {
     max-height: calc(100vh - 4.5625rem);
   }
   .navbar-expand-sm:not(.navbar-filter) .navbar-nav:not(.navbar-icons) .dropdown-menu {
@@ -14594,11 +14596,9 @@ select.selectpicker {
     margin-right: -0.9375rem;
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
-  }
-  .navbar-expand-md:not(.navbar-filter).fixed-top .navbar-collapse {
     overflow: auto;
   }
-  .navbar-expand-md:not(.navbar-filter).fixed-top .navbar-collapse .navbar-nav {
+  .navbar-expand-md:not(.navbar-filter) .navbar-collapse .navbar-nav {
     max-height: calc(100vh - 4.5625rem);
   }
   .navbar-expand-md:not(.navbar-filter) .navbar-nav:not(.navbar-icons) .dropdown-menu {
@@ -14802,11 +14802,9 @@ select.selectpicker {
     margin-right: -0.9375rem;
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
-  }
-  .navbar-expand-lg:not(.navbar-filter).fixed-top .navbar-collapse {
     overflow: auto;
   }
-  .navbar-expand-lg:not(.navbar-filter).fixed-top .navbar-collapse .navbar-nav {
+  .navbar-expand-lg:not(.navbar-filter) .navbar-collapse .navbar-nav {
     max-height: calc(100vh - 4.5625rem);
   }
   .navbar-expand-lg:not(.navbar-filter) .navbar-nav:not(.navbar-icons) .dropdown-menu {
@@ -15010,11 +15008,9 @@ select.selectpicker {
     margin-right: -0.9375rem;
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
-  }
-  .navbar-expand-xl:not(.navbar-filter).fixed-top .navbar-collapse {
     overflow: auto;
   }
-  .navbar-expand-xl:not(.navbar-filter).fixed-top .navbar-collapse .navbar-nav {
+  .navbar-expand-xl:not(.navbar-filter) .navbar-collapse .navbar-nav {
     max-height: calc(100vh - 4.5625rem);
   }
   .navbar-expand-xl:not(.navbar-filter) .navbar-nav:not(.navbar-icons) .dropdown-menu {
@@ -15232,13 +15228,10 @@ select.selectpicker {
   margin-right: -0.9375rem;
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
-}
-
-.navbar-expand:not(.navbar-filter).fixed-top .navbar-collapse {
   overflow: auto;
 }
 
-.navbar-expand:not(.navbar-filter).fixed-top .navbar-collapse .navbar-nav {
+.navbar-expand:not(.navbar-filter) .navbar-collapse .navbar-nav {
   max-height: calc(100vh - 4.5625rem);
 }
 
@@ -22271,13 +22264,9 @@ hr.border-white {
     Documentation
    ------------------------
 */
-.sidebar {
-  margin-top: 4.5625rem;
-}
-
 .sidebar-sticky {
+  max-height: calc(100vh - (4.5625rem * 2));
   position: relative;
-  top: 0;
   width: 100%;
   padding-top: 2.1875rem;
   padding-bottom: 2.1875rem;
@@ -22289,10 +22278,6 @@ hr.border-white {
 
 .sidebar-sticky .nav {
   margin-bottom: 1.5rem;
-}
-
-.sidebar-sticky .nav:last-child {
-  margin-bottom: 0;
 }
 
 .sidebar-sticky .nav-link {
@@ -22318,17 +22303,13 @@ hr.border-white {
 
 @media (min-width: 768px) {
   .sidebar {
-    padding: 0;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 100;
+    min-height: calc(100vh - 5.5625rem);
+    z-index: 1000;
     /* Behind the navbar */
     border-right: 2px solid #e9e9e9;
   }
   .sidebar-sticky {
-    height: calc(100vh - 4.5625rem);
+    max-height: calc(100vh - (4.5625rem + 1px)) !important;
     padding: 2.1875rem 1.875rem;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -22338,6 +22319,9 @@ hr.border-white {
     overflow-x: hidden;
     overflow-y: auto;
     /* Scrollable contents if viewport is shorter than content. */
+  }
+  .sidebar-sticky .nav:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -22350,7 +22334,7 @@ hr.border-white {
 
 @media (min-width: 768px) {
   #main {
-    padding: 6.875rem 5rem 2.8125rem 5rem;
+    padding: 2.1875rem 5rem;
   }
 }
 

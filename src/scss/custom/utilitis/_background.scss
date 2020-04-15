@@ -29,10 +29,10 @@
 }
 
 .fullscreen {
-  min-height: calc(100vh - #{$navbar-brand-height})!important;
+  min-height: calc(100vh - (#{$navbar-brand-height} + 1px))!important;
   height: auto!important;
   .vh-100 {
-    min-height: calc(100vh - #{$navbar-brand-height})!important;
+    min-height: calc(100vh - (#{$navbar-brand-height} + 1px))!important;
     height: auto!important;
   }
 }
