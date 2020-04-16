@@ -23,8 +23,8 @@
       img { transform: scale(1.2); }
     }
 
-    // add to card button
-    .btn-add-to-card {
+    // add to cart button
+    .add-to-cart {
       position: absolute;
       bottom: -0.9375rem;
       right: 1.875rem;
@@ -43,8 +43,8 @@
     }
   }
   &.luxury-card {
-    // add to card button for luxury card
-    .btn-add-to-card {
+    // add to cart button for luxury card
+    .add-to-cart {
       @each $breakpoint in map-keys($grid-breakpoints) {
         @include media-breakpoint-up($breakpoint) {
           $infix: breakpoint-infix($breakpoint, $grid-breakpoints);

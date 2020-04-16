@@ -22,12 +22,12 @@ $(document).ready(function(){
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
 
-        if (scroll >= 20) {
-            $(".navbar").removeClass("bg-transparent");
-            $(".navbar").addClass("bg-white");
-        } else {
-            $(".navbar").addClass("bg-transparent");
-            $(".navbar").removeClass("bg-white");
+        if ($(".navbar").hasClass("bg-transparent")) {
+            if (scroll >= 20) {
+                $(".navbar").addClass("bg-white");
+            } else {
+                $(".navbar").removeClass("bg-white");
+            }
         }
     });
 
