@@ -100,16 +100,16 @@ $(document).ready(function(){
     });
 
     /*===================================================
-    *     button add to card
+    *     button add to cart
     * ===================================================*/
-    $('.btn-add-to-card:not(.loading):not(.success)').hover(function(){
-        var textWidth = $(this).find(".add-to-card-text").innerWidth();
-        $(this).find('.add-to-card-hover').width(textWidth);
+    $('.add-to-cart:not(.loading):not(.success)').hover(function(){
+        var textWidth = $(this).find(".add-to-cart-text").innerWidth();
+        $(this).find('.add-to-cart-hover').width(textWidth);
     }, function() {
-        $('.add-to-card-hover').width(0);
+        $('.add-to-cart-hover').width(0);
     });
 
-    $('.btn-add-to-card:not(.loading):not(.success)').on('click', function(){
+    $('.add-to-cart:not(.loading):not(.success)').on('click', function(){
         if (!$(this).data('isClicked')) {
             var _this = $(this);
 
