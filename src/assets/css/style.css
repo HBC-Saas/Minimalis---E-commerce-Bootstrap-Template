@@ -12695,6 +12695,10 @@ select.selectpicker {
   background-position: top center;
 }
 
+.bg-center {
+  background-position: center;
+}
+
 .position-absolute-top-right {
   position: absolute;
   top: 0;
@@ -12725,6 +12729,17 @@ select.selectpicker {
 
 .fullscreen .vh-100 {
   min-height: calc(100vh - (4.5625rem + 1px)) !important;
+  height: auto !important;
+}
+
+.fullscreen-hero {
+  min-height: 100vh !important;
+  height: auto !important;
+  margin-top: calc((-4.5625rem - 1px)) !important;
+}
+
+.fullscreen-hero .vh-100 {
+  min-height: 100vh !important;
   height: auto !important;
 }
 
@@ -14109,6 +14124,10 @@ select.selectpicker {
   top: 50%;
   right: 0;
   transform: translateY(-50%);
+}
+
+.nav-search .nav-search-form .form-control {
+  background-color: transparent;
 }
 
 .nav-search .input-group-text i::before {

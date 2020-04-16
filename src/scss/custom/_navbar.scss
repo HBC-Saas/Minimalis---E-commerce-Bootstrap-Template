@@ -74,6 +74,10 @@
     top: 50%;
     right: 0;
     transform: translateY(-50%);
+
+    .form-control {
+      background-color: transparent;
+    }
   }
 
   .input-group-text {

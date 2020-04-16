@@ -4,6 +4,8 @@
   background-position: top center;
 }
 
+.bg-center { background-position: center; }
+
 .position-absolute-top-right {
   position: absolute;
   top: 0;
@@ -33,6 +35,16 @@
   height: auto!important;
   .vh-100 {
     min-height: calc(100vh - (#{$navbar-brand-height} + 1px))!important;
+    height: auto!important;
+  }
+}
+
+.fullscreen-hero {
+  min-height: 100vh!important;
+  height: auto!important;
+  margin-top: calc((-#{$navbar-brand-height} - 1px))!important;
+  .vh-100 {
+    min-height: 100vh!important;
     height: auto!important;
   }
 }

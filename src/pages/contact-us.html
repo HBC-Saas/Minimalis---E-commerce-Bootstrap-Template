@@ -23,7 +23,7 @@
     <body>
 
         <!-- header -->
-        <nav class="navbar sticky-navbar navbar-expand-lg navbar-light bg-white menu-border border-bottom">
+        <nav class="navbar sticky-navbar navbar-expand-lg navbar-light bg-transparent menu-border border-bottom">
             <a href="../index.html" class="navbar-brand mr-0 order-1 order-lg-2">
                 Minimalis.
             </a>
@@ -143,7 +143,7 @@
                                     <a class="dropdown-item" href="products.html">Products</a>
                                     <a class="dropdown-item" href="product-details.html">Product details</a>
                                     <a class="dropdown-item" href="about-us.html">About us</a>
-                                    <a class="dropdown-item" href="contact-us.html">Contact us</a>
+                                    <a class="dropdown-item active" href="contact-us.html">Contact us</a>
                                     <a class="dropdown-item" href="error-404.html">Error 404</a>
                                     <a class="dropdown-item" href="faq.html">FAQ</a>
                                 </div><!-- end col -->
@@ -153,7 +153,7 @@
                                     <a class="dropdown-item" href="register.html">Register</a>
                                     <a class="dropdown-item" href="forgot-password.html">Forgot password</a>
                                     <a class="dropdown-item" href="reset-password.html">Reset password</a>
-                                    <a class="dropdown-item active" href="reset-password-successfully.html">Reset successfully</a>
+                                    <a class="dropdown-item" href="reset-password-successfully.html">Reset successfully</a>
                                 </div><!-- end col -->
                             </div><!-- end row -->
                         </div><!-- end dropdown-menu -->
@@ -227,49 +227,51 @@
         </nav><!-- end header -->
 
         <!-- start section -->
-        <section class="fullscreen bg-white">
-            <div class="container-fluid px-0">
-                <div class="position-relative">
-                    <div class="container-lg">
-                        <div class="row align-items-center vh-100">
-                            <div class="col-lg-6">
-                                <div class="row justify-content-center justify-content-lg-start pt-8 pb-8 pb-lg-6">
-                                    <div class="col-12 col-sm-10">
-                                        <h1 class="font-weight-medium mb-3">Succesful password reset</h1>
-                                    </div><!-- end col -->
+        <section class="fullscreen-hero bg-light bg-img-hero bg-center" style="background-image: url(../assets/img/contact/contac-bg.png)">
+            <div class="container-lg">
+                <div class="row vh-100">
+                    <div class="col-12 col-md-5 py-10">
+                        <h1 class="font-weight-bold font-size-h3 font-size-md-h1 text-uppercase mb-4">Contact us</h1>
+                        <h4 class="font-weight-bold">Address</h4>
+                        <p>41 Newbridge Street <br />
+                            Nampa, ID 83651</p>
 
-                                    <div class="col-12 col-sm-10 col-lg-9 col-xl-8">
-                                        <p class="mb-4">You can now use your new password to log in to yout account.</p>
+                        <h4 class="font-weight-bold">Email</h4>
+                        <p>uxroad@gmail.com</p>
 
-                                        <div class="form-group">
-                                            <a href="login.html" class="btn btn-dark btn-arrow btn-block">
-                                                <div class="inner-btn">
-                                                    Login
-                                                    <div class="arrow">
-                                                        <span class="arrow-icon"></span>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div><!-- end form-group -->
-                                    </div><!-- end col -->
-                                </div><!-- end row -->
-                            </div><!-- end col -->
+                        <h4 class="font-weight-bold">Phone</h4>
+                        <p>+383 44 123 4567</p>
+                    </div><!-- end col -->
 
-                            <div class="col-lg-6 d-none d-lg-inline-block position-absolute-top-right bg-img-hero h-100">
-                                <img class="bg-cover" src="../assets/img/login-half.png" alt="" />
-                            </div><!-- end col -->
+                    <div class="col-12 col-md-7 py-10">
+                        <img class="w-100" src="../assets/img/contact/contac-map.png" alt="map" />
+                    </div><!-- end col -->
+                </div><!-- end row -->
 
-                            <div class="col-12 mt-auto mb-2">
-                                <div class="row justify-content-center justify-content-lg-start">
-                                    <div class="col-12 col-sm-10 col-lg-6">
-                                        <p class="text-gray">©2020 - uxroad. All rights reserved.</p>
-                                    </div><!-- end col -->
-                                </div><!-- end row -->
-                            </div><!-- end col -->
-                        </div><!-- end row -->
-                    </div><!-- end container -->
-                </div><!-- end position-relative -->
-            </div><!-- end container-fluid -->
+                <div class="fixed-bottom" style="left: auto; right: 7%; bottom: 150px">
+                    <button class="btn-add-to-card btn-primary btn-large bg-transparent" type="button">
+                        <i class="flaticon-plus text-dark h6"></i>
+                    </button>
+                </div><!-- end fixed-bottom -->
+
+                <!-- social networks -->
+                <div class="fixed-bottom" style="left: auto; right: 8%;">
+                    <ul class="list-inline mb-4">
+                        <li class="list-inline-item mr-5 mb-1">
+                            <a href="#" class="text-dark">Facebook</a>
+                        </li>
+                        <li class="list-inline-item mr-5 mb-1">
+                            <a href="#" class="text-dark">Instagram</a>
+                        </li>
+                        <li class="list-inline-item mr-5 mb-1">
+                            <a href="#" class="text-dark">Twitter</a>
+                        </li>
+                        <li class="list-inline-item mb-1">
+                            <a href="#" class="text-dark">Pinterest</a>
+                        </li>
+                    </ul>
+                </div><!-- end fixed-bottom -->
+            </div><!-- end container -->
         </section>
         <!-- end section -->
 
