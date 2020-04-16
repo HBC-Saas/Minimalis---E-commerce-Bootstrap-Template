@@ -4,6 +4,8 @@
   background-position: top center;
 }
 
+.bg-center { background-position: center; }
+
 .position-absolute-top-right {
   position: absolute;
   top: 0;
@@ -37,10 +39,29 @@
   }
 }
 
+.fullscreen-hero {
+  min-height: 100vh!important;
+  height: auto!important;
+  margin-top: calc((-#{$navbar-brand-height} - 1px))!important;
+  .vh-100 {
+    min-height: 100vh!important;
+    height: auto!important;
+  }
+}
+
 .bg-between-bottom {
   background-repeat: no-repeat;
   background-position: left bottom, right bottom;
+}
+
+.bg-img-md-none {
   @include media-breakpoint-down(md) {
+    background-image: none!important;
+  }
+}
+
+.bg-img-sm-none {
+  @include media-breakpoint-down(sm) {
     background-image: none!important;
   }
 }

@@ -12695,6 +12695,10 @@ select.selectpicker {
   background-position: top center;
 }
 
+.bg-center {
+  background-position: center;
+}
+
 .position-absolute-top-right {
   position: absolute;
   top: 0;
@@ -12728,13 +12732,30 @@ select.selectpicker {
   height: auto !important;
 }
 
+.fullscreen-hero {
+  min-height: 100vh !important;
+  height: auto !important;
+  margin-top: calc((-4.5625rem - 1px)) !important;
+}
+
+.fullscreen-hero .vh-100 {
+  min-height: 100vh !important;
+  height: auto !important;
+}
+
 .bg-between-bottom {
   background-repeat: no-repeat;
   background-position: left bottom, right bottom;
 }
 
 @media (max-width: 991.98px) {
-  .bg-between-bottom {
+  .bg-img-md-none {
+    background-image: none !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .bg-img-sm-none {
     background-image: none !important;
   }
 }
@@ -14027,6 +14048,16 @@ select.selectpicker {
 /*===================================================
 *     Navbar
 * ===================================================*/
+.navbar {
+  transition: 0.2s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .navbar {
+    transition: none;
+  }
+}
+
 .navbar-brand {
   font-size: 1.25rem;
   font-weight: 700;
@@ -14109,6 +14140,10 @@ select.selectpicker {
   top: 50%;
   right: 0;
   transform: translateY(-50%);
+}
+
+.nav-search .nav-search-form .form-control {
+  background-color: transparent;
 }
 
 .nav-search .input-group-text i::before {
@@ -14398,6 +14433,7 @@ select.selectpicker {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
     overflow: auto;
+    background-color: #fff;
   }
   .navbar-expand-sm:not(.navbar-filter) .navbar-collapse .navbar-nav {
     max-height: calc(100vh - 4.5625rem);
@@ -14604,6 +14640,7 @@ select.selectpicker {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
     overflow: auto;
+    background-color: #fff;
   }
   .navbar-expand-md:not(.navbar-filter) .navbar-collapse .navbar-nav {
     max-height: calc(100vh - 4.5625rem);
@@ -14810,6 +14847,7 @@ select.selectpicker {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
     overflow: auto;
+    background-color: #fff;
   }
   .navbar-expand-lg:not(.navbar-filter) .navbar-collapse .navbar-nav {
     max-height: calc(100vh - 4.5625rem);
@@ -15016,6 +15054,7 @@ select.selectpicker {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
     overflow: auto;
+    background-color: #fff;
   }
   .navbar-expand-xl:not(.navbar-filter) .navbar-collapse .navbar-nav {
     max-height: calc(100vh - 4.5625rem);
@@ -15236,6 +15275,7 @@ select.selectpicker {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
   overflow: auto;
+  background-color: #fff;
 }
 
 .navbar-expand:not(.navbar-filter) .navbar-collapse .navbar-nav {
@@ -21955,9 +21995,43 @@ hr.border-white {
   margin: 0;
 }
 
+.modal-dialog-vertical.modal-lg {
+  max-width: 50% !important;
+}
+
+@media (max-width: 991.98px) {
+  .modal-dialog-vertical.modal-lg {
+    max-width: 100% !important;
+  }
+}
+
 .modal-dialog-vertical .modal-content {
   max-height: 100vh;
   height: 100vh;
+}
+
+.below-header {
+  margin-top: calc(4.5625rem + 1px) !important;
+  z-index: 1000;
+}
+
+.below-header .modal-dialog-vertical {
+  max-height: calc(100vh - (4.5625rem + 1px)) !important;
+  height: calc(100vh - (4.5625rem + 1px)) !important;
+}
+
+.below-header .modal-dialog-vertical .modal-content {
+  max-height: calc(100vh - (4.5625rem + 1px)) !important;
+  height: calc(100vh - (4.5625rem + 1px)) !important;
+}
+
+.modal-opacity-0 .modal-backdrop {
+  margin-top: calc(4.5625rem + 1px) !important;
+}
+
+.modal-opacity-0 .modal-backdrop.show {
+  opacity: 0 !important;
+  z-index: 999;
 }
 
 .modal.fade .modal-dialog-vertical {
