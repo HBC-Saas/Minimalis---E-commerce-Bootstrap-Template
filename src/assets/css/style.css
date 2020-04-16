@@ -13810,7 +13810,7 @@ select.selectpicker {
   transform: scale(1.2);
 }
 
-.card .card-img .btn-add-to-card {
+.card .card-img .add-to-cart {
   position: absolute;
   bottom: -0.9375rem;
   right: 1.875rem;
@@ -13826,62 +13826,62 @@ select.selectpicker {
   visibility: visible;
 }
 
-.card.luxury-card .btn-add-to-card.btn-large {
+.card.luxury-card .add-to-cart.btn-large {
   bottom: -1.4375rem;
 }
 
-.card.luxury-card .btn-add-to-card.btn-medium {
+.card.luxury-card .add-to-cart.btn-medium {
   bottom: -1.125rem;
 }
 
-.card.luxury-card .btn-add-to-card.btn-small {
+.card.luxury-card .add-to-cart.btn-small {
   bottom: -1rem;
 }
 
 @media (min-width: 576px) {
-  .card.luxury-card .btn-add-to-card.btn-sm-large {
+  .card.luxury-card .add-to-cart.btn-sm-large {
     bottom: -1.4375rem;
   }
-  .card.luxury-card .btn-add-to-card.btn-sm-medium {
+  .card.luxury-card .add-to-cart.btn-sm-medium {
     bottom: -1.125rem;
   }
-  .card.luxury-card .btn-add-to-card.btn-sm-small {
+  .card.luxury-card .add-to-cart.btn-sm-small {
     bottom: -1rem;
   }
 }
 
 @media (min-width: 768px) {
-  .card.luxury-card .btn-add-to-card.btn-md-large {
+  .card.luxury-card .add-to-cart.btn-md-large {
     bottom: -1.4375rem;
   }
-  .card.luxury-card .btn-add-to-card.btn-md-medium {
+  .card.luxury-card .add-to-cart.btn-md-medium {
     bottom: -1.125rem;
   }
-  .card.luxury-card .btn-add-to-card.btn-md-small {
+  .card.luxury-card .add-to-cart.btn-md-small {
     bottom: -1rem;
   }
 }
 
 @media (min-width: 992px) {
-  .card.luxury-card .btn-add-to-card.btn-lg-large {
+  .card.luxury-card .add-to-cart.btn-lg-large {
     bottom: -1.4375rem;
   }
-  .card.luxury-card .btn-add-to-card.btn-lg-medium {
+  .card.luxury-card .add-to-cart.btn-lg-medium {
     bottom: -1.125rem;
   }
-  .card.luxury-card .btn-add-to-card.btn-lg-small {
+  .card.luxury-card .add-to-cart.btn-lg-small {
     bottom: -1rem;
   }
 }
 
 @media (min-width: 1200px) {
-  .card.luxury-card .btn-add-to-card.btn-xl-large {
+  .card.luxury-card .add-to-cart.btn-xl-large {
     bottom: -1.4375rem;
   }
-  .card.luxury-card .btn-add-to-card.btn-xl-medium {
+  .card.luxury-card .add-to-cart.btn-xl-medium {
     bottom: -1.125rem;
   }
-  .card.luxury-card .btn-add-to-card.btn-xl-small {
+  .card.luxury-card .add-to-cart.btn-xl-small {
     bottom: -1rem;
   }
 }
@@ -14056,6 +14056,10 @@ select.selectpicker {
   .navbar {
     transition: none;
   }
+}
+
+.bg-transparent.bg-white {
+  background-color: #fff !important;
 }
 
 .navbar-brand {
