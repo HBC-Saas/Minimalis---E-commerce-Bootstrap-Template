@@ -36,3 +36,11 @@
     height: auto!important;
   }
 }
+
+.bg-between-bottom {
+  background-repeat: no-repeat;
+  background-position: left bottom, right bottom;
+  @include media-breakpoint-down(md) {
+    background-image: none!important;
+  }
+}

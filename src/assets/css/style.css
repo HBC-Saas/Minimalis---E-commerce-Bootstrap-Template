@@ -12728,6 +12728,17 @@ select.selectpicker {
   height: auto !important;
 }
 
+.bg-between-bottom {
+  background-repeat: no-repeat;
+  background-position: left bottom, right bottom;
+}
+
+@media (max-width: 991.98px) {
+  .bg-between-bottom {
+    background-image: none !important;
+  }
+}
+
 .font-weight-medium {
   font-weight: 500 !important;
 }
