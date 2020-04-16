@@ -227,10 +227,10 @@
         </nav><!-- end header -->
 
         <!-- start section -->
-        <section class="fullscreen-hero bg-light bg-img-hero bg-center" style="background-image: url(../assets/img/contact/contac-bg.png)">
+        <section class="fullscreen-hero bg-img-hero bg-center bg-img-sm-none" style="background-image: url(../assets/img/contact/contac-bg.png)">
             <div class="container-lg">
-                <div class="row vh-100">
-                    <div class="col-12 col-md-5 py-10">
+                <div class="row vh-100 py-10">
+                    <div class="col-12 col-md-5 mb-4 mb-md-0">
                         <h1 class="font-weight-bold font-size-h3 font-size-md-h1 text-uppercase mb-4">Contact us</h1>
                         <h4 class="font-weight-bold">Address</h4>
                         <p>41 Newbridge Street <br />
@@ -243,30 +243,34 @@
                         <p>+383 44 123 4567</p>
                     </div><!-- end col -->
 
-                    <div class="col-12 col-md-7 py-10">
+                    <div class="col-12 col-md-7">
                         <img class="w-100" src="../assets/img/contact/contac-map.png" alt="map" />
                     </div><!-- end col -->
                 </div><!-- end row -->
 
-                <div class="fixed-bottom" style="left: auto; right: 7%; bottom: 150px">
-                    <button class="btn-add-to-card btn-primary btn-large bg-transparent" type="button">
-                        <i class="flaticon-plus text-dark h6"></i>
+                <div class="fixed-bottom d-flex flex-column" style="left: auto; right: 7%; bottom: 130px; z-index: 9;">
+                    <button class="btn-circle btn-primary btn-large bg-transparent mb-3" type="button" data-toggle="modal" data-target="#modalMap">
+                        <i class="flaticon-pin h5"></i>
+                    </button>
+
+                    <button class="btn-circle btn-primary btn-large bg-transparent" type="button" data-toggle="modal" data-target="#modalContactForm">
+                        <i class="flaticon-envelope-1 h5"></i>
                     </button>
                 </div><!-- end fixed-bottom -->
 
                 <!-- social networks -->
-                <div class="fixed-bottom" style="left: auto; right: 8%;">
+                <div class="fixed-bottom" style="left: auto; right: 8%; z-index: 9;">
                     <ul class="list-inline mb-4">
-                        <li class="list-inline-item mr-5 mb-1">
+                        <li class="list-inline-item mr-4 mr-md-5">
                             <a href="#" class="text-dark">Facebook</a>
                         </li>
-                        <li class="list-inline-item mr-5 mb-1">
+                        <li class="list-inline-item mr-4 mr-md-5">
                             <a href="#" class="text-dark">Instagram</a>
                         </li>
-                        <li class="list-inline-item mr-5 mb-1">
+                        <li class="list-inline-item mr-4 mr-md-5">
                             <a href="#" class="text-dark">Twitter</a>
                         </li>
-                        <li class="list-inline-item mb-1">
+                        <li class="list-inline-item">
                             <a href="#" class="text-dark">Pinterest</a>
                         </li>
                     </ul>
@@ -274,6 +278,69 @@
             </div><!-- end container -->
         </section>
         <!-- end section -->
+
+        <!-- Modal map -->
+        <div class="modal fixed-right below-header fade" id="modalMap" tabindex="-1" role="dialog" aria-labelledby="modalMapLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-vertical modal-dialog-scrollable modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-body p-0">
+                        <button type="button" class="close position-absolute" data-dismiss="modal" aria-label="Close" style="top: 30px; right: 40px;">
+                            <span class="flaticon-close h5" aria-hidden="true"></span>
+                        </button>
+
+                        asdasd
+                    </div><!-- end modal-body -->
+                </div><!-- end modal-content -->
+            </div><!-- end modal-dialog -->
+        </div><!-- end modal -->
+
+        <!-- Modal Contact Form -->
+        <div class="modal fixed-right below-header fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="modalContactFormLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-vertical modal-dialog-scrollable modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-body py-7 pl-3 pl-lg-4">
+                        <button type="button" class="close position-fixed bg-white mr-0" style="top: 30px; right: 42px; width: 30px; height: 30px;" data-dismiss="modal" aria-label="Close">
+                            <span class="flaticon-close h5" aria-hidden="true"></span>
+                        </button>
+
+                        <div class="row justify-content-center justify-content-lg-start">
+                            <div class="col-md-10">
+                                <h2 class="font-weight-bold font-size-h3 font-size-md-h2 mb-3">Anything to say?</h2>
+                                <p class=" mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+
+                                <form>
+                                    <div class="row">
+                                        <div class="form-group col-6 mb-4">
+                                            <label for="fullName">Full Name</label>
+                                            <input type="text" class="form-control" id="fullName">
+                                        </div>
+                                        <div class="form-group col-6 mb-4">
+                                            <label for="contactEmail">Email</label>
+                                            <input type="email" class="form-control" id="contactEmail">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group mb-4">
+                                        <textarea class="form-control" rows="5" placeholder="Message"></textarea>
+                                    </div>
+
+                                    <div class="form-group mb-4 text-right">
+                                        <button type="button" class="btn btn-dark btn-arrow">
+                                            <div class="inner-btn">
+                                                Send
+                                                <div class="arrow">
+                                                    <span class="arrow-icon"></span>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+                    </div><!-- end modal-body -->
+                </div><!-- end modal-content -->
+            </div><!-- end modal-dialog -->
+        </div><!-- end modal -->
 
         <!-- Wishlist modal -->
         <div class="modal fixed-right fade" id="myWishlistModal" tabindex="-1" role="dialog" aria-labelledby="myWishlistModalLabel" aria-hidden="true">

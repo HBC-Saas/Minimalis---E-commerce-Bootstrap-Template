@@ -5,7 +5,7 @@ $(document).ready(function(){
     var navbarHeight = $('.navbar.sticky-navbar').outerHeight();
 
     new $.Zebra_Pin($('.sticky-navbar'), {
-        z_index: 1002
+        z_index: 1002,
     });
 
     new $.Zebra_Pin($('.sticky-filter'), {
@@ -16,6 +16,19 @@ $(document).ready(function(){
     new $.Zebra_Pin($('.sticky-sidebar'), {
         top_spacing: navbarHeight,
         z_index: 1000
+    });
+
+    // after scroll
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 20) {
+            $(".navbar").removeClass("bg-transparent");
+            $(".navbar").addClass("bg-white");
+        } else {
+            $(".navbar").addClass("bg-transparent");
+            $(".navbar").removeClass("bg-white");
+        }
     });
 
     /*===================================================
@@ -307,6 +320,16 @@ $(document).ready(function(){
             },
         },
     });
+
+
+    // =====================================================
+    //      Custom class for Modal
+    // =====================================================
+    $('.below-header').on('show.bs.modal', function (e) {
+        $('body').toggleClass("modal-opacity-0");
+    }).on('hidden.bs.modal', function (e) {
+        $('body').toggleClass("modal-opacity-0");
+    })
 
 });
 

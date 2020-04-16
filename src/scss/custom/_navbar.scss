@@ -2,6 +2,10 @@
 *     Navbar
 * ===================================================*/
 
+.navbar {
+  @include transition(.2s);
+}
+
 // navbar brand style for minimalis logo
 .navbar-brand {
   font-size: $h4-font-size;
@@ -335,6 +339,7 @@
             padding-left: 0.9375rem;
             padding-right: 0.9375rem;
             overflow: auto;
+            background-color: $white;
             .navbar-nav {
               max-height: calc(100vh - #{$navbar-brand-height});
             }
