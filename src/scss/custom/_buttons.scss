@@ -264,8 +264,8 @@
   .text-#{$color} { color: $value; }
 }
 
-// Add to card BUTTON
-.btn-add-to-card {
+// circle and Add to cart BUTTONS
+.btn-circle {
   background-color: $white;
   border: 3px solid $primary;
   height: 2.5rem;
@@ -284,8 +284,8 @@
       &.btn#{$infix}-large {
         height: 3.125rem;
         min-width: 3.125rem;
-        .add-to-card-hover {
-          .add-to-card-text {
+        .add-to-cart-hover {
+          .add-to-cart-text {
             padding: 0 $btn-padding-x-lg;
           }
         }
@@ -299,8 +299,8 @@
       &.btn#{$infix}-small {
         height: 2.1875rem;
         min-width: 2.1875rem;
-        .add-to-card-hover {
-          .add-to-card-text {
+        .add-to-cart-hover {
+          .add-to-cart-text {
             padding: 0 $btn-padding-x-sm;
           }
         }
@@ -308,34 +308,34 @@
     }
   }
 
-  .add-to-card-active,
-  .add-to-card-success,
-  .add-to-card-hover {
+  .add-to-cart-active,
+  .add-to-cart-success,
+  .add-to-cart-hover {
     margin-bottom: 0;
     display: inline-block;
     opacity: 1;
     visibility: visible;
     @include transition(all 0.2s ease);
   }
-  .add-to-card-active,
-  .add-to-card-success {
+  .add-to-cart-active,
+  .add-to-cart-success {
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
   }
-  .add-to-card-active {
+  .add-to-cart-active {
     left: 50%;
   }
-  .add-to-card-success {
+  .add-to-cart-success {
     opacity: 0;
     visibility: hidden;
     left: 100%;
   }
-  .add-to-card-hover {
+  .add-to-cart-hover {
     white-space: nowrap;
     width: 0;
     margin-left: 24px;
-    .add-to-card-text {
+    .add-to-cart-text {
       white-space: nowrap;
       padding: 0 $btn-padding-x;
     }
@@ -346,32 +346,32 @@
 
   /* hover */
   @include hover() {
-    .add-to-card-hover {
+    .add-to-cart-hover {
       margin-left: 0;
       opacity: 1;
       visibility: visible;
     }
-    .add-to-card-active,
-    .add-to-card-success {
+    .add-to-cart-active,
+    .add-to-cart-success {
       opacity: 0;
       visibility: hidden;
     }
-    .add-to-card-active { left: -100%; }
+    .add-to-cart-active { left: -100%; }
   }
 
   /* loading */
   &.loading,
   &.success {
-    .add-to-card-active,
-    .add-to-card-hover {
+    .add-to-cart-active,
+    .add-to-cart-hover {
       opacity: 0;
       visibility: hidden;
       left: -100%;
       width: 0;
     }
     @include hover() {
-      .add-to-card-active,
-      .add-to-card-hover {
+      .add-to-cart-active,
+      .add-to-cart-hover {
         opacity: 0;
         visibility: hidden;
         left: -100%;
@@ -384,7 +384,7 @@
     }
   }
   &.success {
-    .add-to-card-success {
+    .add-to-cart-success {
       opacity: 1;
       visibility: visible;
       left: 50%;

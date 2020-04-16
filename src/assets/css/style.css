@@ -20655,7 +20655,7 @@ select.selectpicker {
   color: #e84b36;
 }
 
-.btn-add-to-card {
+.btn-circle {
   background-color: #fff;
   border: 3px solid #ac9c7f;
   height: 2.5rem;
@@ -20669,116 +20669,116 @@ select.selectpicker {
   /* loading */
 }
 
-.btn-add-to-card.btn-large {
+.btn-circle.btn-large {
   height: 3.125rem;
   min-width: 3.125rem;
 }
 
-.btn-add-to-card.btn-large .add-to-card-hover .add-to-card-text {
+.btn-circle.btn-large .add-to-cart-hover .add-to-cart-text {
   padding: 0 1.125rem;
 }
 
-.btn-add-to-card.btn-medium {
+.btn-circle.btn-medium {
   height: 2.5rem;
   min-width: 2.5rem;
 }
 
-.btn-add-to-card.btn-small {
+.btn-circle.btn-small {
   height: 2.1875rem;
   min-width: 2.1875rem;
 }
 
-.btn-add-to-card.btn-small .add-to-card-hover .add-to-card-text {
+.btn-circle.btn-small .add-to-cart-hover .add-to-cart-text {
   padding: 0 0.75rem;
 }
 
 @media (min-width: 576px) {
-  .btn-add-to-card.btn-sm-large {
+  .btn-circle.btn-sm-large {
     height: 3.125rem;
     min-width: 3.125rem;
   }
-  .btn-add-to-card.btn-sm-large .add-to-card-hover .add-to-card-text {
+  .btn-circle.btn-sm-large .add-to-cart-hover .add-to-cart-text {
     padding: 0 1.125rem;
   }
-  .btn-add-to-card.btn-sm-medium {
+  .btn-circle.btn-sm-medium {
     height: 2.5rem;
     min-width: 2.5rem;
   }
-  .btn-add-to-card.btn-sm-small {
+  .btn-circle.btn-sm-small {
     height: 2.1875rem;
     min-width: 2.1875rem;
   }
-  .btn-add-to-card.btn-sm-small .add-to-card-hover .add-to-card-text {
+  .btn-circle.btn-sm-small .add-to-cart-hover .add-to-cart-text {
     padding: 0 0.75rem;
   }
 }
 
 @media (min-width: 768px) {
-  .btn-add-to-card.btn-md-large {
+  .btn-circle.btn-md-large {
     height: 3.125rem;
     min-width: 3.125rem;
   }
-  .btn-add-to-card.btn-md-large .add-to-card-hover .add-to-card-text {
+  .btn-circle.btn-md-large .add-to-cart-hover .add-to-cart-text {
     padding: 0 1.125rem;
   }
-  .btn-add-to-card.btn-md-medium {
+  .btn-circle.btn-md-medium {
     height: 2.5rem;
     min-width: 2.5rem;
   }
-  .btn-add-to-card.btn-md-small {
+  .btn-circle.btn-md-small {
     height: 2.1875rem;
     min-width: 2.1875rem;
   }
-  .btn-add-to-card.btn-md-small .add-to-card-hover .add-to-card-text {
+  .btn-circle.btn-md-small .add-to-cart-hover .add-to-cart-text {
     padding: 0 0.75rem;
   }
 }
 
 @media (min-width: 992px) {
-  .btn-add-to-card.btn-lg-large {
+  .btn-circle.btn-lg-large {
     height: 3.125rem;
     min-width: 3.125rem;
   }
-  .btn-add-to-card.btn-lg-large .add-to-card-hover .add-to-card-text {
+  .btn-circle.btn-lg-large .add-to-cart-hover .add-to-cart-text {
     padding: 0 1.125rem;
   }
-  .btn-add-to-card.btn-lg-medium {
+  .btn-circle.btn-lg-medium {
     height: 2.5rem;
     min-width: 2.5rem;
   }
-  .btn-add-to-card.btn-lg-small {
+  .btn-circle.btn-lg-small {
     height: 2.1875rem;
     min-width: 2.1875rem;
   }
-  .btn-add-to-card.btn-lg-small .add-to-card-hover .add-to-card-text {
+  .btn-circle.btn-lg-small .add-to-cart-hover .add-to-cart-text {
     padding: 0 0.75rem;
   }
 }
 
 @media (min-width: 1200px) {
-  .btn-add-to-card.btn-xl-large {
+  .btn-circle.btn-xl-large {
     height: 3.125rem;
     min-width: 3.125rem;
   }
-  .btn-add-to-card.btn-xl-large .add-to-card-hover .add-to-card-text {
+  .btn-circle.btn-xl-large .add-to-cart-hover .add-to-cart-text {
     padding: 0 1.125rem;
   }
-  .btn-add-to-card.btn-xl-medium {
+  .btn-circle.btn-xl-medium {
     height: 2.5rem;
     min-width: 2.5rem;
   }
-  .btn-add-to-card.btn-xl-small {
+  .btn-circle.btn-xl-small {
     height: 2.1875rem;
     min-width: 2.1875rem;
   }
-  .btn-add-to-card.btn-xl-small .add-to-card-hover .add-to-card-text {
+  .btn-circle.btn-xl-small .add-to-cart-hover .add-to-cart-text {
     padding: 0 0.75rem;
   }
 }
 
-.btn-add-to-card .add-to-card-active,
-.btn-add-to-card .add-to-card-success,
-.btn-add-to-card .add-to-card-hover {
+.btn-circle .add-to-cart-active,
+.btn-circle .add-to-cart-success,
+.btn-circle .add-to-cart-hover {
   margin-bottom: 0;
   display: inline-block;
   opacity: 1;
@@ -20787,226 +20787,226 @@ select.selectpicker {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .btn-add-to-card .add-to-card-active,
-  .btn-add-to-card .add-to-card-success,
-  .btn-add-to-card .add-to-card-hover {
+  .btn-circle .add-to-cart-active,
+  .btn-circle .add-to-cart-success,
+  .btn-circle .add-to-cart-hover {
     transition: none;
   }
 }
 
-.btn-add-to-card .add-to-card-active,
-.btn-add-to-card .add-to-card-success {
+.btn-circle .add-to-cart-active,
+.btn-circle .add-to-cart-success {
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
 }
 
-.btn-add-to-card .add-to-card-active {
+.btn-circle .add-to-cart-active {
   left: 50%;
 }
 
-.btn-add-to-card .add-to-card-success {
+.btn-circle .add-to-cart-success {
   opacity: 0;
   visibility: hidden;
   left: 100%;
 }
 
-.btn-add-to-card .add-to-card-hover {
+.btn-circle .add-to-cart-hover {
   white-space: nowrap;
   width: 0;
   margin-left: 24px;
 }
 
-.btn-add-to-card .add-to-card-hover .add-to-card-text {
+.btn-circle .add-to-cart-hover .add-to-cart-text {
   white-space: nowrap;
   padding: 0 0.9375rem;
 }
 
-.btn-add-to-card:active, .btn-add-to-card:focus {
+.btn-circle:active, .btn-circle:focus {
   outline: none;
 }
 
-.btn-add-to-card:hover .add-to-card-hover {
+.btn-circle:hover .add-to-cart-hover {
   margin-left: 0;
   opacity: 1;
   visibility: visible;
 }
 
-.btn-add-to-card:hover .add-to-card-active,
-.btn-add-to-card:hover .add-to-card-success {
+.btn-circle:hover .add-to-cart-active,
+.btn-circle:hover .add-to-cart-success {
   opacity: 0;
   visibility: hidden;
 }
 
-.btn-add-to-card:hover .add-to-card-active {
+.btn-circle:hover .add-to-cart-active {
   left: -100%;
 }
 
-.btn-add-to-card.loading .add-to-card-active,
-.btn-add-to-card.loading .add-to-card-hover, .btn-add-to-card.success .add-to-card-active,
-.btn-add-to-card.success .add-to-card-hover {
+.btn-circle.loading .add-to-cart-active,
+.btn-circle.loading .add-to-cart-hover, .btn-circle.success .add-to-cart-active,
+.btn-circle.success .add-to-cart-hover {
   opacity: 0;
   visibility: hidden;
   left: -100%;
   width: 0;
 }
 
-.btn-add-to-card.loading:hover .add-to-card-active,
-.btn-add-to-card.loading:hover .add-to-card-hover, .btn-add-to-card.success:hover .add-to-card-active,
-.btn-add-to-card.success:hover .add-to-card-hover {
+.btn-circle.loading:hover .add-to-cart-active,
+.btn-circle.loading:hover .add-to-cart-hover, .btn-circle.success:hover .add-to-cart-active,
+.btn-circle.success:hover .add-to-cart-hover {
   opacity: 0;
   visibility: hidden;
   left: -100%;
   width: 0 !important;
 }
 
-.btn-add-to-card.loading:not(.success), .btn-add-to-card.success:not(.success) {
+.btn-circle.loading:not(.success), .btn-circle.success:not(.success) {
   border-left-color: #877658;
   animation: loadingRotate .5s ease .1s infinite;
 }
 
-.btn-add-to-card.success .add-to-card-success {
+.btn-circle.success .add-to-cart-success {
   opacity: 1;
   visibility: visible;
   left: 50%;
 }
 
-.btn-add-to-card.btn-primary {
+.btn-circle.btn-primary {
   background-color: #fff;
   border: 3px solid #ac9c7f;
   color: #1e1e1e;
 }
 
-.btn-add-to-card.btn-primary:active, .btn-add-to-card.btn-primary:focus {
+.btn-circle.btn-primary:active, .btn-circle.btn-primary:focus {
   background-color: #fff !important;
   color: #1e1e1e !important;
 }
 
-.btn-add-to-card.btn-primary.loading:not(.success), .btn-add-to-card.btn-primary.success:not(.success) {
+.btn-circle.btn-primary.loading:not(.success), .btn-circle.btn-primary.success:not(.success) {
   border-left-color: #907e5e;
 }
 
-.btn-add-to-card.btn-secondary {
+.btn-circle.btn-secondary {
   background-color: #fff;
   border: 3px solid #686868;
   color: #1e1e1e;
 }
 
-.btn-add-to-card.btn-secondary:active, .btn-add-to-card.btn-secondary:focus {
+.btn-circle.btn-secondary:active, .btn-circle.btn-secondary:focus {
   background-color: #fff !important;
   color: #1e1e1e !important;
 }
 
-.btn-add-to-card.btn-secondary.loading:not(.success), .btn-add-to-card.btn-secondary.success:not(.success) {
+.btn-circle.btn-secondary.loading:not(.success), .btn-circle.btn-secondary.success:not(.success) {
   border-left-color: #494949;
 }
 
-.btn-add-to-card.btn-success {
+.btn-circle.btn-success {
   background-color: #fff;
   border: 3px solid #87de7d;
   color: #1e1e1e;
 }
 
-.btn-add-to-card.btn-success:active, .btn-add-to-card.btn-success:focus {
+.btn-circle.btn-success:active, .btn-circle.btn-success:focus {
   background-color: #fff !important;
   color: #1e1e1e !important;
 }
 
-.btn-add-to-card.btn-success.loading:not(.success), .btn-add-to-card.btn-success.success:not(.success) {
+.btn-circle.btn-success.loading:not(.success), .btn-circle.btn-success.success:not(.success) {
   border-left-color: #5ad24c;
 }
 
-.btn-add-to-card.btn-info {
+.btn-circle.btn-info {
   background-color: #fff;
   border: 3px solid #2bb4dd;
   color: #1e1e1e;
 }
 
-.btn-add-to-card.btn-info:active, .btn-add-to-card.btn-info:focus {
+.btn-circle.btn-info:active, .btn-circle.btn-info:focus {
   background-color: #fff !important;
   color: #1e1e1e !important;
 }
 
-.btn-add-to-card.btn-info.loading:not(.success), .btn-add-to-card.btn-info.success:not(.success) {
+.btn-circle.btn-info.loading:not(.success), .btn-circle.btn-info.success:not(.success) {
   border-left-color: #1c8daf;
 }
 
-.btn-add-to-card.btn-warning {
+.btn-circle.btn-warning {
   background-color: #fff;
   border: 3px solid #ddb32b;
   color: #1e1e1e;
 }
 
-.btn-add-to-card.btn-warning:active, .btn-add-to-card.btn-warning:focus {
+.btn-circle.btn-warning:active, .btn-circle.btn-warning:focus {
   background-color: #fff !important;
   color: #1e1e1e !important;
 }
 
-.btn-add-to-card.btn-warning.loading:not(.success), .btn-add-to-card.btn-warning.success:not(.success) {
+.btn-circle.btn-warning.loading:not(.success), .btn-circle.btn-warning.success:not(.success) {
   border-left-color: #af8c1c;
 }
 
-.btn-add-to-card.btn-danger {
+.btn-circle.btn-danger {
   background-color: #fff;
   border: 3px solid #f90000;
   color: #1e1e1e;
 }
 
-.btn-add-to-card.btn-danger:active, .btn-add-to-card.btn-danger:focus {
+.btn-circle.btn-danger:active, .btn-circle.btn-danger:focus {
   background-color: #fff !important;
   color: #1e1e1e !important;
 }
 
-.btn-add-to-card.btn-danger.loading:not(.success), .btn-add-to-card.btn-danger.success:not(.success) {
+.btn-circle.btn-danger.loading:not(.success), .btn-circle.btn-danger.success:not(.success) {
   border-left-color: #bc0000;
 }
 
-.btn-add-to-card.btn-light {
+.btn-circle.btn-light {
   background-color: #fff;
   border: 3px solid #f7f5f6;
   color: #1e1e1e;
 }
 
-.btn-add-to-card.btn-light:active, .btn-add-to-card.btn-light:focus {
+.btn-circle.btn-light:active, .btn-circle.btn-light:focus {
   background-color: #fff !important;
   color: #1e1e1e !important;
 }
 
-.btn-add-to-card.btn-light.loading:not(.success), .btn-add-to-card.btn-light.success:not(.success) {
+.btn-circle.btn-light.loading:not(.success), .btn-circle.btn-light.success:not(.success) {
   border-left-color: #dcd3d7;
 }
 
-.btn-add-to-card.btn-dark {
+.btn-circle.btn-dark {
   background-color: #fff;
   border: 3px solid #1e1e1e;
   color: #1e1e1e;
 }
 
-.btn-add-to-card.btn-dark:active, .btn-add-to-card.btn-dark:focus {
+.btn-circle.btn-dark:active, .btn-circle.btn-dark:focus {
   background-color: #fff !important;
   color: #1e1e1e !important;
 }
 
-.btn-add-to-card.btn-dark.loading:not(.success), .btn-add-to-card.btn-dark.success:not(.success) {
+.btn-circle.btn-dark.loading:not(.success), .btn-circle.btn-dark.success:not(.success) {
   border-left-color: black;
 }
 
-.btn-add-to-card.btn-gray {
+.btn-circle.btn-gray {
   background-color: #fff;
   border: 3px solid #9f9f9f;
   color: #1e1e1e;
 }
 
-.btn-add-to-card.btn-gray:active, .btn-add-to-card.btn-gray:focus {
+.btn-circle.btn-gray:active, .btn-circle.btn-gray:focus {
   background-color: #fff !important;
   color: #1e1e1e !important;
 }
 
-.btn-add-to-card.btn-gray.loading:not(.success), .btn-add-to-card.btn-gray.success:not(.success) {
+.btn-circle.btn-gray.loading:not(.success), .btn-circle.btn-gray.success:not(.success) {
   border-left-color: gray;
 }
 
-.btn-add-to-card.btn-dark.loading:not(.success), .btn-add-to-card.btn-dark.success:not(.success) {
+.btn-circle.btn-dark.loading:not(.success), .btn-circle.btn-dark.success:not(.success) {
   border-left-color: #5e5e5e;
 }
 
