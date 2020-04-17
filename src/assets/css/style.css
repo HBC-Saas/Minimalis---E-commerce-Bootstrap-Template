@@ -21667,39 +21667,44 @@ hr.border-white {
 }
 
 .sep-line:not(:first-child).line-primary {
-  border-left: 1px solid #ac9c7f !important;
+  border-left: 1px solid #ac9c7f;
 }
 
 .sep-line:not(:first-child).line-secondary {
-  border-left: 1px solid #686868 !important;
+  border-left: 1px solid #686868;
 }
 
 .sep-line:not(:first-child).line-success {
-  border-left: 1px solid #87de7d !important;
+  border-left: 1px solid #87de7d;
 }
 
 .sep-line:not(:first-child).line-info {
-  border-left: 1px solid #2bb4dd !important;
+  border-left: 1px solid #2bb4dd;
 }
 
 .sep-line:not(:first-child).line-warning {
-  border-left: 1px solid #ddb32b !important;
+  border-left: 1px solid #ddb32b;
 }
 
 .sep-line:not(:first-child).line-danger {
-  border-left: 1px solid #f90000 !important;
+  border-left: 1px solid #f90000;
 }
 
 .sep-line:not(:first-child).line-light {
-  border-left: 1px solid #f7f5f6 !important;
+  border-left: 1px solid #f7f5f6;
 }
 
 .sep-line:not(:first-child).line-dark {
-  border-left: 1px solid #1e1e1e !important;
+  border-left: 1px solid #1e1e1e;
 }
 
 .sep-line:not(:first-child).line-gray {
-  border-left: 1px solid #9f9f9f !important;
+  border-left: 1px solid #9f9f9f;
+}
+
+.sep-line.sep-lg:not(:first-child) {
+  padding-left: 2.5rem;
+  margin-left: 2.25rem;
 }
 
 .link-underline-primary li a {

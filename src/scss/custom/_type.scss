@@ -90,8 +90,6 @@ hr {
 .line-height-18 { line-height: 1.125rem; }
 
 // list style ( seperation line )
-
-// :nth-last-child(1 of :not(.d-none))
 .sep-line {
   margin-right: 0!important;
   &:not(:first-child) {
@@ -101,8 +99,14 @@ hr {
     border-left: 1px solid #ffffff;
     @each $color, $value in $theme-colors {
       &.line-#{$color} {
-        border-left: 1px solid $value !important;
+        border-left: 1px solid $value;
       }
+    }
+  }
+  &.sep-lg {
+    &:not(:first-child) {
+      padding-left: 2.5rem;
+      margin-left: 2.25rem;
     }
   }
 }
