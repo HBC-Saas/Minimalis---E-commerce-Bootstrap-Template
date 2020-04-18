@@ -14606,10 +14606,6 @@ select.selectpicker {
 }
 
 @media (max-width: 575.98px) {
-  .navbar-expand-sm.navbar-filter .navbar-nav {
-    padding-left: 0;
-    padding-right: 0.9375rem;
-  }
   .navbar-expand-sm.navbar-filter .navbar-nav .nav-item {
     margin-right: calc(0.9375rem - 3px);
     margin-left: calc(0.9375rem - 3px);
@@ -14825,10 +14821,6 @@ select.selectpicker {
 }
 
 @media (max-width: 767.98px) {
-  .navbar-expand-md.navbar-filter .navbar-nav {
-    padding-left: 0;
-    padding-right: 0.9375rem;
-  }
   .navbar-expand-md.navbar-filter .navbar-nav .nav-item {
     margin-right: calc(0.9375rem - 3px);
     margin-left: calc(0.9375rem - 3px);
@@ -15044,10 +15036,6 @@ select.selectpicker {
 }
 
 @media (max-width: 991.98px) {
-  .navbar-expand-lg.navbar-filter .navbar-nav {
-    padding-left: 0;
-    padding-right: 0.9375rem;
-  }
   .navbar-expand-lg.navbar-filter .navbar-nav .nav-item {
     margin-right: calc(0.9375rem - 3px);
     margin-left: calc(0.9375rem - 3px);
@@ -15263,10 +15251,6 @@ select.selectpicker {
 }
 
 @media (max-width: 1199.98px) {
-  .navbar-expand-xl.navbar-filter .navbar-nav {
-    padding-left: 0;
-    padding-right: 0.9375rem;
-  }
   .navbar-expand-xl.navbar-filter .navbar-nav .nav-item {
     margin-right: calc(0.9375rem - 3px);
     margin-left: calc(0.9375rem - 3px);
@@ -15495,11 +15479,6 @@ select.selectpicker {
 
 .navbar-expand:not(.navbar-filter) .dropdown-submenu .show > .dropdown-toggle:empty::after {
   margin-left: 0;
-}
-
-.navbar-expand.navbar-filter .navbar-nav {
-  padding-left: 0;
-  padding-right: 0.9375rem;
 }
 
 .navbar-expand.navbar-filter .navbar-nav .nav-item {

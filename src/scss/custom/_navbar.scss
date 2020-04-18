@@ -284,12 +284,6 @@
         /*===================================================
         *     navbar style
         * ===================================================*/
-        &:not(.navbar-filter) {
-          .navbar-nav {
-            .nav-item {
-            }
-          }
-        }
 
         &.navbar-filter {
           .navbar-nav {
@@ -354,9 +348,6 @@
       @include media-breakpoint-down($breakpoint) {
         &.navbar-filter {
           .navbar-nav {
-            padding-left: 0;
-            padding-right: $navbar-nav-link-margin-x;
-
             .nav-item {
               margin-right: calc(#{$navbar-nav-link-margin-x} - 3px);
               margin-left: calc(#{$navbar-nav-link-margin-x} - 3px);
@@ -440,8 +431,8 @@
 }
 
 @include media-breakpoint-down(xs) {
-  &.fixed-top,
-  &.sticky-navbar {
+  .fixed-top,
+  .sticky-navbar {
     .navbar-collapse {
       .navbar-nav {
         &.navbar-sm-full {
