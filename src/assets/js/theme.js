@@ -329,7 +329,28 @@ $(document).ready(function(){
         $('body').toggleClass("modal-opacity-0");
     }).on('hidden.bs.modal', function (e) {
         $('body').toggleClass("modal-opacity-0");
-    })
+    });
+
+    // =====================================================
+    //      Custom class for Modal
+    // =====================================================
+
+    // Initialize popup as usual
+    $('.popup-link').magnificPopup({
+        type: 'image',
+        mainClass: 'mfp-with-zoom',
+
+        zoom: {
+            enabled: true,
+
+            duration: 300,
+            easing: 'ease-in-out',
+            opener: function(openerElement) {
+                return openerElement.is('img') ? openerElement : openerElement.find('img');
+            }
+        }
+
+    });
 
 });
 
