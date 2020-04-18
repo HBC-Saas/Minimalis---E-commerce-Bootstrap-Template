@@ -284,10 +284,12 @@
         /*===================================================
         *     navbar style
         * ===================================================*/
-        &:not(.navbar-filter) {
+
+        &.navbar-filter {
           .navbar-nav {
             .nav-item {
-              &:last-child { margin-right: 0; }
+              margin-right: calc(#{$navbar-nav-link-margin-x} + 3px);
+              margin-left: calc(#{$navbar-nav-link-margin-x} + 3px);
             }
           }
         }
@@ -298,6 +300,7 @@
             margin-left: $navbar-nav-link-margin-x;
 
             &:first-child { margin-left: 0; }
+            &:last-child { margin-right: 0; }
           }
 
           .nav-link {
@@ -343,6 +346,15 @@
 
 
       @include media-breakpoint-down($breakpoint) {
+        &.navbar-filter {
+          .navbar-nav {
+            .nav-item {
+              margin-right: calc(#{$navbar-nav-link-margin-x} - 3px);
+              margin-left: calc(#{$navbar-nav-link-margin-x} - 3px);
+            }
+          }
+        }
+
         &:not(.navbar-filter) {
           // navbar collapse
           .navbar-collapse {
@@ -419,8 +431,8 @@
 }
 
 @include media-breakpoint-down(xs) {
-  &.fixed-top,
-  &.sticky-navbar {
+  .fixed-top,
+  .sticky-navbar {
     .navbar-collapse {
       .navbar-nav {
         &.navbar-sm-full {
