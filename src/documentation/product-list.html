@@ -167,152 +167,284 @@
                 <div id="main" class="ml-sm-auto col-md-9 col-lg-9 col-xl-10">
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="mb-2 font-weight-bold text-primary">Order.</h4>
+                            <h3 class="mb-3 font-weight-bold">My Orders</h3>
 
-                            <ul class="list-group list-group-lg list-group-flush">
-                                <li class="list-group-item p-0">
-                                    <div class="row">
-                                        <div class="col-sm-5 border-right">
-                                            <div class="row pt-4 pb-4">
-                                                <div class="col-sm-12">
-                                                    <h5 class="font-weight-bold mb-4">Product</h5>
-                                                </div><!-- end col -->
-                                                <div class="col-sm-12">
-                                                    <div class="row align-items-end">
-                                                        <div class="col-auto">
-                                                            <img width="99" class="img-fluid" src="../assets/img/products/product_small.png" alt="product">
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result1" data-toggle="tab" role="tab" aria-controls="result1" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code1" data-toggle="tab" role="tab" aria-controls="code1" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result1" role="tabpanel">
+                                    <ul class="list-group list-group-lg list-group-flush border-top border-bottom">
+                                        <li class="list-group-item p-0">
+                                            <div class="row">
+                                                <div class="col-md-5 col-lg-4 border-right-0 border-md-right">
+                                                    <div class="row pt-4 pb-0 pb-md-4">
+                                                        <div class="col-sm-12">
+                                                            <h5 class="font-weight-bold mb-4 float-left float-md-none">
+                                                                Product
+                                                            </h5>
+                                                            <a class="d-none float-right" href="javascript:void(0);">
+                                                                <i class="flaticon-close small mr-1"></i> Remove
+                                                            </a>
                                                         </div><!-- end col -->
-                                                        <div class="col pl-2">
-                                                            <p class="mb-1">Order time: 02:04 Feb. 10 2020</p>
-                                                            <p class="mb-4">Order ID: 8010480618055050</p>
+                                                        <div class="col-sm-12">
+                                                            <div class="row">
+                                                                <div class="col-3 col-md-auto">
+                                                                    <img class="img-fluid" src="../assets/img/products/product_small.png" alt="product">
+                                                                </div><!-- end col -->
+                                                                <div class="col-9 col-md pl-3 pl-md-2">
+                                                                    <p class="mb-1"><span class="text-dark font-weight-bold">Order time:</span> 02:04 Feb. 10 2020</p>
+                                                                    <p class="mb-3 mb-md-4"><span class="text-dark font-weight-bold">Order ID:</span> 8010480618055050</p>
 
-                                                            <h5 class="mb-1 font-weight-bold">Minimal Lamp</h5>
-                                                            <h6 class="mb-0 font-weight-normal">$20.00</h6>
+                                                                    <h5 class="mb-2 font-weight-bold">Minimal Lamp</h5>
+                                                                    <h5 class="mb-0 font-weight-normal">$20.00</h5>
+                                                                </div><!-- end col -->
+                                                            </div><!-- end row -->
+                                                        </div><!-- end col -->
+                                                    </div><!-- end row -->
+                                                </div><!-- end col -->
+
+                                                <div class="col-md-4 col-lg-6">
+                                                    <div class="row h-100 justify-content-end align-items-md-start align-items-lg-stretch border-right-0 border-md-right">
+                                                        <div class="col-9 col-md-12">
+                                                            <div class="row h-100">
+                                                                <div class="col-md-12 col-lg-5 border-right-0 border-lg-right">
+                                                                    <div class="row pt-3 pt-md-4">
+                                                                        <div class="col-sm-12 pl-3 pr-3 pl-md-4 pr-md-4">
+                                                                            <h5 class="font-weight-bold mb-2 mb-lg-4">Status</h5>
+                                                                            <h5 class="font-weight-normal text-warning mb-0">In - Transit</h5>
+                                                                        </div><!-- end col -->
+                                                                    </div><!-- end row -->
+                                                                </div><!-- end col -->
+                                                                <div class="col-md-12 col-lg-7 align-self-stretch">
+                                                                    <div class="row pt-3 pt-md-4 pb-4">
+                                                                        <div class="col-sm-12 pl-3 pr-3 pl-md-4 pr-md-4">
+                                                                            <h5 class="font-weight-bold mb-2 mb-lg-4">Delivery Expectation</h5>
+                                                                            <h5 class="font-weight-normal">16 March, 2020</h5>
+                                                                        </div><!-- end col -->
+                                                                    </div><!-- end row -->
+                                                                </div><!-- end col -->
+                                                            </div><!-- end row -->
+                                                        </div><!-- end col -->
+                                                    </div><!-- end row -->
+                                                </div><!-- end col -->
+
+                                                <div class="col-md-3 col-lg-2 d-none">
+                                                    <div class="row pt-4 pb-4">
+                                                        <div class="col-sm-12 pl-4 pr-4 text-right">
+                                                            <a href="javascript:void(0);"><i class="flaticon-close small mr-1"></i> Remove</a>
                                                         </div><!-- end col -->
                                                     </div><!-- end row -->
                                                 </div><!-- end col -->
                                             </div><!-- end row -->
-                                        </div><!-- end col -->
-                                        <div class="col-sm-2 border-right">
-                                            <div class="row pt-4 pb-4">
-                                                <div class="col-sm-12 pl-4 pr-4">
-                                                    <h5 class="font-weight-bold mb-4">Status</h5>
-                                                    <p class="text-warning">In - Transit</p>
-                                                </div><!-- end col -->
-                                            </div><!-- end row -->
-                                        </div><!-- end col -->
-                                        <div class="col-sm-3 border-right">
-                                            <div class="row pt-4 pb-4">
-                                                <div class="col-sm-12 pl-4 pr-4">
-                                                    <h5 class="font-weight-bold mb-4">Delivery Expectation</h5>
-                                                    <p>16 March, 2020</p>
-                                                </div><!-- end col -->
-                                            </div><!-- end row -->
-                                        </div><!-- end col -->
-                                        <div class="col-sm-2">
+                                        </li><!-- end list-group-item -->
 
-                                        </div><!-- end col -->
-                                    </div><!-- end row -->
-                                </li><!-- end list-group-item -->
-
-                                <li class="list-group-item p-0">
-                                    <div class="row">
-                                        <div class="col-sm-5 border-right">
-                                            <div class="row pt-4 pb-4">
-                                                <div class="col-sm-12">
-                                                    <h5 class="font-weight-bold mb-4">Product</h5>
-                                                </div><!-- end col -->
-                                                <div class="col-sm-12">
-                                                    <div class="row align-items-end">
-                                                        <div class="col-auto">
-                                                            <img width="99" class="img-fluid" src="../assets/img/products/product_small_2.png" alt="product">
+                                        <li class="list-group-item p-0">
+                                            <div class="row">
+                                                <div class="col-md-5 col-lg-4 border-right-0 border-md-right">
+                                                    <div class="row pt-4 pb-0 pb-md-4">
+                                                        <div class="col-sm-12">
+                                                            <h5 class="font-weight-bold mb-4 float-left float-md-none">
+                                                                Product
+                                                            </h5>
+                                                            <a class="d-block d-md-none float-right" href="javascript:void(0);">
+                                                                <i class="flaticon-close small mr-1"></i> Remove
+                                                            </a>
                                                         </div><!-- end col -->
-                                                        <div class="col pl-2">
-                                                            <p class="mb-1">Order time: 02:04 Feb. 10 2020</p>
-                                                            <p class="mb-4">Order ID: 8010480618055050</p>
+                                                        <div class="col-sm-12">
+                                                            <div class="row">
+                                                                <div class="col-3 col-md-auto">
+                                                                    <img class="img-fluid" src="../assets/img/products/product_small_2.png" alt="product">
+                                                                </div><!-- end col -->
+                                                                <div class="col-9 col-md pl-3 pl-md-2">
+                                                                    <p class="mb-1"><span class="text-dark font-weight-bold">Order time:</span> 02:04 Feb. 10 2020</p>
+                                                                    <p class="mb-3 mb-md-4"><span class="text-dark font-weight-bold">Order ID:</span> 8010480618055050</p>
 
-                                                            <h5 class="mb-1 font-weight-bold">Minimal Lamp</h5>
-                                                            <h6 class="mb-0 font-weight-normal">$20.00</h6>
+                                                                    <h5 class="mb-2 font-weight-bold">Minimal Lamp</h5>
+                                                                    <h5 class="mb-0 font-weight-normal">$20.00</h5>
+                                                                </div><!-- end col -->
+                                                            </div><!-- end row -->
+                                                        </div><!-- end col -->
+                                                    </div><!-- end row -->
+                                                </div><!-- end col -->
+
+                                                <div class="col-md-4 col-lg-6">
+                                                    <div class="row h-100 justify-content-end align-items-md-start align-items-lg-stretch border-right-0 border-md-right">
+                                                        <div class="col-9 col-md-12">
+                                                            <div class="row h-100">
+                                                                <div class="col-md-12 col-lg-5 border-right-0 border-lg-right">
+                                                                    <div class="row pt-3 pt-md-4">
+                                                                        <div class="col-sm-12 pl-3 pr-3 pl-md-4 pr-md-4">
+                                                                            <h5 class="font-weight-bold mb-2 mb-lg-4">Status</h5>
+                                                                            <h5 class="font-weight-normal text-success mb-0">Done</h5>
+                                                                        </div><!-- end col -->
+                                                                    </div><!-- end row -->
+                                                                </div><!-- end col -->
+                                                                <div class="col-md-12 col-lg-7 align-self-stretch">
+                                                                    <div class="row pt-3 pt-md-4 pb-4">
+                                                                        <div class="col-sm-12 pl-3 pr-3 pl-md-4 pr-md-4">
+                                                                            <h5 class="font-weight-bold mb-2 mb-lg-4">Delivery Expectation</h5>
+                                                                            <h5 class="font-weight-normal">16 March, 2020</h5>
+                                                                        </div><!-- end col -->
+                                                                    </div><!-- end row -->
+                                                                </div><!-- end col -->
+                                                            </div><!-- end row -->
+                                                        </div><!-- end col -->
+                                                    </div><!-- end row -->
+                                                </div><!-- end col -->
+
+                                                <div class="col-md-3 col-lg-2 d-none d-md-block">
+                                                    <div class="row pt-4 pb-4">
+                                                        <div class="col-sm-12 pl-4 pr-4 text-right">
+                                                            <a href="javascript:void(0);"><i class="flaticon-close small mr-1"></i> Remove</a>
                                                         </div><!-- end col -->
                                                     </div><!-- end row -->
                                                 </div><!-- end col -->
                                             </div><!-- end row -->
-                                        </div><!-- end col -->
-                                        <div class="col-sm-2 border-right">
-                                            <div class="row pt-4 pb-4">
-                                                <div class="col-sm-12 pl-4 pr-4">
-                                                    <h5 class="font-weight-bold mb-4">Status</h5>
-                                                    <p class="text-success">Done</p>
-                                                </div><!-- end col -->
-                                            </div><!-- end row -->
-                                        </div><!-- end col -->
-                                        <div class="col-sm-3 border-right">
-                                            <div class="row pt-4 pb-4">
-                                                <div class="col-sm-12 pl-4 pr-4">
-                                                    <h5 class="font-weight-bold mb-4">Delivery Expectation</h5>
-                                                    <p>16 March, 2020</p>
-                                                </div><!-- end col -->
-                                            </div><!-- end row -->
-                                        </div><!-- end col -->
-                                        <div class="col-sm-2">
-                                            <div class="row pt-4 pb-4">
-                                                <div class="col-sm-12 pl-4 pr-4 text-right">
-                                                    <a href="javascript:void(0);"><i class="flaticon-close small mr-1"></i> Remove</a>
-                                                </div><!-- end col -->
-                                            </div><!-- end row -->
-                                        </div><!-- end col -->
-                                    </div><!-- end row -->
-                                </li><!-- end list-group-item -->
+                                        </li><!-- end list-group-item -->
 
-                                <li class="list-group-item p-0">
-                                    <div class="row">
-                                        <div class="col-sm-5 border-right">
-                                            <div class="row pt-4 pb-4">
-                                                <div class="col-sm-12">
-                                                    <h5 class="font-weight-bold mb-4">Product</h5>
-                                                </div><!-- end col -->
-                                                <div class="col-sm-12">
-                                                    <div class="row align-items-end">
-                                                        <div class="col-auto">
-                                                            <img width="99" class="img-fluid" src="../assets/img/products/product_small_3.png" alt="product">
+                                        <li class="list-group-item p-0">
+                                            <div class="row">
+                                                <div class="col-md-5 col-lg-4 border-right-0 border-md-right">
+                                                    <div class="row pt-4 pb-0 pb-md-4">
+                                                        <div class="col-sm-12">
+                                                            <h5 class="font-weight-bold mb-4 float-left float-md-none">
+                                                                Product
+                                                            </h5>
+                                                            <a class="d-block d-md-none float-right" href="javascript:void(0);">
+                                                                <i class="flaticon-close small mr-1"></i> Remove
+                                                            </a>
                                                         </div><!-- end col -->
-                                                        <div class="col pl-2">
-                                                            <p class="mb-1">Order time: 02:04 Feb. 10 2020</p>
-                                                            <p class="mb-4">Order ID: 8010480618055050</p>
+                                                        <div class="col-sm-12">
+                                                            <div class="row">
+                                                                <div class="col-3 col-md-auto">
+                                                                    <img class="img-fluid" src="../assets/img/products/product_small_3.png" alt="product">
+                                                                </div><!-- end col -->
+                                                                <div class="col-9 col-md pl-3 pl-md-2">
+                                                                    <p class="mb-1"><span class="text-dark font-weight-bold">Order time:</span> 02:04 Feb. 10 2020</p>
+                                                                    <p class="mb-3 mb-md-4"><span class="text-dark font-weight-bold">Order ID:</span> 8010480618055050</p>
 
-                                                            <h5 class="mb-1 font-weight-bold">Minimal Lamp</h5>
-                                                            <h6 class="mb-0 font-weight-normal">$20.00</h6>
+                                                                    <h5 class="mb-2 font-weight-bold">Minimal Lamp</h5>
+                                                                    <h5 class="mb-0 font-weight-normal">$20.00</h5>
+                                                                </div><!-- end col -->
+                                                            </div><!-- end row -->
+                                                        </div><!-- end col -->
+                                                    </div><!-- end row -->
+                                                </div><!-- end col -->
+
+                                                <div class="col-md-4 col-lg-6">
+                                                    <div class="row h-100 justify-content-end align-items-md-start align-items-lg-stretch border-right-0 border-md-right">
+                                                        <div class="col-9 col-md-12">
+                                                            <div class="row h-100">
+                                                                <div class="col-md-12 col-lg-5 border-right-0 border-lg-right">
+                                                                    <div class="row pt-3 pt-md-4">
+                                                                        <div class="col-sm-12 pl-3 pr-3 pl-md-4 pr-md-4">
+                                                                            <h5 class="font-weight-bold mb-2 mb-lg-4">Status</h5>
+                                                                            <h5 class="font-weight-normal text-danger mb-0">Canceled</h5>
+                                                                        </div><!-- end col -->
+                                                                    </div><!-- end row -->
+                                                                </div><!-- end col -->
+                                                                <div class="col-md-12 col-lg-7 align-self-stretch">
+                                                                    <div class="row pt-3 pt-md-4 pb-4">
+                                                                        <div class="col-sm-12 pl-3 pr-3 pl-md-4 pr-md-4">
+                                                                            <h5 class="font-weight-bold mb-2 mb-lg-4">Delivery Expectation</h5>
+                                                                            <h5 class="font-weight-normal">16 March, 2020</h5>
+                                                                        </div><!-- end col -->
+                                                                    </div><!-- end row -->
+                                                                </div><!-- end col -->
+                                                            </div><!-- end row -->
+                                                        </div><!-- end col -->
+                                                    </div><!-- end row -->
+                                                </div><!-- end col -->
+
+                                                <div class="col-md-3 col-lg-2 d-none d-md-block">
+                                                    <div class="row pt-4 pb-4">
+                                                        <div class="col-sm-12 pl-4 pr-4 text-right">
+                                                            <a href="javascript:void(0);"><i class="flaticon-close small mr-1"></i> Remove</a>
                                                         </div><!-- end col -->
                                                     </div><!-- end row -->
                                                 </div><!-- end col -->
                                             </div><!-- end row -->
-                                        </div><!-- end col -->
-                                        <div class="col-sm-2 border-right">
-                                            <div class="row pt-4 pb-4">
-                                                <div class="col-sm-12 pl-4 pr-4">
-                                                    <h5 class="font-weight-bold mb-4">Status</h5>
-                                                    <p class="text-danger">Canceled</p>
-                                                </div><!-- end col -->
-                                            </div><!-- end row -->
-                                        </div><!-- end col -->
-                                        <div class="col-sm-3 border-right">
-                                            <div class="row pt-4 pb-4">
-                                                <div class="col-sm-12 pl-4 pr-4">
-                                                    <h5 class="font-weight-bold mb-4">Delivery Expectation</h5>
-                                                    <p>16 March, 2020</p>
-                                                </div><!-- end col -->
-                                            </div><!-- end row -->
-                                        </div><!-- end col -->
-                                        <div class="col-sm-2">
-                                            <div class="row pt-4 pb-4">
-                                                <div class="col-sm-12 pl-4 pr-4 text-right">
-                                                    <a href="javascript:void(0);"><i class="flaticon-close small mr-1"></i> Remove</a>
-                                                </div><!-- end col -->
-                                            </div><!-- end row -->
-                                        </div><!-- end col -->
-                                    </div><!-- end row -->
-                                </li><!-- end list-group-item -->
-                            </ul>
+                                        </li><!-- end list-group-item -->
+                                    </ul><!-- end list-group -->
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code1" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;ul class="list-group list-group-lg list-group-flush border-top border-bottom"&gt;
+    &lt;li class="list-group-item p-0"&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col-md-5 col-lg-4 border-right-0 border-md-right"&gt;
+                &lt;div class="row pt-4 pb-0 pb-md-4"&gt;
+                    &lt;div class="col-sm-12"&gt;
+                        &lt;h5 class="font-weight-bold mb-4 float-left float-md-none"&gt;
+                            Product
+                        &lt;/h5&gt;
+                        &lt;a class="d-none float-right" href="javascript:void(0);"&gt;
+                            &lt;i class="flaticon-close small mr-1"&gt;&lt;/i&gt; Remove
+                        &lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div class="col-sm-12"&gt;
+                        &lt;div class="row"&gt;
+                            &lt;div class="col-3 col-md-auto"&gt;
+                                &lt;img class="img-fluid" src="../assets/img/products/product_small.png" alt="product"&gt;
+                            &lt;/div&gt;
+                            &lt;div class="col-9 col-md pl-3 pl-md-2"&gt;
+                                &lt;p class="mb-1"&gt;&lt;span class="text-dark font-weight-bold"&gt;Order time:&lt;/span&gt; 02:04 Feb. 10 2020&lt;/p&gt;
+                                &lt;p class="mb-3 mb-md-4"&gt;&lt;span class="text-dark font-weight-bold"&gt;Order ID:&lt;/span&gt; 8010480618055050&lt;/p&gt;
+
+                                &lt;h5 class="mb-2 font-weight-bold"&gt;Minimal Lamp&lt;/h5&gt;
+                                &lt;h5 class="mb-0 font-weight-normal"&gt;$20.00&lt;/h5&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class="col-md-4 col-lg-6"&gt;
+                &lt;div class="row h-100 justify-content-end align-items-md-start align-items-lg-stretch border-right-0 border-md-right"&gt;
+                    &lt;div class="col-9 col-md-12"&gt;
+                        &lt;div class="row h-100"&gt;
+                            &lt;div class="col-md-12 col-lg-5 border-right-0 border-lg-right"&gt;
+                                &lt;div class="row pt-3 pt-md-4"&gt;
+                                    &lt;div class="col-sm-12 pl-3 pr-3 pl-md-4 pr-md-4"&gt;
+                                        &lt;h5 class="font-weight-bold mb-2 mb-lg-4"&gt;Status&lt;/h5&gt;
+                                        &lt;h5 class="font-weight-normal text-warning mb-0"&gt;In - Transit&lt;/h5&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class="col-md-12 col-lg-7 align-self-stretch"&gt;
+                                &lt;div class="row pt-3 pt-md-4 pb-4"&gt;
+                                    &lt;div class="col-sm-12 pl-3 pr-3 pl-md-4 pr-md-4"&gt;
+                                        &lt;h5 class="font-weight-bold mb-2 mb-lg-4"&gt;Delivery Expectation&lt;/h5&gt;
+                                        &lt;h5 class="font-weight-normal"&gt;16 March, 2020&lt;/h5&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class="col-md-3 col-lg-2 d-none"&gt;
+                &lt;div class="row pt-4 pb-4"&gt;
+                    &lt;div class="col-sm-12 pl-4 pr-4 text-right"&gt;
+                        &lt;a href="javascript:void(0);"&gt;&lt;i class="flaticon-close small mr-1"&gt;&lt;/i&gt; Remove&lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
                         </div><!-- end col -->
                     </div><!-- end row -->
 
@@ -320,129 +452,224 @@
 
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="mb-2 font-weight-bold text-primary">Cart.</h4>
+                            <h3 class="mb-3 font-weight-bold">My Cart</h3>
 
-                            <ul class="list-group list-group-lg list-group-flush">
-                                <li class="list-group-item p-0">
-                                    <div class="row">
-                                        <div class="col-sm-12 pt-4">
-                                            <h5 class="font-weight-bold mb-4">Product</h5>
-                                        </div><!-- end col -->
-                                        <div class="col-sm-8">
-                                            <div class="row pb-4">
-                                                <div class="col-sm-12">
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result2" data-toggle="tab" role="tab" aria-controls="result2" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code2" data-toggle="tab" role="tab" aria-controls="code2" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result2" role="tabpanel">
+                                    <ul class="list-group list-group-lg list-group-flush border-top border-bottom">
+                                        <li class="list-group-item py-4">
+                                            <div class="row d-none d-md-flex mb-4">
+                                                <div class="col">
+                                                    <h5 class="font-weight-bold">Product</h5>
+                                                </div><!-- end col -->
+                                                <div class="col text-right">
+                                                    <a href="javascript:void(0);"><i class="flaticon-close small mr-1"></i> Remove</a>
+                                                </div><!-- end col -->
+                                            </div><!-- end row -->
+
+                                            <div class="row">
+                                                <div class="col-12">
                                                     <div class="row align-items-end">
-                                                        <div class="col-auto">
-                                                            <img width="99" class="img-fluid" src="../assets/img/products/product_small.png" alt="product">
+                                                        <div class="col-3 col-md-auto">
+                                                            <img class="img-fluid" src="../assets/img/products/product_small.png" alt="product">
                                                         </div><!-- end col -->
-                                                        <div class="col pl-2">
-                                                            <h5 class="mb-1 font-weight-bold">Minimal Lamp</h5>
-                                                            <h6 class="mb-0 font-weight-normal">$20.00</h6>
+                                                        <div class="col-9 col-md pl-2">
+                                                            <div class="row">
+                                                                <div class="col-12 mb-3">
+                                                                    <h5 class="mb-2 font-weight-bold">Minimal Grey Lamp</h5>
+                                                                    <h5 class="mb-0 font-weight-normal">$40.00</h5>
+                                                                </div><!-- end col -->
 
-                                                            <div class="qty-container mt-3">
-                                                                <div class="input-group">
-                                                                    <input type="text" class="form-control" name="field1" value="1">
-                                                                    <div class="input-group-append">
-                                                                        <button class="qty" type="button" data-func="plus" data-field="field1"><i class="flaticon-play-button"></i></button>
-                                                                        <button class="qty" type="button" data-func="minus" data-field="field1"><i class="flaticon-play-button-1"></i></button>
-                                                                    </div><!-- end input-group-append -->
-                                                                </div><!-- end input-group -->
-                                                            </div><!-- end qty-container -->
+                                                                <div class="col-12">
+                                                                    <div class="row align-items-end">
+                                                                        <div class="col">
+                                                                            <div class="qty-container">
+                                                                                <div class="input-group">
+                                                                                    <input type="text" class="form-control" name="field1" value="1">
+                                                                                    <div class="input-group-append">
+                                                                                        <button class="qty" type="button" data-func="plus" data-field="field1"><i class="flaticon-play-button"></i></button>
+                                                                                        <button class="qty" type="button" data-func="minus" data-field="field1"><i class="flaticon-play-button-1"></i></button>
+                                                                                    </div><!-- end input-group-append -->
+                                                                                </div><!-- end input-group -->
+                                                                            </div><!-- end qty-container -->
+                                                                        </div><!-- end col -->
+
+                                                                        <div class="col d-block d-md-none text-right">
+                                                                            <a class="text-nowrap" href="javascript:void(0);"><i class="flaticon-close small mr-1"></i> Remove</a>
+                                                                        </div><!-- end col -->
+                                                                    </div><!-- end row -->
+                                                                </div><!-- end col -->
+                                                            </div><!-- end row -->
                                                         </div><!-- end col -->
                                                     </div><!-- end row -->
                                                 </div><!-- end col -->
                                             </div><!-- end row -->
-                                        </div><!-- end col -->
-                                        <div class="col-sm-4">
-                                            <div class="row">
-                                                <div class="col-sm-12 pl-4 pr-4 text-right">
+                                        </li><!-- end list-group-item -->
+
+                                        <li class="list-group-item py-4">
+                                            <div class="row d-none d-md-flex mb-4">
+                                                <div class="col">
+                                                    <h5 class="font-weight-bold">Product</h5>
+                                                </div><!-- end col -->
+                                                <div class="col text-right">
                                                     <a href="javascript:void(0);"><i class="flaticon-close small mr-1"></i> Remove</a>
                                                 </div><!-- end col -->
                                             </div><!-- end row -->
-                                        </div><!-- end col -->
-                                    </div><!-- end row -->
-                                </li><!-- end list-group-item -->
 
-                                <li class="list-group-item p-0">
-                                    <div class="row">
-                                        <div class="col-sm-12 pt-4">
-                                            <h5 class="font-weight-bold mb-4">Product</h5>
-                                        </div><!-- end col -->
-                                        <div class="col-sm-8">
-                                            <div class="row pb-4">
-                                                <div class="col-sm-12">
+                                            <div class="row">
+                                                <div class="col-12">
                                                     <div class="row align-items-end">
-                                                        <div class="col-auto">
-                                                            <img width="99" class="img-fluid" src="../assets/img/products/product_small_2.png" alt="product">
+                                                        <div class="col-3 col-md-auto">
+                                                            <img class="img-fluid" src="../assets/img/products/product_small_2.png" alt="product">
                                                         </div><!-- end col -->
-                                                        <div class="col pl-2">
-                                                            <h5 class="mb-1 font-weight-bold">Minimal Lamp</h5>
-                                                            <h6 class="mb-0 font-weight-normal">$20.00</h6>
+                                                        <div class="col-9 col-md pl-2">
+                                                            <div class="row">
+                                                                <div class="col-12 mb-3">
+                                                                    <h5 class="mb-2 font-weight-bold">Minimal couch</h5>
+                                                                    <h5 class="mb-0 font-weight-normal">$120.00</h5>
+                                                                </div><!-- end col -->
 
-                                                            <div class="qty-container mt-3">
-                                                                <div class="input-group">
-                                                                    <input type="text" class="form-control" name="field2" value="1">
-                                                                    <div class="input-group-append">
-                                                                        <button class="qty" type="button" data-func="plus" data-field="field2"><i class="flaticon-play-button"></i></button>
-                                                                        <button class="qty" type="button" data-func="minus" data-field="field2"><i class="flaticon-play-button-1"></i></button>
-                                                                    </div><!-- end input-group-append -->
-                                                                </div><!-- end input-group -->
-                                                            </div><!-- end qty-container -->
+                                                                <div class="col-12">
+                                                                    <div class="row align-items-end">
+                                                                        <div class="col">
+                                                                            <div class="qty-container">
+                                                                                <div class="input-group">
+                                                                                    <input type="text" class="form-control" name="field2" value="1">
+                                                                                    <div class="input-group-append">
+                                                                                        <button class="qty" type="button" data-func="plus" data-field="field2"><i class="flaticon-play-button"></i></button>
+                                                                                        <button class="qty" type="button" data-func="minus" data-field="field2"><i class="flaticon-play-button-1"></i></button>
+                                                                                    </div><!-- end input-group-append -->
+                                                                                </div><!-- end input-group -->
+                                                                            </div><!-- end qty-container -->
+                                                                        </div><!-- end col -->
+
+                                                                        <div class="col d-block d-md-none text-right">
+                                                                            <a class="text-nowrap" href="javascript:void(0);"><i class="flaticon-close small mr-1"></i> Remove</a>
+                                                                        </div><!-- end col -->
+                                                                    </div><!-- end row -->
+                                                                </div><!-- end col -->
+                                                            </div><!-- end row -->
                                                         </div><!-- end col -->
                                                     </div><!-- end row -->
                                                 </div><!-- end col -->
                                             </div><!-- end row -->
-                                        </div><!-- end col -->
-                                        <div class="col-sm-4">
-                                            <div class="row">
-                                                <div class="col-sm-12 pl-4 pr-4 text-right">
+                                        </li><!-- end list-group-item -->
+
+                                        <li class="list-group-item py-4">
+                                            <div class="row d-none d-md-flex mb-4">
+                                                <div class="col">
+                                                    <h5 class="font-weight-bold">Product</h5>
+                                                </div><!-- end col -->
+                                                <div class="col text-right">
                                                     <a href="javascript:void(0);"><i class="flaticon-close small mr-1"></i> Remove</a>
                                                 </div><!-- end col -->
                                             </div><!-- end row -->
-                                        </div><!-- end col -->
-                                    </div><!-- end row -->
-                                </li><!-- end list-group-item -->
 
-                                <li class="list-group-item p-0">
-                                    <div class="row">
-                                        <div class="col-sm-12 pt-4">
-                                            <h5 class="font-weight-bold mb-4">Product</h5>
-                                        </div><!-- end col -->
-                                        <div class="col-sm-8">
-                                            <div class="row pb-4">
-                                                <div class="col-sm-12">
+                                            <div class="row">
+                                                <div class="col-12">
                                                     <div class="row align-items-end">
-                                                        <div class="col-auto">
-                                                            <img width="99" class="img-fluid" src="../assets/img/products/product_small_3.png" alt="product">
+                                                        <div class="col-3 col-md-auto">
+                                                            <img class="img-fluid" src="../assets/img/products/product_small_3.png" alt="product">
                                                         </div><!-- end col -->
-                                                        <div class="col pl-2">
-                                                            <h5 class="mb-1 font-weight-bold">Minimal Lamp</h5>
-                                                            <h6 class="mb-0 font-weight-normal">$20.00</h6>
+                                                        <div class="col-9 col-md pl-2">
+                                                            <div class="row">
+                                                                <div class="col-12 mb-3">
+                                                                    <h5 class="mb-2 font-weight-bold">Minimal wood Chair</h5>
+                                                                    <h5 class="mb-0 font-weight-normal">$20.00</h5>
+                                                                </div><!-- end col -->
 
-                                                            <div class="qty-container mt-3">
-                                                                <div class="input-group">
-                                                                    <input type="text" class="form-control" name="field3" value="1">
-                                                                    <div class="input-group-append">
-                                                                        <button class="qty" type="button" data-func="plus" data-field="field3"><i class="flaticon-play-button"></i></button>
-                                                                        <button class="qty" type="button" data-func="minus" data-field="field3"><i class="flaticon-play-button-1"></i></button>
-                                                                    </div><!-- end input-group-append -->
-                                                                </div><!-- end input-group -->
-                                                            </div><!-- end qty-container -->
+                                                                <div class="col-12">
+                                                                    <div class="row align-items-end">
+                                                                        <div class="col">
+                                                                            <div class="qty-container">
+                                                                                <div class="input-group">
+                                                                                    <input type="text" class="form-control" name="field3" value="1">
+                                                                                    <div class="input-group-append">
+                                                                                        <button class="qty" type="button" data-func="plus" data-field="field3"><i class="flaticon-play-button"></i></button>
+                                                                                        <button class="qty" type="button" data-func="minus" data-field="field3"><i class="flaticon-play-button-1"></i></button>
+                                                                                    </div><!-- end input-group-append -->
+                                                                                </div><!-- end input-group -->
+                                                                            </div><!-- end qty-container -->
+                                                                        </div><!-- end col -->
+
+                                                                        <div class="col d-block d-md-none text-right">
+                                                                            <a class="text-nowrap" href="javascript:void(0);"><i class="flaticon-close small mr-1"></i> Remove</a>
+                                                                        </div><!-- end col -->
+                                                                    </div><!-- end row -->
+                                                                </div><!-- end col -->
+                                                            </div><!-- end row -->
                                                         </div><!-- end col -->
                                                     </div><!-- end row -->
                                                 </div><!-- end col -->
                                             </div><!-- end row -->
-                                        </div><!-- end col -->
-                                        <div class="col-sm-4">
-                                            <div class="row">
-                                                <div class="col-sm-12 pl-4 pr-4 text-right">
-                                                    <a href="javascript:void(0);"><i class="flaticon-close small mr-1"></i> Remove</a>
-                                                </div><!-- end col -->
-                                            </div><!-- end row -->
-                                        </div><!-- end col -->
-                                    </div><!-- end row -->
-                                </li><!-- end list-group-item -->
-                            </ul>
+                                        </li><!-- end list-group-item -->
+                                    </ul><!-- end list-group -->
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code2" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;ul class="list-group list-group-lg list-group-flush border-top border-bottom"&gt;
+    &lt;li class="list-group-item py-4"&gt;
+        &lt;div class="row d-none d-md-flex mb-4"&gt;
+            &lt;div class="col"&gt;
+                &lt;h5 class="font-weight-bold"&gt;Product&lt;/h5&gt;
+            &lt;/div&gt;
+            &lt;div class="col text-right"&gt;
+                &lt;a href="javascript:void(0);"&gt;&lt;i class="flaticon-close small mr-1"&gt;&lt;/i&gt; Remove&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class="row"&gt;
+            &lt;div class="col-12"&gt;
+                &lt;div class="row align-items-end"&gt;
+                    &lt;div class="col-3 col-md-auto"&gt;
+                        &lt;img class="img-fluid" src="../assets/img/products/product_small.png" alt="product"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="col-9 col-md pl-2"&gt;
+                        &lt;div class="row"&gt;
+                            &lt;div class="col-12 mb-3"&gt;
+                                &lt;h5 class="mb-2 font-weight-bold"&gt;Minimal Grey Lamp&lt;/h5&gt;
+                                &lt;h5 class="mb-0 font-weight-normal"&gt;$40.00&lt;/h5&gt;
+                            &lt;/div&gt;
+
+                            &lt;div class="col-12"&gt;
+                                &lt;div class="row align-items-end"&gt;
+                                    &lt;div class="col"&gt;
+                                        &lt;div class="qty-container"&gt;
+                                            &lt;div class="input-group"&gt;
+                                                &lt;input type="text" class="form-control" name="field1" value="1"&gt;
+                                                &lt;div class="input-group-append"&gt;
+                                                    &lt;button class="qty" type="button" data-func="plus" data-field="field1"&gt;&lt;i class="flaticon-play-button"&gt;&lt;/i&gt;&lt;/button&gt;
+                                                    &lt;button class="qty" type="button" data-func="minus" data-field="field1"&gt;&lt;i class="flaticon-play-button-1"&gt;&lt;/i&gt;&lt;/button&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+
+                                    &lt;div class="col d-block d-md-none text-right"&gt;
+                                        &lt;a class="text-nowrap" href="javascript:void(0);"&gt;&lt;i class="flaticon-close small mr-1"&gt;&lt;/i&gt; Remove&lt;/a&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
                         </div><!-- end col -->
                     </div><!-- end row -->
 
@@ -450,99 +677,152 @@
 
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="mb-2 font-weight-bold text-primary">Wishlist.</h4>
+                            <h3 class="mb-3 font-weight-bold">Wishlist</h3>
 
-                            <ul class="list-group list-group-lg list-group-flush">
-                                <li class="list-group-item p-0">
-                                    <div class="row">
-                                        <div class="col-sm-12 pt-4">
-                                            <h5 class="font-weight-bold mb-4">Product</h5>
-                                        </div><!-- end col -->
-                                        <div class="col-sm-8">
-                                            <div class="row pb-4">
-                                                <div class="col-sm-12">
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result3" data-toggle="tab" role="tab" aria-controls="result3" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code3" data-toggle="tab" role="tab" aria-controls="code3" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result3" role="tabpanel">
+                                    <ul class="list-group list-group-lg list-group-flush border-top border-bottom">
+                                        <li class="list-group-item py-4">
+                                            <div class="row d-none d-md-flex mb-4">
+                                                <div class="col">
+                                                    <h5 class="font-weight-bold">Product</h5>
+                                                </div><!-- end col -->
+                                                <div class="col text-right">
+                                                    <a href="javascript:void(0);"><i class="flaticon-close small mr-1"></i> Remove</a>
+                                                </div><!-- end col -->
+                                            </div><!-- end row -->
+
+                                            <div class="row">
+                                                <div class="col-12">
                                                     <div class="row align-items-end">
-                                                        <div class="col-auto">
-                                                            <img width="99" class="img-fluid" src="../assets/img/products/product_small_2.png" alt="product">
+                                                        <div class="col-3 col-md-auto">
+                                                            <img class="img-fluid" src="../assets/img/products/product_small.png" alt="product">
                                                         </div><!-- end col -->
-                                                        <div class="col pl-2">
-                                                            <h5 class="mb-1 font-weight-bold">Minimal Lamp</h5>
-                                                            <h6 class="mb-0 font-weight-normal">$20.00</h6>
+                                                        <div class="col-9 col-md pl-2">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <h5 class="mb-2 font-weight-bold">Minimal Grey Lamp</h5>
+                                                                    <h5 class="mb-0 font-weight-normal">$40.00</h5>
+
+                                                                    <a class="d-block d-md-none mt-3" href="javascript:void(0);"><i class="flaticon-close small mr-1"></i> Remove</a>
+                                                                </div><!-- end col -->
+                                                            </div><!-- end row -->
                                                         </div><!-- end col -->
                                                     </div><!-- end row -->
                                                 </div><!-- end col -->
                                             </div><!-- end row -->
-                                        </div><!-- end col -->
-                                        <div class="col-sm-4">
-                                            <div class="row">
-                                                <div class="col-sm-12 pl-4 pr-4 text-right">
+                                        </li><!-- end list-group-item -->
+
+                                        <li class="list-group-item py-4">
+                                            <div class="row d-none d-md-flex mb-4">
+                                                <div class="col">
+                                                    <h5 class="font-weight-bold">Product</h5>
+                                                </div><!-- end col -->
+                                                <div class="col text-right">
                                                     <a href="javascript:void(0);"><i class="flaticon-close small mr-1"></i> Remove</a>
                                                 </div><!-- end col -->
                                             </div><!-- end row -->
-                                        </div><!-- end col -->
-                                    </div><!-- end row -->
-                                </li><!-- end list-group-item -->
 
-                                <li class="list-group-item p-0">
-                                    <div class="row">
-                                        <div class="col-sm-12 pt-4">
-                                            <h5 class="font-weight-bold mb-4">Product</h5>
-                                        </div><!-- end col -->
-                                        <div class="col-sm-8">
-                                            <div class="row pb-4">
-                                                <div class="col-sm-12">
+                                            <div class="row">
+                                                <div class="col-12">
                                                     <div class="row align-items-end">
-                                                        <div class="col-auto">
-                                                            <img width="99" class="img-fluid" src="../assets/img/products/product_small_3.png" alt="product">
+                                                        <div class="col-3 col-md-auto">
+                                                            <img class="img-fluid" src="../assets/img/products/product_small_2.png" alt="product">
                                                         </div><!-- end col -->
-                                                        <div class="col pl-2">
-                                                            <h5 class="mb-1 font-weight-bold">Minimal Lamp</h5>
-                                                            <h6 class="mb-0 font-weight-normal">$20.00</h6>
+                                                        <div class="col-9 col-md pl-2">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <h5 class="mb-2 font-weight-bold">Minimal couch</h5>
+                                                                    <h5 class="mb-0 font-weight-normal">$120.00</h5>
+
+                                                                    <a class="d-block d-md-none mt-3" href="javascript:void(0);"><i class="flaticon-close small mr-1"></i> Remove</a>
+                                                                </div><!-- end col -->
+                                                            </div><!-- end row -->
                                                         </div><!-- end col -->
                                                     </div><!-- end row -->
                                                 </div><!-- end col -->
                                             </div><!-- end row -->
-                                        </div><!-- end col -->
-                                        <div class="col-sm-4">
-                                            <div class="row">
-                                                <div class="col-sm-12 pl-4 pr-4 text-right">
+                                        </li><!-- end list-group-item -->
+
+                                        <li class="list-group-item py-4">
+                                            <div class="row d-none d-md-flex mb-4">
+                                                <div class="col">
+                                                    <h5 class="font-weight-bold">Product</h5>
+                                                </div><!-- end col -->
+                                                <div class="col text-right">
                                                     <a href="javascript:void(0);"><i class="flaticon-close small mr-1"></i> Remove</a>
                                                 </div><!-- end col -->
                                             </div><!-- end row -->
-                                        </div><!-- end col -->
-                                    </div><!-- end row -->
-                                </li><!-- end list-group-item -->
 
-                                <li class="list-group-item p-0">
-                                    <div class="row">
-                                        <div class="col-sm-12 pt-4">
-                                            <h5 class="font-weight-bold mb-4">Product</h5>
-                                        </div><!-- end col -->
-                                        <div class="col-sm-8">
-                                            <div class="row pb-4">
-                                                <div class="col-sm-12">
+                                            <div class="row">
+                                                <div class="col-12">
                                                     <div class="row align-items-end">
-                                                        <div class="col-auto">
-                                                            <img width="99" class="img-fluid" src="../assets/img/products/product_small.png" alt="product">
+                                                        <div class="col-3 col-md-auto">
+                                                            <img class="img-fluid" src="../assets/img/products/product_small_3.png" alt="product">
                                                         </div><!-- end col -->
-                                                        <div class="col pl-2">
-                                                            <h5 class="mb-1 font-weight-bold">Minimal Lamp</h5>
-                                                            <h6 class="mb-0 font-weight-normal">$20.00</h6>
+                                                        <div class="col-9 col-md pl-2">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <h5 class="mb-2 font-weight-bold">Minimal wood Chair</h5>
+                                                                    <h5 class="mb-0 font-weight-normal">$20.00</h5>
+
+                                                                    <a class="d-block d-md-none mt-3" href="javascript:void(0);"><i class="flaticon-close small mr-1"></i> Remove</a>
+                                                                </div><!-- end col -->
+                                                            </div><!-- end row -->
                                                         </div><!-- end col -->
                                                     </div><!-- end row -->
                                                 </div><!-- end col -->
                                             </div><!-- end row -->
-                                        </div><!-- end col -->
-                                        <div class="col-sm-4">
-                                            <div class="row">
-                                                <div class="col-sm-12 pl-4 pr-4 text-right">
-                                                    <a href="javascript:void(0);"><i class="flaticon-close small mr-1"></i> Remove</a>
-                                                </div><!-- end col -->
-                                            </div><!-- end row -->
-                                        </div><!-- end col -->
-                                    </div><!-- end row -->
-                                </li><!-- end list-group-item -->
-                            </ul>
+                                        </li><!-- end list-group-item -->
+                                    </ul><!-- end list-group -->
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code3" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;ul class="list-group list-group-lg list-group-flush border-top border-bottom"&gt;
+    &lt;li class="list-group-item py-4"&gt;
+        &lt;div class="row d-none d-md-flex mb-4"&gt;
+            &lt;div class="col"&gt;
+                &lt;h5 class="font-weight-bold"&gt;Product&lt;/h5&gt;
+            &lt;/div&gt;
+            &lt;div class="col text-right"&gt;
+                &lt;a href="javascript:void(0);"&gt;&lt;i class="flaticon-close small mr-1"&gt;&lt;/i&gt; Remove&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class="row"&gt;
+            &lt;div class="col-12"&gt;
+                &lt;div class="row align-items-end"&gt;
+                    &lt;div class="col-3 col-md-auto"&gt;
+                        &lt;img class="img-fluid" src="../assets/img/products/product_small.png" alt="product"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="col-9 col-md pl-2"&gt;
+                        &lt;div class="row"&gt;
+                            &lt;div class="col-12"&gt;
+                                &lt;h5 class="mb-2 font-weight-bold"&gt;Minimal Grey Lamp&lt;/h5&gt;
+                                &lt;h5 class="mb-0 font-weight-normal"&gt;$40.00&lt;/h5&gt;
+
+                                &lt;a class="d-block d-md-none mt-3" href="javascript:void(0);"&gt;&lt;i class="flaticon-close small mr-1"&gt;&lt;/i&gt; Remove&lt;/a&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
                         </div><!-- end col -->
                     </div><!-- end row -->
                 </div><!-- end #main col -->
