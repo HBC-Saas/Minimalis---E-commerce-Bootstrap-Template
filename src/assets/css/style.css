@@ -14607,8 +14607,8 @@ select.selectpicker {
 
 @media (max-width: 575.98px) {
   .navbar-expand-sm.navbar-filter .navbar-nav .nav-item {
-    margin-right: calc(0.9375rem - 3px);
-    margin-left: calc(0.9375rem - 3px);
+    margin-right: 0.9375rem;
+    margin-left: 0.9375rem;
   }
   .navbar-expand-sm:not(.navbar-filter) .navbar-collapse {
     border-top: 1px solid #e9e9e9;
@@ -14822,8 +14822,8 @@ select.selectpicker {
 
 @media (max-width: 767.98px) {
   .navbar-expand-md.navbar-filter .navbar-nav .nav-item {
-    margin-right: calc(0.9375rem - 3px);
-    margin-left: calc(0.9375rem - 3px);
+    margin-right: 0.9375rem;
+    margin-left: 0.9375rem;
   }
   .navbar-expand-md:not(.navbar-filter) .navbar-collapse {
     border-top: 1px solid #e9e9e9;
@@ -15037,8 +15037,8 @@ select.selectpicker {
 
 @media (max-width: 991.98px) {
   .navbar-expand-lg.navbar-filter .navbar-nav .nav-item {
-    margin-right: calc(0.9375rem - 3px);
-    margin-left: calc(0.9375rem - 3px);
+    margin-right: 0.9375rem;
+    margin-left: 0.9375rem;
   }
   .navbar-expand-lg:not(.navbar-filter) .navbar-collapse {
     border-top: 1px solid #e9e9e9;
@@ -15252,8 +15252,8 @@ select.selectpicker {
 
 @media (max-width: 1199.98px) {
   .navbar-expand-xl.navbar-filter .navbar-nav .nav-item {
-    margin-right: calc(0.9375rem - 3px);
-    margin-left: calc(0.9375rem - 3px);
+    margin-right: 0.9375rem;
+    margin-left: 0.9375rem;
   }
   .navbar-expand-xl:not(.navbar-filter) .navbar-collapse {
     border-top: 1px solid #e9e9e9;
@@ -15482,8 +15482,8 @@ select.selectpicker {
 }
 
 .navbar-expand.navbar-filter .navbar-nav .nav-item {
-  margin-right: calc(0.9375rem - 3px);
-  margin-left: calc(0.9375rem - 3px);
+  margin-right: 0.9375rem;
+  margin-left: 0.9375rem;
 }
 
 .navbar-expand:not(.navbar-filter) .navbar-collapse {
