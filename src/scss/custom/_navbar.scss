@@ -349,8 +349,8 @@
         &.navbar-filter {
           .navbar-nav {
             .nav-item {
-              margin-right: calc(#{$navbar-nav-link-margin-x} - 3px);
-              margin-left: calc(#{$navbar-nav-link-margin-x} - 3px);
+              margin-right: $navbar-nav-link-margin-x;
+              margin-left: $navbar-nav-link-margin-x;
             }
           }
         }
