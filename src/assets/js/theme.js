@@ -395,7 +395,16 @@ $(document).ready(function(){
                 return openerElement.is('img') ? openerElement : openerElement.find('img');
             }
         }
+    });
 
+    $('.gallery-popup').each(function() {
+        $(this).magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            gallery: {
+                enabled:true
+            }
+        });
     });
 
 });
