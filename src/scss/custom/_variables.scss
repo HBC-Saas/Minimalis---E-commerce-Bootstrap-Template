@@ -164,6 +164,13 @@ $spacers: map-merge(
     9: ($spacer * 7.5),
     10: ($spacer * 9.375),
     11: ($spacer * 11.25),
+    5px: 0.3125rem,
+    10px: 0.625rem,
+    20px: 1.25rem,
+    25px: 1.5625rem,
+    35px: 2.1875rem,
+    40px: 2.5rem,
+    45px: 2.8125rem,
   ),
   $spacers
 );
