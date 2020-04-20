@@ -1,6 +1,6 @@
 $(document).ready(function(){
     /*===================================================
-    *     sticky
+    *     sticky zebra_pin
     * ===================================================*/
     var navbarHeight = $('.navbar.sticky-navbar').outerHeight();
 
@@ -16,6 +16,12 @@ $(document).ready(function(){
     new $.Zebra_Pin($('.sticky-sidebar'), {
         top_spacing: navbarHeight,
         z_index: 1000
+    });
+
+    new $.Zebra_Pin($('.sticky-product-sidebar'), {
+        top_spacing: navbarHeight,
+        z_index: 1000,
+        contain: true
     });
 
     // after scroll
@@ -314,6 +320,46 @@ $(document).ready(function(){
             },
             576: {
                 slidesPerView: 2,
+            },
+            992: {
+                slidesPerView: 3,
+            },
+        },
+    });
+
+    // progress and fraction swiper for related products
+    var progressRelatedSwiper = new Swiper('.progress-swiper-related-products', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'progressbar',
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        on: {
+            init: function() {
+                var fraction = document.querySelector('.custom-fraction');
+                fraction.innerHTML = (this.activeIndex +  this.params.slidesPerView) + '/' + this.slides.length;
+            },
+
+            slideChangeTransitionStart: function() {
+                var fraction = document.querySelector('.custom-fraction');
+                fraction.innerHTML = (this.activeIndex +  this.params.slidesPerView) + '/' + this.slides.length;
+            },
+        },
+
+        breakpoints: {
+            0: {
+                slidesPerView: 2,
+                spaceBetween: 15,
+            },
+            576: {
+                slidesPerView: 3,
+                spaceBetween: 15,
             },
             992: {
                 slidesPerView: 3,

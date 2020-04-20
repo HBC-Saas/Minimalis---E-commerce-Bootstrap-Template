@@ -12760,6 +12760,18 @@ select.selectpicker {
   }
 }
 
+.layer-white-before::before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  width: 1000%;
+  height: 100%;
+}
+
 .border {
   border: 1px solid #e9e9e9 !important;
 }
@@ -14211,6 +14223,7 @@ select.selectpicker {
   border-left-width: 0;
   padding-left: 0 !important;
   padding-right: 0 !important;
+  background-color: transparent;
 }
 
 .list-group-lg .list-group-item {
@@ -22510,53 +22523,66 @@ hr.border-white {
 /*----------------------------------
  Progress swiper -------------------
 ----------------------------------*/
-.progress-swiper .swiper-pagination-progressbar {
+.progress-swiper .swiper-pagination-progressbar,
+.progress-swiper-related-products .swiper-pagination-progressbar {
   position: relative;
   height: 2px;
   background: rgba(0, 0, 0, 0.1);
 }
 
-.progress-swiper .swiper-pagination-progressbar-fill {
+.progress-swiper .swiper-pagination-progressbar-fill,
+.progress-swiper-related-products .swiper-pagination-progressbar-fill {
   background: #ac9c7f;
 }
 
 .progress-swiper .swiper-button-next,
-.progress-swiper .swiper-button-prev {
+.progress-swiper .swiper-button-prev,
+.progress-swiper-related-products .swiper-button-next,
+.progress-swiper-related-products .swiper-button-prev {
   color: #9f9f9f;
   width: auto;
 }
 
 .progress-swiper .swiper-button-next:hover,
-.progress-swiper .swiper-button-prev:hover {
+.progress-swiper .swiper-button-prev:hover,
+.progress-swiper-related-products .swiper-button-next:hover,
+.progress-swiper-related-products .swiper-button-prev:hover {
   color: #ac9c7f;
 }
 
 .progress-swiper .swiper-button-next::after,
-.progress-swiper .swiper-button-prev::after {
+.progress-swiper .swiper-button-prev::after,
+.progress-swiper-related-products .swiper-button-next::after,
+.progress-swiper-related-products .swiper-button-prev::after {
   font-family: Flaticon;
   font-size: 0.875rem;
   font-variant: initial;
 }
 
-.progress-swiper .swiper-button-next {
+.progress-swiper .swiper-button-next,
+.progress-swiper-related-products .swiper-button-next {
   right: 0;
   left: auto;
 }
 
-.progress-swiper .swiper-button-next::after {
+.progress-swiper .swiper-button-next::after,
+.progress-swiper-related-products .swiper-button-next::after {
   content: "\f12a";
 }
 
-.progress-swiper .swiper-button-prev {
+.progress-swiper .swiper-button-prev,
+.progress-swiper-related-products .swiper-button-prev {
   left: auto;
   right: calc(0.875rem + 10px);
 }
 
-.progress-swiper .swiper-button-prev::after {
+.progress-swiper .swiper-button-prev::after,
+.progress-swiper-related-products .swiper-button-prev::after {
   content: "\f12b";
 }
 
-.progress-swiper .swiper-button-disabled {
+.progress-swiper .swiper-button-disabled,
+.progress-swiper-related-products .swiper-button-disabled {
   color: #e9e9e9;
   opacity: 1;
 }
