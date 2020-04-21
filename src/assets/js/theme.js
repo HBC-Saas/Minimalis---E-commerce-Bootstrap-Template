@@ -359,7 +359,7 @@ $(document).ready(function(){
             },
             576: {
                 slidesPerView: 3,
-                spaceBetween: 15,
+                spaceBetween: 20,
             },
             992: {
                 slidesPerView: 3,
