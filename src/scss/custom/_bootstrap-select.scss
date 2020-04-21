@@ -80,6 +80,7 @@
 
   // The selectpicker dropdown
   .dropdown-menu {
+    z-index: 1002;
     li {
       outline: none !important;
       a {
@@ -90,5 +91,11 @@
 
   .no-results {
     background: $gray-100;
+  }
+}
+
+.w-100 {
+  .bootstrap-select {
+    min-width: 100%!important;
   }
 }
