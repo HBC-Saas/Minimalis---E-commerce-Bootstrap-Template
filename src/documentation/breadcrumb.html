@@ -237,6 +237,45 @@
                             </div><!-- end tab-content -->
                         </div><!-- end col -->
                     </div><!-- end row -->
+
+                    <hr class="mt-5 mb-5 border-top-0" />
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <hr class="mt-4 mb-6" />
+
+                            <h3 class="mb-2 font-weight-bold">Custom breadcrumb</h3>
+
+                            <ul class="nav nav-border border-bottom mb-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" href="#result2" data-toggle="tab" role="tab" aria-controls="result2" aria-selected="true">Result</a>
+                                </li><!-- end nav-item -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#code2" data-toggle="tab" role="tab" aria-controls="code2" aria-selected="false">
+                                        Code <i class="fas fa-code ml-1"></i>
+                                    </a>
+                                </li><!-- end nav-item -->
+                            </ul><!-- end nav -->
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="result2" role="tabpanel">
+                                    <nav aria-label="breadcrumb">
+                                        <ol class="breadcrumb custom-breadcrumb mb-0">
+                                            <li class="breadcrumb-item"><a href="#">Customer information</a></li>
+                                            <li class="breadcrumb-item active" aria-current="page">Payment method</li>
+                                        </ol>
+                                    </nav>
+                                </div><!-- end tab-pane -->
+
+                                <div class="tab-pane fade" id="code2" role="tabpanel">
+                                    <pre><code class="lang-html">&lt;ol class="breadcrumb custom-breadcrumb mb-0"&gt;
+    &lt;li class="breadcrumb-item"&gt;&lt;a href="#"&gt;Customer information&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="breadcrumb-item active" aria-current="page"&gt;Payment method&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+                                </div><!-- end tab-pane -->
+                            </div><!-- end tab-content -->
+                        </div><!-- end col -->
+                    </div><!-- end row -->
                 </div><!-- end #main col -->
             </div><!-- end row -->
         </div><!-- end container-fluid -->

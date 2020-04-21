@@ -1,0 +1,23 @@
+.custom-breadcrumb {
+  padding: 0;
+  background-color: transparent;
+
+  a {
+    color: $dark;
+    font-weight: 500;
+  }
+
+  .breadcrumb-item {
+    & + .breadcrumb-item {
+      &::before {
+        content: ">";
+        color: $dark;
+        font-weight: 500;
+      }
+    }
+
+    &.active {
+      color: $gray-500;
+    }
+  }
+}
