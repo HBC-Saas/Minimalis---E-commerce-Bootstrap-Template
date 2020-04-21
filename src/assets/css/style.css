@@ -15869,6 +15869,26 @@ select.selectpicker {
   font-size: 1.625rem;
 }
 
+.custom-breadcrumb {
+  padding: 0;
+  background-color: transparent;
+}
+
+.custom-breadcrumb a {
+  color: #1e1e1e;
+  font-weight: 500;
+}
+
+.custom-breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
+  color: #1e1e1e;
+  font-weight: 500;
+}
+
+.custom-breadcrumb .breadcrumb-item.active {
+  color: #9f9f9f;
+}
+
 /*
     Bootstrap Select
    -----------------------------
