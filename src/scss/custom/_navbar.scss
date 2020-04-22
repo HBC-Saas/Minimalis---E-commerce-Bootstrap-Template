@@ -299,15 +299,6 @@
         *     navbar style
         * ===================================================*/
 
-        &.navbar-filter {
-          .navbar-nav {
-            .nav-item {
-              margin-right: calc(#{$navbar-nav-link-margin-x} + 3px);
-              margin-left: calc(#{$navbar-nav-link-margin-x} + 3px);
-            }
-          }
-        }
-
         .navbar-nav {
           .nav-item {
             margin-right: $navbar-nav-link-margin-x;
@@ -363,8 +354,8 @@
         &.navbar-filter {
           .navbar-nav {
             .nav-item {
-              margin-right: $navbar-nav-link-margin-x;
-              margin-left: $navbar-nav-link-margin-x;
+              margin-right: calc(#{$navbar-nav-link-margin-x} + 10px);
+              margin-left: calc(#{$navbar-nav-link-margin-x} + 10px);
             }
           }
         }
@@ -439,6 +430,17 @@
             }
           }
         }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .navbar-filter {
+    .navbar-nav {
+      .nav-item {
+        margin-right: calc(#{$navbar-nav-link-margin-x} - 3px)!important;
+        margin-left: calc(#{$navbar-nav-link-margin-x} - 3px)!important;
       }
     }
   }
