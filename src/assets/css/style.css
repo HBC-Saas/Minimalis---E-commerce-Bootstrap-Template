@@ -2,7 +2,7 @@
 /*===========================================================
     Theme Name  - Minimalis E-commerce Bootstrap Template
 
-    Copyright 2020 - designshake.co
+    Copyright 2020 - uxroad.com
 ========================================================== */
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
@@ -15850,7 +15850,7 @@ select.selectpicker {
   padding: 0.9375rem 1.5625rem;
   color: inherit;
   transform: translateY(-50%);
-  line-height: 12px;
+  line-height: 0.75rem;
 }
 
 .alert.notification {
@@ -16663,16 +16663,16 @@ select.selectpicker {
 
 .label-value {
   background-color: #ac9c7f;
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
   display: inline-block;
-  font-size: 12px;
+  font-size: 0.75rem;
   text-align: center;
-  line-height: 20px;
+  line-height: 1.25rem;
   position: absolute;
   top: 0;
   right: 0;
-  border-radius: 25px;
+  border-radius: 1.5625rem;
   color: #fff;
 }
 
@@ -16944,8 +16944,8 @@ select.selectpicker {
 
 @media (max-width: 575.98px) {
   .navbar-expand-sm.navbar-filter .navbar-nav .nav-item {
-    margin-right: calc(0.9375rem + 10px);
-    margin-left: calc(0.9375rem + 10px);
+    margin-right: calc(0.9375rem + 0.625rem);
+    margin-left: calc(0.9375rem + 0.625rem);
   }
   .navbar-expand-sm:not(.navbar-filter) .navbar-collapse {
     border-top: 1px solid #e9e9e9;
@@ -17155,8 +17155,8 @@ select.selectpicker {
 
 @media (max-width: 767.98px) {
   .navbar-expand-md.navbar-filter .navbar-nav .nav-item {
-    margin-right: calc(0.9375rem + 10px);
-    margin-left: calc(0.9375rem + 10px);
+    margin-right: calc(0.9375rem + 0.625rem);
+    margin-left: calc(0.9375rem + 0.625rem);
   }
   .navbar-expand-md:not(.navbar-filter) .navbar-collapse {
     border-top: 1px solid #e9e9e9;
@@ -17366,8 +17366,8 @@ select.selectpicker {
 
 @media (max-width: 991.98px) {
   .navbar-expand-lg.navbar-filter .navbar-nav .nav-item {
-    margin-right: calc(0.9375rem + 10px);
-    margin-left: calc(0.9375rem + 10px);
+    margin-right: calc(0.9375rem + 0.625rem);
+    margin-left: calc(0.9375rem + 0.625rem);
   }
   .navbar-expand-lg:not(.navbar-filter) .navbar-collapse {
     border-top: 1px solid #e9e9e9;
@@ -17577,8 +17577,8 @@ select.selectpicker {
 
 @media (max-width: 1199.98px) {
   .navbar-expand-xl.navbar-filter .navbar-nav .nav-item {
-    margin-right: calc(0.9375rem + 10px);
-    margin-left: calc(0.9375rem + 10px);
+    margin-right: calc(0.9375rem + 0.625rem);
+    margin-left: calc(0.9375rem + 0.625rem);
   }
   .navbar-expand-xl:not(.navbar-filter) .navbar-collapse {
     border-top: 1px solid #e9e9e9;
@@ -17802,8 +17802,8 @@ select.selectpicker {
 }
 
 .navbar-expand.navbar-filter .navbar-nav .nav-item {
-  margin-right: calc(0.9375rem + 10px);
-  margin-left: calc(0.9375rem + 10px);
+  margin-right: calc(0.9375rem + 0.625rem);
+  margin-left: calc(0.9375rem + 0.625rem);
 }
 
 .navbar-expand:not(.navbar-filter) .navbar-collapse {
@@ -17874,8 +17874,8 @@ select.selectpicker {
 *     navbar secondary
 * ===================================================*/
 .navbar-filter .nav-link {
-  padding-top: 13px !important;
-  padding-bottom: 13px !important;
+  padding-top: 0.8125rem !important;
+  padding-bottom: 0.8125rem !important;
 }
 
 .navbar-filter .show > .dropdown-toggle::after {
@@ -23399,7 +23399,7 @@ select.selectpicker {
 .btn-circle .add-to-cart-hover {
   white-space: nowrap;
   width: 0;
-  margin-left: 24px;
+  margin-left: 1.5rem;
 }
 
 .btn-circle .add-to-cart-hover .add-to-cart-text {
@@ -23649,7 +23649,7 @@ picture .cocoen > div {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 10px;
+  width: 0.625rem;
 }
 
 .cocoen-drag::before, .cocoen-drag::after {
@@ -23658,39 +23658,39 @@ picture .cocoen > div {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  height: 48px;
-  width: 24px;
-  line-height: 48px;
+  height: 3rem;
+  width: 1.5rem;
+  line-height: 3rem;
   color: #fff;
   font-size: 0.5rem;
 }
 
 .cocoen-drag::before {
   content: "";
-  left: -19px;
-  border-bottom-left-radius: 48px;
-  border-top-left-radius: 48px;
-  padding-right: 4px;
+  left: -1.1875rem;
+  border-bottom-left-radius: 3rem;
+  border-top-left-radius: 3rem;
+  padding-right: 0.25rem;
   text-align: right;
 }
 
 .cocoen-drag::after {
   content: "";
-  left: 5px;
-  border-bottom-right-radius: 48px;
-  border-top-right-radius: 48px;
-  padding-left: 4px;
+  left: 0.3125rem;
+  border-bottom-right-radius: 3rem;
+  border-top-right-radius: 3rem;
+  padding-left: 0.25rem;
   text-align: left;
 }
 
 @media (max-width: 991.98px) {
   .cocoen-drag::before, .cocoen-drag::after {
-    height: 36px;
-    width: 18px;
-    line-height: 36px;
+    height: 2.25rem;
+    width: 1.125rem;
+    line-height: 2.25rem;
   }
   .cocoen-drag::before {
-    left: -13px;
+    left: -0.8125rem;
   }
 }
 
@@ -23795,8 +23795,8 @@ label {
 * ===================================================
 */
 .filter-checkbox {
-  padding-right: 5px;
-  padding-left: 5px;
+  padding-right: 0.3125rem;
+  padding-left: 0.3125rem;
 }
 
 .filter-checkbox label {
@@ -23842,18 +23842,18 @@ label {
 }
 
 .filter-checkbox .custom-control-label::before {
-  top: -7px;
+  top: -0.4375rem;
   left: auto;
-  right: -7px;
-  border-radius: 25px;
+  right: -0.4375rem;
+  border-radius: 1.5625rem;
   display: none;
 }
 
 .filter-checkbox .custom-control-label::after {
-  top: -7px;
+  top: -0.4375rem;
   left: auto;
-  right: -7px;
-  border-radius: 25px;
+  right: -0.4375rem;
+  border-radius: 1.5625rem;
 }
 
 .filter-checkbox .custom-control-input:checked ~ label .custom-control-label::after {
@@ -23886,8 +23886,8 @@ label {
 
 .filter-checkbox .color-filter {
   display: inline-block;
-  width: 35px;
-  height: 35px;
+  width: 2.1875rem;
+  height: 2.1875rem;
 }
 
 .page-link {
@@ -24004,22 +24004,22 @@ p, a {
 
 .font-size-display1 {
   font-size: 4.375rem;
-  line-height: 85px;
+  line-height: 5.3125rem;
 }
 
 .font-size-display2 {
   font-size: 3.75rem;
-  line-height: 75px;
+  line-height: 4.6875rem;
 }
 
 .font-size-display3 {
   font-size: 3.125rem;
-  line-height: 65px;
+  line-height: 4.0625rem;
 }
 
 .font-size-display4 {
   font-size: 2.5rem;
-  line-height: 55px;
+  line-height: 3.4375rem;
 }
 
 .font-size-h1 {
@@ -24055,19 +24055,19 @@ p, a {
 @media (min-width: 576px) {
   .font-size-sm-display1 {
     font-size: 4.375rem;
-    line-height: 85px;
+    line-height: 5.3125rem;
   }
   .font-size-sm-display2 {
     font-size: 3.75rem;
-    line-height: 75px;
+    line-height: 4.6875rem;
   }
   .font-size-sm-display3 {
     font-size: 3.125rem;
-    line-height: 65px;
+    line-height: 4.0625rem;
   }
   .font-size-sm-display4 {
     font-size: 2.5rem;
-    line-height: 55px;
+    line-height: 3.4375rem;
   }
   .font-size-sm-h1 {
     font-size: 1.875rem;
@@ -24098,19 +24098,19 @@ p, a {
 @media (min-width: 768px) {
   .font-size-md-display1 {
     font-size: 4.375rem;
-    line-height: 85px;
+    line-height: 5.3125rem;
   }
   .font-size-md-display2 {
     font-size: 3.75rem;
-    line-height: 75px;
+    line-height: 4.6875rem;
   }
   .font-size-md-display3 {
     font-size: 3.125rem;
-    line-height: 65px;
+    line-height: 4.0625rem;
   }
   .font-size-md-display4 {
     font-size: 2.5rem;
-    line-height: 55px;
+    line-height: 3.4375rem;
   }
   .font-size-md-h1 {
     font-size: 1.875rem;
@@ -24141,19 +24141,19 @@ p, a {
 @media (min-width: 992px) {
   .font-size-lg-display1 {
     font-size: 4.375rem;
-    line-height: 85px;
+    line-height: 5.3125rem;
   }
   .font-size-lg-display2 {
     font-size: 3.75rem;
-    line-height: 75px;
+    line-height: 4.6875rem;
   }
   .font-size-lg-display3 {
     font-size: 3.125rem;
-    line-height: 65px;
+    line-height: 4.0625rem;
   }
   .font-size-lg-display4 {
     font-size: 2.5rem;
-    line-height: 55px;
+    line-height: 3.4375rem;
   }
   .font-size-lg-h1 {
     font-size: 1.875rem;
@@ -24184,19 +24184,19 @@ p, a {
 @media (min-width: 1200px) {
   .font-size-xl-display1 {
     font-size: 4.375rem;
-    line-height: 85px;
+    line-height: 5.3125rem;
   }
   .font-size-xl-display2 {
     font-size: 3.75rem;
-    line-height: 75px;
+    line-height: 4.6875rem;
   }
   .font-size-xl-display3 {
     font-size: 3.125rem;
-    line-height: 65px;
+    line-height: 4.0625rem;
   }
   .font-size-xl-display4 {
     font-size: 2.5rem;
-    line-height: 55px;
+    line-height: 3.4375rem;
   }
   .font-size-xl-h1 {
     font-size: 1.875rem;
@@ -24671,7 +24671,7 @@ hr.border-white {
     content: ' ';
     position: absolute;
     top: 0;
-    right: 40px;
+    right: 2.5rem;
     width: 1px;
     height: 0;
     background-color: #e9e9e9;
@@ -24687,13 +24687,13 @@ hr.border-white {
 
 @media (min-width: 992px) {
   .home-slider .swiper-slide-active .slide-border::after {
-    height: calc(100% - 73px);
+    height: calc(100% - 4.5625rem);
   }
 }
 
 .home-slider .pagination-container {
   position: absolute;
-  bottom: 10px;
+  bottom: 0.625rem;
   width: 100%;
 }
 
@@ -24706,14 +24706,14 @@ hr.border-white {
   font-size: 0;
   display: flex;
   align-items: flex-end;
-  height: 34px;
+  height: 2.125rem;
 }
 
 .home-slider .pagination-dots .swiper-pagination-bullet {
-  width: 11px;
-  height: 22px;
+  width: 0.6875rem;
+  height: 1.375rem;
   border-radius: 0;
-  margin-right: 8px;
+  margin-right: 0.5rem;
   opacity: .15;
   background: #1e1e1e;
   outline: none;
@@ -24728,7 +24728,7 @@ hr.border-white {
 
 .home-slider .pagination-dots .swiper-pagination-bullet-active {
   background: #1e1e1e;
-  height: 34px;
+  height: 2.125rem;
   opacity: 1;
 }
 
@@ -24740,18 +24740,18 @@ hr.border-white {
 }
 
 .home-slider .pagination-numbers {
-  font-size: 50px;
-  height: 37px;
-  line-height: 37px;
+  font-size: 3.125rem;
+  height: 2.3125rem;
+  line-height: 2.3125rem;
   font-weight: 300;
-  right: 30px;
-  width: 50px !important;
+  right: 1.875rem;
+  width: 3.125rem !important;
 }
 
 .home-slider .pagination-numbers .swiper-pagination-bullet {
   position: absolute;
   top: 0;
-  right: 5px;
+  right: 0.3125rem;
   transform: translate3d(0, -100%, 0);
   width: auto;
   height: auto;
@@ -24802,10 +24802,10 @@ hr.border-white {
 
 @media (min-width: 576px) and (max-width: 991.98px) {
   .swiper-row .luxury-swiper .swiper-slide:first-child {
-    margin-left: -15px;
+    margin-left: -0.9375rem;
   }
   .swiper-row .luxury-swiper .swiper-slide:last-child {
-    margin-right: -15px;
+    margin-right: -0.9375rem;
   }
   .luxury-swiper .swiper-slide {
     flex: 0 0 65%;
@@ -24887,7 +24887,7 @@ hr.border-white {
 .progress-swiper .swiper-button-prev,
 .progress-swiper-related-products .swiper-button-prev {
   left: auto;
-  right: calc(0.875rem + 10px);
+  right: calc(0.875rem + 0.625rem);
 }
 
 .progress-swiper .swiper-button-prev::after,
@@ -24908,18 +24908,18 @@ hr.border-white {
 
 .cart-icon img {
   position: absolute;
-  width: 20px;
+  width: 1.25rem;
 }
 
 .cart-icon.shopping-cart img {
-  right: 24px;
-  bottom: -5px;
+  right: 1.5rem;
+  bottom: -0.3125rem;
 }
 
 .cart-icon.wishlist-cart img {
   left: 50%;
   top: 50%;
-  margin-left: -10px;
+  margin-left: -0.625rem;
 }
 
 .cart-icon [class^="flaticon-"]:before,
