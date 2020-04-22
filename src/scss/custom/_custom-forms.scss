@@ -5,8 +5,8 @@
 */
 
 .filter-checkbox {
-  padding-right: 5px;
-  padding-left: 5px;
+  padding-right: 0.3125rem;
+  padding-left: 0.3125rem;
   label {
     cursor: pointer;
     margin-bottom: 0;
@@ -63,18 +63,18 @@
 
 .filter-checkbox {
   .custom-control-label::before {
-    top: -7px;
+    top: -0.4375rem;
     left: auto;
-    right: -7px;
-    @include border-radius(25px);
+    right: -0.4375rem;
+    @include border-radius(1.5625rem);
     display: none;
 
   }
   .custom-control-label::after {
-    top: -7px;
+    top: -0.4375rem;
     left: auto;
-    right: -7px;
-    @include border-radius(25px);
+    right: -0.4375rem;
+    @include border-radius(1.5625rem);
   }
 
   .custom-control-input:checked ~ label .custom-control-label {
@@ -111,7 +111,7 @@
   // filter circle
   .color-filter {
     display: inline-block;
-    width: 35px;
-    height: 35px;
+    width: 2.1875rem;
+    height: 2.1875rem;
   }
 }
