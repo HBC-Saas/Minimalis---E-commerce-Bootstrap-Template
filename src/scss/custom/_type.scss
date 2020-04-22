@@ -38,19 +38,19 @@ p, a {
 
     .font-size#{$infix}-display1  {
       font-size: $display1-size;
-      line-height: 85px;
+      line-height: 5.3125rem;
     }
     .font-size#{$infix}-display2  {
       font-size: $display2-size;
-      line-height: 75px;
+      line-height: 4.6875rem;
     }
     .font-size#{$infix}-display3  {
       font-size: $display3-size;
-      line-height: 65px;
+      line-height: 4.0625rem;
     }
     .font-size#{$infix}-display4  {
       font-size: $display4-size;
-      line-height: 55px;
+      line-height: 3.4375rem;
     }
     .font-size#{$infix}-h1  {
       font-size: $h1-font-size;

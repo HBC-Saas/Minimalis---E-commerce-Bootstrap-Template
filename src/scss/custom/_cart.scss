@@ -5,13 +5,13 @@
 
   img {
     position: absolute;
-    width: 20px;
+    width: 1.25rem;
   }
 
   &.shopping-cart {
     img {
-      right: 24px;
-      bottom: -5px;
+      right: 1.5rem;
+      bottom: -0.3125rem;
     }
   }
 
@@ -19,7 +19,7 @@
     img {
       left: 50%;
       top: 50%;
-      margin-left: -10px;
+      margin-left: -0.625rem;
     }
   }
 

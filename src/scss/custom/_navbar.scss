@@ -105,16 +105,16 @@
 }
 .label-value {
   background-color: $primary;
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
   display: inline-block;
-  font-size: 12px;
+  font-size: 0.75rem;
   text-align: center;
-  line-height: 20px;
+  line-height: 1.25rem;
   position: absolute;
   top: 0;
   right: 0;
-  border-radius: 25px;
+  border-radius: 1.5625rem;
   color: $white;
 }
 
@@ -354,8 +354,8 @@
         &.navbar-filter {
           .navbar-nav {
             .nav-item {
-              margin-right: calc(#{$navbar-nav-link-margin-x} + 10px);
-              margin-left: calc(#{$navbar-nav-link-margin-x} + 10px);
+              margin-right: calc(#{$navbar-nav-link-margin-x} + 0.625rem);
+              margin-left: calc(#{$navbar-nav-link-margin-x} + 0.625rem);
             }
           }
         }
@@ -464,8 +464,8 @@
 * ===================================================*/
 .navbar-filter {
   .nav-link {
-    padding-top: 13px!important;
-    padding-bottom: 13px!important;
+    padding-top: 0.8125rem!important;
+    padding-bottom: 0.8125rem!important;
   }
 
   .show > .dropdown-toggle {

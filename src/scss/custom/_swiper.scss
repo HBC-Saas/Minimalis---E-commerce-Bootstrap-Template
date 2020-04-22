@@ -89,7 +89,7 @@
         content: ' ';
         position: absolute;
         top: 0;
-        right: 40px;
+        right: 2.5rem;
         width: 1px;
         height: 0;
         background-color: $gray-200;
@@ -100,7 +100,7 @@
     .swiper-slide-active {
       .slide-border {
         &::after {
-          height: calc(100% - 73px);
+          height: calc(100% - 4.5625rem);
         }
       }
     }
@@ -109,7 +109,7 @@
   // Paginations
   .pagination-container {
     position: absolute;
-    bottom: 10px;
+    bottom: 0.625rem;
     width: 100%;
   }
 
@@ -122,12 +122,12 @@
     font-size:0;
     display: flex;
     align-items: flex-end;
-    height: 34px;
+    height: 2.125rem;
     .swiper-pagination-bullet {
-      width: 11px;
-      height: 22px;
+      width: 0.6875rem;
+      height: 1.375rem;
       border-radius: 0;
-      margin-right: 8px;
+      margin-right: 0.5rem;
       opacity: .15;
       background: $dark;
       outline: none;
@@ -135,7 +135,7 @@
     }
     .swiper-pagination-bullet-active {
       background: $dark;
-      height: 34px;
+      height: 2.125rem;
       opacity: 1;
     }
   }
@@ -150,16 +150,16 @@
   }
 
   .pagination-numbers {
-    font-size: 50px;
-    height: 37px;
-    line-height: 37px;
+    font-size: 3.125rem;
+    height: 2.3125rem;
+    line-height: 2.3125rem;
     font-weight: $font-weight-light;
-    right: 30px;
-    width: 50px!important;
+    right: 1.875rem;
+    width: 3.125rem!important;
     .swiper-pagination-bullet {
       position: absolute;
       top: 0;
-      right: 5px;
+      right: 0.3125rem;
       transform: translate3d(0, -100%, 0);
       width: auto;
       height: auto;
@@ -218,10 +218,10 @@
     .luxury-swiper {
       .swiper-slide {
         &:first-child {
-          margin-left: -15px;
+          margin-left: -0.9375rem;
         }
         &:last-child {
-          margin-right: -15px;
+          margin-right: -0.9375rem;
         }
       }
     }
@@ -297,7 +297,7 @@
   }
   .swiper-button-prev {
     left: auto;
-    right: calc(#{$font-size-base} + 10px);
+    right: calc(#{$font-size-base} + 0.625rem);
     &::after {
       content: "\f12b";
     }
