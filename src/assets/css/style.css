@@ -16657,8 +16657,16 @@ select.selectpicker {
   cursor: pointer;
 }
 
+.icon-label {
+  position: relative;
+}
+
 .icon-label .label-value {
-  display: none;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 10px;
+  height: 10px;
 }
 
 .label-value {
