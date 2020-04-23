@@ -101,7 +101,14 @@
 
 // icon label
 .icon-label {
-  .label-value { display: none; }
+  position: relative;
+  .label-value {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 10px;
+    height: 10px;
+  }
 }
 .label-value {
   background-color: $primary;
