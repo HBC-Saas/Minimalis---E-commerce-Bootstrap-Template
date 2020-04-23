@@ -8,6 +8,26 @@ label {
   font-weight: $font-weight-medium;
   font-size: $font-size-base;
   letter-spacing: $font-letter-spacing;
+  // label error
+  &.error {
+    width: 100%;
+    order: 10;
+    margin-bottom: 0;
+    margin-top: 0.625rem;
+    font-weight: 400;
+    font-size: 0.75rem;
+    color: $danger;
+    text-align: left;
+  }
+}
+
+.form-control {
+  &.error {
+    border-color: $danger;
+
+    &:active,
+    &:focus { border-color: $danger; }
+  }
 }
 
 // qty Form

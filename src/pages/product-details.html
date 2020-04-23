@@ -548,57 +548,59 @@
 
                         <p class="lead mb-3">Be the first to review “Regular Fit V-Neck Sweater”</p>
 
-                        <div class="rate-star mb-4">
-                            <input type="radio" id="rat_star1" name="rat_rate" value="1" />
-                            <label for="rat_star1">
-                                <i class="flaticon-star"></i>
-                            </label>
+                        <form id="reviewForm" method="get" action="">
+                            <div class="rate-star mb-4">
+                                <input type="radio" id="rat_star1" name="rat_rate" value="1" />
+                                <label for="rat_star1">
+                                    <i class="flaticon-star"></i>
+                                </label>
 
-                            <input type="radio" id="rat_star2" name="rat_rate" value="2" />
-                            <label for="rat_star2">
-                                <i class="flaticon-star"></i>
-                            </label>
+                                <input type="radio" id="rat_star2" name="rat_rate" value="2" />
+                                <label for="rat_star2">
+                                    <i class="flaticon-star"></i>
+                                </label>
 
-                            <input type="radio" id="rat_star3" name="rat_rate" value="3" />
-                            <label for="rat_star3">
-                                <i class="flaticon-star"></i>
-                            </label>
+                                <input type="radio" id="rat_star3" name="rat_rate" value="3" />
+                                <label for="rat_star3">
+                                    <i class="flaticon-star"></i>
+                                </label>
 
-                            <input type="radio" id="rat_star4" name="rat_rate" value="4" />
-                            <label for="rat_star4">
-                                <i class="flaticon-star"></i>
-                            </label>
+                                <input type="radio" id="rat_star4" name="rat_rate" value="4" />
+                                <label for="rat_star4">
+                                    <i class="flaticon-star"></i>
+                                </label>
 
-                            <input type="radio" id="rat_star5" name="rat_rate" value="5" />
-                            <label for="rat_star5">
-                                <i class="flaticon-star"></i>
-                            </label>
-                        </div><!-- end rate-star -->
+                                <input type="radio" id="rat_star5" name="rat_rate" value="5" />
+                                <label for="rat_star5">
+                                    <i class="flaticon-star"></i>
+                                </label>
+                            </div><!-- end rate-star -->
 
-                        <div class="row">
-                            <div class="form-group col-12 col-md-6 mb-4">
-                                <label class="d-block d-lg-none" for="cName">Name</label>
-                                <input type="text" class="form-control" id="cName" placeholder="Name">
+                            <div class="row">
+                                <div class="form-group col-12 col-md-6 mb-4">
+                                    <label class="d-block d-lg-none" for="cName">Name</label>
+                                    <input type="text" class="form-control" id="cName" placeholder="Name" required>
+                                </div><!-- end form-group -->
+                                <div class="form-group col-12 col-md-6 mb-4">
+                                    <label class="d-block d-lg-none" for="cEmail">Email</label>
+                                    <input type="email" class="form-control" id="cEmail" placeholder="Email" required>
+                                </div><!-- end form-group -->
+                            </div><!-- end row -->
+                            <div class="form-group mb-5">
+                                <label class="d-block d-lg-none" for="cReview">Review</label>
+                                <textarea class="form-control" id="cReview" rows="5" placeholder="Write a review" required></textarea>
                             </div><!-- end form-group -->
-                            <div class="form-group col-12 col-md-6 mb-4">
-                                <label class="d-block d-lg-none" for="cEmail">Name</label>
-                                <input type="email" class="form-control" id="cEmail" placeholder="Email">
-                            </div><!-- end form-group -->
-                        </div><!-- end row -->
-                        <div class="form-group mb-5">
-                            <label class="d-block d-lg-none" for="cReview">Name</label>
-                            <textarea class="form-control" id="cReview" rows="5" placeholder="Write a review"></textarea>
-                        </div><!-- end form-group -->
-                        <div class="form-group mb-0 text-right text-lg-center">
-                            <button type="button" class="btn btn-dark btn-arrow mb-2">
-                                <span class="inner-btn">
-                                    Submit
-                                    <span class="arrow">
-                                        <span class="arrow-icon"></span>
+                            <div class="form-group mb-0 text-right text-lg-center">
+                                <button type="submit" class="btn btn-dark btn-arrow mb-2">
+                                    <span class="inner-btn">
+                                        Submit
+                                        <span class="arrow">
+                                            <span class="arrow-icon"></span>
+                                        </span>
                                     </span>
-                                </span>
-                            </button>
-                        </div><!-- end form-group -->
+                                </button>
+                            </div><!-- end form-group -->
+                        </form>
                     </div><!-- end col -->
                 </div><!-- end row -->
             </div><!-- end container -->
@@ -1128,6 +1130,7 @@
 
         <!-- Javascript vendors -->
         <script src="../assets/vendors/jquery/jquery.min.js"></script>
+        <script src="../assets/vendors/jquery-validation/jquery.validate.js"></script>
         <script src="../assets/vendors/bootstrap/js/bootstrap.bundle.min.js?cb=1583937029097"></script>
         <script src="../assets/vendors/bootstrap-select/js/bootstrap-select.min.js"></script>
         <script src="../assets/vendors/prismjs/prism.js"></script>
@@ -1141,5 +1144,12 @@
 
         <!-- Javascript File -->
         <script src="../assets/js/theme.js?cb=1583937029097"></script>
+
+        <script>
+            $(document).ready(function () {
+                // validate
+                $("#reviewForm").validate();
+            });
+        </script>
     </body>
 </html>

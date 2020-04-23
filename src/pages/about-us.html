@@ -344,12 +344,14 @@
                         <h5 class="mb-4 font-weight-bold text-uppercase">Join the latest news and releases minimal club for all!</h5>
                     </div><!-- end col -->
                     <div class=" col-11 col-sm-8 col-md-6 col-lg-5 col-xl-4">
-                        <div class="input-group mb-0">
-                            <input type="email" class="form-control" placeholder="Email">
-                            <div class="input-group-append">
-                                <button class="btn btn-dark min-w-auto px-4" type="button">Sign Up</button>
-                            </div>
-                        </div>
+                        <form id="subscribeForm">
+                            <div class="input-group mb-0">
+                                <input type="email" class="form-control" placeholder="Email" required>
+                                <div class="input-group-append">
+                                    <input class="btn btn-dark min-w-auto px-4" type="submit" value="Sign Up">
+                                </div><!-- end input-group-append -->
+                            </div><!-- end input-group -->
+                        </form>
                     </div><!-- end col -->
                 </div><!-- end row -->
             </div><!-- end container -->
@@ -665,6 +667,7 @@
 
         <!-- Javascript vendors -->
         <script src="../assets/vendors/jquery/jquery.min.js"></script>
+        <script src="../assets/vendors/jquery-validation/jquery.validate.js"></script>
         <script src="../assets/vendors/bootstrap/js/bootstrap.bundle.min.js?cb=1583937029097"></script>
         <script src="../assets/vendors/bootstrap-select/js/bootstrap-select.min.js"></script>
         <script src="../assets/vendors/prismjs/prism.js"></script>
@@ -678,5 +681,12 @@
 
         <!-- Javascript File -->
         <script src="../assets/js/theme.js?cb=1583937029097"></script>
+
+        <script>
+            $(document).ready(function () {
+                // validate
+                $("#subscribeForm").validate();
+            });
+        </script>
     </body>
 </html>
