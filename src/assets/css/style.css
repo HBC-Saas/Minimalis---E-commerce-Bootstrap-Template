@@ -23713,6 +23713,25 @@ label {
   letter-spacing: 0.01563rem;
 }
 
+label.error {
+  width: 100%;
+  order: 10;
+  margin-bottom: 0;
+  margin-top: 0.625rem;
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: #f90000;
+  text-align: left;
+}
+
+.form-control.error {
+  border-color: #f90000;
+}
+
+.form-control.error:active, .form-control.error:focus {
+  border-color: #f90000;
+}
+
 .qty-container {
   width: 5.375rem;
   min-height: 2.5rem;
