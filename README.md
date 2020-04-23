@@ -59,7 +59,7 @@ Run `$ gulp` command on the terminal to start the project. This command is defau
 Run `$ gulp dist` to compile minified version for production.
 
 
-### File Structure
+# File Structure
 Within the download you'll find the following directories and files:
 
 ```
@@ -82,7 +82,7 @@ Minimalis e-commerce template
  ├── README.md - Basic information of the project and download link for the design
 ```
 
-### Browser Support
+# Browser Support
 
 At present, we officially aim to support the last two versions of the following browsers:
 
