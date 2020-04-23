@@ -54,3 +54,36 @@ After installing node and gulp you are almost done with installations just one m
 
 ### 5. Run Gulp
 Run `$ gulp` command on the terminal to start the project. This command is default task which will create and compile the sources to dist folder and will start browsersync on port 3000.
+
+### 6. Run Gulp dist
+Run `$ gulp dist` to compile minified version for production.
+
+
+### File Structure
+Within the download you'll find the following directories and files:
+
+```
+Minimalis e-commerce template
+├── dist - Production files
+├── node_modules - Directory where npm installs dependencies
+└── src - Development files
+    ├── assets
+    │   ├── css - Compiled CSS
+    │   └── fonts - Font icons (flaticons, fontawesome)
+    │   └── img - Image assets
+    │   └── js - Javascript source
+    │   └── vendors - Third party plugins
+    ├── documentation - Documentation of the Template
+    ├── pages - HTML pages of the Template
+    ├── scss - SCSS source
+ ├── .gitignore - Hide all unnecessary files from Git
+ ├── gulpfile.js - All the build commands
+ ├── package.json - Project information and npm dependencies
+ ├── README.md - Basic information of the project and download link for the design
+```
+
+### Browser Support
+
+At present, we officially aim to support the last two versions of the following browsers:
+
+<img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/chrome.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/firefox.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/edge.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/safari.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/opera.png" width="64" height="64">
