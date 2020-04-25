@@ -250,7 +250,6 @@
                 }
               }
 
-              .show > .nav-link,
               .active > .nav-link,
               .nav-link.active {
                 &::before {
@@ -266,6 +265,7 @@
         /*===================================================
         *     Dropdown effect
         * ===================================================*/
+
         .dropdown,
         .dropdown-submenu {
           .dropdown-menu {
@@ -274,12 +274,6 @@
             opacity: 0;
             transform: translateY(2rem);
             @include transition(0.2s);
-
-            &.show {
-              visibility: visible;
-              opacity: 1;
-              transform: translateY(0px);
-            }
           }
         }
 
@@ -289,11 +283,22 @@
         .hovered-nav {
           .dropdown,
           .dropdown-submenu {
+
             @include hover() {
-              > .dropdown-menu {
+              >.dropdown-menu {
                 visibility: visible;
                 opacity: 1;
                 transform: translateY(0px);
+              }
+            }
+          }
+
+          .dropdown {
+            &:not(.dropdown-submenu) {
+              @include hover() {
+                >.dropdown-toggle {
+                  @include caret(up);
+                }
               }
             }
           }
@@ -315,12 +320,24 @@
           }
         }
 
-
         /*===================================================
         *     navbar style
         * ===================================================*/
 
         .navbar-nav {
+          &:not(.hovered-nav) {
+            .dropdown,
+            .dropdown-submenu {
+              &.show {
+                >.dropdown-menu {
+                  visibility: visible;
+                  opacity: 1;
+                  transform: translateY(0px);
+                }
+              }
+            }
+          }
+
           .nav-item {
             margin-right: $navbar-nav-link-margin-x;
             margin-left: $navbar-nav-link-margin-x;
@@ -346,7 +363,7 @@
                 position: absolute;
                 right: 0.625rem;
                 top: 50%;
-                margin-top: -0.1875rem;
+                margin-top: -0.1875rem!important;
               }
             }
 
