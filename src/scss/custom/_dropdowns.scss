@@ -30,3 +30,43 @@
 .dropdown-header {
   @include font-size(16);
 }
+
+
+.dropdown-menu {
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(2rem);
+  @include transition(0.2s);
+
+  .dropdown-menu {
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(2rem);
+    @include transition(0.2s);
+
+    &.show {
+      visibility: hidden;
+      opacity: 0;
+      transform: translateY(0px);
+    }
+  }
+
+  &.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+    .dropdown-menu {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0px);
+
+      &.show {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
+  }
+}
