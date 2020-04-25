@@ -138,12 +138,12 @@ $(document).ready(function(){
             setTimeout(function () {
                 _this.addClass('success');
                 _this.removeClass('loading');
-            }, 2000);
+            }, 1000);
 
             setTimeout(function () {
                 _this.removeClass('success');
                 _this.removeData('isClicked')
-            }, 4500);
+            }, 2000);
         }
     });
 

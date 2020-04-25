@@ -16285,7 +16285,7 @@ select.selectpicker {
 }
 
 .card .card-img figure img {
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
   width: 100%;
 }
 
@@ -16296,7 +16296,7 @@ select.selectpicker {
 }
 
 .card .card-img:hover .zoom-in img {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .card .card-img:hover .zoom-out img {
@@ -16304,7 +16304,7 @@ select.selectpicker {
 }
 
 .card .card-img .zoom-out img {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .card .card-img .add-to-cart {
@@ -16792,6 +16792,9 @@ select.selectpicker {
         *     border menu style
         * ===================================================*/
     /*===================================================
+        *     Dropdown effect
+        * ===================================================*/
+    /*===================================================
         *     hovered nav style
         * ===================================================*/
     /*===================================================
@@ -16831,14 +16834,15 @@ select.selectpicker {
     height: 2px;
     background-color: #1e1e1e;
   }
+  .navbar-expand-sm.menu-border .navbar-nav:not(.navbar-icons) .show > .nav-link::before,
   .navbar-expand-sm.menu-border .navbar-nav:not(.navbar-icons) .active > .nav-link::before,
   .navbar-expand-sm.menu-border .navbar-nav:not(.navbar-icons) .nav-link.active::before {
     width: 100%;
     height: 2px;
     background-color: #1e1e1e;
   }
-  .navbar-expand-sm .hovered-nav .dropdown .dropdown-menu,
-  .navbar-expand-sm .hovered-nav .dropdown-submenu .dropdown-menu {
+  .navbar-expand-sm .dropdown .dropdown-menu,
+  .navbar-expand-sm .dropdown-submenu .dropdown-menu {
     display: block;
     visibility: hidden;
     opacity: 0;
@@ -16848,13 +16852,19 @@ select.selectpicker {
 }
 
 @media (min-width: 576px) and (prefers-reduced-motion: reduce) {
-  .navbar-expand-sm .hovered-nav .dropdown .dropdown-menu,
-  .navbar-expand-sm .hovered-nav .dropdown-submenu .dropdown-menu {
+  .navbar-expand-sm .dropdown .dropdown-menu,
+  .navbar-expand-sm .dropdown-submenu .dropdown-menu {
     transition: none;
   }
 }
 
 @media (min-width: 576px) {
+  .navbar-expand-sm .dropdown .dropdown-menu.show,
+  .navbar-expand-sm .dropdown-submenu .dropdown-menu.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+  }
   .navbar-expand-sm .hovered-nav .dropdown:hover > .dropdown-menu,
   .navbar-expand-sm .hovered-nav .dropdown-submenu:hover > .dropdown-menu {
     visibility: visible;
@@ -16918,36 +16928,6 @@ select.selectpicker {
     top: 0;
     left: 100%;
   }
-  .navbar-expand-sm:not(.navbar-filter) .show > .dropdown-toggle::after {
-    display: inline-block;
-    margin-left: 0.15937rem;
-    vertical-align: 0.15937rem;
-    content: "";
-    border-top: 0;
-    border-right: 1px solid;
-    border-bottom: 1px solid;
-    border-left: 0;
-    padding: 0.1875rem;
-    transform: rotate(45deg);
-  }
-  .navbar-expand-sm:not(.navbar-filter) .show > .dropdown-toggle:empty::after {
-    margin-left: 0;
-  }
-  .navbar-expand-sm:not(.navbar-filter) .dropdown-submenu .show > .dropdown-toggle::after {
-    display: inline-block;
-    margin-left: 0.15937rem;
-    vertical-align: 0.15937rem;
-    content: "";
-    border-top: 0;
-    border-right: 1px solid;
-    border-bottom: 1px solid;
-    border-left: 0;
-    padding: 0.1875rem;
-    transform: rotate(45deg);
-  }
-  .navbar-expand-sm:not(.navbar-filter) .dropdown-submenu .show > .dropdown-toggle:empty::after {
-    margin-left: 0;
-  }
 }
 
 @media (max-width: 575.98px) {
@@ -17003,6 +16983,9 @@ select.selectpicker {
         *     border menu style
         * ===================================================*/
     /*===================================================
+        *     Dropdown effect
+        * ===================================================*/
+    /*===================================================
         *     hovered nav style
         * ===================================================*/
     /*===================================================
@@ -17042,14 +17025,15 @@ select.selectpicker {
     height: 2px;
     background-color: #1e1e1e;
   }
+  .navbar-expand-md.menu-border .navbar-nav:not(.navbar-icons) .show > .nav-link::before,
   .navbar-expand-md.menu-border .navbar-nav:not(.navbar-icons) .active > .nav-link::before,
   .navbar-expand-md.menu-border .navbar-nav:not(.navbar-icons) .nav-link.active::before {
     width: 100%;
     height: 2px;
     background-color: #1e1e1e;
   }
-  .navbar-expand-md .hovered-nav .dropdown .dropdown-menu,
-  .navbar-expand-md .hovered-nav .dropdown-submenu .dropdown-menu {
+  .navbar-expand-md .dropdown .dropdown-menu,
+  .navbar-expand-md .dropdown-submenu .dropdown-menu {
     display: block;
     visibility: hidden;
     opacity: 0;
@@ -17059,13 +17043,19 @@ select.selectpicker {
 }
 
 @media (min-width: 768px) and (prefers-reduced-motion: reduce) {
-  .navbar-expand-md .hovered-nav .dropdown .dropdown-menu,
-  .navbar-expand-md .hovered-nav .dropdown-submenu .dropdown-menu {
+  .navbar-expand-md .dropdown .dropdown-menu,
+  .navbar-expand-md .dropdown-submenu .dropdown-menu {
     transition: none;
   }
 }
 
 @media (min-width: 768px) {
+  .navbar-expand-md .dropdown .dropdown-menu.show,
+  .navbar-expand-md .dropdown-submenu .dropdown-menu.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+  }
   .navbar-expand-md .hovered-nav .dropdown:hover > .dropdown-menu,
   .navbar-expand-md .hovered-nav .dropdown-submenu:hover > .dropdown-menu {
     visibility: visible;
@@ -17129,36 +17119,6 @@ select.selectpicker {
     top: 0;
     left: 100%;
   }
-  .navbar-expand-md:not(.navbar-filter) .show > .dropdown-toggle::after {
-    display: inline-block;
-    margin-left: 0.15937rem;
-    vertical-align: 0.15937rem;
-    content: "";
-    border-top: 0;
-    border-right: 1px solid;
-    border-bottom: 1px solid;
-    border-left: 0;
-    padding: 0.1875rem;
-    transform: rotate(45deg);
-  }
-  .navbar-expand-md:not(.navbar-filter) .show > .dropdown-toggle:empty::after {
-    margin-left: 0;
-  }
-  .navbar-expand-md:not(.navbar-filter) .dropdown-submenu .show > .dropdown-toggle::after {
-    display: inline-block;
-    margin-left: 0.15937rem;
-    vertical-align: 0.15937rem;
-    content: "";
-    border-top: 0;
-    border-right: 1px solid;
-    border-bottom: 1px solid;
-    border-left: 0;
-    padding: 0.1875rem;
-    transform: rotate(45deg);
-  }
-  .navbar-expand-md:not(.navbar-filter) .dropdown-submenu .show > .dropdown-toggle:empty::after {
-    margin-left: 0;
-  }
 }
 
 @media (max-width: 767.98px) {
@@ -17214,6 +17174,9 @@ select.selectpicker {
         *     border menu style
         * ===================================================*/
     /*===================================================
+        *     Dropdown effect
+        * ===================================================*/
+    /*===================================================
         *     hovered nav style
         * ===================================================*/
     /*===================================================
@@ -17253,14 +17216,15 @@ select.selectpicker {
     height: 2px;
     background-color: #1e1e1e;
   }
+  .navbar-expand-lg.menu-border .navbar-nav:not(.navbar-icons) .show > .nav-link::before,
   .navbar-expand-lg.menu-border .navbar-nav:not(.navbar-icons) .active > .nav-link::before,
   .navbar-expand-lg.menu-border .navbar-nav:not(.navbar-icons) .nav-link.active::before {
     width: 100%;
     height: 2px;
     background-color: #1e1e1e;
   }
-  .navbar-expand-lg .hovered-nav .dropdown .dropdown-menu,
-  .navbar-expand-lg .hovered-nav .dropdown-submenu .dropdown-menu {
+  .navbar-expand-lg .dropdown .dropdown-menu,
+  .navbar-expand-lg .dropdown-submenu .dropdown-menu {
     display: block;
     visibility: hidden;
     opacity: 0;
@@ -17270,13 +17234,19 @@ select.selectpicker {
 }
 
 @media (min-width: 992px) and (prefers-reduced-motion: reduce) {
-  .navbar-expand-lg .hovered-nav .dropdown .dropdown-menu,
-  .navbar-expand-lg .hovered-nav .dropdown-submenu .dropdown-menu {
+  .navbar-expand-lg .dropdown .dropdown-menu,
+  .navbar-expand-lg .dropdown-submenu .dropdown-menu {
     transition: none;
   }
 }
 
 @media (min-width: 992px) {
+  .navbar-expand-lg .dropdown .dropdown-menu.show,
+  .navbar-expand-lg .dropdown-submenu .dropdown-menu.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+  }
   .navbar-expand-lg .hovered-nav .dropdown:hover > .dropdown-menu,
   .navbar-expand-lg .hovered-nav .dropdown-submenu:hover > .dropdown-menu {
     visibility: visible;
@@ -17340,36 +17310,6 @@ select.selectpicker {
     top: 0;
     left: 100%;
   }
-  .navbar-expand-lg:not(.navbar-filter) .show > .dropdown-toggle::after {
-    display: inline-block;
-    margin-left: 0.15937rem;
-    vertical-align: 0.15937rem;
-    content: "";
-    border-top: 0;
-    border-right: 1px solid;
-    border-bottom: 1px solid;
-    border-left: 0;
-    padding: 0.1875rem;
-    transform: rotate(45deg);
-  }
-  .navbar-expand-lg:not(.navbar-filter) .show > .dropdown-toggle:empty::after {
-    margin-left: 0;
-  }
-  .navbar-expand-lg:not(.navbar-filter) .dropdown-submenu .show > .dropdown-toggle::after {
-    display: inline-block;
-    margin-left: 0.15937rem;
-    vertical-align: 0.15937rem;
-    content: "";
-    border-top: 0;
-    border-right: 1px solid;
-    border-bottom: 1px solid;
-    border-left: 0;
-    padding: 0.1875rem;
-    transform: rotate(45deg);
-  }
-  .navbar-expand-lg:not(.navbar-filter) .dropdown-submenu .show > .dropdown-toggle:empty::after {
-    margin-left: 0;
-  }
 }
 
 @media (max-width: 991.98px) {
@@ -17425,6 +17365,9 @@ select.selectpicker {
         *     border menu style
         * ===================================================*/
     /*===================================================
+        *     Dropdown effect
+        * ===================================================*/
+    /*===================================================
         *     hovered nav style
         * ===================================================*/
     /*===================================================
@@ -17464,14 +17407,15 @@ select.selectpicker {
     height: 2px;
     background-color: #1e1e1e;
   }
+  .navbar-expand-xl.menu-border .navbar-nav:not(.navbar-icons) .show > .nav-link::before,
   .navbar-expand-xl.menu-border .navbar-nav:not(.navbar-icons) .active > .nav-link::before,
   .navbar-expand-xl.menu-border .navbar-nav:not(.navbar-icons) .nav-link.active::before {
     width: 100%;
     height: 2px;
     background-color: #1e1e1e;
   }
-  .navbar-expand-xl .hovered-nav .dropdown .dropdown-menu,
-  .navbar-expand-xl .hovered-nav .dropdown-submenu .dropdown-menu {
+  .navbar-expand-xl .dropdown .dropdown-menu,
+  .navbar-expand-xl .dropdown-submenu .dropdown-menu {
     display: block;
     visibility: hidden;
     opacity: 0;
@@ -17481,13 +17425,19 @@ select.selectpicker {
 }
 
 @media (min-width: 1200px) and (prefers-reduced-motion: reduce) {
-  .navbar-expand-xl .hovered-nav .dropdown .dropdown-menu,
-  .navbar-expand-xl .hovered-nav .dropdown-submenu .dropdown-menu {
+  .navbar-expand-xl .dropdown .dropdown-menu,
+  .navbar-expand-xl .dropdown-submenu .dropdown-menu {
     transition: none;
   }
 }
 
 @media (min-width: 1200px) {
+  .navbar-expand-xl .dropdown .dropdown-menu.show,
+  .navbar-expand-xl .dropdown-submenu .dropdown-menu.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+  }
   .navbar-expand-xl .hovered-nav .dropdown:hover > .dropdown-menu,
   .navbar-expand-xl .hovered-nav .dropdown-submenu:hover > .dropdown-menu {
     visibility: visible;
@@ -17551,36 +17501,6 @@ select.selectpicker {
     top: 0;
     left: 100%;
   }
-  .navbar-expand-xl:not(.navbar-filter) .show > .dropdown-toggle::after {
-    display: inline-block;
-    margin-left: 0.15937rem;
-    vertical-align: 0.15937rem;
-    content: "";
-    border-top: 0;
-    border-right: 1px solid;
-    border-bottom: 1px solid;
-    border-left: 0;
-    padding: 0.1875rem;
-    transform: rotate(45deg);
-  }
-  .navbar-expand-xl:not(.navbar-filter) .show > .dropdown-toggle:empty::after {
-    margin-left: 0;
-  }
-  .navbar-expand-xl:not(.navbar-filter) .dropdown-submenu .show > .dropdown-toggle::after {
-    display: inline-block;
-    margin-left: 0.15937rem;
-    vertical-align: 0.15937rem;
-    content: "";
-    border-top: 0;
-    border-right: 1px solid;
-    border-bottom: 1px solid;
-    border-left: 0;
-    padding: 0.1875rem;
-    transform: rotate(45deg);
-  }
-  .navbar-expand-xl:not(.navbar-filter) .dropdown-submenu .show > .dropdown-toggle:empty::after {
-    margin-left: 0;
-  }
 }
 
 @media (max-width: 1199.98px) {
@@ -17635,6 +17555,9 @@ select.selectpicker {
         *     border menu style
         * ===================================================*/
   /*===================================================
+        *     Dropdown effect
+        * ===================================================*/
+  /*===================================================
         *     hovered nav style
         * ===================================================*/
   /*===================================================
@@ -17676,6 +17599,7 @@ select.selectpicker {
   background-color: #1e1e1e;
 }
 
+.navbar-expand.menu-border .navbar-nav:not(.navbar-icons) .show > .nav-link::before,
 .navbar-expand.menu-border .navbar-nav:not(.navbar-icons) .active > .nav-link::before,
 .navbar-expand.menu-border .navbar-nav:not(.navbar-icons) .nav-link.active::before {
   width: 100%;
@@ -17683,8 +17607,8 @@ select.selectpicker {
   background-color: #1e1e1e;
 }
 
-.navbar-expand .hovered-nav .dropdown .dropdown-menu,
-.navbar-expand .hovered-nav .dropdown-submenu .dropdown-menu {
+.navbar-expand .dropdown .dropdown-menu,
+.navbar-expand .dropdown-submenu .dropdown-menu {
   display: block;
   visibility: hidden;
   opacity: 0;
@@ -17693,10 +17617,17 @@ select.selectpicker {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .navbar-expand .hovered-nav .dropdown .dropdown-menu,
-  .navbar-expand .hovered-nav .dropdown-submenu .dropdown-menu {
+  .navbar-expand .dropdown .dropdown-menu,
+  .navbar-expand .dropdown-submenu .dropdown-menu {
     transition: none;
   }
+}
+
+.navbar-expand .dropdown .dropdown-menu.show,
+.navbar-expand .dropdown-submenu .dropdown-menu.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0px);
 }
 
 .navbar-expand .hovered-nav .dropdown:hover > .dropdown-menu,
@@ -17775,40 +17706,6 @@ select.selectpicker {
   left: 100%;
 }
 
-.navbar-expand:not(.navbar-filter) .show > .dropdown-toggle::after {
-  display: inline-block;
-  margin-left: 0.15937rem;
-  vertical-align: 0.15937rem;
-  content: "";
-  border-top: 0;
-  border-right: 1px solid;
-  border-bottom: 1px solid;
-  border-left: 0;
-  padding: 0.1875rem;
-  transform: rotate(45deg);
-}
-
-.navbar-expand:not(.navbar-filter) .show > .dropdown-toggle:empty::after {
-  margin-left: 0;
-}
-
-.navbar-expand:not(.navbar-filter) .dropdown-submenu .show > .dropdown-toggle::after {
-  display: inline-block;
-  margin-left: 0.15937rem;
-  vertical-align: 0.15937rem;
-  content: "";
-  border-top: 0;
-  border-right: 1px solid;
-  border-bottom: 1px solid;
-  border-left: 0;
-  padding: 0.1875rem;
-  transform: rotate(45deg);
-}
-
-.navbar-expand:not(.navbar-filter) .dropdown-submenu .show > .dropdown-toggle:empty::after {
-  margin-left: 0;
-}
-
 .navbar-expand.navbar-filter .navbar-nav .nav-item {
   margin-right: calc(0.9375rem + 0.625rem);
   margin-left: calc(0.9375rem + 0.625rem);
@@ -17884,85 +17781,6 @@ select.selectpicker {
 .navbar-filter .nav-link {
   padding-top: 0.8125rem !important;
   padding-bottom: 0.8125rem !important;
-}
-
-.navbar-filter .show > .dropdown-toggle::after {
-  display: inline-block;
-  margin-left: 0.15937rem;
-  vertical-align: 0.15937rem;
-  content: "";
-  border-top: 0;
-  border-right: 1px solid;
-  border-bottom: 1px solid;
-  border-left: 0;
-  padding: 0.1875rem;
-  transform: rotate(45deg);
-}
-
-.navbar-filter .show > .dropdown-toggle:empty::after {
-  margin-left: 0;
-}
-
-.navbar-filter .dropdown-submenu .show > .dropdown-toggle::after {
-  display: inline-block;
-  margin-left: 0.15937rem;
-  vertical-align: 0.15937rem;
-  content: "";
-  border-top: 0;
-  border-right: 1px solid;
-  border-bottom: 1px solid;
-  border-left: 0;
-  padding: 0.1875rem;
-  transform: rotate(45deg);
-}
-
-.navbar-filter .dropdown-submenu .show > .dropdown-toggle:empty::after {
-  margin-left: 0;
-}
-
-.navbar-filter :not(.hovered-nav) .show > .dropdown-toggle::after {
-  display: inline-block;
-  margin-left: 0.15937rem;
-  vertical-align: 0.15937rem;
-  content: "";
-  border-top: 1px solid;
-  border-right: 0;
-  border-bottom: 0;
-  border-left: 1px solid;
-  padding: 0.1875rem;
-  transform: rotate(45deg);
-  vertical-align: 0;
-  margin-top: 5px !important;
-}
-
-.navbar-filter :not(.hovered-nav) .show > .dropdown-toggle:empty::after {
-  margin-left: 0;
-}
-
-.navbar-filter :not(.hovered-nav) .dropdown-submenu .show > .dropdown-toggle::after {
-  display: inline-block;
-  margin-left: 0.15937rem;
-  vertical-align: 0.15937rem;
-  content: "";
-  border-top: 1px solid;
-  border-right: 0;
-  border-bottom: 0;
-  border-left: 1px solid;
-  padding: 0.1875rem;
-  transform: rotate(45deg);
-  vertical-align: 0;
-  margin-top: 5px !important;
-}
-
-.navbar-filter :not(.hovered-nav) .dropdown-submenu .show > .dropdown-toggle:empty::after {
-  margin-left: 0;
-}
-
-.navbar-filter :not(.hovered-nav) .show > .nav-link::before,
-.navbar-filter :not(.hovered-nav) .nav-link.show::before {
-  width: 100%;
-  height: 2px;
-  background-color: #1e1e1e;
 }
 
 .navbar-filter .mega-dropdown-menu {
@@ -23376,7 +23194,7 @@ select.selectpicker {
   display: inline-block;
   opacity: 1;
   visibility: visible;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -23455,7 +23273,7 @@ select.selectpicker {
 
 .btn-circle.loading:not(.success), .btn-circle.success:not(.success) {
   border-left-color: #877658;
-  animation: loadingRotate .5s ease .1s infinite;
+  animation: loadingRotate 1s ease .2s infinite;
 }
 
 .btn-circle.success .add-to-cart-success {

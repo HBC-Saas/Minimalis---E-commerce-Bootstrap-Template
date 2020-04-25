@@ -7,20 +7,20 @@
     figure {
       overflow: hidden;
       img {
-        @include transition(all 0.2s ease);
+        @include transition(all 0.3s ease);
         width: 100%;
       }
     }
     @include hover() {
       .zoom-in {
-        img { transform: scale(1.2); }
+        img { transform: scale(1.1); }
       }
       .zoom-out {
         img { transform: scale(1); }
       }
     }
     .zoom-out {
-      img { transform: scale(1.2); }
+      img { transform: scale(1.1); }
     }
 
     // add to cart button

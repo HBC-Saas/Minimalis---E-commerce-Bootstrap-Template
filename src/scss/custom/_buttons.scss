@@ -315,7 +315,7 @@
     display: inline-block;
     opacity: 1;
     visibility: visible;
-    @include transition(all 0.2s ease);
+    @include transition(all 0.3s ease);
   }
   .add-to-cart-active,
   .add-to-cart-success {
@@ -380,7 +380,7 @@
     }
     &:not(.success) {
       border-left-color: darken($primary, 15%);
-      animation: loadingRotate .5s ease .1s infinite;
+      animation: loadingRotate 1s ease .2s infinite;
     }
   }
   &.success {
