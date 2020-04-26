@@ -95,6 +95,121 @@
   }
 }
 
+@mixin button-minimalis-variant($background, $border, $hover-background: darken($background, 0%), $hover-border: darken($border, 0%), $active-background: darken($background, 5%), $active-border: darken($border, 7.5%)) {
+  position: relative;
+  color: color-yiq($background);
+  background: none;
+  border-color: $border;
+  @include box-shadow(none);
+
+  &::before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    @include gradient-bg($background);
+    z-index: -1;
+    @include transition($btn-transition);
+  }
+
+  @include hover() {
+    color: $background;
+    background: none;
+    border-color: $hover-border;
+
+    &::before { width: 0; }
+  }
+
+  &:focus,
+  &.focus {
+    background: none;
+    border-color: $hover-border;
+  }
+
+  // Disabled comes first so active can properly restyle
+  &.disabled,
+  &:disabled {
+    color: color-yiq($background);
+    background-color: $background;
+    border-color: $border;
+    // Remove CSS gradients if they're enabled
+    @if $enable-gradients {
+      background-image: none;
+    }
+  }
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active,
+  .show > &.dropdown-toggle {
+    background: none;
+    border-color: $hover-border;
+    @if $enable-gradients {
+      background-image: none; // Remove the gradient for the pressed/active state
+    }
+  }
+}
+
+@mixin button-minimalis-outline-variant($background, $border, $hover-background: darken($background, 0%), $hover-border: darken($border, 0%), $active-background: darken($background, 5%), $active-border: darken($border, 7.5%)) {
+  position: relative;
+  color: $background;
+  background: none;
+  border-color: $border;
+  @include box-shadow(none);
+
+  &::before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    @include gradient-bg($background);
+    z-index: -1;
+    @include transition($btn-transition);
+  }
+
+  @include hover() {
+    color: color-yiq($background);
+    background: none;
+    border-color: $hover-border;
+
+    &::before { width: 100%; }
+  }
+
+  &:focus,
+  &.focus {
+    background: none;
+    border-color: $hover-border;
+  }
+
+  // Disabled comes first so active can properly restyle
+  &.disabled,
+  &:disabled {
+    color: $background;
+    background: none;
+    border-color: $border;
+
+    &::before { width: 0; }
+
+    // Remove CSS gradients if they're enabled
+    @if $enable-gradients {
+      background-image: none;
+    }
+  }
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active,
+  .show > &.dropdown-toggle {
+    background: none;
+    border-color: $hover-border;
+    @if $enable-gradients {
+      background-image: none; // Remove the gradient for the pressed/active state
+    }
+  }
+}
+
 @each $color, $value in $theme-colors {
   .btn-#{$color} {
     @include button-variant($value, $value);
