@@ -275,6 +275,7 @@
   cursor: pointer;
   position: relative;
   overflow: hidden;
+  @include transition($general-transition);
 
   // sizes
   @each $breakpoint in map-keys($grid-breakpoints) {
@@ -425,5 +426,12 @@
 @keyframes loadingRotate {
   0% {
     transform: rotate(-360deg);
+  }
+}
+
+//
+.btn-hover-white {
+  @include hover() {
+    background-color: $white!important;
   }
 }
