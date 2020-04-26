@@ -99,3 +99,45 @@
     min-width: 100%!important;
   }
 }
+
+// dropdown menu
+.bootstrap-select {
+  .dropdown-menu {
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(2rem);
+    @include transition($dropdown-transition);
+
+    .dropdown-menu {
+      display: block;
+      visibility: hidden;
+      opacity: 0;
+      transform: translateY(2rem);
+      @include transition($dropdown-transition);
+
+      &.show {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(0px);
+      }
+    }
+
+    &.show {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0px);
+      .dropdown-menu {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0px);
+
+        &.show {
+          visibility: visible;
+          opacity: 1;
+          transform: translateY(0px);
+        }
+      }
+    }
+  }
+}
