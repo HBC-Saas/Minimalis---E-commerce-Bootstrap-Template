@@ -30,7 +30,7 @@
 .rate-star:not(:checked) > label {
   cursor: pointer;
 
-  @include transition(.2s ease);
+  @include transition($general-transition);
 }
 .rate-star > input:checked ~ label {
   color: $primary;

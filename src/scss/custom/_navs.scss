@@ -27,7 +27,7 @@
         transform: translateX(-50%);
         width: 0;
         height: 0;
-        @include transition(0.2s);
+        @include transition($navbar-border-transition);
       }
 
       &.active {

@@ -7,7 +7,7 @@
     figure {
       overflow: hidden;
       img {
-        @include transition(all 0.3s ease);
+        @include transition($zoom-transition);
         width: 100%;
       }
     }
@@ -61,7 +61,7 @@
 
   // card actions
   .card-action {
-    @include transition(all 0.2s ease);
+    @include transition($card-actions-transition);
     position: absolute;
     background-color: transparent;
     border: none;
@@ -103,7 +103,7 @@
         right: 1.5625rem;
         z-index: 9;
         transform: translate3d(0, 100%, 0);
-        @include transition(0.2s ease);
+        @include transition($card-blog-title);
         .title {
           position: absolute;
           bottom: 100%;

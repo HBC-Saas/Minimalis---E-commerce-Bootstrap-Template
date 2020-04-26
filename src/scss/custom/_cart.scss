@@ -29,7 +29,7 @@
   }
 
   .sad-line {
-    @include transition(.2s);
+    @include transition($cart-line-transition);
   }
 
   .happy-line {

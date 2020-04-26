@@ -29,7 +29,7 @@
     font-weight: $font-weight-medium;
     padding: 0.375rem 0;
     color: $gray-600;
-    @include transition();
+    @include transition($general-transition);
     &:hover, &:active, &:focus {
       color: $primary;
     }

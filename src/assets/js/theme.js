@@ -73,15 +73,15 @@ $(document).ready(function(){
     $('.nav-search-form .search-icon').on('click', function () {
         $(this).addClass('d-none');
         $('.nav-search-form .close-icon').removeClass('d-none');
-        $('.nav-search-form').css('width', '180px');
-        $('.nav-search-form .form-control').removeClass('d-none');
+        $('.nav-search-form .form-control').css('width', '180px');
+        $('.nav-search-form .form-control').removeClass('v-hidden');
     });
 
     $('.nav-search-form .close-icon').on('click', function () {
         $(this).addClass('d-none');
         $('.nav-search-form .search-icon').removeClass('d-none');
-        $('.nav-search-form').css('width', 'auto');
-        $('.nav-search-form .form-control').addClass('d-none');
+        $('.nav-search-form .form-control').css('width', '100px');
+        $('.nav-search-form .form-control').addClass('v-hidden');
     });
 
     /*===================================================

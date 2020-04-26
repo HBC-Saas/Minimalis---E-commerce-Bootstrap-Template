@@ -93,7 +93,7 @@
         width: 1px;
         height: 0;
         background-color: $gray-200;
-        @include transition(.5s);
+        @include transition($general-transition);
       }
     }
 
@@ -131,7 +131,7 @@
       opacity: .15;
       background: $dark;
       outline: none;
-      @include transition(.2s);
+      @include transition($general-transition);
     }
     .swiper-pagination-bullet-active {
       background: $dark;
@@ -168,7 +168,7 @@
       visibility: hidden;
       opacity: 0;
       background-color: transparent;
-      @include transition(.3s);
+      @include transition($general-transition);
       cursor: default;
     }
 

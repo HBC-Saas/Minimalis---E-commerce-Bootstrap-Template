@@ -109,7 +109,7 @@
         height: 1px;
         top: 50%;
         left: 0;
-        @include transition(all 0.2s ease);
+        @include transition($btn-transition);
         &:before, &:after {
           content: ' ';
           width: 60%;
@@ -120,7 +120,7 @@
           transform: rotate(0deg);
           opacity: 0;
           visibility: hidden;
-          @include transition(all 0.2s ease);
+          @include transition($btn-transition);
         }
         &::before {
           top: -2px;
@@ -275,7 +275,7 @@
   cursor: pointer;
   position: relative;
   overflow: hidden;
-  @include transition($general-transition);
+  @include transition($btn-transition);
 
   // sizes
   @each $breakpoint in map-keys($grid-breakpoints) {
@@ -316,7 +316,7 @@
     display: inline-block;
     opacity: 1;
     visibility: visible;
-    @include transition(all 0.3s ease);
+    @include transition($btn-transition);
   }
   .add-to-cart-active,
   .add-to-cart-success {

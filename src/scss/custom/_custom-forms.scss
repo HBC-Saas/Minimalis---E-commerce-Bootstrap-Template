@@ -26,7 +26,7 @@
     margin-bottom: 0;
 
     span,
-    i { @include transition($general-transition); }
+    i { @include transition($filter-checkbox-transition); }
   }
 
   @include hover() {
@@ -83,7 +83,7 @@
     right: -0.4375rem;
     @include border-radius(1.5625rem);
     display: block;
-    @include transition($general-transition);
+    @include transition($filter-checkbox-transition);
     visibility: hidden;
     opacity: 0;
 
@@ -93,7 +93,7 @@
     left: auto;
     right: -0.4375rem;
     @include border-radius(1.5625rem);
-    @include transition($general-transition);
+    @include transition($filter-checkbox-transition);
     visibility: hidden;
     opacity: 0;
   }
