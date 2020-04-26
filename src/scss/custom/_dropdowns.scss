@@ -37,14 +37,14 @@
   visibility: hidden;
   opacity: 0;
   transform: translateY(2rem);
-  @include transition(0.2s);
+  @include transition($dropdown-transition);
 
   .dropdown-menu {
     display: block;
     visibility: hidden;
     opacity: 0;
     transform: translateY(2rem);
-    @include transition(0.2s);
+    @include transition($dropdown-transition);
 
     &.show {
       visibility: hidden;

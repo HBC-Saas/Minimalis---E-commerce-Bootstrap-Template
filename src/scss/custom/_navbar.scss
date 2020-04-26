@@ -77,26 +77,26 @@
 
 // nav search
 .nav-search {
-  position: relative;
-
-  .nav-search-form {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-
-    .form-control {
-      background-color: transparent;
+    .nav-search-form {
+      padding: $navbar-padding-x 0;
+      .form-control {
+        background-color: transparent;
+        width: 100px;
+        @include transition($nav-search-transition);
+      }
+      .v-hidden {
+        visibility: hidden;
+        opacity: 0;
+      }
     }
-  }
 
-  .input-group-text {
-    i {
-      &::before { font-size: 1.125rem; }
+    .input-group-text {
+      i {
+        &::before { font-size: 1.125rem; }
+      }
+      .search-icon,
+      .close-icon { cursor: pointer }
     }
-    .search-icon,
-    .close-icon { cursor: pointer }
-  }
 }
 
 // icon label
@@ -161,9 +161,9 @@
     width: 0.875rem;
     height: 0.1875rem;
     background-color: $black;
-    @include transition(all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.2s);
+    @include transition($navbar-toggle-transition);
     &::before, &::after {
-      @include transition(all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.2s);
+      @include transition($navbar-toggle-transition);
       content: "";
       position: absolute;
       left: 0;
@@ -223,7 +223,7 @@
               transform: translateX(-50%);
               width: 0;
               height: 0;
-              @include transition(0.2s);
+              @include transition($navbar-border-transition);
             }
           }
 
@@ -283,7 +283,7 @@
             visibility: hidden;
             opacity: 0;
             transform: translateY(2rem);
-            @include transition(0.2s);
+            @include transition($dropdown-transition);
           }
         }
 
