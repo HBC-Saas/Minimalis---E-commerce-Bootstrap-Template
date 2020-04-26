@@ -88,6 +88,24 @@
   }
 }
 
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    @each $color, $value in $theme-colors {
+      .btn-minimalis#{$infix}-#{$color} {
+        @include button-minimalis-variant($value, $value);
+      }
+    }
+
+    @each $color, $value in $theme-colors {
+      .btn-minimalis-outline#{$infix}-#{$color} {
+        @include button-minimalis-outline-variant($value, $value);
+      }
+    }
+  }
+}
+
 // button arrow style
 .btn-arrow {
   text-align: left;
@@ -162,6 +180,43 @@
           .arrow-icon {
             background-color: color-yiq($value);
             &:before, &:after { background-color: color-yiq($value); }
+          }
+        }
+      }
+
+      // minimalis effect
+      .btn-minimalis#{$infix}-#{$color} {
+        &.btn-arrow {
+          .arrow-icon {
+            background-color: color-yiq($value);
+            &:before, &:after { background-color: color-yiq($value); }
+          }
+
+          @include hover() {
+            .arrow-icon {
+              background-color: $value;
+              &:before, &:after {
+                background-color: $value;
+              }
+            }
+          }
+        }
+      }
+
+      .btn-minimalis-outline#{$infix}-#{$color} {
+        &.btn-arrow {
+          .arrow-icon {
+            background-color: $value;
+            &:before, &:after { background-color: $value; }
+          }
+
+          @include hover() {
+            .arrow-icon {
+              background-color: color-yiq($value);
+              &:before, &:after {
+                background-color: color-yiq($value);
+              }
+            }
           }
         }
       }
