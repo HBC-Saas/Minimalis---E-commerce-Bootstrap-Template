@@ -4,16 +4,33 @@
 * ===================================================
 */
 
+
+// checkbox filter
+.filter-checkbox {
+  label {
+
+    @include hover() {
+      span,
+      i {
+        color: $primary!important;
+      }
+    }
+  }
+}
+
 .filter-checkbox {
   padding-right: 0.3125rem;
   padding-left: 0.3125rem;
   label {
     cursor: pointer;
     margin-bottom: 0;
+
+    span,
+    i { @include transition($general-transition); }
   }
 
   @include hover() {
-    label, i, h6 { color: $primary!important; }
+    span, i { color: $primary!important; }
   }
 
   .custom-control-input {
@@ -58,8 +75,6 @@
 }
 
 // Checkboxes
-//
-// Tweak just a few things for checkboxes.
 
 .filter-checkbox {
   .custom-control-label::before {
@@ -67,7 +82,10 @@
     left: auto;
     right: -0.4375rem;
     @include border-radius(1.5625rem);
-    display: none;
+    display: block;
+    @include transition($general-transition);
+    visibility: hidden;
+    opacity: 0;
 
   }
   .custom-control-label::after {
@@ -75,6 +93,16 @@
     left: auto;
     right: -0.4375rem;
     @include border-radius(1.5625rem);
+    @include transition($general-transition);
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .custom-control-input:checked ~ label .custom-control-label {
+    &::before {
+      visibility: visible!important;
+      opacity: 1!important;
+    }
   }
 
   .custom-control-input:checked ~ label .custom-control-label {
@@ -85,6 +113,8 @@
       color: white;
       font-size: .5rem;
       line-height: 1.125rem;
+      visibility: visible!important;
+      opacity: 1!important;
     }
   }
 

@@ -209,6 +209,8 @@ $link-hover-decoration:                   none !default;
 // Darken percentage for links with `.text-*` class (e.g. `.text-success`)
 $emphasized-link-hover-darken-percentage: 0% !default;
 
+$general-transition:  all .2s ease-in;
+
 // Paragraphs
 //
 // Style p element.
