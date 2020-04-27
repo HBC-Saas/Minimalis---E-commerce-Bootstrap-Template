@@ -101,6 +101,7 @@
   background: none;
   border-color: $border;
   @include box-shadow(none);
+  z-index: 1;
 
   &::before {
     content: ' ';
@@ -157,6 +158,7 @@
   background: none;
   border-color: $border;
   @include box-shadow(none);
+  z-index: 1;
 
   &::before {
     content: ' ';

@@ -5,6 +5,7 @@
 
 .btn {
   letter-spacing: $btn-letter-spacing;
+  @include transition($btn-transition);
   &:not(.dropdown-toggle) {
     min-width: 10.625rem;
   }
@@ -317,6 +318,37 @@
   }
   .text-#{$color} { color: $value; }
   .text-#{$color} { color: $value; }
+}
+
+// Social buttons minimalis effect
+@each $color, $value in $social-colors {
+  .btn-minimalis-#{$color} {
+    position: relative;
+    border: 1px solid $black;
+    color: $black;
+    text-align: left;
+    z-index: 1;
+
+    &::before {
+      content: ' ';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      @include gradient-bg($value);
+      z-index: -1;
+      @include transition($btn-transition);
+    }
+
+    @include hover() {
+      border: 1px solid $value;
+      color: $white;
+      .text-#{$color} { color: $white; }
+
+      &::before { width: 100%; }
+    }
+  }
 }
 
 // circle and Add to cart BUTTONS
