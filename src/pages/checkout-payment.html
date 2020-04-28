@@ -149,8 +149,8 @@
                                     <a class="dropdown-item" href="contact-us.html">Contact us</a>
                                     <a class="dropdown-item" href="error-404.html">Error 404</a>
                                     <a class="dropdown-item" href="faq.html">FAQ</a>
-                                    <a class="dropdown-item active" href="checkout-address.html">Checkout Address</a>
-                                    <a class="dropdown-item" href="checkout-payment.html">Checkout Payment</a>
+                                    <a class="dropdown-item" href="checkout-address.html">Checkout Address</a>
+                                    <a class="dropdown-item active" href="checkout-payment.html">Checkout Payment</a>
                                 </div><!-- end col -->
                                 <div class="col">
                                     <div class="dropdown-header font-weight-bold mb-2">Account</div>
@@ -239,84 +239,78 @@
                         <h2 class="font-weight-bold">Checkout</h2>
                     </div><!-- end col -->
                 </div><!-- end row -->
-
                 <form>
                     <div class="row">
                         <div class="col-12 col-lg-6 mb-4 mb-lg-0">
-                            <ol class="breadcrumb custom-breadcrumb mt-25px mb-40px">
-                                <li class="breadcrumb-item"><a href="#">Customer information</a></li>
-                                <li class="breadcrumb-item text-gray" aria-current="page">Payment method</li>
+                            <ol class="breadcrumb custom-breadcrumb mt-25px mb-35px">
+                                <li class="breadcrumb-item text-gray">Customer information</li>
+                                <li class="breadcrumb-item" aria-current="page"><a href="#">Payment method</a></li>
                             </ol><!-- end breadcrumb -->
 
 
-                            <div class="form-group mb-40px">
-                                <label for="email">Email</label>
-                                <input type="email" class="form-control" id="email" placeholder="johndoe@example.com">
+                            <ul class="list-group mb-4">
+                                <li class="list-group-item py-2">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <p class="mb-0 text-gray">Contact</p>
+                                        </div><!-- end col -->
+                                        <div class="col-9">
+                                            <p class="mb-0 text-dark">johndoe@example.com</p>
+                                        </div><!-- end col -->
+                                    </div><!-- end row -->
+                                </li><!-- end list-group-item -->
+
+                                <li class="list-group-item py-2">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <p class="mb-0 text-gray">Shipp to</p>
+                                        </div><!-- end col -->
+                                        <div class="col-9">
+                                            <p class="mb-0 text-dark">Kosovo, 10000, Prishtina</p>
+                                        </div><!-- end col -->
+                                    </div><!-- end row -->
+                                </li><!-- end list-group-item -->
+                            </ul><!-- end list-group -->
+
+                            <h5 class="font-weight-bold">Payment</h5>
+                            <p class="text-gray mb-4">All transactions are secure and encrypted.</p>
+
+                            <div class="card border-0 mb-4">
+                                <div class="card-body bg-light py-2">
+                                    <div class="row align-items-center">
+                                        <div class="col">
+                                            <h6 class="font-weight-normal text-gray mb-0">Payment methood:</h6>
+                                        </div><!-- end col -->
+                                        <div class="col text-right">
+                                            <h6 class="font-weight-normal text-gray mb-0">img img img</h6>
+                                        </div><!-- end col -->
+                                    </div><!-- end row -->
+
+                                </div><!-- end card-body -->
+                            </div><!-- end card -->
+
+
+                            <div class="form-group mb-4">
+                                <label for="card_number">Card number</label>
+                                <input type="tel" class="form-control" id="card_number">
                             </div><!-- end form-group -->
 
-                            <h5 class="font-weight-bold mb-4">Shipping address</h5>
+                            <div class="form-group mb-4">
+                                <label for="name_on_card">Name on card</label>
+                                <input type="text" class="form-control" id="name_on_card">
+                            </div><!-- end form-group -->
 
-                            <div class="row">
-                                <div class="form-group col-12 col-sm-6 mb-25px">
-                                    <label for="first_name">First name</label>
-                                    <input type="text" class="form-control" id="first_name">
+                            <div class="row mb-25px mb-lg-40px">
+                                <div class="form-group col-12 col-sm-6 mb-25px mb-sm-0">
+                                    <label for="expiriation_date">Expiriation date (MM/YY)</label>
+                                    <input type="tel" class="form-control" id="expiriation_date">
                                 </div><!-- end form-group -->
 
-                                <div class="form-group col-12 col-sm-6 mb-25px">
-                                    <label for="last_name">Last name</label>
-                                    <input type="text" class="form-control" id="last_name">
+                                <div class="form-group col-12 col-sm-6 mb-25px mb-sm-0">
+                                    <label for="security_code">Security code</label>
+                                    <input type="tel" class="form-control" id="security_code">
                                 </div><!-- end form-group -->
                             </div><!-- end row -->
-
-                            <div class="form-group mb-25px">
-                                <label for="company">Company (Optional)</label>
-                                <input type="text" class="form-control" id="company">
-                            </div><!-- end form-group -->
-
-                            <div class="row">
-                                <div class="form-group col-12 col-sm-6 mb-25px">
-                                    <label for="address">Address</label>
-                                    <input type="text" class="form-control" id="address">
-                                </div><!-- end form-group -->
-
-                                <div class="form-group w-100 col-12 col-sm-6 mb-25px">
-                                    <label for="city">City</label>
-                                    <select id="city" class="selectpicker" data-live-search="true" data-style="minimalis" title="Select City">
-                                        <option data-tokens="bristol">Bristol</option>
-                                        <option data-tokens="brimingham">Brimingham</option>
-                                        <option data-tokens="york">York</option>
-                                        <option data-tokens="liverpool">Liverpool</option>
-                                        <option data-tokens="london">London</option>
-                                        <option data-tokens="manchester">Manchester</option>
-                                    </select>
-                                </div><!-- end form-group -->
-
-                                <div class="form-group w-100 col-12 col-sm-6 mb-25px">
-                                    <label for="country">Country</label>
-                                    <select id="country" class="selectpicker" data-live-search="true" data-style="minimalis" title="Select country">
-                                        <option data-tokens="afghanistan">Afghanistan</option>
-                                        <option data-tokens="albania">Albania</option>
-                                        <option data-tokens="algeria">Algeria</option>
-                                        <option data-tokens="andorra">Andorra</option>
-                                        <option data-tokens="angola">Angola</option>
-                                        <option data-tokens="antigua barbuda">Antigua and Barbuda</option>
-                                        <option data-tokens="argentina">Argentina</option>
-                                        <option data-tokens="armenia">Armenia</option>
-                                        <option data-tokens="australia">Australia</option>
-                                        <option data-tokens="austria">Austria</option>
-                                    </select>
-                                </div><!-- end form-group -->
-
-                                <div class="form-group col-12 col-sm-6 mb-25px">
-                                    <label for="postal_code">Postal Code</label>
-                                    <input type="text" class="form-control" id="postal_code">
-                                </div><!-- end form-group -->
-                            </div><!-- end row -->
-
-                            <div class="form-group mb-40px">
-                                <label for="phone">Phone</label>
-                                <input type="text" class="form-control" id="phone">
-                            </div><!-- end form-group -->
                         </div><!-- end col -->
 
                         <div class="col-12 col-lg-6 mb-4 mb-lg-0">
