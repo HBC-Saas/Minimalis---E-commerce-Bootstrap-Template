@@ -17,6 +17,7 @@
 // text hover
 @each $color, $value in $theme-colors {
   .text-hover-#{$color} {
+    @include transition($general-transition);
     @include hover() {
       color: $value!important;
     }

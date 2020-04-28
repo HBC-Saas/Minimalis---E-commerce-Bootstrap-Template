@@ -209,7 +209,11 @@ $link-hover-decoration:                   none !default;
 // Darken percentage for links with `.text-*` class (e.g. `.text-success`)
 $emphasized-link-hover-darken-percentage: 0% !default;
 
-$general-transition:  all .3s ease-in-out !default;
+$general-transition-duration:             .3s;
+$general-transition-function:             cubic-bezier(0,1,1,1);
+$general-transition:                      all $general-transition-duration $general-transition-function !default;
+
+$ease-transition-function:                ease-in-out;
 
 // Paragraphs
 //
@@ -489,7 +493,9 @@ $btn-border-radius:           0 !default;
 $btn-border-radius-lg:        0 !default;
 $btn-border-radius-sm:        0 !default;
 
-$btn-transition:              all .3s ease-in-out !default;
+$btn-circle-transition:      all $general-transition-duration $ease-transition-function;
+$btn-transition:              $general-transition !default; // all .3s ease-in-out
+$btn-transition-arrow:         all .4s $ease-transition-function;
 
 
 // Forms
@@ -692,7 +698,7 @@ $custom-file-text: (
         en: "Browse"
 ) !default;
 
-$filter-checkbox-transition:        all .3s ease-in-out !default;
+$filter-checkbox-transition:        $general-transition !default; //all .3s ease-in-out
 
 
 // Form validation
@@ -799,9 +805,10 @@ $navbar-light-brand-hover-color:          $navbar-light-active-color !default;
 $navbar-dark-brand-color:                 $navbar-dark-active-color !default;
 $navbar-dark-brand-hover-color:           $navbar-dark-active-color !default;
 
-$nav-search-transition:                   all .3s ease-in-out !default;
+$nav-search-transition:                   $general-transition !default; //all .3s ease-in-out
+
 $navbar-toggle-transition:                all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.2s !default;
-$navbar-border-transition:                all .2s ease-in-out !default;
+$navbar-border-transition:                $general-transition !default; // all .2s ease-in-out
 
 
 // Dropdowns
@@ -836,7 +843,7 @@ $dropdown-item-padding-x:           .9375rem !default;
 
 $dropdown-header-color:             $black !default;
 
-$dropdown-transition:               all .2s ease-in-out !default;
+$dropdown-transition:               all .2s $ease-transition-function !default;
 
 
 // Pagination
@@ -900,9 +907,9 @@ $card-columns-count:                3 !default;
 $card-columns-gap:                  1.25rem !default;
 $card-columns-margin:               $card-spacer-y !default;
 
-$card-actions-transition:           all 0.3s ease-in-out !default;
-$zoom-transition:                   all 0.3s ease-in-out !default;
-$card-blog-title:                   all 0.3s ease-in-out !default;
+$card-actions-transition:           all .2s $ease-transition-function !default;
+$zoom-transition:                   all $general-transition-duration $ease-transition-function !default;
+$card-blog-title:                   $general-transition !default; // all .3s ease-in-out
 
 // Tooltips
 
@@ -1033,7 +1040,7 @@ $modal-show-transform:              none !default;
 $modal-transition:                  transform .3s ease-out !default;
 $modal-scale-transform:             scale(1.02) !default;
 
-$cart-line-transition:              all .3s ease-in-out !default;
+$cart-line-transition:              $general-transition !default; // all .3s ease-in-out
 
 
 // Alerts

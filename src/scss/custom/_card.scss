@@ -39,6 +39,8 @@
       .hover-card-action {
         opacity: 1;
         visibility: visible;
+          &.action-left { left: 1.25rem; }
+          &.action-right { right: 1.25rem; }
       }
     }
   }
@@ -83,6 +85,9 @@
     &.action-bottom { bottom: 1.25rem; }
     &.action-left { left: 1.25rem; }
     &.action-right { right: 1.25rem; }
+
+    &.hover-card-action.action-left { left: 0; }
+    &.hover-card-action.action-right { right: 0; }
 
     &.active {
       [class^="flaticon-"], [class*=" flaticon-"],
