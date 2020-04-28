@@ -128,7 +128,7 @@
         height: 1px;
         top: 50%;
         left: 0;
-        @include transition($btn-transition);
+        @include transition($btn-transition-arrow);
         &:before, &:after {
           content: ' ';
           width: 60%;
@@ -139,7 +139,7 @@
           transform: rotate(0deg);
           opacity: 0;
           visibility: hidden;
-          @include transition($btn-transition);
+          @include transition($btn-transition-arrow);
         }
         &::before {
           top: -2px;
@@ -362,7 +362,7 @@
   cursor: pointer;
   position: relative;
   overflow: hidden;
-  @include transition($btn-transition);
+  @include transition($btn-circle-transition);
 
   // sizes
   @each $breakpoint in map-keys($grid-breakpoints) {

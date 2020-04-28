@@ -2332,7 +2332,7 @@ textarea.form-control {
   font-size: 0.875rem;
   line-height: 1.71429;
   border-radius: 0;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -4877,7 +4877,7 @@ input[type="button"].btn-block {
   white-space: nowrap;
   vertical-align: baseline;
   border-radius: 0.25rem;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -15388,36 +15388,126 @@ select.selectpicker {
   }
 }
 
+.text-hover-primary {
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .text-hover-primary {
+    transition: none;
+  }
+}
+
 .text-hover-primary:hover {
   color: #ac9c7f !important;
+}
+
+.text-hover-secondary {
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .text-hover-secondary {
+    transition: none;
+  }
 }
 
 .text-hover-secondary:hover {
   color: #686868 !important;
 }
 
+.text-hover-success {
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .text-hover-success {
+    transition: none;
+  }
+}
+
 .text-hover-success:hover {
   color: #87de7d !important;
+}
+
+.text-hover-info {
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .text-hover-info {
+    transition: none;
+  }
 }
 
 .text-hover-info:hover {
   color: #2bb4dd !important;
 }
 
+.text-hover-warning {
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .text-hover-warning {
+    transition: none;
+  }
+}
+
 .text-hover-warning:hover {
   color: #ddb32b !important;
+}
+
+.text-hover-danger {
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .text-hover-danger {
+    transition: none;
+  }
 }
 
 .text-hover-danger:hover {
   color: #f90000 !important;
 }
 
+.text-hover-light {
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .text-hover-light {
+    transition: none;
+  }
+}
+
 .text-hover-light:hover {
   color: #f7f5f6 !important;
 }
 
+.text-hover-dark {
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .text-hover-dark {
+    transition: none;
+  }
+}
+
 .text-hover-dark:hover {
   color: #1e1e1e !important;
+}
+
+.text-hover-gray {
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .text-hover-gray {
+    transition: none;
+  }
 }
 
 .text-hover-gray:hover {
@@ -16375,6 +16465,14 @@ select.selectpicker {
   visibility: visible;
 }
 
+.card .card-img:hover .hover-card-action.action-left {
+  left: 1.25rem;
+}
+
+.card .card-img:hover .hover-card-action.action-right {
+  right: 1.25rem;
+}
+
 .card.luxury-card .add-to-cart.btn-large {
   bottom: -1.4375rem;
 }
@@ -16436,7 +16534,7 @@ select.selectpicker {
 }
 
 .card .card-action {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
   position: absolute;
   background-color: transparent;
   border: none;
@@ -16481,6 +16579,14 @@ select.selectpicker {
   right: 1.25rem;
 }
 
+.card .card-action.hover-card-action.action-left {
+  left: 0;
+}
+
+.card .card-action.hover-card-action.action-right {
+  right: 0;
+}
+
 .card .card-action.active [class^="flaticon-"], .card .card-action.active [class*=" flaticon-"],
 .card .card-action.active [class^="flaticon-"], .card .card-action.active [class*=" flaticon-"] {
   color: #ac9c7f;
@@ -16497,7 +16603,7 @@ select.selectpicker {
   right: 1.5625rem;
   z-index: 9;
   transform: translate3d(0, 100%, 0);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -16692,7 +16798,7 @@ select.selectpicker {
 .nav-search .nav-search-form .form-control {
   background-color: transparent;
   width: 100px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -16870,7 +16976,7 @@ select.selectpicker {
     transform: translateX(-50%);
     width: 0;
     height: 0;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -17082,7 +17188,7 @@ select.selectpicker {
     transform: translateX(-50%);
     width: 0;
     height: 0;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -17294,7 +17400,7 @@ select.selectpicker {
     transform: translateX(-50%);
     width: 0;
     height: 0;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -17506,7 +17612,7 @@ select.selectpicker {
     transform: translateX(-50%);
     width: 0;
     height: 0;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -17719,7 +17825,7 @@ select.selectpicker {
   transform: translateX(-50%);
   width: 0;
   height: 0;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -17981,7 +18087,7 @@ select.selectpicker {
   transform: translateX(-50%);
   width: 0;
   height: 0;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -18008,7 +18114,7 @@ select.selectpicker {
 */
 .btn {
   letter-spacing: 0.01563rem;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -22027,7 +22133,7 @@ select.selectpicker {
   height: 100%;
   background-color: #ac9c7f;
   z-index: -1;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -22082,7 +22188,7 @@ select.selectpicker {
   height: 100%;
   background-color: #686868;
   z-index: -1;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -22137,7 +22243,7 @@ select.selectpicker {
   height: 100%;
   background-color: #87de7d;
   z-index: -1;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -22192,7 +22298,7 @@ select.selectpicker {
   height: 100%;
   background-color: #2bb4dd;
   z-index: -1;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -22247,7 +22353,7 @@ select.selectpicker {
   height: 100%;
   background-color: #ddb32b;
   z-index: -1;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -22302,7 +22408,7 @@ select.selectpicker {
   height: 100%;
   background-color: #f90000;
   z-index: -1;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -22357,7 +22463,7 @@ select.selectpicker {
   height: 100%;
   background-color: #f7f5f6;
   z-index: -1;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -22412,7 +22518,7 @@ select.selectpicker {
   height: 100%;
   background-color: #1e1e1e;
   z-index: -1;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -22467,7 +22573,7 @@ select.selectpicker {
   height: 100%;
   background-color: #9f9f9f;
   z-index: -1;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -22522,7 +22628,7 @@ select.selectpicker {
   height: 100%;
   background-color: #ac9c7f;
   z-index: -1;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -22581,7 +22687,7 @@ select.selectpicker {
   height: 100%;
   background-color: #686868;
   z-index: -1;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -22640,7 +22746,7 @@ select.selectpicker {
   height: 100%;
   background-color: #87de7d;
   z-index: -1;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -22699,7 +22805,7 @@ select.selectpicker {
   height: 100%;
   background-color: #2bb4dd;
   z-index: -1;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -22758,7 +22864,7 @@ select.selectpicker {
   height: 100%;
   background-color: #ddb32b;
   z-index: -1;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -22817,7 +22923,7 @@ select.selectpicker {
   height: 100%;
   background-color: #f90000;
   z-index: -1;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -22876,7 +22982,7 @@ select.selectpicker {
   height: 100%;
   background-color: #f7f5f6;
   z-index: -1;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -22935,7 +23041,7 @@ select.selectpicker {
   height: 100%;
   background-color: #1e1e1e;
   z-index: -1;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -22994,7 +23100,7 @@ select.selectpicker {
   height: 100%;
   background-color: #9f9f9f;
   z-index: -1;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -23053,7 +23159,7 @@ select.selectpicker {
     height: 100%;
     background-color: #ac9c7f;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -23104,7 +23210,7 @@ select.selectpicker {
     height: 100%;
     background-color: #686868;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -23155,7 +23261,7 @@ select.selectpicker {
     height: 100%;
     background-color: #87de7d;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -23206,7 +23312,7 @@ select.selectpicker {
     height: 100%;
     background-color: #2bb4dd;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -23257,7 +23363,7 @@ select.selectpicker {
     height: 100%;
     background-color: #ddb32b;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -23308,7 +23414,7 @@ select.selectpicker {
     height: 100%;
     background-color: #f90000;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -23359,7 +23465,7 @@ select.selectpicker {
     height: 100%;
     background-color: #f7f5f6;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -23410,7 +23516,7 @@ select.selectpicker {
     height: 100%;
     background-color: #1e1e1e;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -23461,7 +23567,7 @@ select.selectpicker {
     height: 100%;
     background-color: #9f9f9f;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -23512,7 +23618,7 @@ select.selectpicker {
     height: 100%;
     background-color: #ac9c7f;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -23566,7 +23672,7 @@ select.selectpicker {
     height: 100%;
     background-color: #686868;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -23620,7 +23726,7 @@ select.selectpicker {
     height: 100%;
     background-color: #87de7d;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -23674,7 +23780,7 @@ select.selectpicker {
     height: 100%;
     background-color: #2bb4dd;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -23728,7 +23834,7 @@ select.selectpicker {
     height: 100%;
     background-color: #ddb32b;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -23782,7 +23888,7 @@ select.selectpicker {
     height: 100%;
     background-color: #f90000;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -23836,7 +23942,7 @@ select.selectpicker {
     height: 100%;
     background-color: #f7f5f6;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -23890,7 +23996,7 @@ select.selectpicker {
     height: 100%;
     background-color: #1e1e1e;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -23944,7 +24050,7 @@ select.selectpicker {
     height: 100%;
     background-color: #9f9f9f;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -24001,7 +24107,7 @@ select.selectpicker {
     height: 100%;
     background-color: #ac9c7f;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -24052,7 +24158,7 @@ select.selectpicker {
     height: 100%;
     background-color: #686868;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -24103,7 +24209,7 @@ select.selectpicker {
     height: 100%;
     background-color: #87de7d;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -24154,7 +24260,7 @@ select.selectpicker {
     height: 100%;
     background-color: #2bb4dd;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -24205,7 +24311,7 @@ select.selectpicker {
     height: 100%;
     background-color: #ddb32b;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -24256,7 +24362,7 @@ select.selectpicker {
     height: 100%;
     background-color: #f90000;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -24307,7 +24413,7 @@ select.selectpicker {
     height: 100%;
     background-color: #f7f5f6;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -24358,7 +24464,7 @@ select.selectpicker {
     height: 100%;
     background-color: #1e1e1e;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -24409,7 +24515,7 @@ select.selectpicker {
     height: 100%;
     background-color: #9f9f9f;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -24460,7 +24566,7 @@ select.selectpicker {
     height: 100%;
     background-color: #ac9c7f;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -24514,7 +24620,7 @@ select.selectpicker {
     height: 100%;
     background-color: #686868;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -24568,7 +24674,7 @@ select.selectpicker {
     height: 100%;
     background-color: #87de7d;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -24622,7 +24728,7 @@ select.selectpicker {
     height: 100%;
     background-color: #2bb4dd;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -24676,7 +24782,7 @@ select.selectpicker {
     height: 100%;
     background-color: #ddb32b;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -24730,7 +24836,7 @@ select.selectpicker {
     height: 100%;
     background-color: #f90000;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -24784,7 +24890,7 @@ select.selectpicker {
     height: 100%;
     background-color: #f7f5f6;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -24838,7 +24944,7 @@ select.selectpicker {
     height: 100%;
     background-color: #1e1e1e;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -24892,7 +24998,7 @@ select.selectpicker {
     height: 100%;
     background-color: #9f9f9f;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -24949,7 +25055,7 @@ select.selectpicker {
     height: 100%;
     background-color: #ac9c7f;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -25000,7 +25106,7 @@ select.selectpicker {
     height: 100%;
     background-color: #686868;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -25051,7 +25157,7 @@ select.selectpicker {
     height: 100%;
     background-color: #87de7d;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -25102,7 +25208,7 @@ select.selectpicker {
     height: 100%;
     background-color: #2bb4dd;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -25153,7 +25259,7 @@ select.selectpicker {
     height: 100%;
     background-color: #ddb32b;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -25204,7 +25310,7 @@ select.selectpicker {
     height: 100%;
     background-color: #f90000;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -25255,7 +25361,7 @@ select.selectpicker {
     height: 100%;
     background-color: #f7f5f6;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -25306,7 +25412,7 @@ select.selectpicker {
     height: 100%;
     background-color: #1e1e1e;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -25357,7 +25463,7 @@ select.selectpicker {
     height: 100%;
     background-color: #9f9f9f;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -25408,7 +25514,7 @@ select.selectpicker {
     height: 100%;
     background-color: #ac9c7f;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -25462,7 +25568,7 @@ select.selectpicker {
     height: 100%;
     background-color: #686868;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -25516,7 +25622,7 @@ select.selectpicker {
     height: 100%;
     background-color: #87de7d;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -25570,7 +25676,7 @@ select.selectpicker {
     height: 100%;
     background-color: #2bb4dd;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -25624,7 +25730,7 @@ select.selectpicker {
     height: 100%;
     background-color: #ddb32b;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -25678,7 +25784,7 @@ select.selectpicker {
     height: 100%;
     background-color: #f90000;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -25732,7 +25838,7 @@ select.selectpicker {
     height: 100%;
     background-color: #f7f5f6;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -25786,7 +25892,7 @@ select.selectpicker {
     height: 100%;
     background-color: #1e1e1e;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -25840,7 +25946,7 @@ select.selectpicker {
     height: 100%;
     background-color: #9f9f9f;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -25897,7 +26003,7 @@ select.selectpicker {
     height: 100%;
     background-color: #ac9c7f;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -25948,7 +26054,7 @@ select.selectpicker {
     height: 100%;
     background-color: #686868;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -25999,7 +26105,7 @@ select.selectpicker {
     height: 100%;
     background-color: #87de7d;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -26050,7 +26156,7 @@ select.selectpicker {
     height: 100%;
     background-color: #2bb4dd;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -26101,7 +26207,7 @@ select.selectpicker {
     height: 100%;
     background-color: #ddb32b;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -26152,7 +26258,7 @@ select.selectpicker {
     height: 100%;
     background-color: #f90000;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -26203,7 +26309,7 @@ select.selectpicker {
     height: 100%;
     background-color: #f7f5f6;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -26254,7 +26360,7 @@ select.selectpicker {
     height: 100%;
     background-color: #1e1e1e;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -26305,7 +26411,7 @@ select.selectpicker {
     height: 100%;
     background-color: #9f9f9f;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -26356,7 +26462,7 @@ select.selectpicker {
     height: 100%;
     background-color: #ac9c7f;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -26410,7 +26516,7 @@ select.selectpicker {
     height: 100%;
     background-color: #686868;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -26464,7 +26570,7 @@ select.selectpicker {
     height: 100%;
     background-color: #87de7d;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -26518,7 +26624,7 @@ select.selectpicker {
     height: 100%;
     background-color: #2bb4dd;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -26572,7 +26678,7 @@ select.selectpicker {
     height: 100%;
     background-color: #ddb32b;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -26626,7 +26732,7 @@ select.selectpicker {
     height: 100%;
     background-color: #f90000;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -26680,7 +26786,7 @@ select.selectpicker {
     height: 100%;
     background-color: #f7f5f6;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -26734,7 +26840,7 @@ select.selectpicker {
     height: 100%;
     background-color: #1e1e1e;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -26788,7 +26894,7 @@ select.selectpicker {
     height: 100%;
     background-color: #9f9f9f;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -26852,7 +26958,7 @@ select.selectpicker {
   height: 1px;
   top: 50%;
   left: 0;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -26871,7 +26977,7 @@ select.selectpicker {
   transform: rotate(0deg);
   opacity: 0;
   visibility: hidden;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -29226,7 +29332,7 @@ select.selectpicker {
   height: 100%;
   background-color: #4e73bd;
   z-index: -1;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -29265,7 +29371,7 @@ select.selectpicker {
   height: 100%;
   background-color: #e84b36;
   z-index: -1;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -29422,7 +29528,7 @@ select.selectpicker {
   display: inline-block;
   opacity: 1;
   visibility: visible;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -29888,7 +29994,7 @@ label.error {
 
 .filter-checkbox label span,
 .filter-checkbox label i {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -29941,7 +30047,7 @@ label.error {
   right: -0.4375rem;
   border-radius: 1.5625rem;
   display: block;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   visibility: hidden;
   opacity: 0;
 }
@@ -29957,7 +30063,7 @@ label.error {
   left: auto;
   right: -0.4375rem;
   border-radius: 1.5625rem;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   visibility: hidden;
   opacity: 0;
 }
@@ -30010,7 +30116,7 @@ label.error {
 }
 
 .page-link {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   margin-left: 0.375rem;
   font-size: 0.75rem;
 }
@@ -30422,7 +30528,7 @@ hr.border-white {
   width: 0;
   height: 1px;
   background-color: #ac9c7f;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -30447,7 +30553,7 @@ hr.border-white {
   width: 0;
   height: 1px;
   background-color: #686868;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -30472,7 +30578,7 @@ hr.border-white {
   width: 0;
   height: 1px;
   background-color: #87de7d;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -30497,7 +30603,7 @@ hr.border-white {
   width: 0;
   height: 1px;
   background-color: #2bb4dd;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -30522,7 +30628,7 @@ hr.border-white {
   width: 0;
   height: 1px;
   background-color: #ddb32b;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -30547,7 +30653,7 @@ hr.border-white {
   width: 0;
   height: 1px;
   background-color: #f90000;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -30572,7 +30678,7 @@ hr.border-white {
   width: 0;
   height: 1px;
   background-color: #f7f5f6;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -30597,7 +30703,7 @@ hr.border-white {
   width: 0;
   height: 1px;
   background-color: #1e1e1e;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -30622,7 +30728,7 @@ hr.border-white {
   width: 0;
   height: 1px;
   background-color: #9f9f9f;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -30669,7 +30775,7 @@ hr.border-white {
 
 .rate-star:not(:checked) > label {
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -30801,7 +30907,7 @@ hr.border-white {
     width: 1px;
     height: 0;
     background-color: #e9e9e9;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   }
 }
 
@@ -30843,7 +30949,7 @@ hr.border-white {
   opacity: .15;
   background: #1e1e1e;
   outline: none;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -30886,7 +30992,7 @@ hr.border-white {
   visibility: hidden;
   opacity: 0;
   background-color: transparent;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
   cursor: default;
 }
 
@@ -31054,7 +31160,7 @@ hr.border-white {
 }
 
 .cart-icon .sad-line {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -31091,7 +31197,7 @@ hr.border-white {
   font-weight: 500;
   padding: 0.375rem 0;
   color: #686868;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
 }
 
 @media (prefers-reduced-motion: reduce) {
