@@ -75,6 +75,10 @@
  home swiper ---------------------
 ----------------------------------*/
 .home-slider {
+  .swiper-slide{
+    overflow: hidden;
+  }
+
   .home-slider-inner {
     min-height: calc(100vh - #{$navbar-brand-height});
   }
@@ -99,8 +103,10 @@
 
     .swiper-slide-active {
       .slide-border {
-        &::after {
-          height: calc(100% - 4.5625rem);
+        &.active {
+          &::after {
+            height: calc(100% - 4.5625rem);
+          }
         }
       }
     }

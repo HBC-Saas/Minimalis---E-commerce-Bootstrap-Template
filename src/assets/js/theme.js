@@ -243,8 +243,13 @@ $(document).ready(function(){
     });
 
     // Hero slider (homepage slider)
-    var heroSliderSwiper = new Swiper('.swiper-container.home-slider', {
-        effect: 'fade',
+    let mainSliderSelector = '.home-slider',
+        interleaveOffset = 1;
+
+    let mainSliderOptions = {
+        speed: 1400,
+        watchSlidesProgress: true,
+
         pagination: {
             el: '.swiper-pagination.pagination-dots, .swiper-pagination.pagination-numbers',
             clickable: true,
@@ -254,16 +259,51 @@ $(document).ready(function(){
         },
 
         on: {
+            init: function(){
+                let swiper = this;
+                swiper.slides[swiper.activeIndex].querySelector('.slide-border').classList.add('active');
+            },
+
             slideChangeTransitionStart: function () {
-                $('[data-aos]').css('visibility', 'hidden');
+                $('[data-aos]').css({'visibility': 'hidden'});
                 $('[data-aos]').removeClass('aos-init').removeClass('aos-animate');
             },
+
             slideChangeTransitionEnd: function () {
-                $('[data-aos]').css('visibility', 'visible');
+                let swiper = this,
+                    slideBorder = swiper.el.querySelectorAll('.slide-border');
+                for (let i = 0; i < slideBorder.length; ++i) {
+                    slideBorder[i].classList.remove('active');
+                }
+                swiper.slides[swiper.activeIndex].querySelector('.slide-border').classList.add('active');
+
+                $('[data-aos]').css({'visibility': 'visible'});
                 AOS.init();
             },
+
+            progress: function(){
+                let swiper = this;
+                for (let i = 0; i < swiper.slides.length; i++) {
+                    let slideProgress = swiper.slides[i].progress,
+                        innerOffset = swiper.width * interleaveOffset,
+                        innerTranslate = slideProgress * innerOffset;
+
+                    swiper.slides[i].querySelector(".desktop-parallax").style.transform = "translateX(" + innerTranslate + "px)";
+                    swiper.slides[i].querySelector(".mobile-parallax").style.transform = "translateX(" + innerTranslate + "px)";
+                }
+            },
+
+            setTransition: function(speed) {
+                let swiper = this;
+                for (let i = 0; i < swiper.slides.length; i++) {
+                    swiper.slides[i].style.transition = speed + "ms";
+                    swiper.slides[i].querySelector(".desktop-parallax").style.transition = speed + "ms";
+                    swiper.slides[i].querySelector(".mobile-parallax").style.transition = speed + "ms";
+                }
+            }
         }
-    });
+    };
+    let mainSlider = new Swiper(mainSliderSelector, mainSliderOptions);
 
     // luxury swiper
     var luxurySwiper = new Swiper('.swiper-container.luxury-swiper', {
