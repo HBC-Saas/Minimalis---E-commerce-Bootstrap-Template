@@ -30890,6 +30890,10 @@ hr.border-white {
 /*----------------------------------
  home swiper ---------------------
 ----------------------------------*/
+.home-slider .swiper-slide {
+  overflow: hidden;
+}
+
 .home-slider .home-slider-inner {
   min-height: calc(100vh - 4.5625rem);
 }
