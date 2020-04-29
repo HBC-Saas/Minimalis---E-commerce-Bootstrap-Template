@@ -30922,7 +30922,7 @@ hr.border-white {
 }
 
 @media (min-width: 992px) {
-  .home-slider .swiper-slide-active .slide-border::after {
+  .home-slider .swiper-slide-active .slide-border.active::after {
     height: calc(100% - 4.5625rem);
   }
 }

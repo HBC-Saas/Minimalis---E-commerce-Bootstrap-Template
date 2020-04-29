@@ -259,12 +259,24 @@ $(document).ready(function(){
         },
 
         on: {
+            init: function(){
+                let swiper = this;
+                swiper.slides[swiper.activeIndex].querySelector('.slide-border').classList.add('active');
+            },
+
             slideChangeTransitionStart: function () {
                 $('[data-aos]').css({'visibility': 'hidden'});
                 $('[data-aos]').removeClass('aos-init').removeClass('aos-animate');
             },
 
             slideChangeTransitionEnd: function () {
+                let swiper = this,
+                    slideBorder = swiper.el.querySelectorAll('.slide-border');
+                for (let i = 0; i < slideBorder.length; ++i) {
+                    slideBorder[i].classList.remove('active');
+                }
+                swiper.slides[swiper.activeIndex].querySelector('.slide-border').classList.add('active');
+
                 $('[data-aos]').css({'visibility': 'visible'});
                 AOS.init();
             },
