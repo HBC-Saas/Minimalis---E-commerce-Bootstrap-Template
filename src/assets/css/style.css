@@ -30929,8 +30929,15 @@ hr.border-white {
 
 .home-slider .pagination-container {
   position: absolute;
-  bottom: 0.625rem;
+  bottom: -4rem;
   width: 100%;
+  transition: bottom 0.5s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-slider .pagination-container {
+    transition: none;
+  }
 }
 
 .home-slider .swiper-pagination {

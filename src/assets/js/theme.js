@@ -262,6 +262,8 @@ $(document).ready(function(){
             init: function(){
                 let swiper = this;
                 swiper.slides[swiper.activeIndex].querySelector('.slide-border').classList.add('active');
+
+                $('.pagination-container').css({'bottom': '0.625rem'});
             },
 
             slideChangeTransitionStart: function () {
