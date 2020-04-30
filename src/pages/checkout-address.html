@@ -239,16 +239,16 @@
         <!-- start section -->
         <section class="pt-6 pb-6 bg-white">
             <div class="container-lg">
-                <div class="row mb-3">
-                    <div class="col-12">
-                        <h2 class="font-weight-bold">Checkout</h2>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-10 col-lg-12">
+                        <h2 class="font-weight-bold mb-20px mb-lg-4">Checkout</h2>
                     </div><!-- end col -->
                 </div><!-- end row -->
 
-                <form>
-                    <div class="row">
-                        <div class="col-12 col-lg-6 mb-4 mb-lg-0">
-                            <ol class="breadcrumb custom-breadcrumb mt-25px mb-40px">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-10 col-lg-6 mb-4 mb-lg-0">
+                        <form>
+                            <ol class="breadcrumb custom-breadcrumb mt-0 mt-lg-25px mb-20px mb-lg-40px">
                                 <li class="breadcrumb-item"><a href="#">Customer information</a></li>
                                 <li class="breadcrumb-item text-gray" aria-current="page">Payment method</li>
                             </ol><!-- end breadcrumb -->
@@ -322,64 +322,7 @@
                                 <label for="phone">Phone</label>
                                 <input type="text" class="form-control" id="phone">
                             </div><!-- end form-group -->
-                        </div><!-- end col -->
 
-                        <div class="col-12 col-lg-6 mb-4 mb-lg-0">
-                            <div class="bg-light h-100 px-20px py-20px">
-                                <h5 class="font-weight-bold mb-4">Order summary</h5>
-
-                                <div class="row align-items-end mb-20px">
-                                    <div class="col-auto pr-0">
-                                        <img width="55" class="img-fluid" src="../assets/img/products/product_small.png" alt="product">
-                                    </div><!-- end col -->
-                                    <div class="col pl-3">
-                                        <h5 class="mb-10px font-weight-bold">Minimal Lamp</h5>
-                                        <h5 class="mb-0 font-weight-normal">$20.00</h5>
-                                    </div><!-- end col -->
-                                </div><!-- end row -->
-
-                                <div class="row align-items-end">
-                                    <div class="col-auto pr-0">
-                                        <span class="label-value">2</span>
-                                        <img width="55" class="img-fluid" src="../assets/img/products/product_small_3.png" alt="product">
-                                    </div><!-- end col -->
-                                    <div class="col pl-3">
-                                        <h5 class="mb-10px font-weight-bold">Minimal Chair</h5>
-                                        <h5 class="mb-0 font-weight-normal">$80.00</h5>
-                                    </div><!-- end col -->
-                                </div><!-- end row -->
-
-                                <hr class="my-40px border-top-0" />
-
-                                <ul class="list-group list-group-flush border-top">
-                                    <li class="list-group-item py-25px">
-                                        <div class="row">
-                                            <div class="col">
-                                                <h5 class="font-weight-normal mb-0">Subtotal</h5>
-                                            </div><!-- end col -->
-
-                                            <div class="col text-right">
-                                                <h5 class="font-weight-bold mb-0">$100.00</h5>
-                                            </div><!-- end col -->
-                                        </div><!-- end row -->
-                                    </li><!-- end list-group-item -->
-
-                                    <li class="list-group-item py-25px">
-                                        <div class="row">
-                                            <div class="col">
-                                                <h5 class="font-weight-normal mb-0">Total</h5>
-                                            </div><!-- end col -->
-
-                                            <div class="col text-right">
-                                                <h5 class="font-weight-bold mb-0">$100.00</h5>
-                                            </div><!-- end col -->
-                                        </div><!-- end row -->
-                                    </li><!-- end list-group-item -->
-                                </ul><!-- end list-group -->
-                            </div>
-                        </div><!-- end col -->
-
-                        <div class="col-12 col-lg-6">
                             <div class="form-group mb-0 text-right">
                                 <button type="submit" class="btn btn-minimalis-dark btn-lg btn-arrow">
                                     <span class="inner-btn">
@@ -390,16 +333,138 @@
                                     </span>
                                 </button>
                             </div><!-- end form-group -->
-                        </div><!-- end col -->
+                        </form>
+                    </div><!-- end col -->
 
-                        <div class="col-6 d-none d-lg-block">
-                            <div class="bg-light h-100"></div>
-                        </div><!-- end col -->
-                    </div><!-- end row -->
-                </form>
+                    <div class="col-12 col-lg-6 mb-4 mb-lg-0 d-none d-lg-block">
+                        <div class="bg-light h-100 px-20px py-20px">
+                            <h5 class="font-weight-bold mb-4">Order summary</h5>
+
+                            <div class="row align-items-end mb-20px">
+                                <div class="col-auto pr-0">
+                                    <img width="55" class="img-fluid" src="../assets/img/products/product_small.png" alt="product">
+                                </div><!-- end col -->
+                                <div class="col pl-3">
+                                    <h5 class="mb-10px font-weight-bold">Minimal Lamp</h5>
+                                    <h5 class="mb-0 font-weight-normal">$20.00</h5>
+                                </div><!-- end col -->
+                            </div><!-- end row -->
+
+                            <div class="row align-items-end">
+                                <div class="col-auto pr-0">
+                                    <span class="label-value">2</span>
+                                    <img width="55" class="img-fluid" src="../assets/img/products/product_small_3.png" alt="product">
+                                </div><!-- end col -->
+                                <div class="col pl-3">
+                                    <h5 class="mb-10px font-weight-bold">Minimal Chair</h5>
+                                    <h5 class="mb-0 font-weight-normal">$80.00</h5>
+                                </div><!-- end col -->
+                            </div><!-- end row -->
+
+                            <hr class="my-40px border-top-0" />
+
+                            <ul class="list-group list-group-flush border-top">
+                                <li class="list-group-item py-25px">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5 class="font-weight-normal mb-0">Subtotal</h5>
+                                        </div><!-- end col -->
+
+                                        <div class="col text-right">
+                                            <h5 class="font-weight-bold mb-0">$100.00</h5>
+                                        </div><!-- end col -->
+                                    </div><!-- end row -->
+                                </li><!-- end list-group-item -->
+
+                                <li class="list-group-item py-25px">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5 class="font-weight-normal mb-0">Total</h5>
+                                        </div><!-- end col -->
+
+                                        <div class="col text-right">
+                                            <h5 class="font-weight-bold mb-0">$100.00</h5>
+                                        </div><!-- end col -->
+                                    </div><!-- end row -->
+                                </li><!-- end list-group-item -->
+                            </ul><!-- end list-group -->
+                        </div>
+                    </div><!-- end col -->
+                </div><!-- end row -->
             </div><!-- end container -->
         </section>
         <!-- end section -->
+
+        <!-- Order summary -->
+        <div class="fixed-bottom d-block d-lg-none mh-100 overflow-auto">
+            <div class="accordion" id="accordionOrderSummary">
+                <div class="card mb-0">
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionOrderSummary">
+                        <div class="card-body bg-light px-20px pt-5 pb-3">
+                            <h5 class="font-weight-bold mb-4">Order summary</h5>
+                            <div class="row align-items-end mb-20px">
+                                <div class="col-auto pr-0">
+                                    <img width="55" class="img-fluid" src="../assets/img/products/product_small.png" alt="product">
+                                </div><!-- end col -->
+                                <div class="col pl-3">
+                                    <h5 class="mb-10px font-weight-bold">Minimal Lamp</h5>
+                                    <h5 class="mb-0 font-weight-normal">$20.00</h5>
+                                </div><!-- end col -->
+                            </div><!-- end row -->
+
+                            <div class="row align-items-end">
+                                <div class="col-auto pr-0">
+                                    <span class="label-value">2</span>
+                                    <img width="55" class="img-fluid" src="../assets/img/products/product_small_3.png" alt="product">
+                                </div><!-- end col -->
+                                <div class="col pl-3">
+                                    <h5 class="mb-10px font-weight-bold">Minimal Chair</h5>
+                                    <h5 class="mb-0 font-weight-normal">$80.00</h5>
+                                </div><!-- end col -->
+                            </div><!-- end row -->
+
+                            <hr class="my-40px border-top-0" />
+
+                            <ul class="list-group list-group-flush border-top">
+                                <li class="list-group-item py-25px">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5 class="font-weight-normal mb-0">Subtotal</h5>
+                                        </div><!-- end col -->
+
+                                        <div class="col text-right">
+                                            <h5 class="font-weight-bold mb-0">$100.00</h5>
+                                        </div><!-- end col -->
+                                    </div><!-- end row -->
+                                </li><!-- end list-group-item -->
+
+                                <li class="list-group-item py-25px">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5 class="font-weight-normal mb-0">Total</h5>
+                                        </div><!-- end col -->
+
+                                        <div class="col text-right">
+                                            <h5 class="font-weight-bold mb-0">$100.00</h5>
+                                        </div><!-- end col -->
+                                    </div><!-- end row -->
+                                </li><!-- end list-group-item -->
+                            </ul><!-- end list-group -->
+                        </div><!-- end card-body -->
+                    </div><!-- end collapse -->
+
+                    <a class="mb-0 font-weight-medium text-dark bg-white" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        <div class="card-header" id="headingOne">
+                            <span class="font-size-h5 font-weight-medium plus-after d-inline-block">
+                                Open Order Summary
+                            </span>
+                            <span class="font-size-h5 font-weight-bold float-right">$100.00</span>
+                        </div>
+                    </a>
+                </div><!-- end card -->
+            </div><!-- end accordion -->
+        </div>
+        <!-- end Order summary -->
 
         <!-- footer -->
         <footer class="bg-dark">
