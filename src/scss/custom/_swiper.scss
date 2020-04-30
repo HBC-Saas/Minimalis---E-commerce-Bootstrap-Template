@@ -299,14 +299,14 @@
     right: 0;
     left: auto;
     &::after {
-      content: "\f12a";
+      content: "\f129";
     }
   }
   .swiper-button-prev {
     left: auto;
     right: calc(#{$font-size-base} + 0.625rem);
     &::after {
-      content: "\f12b";
+      content: "\f12a";
     }
   }
   .swiper-button-disabled {

@@ -15893,36 +15893,40 @@ select.selectpicker {
   content: "\f123";
 }
 
-.flaticon-heart:before {
+.flaticon-left-arrow:before {
   content: "\f124";
 }
 
-.flaticon-left-arrow:before {
+.flaticon-play-button-1:before {
   content: "\f125";
 }
 
-.flaticon-play-button-1:before {
+.flaticon-plus:before {
   content: "\f126";
 }
 
-.flaticon-plus:before {
+.flaticon-user:before {
   content: "\f127";
 }
 
-.flaticon-user:before {
+.flaticon-chair-1:before {
   content: "\f128";
 }
 
-.flaticon-chair-1:before {
+.flaticon-right-arrow:before {
   content: "\f129";
 }
 
-.flaticon-right-arrow:before {
+.flaticon-left-arrow-1:before {
   content: "\f12a";
 }
 
-.flaticon-left-arrow-1:before {
+.flaticon-like:before {
   content: "\f12b";
+}
+
+.flaticon-like-1:before {
+  content: "\f12c";
 }
 
 /*
@@ -16557,6 +16561,20 @@ select.selectpicker {
 .card .card-action [class^="flaticon-"]::before, .card .card-action [class*=" flaticon-"]::before {
   font-size: 1.5625rem;
   line-height: 1.5625rem;
+}
+
+.card .card-action .like-product {
+  position: relative;
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+}
+
+.card .card-action .like-product [class^="flaticon-"], .card .card-action .like-product [class*=" flaticon-"],
+.card .card-action .like-product [class^="flaticon-"], .card .card-action .like-product [class*=" flaticon-"] {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .card .card-action:focus, .card .card-action:active {
@@ -29830,7 +29848,7 @@ picture .cocoen > div {
 }
 
 .cocoen-drag::before {
-  content: "";
+  content: "";
   left: -1.1875rem;
   border-bottom-left-radius: 3rem;
   border-top-left-radius: 3rem;
@@ -31124,7 +31142,7 @@ hr.border-white {
 
 .progress-swiper .swiper-button-next::after,
 .progress-swiper-related-products .swiper-button-next::after {
-  content: "\f12a";
+  content: "\f129";
 }
 
 .progress-swiper .swiper-button-prev,
@@ -31135,7 +31153,7 @@ hr.border-white {
 
 .progress-swiper .swiper-button-prev::after,
 .progress-swiper-related-products .swiper-button-prev::after {
-  content: "\f12b";
+  content: "\f12a";
 }
 
 .progress-swiper .swiper-button-disabled,

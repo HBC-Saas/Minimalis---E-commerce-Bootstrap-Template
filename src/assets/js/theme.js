@@ -116,6 +116,7 @@ $(document).ready(function(){
     * ===================================================*/
     $('.card-action').on('click', function () {
         $(this).toggleClass('active');
+        $(this).find('.like-product .after').toggleClass('d-none');
     });
 
     /*===================================================
@@ -247,7 +248,6 @@ $(document).ready(function(){
         interleaveOffset = 1;
 
     let mainSliderOptions = {
-        speed: 1400,
         watchSlidesProgress: true,
 
         pagination: {
@@ -255,6 +255,21 @@ $(document).ready(function(){
             clickable: true,
             renderBullet: function (index, className) {
                 return '<span class="' + className + '">' + (index + 1) + '</span>';
+            },
+        },
+
+        breakpoints: {
+            0: {
+                speed: 600,
+                allowTouchMove: true,
+            },
+            576: {
+                speed: 800,
+                allowTouchMove: true,
+            },
+            992: {
+                speed: 1000,
+                allowTouchMove: false,
             },
         },
 
@@ -267,7 +282,7 @@ $(document).ready(function(){
             },
 
             slideChangeTransitionStart: function () {
-                $('[data-aos]').css({'visibility': 'hidden'});
+                $('[data-aos]').css({'display': 'none'});
                 $('[data-aos]').removeClass('aos-init').removeClass('aos-animate');
             },
 
@@ -279,7 +294,7 @@ $(document).ready(function(){
                 }
                 swiper.slides[swiper.activeIndex].querySelector('.slide-border').classList.add('active');
 
-                $('[data-aos]').css({'visibility': 'visible'});
+                $('[data-aos]').css({'display': 'block'});
                 AOS.init();
             },
 
@@ -321,7 +336,7 @@ $(document).ready(function(){
         centeredSlides: false,
 
         breakpoints: {
-            575: {
+            576: {
                 initialSlide: 1,
                 centeredSlides: true,
             },
