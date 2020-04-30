@@ -30274,7 +30274,7 @@ p, a {
 
 .font-size-h1 {
   font-size: 1.875rem;
-  line-height: 2.375rem;
+  line-height: 2.5rem;
 }
 
 .font-size-h2 {
@@ -30284,22 +30284,22 @@ p, a {
 
 .font-size-h3 {
   font-size: 1.375rem;
-  line-height: 1.75rem;
+  line-height: 1.875rem;
 }
 
 .font-size-h4 {
   font-size: 1.25rem;
-  line-height: 1.625rem;
+  line-height: 1.75rem;
 }
 
 .font-size-h5 {
   font-size: 1rem;
-  line-height: 1.375rem;
+  line-height: 1.625rem;
 }
 
 .font-size-h6 {
   font-size: 0.875rem;
-  line-height: 1.125rem;
+  line-height: 1.5rem;
 }
 
 @media (min-width: 576px) {
@@ -30321,7 +30321,7 @@ p, a {
   }
   .font-size-sm-h1 {
     font-size: 1.875rem;
-    line-height: 2.375rem;
+    line-height: 2.5rem;
   }
   .font-size-sm-h2 {
     font-size: 1.625rem;
@@ -30329,19 +30329,19 @@ p, a {
   }
   .font-size-sm-h3 {
     font-size: 1.375rem;
-    line-height: 1.75rem;
+    line-height: 1.875rem;
   }
   .font-size-sm-h4 {
     font-size: 1.25rem;
-    line-height: 1.625rem;
+    line-height: 1.75rem;
   }
   .font-size-sm-h5 {
     font-size: 1rem;
-    line-height: 1.375rem;
+    line-height: 1.625rem;
   }
   .font-size-sm-h6 {
     font-size: 0.875rem;
-    line-height: 1.125rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -30364,7 +30364,7 @@ p, a {
   }
   .font-size-md-h1 {
     font-size: 1.875rem;
-    line-height: 2.375rem;
+    line-height: 2.5rem;
   }
   .font-size-md-h2 {
     font-size: 1.625rem;
@@ -30372,19 +30372,19 @@ p, a {
   }
   .font-size-md-h3 {
     font-size: 1.375rem;
-    line-height: 1.75rem;
+    line-height: 1.875rem;
   }
   .font-size-md-h4 {
     font-size: 1.25rem;
-    line-height: 1.625rem;
+    line-height: 1.75rem;
   }
   .font-size-md-h5 {
     font-size: 1rem;
-    line-height: 1.375rem;
+    line-height: 1.625rem;
   }
   .font-size-md-h6 {
     font-size: 0.875rem;
-    line-height: 1.125rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -30407,7 +30407,7 @@ p, a {
   }
   .font-size-lg-h1 {
     font-size: 1.875rem;
-    line-height: 2.375rem;
+    line-height: 2.5rem;
   }
   .font-size-lg-h2 {
     font-size: 1.625rem;
@@ -30415,19 +30415,19 @@ p, a {
   }
   .font-size-lg-h3 {
     font-size: 1.375rem;
-    line-height: 1.75rem;
+    line-height: 1.875rem;
   }
   .font-size-lg-h4 {
     font-size: 1.25rem;
-    line-height: 1.625rem;
+    line-height: 1.75rem;
   }
   .font-size-lg-h5 {
     font-size: 1rem;
-    line-height: 1.375rem;
+    line-height: 1.625rem;
   }
   .font-size-lg-h6 {
     font-size: 0.875rem;
-    line-height: 1.125rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -30450,7 +30450,7 @@ p, a {
   }
   .font-size-xl-h1 {
     font-size: 1.875rem;
-    line-height: 2.375rem;
+    line-height: 2.5rem;
   }
   .font-size-xl-h2 {
     font-size: 1.625rem;
@@ -30458,19 +30458,19 @@ p, a {
   }
   .font-size-xl-h3 {
     font-size: 1.375rem;
-    line-height: 1.75rem;
+    line-height: 1.875rem;
   }
   .font-size-xl-h4 {
     font-size: 1.25rem;
-    line-height: 1.625rem;
+    line-height: 1.75rem;
   }
   .font-size-xl-h5 {
     font-size: 1rem;
-    line-height: 1.375rem;
+    line-height: 1.625rem;
   }
   .font-size-xl-h6 {
     font-size: 0.875rem;
-    line-height: 1.125rem;
+    line-height: 1.5rem;
   }
 }
 

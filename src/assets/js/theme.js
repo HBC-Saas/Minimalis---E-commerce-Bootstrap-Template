@@ -268,7 +268,7 @@ $(document).ready(function(){
                 allowTouchMove: true,
             },
             992: {
-                speed: 1000,
+                speed: 900,
                 allowTouchMove: false,
             },
         },
