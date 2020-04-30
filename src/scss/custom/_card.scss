@@ -78,6 +78,19 @@
       }
     }
 
+    .like-product {
+      position: relative;
+      display: inline-block;
+      width: 26px;
+      height: 26px;
+      [class^="flaticon-"], [class*=" flaticon-"],
+      [class^="flaticon-"], [class*=" flaticon-"] {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+
     &:focus,
     &:active { outline: none; }
 

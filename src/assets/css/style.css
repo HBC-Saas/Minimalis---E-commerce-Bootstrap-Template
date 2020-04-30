@@ -15893,36 +15893,40 @@ select.selectpicker {
   content: "\f123";
 }
 
-.flaticon-heart:before {
+.flaticon-left-arrow:before {
   content: "\f124";
 }
 
-.flaticon-left-arrow:before {
+.flaticon-play-button-1:before {
   content: "\f125";
 }
 
-.flaticon-play-button-1:before {
+.flaticon-plus:before {
   content: "\f126";
 }
 
-.flaticon-plus:before {
+.flaticon-user:before {
   content: "\f127";
 }
 
-.flaticon-user:before {
+.flaticon-chair-1:before {
   content: "\f128";
 }
 
-.flaticon-chair-1:before {
+.flaticon-right-arrow:before {
   content: "\f129";
 }
 
-.flaticon-right-arrow:before {
+.flaticon-left-arrow-1:before {
   content: "\f12a";
 }
 
-.flaticon-left-arrow-1:before {
+.flaticon-like:before {
   content: "\f12b";
+}
+
+.flaticon-like-1:before {
+  content: "\f12c";
 }
 
 /*
@@ -16557,6 +16561,20 @@ select.selectpicker {
 .card .card-action [class^="flaticon-"]::before, .card .card-action [class*=" flaticon-"]::before {
   font-size: 1.5625rem;
   line-height: 1.5625rem;
+}
+
+.card .card-action .like-product {
+  position: relative;
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+}
+
+.card .card-action .like-product [class^="flaticon-"], .card .card-action .like-product [class*=" flaticon-"],
+.card .card-action .like-product [class^="flaticon-"], .card .card-action .like-product [class*=" flaticon-"] {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .card .card-action:focus, .card .card-action:active {
@@ -29830,7 +29848,7 @@ picture .cocoen > div {
 }
 
 .cocoen-drag::before {
-  content: "";
+  content: "";
   left: -1.1875rem;
   border-bottom-left-radius: 3rem;
   border-top-left-radius: 3rem;
@@ -30256,7 +30274,7 @@ p, a {
 
 .font-size-h1 {
   font-size: 1.875rem;
-  line-height: 2.375rem;
+  line-height: 2.5rem;
 }
 
 .font-size-h2 {
@@ -30266,22 +30284,22 @@ p, a {
 
 .font-size-h3 {
   font-size: 1.375rem;
-  line-height: 1.75rem;
+  line-height: 1.875rem;
 }
 
 .font-size-h4 {
   font-size: 1.25rem;
-  line-height: 1.625rem;
+  line-height: 1.75rem;
 }
 
 .font-size-h5 {
   font-size: 1rem;
-  line-height: 1.375rem;
+  line-height: 1.625rem;
 }
 
 .font-size-h6 {
   font-size: 0.875rem;
-  line-height: 1.125rem;
+  line-height: 1.5rem;
 }
 
 @media (min-width: 576px) {
@@ -30303,7 +30321,7 @@ p, a {
   }
   .font-size-sm-h1 {
     font-size: 1.875rem;
-    line-height: 2.375rem;
+    line-height: 2.5rem;
   }
   .font-size-sm-h2 {
     font-size: 1.625rem;
@@ -30311,19 +30329,19 @@ p, a {
   }
   .font-size-sm-h3 {
     font-size: 1.375rem;
-    line-height: 1.75rem;
+    line-height: 1.875rem;
   }
   .font-size-sm-h4 {
     font-size: 1.25rem;
-    line-height: 1.625rem;
+    line-height: 1.75rem;
   }
   .font-size-sm-h5 {
     font-size: 1rem;
-    line-height: 1.375rem;
+    line-height: 1.625rem;
   }
   .font-size-sm-h6 {
     font-size: 0.875rem;
-    line-height: 1.125rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -30346,7 +30364,7 @@ p, a {
   }
   .font-size-md-h1 {
     font-size: 1.875rem;
-    line-height: 2.375rem;
+    line-height: 2.5rem;
   }
   .font-size-md-h2 {
     font-size: 1.625rem;
@@ -30354,19 +30372,19 @@ p, a {
   }
   .font-size-md-h3 {
     font-size: 1.375rem;
-    line-height: 1.75rem;
+    line-height: 1.875rem;
   }
   .font-size-md-h4 {
     font-size: 1.25rem;
-    line-height: 1.625rem;
+    line-height: 1.75rem;
   }
   .font-size-md-h5 {
     font-size: 1rem;
-    line-height: 1.375rem;
+    line-height: 1.625rem;
   }
   .font-size-md-h6 {
     font-size: 0.875rem;
-    line-height: 1.125rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -30389,7 +30407,7 @@ p, a {
   }
   .font-size-lg-h1 {
     font-size: 1.875rem;
-    line-height: 2.375rem;
+    line-height: 2.5rem;
   }
   .font-size-lg-h2 {
     font-size: 1.625rem;
@@ -30397,19 +30415,19 @@ p, a {
   }
   .font-size-lg-h3 {
     font-size: 1.375rem;
-    line-height: 1.75rem;
+    line-height: 1.875rem;
   }
   .font-size-lg-h4 {
     font-size: 1.25rem;
-    line-height: 1.625rem;
+    line-height: 1.75rem;
   }
   .font-size-lg-h5 {
     font-size: 1rem;
-    line-height: 1.375rem;
+    line-height: 1.625rem;
   }
   .font-size-lg-h6 {
     font-size: 0.875rem;
-    line-height: 1.125rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -30432,7 +30450,7 @@ p, a {
   }
   .font-size-xl-h1 {
     font-size: 1.875rem;
-    line-height: 2.375rem;
+    line-height: 2.5rem;
   }
   .font-size-xl-h2 {
     font-size: 1.625rem;
@@ -30440,19 +30458,19 @@ p, a {
   }
   .font-size-xl-h3 {
     font-size: 1.375rem;
-    line-height: 1.75rem;
+    line-height: 1.875rem;
   }
   .font-size-xl-h4 {
     font-size: 1.25rem;
-    line-height: 1.625rem;
+    line-height: 1.75rem;
   }
   .font-size-xl-h5 {
     font-size: 1rem;
-    line-height: 1.375rem;
+    line-height: 1.625rem;
   }
   .font-size-xl-h6 {
     font-size: 0.875rem;
-    line-height: 1.125rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -31124,7 +31142,7 @@ hr.border-white {
 
 .progress-swiper .swiper-button-next::after,
 .progress-swiper-related-products .swiper-button-next::after {
-  content: "\f12a";
+  content: "\f129";
 }
 
 .progress-swiper .swiper-button-prev,
@@ -31135,7 +31153,7 @@ hr.border-white {
 
 .progress-swiper .swiper-button-prev::after,
 .progress-swiper-related-products .swiper-button-prev::after {
-  content: "\f12b";
+  content: "\f12a";
 }
 
 .progress-swiper .swiper-button-disabled,
