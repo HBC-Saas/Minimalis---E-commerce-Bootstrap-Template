@@ -15539,6 +15539,22 @@ select.selectpicker {
   left: calc(100% + 10px);
 }
 
+.center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.top-center {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.left-center {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .min-w-auto {
   min-width: auto !important;
 }
@@ -15927,6 +15943,10 @@ select.selectpicker {
 
 .flaticon-like-1:before {
   content: "\f12c";
+}
+
+.flaticon-play-button-2:before {
+  content: "\f12d";
 }
 
 /*
@@ -16811,6 +16831,13 @@ select.selectpicker {
 
 .nav-search .nav-search-form {
   padding: 0.9375rem 0;
+  transition: all 0.3s cubic-bezier(0, 1, 1, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nav-search .nav-search-form {
+    transition: none;
+  }
 }
 
 .nav-search .nav-search-form .form-control {

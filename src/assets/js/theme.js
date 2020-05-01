@@ -73,6 +73,7 @@ $(document).ready(function(){
     $('.nav-search-form .search-icon').on('click', function () {
         $(this).addClass('d-none');
         $('.nav-search-form .close-icon').removeClass('d-none');
+        $('.nav-search-form').css('width', '180px');
         $('.nav-search-form .form-control').css('width', '180px');
         $('.nav-search-form .form-control').removeClass('v-hidden');
     });
@@ -80,6 +81,7 @@ $(document).ready(function(){
     $('.nav-search-form .close-icon').on('click', function () {
         $(this).addClass('d-none');
         $('.nav-search-form .search-icon').removeClass('d-none');
+        $('.nav-search-form').css('width', '100px');
         $('.nav-search-form .form-control').css('width', '100px');
         $('.nav-search-form .form-control').addClass('v-hidden');
     });
@@ -452,6 +454,16 @@ $(document).ready(function(){
                 return openerElement.is('img') ? openerElement : openerElement.find('img');
             }
         }
+    });
+
+    // Initialize popup as usual
+    $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
+
+        fixedContentPos: false,
     });
 
     $('.gallery-popup').each(function() {
