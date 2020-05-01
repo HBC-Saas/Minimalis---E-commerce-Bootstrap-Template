@@ -79,6 +79,7 @@
 .nav-search {
     .nav-search-form {
       padding: $navbar-padding-x 0;
+      width: 100px;
       @include transition($nav-search-transition);
       .form-control {
         background-color: transparent;
