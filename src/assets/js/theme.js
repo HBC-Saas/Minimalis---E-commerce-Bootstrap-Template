@@ -154,7 +154,7 @@ $(document).ready(function(){
 
     setTimeout(function () {
         $('#subscribeModal').modal('show');
-    }, 5000);
+    }, 7000);
 
     /*===================================================
     *     tooltips
@@ -249,7 +249,9 @@ $(document).ready(function(){
 
     let mainSliderOptions = {
         watchSlidesProgress: true,
-
+        autoplay: {
+            delay: 5000,
+        },
         pagination: {
             el: '.swiper-pagination.pagination-dots, .swiper-pagination.pagination-numbers',
             clickable: true,
