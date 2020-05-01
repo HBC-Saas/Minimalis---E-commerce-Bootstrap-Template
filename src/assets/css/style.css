@@ -16832,6 +16832,7 @@ select.selectpicker {
 
 .nav-search .nav-search-form {
   padding: 0.9375rem 0;
+  width: 100px;
   transition: all 0.3s cubic-bezier(0, 1, 1, 1);
 }
 
