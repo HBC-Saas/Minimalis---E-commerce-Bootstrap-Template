@@ -28,7 +28,7 @@ Our team is constantly working to design and implement new pages and components 
 
 
 # Design Files
-Minimalis was designed in Figma, one of the most popular design tools out there. A link to download the source Figma file is included in the package.
+Minimalis was designed in skatch, one of the most popular design tools out there. A link to download the source skatch file is included in the package.
 
 
 # Workflow
