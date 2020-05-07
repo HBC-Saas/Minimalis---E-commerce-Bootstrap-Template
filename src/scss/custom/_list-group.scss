@@ -1,0 +1,16 @@
+.list-group-flush {
+  .list-group-item {
+    border-right-width: 0;
+    border-left-width: 0;
+    padding-left: 0!important;
+    padding-right: 0!important;
+    background-color: transparent;
+  }
+}
+
+// sizes
+.list-group-lg {
+  .list-group-item {
+    padding: 1.875rem 1.875rem;
+  }
+}

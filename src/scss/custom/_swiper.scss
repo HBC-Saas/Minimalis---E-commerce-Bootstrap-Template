@@ -1,0 +1,316 @@
+/*--------------------------
+ Functions -----------------
+--------------------------*/
+
+/// Urlencode the SVG string
+/// @param {String} $svg - SVG image to encode
+/// @return {String} - Encoded SVG data uri
+@function swiper-svg-uri($svg) {
+  $encoded: '';
+  $chunkSize: 2048;
+  $index: 0;
+  $loops: ceil(str-length($svg) / $chunkSize);
+
+  $map: (
+          "%": "%25",
+          "<": "%3C",
+          ">": "%3E",
+          " ": "%20",
+          "!": "%21",
+          "*": "%2A",
+          '"': "%22",
+          ";": "%3B",
+          ":": "%3A",
+          "@": "%40",
+          "&": "%26",
+          "=": "%3D",
+          "+": "%2B",
+          "$": "%24",
+          ",": "%2C",
+          "/": "%2F",
+          "?": "%3F",
+          "#": "%23",
+          "[": "%5B",
+          "]": "%5D"
+  );
+
+  @for $i from 1 through $loops {
+    $chunk: str-slice($svg, $index, $index + $chunkSize - 1);
+    @each $search, $replace in $map {
+      $chunk: swiper-str-replace($chunk, $search, $replace);
+    }
+    $encoded: #{$encoded}#{$chunk};
+    $index: $index + $chunkSize;
+  }
+
+  @return url("data:image/svg+xml;charset=utf-8,#{$encoded}");
+}
+
+/// Replace `$search` with `$replace` in `$string`
+/// @author Hugo Giraudel
+/// @link http://sassmeister.com/gist/1b4f2da5527830088e4d
+/// @param {String} $string - Initial string
+/// @param {String} $search - Substring to replace
+/// @param {String} $replace ('') - New value
+/// @return {String} - Updated string
+@function swiper-str-replace($string, $search, $replace: '') {
+  $index: str-index($string, $search);
+
+  @if $index {
+    @return str-slice($string, 1, $index - 1) + $replace + swiper-str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+  }
+
+  @return $string;
+}
+
+/*----------------------------------
+ General style ---------------------
+----------------------------------*/
+.swiper-container {
+  width: 100%;
+  height: auto;
+}
+
+/*----------------------------------
+ home swiper ---------------------
+----------------------------------*/
+.home-slider {
+  .swiper-slide{
+    overflow: hidden;
+  }
+
+  .home-slider-inner {
+    min-height: calc(100vh - #{$navbar-brand-height});
+  }
+
+  .bg-cover {
+    min-height: calc(100vh - #{$navbar-brand-height});
+  }
+
+  @include media-breakpoint-up(lg) {
+    .slide-border {
+      &::after {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        right: 2.5rem;
+        width: 1px;
+        height: 0;
+        background-color: $gray-200;
+        @include transition($general-transition);
+      }
+    }
+
+    .swiper-slide-active {
+      .slide-border {
+        &.active {
+          &::after {
+            height: calc(100% - 4.5625rem);
+          }
+        }
+      }
+    }
+  }
+
+  // Paginations
+  .pagination-container {
+    position: absolute;
+    bottom: -4rem;
+    width: 100%;
+    @include transition(bottom 0.5s $ease-transition-function);
+  }
+
+  .swiper-pagination {
+    width: auto!important;
+    bottom: 0;
+  }
+
+  .pagination-dots {
+    font-size:0;
+    display: flex;
+    align-items: flex-end;
+    height: 2.125rem;
+    .swiper-pagination-bullet {
+      width: 0.6875rem;
+      height: 1.375rem;
+      border-radius: 0;
+      margin-right: 0.5rem;
+      opacity: .15;
+      background: $dark;
+      outline: none;
+      @include transition($general-transition);
+    }
+    .swiper-pagination-bullet-active {
+      background: $dark;
+      height: 2.125rem;
+      opacity: 1;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .pagination-dots {
+      .swiper-pagination-bullet,
+      .swiper-pagination-active {
+        background: $white;
+      }
+    }
+  }
+
+  .pagination-numbers {
+    font-size: 3.125rem;
+    height: 2.3125rem;
+    line-height: 2.3125rem;
+    font-weight: $font-weight-light;
+    right: 1.875rem;
+    width: 3.125rem!important;
+    .swiper-pagination-bullet {
+      position: absolute;
+      top: 0;
+      right: 0.3125rem;
+      transform: translate3d(0, -100%, 0);
+      width: auto;
+      height: auto;
+      border-radius: 0;
+      color: $dark;
+      visibility: hidden;
+      opacity: 0;
+      background-color: transparent;
+      @include transition($general-transition);
+      cursor: default;
+    }
+
+    .swiper-pagination-bullet-active {
+      visibility: visible;
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .pagination-numbers {
+      .swiper-pagination-bullet {
+        color: $white;
+      }
+    }
+  }
+}
+
+
+/*----------------------------------
+ luxury swiper ---------------------
+----------------------------------*/
+@include media-breakpoint-between(lg, xl) {
+  .luxury-swiper {
+    .swiper-slide {
+      &:nth-child(1n) {
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+      }
+
+      &:nth-child(3n+2) {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+      }
+
+      &:nth-child(3n) {
+        flex: 0 0 25%;
+        max-width: 25%;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-between(sm, md) {
+  .swiper-row {
+    .luxury-swiper {
+      .swiper-slide {
+        &:first-child {
+          margin-left: -0.9375rem;
+        }
+        &:last-child {
+          margin-right: -0.9375rem;
+        }
+      }
+    }
+  }
+  .luxury-swiper {
+    .swiper-slide {
+      flex: 0 0 65%;
+      max-width: 65%;
+    }
+  }
+}
+
+/*----------------------------------
+ service swiper --------------------
+----------------------------------*/
+@include media-breakpoint-between(lg, xl) {
+  .service-swiper {
+    .swiper-slide {
+      flex: 0 0 33.3333%;
+      max-width: 33.3333%;
+    }
+  }
+}
+@include media-breakpoint-between(sm, md) {
+  .swiper-row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .service-swiper {
+    .swiper-slide {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+}
+
+/*----------------------------------
+ Progress swiper -------------------
+----------------------------------*/
+.progress-swiper,
+.progress-swiper-related-products {
+  .swiper-pagination-progressbar {
+    position: relative;
+    height: 2px;
+    background: rgba(0,0,0,.1);
+  }
+  .swiper-pagination-progressbar-fill {
+    background: $primary;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: $gray-500;
+    width: auto;
+
+    @include hover(){
+      color: $primary;
+    }
+
+    &::after {
+      font-family: Flaticon;
+      font-size: $font-size-base;
+      font-variant: initial;
+    }
+  }
+  .swiper-button-next {
+    right: 0;
+    left: auto;
+    &::after {
+      content: "\f129";
+    }
+  }
+  .swiper-button-prev {
+    left: auto;
+    right: calc(#{$font-size-base} + 0.625rem);
+    &::after {
+      content: "\f12a";
+    }
+  }
+  .swiper-button-disabled {
+    color: $gray-200;
+    opacity: 1;
+  }
+}

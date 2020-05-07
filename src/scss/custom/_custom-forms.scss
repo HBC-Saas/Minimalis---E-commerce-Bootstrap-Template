@@ -1,0 +1,147 @@
+/*
+* ===================================================
+*     Filter checkbox
+* ===================================================
+*/
+
+
+// checkbox filter
+.filter-checkbox {
+  label {
+
+    @include hover() {
+      span,
+      i {
+        color: $primary!important;
+      }
+    }
+  }
+}
+
+.filter-checkbox {
+  padding-right: 0.3125rem;
+  padding-left: 0.3125rem;
+  label {
+    cursor: pointer;
+    margin-bottom: 0;
+
+    span,
+    i { @include transition($filter-checkbox-transition); }
+  }
+
+  @include hover() {
+    span, i { color: $primary!important; }
+  }
+
+  .custom-control-input {
+    &:checked ~ label .custom-control-label::before {
+      color: $custom-control-indicator-checked-color;
+      border-color: $custom-control-indicator-checked-border-color;
+      @include gradient-bg($custom-control-indicator-checked-bg);
+      @include box-shadow($custom-control-indicator-checked-box-shadow);
+      display: block;
+    }
+
+    &:focus ~ label .custom-control-label::before {
+      // the mixin is not used here to make sure there is feedback
+      @if $enable-shadows {
+        box-shadow: $input-box-shadow, $input-focus-box-shadow;
+      } @else {
+        box-shadow: $custom-control-indicator-focus-box-shadow;
+      }
+    }
+
+    &:focus:not(:checked) ~ label .custom-control-label::before {
+      border-color: $custom-control-indicator-focus-border-color;
+    }
+
+    &:not(:disabled):active ~ label .custom-control-label::before {
+      color: $custom-control-indicator-active-color;
+      background-color: $custom-control-indicator-active-bg;
+      border-color: $custom-control-indicator-active-border-color;
+      @include box-shadow($custom-control-indicator-active-box-shadow);
+    }
+
+    &:disabled {
+      ~ label .custom-control-label {
+        color: $custom-control-label-disabled-color;
+
+        &::before {
+          background-color: $custom-control-indicator-disabled-bg;
+        }
+      }
+    }
+  }
+}
+
+// Checkboxes
+
+.filter-checkbox {
+  .custom-control-label::before {
+    top: -0.4375rem;
+    left: auto;
+    right: -0.4375rem;
+    @include border-radius(1.5625rem);
+    display: block;
+    @include transition($filter-checkbox-transition);
+    visibility: hidden;
+    opacity: 0;
+
+  }
+  .custom-control-label::after {
+    top: -0.4375rem;
+    left: auto;
+    right: -0.4375rem;
+    @include border-radius(1.5625rem);
+    @include transition($filter-checkbox-transition);
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .custom-control-input:checked ~ label .custom-control-label {
+    &::before {
+      visibility: visible!important;
+      opacity: 1!important;
+    }
+  }
+
+  .custom-control-input:checked ~ label .custom-control-label {
+    &::after {
+      background-image: none;
+      font-family: Flaticon;
+      content: "\f10b";
+      color: white;
+      font-size: .5rem;
+      line-height: 1.125rem;
+      visibility: visible!important;
+      opacity: 1!important;
+    }
+  }
+
+  .custom-control-input:indeterminate ~ label .custom-control-label {
+    &::before {
+      border-color: $custom-checkbox-indicator-indeterminate-border-color;
+      @include gradient-bg($custom-checkbox-indicator-indeterminate-bg);
+      @include box-shadow($custom-checkbox-indicator-indeterminate-box-shadow);
+    }
+    &::after {
+      background-image: $custom-checkbox-indicator-icon-indeterminate;
+    }
+  }
+
+  .custom-control-input:disabled {
+    &:checked ~ label .custom-control-label::before {
+      background-color: $custom-control-indicator-checked-disabled-bg;
+    }
+    &:indeterminate ~ label .custom-control-label::before {
+      background-color: $custom-control-indicator-checked-disabled-bg;
+    }
+  }
+
+  // filter circle
+  .color-filter {
+    display: inline-block;
+    width: 2.1875rem;
+    height: 2.1875rem;
+  }
+}

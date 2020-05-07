@@ -1,0 +1,83 @@
+/*
+* ===================================================
+*     Modal Dialog Vertical
+* ===================================================
+*/
+.modal-dialog-vertical {
+  max-height: 100vh;
+  height: 100vh;
+  max-width: 29.375rem;
+  margin: 0;
+
+  &.modal-lg {
+    max-width: 50%!important;
+    @include media-breakpoint-down(md) {
+      max-width: 100%!important;
+    }
+  }
+
+  .modal-content {
+    max-height: 100vh;
+    height: 100vh;
+  }
+}
+
+.below-header {
+  margin-top: calc(#{$navbar-brand-height} + 1px)!important;
+  z-index: 1000; // below header
+
+  .modal-dialog-vertical {
+    max-height: calc(100vh - (#{$navbar-brand-height} + 1px)) !important;
+    height: calc(100vh - (#{$navbar-brand-height} + 1px)) !important;
+
+    .modal-content {
+      max-height: calc(100vh - (#{$navbar-brand-height} + 1px)) !important;
+      height: calc(100vh - (#{$navbar-brand-height} + 1px)) !important;
+    }
+  }
+}
+
+// modal opacity 0
+.modal-opacity-0 {
+  .modal-backdrop {
+    margin-top: calc(#{$navbar-brand-height} + 1px)!important;
+    &.show {
+      opacity: 0!important;
+      z-index: 999; // below header
+    }
+  }
+}
+
+.modal {
+  &.fade {
+    .modal-dialog-vertical {
+      transform: translateX(-100%);
+    }
+  }
+
+  &.show {
+    .modal-dialog-vertical {
+      transform: translateX(0);
+    }
+  }
+
+  &.fixed-right {
+    padding-right: 0!important;
+
+    .modal-dialog-vertical {
+      margin-left: auto;
+    }
+
+    &.fade {
+      .modal-dialog-vertical {
+        transform: translateX(100%);
+      }
+    }
+
+    &.show {
+      .modal-dialog-vertical{
+        transform: translateX(0);
+      }
+    }
+  }
+}

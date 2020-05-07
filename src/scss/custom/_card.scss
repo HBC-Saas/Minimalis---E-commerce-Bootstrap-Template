@@ -1,0 +1,211 @@
+// Product cards
+.card {
+  .card-img {
+    position: relative;
+
+    // figure zoom effects
+    figure {
+      overflow: hidden;
+      img {
+        @include transition($zoom-transition);
+        width: 100%;
+      }
+    }
+    @include hover() {
+      .zoom-in {
+        img { transform: scale(1.1); }
+      }
+      .zoom-out {
+        img { transform: scale(1); }
+      }
+    }
+    .zoom-out {
+      img { transform: scale(1.1); }
+    }
+
+    // add to cart button
+    .add-to-cart {
+      position: absolute;
+      bottom: -0.9375rem;
+      right: 1.875rem;
+    }
+
+    // hover card action
+    .hover-card-action {
+      opacity: 0;
+      visibility: hidden;
+    }
+    @include hover() {
+      .hover-card-action {
+        opacity: 1;
+        visibility: visible;
+          &.action-left { left: 1.25rem; }
+          &.action-right { right: 1.25rem; }
+      }
+    }
+  }
+  &.luxury-card {
+    // add to cart button for luxury card
+    .add-to-cart {
+      @each $breakpoint in map-keys($grid-breakpoints) {
+        @include media-breakpoint-up($breakpoint) {
+          $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+          &.btn#{$infix}-large { bottom: -1.4375rem; }
+
+          &.btn#{$infix}-medium { bottom: -1.125rem; }
+
+          &.btn#{$infix}-small { bottom: -1rem; }
+        }
+      }
+    }
+  }
+
+  // card actions
+  .card-action {
+    @include transition($card-actions-transition);
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    [class^="flaticon-"], [class*=" flaticon-"],
+    [class^="flaticon-"], [class*=" flaticon-"] {
+      @include font-size(25);
+      line-height: 1.5625rem;
+      color: $black;
+      &::before {
+        @include font-size(25);
+        line-height: 1.5625rem;
+      }
+    }
+
+    .like-product {
+      position: relative;
+      display: inline-block;
+      width: 26px;
+      height: 26px;
+      [class^="flaticon-"], [class*=" flaticon-"],
+      [class^="flaticon-"], [class*=" flaticon-"] {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+
+    &:focus,
+    &:active { outline: none; }
+
+    &.action-top { top: 1.25rem;}
+    &.action-bottom { bottom: 1.25rem; }
+    &.action-left { left: 1.25rem; }
+    &.action-right { right: 1.25rem; }
+
+    &.hover-card-action.action-left { left: 0; }
+    &.hover-card-action.action-right { right: 0; }
+
+    &.active {
+      [class^="flaticon-"], [class*=" flaticon-"],
+      [class^="flaticon-"], [class*=" flaticon-"] {
+        color: $primary;
+      }
+    }
+  }
+
+  // blog Card
+  &.blog-card {
+    .card-img {
+      position: relative;
+      .title-block {
+        position: absolute;
+        bottom: 0.75rem;
+        left: 1.5625rem;
+        right: 1.5625rem;
+        z-index: 9;
+        transform: translate3d(0, 100%, 0);
+        @include transition($card-blog-title);
+        .title {
+          position: absolute;
+          bottom: 100%;
+          margin-bottom: 0.4375rem;
+        }
+      }
+      @include hover() {
+        .title-block {
+          transform: translate3d(0, 0, 0);
+        }
+      }
+
+      .cat-title-block {
+        position: absolute;
+        bottom: 0;
+        left: 1.875rem;
+        right: 1.875rem;
+        .cat-title {
+          display: block;
+          padding: .875rem .3125rem 0 .3125rem;
+          font-weight: $font-weight-medium;
+          line-height: normal;
+        }
+      }
+    }
+  }
+}
+
+// overlay
+.overlay-dark {
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to bottom, rgba(238, 238, 238, 0) 23%, rgba(0, 0, 0, 0.66) 100%);
+  }
+}
+
+//
+// Accordion
+//
+
+.accordion {
+  .card {
+    overflow: hidden;
+    border-color: transparent;
+    margin-bottom: 1.25rem;
+
+    .card-header {
+      @include border-radius(4px);
+      border-bottom-color: transparent;
+    }
+    .plus-after {
+      position: relative;
+      padding-right: 1.5rem;
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        width: 0.75rem;
+        height: 0.125rem;
+        background-color: $black;
+      }
+      &::before {
+        transform: translateY(-50%) rotate(90deg);
+        display: none;
+      }
+      &::after {
+        transform: translateY(-50%);
+      }
+    }
+    [aria-expanded=false] {
+      .plus-after {
+        &::before { display: block; }
+      }
+    }
+
+    [aria-expanded=true] {
+      .card-header { background-color: transparent; }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+/*--------------------------
+ Rate and rating stars -----
+--------------------------*/
+.rate-star,
+.rating {
+  label {
+    margin-right: 0.625rem;
+    color: $gray-200;
+    margin-bottom: 0;
+    i {
+      &::before { font-size: $h3-font-size; }
+    }
+  }
+}
+
+.rating label {
+  color: $gray-500;
+  &:last-child { margin-right: 0; }
+}
+
+.rate-star {
+  display: inline-flex;
+  flex-direction: row-reverse;
+}
+
+.rate-star:not(:checked) > input {
+  display: none;
+}
+
+.rate-star:not(:checked) > label {
+  cursor: pointer;
+
+  @include transition($general-transition);
+}
+.rate-star > input:checked ~ label {
+  color: $primary;
+}
+
+.rate-star:not(:checked) > label:hover,
+.rate-star:not(:checked) > label:hover ~ label {
+  color: $gray-500;
+}
+
+.rate-star > input:checked + label:hover,
+.rate-star > input:checked + label:hover ~ label,
+.rate-star > input:checked ~ label:hover,
+.rate-star > input:checked ~ label:hover ~ label,
+.rate-star > label:hover ~ input:checked ~ label {
+  color: $primary;
+}

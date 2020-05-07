@@ -1,6 +1,108 @@
+/*
+    Forms
+   ------------------------
+*/
+
 label {
   color: $black;
-  font-weight: 500;
+  font-weight: $font-weight-medium;
   font-size: $font-size-base;
   letter-spacing: $font-letter-spacing;
+  // label error
+  &.error {
+    width: 100%;
+    order: 10;
+    margin-bottom: 0;
+    margin-top: 0.625rem;
+    font-weight: 400;
+    font-size: 0.75rem;
+    color: $danger;
+    text-align: left;
+  }
+}
+
+.form-control {
+  &.error {
+    border-color: $danger;
+
+    &:active,
+    &:focus { border-color: $danger; }
+  }
+}
+
+// qty Form
+.qty-container {
+  width: 5.375rem;
+  min-height: 2.5rem;
+  .input-group-append {
+    border: 1px solid $input-border-color;
+    flex-direction: column;
+    .qty {
+      height: 50%;
+      line-height: 0.5rem;
+      padding-left: 0.5625rem;
+      padding-right: 0.5625rem;
+      background-color: transparent;
+      border: none;
+      color: $gray-500;
+      .flaticon-play-button,
+      .flaticon-play-button-1 {
+        display: inline-block;
+        @include font-size(8);
+        &::before {
+          @include font-size(8);
+        }
+      }
+      .flaticon-play-button {
+        transform: rotate(-90deg);
+      }
+      .flaticon-play-button-1 {
+        transform: rotate(-90deg);
+      }
+
+      @include hover() {
+        outline: none;
+        color: $black;
+      }
+
+      &:focus,
+      &:active {
+        outline: none;
+      }
+    }
+  }
+}
+
+// upload avatar
+.upload-avatar {
+  position: relative;
+  display: inline-block;
+  .blur {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(1px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+  }
 }

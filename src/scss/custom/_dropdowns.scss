@@ -1,0 +1,32 @@
+.dropdown-toggle {
+  @include caret();
+}
+
+.dropup {
+  .dropdown-toggle {
+    @include caret(up);
+  }
+}
+
+.dropright {
+  .dropdown-toggle {
+    @include caret(right);
+  }
+}
+
+.dropleft {
+  .dropdown-toggle {
+    @include caret(left);
+  }
+}
+
+.show {
+  > .dropdown-toggle {
+    @include caret(up);
+  }
+}
+
+// Dropdown section headers
+.dropdown-header {
+  @include font-size(16);
+}

@@ -1,0 +1,139 @@
+/*
+    Typography
+   ------------------------
+*/
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  letter-spacing: $headings-letter-spacing;
+}
+
+h1, .h1 { line-height: 2.375rem;  }
+h2, .h2 { line-height: 2.125rem; }
+h3, .h3 { line-height: 1.75rem; }
+h4, .h4 { line-height: 1.625rem; }
+h5, .h5 { line-height: 1.375rem; }
+h6, .h6 { line-height: 1.125rem; }
+
+.lead {
+  letter-spacing: $lead-font-letter-spacing;
+}
+
+p, a {
+  letter-spacing: $font-letter-spacing;
+}
+
+.small {
+  font-size: $small-font-size;
+}
+
+// font sizes
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    .font-size#{$infix}-display1  {
+      font-size: $display1-size;
+      line-height: 5.3125rem;
+    }
+    .font-size#{$infix}-display2  {
+      font-size: $display2-size;
+      line-height: 4.6875rem;
+    }
+    .font-size#{$infix}-display3  {
+      font-size: $display3-size;
+      line-height: 4.0625rem;
+    }
+    .font-size#{$infix}-display4  {
+      font-size: $display4-size;
+      line-height: 3.4375rem;
+    }
+    .font-size#{$infix}-h1  {
+      font-size: $h1-font-size;
+      line-height: 2.5rem;
+    }
+    .font-size#{$infix}-h2  {
+      font-size: $h2-font-size;
+      line-height: 2.125rem;
+    }
+    .font-size#{$infix}-h3  {
+      font-size: $h3-font-size;
+      line-height: 1.875rem;
+    }
+    .font-size#{$infix}-h4  {
+      font-size: $h4-font-size;
+      line-height: 1.75rem;
+    }
+    .font-size#{$infix}-h5  {
+      font-size: $h5-font-size;
+      line-height: 1.625rem;
+    }
+    .font-size#{$infix}-h6  {
+      font-size: $h6-font-size;
+      line-height: 1.5rem;
+    }
+  }
+}
+
+// divider
+hr {
+  &.border-white {
+    border-top: $hr-border-width solid $hr-border-color-2!important;
+  }
+}
+
+// line heights
+.line-height-18 { line-height: 1.125rem; }
+
+// list style ( seperation line )
+.sep-line {
+  margin-right: 0!important;
+  &:not(:first-child) {
+    line-height: .875rem;
+    padding-left: 1.5rem;
+    margin-left: 1.25rem;
+    border-left: 1px solid #ffffff;
+    @each $color, $value in $theme-colors {
+      &.line-#{$color} {
+        border-left: 1px solid $value;
+      }
+    }
+  }
+  &.sep-lg {
+    &:not(:first-child) {
+      padding-left: 2.5rem;
+      margin-left: 2.25rem;
+    }
+  }
+}
+
+// list style ( link underline )
+
+@each $color, $value in $theme-colors {
+  &.link-underline-#{$color} {
+    li {
+      a {
+        position: relative;
+        &::after {
+          content: ' ';
+          position: absolute;
+          bottom: -0.1875rem;
+          left: 0;
+          width: 0;
+          height: 1px;
+          background-color: $value;
+          @include transition($general-transition);
+        }
+        @include hover() {
+          &::after {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

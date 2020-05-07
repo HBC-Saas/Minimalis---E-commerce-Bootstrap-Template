@@ -1,13 +1,32 @@
 // theme mixins
 @import "mixins";
-@import "functions";
+@import "utilitis";
 
 // theme components
 @import "flaticon";
+@import "alert";
+@import "breadcrumb";
+@import "bootstrap-select";
+@import "avatars";
+@import "dropdowns";
+@import "close";
+@import "card";
+@import "list-group";
 @import "navbar";
+@import "navs";
 @import "buttons";
+@import "cocoen";
 @import "forms";
-@import "typo";
+@import "custom-forms";
+@import "pagination";
+@import "tables";
+@import "type";
+@import "rating";
+@import "modal";
+@import "swiper";
+
+// pages
+@import "cart";
 
 // theme documantation
 @import "docs";

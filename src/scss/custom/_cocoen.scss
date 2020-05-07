@@ -1,0 +1,105 @@
+$drag-colour: $primary;
+$drag-line-size: 0.625rem;
+$drag-circle-size: 1.5rem;
+$drag-arrow-font-size: 0.5rem;
+
+.cocoen {
+  box-sizing: border-box;
+  cursor: pointer;
+  line-height: 0;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  user-select: none;
+
+  * {
+    box-sizing: inherit;
+
+    &::after,
+    &::before {
+      box-sizing: inherit;
+    }
+  }
+
+  img,
+  picture > img {
+    max-width: none;
+  }
+
+  > img,
+  > picture > img {
+    display: block;
+    width: 100%;
+  }
+
+  > div {
+    &:first-child,
+    picture & {
+      height: 100%;
+      left: 0;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      width: 50%;
+    }
+  }
+
+  &-drag {
+    background: $drag-colour;
+    bottom: 0;
+    cursor: ew-resize;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: $drag-line-size;
+
+    &::before,
+    &::after {
+      font-family: "Flaticon";
+      background: $drag-colour;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      height: $drag-circle-size * 2;
+      width: $drag-circle-size;
+      line-height: $drag-circle-size * 2;
+      color: $white;
+      @include font-size($drag-arrow-font-size);
+    }
+    &::before {
+      content: $font-Flaticon-play-button-1;
+      left: -$drag-circle-size + ($drag-line-size / 2);
+      border-bottom-left-radius: $drag-circle-size * 2;
+      border-top-left-radius: $drag-circle-size * 2;
+      padding-right: $drag-arrow-font-size / 2;
+      text-align: right;
+    }
+
+    &::after {
+      content: $font-Flaticon-play-button;
+      left: ($drag-line-size / 2);
+      border-bottom-right-radius: $drag-circle-size * 2;
+      border-top-right-radius: $drag-circle-size * 2;
+      padding-left: $drag-arrow-font-size / 2;
+      text-align: left;
+    }
+
+
+    @include media-breakpoint-down(md) {
+      &::before,
+      &::after {
+        height: $drag-circle-size * 1.5;
+        width: ($drag-circle-size * 1.5) / 2;
+        line-height: $drag-circle-size * 1.5;
+      }
+
+      &::before {
+        left: -(($drag-circle-size * 1.5) / 2) + ($drag-line-size / 2);
+      }
+    }
+
+
+  }
+}

@@ -1,0 +1,143 @@
+/*
+    Bootstrap Select
+   -----------------------------
+*/
+.bootstrap-select {
+  min-width: 10.625rem!important;
+  width: auto!important;
+  .minimalis.bs-placeholder {
+    border: 1px solid $gray-500;
+  }
+  // The selectpicker button
+  > .dropdown-toggle {
+
+    &:focus {
+      outline: none !important;
+    }
+
+    &.minimalis:not(.bs-placeholder) {
+      border-color: $primary;
+    }
+
+    &.bs-placeholder {
+      @each $color, $value in $theme-colors {
+        &.btn-#{$color} {
+          &,
+          &:hover,
+          &:focus,
+          &:active {
+            color: color-yiq($value);
+          }
+        }
+      }
+
+      @each $color, $value in $theme-colors {
+        &.btn-outline-#{$color} {
+          color: $value;
+          &:hover,
+          &:focus,
+          &:active {
+            color: color-yiq($value);
+          }
+        }
+      }
+    }
+  }
+
+  &.show {
+    .minimalis {
+      border-color: $primary;
+    }
+
+    @each $color, $value in $theme-colors {
+      .btn-outline-#{$color} {
+        color: color-yiq($value);
+        &.bs-placeholder {
+          color: color-yiq($value);
+        }
+      }
+    }
+  }
+}
+
+// The selectpicker components
+.bootstrap-select {
+  // The selectpicker button
+  .dropdown-toggle {
+    .filter-option {
+      @at-root .input-group .bs3-has-addon#{&} {
+        .filter-option-inner {
+          font-weight: $font-weight-normal;
+        }
+      }
+    }
+
+    .filter-option-inner-inner {
+      margin-right: 0.625rem;
+      font-weight: $font-weight-normal;
+    }
+  }
+
+  // The selectpicker dropdown
+  .dropdown-menu {
+    z-index: 1002;
+    li {
+      outline: none !important;
+      a {
+        outline: none !important;
+      }
+    }
+  }
+
+  .no-results {
+    background: $gray-100;
+  }
+}
+
+.w-100 {
+  .bootstrap-select {
+    min-width: 100%!important;
+  }
+}
+
+// dropdown menu
+.bootstrap-select {
+  .dropdown-menu {
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(2rem);
+    @include transition($dropdown-transition);
+
+    .dropdown-menu {
+      display: block;
+      visibility: hidden;
+      opacity: 0;
+      transform: translateY(2rem);
+      @include transition($dropdown-transition);
+
+      &.show {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(0px);
+      }
+    }
+
+    &.show {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0px);
+      .dropdown-menu {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0px);
+
+        &.show {
+          visibility: visible;
+          opacity: 1;
+          transform: translateY(0px);
+        }
+      }
+    }
+  }
+}
