@@ -1912,7 +1912,7 @@ pre code {
 .form-control:focus {
   color: #1e1e1e;
   background-color: #fff;
-  border-color: #ded8cc;
+  border-color: #ac9c7f;
   outline: 0;
   box-shadow: 0 0 0 0 rgba(172, 156, 127, 0.25);
 }
@@ -3657,7 +3657,7 @@ input[type="button"].btn-block {
 }
 
 .custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
-  border-color: #ded8cc;
+  border-color: #ac9c7f;
 }
 
 .custom-control-input:not(:disabled):active ~ .custom-control-label::before {
@@ -3794,7 +3794,7 @@ input[type="button"].btn-block {
 }
 
 .custom-select:focus {
-  border-color: #ded8cc;
+  border-color: #ac9c7f;
   outline: 0;
   box-shadow: 0 0 0 0 rgba(172, 156, 127, 0.25);
 }
@@ -3858,7 +3858,7 @@ input[type="button"].btn-block {
 }
 
 .custom-file-input:focus ~ .custom-file-label {
-  border-color: #ded8cc;
+  border-color: #ac9c7f;
   box-shadow: 0 0 0 0 rgba(172, 156, 127, 0.25);
 }
 
@@ -30053,7 +30053,7 @@ label.error {
 }
 
 .filter-checkbox .custom-control-input:focus:not(:checked) ~ label .custom-control-label::before {
-  border-color: #ded8cc;
+  border-color: #ac9c7f;
 }
 
 .filter-checkbox .custom-control-input:not(:disabled):active ~ label .custom-control-label::before {

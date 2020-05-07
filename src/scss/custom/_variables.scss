@@ -157,6 +157,9 @@ $paragraph-margin-bottom:   .875rem !default;
 // Components
 $border-color:                $gray-200 !default;
 
+$component-active-color:      $white !default;
+$component-active-bg:         theme-color("primary") !default;
+
 $caret-width:                 .1875rem !default;
 
 // Typography
@@ -261,6 +264,9 @@ $input-border-color:                    $gray-500 !default;
 $input-border-radius:                   0 !default;
 $input-border-radius-lg:                0 !default;
 $input-border-radius-sm:                0 !default;
+
+$input-focus-border-color:              lighten($component-active-bg, 0%) !default;
+$input-focus-color:                     $input-color !default;
 
 $input-placeholder-color:               $gray-500 !default;
 $form-text-margin-top:                  0.625rem !default;
