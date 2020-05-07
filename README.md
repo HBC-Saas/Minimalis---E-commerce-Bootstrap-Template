@@ -28,7 +28,7 @@ Our team is constantly working to design and implement new pages and components 
 
 
 # Design Files
-Minimalis was designed in skatch, one of the most popular design tools out there. A link to download the source skatch file is included in the package.
+In this version, minimalis theme is designed in sketch but soon we will update by creating in Figma and Adobe XD software. After you have purchased these theme into readme file is the link to download design.
 
 
 # Workflow
