@@ -38,7 +38,7 @@ p, a {
 
     .font-size#{$infix}-display1  {
       font-size: $display1-size;
-      line-height: 5.3125rem;
+      line-height: 6.25rem;
     }
     .font-size#{$infix}-display2  {
       font-size: $display2-size;
@@ -136,4 +136,9 @@ hr {
       }
     }
   }
+}
+
+// font family unna
+.font-family-unna {
+  font-family: 'Unna', serif;
 }

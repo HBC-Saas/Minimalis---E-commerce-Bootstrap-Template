@@ -389,6 +389,23 @@
 
 
       @include media-breakpoint-down($breakpoint) {
+        &.navbar-transparent {
+          .navbar-collapse {
+            background-color: $white;
+            .nav-link {
+              color: $dark;
+            }
+
+            .input-group-text {
+              color: $dark;
+            }
+        
+            .form-control {
+              color: $dark;
+            }
+          }
+        }
+
         &.navbar-filter {
           .navbar-nav {
             .nav-item {
@@ -401,13 +418,11 @@
         &:not(.navbar-filter) {
           // navbar collapse
           .navbar-collapse {
-            border-top: 1px solid $gray-200;
-            margin-left: -0.9375rem;
-            margin-right: -0.9375rem;
+            // margin-left: -0.9375rem;
+            // margin-right: -0.9375rem;
             padding-left: 0.9375rem;
             padding-right: 0.9375rem;
             overflow: auto;
-            background-color: $white;
             .navbar-nav {
               max-height: calc(100vh - #{$navbar-brand-height});
             }
@@ -474,6 +489,7 @@
 }
 
 @include media-breakpoint-down(sm) {
+  
   .navbar-filter {
     .navbar-nav {
       .nav-item {
@@ -509,5 +525,160 @@
   .mega-dropdown-menu {
     border-left: 0;
     border-right: 0;
+  }
+}
+
+// Navbar themes
+// Dark links against a light background
+.navbar-light {
+  .navbar-icons {
+    .input-group-text {
+      color: $dark;
+    }
+  }
+  .navbar-collapse {
+    border-top: 1px solid $gray-200;
+  }
+}
+
+// White links against a dark background
+.navbar-dark {
+  .nav-item {
+    .input-group-text {
+      color: $gray-500;
+    }
+
+    .form-control {
+      color: $gray-100;
+      background-color: transparent;
+    }
+  }
+
+  .custom-toggler {
+    .navbar-toggler-icon {
+      background-color: $gray-500;
+      &::before, &::after {
+        background-color: $gray-500;
+      }
+    }
+  }
+
+  .navbar-collapse {
+    border-top: 1px solid $gray-200;
+  }
+}
+
+// White links against a transparent background
+.navbar-transparent {
+  .nav-item {
+    .nav-link {
+      color: $white;
+    }
+
+    .input-group-text {
+      color: $white;
+    }
+
+    .form-control {
+      color: $white;
+      background-color: transparent;
+    }
+  }
+
+  .custom-toggler {
+    .navbar-toggler-icon {
+      background-color: $white;
+      &::before, &::after {
+        background-color: $white;
+      }
+    }
+  }
+
+  .navbar-brand {
+    color: $white;
+  }
+
+  
+  .active > .nav-link,
+  .nav-link.active {
+    &::before {
+      background-color: $white!important;
+    }
+  }
+
+  .nav-link {
+    @include hover() {
+      &::before {
+        background-color: $white!important;
+      }
+    }
+  }
+
+  .dropdown,
+  .dropdown-submenu {
+    @include hover() {
+      > .nav-link {
+        &::before {
+          background-color: $white!important;
+        }
+      }
+    }
+  }
+
+  &.bg-white {
+    border-bottom: 1px solid $gray-200;
+    .custom-toggler {
+      .navbar-toggler-icon {
+        background-color: $dark;
+        &::before, &::after {
+          background-color: $dark;
+        }
+      }
+    }
+
+    .navbar-brand {
+      color: $dark;
+    }
+
+    .nav-item {
+      .nav-link {
+        color: $dark;
+      }
+  
+      .input-group-text {
+        color: $dark;
+      }
+  
+      .form-control {
+        color: $dark;
+        background-color: transparent;
+      }
+    }
+
+    .active > .nav-link,
+    .nav-link.active {
+      &::before {
+        background-color: $navbar-light-active-color!important;
+      }
+    }
+
+    .nav-link {
+      @include hover() {
+        &::before {
+          background-color: $navbar-light-active-color!important;
+        }
+      }
+    }
+  
+    .dropdown,
+    .dropdown-submenu {
+      @include hover() {
+        > .nav-link {
+          &::before {
+            background-color: $navbar-light-active-color!important;
+          }
+        }
+      }
+    }
   }
 }

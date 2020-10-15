@@ -74,6 +74,15 @@
   background-position: left bottom, right bottom;
 }
 
+.bg-center-bottom {
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+.bg-top-right {
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
 .bg-img-md-none {
   @include media-breakpoint-down(md) {
     background-image: none!important;
