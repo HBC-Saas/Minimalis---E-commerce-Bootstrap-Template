@@ -195,6 +195,43 @@
   }
 }
 
+// home slider 2
+.home-slider-2 {
+  .home-slider-inner {
+    min-height: 100vh;
+  }
+  .swiper-slide {
+    position: relative;
+    &::before {
+      content: ' ';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0,0,0,.4);
+    }
+  }
+
+  .arrow-icons {
+    position: absolute; 
+    bottom: 3.75rem;
+    z-index: 999; 
+    left: 50%; 
+    transform: translateX(-50%);
+  }
+  .swiper-prev-icon,
+  .swiper-next-icon {
+    cursor: pointer;
+    &::before {
+      font-size: 1.375rem;
+    }
+  }
+  .swiper-button-disabled {
+    opacity: 0.3;
+  }
+}
+
 
 /*----------------------------------
  luxury swiper ---------------------

@@ -2,6 +2,27 @@
 .card {
   .card-img {
     position: relative;
+    
+    //hover overlay primary
+    &.hover-overlay-primary {
+      &::before {
+        @include transition(all .2s ease);
+        content: ' ';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba($color: $primary, $alpha: 0);
+      }
+    }
+    @include hover() {
+      &.hover-overlay-primary {
+        &::before {
+          background-color: rgba($color: $primary, $alpha: .46);
+        }
+      }
+    }
 
     // figure zoom effects
     figure {
@@ -41,6 +62,11 @@
         visibility: visible;
           &.action-left { left: 1.25rem; }
           &.action-right { right: 1.25rem; }
+          &.action-center { 
+            right: 50%; 
+            bottom: 50%;
+            transform: translate(50%, 50%); 
+          }
       }
     }
   }
@@ -101,6 +127,11 @@
 
     &.hover-card-action.action-left { left: 0; }
     &.hover-card-action.action-right { right: 0; }
+    &.hover-card-action.action-center { 
+      right: 50%; 
+      bottom: 50%; 
+      transform: translate(50%, 100%); 
+    }
 
     &.active {
       [class^="flaticon-"], [class*=" flaticon-"],
@@ -126,6 +157,51 @@
           position: absolute;
           bottom: 100%;
           margin-bottom: 0.4375rem;
+        }
+      }
+      @include hover() {
+        .title-block {
+          transform: translate3d(0, 0, 0);
+        }
+      }
+
+      .cat-title-block {
+        position: absolute;
+        bottom: 0;
+        left: 1.875rem;
+        right: 1.875rem;
+        .cat-title {
+          display: block;
+          padding: .875rem .3125rem 0 .3125rem;
+          font-weight: $font-weight-medium;
+          line-height: normal;
+        }
+      }
+    }
+  }
+
+  //product new cards
+  &.product-card {
+    .card-img {
+      position: relative;
+      .title-block {
+        position: absolute;
+        bottom: 0;
+        z-index: 9;
+        transform: translate3d(0, calc(100% - 60px), 0);
+        text-align: center;
+        @include transition($card-blog-title);
+        &.block-center {
+          left: 3.125rem;
+          right: 3.125rem;
+        }
+        &.block-left {
+          left: 0;
+          right: 6.25rem;
+        }
+        &.block-right {
+          left: 6.25rem;
+          right: 0;
         }
       }
       @include hover() {
